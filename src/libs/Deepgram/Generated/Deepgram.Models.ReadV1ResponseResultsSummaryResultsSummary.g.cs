@@ -1,0 +1,46 @@
+
+#nullable enable
+
+namespace Deepgram
+{
+    /// <summary>
+    /// 
+    /// </summary>
+    public sealed partial class ReadV1ResponseResultsSummaryResultsSummary
+    {
+        /// <summary>
+        /// Example: The summary of the text submitted.
+        /// </summary>
+        /// <example>The summary of the text submitted.</example>
+        [global::System.Text.Json.Serialization.JsonPropertyName("text")]
+        public string? Text { get; set; }
+
+        /// <summary>
+        /// Additional properties that are not explicitly defined in the schema
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonExtensionData]
+        public global::System.Collections.Generic.IDictionary<string, object> AdditionalProperties { get; set; } = new global::System.Collections.Generic.Dictionary<string, object>();
+
+        /// <summary>
+        /// Initializes a new instance of the <see cref="ReadV1ResponseResultsSummaryResultsSummary" /> class.
+        /// </summary>
+        /// <param name="text">
+        /// Example: The summary of the text submitted.
+        /// </param>
+#if NET7_0_OR_GREATER
+        [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
+#endif
+        public ReadV1ResponseResultsSummaryResultsSummary(
+            string? text)
+        {
+            this.Text = text;
+        }
+
+        /// <summary>
+        /// Initializes a new instance of the <see cref="ReadV1ResponseResultsSummaryResultsSummary" /> class.
+        /// </summary>
+        public ReadV1ResponseResultsSummaryResultsSummary()
+        {
+        }
+    }
+}
