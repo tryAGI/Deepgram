@@ -13,16 +13,19 @@ dotnet test src/tests/IntegrationTests/
 
 ## Auth
 
-Bearer token auth with Deepgram API key:
+Token auth with Deepgram API key (uses `Token` scheme, not `Bearer`):
 
 ```csharp
 var client = new DeepgramClient(apiKey); // DEEPGRAM_API_KEY env var
 ```
 
+**Important:** Deepgram uses `Authorization: Token <key>`, not `Authorization: Bearer <key>`. The `DeepgramClient.Auth.cs` extension overrides the generated Bearer scheme to Token via the `Authorized` partial method hook.
+
 ## Key Files
 
 - `src/libs/Deepgram/generate.sh` — Regeneration script (downloads spec from deepgram-api-specs, runs autosdk)
 - `src/libs/Deepgram/Generated/` — **Never edit** — auto-generated code
+- `src/libs/Deepgram/Extensions/DeepgramClient.Auth.cs` — Fixes auth scheme: Bearer → Token
 - `src/libs/Deepgram/Extensions/DeepgramClient.SpeechToTextClient.cs` — MEAI `ISpeechToTextClient` implementation
 - `src/tests/IntegrationTests/Tests.cs` — Test helper with bearer auth
 - `src/tests/IntegrationTests/Examples/` — Example tests (also generate docs)
@@ -34,6 +37,10 @@ var client = new DeepgramClient(apiKey); // DEEPGRAM_API_KEY env var
 - **Sub-client delegation:** `DeepgramClient.Listen.ListenV1MediaTranscribeAsync()`
 - **URL-only:** Audio URL provided via `RawRepresentationFactory` with `ListenV1RequestUrl`; throws `NotSupportedException` if no URL given
 - **Features:** Pre-recorded transcription, timestamps, language/model selection
+
+## Known Issues
+
+- **Bool query params:** Generated code serializes `bool` as `True`/`False` (C# default) in query strings, but Deepgram expects `true`/`false`. Avoid passing bool params like `punctuate`/`smartFormat` until AutoSDK fixes this.
 
 ## Spec Notes
 
