@@ -4,7 +4,6 @@ namespace Deepgram
 {
     public partial interface IManageClient
     {
-
         /// <summary>
         /// Get Project Balances<br/>
         /// Generates a list of outstanding balances for the specified project

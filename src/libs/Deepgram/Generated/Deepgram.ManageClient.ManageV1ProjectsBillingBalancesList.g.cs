@@ -21,7 +21,6 @@ namespace Deepgram
             global::System.Net.Http.HttpResponseMessage httpResponseMessage,
             ref string content);
 
-
         /// <summary>
         /// Get Project Balances<br/>
         /// Generates a list of outstanding balances for the specified project

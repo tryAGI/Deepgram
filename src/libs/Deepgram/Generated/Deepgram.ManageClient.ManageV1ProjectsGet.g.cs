@@ -25,7 +25,6 @@ namespace Deepgram
             global::System.Net.Http.HttpResponseMessage httpResponseMessage,
             ref string content);
 
-
         /// <summary>
         /// Get a Project<br/>
         /// Retrieves information about the specified project

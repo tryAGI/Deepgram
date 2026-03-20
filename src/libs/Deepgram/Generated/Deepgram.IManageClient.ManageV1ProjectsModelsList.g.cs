@@ -4,7 +4,6 @@ namespace Deepgram
 {
     public partial interface IManageClient
     {
-
         /// <summary>
         /// List Project Models<br/>
         /// Returns metadata on all the latest models that a specific project has access to, including non-public models

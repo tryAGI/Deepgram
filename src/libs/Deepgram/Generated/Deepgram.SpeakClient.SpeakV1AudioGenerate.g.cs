@@ -39,7 +39,6 @@ namespace Deepgram
             global::System.Net.Http.HttpResponseMessage httpResponseMessage,
             ref byte[] content);
 
-
         /// <summary>
         /// Text to Speech transformation<br/>
         /// Convert text into natural-sounding speech using Deepgram's TTS REST API
@@ -67,7 +66,6 @@ namespace Deepgram
         /// <param name="sampleRate">
         /// Default Value: 24000
         /// </param>
-
         /// <param name="request"></param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Deepgram.ApiException"></exception>
@@ -290,7 +288,6 @@ namespace Deepgram
                 }
             }
         }
-
         /// <summary>
         /// Text to Speech transformation<br/>
         /// Convert text into natural-sounding speech using Deepgram's TTS REST API

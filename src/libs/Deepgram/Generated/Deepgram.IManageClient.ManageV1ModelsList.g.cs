@@ -4,7 +4,6 @@ namespace Deepgram
 {
     public partial interface IManageClient
     {
-
         /// <summary>
         /// List Models<br/>
         /// Returns metadata on all the latest public models. To retrieve custom models, use Get Project Models.

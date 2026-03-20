@@ -4,7 +4,6 @@ namespace Deepgram
 {
     public partial interface IManageClient
     {
-
         /// <summary>
         /// List Project Invites<br/>
         /// Generates a list of invites for a specific project

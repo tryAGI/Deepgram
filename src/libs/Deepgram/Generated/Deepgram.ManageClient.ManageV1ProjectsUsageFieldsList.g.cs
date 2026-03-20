@@ -25,7 +25,6 @@ namespace Deepgram
             global::System.Net.Http.HttpResponseMessage httpResponseMessage,
             ref string content);
 
-
         /// <summary>
         /// List Project Usage Fields<br/>
         /// Lists the features, models, tags, languages, and processing method used for requests in the specified project

@@ -23,13 +23,11 @@ namespace Deepgram
             global::System.Net.Http.HttpResponseMessage httpResponseMessage,
             ref string content);
 
-
         /// <summary>
         /// Update a Project<br/>
         /// Updates the name or other properties of an existing project
         /// </summary>
         /// <param name="projectId"></param>
-
         /// <param name="request"></param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Deepgram.ApiException"></exception>
@@ -226,7 +224,6 @@ namespace Deepgram
                 }
             }
         }
-
         /// <summary>
         /// Update a Project<br/>
         /// Updates the name or other properties of an existing project

@@ -4,7 +4,6 @@ namespace Deepgram
 {
     public partial interface IManageClient
     {
-
         /// <summary>
         /// Delete a Project Member<br/>
         /// Removes a member from the project using their unique member ID

@@ -45,7 +45,6 @@ namespace Deepgram
             global::System.Net.Http.HttpResponseMessage httpResponseMessage,
             ref string content);
 
-
         /// <summary>
         /// Analyze text content<br/>
         /// Analyze text content using Deepgrams text analysis API
@@ -76,7 +75,6 @@ namespace Deepgram
         /// <param name="language">
         /// Default Value: en
         /// </param>
-
         /// <param name="request"></param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Deepgram.ApiException"></exception>
@@ -318,7 +316,6 @@ namespace Deepgram
                 }
             }
         }
-
         /// <summary>
         /// Analyze text content<br/>
         /// Analyze text content using Deepgrams text analysis API

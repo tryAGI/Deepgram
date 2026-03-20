@@ -4,7 +4,6 @@ namespace Deepgram
 {
     public partial interface IManageClient
     {
-
         /// <summary>
         /// Get a Project Request<br/>
         /// Retrieves a specific request for a specific project

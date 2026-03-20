@@ -21,7 +21,6 @@ namespace Deepgram
             global::System.Net.Http.HttpResponseMessage httpResponseMessage,
             ref string content);
 
-
         /// <summary>
         /// List Models<br/>
         /// Returns metadata on all the latest public models. To retrieve custom models, use Get Project Models.

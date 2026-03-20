@@ -4,7 +4,6 @@ namespace Deepgram
 {
     public partial interface IManageClient
     {
-
         /// <summary>
         /// Get a specific Model<br/>
         /// Returns metadata for a specific public model

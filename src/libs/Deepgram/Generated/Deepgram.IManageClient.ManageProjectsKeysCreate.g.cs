@@ -4,13 +4,11 @@ namespace Deepgram
 {
     public partial interface IManageClient
     {
-
         /// <summary>
         /// Create a Project Key<br/>
         /// Creates a new API key with specified settings for the project
         /// </summary>
         /// <param name="projectId"></param>
-
         /// <param name="request"></param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Deepgram.ApiException"></exception>
@@ -19,7 +17,6 @@ namespace Deepgram
 
             global::Deepgram.CreateKeyV1Request request,
             global::System.Threading.CancellationToken cancellationToken = default);
-
         /// <summary>
         /// Create a Project Key<br/>
         /// Creates a new API key with specified settings for the project

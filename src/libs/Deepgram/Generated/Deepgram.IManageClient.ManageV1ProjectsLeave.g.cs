@@ -4,7 +4,6 @@ namespace Deepgram
 {
     public partial interface IManageClient
     {
-
         /// <summary>
         /// Leave a Project<br/>
         /// Removes the authenticated account from the specific project

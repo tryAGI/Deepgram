@@ -4,7 +4,6 @@ namespace Deepgram
 {
     public partial interface IManageClient
     {
-
         /// <summary>
         /// List Project Member Scopes<br/>
         /// Retrieves a list of scopes for a specific member

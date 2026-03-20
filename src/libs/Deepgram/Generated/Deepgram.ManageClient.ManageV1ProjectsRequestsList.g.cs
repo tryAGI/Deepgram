@@ -41,7 +41,6 @@ namespace Deepgram
             global::System.Net.Http.HttpResponseMessage httpResponseMessage,
             ref string content);
 
-
         /// <summary>
         /// List Project Requests<br/>
         /// Generates a list of requests for a specific project

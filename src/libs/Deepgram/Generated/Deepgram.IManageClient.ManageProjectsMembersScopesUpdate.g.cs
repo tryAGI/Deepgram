@@ -4,14 +4,12 @@ namespace Deepgram
 {
     public partial interface IManageClient
     {
-
         /// <summary>
         /// Update Project Member Scopes<br/>
         /// Updates the scopes for a specific member
         /// </summary>
         /// <param name="projectId"></param>
         /// <param name="memberId"></param>
-
         /// <param name="request"></param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Deepgram.ApiException"></exception>
@@ -21,7 +19,6 @@ namespace Deepgram
 
             global::Deepgram.UpdateProjectMemberScopesV1Request request,
             global::System.Threading.CancellationToken cancellationToken = default);
-
         /// <summary>
         /// Update Project Member Scopes<br/>
         /// Updates the scopes for a specific member

@@ -4,7 +4,6 @@ namespace Deepgram
 {
     public partial interface IManageClient
     {
-
         /// <summary>
         /// List Project Purchases<br/>
         /// Returns the original purchased amount on an order transaction

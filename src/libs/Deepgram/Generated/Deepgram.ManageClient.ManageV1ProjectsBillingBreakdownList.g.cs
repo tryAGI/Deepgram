@@ -35,7 +35,6 @@ namespace Deepgram
             global::System.Net.Http.HttpResponseMessage httpResponseMessage,
             ref string content);
 
-
         /// <summary>
         /// Get Project Billing Breakdown<br/>
         /// Retrieves the billing summary for a specific project, with various filter options or by grouping options.
