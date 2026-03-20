@@ -46,8 +46,6 @@ public partial class DeepgramClient : ISpeechToTextClient
             model: modelId is not null
                 ? new OneOf<ListenV1MediaTranscribeModel2?, string>(modelId)
                 : default,
-            smartFormat: true,
-            punctuate: true,
             cancellationToken: cancellationToken).ConfigureAwait(false);
 
         var response = result.Value1
