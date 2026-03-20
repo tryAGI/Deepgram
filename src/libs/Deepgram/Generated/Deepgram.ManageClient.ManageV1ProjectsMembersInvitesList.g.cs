@@ -21,7 +21,6 @@ namespace Deepgram
             global::System.Net.Http.HttpResponseMessage httpResponseMessage,
             ref string content);
 
-
         /// <summary>
         /// List Project Invites<br/>
         /// Generates a list of invites for a specific project

@@ -4,7 +4,6 @@ namespace Deepgram
 {
     public partial interface IManageClient
     {
-
         /// <summary>
         /// Delete a Project Invite<br/>
         /// Deletes an invite for a specific project

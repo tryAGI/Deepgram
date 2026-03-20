@@ -4,7 +4,6 @@ namespace Deepgram
 {
     public partial interface IManageClient
     {
-
         /// <summary>
         /// Delete a Project Key<br/>
         /// Deletes an API key for a specific project

@@ -4,7 +4,6 @@ namespace Deepgram
 {
     public partial interface IManageClient
     {
-
         /// <summary>
         /// Get Project Billing Breakdown<br/>
         /// Retrieves the billing summary for a specific project, with various filter options or by grouping options.

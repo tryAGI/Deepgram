@@ -4,7 +4,6 @@ namespace Deepgram
 {
     public partial interface ISelfHostedClient
     {
-
         /// <summary>
         /// Delete a Project Self-Hosted Distribution Credential<br/>
         /// Deletes a set of distribution credentials for the specified project

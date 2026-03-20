@@ -4,7 +4,6 @@ namespace Deepgram
 {
     public partial interface IManageClient
     {
-
         /// <summary>
         /// List Project Keys<br/>
         /// Retrieves all API keys associated with the specified project

@@ -4,7 +4,6 @@ namespace Deepgram
 {
     public partial interface ISelfHostedClient
     {
-
         /// <summary>
         /// Get a Project Self-Hosted Distribution Credential<br/>
         /// Returns a set of distribution credentials for the specified project

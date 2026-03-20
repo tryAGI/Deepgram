@@ -27,7 +27,6 @@ namespace Deepgram
             global::System.Net.Http.HttpResponseMessage httpResponseMessage,
             ref string content);
 
-
         /// <summary>
         /// Create a Project Self-Hosted Distribution Credential<br/>
         /// Creates a set of distribution credentials for the specified project
@@ -39,7 +38,6 @@ namespace Deepgram
         /// Default Value: quay
         /// </param>
         /// <param name="projectId"></param>
-
         /// <param name="request"></param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Deepgram.ApiException"></exception>
@@ -246,7 +244,6 @@ namespace Deepgram
                 }
             }
         }
-
         /// <summary>
         /// Create a Project Self-Hosted Distribution Credential<br/>
         /// Creates a set of distribution credentials for the specified project

@@ -21,7 +21,6 @@ namespace Deepgram
             global::System.Net.Http.HttpResponseMessage httpResponseMessage,
             ref string content);
 
-
         /// <summary>
         /// List Project Self-Hosted Distribution Credentials<br/>
         /// Lists sets of distribution credentials for the specified project

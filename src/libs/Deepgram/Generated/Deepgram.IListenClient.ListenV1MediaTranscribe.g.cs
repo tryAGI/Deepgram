@@ -4,7 +4,6 @@ namespace Deepgram
 {
     public partial interface IListenClient
     {
-
         /// <summary>
         /// Transcribe and analyze pre-recorded audio and video<br/>
         /// Transcribe audio and video using Deepgram's speech-to-text REST API
@@ -94,7 +93,6 @@ namespace Deepgram
         /// <param name="mipOptOut">
         /// Default Value: false
         /// </param>
-
         /// <param name="request"></param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Deepgram.ApiException"></exception>
@@ -138,7 +136,6 @@ namespace Deepgram
             global::Deepgram.OneOf<global::Deepgram.ListenV1MediaTranscribeVersion2?, string>? version = default,
             bool? mipOptOut = default,
             global::System.Threading.CancellationToken cancellationToken = default);
-
         /// <summary>
         /// Transcribe and analyze pre-recorded audio and video<br/>
         /// Transcribe audio and video using Deepgram's speech-to-text REST API

@@ -4,7 +4,6 @@ namespace Deepgram
 {
     public partial interface IAgentClient
     {
-
         /// <summary>
         /// List Agent Think Models<br/>
         /// Retrieves the available think models that can be used for AI agent processing

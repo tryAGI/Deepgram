@@ -23,7 +23,6 @@ namespace Deepgram
             global::System.Net.Http.HttpResponseMessage httpResponseMessage,
             ref string content);
 
-
         /// <summary>
         /// Get a Project Key<br/>
         /// Retrieves information about a specified API key

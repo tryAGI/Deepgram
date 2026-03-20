@@ -23,7 +23,6 @@ namespace Deepgram
             global::System.Net.Http.HttpResponseMessage httpResponseMessage,
             ref string content);
 
-
         /// <summary>
         /// Delete a Project Self-Hosted Distribution Credential<br/>
         /// Deletes a set of distribution credentials for the specified project

@@ -23,7 +23,6 @@ namespace Deepgram
             global::System.Net.Http.HttpResponseMessage httpResponseMessage,
             ref string content);
 
-
         /// <summary>
         /// Get a Project Balance<br/>
         /// Retrieves details about the specified balance

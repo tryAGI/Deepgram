@@ -21,7 +21,6 @@ namespace Deepgram
             global::System.Net.Http.HttpResponseMessage httpResponseMessage,
             ref string content);
 
-
         /// <summary>
         /// List Project Members<br/>
         /// Retrieves a list of members for a given project

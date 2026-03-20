@@ -4,7 +4,6 @@ namespace Deepgram
 {
     public partial interface IReadClient
     {
-
         /// <summary>
         /// Analyze text content<br/>
         /// Analyze text content using Deepgrams text analysis API
@@ -35,7 +34,6 @@ namespace Deepgram
         /// <param name="language">
         /// Default Value: en
         /// </param>
-
         /// <param name="request"></param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Deepgram.ApiException"></exception>
@@ -55,7 +53,6 @@ namespace Deepgram
             global::Deepgram.ReadV1TextAnalyzeCustomIntentMode? customIntentMode = default,
             string? language = default,
             global::System.Threading.CancellationToken cancellationToken = default);
-
         /// <summary>
         /// Analyze text content<br/>
         /// Analyze text content using Deepgrams text analysis API

@@ -23,7 +23,6 @@ namespace Deepgram
             global::System.Net.Http.HttpResponseMessage httpResponseMessage,
             ref string content);
 
-
         /// <summary>
         /// Delete a Project Member<br/>
         /// Removes a member from the project using their unique member ID

@@ -23,7 +23,6 @@ namespace Deepgram
             global::System.Net.Http.HttpResponseMessage httpResponseMessage,
             ref string content);
 
-
         /// <summary>
         /// List Project Models<br/>
         /// Returns metadata on all the latest models that a specific project has access to, including non-public models

@@ -4,7 +4,6 @@ namespace Deepgram
 {
     public partial interface IManageClient
     {
-
         /// <summary>
         /// List Project Usage Fields<br/>
         /// Lists the features, models, tags, languages, and processing method used for requests in the specified project
