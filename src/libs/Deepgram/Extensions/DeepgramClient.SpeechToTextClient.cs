@@ -40,7 +40,7 @@ public partial class DeepgramClient : ISpeechToTextClient
         string? language = options?.SpeechLanguage;
         string? modelId = options?.ModelId;
 
-        var result = await Listen.ListenV1MediaTranscribeAsync(
+        var result = await Listen.TranscribeAsync(
             request: request,
             language: language,
             model: modelId is not null

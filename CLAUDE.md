@@ -34,7 +34,7 @@ var client = new DeepgramClient(apiKey); // DEEPGRAM_API_KEY env var
 
 - **Interface:** `ISpeechToTextClient`
 - **Namespace conflict:** No — uses `using Microsoft.Extensions.AI;` directly
-- **Sub-client delegation:** `DeepgramClient.Listen.ListenV1MediaTranscribeAsync()`
+- **Sub-client delegation:** `DeepgramClient.Listen.TranscribeAsync()`
 - **URL-only:** Audio URL provided via `RawRepresentationFactory` with `ListenV1RequestUrl`; throws `NotSupportedException` if no URL given
 - **Features:** Pre-recorded transcription, timestamps, language/model selection
 
