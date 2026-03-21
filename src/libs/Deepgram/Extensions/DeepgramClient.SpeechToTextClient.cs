@@ -148,9 +148,9 @@ public partial class DeepgramClient : ISpeechToTextClient
         string? responseId = null;
         await foreach (var serverEvent in realtimeClient.ReceiveUpdatesAsync(cancellationToken).ConfigureAwait(false))
         {
-            if (serverEvent.IsListenV1MetadataEvent && serverEvent.ListenV1MetadataEvent is { } metadata)
+            if (serverEvent.IsMetadata && serverEvent.Metadata is { } metadata)
             {
-                responseId = metadata.RequestId?.ToString();
+                responseId = metadata.RequestId.ToString();
                 yield return new SpeechToTextResponseUpdate
                 {
                     Kind = SpeechToTextResponseUpdateKind.SessionOpen,
@@ -158,9 +158,9 @@ public partial class DeepgramClient : ISpeechToTextClient
                     RawRepresentation = metadata,
                 };
             }
-            else if (serverEvent.IsListenV1ResultsEvent && serverEvent.ListenV1ResultsEvent is { } results)
+            else if (serverEvent.IsResults && serverEvent.Results is { } results)
             {
-                responseId ??= results.Metadata?.RequestId;
+                responseId ??= results.Metadata.RequestId;
 
                 string transcript = results.Channel?.Alternatives is { Count: > 0 } alts
                     ? alts[0].Transcript ?? string.Empty
