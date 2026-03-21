@@ -38,6 +38,15 @@ namespace Deepgram
 
 
         /// <summary>
+        /// AI agent operations
+        /// </summary>
+        public AgentClient Agent => new AgentClient(HttpClient, authorizations: Authorizations)
+        {
+            ReadResponseAsString = ReadResponseAsString,
+            JsonSerializerContext = JsonSerializerContext,
+        };
+
+        /// <summary>
         /// Authentication operations
         /// </summary>
         public AuthClient Auth => new AuthClient(HttpClient, authorizations: Authorizations)
@@ -56,24 +65,6 @@ namespace Deepgram
         };
 
         /// <summary>
-        /// Text analysis
-        /// </summary>
-        public ReadClient Read => new ReadClient(HttpClient, authorizations: Authorizations)
-        {
-            ReadResponseAsString = ReadResponseAsString,
-            JsonSerializerContext = JsonSerializerContext,
-        };
-
-        /// <summary>
-        /// Text-to-speech generation
-        /// </summary>
-        public SpeakClient Speak => new SpeakClient(HttpClient, authorizations: Authorizations)
-        {
-            ReadResponseAsString = ReadResponseAsString,
-            JsonSerializerContext = JsonSerializerContext,
-        };
-
-        /// <summary>
         /// Project and account management
         /// </summary>
         public ManageClient Manage => new ManageClient(HttpClient, authorizations: Authorizations)
@@ -83,9 +74,9 @@ namespace Deepgram
         };
 
         /// <summary>
-        /// AI agent operations
+        /// Text analysis
         /// </summary>
-        public AgentClient Agent => new AgentClient(HttpClient, authorizations: Authorizations)
+        public ReadClient Read => new ReadClient(HttpClient, authorizations: Authorizations)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -95,6 +86,15 @@ namespace Deepgram
         /// On-premise deployments
         /// </summary>
         public SelfHostedClient SelfHosted => new SelfHostedClient(HttpClient, authorizations: Authorizations)
+        {
+            ReadResponseAsString = ReadResponseAsString,
+            JsonSerializerContext = JsonSerializerContext,
+        };
+
+        /// <summary>
+        /// Text-to-speech generation
+        /// </summary>
+        public SpeakClient Speak => new SpeakClient(HttpClient, authorizations: Authorizations)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
