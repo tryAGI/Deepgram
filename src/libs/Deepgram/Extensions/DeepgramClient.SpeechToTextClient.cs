@@ -118,7 +118,7 @@ public partial class DeepgramClient : ISpeechToTextClient
         // Create and configure the WebSocket client.
         await using var realtimeClient = new Realtime.DeepgramListenV1RealtimeClient();
         realtimeClient.AuthorizeUsingToken(apiKey);
-        await realtimeClient.ConnectAsync(uriBuilder.Uri, cancellationToken).ConfigureAwait(false);
+        await realtimeClient.ConnectAsync(uri: uriBuilder.Uri, cancellationToken: cancellationToken).ConfigureAwait(false);
 
         // Start sending audio in a background task.
         var sendTask = Task.Run(async () =>
