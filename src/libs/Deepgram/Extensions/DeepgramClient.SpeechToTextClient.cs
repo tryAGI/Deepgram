@@ -135,9 +135,12 @@ public partial class DeepgramClient : ISpeechToTextClient
                     cancellationToken).ConfigureAwait(false);
             }
 
-            // Signal end of audio.
-            await realtimeClient.SendCloseStreamAsync(
-                new Realtime.CloseStreamPayload(),
+            // Signal end of audio using the control message (Finalize/CloseStream/KeepAlive).
+            await realtimeClient.SendListenV1CloseStreamAsync(
+                new Realtime.ListenV1ControlMessage
+                {
+                    Type = Realtime.ListenV1ControlMessageType.CloseStream,
+                },
                 cancellationToken).ConfigureAwait(false);
         }, cancellationToken);
 
@@ -145,9 +148,9 @@ public partial class DeepgramClient : ISpeechToTextClient
         string? responseId = null;
         await foreach (var serverEvent in realtimeClient.ReceiveUpdatesAsync(cancellationToken).ConfigureAwait(false))
         {
-            if (serverEvent.IsMetadata && serverEvent.Metadata is { } metadata)
+            if (serverEvent.IsListenV1MetadataEvent && serverEvent.ListenV1MetadataEvent is { } metadata)
             {
-                responseId = metadata.RequestId.ToString();
+                responseId = metadata.RequestId?.ToString();
                 yield return new SpeechToTextResponseUpdate
                 {
                     Kind = SpeechToTextResponseUpdateKind.SessionOpen,
@@ -155,11 +158,11 @@ public partial class DeepgramClient : ISpeechToTextClient
                     RawRepresentation = metadata,
                 };
             }
-            else if (serverEvent.IsResults && serverEvent.Results is { } results)
+            else if (serverEvent.IsListenV1ResultsEvent && serverEvent.ListenV1ResultsEvent is { } results)
             {
-                responseId ??= results.Metadata.RequestId;
+                responseId ??= results.Metadata?.RequestId;
 
-                string transcript = results.Channel.Alternatives is { Count: > 0 } alts
+                string transcript = results.Channel?.Alternatives is { Count: > 0 } alts
                     ? alts[0].Transcript ?? string.Empty
                     : string.Empty;
 

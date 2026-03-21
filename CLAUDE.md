@@ -2,7 +2,7 @@
 
 ## Overview
 
-Auto-generated C# SDK for [Deepgram](https://deepgram.com/) — speech-to-text, text-to-speech, text analysis, models, projects, and billing. Includes both REST (OpenAPI) and WebSocket (AsyncAPI) clients.
+Auto-generated C# SDK for [Deepgram](https://deepgram.com/) — speech-to-text, text-to-speech, text analysis, voice agents, models, projects, and billing. Includes both REST (OpenAPI) and WebSocket (AsyncAPI) clients.
 
 ## Build & Test
 
@@ -23,53 +23,73 @@ var client = new DeepgramClient(apiKey); // DEEPGRAM_API_KEY env var
 
 ## Key Files
 
-- `src/libs/Deepgram/generate.sh` — Regeneration script (OpenAPI + AsyncAPI)
-- `src/libs/Deepgram/asyncapi.json` — Curated multi-channel AsyncAPI 3.0.0 spec (ListenV1 + ListenV2)
+- `src/libs/Deepgram/generate.sh` — Regeneration script (OpenAPI + upstream AsyncAPI)
 - `src/libs/Deepgram/Generated/` — **Never edit** — auto-generated code
 - `src/libs/Deepgram/Extensions/DeepgramClient.Auth.cs` — REST auth fix: Bearer → Token
-- `src/libs/Deepgram/Extensions/DeepgramRealtimeClient.Auth.cs` — WebSocket auth fix: Token scheme (ListenV1 + ListenV2)
+- `src/libs/Deepgram/Extensions/DeepgramRealtimeClient.Auth.cs` — WebSocket auth fix: Token scheme (all 4 channels)
 - `src/libs/Deepgram/Extensions/DeepgramClient.SpeechToTextClient.cs` — MEAI `ISpeechToTextClient` implementation
 - `src/tests/IntegrationTests/Tests.cs` — Test helper with bearer auth
 - `src/tests/IntegrationTests/Examples/` — Example tests (also generate docs)
 
-## Multi-Spec Architecture
+## Multi-Spec Architecture (4 Channels)
 
 This SDK uses both OpenAPI and AsyncAPI specs:
 
 | Spec | Namespace | Client(s) | Purpose |
 |------|-----------|-----------|---------|
 | OpenAPI (`openapi.yaml`) | `Deepgram` | `DeepgramClient` | REST API: pre-recorded transcription, TTS, models, billing |
-| AsyncAPI (`asyncapi.json`) | `Deepgram.Realtime` | `DeepgramListenV1RealtimeClient`, `DeepgramListenV2RealtimeClient` | WebSocket: real-time streaming STT |
+| AsyncAPI (upstream `asyncapi.yml`) | `Deepgram.Realtime` | `DeepgramSpeakV1RealtimeClient`, `DeepgramListenV1RealtimeClient`, `DeepgramListenV2RealtimeClient`, `DeepgramAgentV1RealtimeClient` | WebSocket: real-time streaming |
 
-The AsyncAPI spec is a **curated multi-channel extract** from Deepgram's upstream spec (`asyncapi.yml`). It covers ListenV1 (classic STT, `enum` discriminators) and ListenV2 (Flux conversational STT, `const` discriminators). The upstream spec has 4 channels (SpeakV1, ListenV1, ListenV2, AgentV1); SpeakV1 and AgentV1 can be added later.
+The AsyncAPI spec is **fetched directly from Deepgram's upstream repo** (`asyncapi.yml`). AutoSDK natively handles:
+- **Inline message payloads** → automatically extracted to component schemas
+- **Per-channel server refs** → AgentV1 uses `agent.deepgram.com`, others use `api.deepgram.com`
+- **operationTraits** → parsed for spec compliance
+
+### SpeakV1 Client (`DeepgramSpeakV1RealtimeClient`)
+
+Text-to-speech streaming:
+- `SendSpeakV1TextAsync()` — send text for TTS
+- `SendSpeakV1FlushAsync()` — flush buffer, receive final audio
+- `SendSpeakV1ClearAsync()` — clear buffer
+- `SendSpeakV1CloseAsync()` — close gracefully
+- `ReceiveUpdatesAsync()` → audio chunks, metadata, control events, warnings
 
 ### ListenV1 Client (`DeepgramListenV1RealtimeClient`)
 
 Classic speech-to-text streaming:
 - `ConnectAsync(Uri?)` — connect to WebSocket endpoint
 - `SendAsync(bytes)` — send binary audio frames
-- `SendFinalizeAsync()` — flush transcription buffer
-- `SendCloseStreamAsync()` — close stream gracefully
-- `SendKeepAliveAsync()` — keep connection alive
+- `SendListenV1FinalizeAsync()` — flush transcription buffer
+- `SendListenV1CloseStreamAsync()` — close stream gracefully
+- `SendListenV1KeepAliveAsync()` — keep connection alive
 - `ReceiveUpdatesAsync()` → `IAsyncEnumerable<ListenV1ServerEvent>` — discriminated union with:
-  - `IsResults` → `ResultsPayload` (transcript, is_final, speech_final, words, confidence)
-  - `IsMetadata` → `MetadataPayload` (request_id, duration, channels)
-  - `IsUtteranceEnd` → `UtteranceEndPayload` (last_word_end)
-  - `IsSpeechStarted` → `SpeechStartedPayload` (timestamp)
+  - `IsListenV1ResultsEvent` → transcript, is_final, speech_final, words, confidence
+  - `IsListenV1MetadataEvent` → request_id, duration, channels
+  - `IsListenV1UtteranceEndEvent` → last_word_end
+  - `IsListenV1SpeechStartedEvent` → timestamp
 
 ### ListenV2 Client (`DeepgramListenV2RealtimeClient`)
 
 Flux conversational STT with contextual turn detection:
 - `ConnectAsync(Uri?)` — connect to WebSocket endpoint
 - `SendAsync(bytes)` — send binary audio frames
-- `SendV2CloseStreamAsync()` — close stream
-- `ReceiveUpdatesAsync()` → `IAsyncEnumerable<ListenV2ServerEvent>` — discriminated union with:
-  - `IsConnectedPayload` → `V2ConnectedPayload` (request_id, sequence_id)
-  - `IsTurnInfoPayload` → `V2TurnInfoPayload` (transcript, words, event, turn_index, end_of_turn_confidence)
-  - `IsConfigureSuccessPayload` → `V2ConfigureSuccessPayload`
-  - `IsConfigureFailurePayload` → `V2ConfigureFailurePayload`
+- `SendListenV2CloseStreamAsync()` — close stream
+- `SendListenV2ConfigureAsync()` — update Flux settings
+- `ReceiveUpdatesAsync()` → discriminated union with:
+  - `IsListenV2ConnectedEvent` → request_id, sequence_id
+  - `IsListenV2TurnInfoEvent` → transcript, words, event, turn_index, end_of_turn_confidence
+  - `IsListenV2ConfigureSuccessEvent` / `IsListenV2ConfigureFailureEvent`
+  - `IsListenV2FatalErrorEvent`
 
-**Note:** ListenV2 uses `const` discriminators (e.g., `const: "TurnInfo"`) instead of `enum`, supported by AutoSDK's const discriminator feature.
+### AgentV1 Client (`DeepgramAgentV1RealtimeClient`)
+
+Voice agent channel (uses `agent.deepgram.com`):
+- `SendAgentV1SettingsAsync()` — configure agent
+- `SendAgentV1UpdateSpeakAsync()` / `SendAgentV1UpdateThinkAsync()` — update agent behavior
+- `SendAgentV1InjectUserMessageAsync()` / `SendAgentV1InjectAgentMessageAsync()`
+- `SendAgentV1FunctionCallResponseAsync()` — respond to function calls
+- `SendAgentV1KeepAliveAsync()` — keep alive
+- `ReceiveUpdatesAsync()` → welcome, settings applied, conversation text, thinking, function calls, audio, errors, warnings
 
 ## MEAI Integration
 
@@ -86,7 +106,7 @@ Flux conversational STT with contextual turn detection:
 ## Spec Notes
 
 - OpenAPI spec: `https://raw.githubusercontent.com/deepgram/deepgram-api-specs/main/openapi.yml` (3.1.0)
-- AsyncAPI upstream: `https://raw.githubusercontent.com/deepgram/deepgram-api-specs/main/asyncapi.yml` (3.0.0)
+- AsyncAPI spec: `https://raw.githubusercontent.com/deepgram/deepgram-api-specs/main/asyncapi.yml` (3.0.0) — used directly (upstream)
 - Note: Official .NET SDK exists (`Deepgram` on NuGet) but lacks MEAI integration
 
 ## NuGet

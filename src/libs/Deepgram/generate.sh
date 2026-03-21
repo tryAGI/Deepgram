@@ -34,10 +34,25 @@ autosdk generate openapi.yaml \
   --output Generated \
   --exclude-deprecated-operations
 
-# Generate WebSocket clients from AsyncAPI spec (ListenV1 + ListenV2 channels)
-# Uses a curated multi-channel asyncapi.json checked into the repo (derived from
-# Deepgram's upstream asyncapi.yml but simplified for AutoSDK compatibility).
-# ListenV2 (Flux) uses const discriminators; ListenV1 uses enum discriminators.
+# Generate WebSocket clients from upstream AsyncAPI spec (4 channels:
+# SpeakV1, ListenV1, ListenV2, AgentV1). AutoSDK natively handles:
+# - Inline message payloads → extracted to component schemas automatically
+# - Per-channel server refs → AgentV1 uses agent.deepgram.com
+# - operationTraits → parsed for spec compliance
+curl -sL "https://raw.githubusercontent.com/deepgram/deepgram-api-specs/main/asyncapi.yml" -o asyncapi.yaml
+
+# Fix auth: convert httpApiKey to http/bearer, remove JwtAuth
+yq -i '
+  .components.securitySchemes.ApiKeyAuth = {
+    "type": "http",
+    "scheme": "bearer"
+  } |
+  del(.components.securitySchemes.JwtAuth)
+' asyncapi.yaml
+
+# Convert YAML to JSON for reliable parsing
+yq -o json asyncapi.yaml > asyncapi.json
+
 autosdk generate asyncapi.json \
   --namespace Deepgram.Realtime \
   --websocket-class-name DeepgramRealtimeClient \
