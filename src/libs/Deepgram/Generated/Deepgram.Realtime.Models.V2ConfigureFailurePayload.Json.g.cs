@@ -2,7 +2,7 @@
 
 namespace Deepgram.Realtime
 {
-    public readonly partial struct ServerEvent
+    public sealed partial class V2ConfigureFailurePayload
     {
         /// <summary>
         /// Serializes the current instance to a JSON string using the provided JsonSerializerContext.
@@ -34,14 +34,14 @@ namespace Deepgram.Realtime
         /// <summary>
         /// Deserializes a JSON string using the provided JsonSerializerContext.
         /// </summary>
-        public static global::Deepgram.Realtime.ServerEvent? FromJson(
+        public static global::Deepgram.Realtime.V2ConfigureFailurePayload? FromJson(
             string json,
             global::System.Text.Json.Serialization.JsonSerializerContext jsonSerializerContext)
         {
             return global::System.Text.Json.JsonSerializer.Deserialize(
                 json,
-                typeof(global::Deepgram.Realtime.ServerEvent),
-                jsonSerializerContext) as global::Deepgram.Realtime.ServerEvent?;
+                typeof(global::Deepgram.Realtime.V2ConfigureFailurePayload),
+                jsonSerializerContext) as global::Deepgram.Realtime.V2ConfigureFailurePayload;
         }
 
         /// <summary>
@@ -51,11 +51,11 @@ namespace Deepgram.Realtime
         [global::System.Diagnostics.CodeAnalysis.RequiresUnreferencedCode("JSON serialization and deserialization might require types that cannot be statically analyzed. Use the overload that takes a JsonTypeInfo or JsonSerializerContext, or make sure all of the required types are preserved.")]
         [global::System.Diagnostics.CodeAnalysis.RequiresDynamicCode("JSON serialization and deserialization might require types that cannot be statically analyzed and might need runtime code generation. Use System.Text.Json source generation for native AOT applications.")]
 #endif
-        public static global::Deepgram.Realtime.ServerEvent? FromJson(
+        public static global::Deepgram.Realtime.V2ConfigureFailurePayload? FromJson(
             string json,
             global::System.Text.Json.JsonSerializerOptions? jsonSerializerOptions = null)
         {
-            return global::System.Text.Json.JsonSerializer.Deserialize<global::Deepgram.Realtime.ServerEvent>(
+            return global::System.Text.Json.JsonSerializer.Deserialize<global::Deepgram.Realtime.V2ConfigureFailurePayload>(
                 json,
                 jsonSerializerOptions);
         }
@@ -63,14 +63,14 @@ namespace Deepgram.Realtime
         /// <summary>
         /// Deserializes a JSON stream using the provided JsonSerializerContext.
         /// </summary>
-        public static async global::System.Threading.Tasks.ValueTask<global::Deepgram.Realtime.ServerEvent?> FromJsonStreamAsync(
+        public static async global::System.Threading.Tasks.ValueTask<global::Deepgram.Realtime.V2ConfigureFailurePayload?> FromJsonStreamAsync(
             global::System.IO.Stream jsonStream,
             global::System.Text.Json.Serialization.JsonSerializerContext jsonSerializerContext)
         {
             return (await global::System.Text.Json.JsonSerializer.DeserializeAsync(
                 jsonStream,
-                typeof(global::Deepgram.Realtime.ServerEvent),
-                jsonSerializerContext).ConfigureAwait(false)) as global::Deepgram.Realtime.ServerEvent?;
+                typeof(global::Deepgram.Realtime.V2ConfigureFailurePayload),
+                jsonSerializerContext).ConfigureAwait(false)) as global::Deepgram.Realtime.V2ConfigureFailurePayload;
         }
 
         /// <summary>
@@ -80,11 +80,11 @@ namespace Deepgram.Realtime
         [global::System.Diagnostics.CodeAnalysis.RequiresUnreferencedCode("JSON serialization and deserialization might require types that cannot be statically analyzed. Use the overload that takes a JsonTypeInfo or JsonSerializerContext, or make sure all of the required types are preserved.")]
         [global::System.Diagnostics.CodeAnalysis.RequiresDynamicCode("JSON serialization and deserialization might require types that cannot be statically analyzed and might need runtime code generation. Use System.Text.Json source generation for native AOT applications.")]
 #endif
-        public static global::System.Threading.Tasks.ValueTask<global::Deepgram.Realtime.ServerEvent?> FromJsonStreamAsync(
+        public static global::System.Threading.Tasks.ValueTask<global::Deepgram.Realtime.V2ConfigureFailurePayload?> FromJsonStreamAsync(
             global::System.IO.Stream jsonStream,
             global::System.Text.Json.JsonSerializerOptions? jsonSerializerOptions = null)
         {
-            return global::System.Text.Json.JsonSerializer.DeserializeAsync<global::Deepgram.Realtime.ServerEvent?>(
+            return global::System.Text.Json.JsonSerializer.DeserializeAsync<global::Deepgram.Realtime.V2ConfigureFailurePayload?>(
                 jsonStream,
                 jsonSerializerOptions);
         }

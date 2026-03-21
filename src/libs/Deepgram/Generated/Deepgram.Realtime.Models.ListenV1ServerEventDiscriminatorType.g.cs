@@ -6,7 +6,7 @@ namespace Deepgram.Realtime
     /// <summary>
     /// 
     /// </summary>
-    public enum ServerEventDiscriminatorType
+    public enum ListenV1ServerEventDiscriminatorType
     {
         /// <summary>
         /// 
@@ -29,33 +29,33 @@ namespace Deepgram.Realtime
     /// <summary>
     /// Enum extensions to do fast conversions without the reflection.
     /// </summary>
-    public static class ServerEventDiscriminatorTypeExtensions
+    public static class ListenV1ServerEventDiscriminatorTypeExtensions
     {
         /// <summary>
         /// Converts an enum to a string.
         /// </summary>
-        public static string ToValueString(this ServerEventDiscriminatorType value)
+        public static string ToValueString(this ListenV1ServerEventDiscriminatorType value)
         {
             return value switch
             {
-                ServerEventDiscriminatorType.Results => "Results",
-                ServerEventDiscriminatorType.Metadata => "Metadata",
-                ServerEventDiscriminatorType.UtteranceEnd => "UtteranceEnd",
-                ServerEventDiscriminatorType.SpeechStarted => "SpeechStarted",
+                ListenV1ServerEventDiscriminatorType.Results => "Results",
+                ListenV1ServerEventDiscriminatorType.Metadata => "Metadata",
+                ListenV1ServerEventDiscriminatorType.UtteranceEnd => "UtteranceEnd",
+                ListenV1ServerEventDiscriminatorType.SpeechStarted => "SpeechStarted",
                 _ => throw new global::System.ArgumentOutOfRangeException(nameof(value), value, null),
             };
         }
         /// <summary>
         /// Converts an string to a enum.
         /// </summary>
-        public static ServerEventDiscriminatorType? ToEnum(string value)
+        public static ListenV1ServerEventDiscriminatorType? ToEnum(string value)
         {
             return value switch
             {
-                "Results" => ServerEventDiscriminatorType.Results,
-                "Metadata" => ServerEventDiscriminatorType.Metadata,
-                "UtteranceEnd" => ServerEventDiscriminatorType.UtteranceEnd,
-                "SpeechStarted" => ServerEventDiscriminatorType.SpeechStarted,
+                "Results" => ListenV1ServerEventDiscriminatorType.Results,
+                "Metadata" => ListenV1ServerEventDiscriminatorType.Metadata,
+                "UtteranceEnd" => ListenV1ServerEventDiscriminatorType.UtteranceEnd,
+                "SpeechStarted" => ListenV1ServerEventDiscriminatorType.SpeechStarted,
                 _ => null,
             };
         }

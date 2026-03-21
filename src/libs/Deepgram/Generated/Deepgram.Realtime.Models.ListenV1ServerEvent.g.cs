@@ -7,12 +7,12 @@ namespace Deepgram.Realtime
     /// <summary>
     /// 
     /// </summary>
-    public readonly partial struct ServerEvent : global::System.IEquatable<ServerEvent>
+    public readonly partial struct ListenV1ServerEvent : global::System.IEquatable<ListenV1ServerEvent>
     {
         /// <summary>
         /// 
         /// </summary>
-        public global::Deepgram.Realtime.ServerEventDiscriminatorType? Type { get; }
+        public global::Deepgram.Realtime.ListenV1ServerEventDiscriminatorType? Type { get; }
 
         /// <summary>
         /// 
@@ -84,17 +84,17 @@ namespace Deepgram.Realtime
         /// <summary>
         /// 
         /// </summary>
-        public static implicit operator ServerEvent(global::Deepgram.Realtime.ResultsPayload value) => new ServerEvent((global::Deepgram.Realtime.ResultsPayload?)value);
+        public static implicit operator ListenV1ServerEvent(global::Deepgram.Realtime.ResultsPayload value) => new ListenV1ServerEvent((global::Deepgram.Realtime.ResultsPayload?)value);
 
         /// <summary>
         /// 
         /// </summary>
-        public static implicit operator global::Deepgram.Realtime.ResultsPayload?(ServerEvent @this) => @this.Results;
+        public static implicit operator global::Deepgram.Realtime.ResultsPayload?(ListenV1ServerEvent @this) => @this.Results;
 
         /// <summary>
         /// 
         /// </summary>
-        public ServerEvent(global::Deepgram.Realtime.ResultsPayload? value)
+        public ListenV1ServerEvent(global::Deepgram.Realtime.ResultsPayload? value)
         {
             Results = value;
         }
@@ -102,17 +102,17 @@ namespace Deepgram.Realtime
         /// <summary>
         /// 
         /// </summary>
-        public static implicit operator ServerEvent(global::Deepgram.Realtime.MetadataPayload value) => new ServerEvent((global::Deepgram.Realtime.MetadataPayload?)value);
+        public static implicit operator ListenV1ServerEvent(global::Deepgram.Realtime.MetadataPayload value) => new ListenV1ServerEvent((global::Deepgram.Realtime.MetadataPayload?)value);
 
         /// <summary>
         /// 
         /// </summary>
-        public static implicit operator global::Deepgram.Realtime.MetadataPayload?(ServerEvent @this) => @this.Metadata;
+        public static implicit operator global::Deepgram.Realtime.MetadataPayload?(ListenV1ServerEvent @this) => @this.Metadata;
 
         /// <summary>
         /// 
         /// </summary>
-        public ServerEvent(global::Deepgram.Realtime.MetadataPayload? value)
+        public ListenV1ServerEvent(global::Deepgram.Realtime.MetadataPayload? value)
         {
             Metadata = value;
         }
@@ -120,17 +120,17 @@ namespace Deepgram.Realtime
         /// <summary>
         /// 
         /// </summary>
-        public static implicit operator ServerEvent(global::Deepgram.Realtime.UtteranceEndPayload value) => new ServerEvent((global::Deepgram.Realtime.UtteranceEndPayload?)value);
+        public static implicit operator ListenV1ServerEvent(global::Deepgram.Realtime.UtteranceEndPayload value) => new ListenV1ServerEvent((global::Deepgram.Realtime.UtteranceEndPayload?)value);
 
         /// <summary>
         /// 
         /// </summary>
-        public static implicit operator global::Deepgram.Realtime.UtteranceEndPayload?(ServerEvent @this) => @this.UtteranceEnd;
+        public static implicit operator global::Deepgram.Realtime.UtteranceEndPayload?(ListenV1ServerEvent @this) => @this.UtteranceEnd;
 
         /// <summary>
         /// 
         /// </summary>
-        public ServerEvent(global::Deepgram.Realtime.UtteranceEndPayload? value)
+        public ListenV1ServerEvent(global::Deepgram.Realtime.UtteranceEndPayload? value)
         {
             UtteranceEnd = value;
         }
@@ -138,17 +138,17 @@ namespace Deepgram.Realtime
         /// <summary>
         /// 
         /// </summary>
-        public static implicit operator ServerEvent(global::Deepgram.Realtime.SpeechStartedPayload value) => new ServerEvent((global::Deepgram.Realtime.SpeechStartedPayload?)value);
+        public static implicit operator ListenV1ServerEvent(global::Deepgram.Realtime.SpeechStartedPayload value) => new ListenV1ServerEvent((global::Deepgram.Realtime.SpeechStartedPayload?)value);
 
         /// <summary>
         /// 
         /// </summary>
-        public static implicit operator global::Deepgram.Realtime.SpeechStartedPayload?(ServerEvent @this) => @this.SpeechStarted;
+        public static implicit operator global::Deepgram.Realtime.SpeechStartedPayload?(ListenV1ServerEvent @this) => @this.SpeechStarted;
 
         /// <summary>
         /// 
         /// </summary>
-        public ServerEvent(global::Deepgram.Realtime.SpeechStartedPayload? value)
+        public ListenV1ServerEvent(global::Deepgram.Realtime.SpeechStartedPayload? value)
         {
             SpeechStarted = value;
         }
@@ -156,8 +156,8 @@ namespace Deepgram.Realtime
         /// <summary>
         /// 
         /// </summary>
-        public ServerEvent(
-            global::Deepgram.Realtime.ServerEventDiscriminatorType? type,
+        public ListenV1ServerEvent(
+            global::Deepgram.Realtime.ListenV1ServerEventDiscriminatorType? type,
             global::Deepgram.Realtime.ResultsPayload? results,
             global::Deepgram.Realtime.MetadataPayload? metadata,
             global::Deepgram.Realtime.UtteranceEndPayload? utteranceEnd,
@@ -296,7 +296,7 @@ namespace Deepgram.Realtime
         /// <summary>
         /// 
         /// </summary>
-        public bool Equals(ServerEvent other)
+        public bool Equals(ListenV1ServerEvent other)
         {
             return
                 global::System.Collections.Generic.EqualityComparer<global::Deepgram.Realtime.ResultsPayload?>.Default.Equals(Results, other.Results) &&
@@ -309,15 +309,15 @@ namespace Deepgram.Realtime
         /// <summary>
         /// 
         /// </summary>
-        public static bool operator ==(ServerEvent obj1, ServerEvent obj2)
+        public static bool operator ==(ListenV1ServerEvent obj1, ListenV1ServerEvent obj2)
         {
-            return global::System.Collections.Generic.EqualityComparer<ServerEvent>.Default.Equals(obj1, obj2);
+            return global::System.Collections.Generic.EqualityComparer<ListenV1ServerEvent>.Default.Equals(obj1, obj2);
         }
 
         /// <summary>
         /// 
         /// </summary>
-        public static bool operator !=(ServerEvent obj1, ServerEvent obj2)
+        public static bool operator !=(ListenV1ServerEvent obj1, ListenV1ServerEvent obj2)
         {
             return !(obj1 == obj2);
         }
@@ -327,7 +327,7 @@ namespace Deepgram.Realtime
         /// </summary>
         public override bool Equals(object? obj)
         {
-            return obj is ServerEvent o && Equals(o);
+            return obj is ListenV1ServerEvent o && Equals(o);
         }
     }
 }

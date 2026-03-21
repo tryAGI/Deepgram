@@ -1,20 +1,19 @@
 {
   "asyncapi": "3.0.0",
   "info": {
-    "title": "Deepgram Streaming Speech-to-Text",
+    "title": "Deepgram Streaming APIs",
     "version": "1.0.0",
-    "description": "Deepgram real-time speech-to-text streaming WebSocket API (v1/listen)."
+    "description": "Deepgram real-time WebSocket APIs: ListenV1 (classic STT) and ListenV2 (Flux conversational STT)."
   },
   "servers": {
     "production": {
       "host": "api.deepgram.com",
-      "pathname": "/v1/listen",
       "protocol": "wss",
       "description": "Deepgram production streaming endpoint"
     }
   },
   "channels": {
-    "listen": {
+    "listenV1": {
       "address": "/v1/listen",
       "messages": {
         "finalize": {
@@ -39,90 +38,171 @@
           "$ref": "#/components/messages/SpeechStarted"
         }
       }
+    },
+    "listenV2": {
+      "address": "/v2/listen",
+      "description": "Real-time conversational speech recognition with contextual turn detection (Flux).",
+      "messages": {
+        "closeStream": {
+          "$ref": "#/components/messages/V2CloseStream"
+        },
+        "connected": {
+          "$ref": "#/components/messages/V2Connected"
+        },
+        "turnInfo": {
+          "$ref": "#/components/messages/V2TurnInfo"
+        },
+        "configureSuccess": {
+          "$ref": "#/components/messages/V2ConfigureSuccess"
+        },
+        "configureFailure": {
+          "$ref": "#/components/messages/V2ConfigureFailure"
+        }
+      }
     }
   },
   "operations": {
     "sendFinalize": {
       "action": "send",
       "channel": {
-        "$ref": "#/channels/listen"
+        "$ref": "#/channels/listenV1"
       },
       "summary": "Flush the transcription buffer and receive any remaining results.",
       "messages": [
         {
-          "$ref": "#/channels/listen/messages/finalize"
+          "$ref": "#/channels/listenV1/messages/finalize"
         }
       ]
     },
     "sendCloseStream": {
       "action": "send",
       "channel": {
-        "$ref": "#/channels/listen"
+        "$ref": "#/channels/listenV1"
       },
       "summary": "Close the WebSocket stream gracefully.",
       "messages": [
         {
-          "$ref": "#/channels/listen/messages/closeStream"
+          "$ref": "#/channels/listenV1/messages/closeStream"
         }
       ]
     },
     "sendKeepAlive": {
       "action": "send",
       "channel": {
-        "$ref": "#/channels/listen"
+        "$ref": "#/channels/listenV1"
       },
       "summary": "Keep the WebSocket connection alive.",
       "messages": [
         {
-          "$ref": "#/channels/listen/messages/keepAlive"
+          "$ref": "#/channels/listenV1/messages/keepAlive"
         }
       ]
     },
     "receiveResults": {
       "action": "receive",
       "channel": {
-        "$ref": "#/channels/listen"
+        "$ref": "#/channels/listenV1"
       },
       "summary": "Receive transcription results.",
       "messages": [
         {
-          "$ref": "#/channels/listen/messages/results"
+          "$ref": "#/channels/listenV1/messages/results"
         }
       ]
     },
     "receiveMetadata": {
       "action": "receive",
       "channel": {
-        "$ref": "#/channels/listen"
+        "$ref": "#/channels/listenV1"
       },
       "summary": "Receive metadata about the transcription session.",
       "messages": [
         {
-          "$ref": "#/channels/listen/messages/metadata"
+          "$ref": "#/channels/listenV1/messages/metadata"
         }
       ]
     },
     "receiveUtteranceEnd": {
       "action": "receive",
       "channel": {
-        "$ref": "#/channels/listen"
+        "$ref": "#/channels/listenV1"
       },
       "summary": "Receive notification that an utterance has ended.",
       "messages": [
         {
-          "$ref": "#/channels/listen/messages/utteranceEnd"
+          "$ref": "#/channels/listenV1/messages/utteranceEnd"
         }
       ]
     },
     "receiveSpeechStarted": {
       "action": "receive",
       "channel": {
-        "$ref": "#/channels/listen"
+        "$ref": "#/channels/listenV1"
       },
       "summary": "Receive notification that speech has been detected.",
       "messages": [
         {
-          "$ref": "#/channels/listen/messages/speechStarted"
+          "$ref": "#/channels/listenV1/messages/speechStarted"
+        }
+      ]
+    },
+    "sendV2CloseStream": {
+      "action": "send",
+      "channel": {
+        "$ref": "#/channels/listenV2"
+      },
+      "summary": "Close the ListenV2 WebSocket stream.",
+      "messages": [
+        {
+          "$ref": "#/channels/listenV2/messages/closeStream"
+        }
+      ]
+    },
+    "receiveV2Connected": {
+      "action": "receive",
+      "channel": {
+        "$ref": "#/channels/listenV2"
+      },
+      "summary": "Receive connection confirmation.",
+      "messages": [
+        {
+          "$ref": "#/channels/listenV2/messages/connected"
+        }
+      ]
+    },
+    "receiveV2TurnInfo": {
+      "action": "receive",
+      "channel": {
+        "$ref": "#/channels/listenV2"
+      },
+      "summary": "Receive turn information with transcript and confidence.",
+      "messages": [
+        {
+          "$ref": "#/channels/listenV2/messages/turnInfo"
+        }
+      ]
+    },
+    "receiveV2ConfigureSuccess": {
+      "action": "receive",
+      "channel": {
+        "$ref": "#/channels/listenV2"
+      },
+      "summary": "Receive confirmation that configuration was applied.",
+      "messages": [
+        {
+          "$ref": "#/channels/listenV2/messages/configureSuccess"
+        }
+      ]
+    },
+    "receiveV2ConfigureFailure": {
+      "action": "receive",
+      "channel": {
+        "$ref": "#/channels/listenV2"
+      },
+      "summary": "Receive notification that configuration was rejected.",
+      "messages": [
+        {
+          "$ref": "#/channels/listenV2/messages/configureFailure"
         }
       ]
     }
@@ -177,6 +257,41 @@
         "payload": {
           "$ref": "#/components/schemas/SpeechStartedPayload"
         }
+      },
+      "V2CloseStream": {
+        "name": "V2CloseStream",
+        "description": "Close the ListenV2 WebSocket stream",
+        "payload": {
+          "$ref": "#/components/schemas/V2CloseStreamPayload"
+        }
+      },
+      "V2Connected": {
+        "name": "V2Connected",
+        "description": "Connection confirmation from the server",
+        "payload": {
+          "$ref": "#/components/schemas/V2ConnectedPayload"
+        }
+      },
+      "V2TurnInfo": {
+        "name": "V2TurnInfo",
+        "description": "Turn information with transcript and confidence",
+        "payload": {
+          "$ref": "#/components/schemas/V2TurnInfoPayload"
+        }
+      },
+      "V2ConfigureSuccess": {
+        "name": "V2ConfigureSuccess",
+        "description": "Configuration was successfully applied",
+        "payload": {
+          "$ref": "#/components/schemas/V2ConfigureSuccessPayload"
+        }
+      },
+      "V2ConfigureFailure": {
+        "name": "V2ConfigureFailure",
+        "description": "Configuration was rejected",
+        "payload": {
+          "$ref": "#/components/schemas/V2ConfigureFailurePayload"
+        }
       }
     },
     "schemas": {
@@ -223,9 +338,7 @@
           },
           "channel_index": {
             "type": "array",
-            "items": {
-              "type": "number"
-            },
+            "items": { "type": "number" },
             "description": "The index of the channel"
           },
           "duration": {
@@ -262,9 +375,7 @@
         "properties": {
           "alternatives": {
             "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/Alternative"
-            }
+            "items": { "$ref": "#/components/schemas/Alternative" }
           }
         },
         "required": ["alternatives"]
@@ -272,26 +383,16 @@
       "Alternative": {
         "type": "object",
         "properties": {
-          "transcript": {
-            "type": "string",
-            "description": "The transcript text"
-          },
-          "confidence": {
-            "type": "number",
-            "description": "The confidence score"
-          },
+          "transcript": { "type": "string", "description": "The transcript text" },
+          "confidence": { "type": "number", "description": "The confidence score" },
           "languages": {
             "type": "array",
-            "items": {
-              "type": "string"
-            },
+            "items": { "type": "string" },
             "description": "Detected languages"
           },
           "words": {
             "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/Word"
-            }
+            "items": { "$ref": "#/components/schemas/Word" }
           }
         },
         "required": ["transcript", "confidence", "words"]
@@ -299,69 +400,31 @@
       "Word": {
         "type": "object",
         "properties": {
-          "word": {
-            "type": "string",
-            "description": "The word"
-          },
-          "start": {
-            "type": "number",
-            "description": "Start time in seconds"
-          },
-          "end": {
-            "type": "number",
-            "description": "End time in seconds"
-          },
-          "confidence": {
-            "type": "number",
-            "description": "Confidence score"
-          },
-          "language": {
-            "type": "string",
-            "description": "The language of the word"
-          },
-          "punctuated_word": {
-            "type": "string",
-            "description": "The punctuated word"
-          },
-          "speaker": {
-            "type": "number",
-            "description": "The speaker index"
-          }
+          "word": { "type": "string", "description": "The word" },
+          "start": { "type": "number", "description": "Start time in seconds" },
+          "end": { "type": "number", "description": "End time in seconds" },
+          "confidence": { "type": "number", "description": "Confidence score" },
+          "language": { "type": "string", "description": "The language of the word" },
+          "punctuated_word": { "type": "string", "description": "The punctuated word" },
+          "speaker": { "type": "number", "description": "The speaker index" }
         },
         "required": ["word", "start", "end", "confidence"]
       },
       "ResultMetadata": {
         "type": "object",
         "properties": {
-          "request_id": {
-            "type": "string",
-            "description": "The request ID"
-          },
-          "model_info": {
-            "$ref": "#/components/schemas/ModelInfo"
-          },
-          "model_uuid": {
-            "type": "string",
-            "description": "The model UUID"
-          }
+          "request_id": { "type": "string", "description": "The request ID" },
+          "model_info": { "$ref": "#/components/schemas/ModelInfo" },
+          "model_uuid": { "type": "string", "description": "The model UUID" }
         },
         "required": ["request_id", "model_info", "model_uuid"]
       },
       "ModelInfo": {
         "type": "object",
         "properties": {
-          "name": {
-            "type": "string",
-            "description": "The model name"
-          },
-          "version": {
-            "type": "string",
-            "description": "The model version"
-          },
-          "arch": {
-            "type": "string",
-            "description": "The model architecture"
-          }
+          "name": { "type": "string", "description": "The model name" },
+          "version": { "type": "string", "description": "The model version" },
+          "arch": { "type": "string", "description": "The model architecture" }
         },
         "required": ["name", "version", "arch"]
       },
@@ -373,27 +436,11 @@
             "enum": ["Metadata"],
             "description": "Message type identifier"
           },
-          "request_id": {
-            "type": "string",
-            "format": "uuid",
-            "description": "The request ID"
-          },
-          "sha256": {
-            "type": "string",
-            "description": "SHA256 hash"
-          },
-          "created": {
-            "type": "string",
-            "description": "Creation timestamp"
-          },
-          "duration": {
-            "type": "number",
-            "description": "Audio duration in seconds"
-          },
-          "channels": {
-            "type": "number",
-            "description": "Number of audio channels"
-          }
+          "request_id": { "type": "string", "format": "uuid", "description": "The request ID" },
+          "sha256": { "type": "string", "description": "SHA256 hash" },
+          "created": { "type": "string", "description": "Creation timestamp" },
+          "duration": { "type": "number", "description": "Audio duration in seconds" },
+          "channels": { "type": "number", "description": "Number of audio channels" }
         },
         "required": ["type", "request_id", "sha256", "created", "duration", "channels"]
       },
@@ -407,15 +454,10 @@
           },
           "channel": {
             "type": "array",
-            "items": {
-              "type": "number"
-            },
+            "items": { "type": "number" },
             "description": "The channel indices"
           },
-          "last_word_end": {
-            "type": "number",
-            "description": "End time of the last word"
-          }
+          "last_word_end": { "type": "number", "description": "End time of the last word" }
         },
         "required": ["type", "channel", "last_word_end"]
       },
@@ -429,17 +471,101 @@
           },
           "channel": {
             "type": "array",
-            "items": {
-              "type": "number"
-            },
+            "items": { "type": "number" },
             "description": "The channel indices"
           },
-          "timestamp": {
-            "type": "number",
-            "description": "Timestamp when speech was detected"
-          }
+          "timestamp": { "type": "number", "description": "Timestamp when speech was detected" }
         },
         "required": ["type", "channel", "timestamp"]
+      },
+      "V2CloseStreamPayload": {
+        "type": "object",
+        "properties": {
+          "type": {
+            "type": "string",
+            "const": "CloseStream",
+            "description": "Message type identifier"
+          }
+        },
+        "required": ["type"]
+      },
+      "V2ConnectedPayload": {
+        "type": "object",
+        "description": "Sent at the start of each connection, indicating the connection is active.",
+        "properties": {
+          "type": {
+            "type": "string",
+            "const": "Connected",
+            "description": "Message type identifier"
+          },
+          "request_id": { "type": "string", "format": "uuid", "description": "The unique identifier of the request" },
+          "sequence_id": { "type": "number", "description": "Incremental server message counter" }
+        },
+        "required": ["type", "request_id", "sequence_id"]
+      },
+      "V2TurnInfoPayload": {
+        "type": "object",
+        "description": "Describes the current turn and latest transcription state.",
+        "properties": {
+          "type": {
+            "type": "string",
+            "const": "TurnInfo",
+            "description": "Message type identifier"
+          },
+          "request_id": { "type": "string", "format": "uuid", "description": "The unique identifier of the request" },
+          "sequence_id": { "type": "number", "description": "Incremental server message counter" },
+          "event": {
+            "type": "string",
+            "description": "The type of turn event (Update, StartOfTurn, EagerEndOfTurn, TurnResumed, EndOfTurn)"
+          },
+          "turn_index": { "type": "number", "description": "The index of the current turn" },
+          "audio_window_start": { "type": "number", "description": "Start time in seconds of the audio range transcribed" },
+          "audio_window_end": { "type": "number", "description": "End time in seconds of the audio range transcribed" },
+          "transcript": { "type": "string", "description": "Text that was said over the course of the current turn" },
+          "words": {
+            "type": "array",
+            "description": "The words in the transcript",
+            "items": { "$ref": "#/components/schemas/V2Word" }
+          },
+          "end_of_turn_confidence": { "type": "number", "description": "Confidence that no more speech is coming in this turn" }
+        },
+        "required": ["type", "request_id", "sequence_id", "event", "turn_index", "audio_window_start", "audio_window_end", "transcript", "words", "end_of_turn_confidence"]
+      },
+      "V2Word": {
+        "type": "object",
+        "properties": {
+          "word": { "type": "string", "description": "The individual punctuated, properly-cased word" },
+          "confidence": { "type": "number", "description": "Confidence that this word was transcribed correctly" }
+        },
+        "required": ["word", "confidence"]
+      },
+      "V2ConfigureSuccessPayload": {
+        "type": "object",
+        "description": "Sent when a Configure message was successfully applied.",
+        "properties": {
+          "type": {
+            "type": "string",
+            "const": "ConfigureSuccess",
+            "description": "Message type identifier"
+          },
+          "request_id": { "type": "string", "format": "uuid", "description": "The unique identifier of the request" },
+          "sequence_id": { "type": "number", "description": "Incremental server message counter" }
+        },
+        "required": ["type", "request_id", "sequence_id"]
+      },
+      "V2ConfigureFailurePayload": {
+        "type": "object",
+        "description": "Indicates that a Configure message was rejected.",
+        "properties": {
+          "type": {
+            "type": "string",
+            "const": "ConfigureFailure",
+            "description": "Message type identifier"
+          },
+          "request_id": { "type": "string", "format": "uuid", "description": "The unique identifier of the request" },
+          "sequence_id": { "type": "number", "description": "Incremental server message counter" }
+        },
+        "required": ["type", "request_id", "sequence_id"]
       }
     }
   }

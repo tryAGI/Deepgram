@@ -4,9 +4,9 @@
 namespace Deepgram.Realtime
 {
     /// <summary>
-    /// Deepgram real-time speech-to-text streaming WebSocket API (v1/listen).
+    /// Deepgram real-time WebSocket APIs: ListenV1 (classic STT) and ListenV2 (Flux conversational STT).
     /// </summary>
-    public sealed partial class DeepgramRealtimeClient : global::System.IDisposable, global::System.IAsyncDisposable
+    public sealed partial class DeepgramListenV1RealtimeClient : global::System.IDisposable, global::System.IAsyncDisposable
     {
         /// <summary>
         /// Default WebSocket base URL.
@@ -27,11 +27,11 @@ namespace Deepgram.Realtime
         public bool IsConnected => _clientWebSocket.State == global::System.Net.WebSockets.WebSocketState.Open;
 
         /// <summary>
-        /// Creates a new instance of the DeepgramRealtimeClient.
+        /// Creates a new instance of the DeepgramListenV1RealtimeClient.
         /// If no clientWebSocket is provided, a new one will be created.
         /// </summary>
         /// <param name="clientWebSocket">The ClientWebSocket instance. If not provided, a new one will be created.</param>
-        public DeepgramRealtimeClient(
+        public DeepgramListenV1RealtimeClient(
             global::System.Net.WebSockets.ClientWebSocket? clientWebSocket = null)
         {
             _clientWebSocket = clientWebSocket ?? new global::System.Net.WebSockets.ClientWebSocket();

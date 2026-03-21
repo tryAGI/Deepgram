@@ -136,15 +136,47 @@ namespace Deepgram.Realtime
         /// <summary>
         /// 
         /// </summary>
-        public global::Deepgram.Realtime.ServerEvent? Type27 { get; set; }
+        public global::Deepgram.Realtime.V2CloseStreamPayload? Type27 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Deepgram.Realtime.ServerEventDiscriminator? Type28 { get; set; }
+        public global::Deepgram.Realtime.V2ConnectedPayload? Type28 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Deepgram.Realtime.ServerEventDiscriminatorType? Type29 { get; set; }
+        public global::Deepgram.Realtime.V2TurnInfoPayload? Type29 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::System.Collections.Generic.IList<global::Deepgram.Realtime.V2Word>? Type30 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Deepgram.Realtime.V2Word? Type31 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Deepgram.Realtime.V2ConfigureSuccessPayload? Type32 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Deepgram.Realtime.V2ConfigureFailurePayload? Type33 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Deepgram.Realtime.ListenV1ServerEvent? Type34 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Deepgram.Realtime.ListenV1ServerEventDiscriminator? Type35 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Deepgram.Realtime.ListenV1ServerEventDiscriminatorType? Type36 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Deepgram.Realtime.ListenV2ServerEvent? Type37 { get; set; }
 
         /// <summary>
         /// 
@@ -162,5 +194,9 @@ namespace Deepgram.Realtime
         /// 
         /// </summary>
         public global::System.Collections.Generic.List<global::Deepgram.Realtime.Word>? ListType3 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::System.Collections.Generic.List<global::Deepgram.Realtime.V2Word>? ListType4 { get; set; }
     }
 }

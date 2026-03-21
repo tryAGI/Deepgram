@@ -97,7 +97,7 @@ public partial class DeepgramClient : ISpeechToTextClient
         }
 
         // Build the WebSocket URI with query parameters.
-        var uriBuilder = new UriBuilder(Realtime.DeepgramRealtimeClient.DefaultBaseUrl);
+        var uriBuilder = new UriBuilder(Realtime.DeepgramListenV1RealtimeClient.DefaultBaseUrl);
         var queryParams = new List<string> { "interim_results=true" };
 
         if (options?.ModelId is { Length: > 0 } modelId)
@@ -116,7 +116,7 @@ public partial class DeepgramClient : ISpeechToTextClient
         }
 
         // Create and configure the WebSocket client.
-        await using var realtimeClient = new Realtime.DeepgramRealtimeClient();
+        await using var realtimeClient = new Realtime.DeepgramListenV1RealtimeClient();
         realtimeClient.AuthorizeUsingToken(apiKey);
         await realtimeClient.ConnectAsync(uriBuilder.Uri, cancellationToken).ConfigureAwait(false);
 

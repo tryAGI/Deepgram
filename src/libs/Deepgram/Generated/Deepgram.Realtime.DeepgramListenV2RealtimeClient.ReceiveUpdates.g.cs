@@ -3,14 +3,14 @@
 
 namespace Deepgram.Realtime
 {
-    public sealed partial class DeepgramRealtimeClient
+    public sealed partial class DeepgramListenV2RealtimeClient
     {
         /// <summary>
         /// Receives updates from the WebSocket connection as an async enumerable.
         /// </summary>
         /// <param name="cancellationToken">A cancellation token.</param>
         /// <returns>An async enumerable of server events.</returns>
-        public async global::System.Collections.Generic.IAsyncEnumerable<global::Deepgram.Realtime.ServerEvent> ReceiveUpdatesAsync(
+        public async global::System.Collections.Generic.IAsyncEnumerable<global::Deepgram.Realtime.ListenV2ServerEvent> ReceiveUpdatesAsync(
             [global::System.Runtime.CompilerServices.EnumeratorCancellation] global::System.Threading.CancellationToken cancellationToken = default)
         {
             if (!IsConnected)
@@ -46,7 +46,7 @@ namespace Deepgram.Realtime
                 if (result.MessageType == global::System.Net.WebSockets.WebSocketMessageType.Text)
                 {
                     string json = global::System.Text.Encoding.UTF8.GetString(buffer, 0, result.Count);
-                    var @event = (global::Deepgram.Realtime.ServerEvent)global::System.Text.Json.JsonSerializer.Deserialize(json, typeof(global::Deepgram.Realtime.ServerEvent), JsonSerializerContext)!;
+                    var @event = (global::Deepgram.Realtime.ListenV2ServerEvent)global::System.Text.Json.JsonSerializer.Deserialize(json, typeof(global::Deepgram.Realtime.ListenV2ServerEvent), JsonSerializerContext)!;
 
                     yield return @event;
                 }

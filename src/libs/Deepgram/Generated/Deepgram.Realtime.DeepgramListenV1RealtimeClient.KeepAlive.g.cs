@@ -3,20 +3,20 @@
 
 namespace Deepgram.Realtime
 {
-    public sealed partial class DeepgramRealtimeClient
+    public sealed partial class DeepgramListenV1RealtimeClient
     {
         /// <summary>
-        /// Flush the transcription buffer and receive any remaining results.
+        /// Keep the WebSocket connection alive.
         /// </summary>
         /// <param name="message">The message to send.</param>
         /// <param name="cancellationToken">A cancellation token.</param>
-        public async global::System.Threading.Tasks.Task SendFinalizeAsync(
-            global::Deepgram.Realtime.FinalizePayload message,
+        public async global::System.Threading.Tasks.Task SendKeepAliveAsync(
+            global::Deepgram.Realtime.KeepAlivePayload message,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
             message = message ?? throw new global::System.ArgumentNullException(nameof(message));
 
-            var json = global::System.Text.Json.JsonSerializer.Serialize(message, typeof(global::Deepgram.Realtime.FinalizePayload), JsonSerializerContext);
+            var json = global::System.Text.Json.JsonSerializer.Serialize(message, typeof(global::Deepgram.Realtime.KeepAlivePayload), JsonSerializerContext);
 
             await SendAsync(json, cancellationToken).ConfigureAwait(false);
         }

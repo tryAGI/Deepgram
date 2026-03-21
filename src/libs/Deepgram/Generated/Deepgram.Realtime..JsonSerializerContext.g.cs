@@ -41,11 +41,13 @@ namespace Deepgram.Realtime
 
             typeof(global::Deepgram.Realtime.JsonConverters.SpeechStartedPayloadTypeNullableJsonConverter),
 
-            typeof(global::Deepgram.Realtime.JsonConverters.ServerEventDiscriminatorTypeJsonConverter),
+            typeof(global::Deepgram.Realtime.JsonConverters.ListenV1ServerEventDiscriminatorTypeJsonConverter),
 
-            typeof(global::Deepgram.Realtime.JsonConverters.ServerEventDiscriminatorTypeNullableJsonConverter),
+            typeof(global::Deepgram.Realtime.JsonConverters.ListenV1ServerEventDiscriminatorTypeNullableJsonConverter),
 
-            typeof(global::Deepgram.Realtime.JsonConverters.ServerEventJsonConverter),
+            typeof(global::Deepgram.Realtime.JsonConverters.ListenV1ServerEventJsonConverter),
+
+            typeof(global::Deepgram.Realtime.JsonConverters.ListenV2ServerEventJsonConverter),
         })]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Deepgram.Realtime.JsonSerializerContextTypes))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Deepgram.Realtime.FinalizePayload))]
@@ -75,13 +77,22 @@ namespace Deepgram.Realtime
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Deepgram.Realtime.UtteranceEndPayloadType))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Deepgram.Realtime.SpeechStartedPayload))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Deepgram.Realtime.SpeechStartedPayloadType))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Deepgram.Realtime.ServerEvent))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Deepgram.Realtime.ServerEventDiscriminator))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Deepgram.Realtime.ServerEventDiscriminatorType))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Deepgram.Realtime.V2CloseStreamPayload))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Deepgram.Realtime.V2ConnectedPayload))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Deepgram.Realtime.V2TurnInfoPayload))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Deepgram.Realtime.V2Word>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Deepgram.Realtime.V2Word))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Deepgram.Realtime.V2ConfigureSuccessPayload))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Deepgram.Realtime.V2ConfigureFailurePayload))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Deepgram.Realtime.ListenV1ServerEvent))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Deepgram.Realtime.ListenV1ServerEventDiscriminator))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Deepgram.Realtime.ListenV1ServerEventDiscriminatorType))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Deepgram.Realtime.ListenV2ServerEvent))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<double>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Deepgram.Realtime.Alternative>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<string>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Deepgram.Realtime.Word>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Deepgram.Realtime.V2Word>))]
     public sealed partial class RealtimeSourceGenerationContext : global::System.Text.Json.Serialization.JsonSerializerContext
     {
     }
