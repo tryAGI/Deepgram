@@ -1,0 +1,18 @@
+
+#nullable enable
+
+namespace Deepgram.Realtime
+{
+    /// <summary>
+    /// Indicates how long Deepgram will wait to send an UtteranceEnd message after a word has been transcribed. Use with interim_results
+    /// </summary>
+    public sealed partial class ListenV1UtteranceEndMs
+    {
+
+        /// <summary>
+        /// Additional properties that are not explicitly defined in the schema
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonExtensionData]
+        public global::System.Collections.Generic.IDictionary<string, object> AdditionalProperties { get; set; } = new global::System.Collections.Generic.Dictionary<string, object>();
+    }
+}

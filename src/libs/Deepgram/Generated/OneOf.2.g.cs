@@ -1,7 +1,7 @@
 
 #nullable enable
 
-namespace Deepgram
+namespace Deepgram.Realtime
 {
     /// <summary>
     /// 

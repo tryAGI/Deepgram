@@ -1,6 +1,6 @@
 #nullable enable
 
-namespace Deepgram
+namespace Deepgram.Realtime
 {
     public readonly partial struct OneOf<T1, T2, T3, T4, T5>
     {
@@ -34,14 +34,14 @@ namespace Deepgram
         /// <summary>
         /// Deserializes a JSON string using the provided JsonSerializerContext.
         /// </summary>
-        public static global::Deepgram.OneOf<T1, T2, T3, T4, T5>? FromJson(
+        public static global::Deepgram.Realtime.OneOf<T1, T2, T3, T4, T5>? FromJson(
             string json,
             global::System.Text.Json.Serialization.JsonSerializerContext jsonSerializerContext)
         {
             return global::System.Text.Json.JsonSerializer.Deserialize(
                 json,
-                typeof(global::Deepgram.OneOf<T1, T2, T3, T4, T5>),
-                jsonSerializerContext) as global::Deepgram.OneOf<T1, T2, T3, T4, T5>?;
+                typeof(global::Deepgram.Realtime.OneOf<T1, T2, T3, T4, T5>),
+                jsonSerializerContext) as global::Deepgram.Realtime.OneOf<T1, T2, T3, T4, T5>?;
         }
 
         /// <summary>
@@ -51,11 +51,11 @@ namespace Deepgram
         [global::System.Diagnostics.CodeAnalysis.RequiresUnreferencedCode("JSON serialization and deserialization might require types that cannot be statically analyzed. Use the overload that takes a JsonTypeInfo or JsonSerializerContext, or make sure all of the required types are preserved.")]
         [global::System.Diagnostics.CodeAnalysis.RequiresDynamicCode("JSON serialization and deserialization might require types that cannot be statically analyzed and might need runtime code generation. Use System.Text.Json source generation for native AOT applications.")]
 #endif
-        public static global::Deepgram.OneOf<T1, T2, T3, T4, T5>? FromJson(
+        public static global::Deepgram.Realtime.OneOf<T1, T2, T3, T4, T5>? FromJson(
             string json,
             global::System.Text.Json.JsonSerializerOptions? jsonSerializerOptions = null)
         {
-            return global::System.Text.Json.JsonSerializer.Deserialize<global::Deepgram.OneOf<T1, T2, T3, T4, T5>>(
+            return global::System.Text.Json.JsonSerializer.Deserialize<global::Deepgram.Realtime.OneOf<T1, T2, T3, T4, T5>>(
                 json,
                 jsonSerializerOptions);
         }
@@ -63,14 +63,14 @@ namespace Deepgram
         /// <summary>
         /// Deserializes a JSON stream using the provided JsonSerializerContext.
         /// </summary>
-        public static async global::System.Threading.Tasks.ValueTask<global::Deepgram.OneOf<T1, T2, T3, T4, T5>?> FromJsonStreamAsync(
+        public static async global::System.Threading.Tasks.ValueTask<global::Deepgram.Realtime.OneOf<T1, T2, T3, T4, T5>?> FromJsonStreamAsync(
             global::System.IO.Stream jsonStream,
             global::System.Text.Json.Serialization.JsonSerializerContext jsonSerializerContext)
         {
             return (await global::System.Text.Json.JsonSerializer.DeserializeAsync(
                 jsonStream,
-                typeof(global::Deepgram.OneOf<T1, T2, T3, T4, T5>),
-                jsonSerializerContext).ConfigureAwait(false)) as global::Deepgram.OneOf<T1, T2, T3, T4, T5>?;
+                typeof(global::Deepgram.Realtime.OneOf<T1, T2, T3, T4, T5>),
+                jsonSerializerContext).ConfigureAwait(false)) as global::Deepgram.Realtime.OneOf<T1, T2, T3, T4, T5>?;
         }
 
         /// <summary>
@@ -80,11 +80,11 @@ namespace Deepgram
         [global::System.Diagnostics.CodeAnalysis.RequiresUnreferencedCode("JSON serialization and deserialization might require types that cannot be statically analyzed. Use the overload that takes a JsonTypeInfo or JsonSerializerContext, or make sure all of the required types are preserved.")]
         [global::System.Diagnostics.CodeAnalysis.RequiresDynamicCode("JSON serialization and deserialization might require types that cannot be statically analyzed and might need runtime code generation. Use System.Text.Json source generation for native AOT applications.")]
 #endif
-        public static global::System.Threading.Tasks.ValueTask<global::Deepgram.OneOf<T1, T2, T3, T4, T5>?> FromJsonStreamAsync(
+        public static global::System.Threading.Tasks.ValueTask<global::Deepgram.Realtime.OneOf<T1, T2, T3, T4, T5>?> FromJsonStreamAsync(
             global::System.IO.Stream jsonStream,
             global::System.Text.Json.JsonSerializerOptions? jsonSerializerOptions = null)
         {
-            return global::System.Text.Json.JsonSerializer.DeserializeAsync<global::Deepgram.OneOf<T1, T2, T3, T4, T5>?>(
+            return global::System.Text.Json.JsonSerializer.DeserializeAsync<global::Deepgram.Realtime.OneOf<T1, T2, T3, T4, T5>?>(
                 jsonStream,
                 jsonSerializerOptions);
         }

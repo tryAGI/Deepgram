@@ -18,9 +18,9 @@ namespace Deepgram.Realtime
         /// 
         /// </summary>
 #if NET6_0_OR_GREATER
-        public global::Deepgram.Realtime.ResultsPayload? Results { get; init; }
+        public global::Deepgram.Realtime.ListenV1ResultsEvent? Results { get; init; }
 #else
-        public global::Deepgram.Realtime.ResultsPayload? Results { get; }
+        public global::Deepgram.Realtime.ListenV1ResultsEvent? Results { get; }
 #endif
 
         /// <summary>
@@ -35,9 +35,9 @@ namespace Deepgram.Realtime
         /// 
         /// </summary>
 #if NET6_0_OR_GREATER
-        public global::Deepgram.Realtime.MetadataPayload? Metadata { get; init; }
+        public global::Deepgram.Realtime.ListenV1MetadataEvent? Metadata { get; init; }
 #else
-        public global::Deepgram.Realtime.MetadataPayload? Metadata { get; }
+        public global::Deepgram.Realtime.ListenV1MetadataEvent? Metadata { get; }
 #endif
 
         /// <summary>
@@ -52,9 +52,9 @@ namespace Deepgram.Realtime
         /// 
         /// </summary>
 #if NET6_0_OR_GREATER
-        public global::Deepgram.Realtime.UtteranceEndPayload? UtteranceEnd { get; init; }
+        public global::Deepgram.Realtime.ListenV1UtteranceEndEvent? UtteranceEnd { get; init; }
 #else
-        public global::Deepgram.Realtime.UtteranceEndPayload? UtteranceEnd { get; }
+        public global::Deepgram.Realtime.ListenV1UtteranceEndEvent? UtteranceEnd { get; }
 #endif
 
         /// <summary>
@@ -69,9 +69,9 @@ namespace Deepgram.Realtime
         /// 
         /// </summary>
 #if NET6_0_OR_GREATER
-        public global::Deepgram.Realtime.SpeechStartedPayload? SpeechStarted { get; init; }
+        public global::Deepgram.Realtime.ListenV1SpeechStartedEvent? SpeechStarted { get; init; }
 #else
-        public global::Deepgram.Realtime.SpeechStartedPayload? SpeechStarted { get; }
+        public global::Deepgram.Realtime.ListenV1SpeechStartedEvent? SpeechStarted { get; }
 #endif
 
         /// <summary>
@@ -84,17 +84,17 @@ namespace Deepgram.Realtime
         /// <summary>
         /// 
         /// </summary>
-        public static implicit operator ListenV1ServerEvent(global::Deepgram.Realtime.ResultsPayload value) => new ListenV1ServerEvent((global::Deepgram.Realtime.ResultsPayload?)value);
+        public static implicit operator ListenV1ServerEvent(global::Deepgram.Realtime.ListenV1ResultsEvent value) => new ListenV1ServerEvent((global::Deepgram.Realtime.ListenV1ResultsEvent?)value);
 
         /// <summary>
         /// 
         /// </summary>
-        public static implicit operator global::Deepgram.Realtime.ResultsPayload?(ListenV1ServerEvent @this) => @this.Results;
+        public static implicit operator global::Deepgram.Realtime.ListenV1ResultsEvent?(ListenV1ServerEvent @this) => @this.Results;
 
         /// <summary>
         /// 
         /// </summary>
-        public ListenV1ServerEvent(global::Deepgram.Realtime.ResultsPayload? value)
+        public ListenV1ServerEvent(global::Deepgram.Realtime.ListenV1ResultsEvent? value)
         {
             Results = value;
         }
@@ -102,17 +102,17 @@ namespace Deepgram.Realtime
         /// <summary>
         /// 
         /// </summary>
-        public static implicit operator ListenV1ServerEvent(global::Deepgram.Realtime.MetadataPayload value) => new ListenV1ServerEvent((global::Deepgram.Realtime.MetadataPayload?)value);
+        public static implicit operator ListenV1ServerEvent(global::Deepgram.Realtime.ListenV1MetadataEvent value) => new ListenV1ServerEvent((global::Deepgram.Realtime.ListenV1MetadataEvent?)value);
 
         /// <summary>
         /// 
         /// </summary>
-        public static implicit operator global::Deepgram.Realtime.MetadataPayload?(ListenV1ServerEvent @this) => @this.Metadata;
+        public static implicit operator global::Deepgram.Realtime.ListenV1MetadataEvent?(ListenV1ServerEvent @this) => @this.Metadata;
 
         /// <summary>
         /// 
         /// </summary>
-        public ListenV1ServerEvent(global::Deepgram.Realtime.MetadataPayload? value)
+        public ListenV1ServerEvent(global::Deepgram.Realtime.ListenV1MetadataEvent? value)
         {
             Metadata = value;
         }
@@ -120,17 +120,17 @@ namespace Deepgram.Realtime
         /// <summary>
         /// 
         /// </summary>
-        public static implicit operator ListenV1ServerEvent(global::Deepgram.Realtime.UtteranceEndPayload value) => new ListenV1ServerEvent((global::Deepgram.Realtime.UtteranceEndPayload?)value);
+        public static implicit operator ListenV1ServerEvent(global::Deepgram.Realtime.ListenV1UtteranceEndEvent value) => new ListenV1ServerEvent((global::Deepgram.Realtime.ListenV1UtteranceEndEvent?)value);
 
         /// <summary>
         /// 
         /// </summary>
-        public static implicit operator global::Deepgram.Realtime.UtteranceEndPayload?(ListenV1ServerEvent @this) => @this.UtteranceEnd;
+        public static implicit operator global::Deepgram.Realtime.ListenV1UtteranceEndEvent?(ListenV1ServerEvent @this) => @this.UtteranceEnd;
 
         /// <summary>
         /// 
         /// </summary>
-        public ListenV1ServerEvent(global::Deepgram.Realtime.UtteranceEndPayload? value)
+        public ListenV1ServerEvent(global::Deepgram.Realtime.ListenV1UtteranceEndEvent? value)
         {
             UtteranceEnd = value;
         }
@@ -138,17 +138,17 @@ namespace Deepgram.Realtime
         /// <summary>
         /// 
         /// </summary>
-        public static implicit operator ListenV1ServerEvent(global::Deepgram.Realtime.SpeechStartedPayload value) => new ListenV1ServerEvent((global::Deepgram.Realtime.SpeechStartedPayload?)value);
+        public static implicit operator ListenV1ServerEvent(global::Deepgram.Realtime.ListenV1SpeechStartedEvent value) => new ListenV1ServerEvent((global::Deepgram.Realtime.ListenV1SpeechStartedEvent?)value);
 
         /// <summary>
         /// 
         /// </summary>
-        public static implicit operator global::Deepgram.Realtime.SpeechStartedPayload?(ListenV1ServerEvent @this) => @this.SpeechStarted;
+        public static implicit operator global::Deepgram.Realtime.ListenV1SpeechStartedEvent?(ListenV1ServerEvent @this) => @this.SpeechStarted;
 
         /// <summary>
         /// 
         /// </summary>
-        public ListenV1ServerEvent(global::Deepgram.Realtime.SpeechStartedPayload? value)
+        public ListenV1ServerEvent(global::Deepgram.Realtime.ListenV1SpeechStartedEvent? value)
         {
             SpeechStarted = value;
         }
@@ -158,10 +158,10 @@ namespace Deepgram.Realtime
         /// </summary>
         public ListenV1ServerEvent(
             global::Deepgram.Realtime.ListenV1ServerEventDiscriminatorType? type,
-            global::Deepgram.Realtime.ResultsPayload? results,
-            global::Deepgram.Realtime.MetadataPayload? metadata,
-            global::Deepgram.Realtime.UtteranceEndPayload? utteranceEnd,
-            global::Deepgram.Realtime.SpeechStartedPayload? speechStarted
+            global::Deepgram.Realtime.ListenV1ResultsEvent? results,
+            global::Deepgram.Realtime.ListenV1MetadataEvent? metadata,
+            global::Deepgram.Realtime.ListenV1UtteranceEndEvent? utteranceEnd,
+            global::Deepgram.Realtime.ListenV1SpeechStartedEvent? speechStarted
             )
         {
             Type = type;
@@ -204,10 +204,10 @@ namespace Deepgram.Realtime
         /// 
         /// </summary>
         public TResult? Match<TResult>(
-            global::System.Func<global::Deepgram.Realtime.ResultsPayload?, TResult>? results = null,
-            global::System.Func<global::Deepgram.Realtime.MetadataPayload?, TResult>? metadata = null,
-            global::System.Func<global::Deepgram.Realtime.UtteranceEndPayload?, TResult>? utteranceEnd = null,
-            global::System.Func<global::Deepgram.Realtime.SpeechStartedPayload?, TResult>? speechStarted = null,
+            global::System.Func<global::Deepgram.Realtime.ListenV1ResultsEvent?, TResult>? results = null,
+            global::System.Func<global::Deepgram.Realtime.ListenV1MetadataEvent?, TResult>? metadata = null,
+            global::System.Func<global::Deepgram.Realtime.ListenV1UtteranceEndEvent?, TResult>? utteranceEnd = null,
+            global::System.Func<global::Deepgram.Realtime.ListenV1SpeechStartedEvent?, TResult>? speechStarted = null,
             bool validate = true)
         {
             if (validate)
@@ -239,10 +239,10 @@ namespace Deepgram.Realtime
         /// 
         /// </summary>
         public void Match(
-            global::System.Action<global::Deepgram.Realtime.ResultsPayload?>? results = null,
-            global::System.Action<global::Deepgram.Realtime.MetadataPayload?>? metadata = null,
-            global::System.Action<global::Deepgram.Realtime.UtteranceEndPayload?>? utteranceEnd = null,
-            global::System.Action<global::Deepgram.Realtime.SpeechStartedPayload?>? speechStarted = null,
+            global::System.Action<global::Deepgram.Realtime.ListenV1ResultsEvent?>? results = null,
+            global::System.Action<global::Deepgram.Realtime.ListenV1MetadataEvent?>? metadata = null,
+            global::System.Action<global::Deepgram.Realtime.ListenV1UtteranceEndEvent?>? utteranceEnd = null,
+            global::System.Action<global::Deepgram.Realtime.ListenV1SpeechStartedEvent?>? speechStarted = null,
             bool validate = true)
         {
             if (validate)
@@ -276,13 +276,13 @@ namespace Deepgram.Realtime
             var fields = new object?[]
             {
                 Results,
-                typeof(global::Deepgram.Realtime.ResultsPayload),
+                typeof(global::Deepgram.Realtime.ListenV1ResultsEvent),
                 Metadata,
-                typeof(global::Deepgram.Realtime.MetadataPayload),
+                typeof(global::Deepgram.Realtime.ListenV1MetadataEvent),
                 UtteranceEnd,
-                typeof(global::Deepgram.Realtime.UtteranceEndPayload),
+                typeof(global::Deepgram.Realtime.ListenV1UtteranceEndEvent),
                 SpeechStarted,
-                typeof(global::Deepgram.Realtime.SpeechStartedPayload),
+                typeof(global::Deepgram.Realtime.ListenV1SpeechStartedEvent),
             };
             const int offset = unchecked((int)2166136261);
             const int prime = 16777619;
@@ -299,10 +299,10 @@ namespace Deepgram.Realtime
         public bool Equals(ListenV1ServerEvent other)
         {
             return
-                global::System.Collections.Generic.EqualityComparer<global::Deepgram.Realtime.ResultsPayload?>.Default.Equals(Results, other.Results) &&
-                global::System.Collections.Generic.EqualityComparer<global::Deepgram.Realtime.MetadataPayload?>.Default.Equals(Metadata, other.Metadata) &&
-                global::System.Collections.Generic.EqualityComparer<global::Deepgram.Realtime.UtteranceEndPayload?>.Default.Equals(UtteranceEnd, other.UtteranceEnd) &&
-                global::System.Collections.Generic.EqualityComparer<global::Deepgram.Realtime.SpeechStartedPayload?>.Default.Equals(SpeechStarted, other.SpeechStarted) 
+                global::System.Collections.Generic.EqualityComparer<global::Deepgram.Realtime.ListenV1ResultsEvent?>.Default.Equals(Results, other.Results) &&
+                global::System.Collections.Generic.EqualityComparer<global::Deepgram.Realtime.ListenV1MetadataEvent?>.Default.Equals(Metadata, other.Metadata) &&
+                global::System.Collections.Generic.EqualityComparer<global::Deepgram.Realtime.ListenV1UtteranceEndEvent?>.Default.Equals(UtteranceEnd, other.UtteranceEnd) &&
+                global::System.Collections.Generic.EqualityComparer<global::Deepgram.Realtime.ListenV1SpeechStartedEvent?>.Default.Equals(SpeechStarted, other.SpeechStarted) 
                 ;
         }
 

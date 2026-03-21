@@ -1,0 +1,46 @@
+
+#pragma warning disable CS0618 // Type or member is obsolete
+
+#nullable enable
+
+namespace Deepgram.Realtime
+{
+    /// <summary>
+    /// 
+    /// </summary>
+    public sealed partial class AgentV1SettingsMessageAgentListen
+    {
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("provider")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Deepgram.Realtime.JsonConverters.OneOfJsonConverter<global::Deepgram.Realtime.AgentV1SettingsMessageAgentListenProviderVariant1, global::Deepgram.Realtime.AgentV1SettingsMessageAgentListenProviderVariant2>))]
+        public global::Deepgram.Realtime.OneOf<global::Deepgram.Realtime.AgentV1SettingsMessageAgentListenProviderVariant1, global::Deepgram.Realtime.AgentV1SettingsMessageAgentListenProviderVariant2>? Provider { get; set; }
+
+        /// <summary>
+        /// Additional properties that are not explicitly defined in the schema
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonExtensionData]
+        public global::System.Collections.Generic.IDictionary<string, object> AdditionalProperties { get; set; } = new global::System.Collections.Generic.Dictionary<string, object>();
+
+        /// <summary>
+        /// Initializes a new instance of the <see cref="AgentV1SettingsMessageAgentListen" /> class.
+        /// </summary>
+        /// <param name="provider"></param>
+#if NET7_0_OR_GREATER
+        [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
+#endif
+        public AgentV1SettingsMessageAgentListen(
+            global::Deepgram.Realtime.OneOf<global::Deepgram.Realtime.AgentV1SettingsMessageAgentListenProviderVariant1, global::Deepgram.Realtime.AgentV1SettingsMessageAgentListenProviderVariant2>? provider)
+        {
+            this.Provider = provider;
+        }
+
+        /// <summary>
+        /// Initializes a new instance of the <see cref="AgentV1SettingsMessageAgentListen" /> class.
+        /// </summary>
+        public AgentV1SettingsMessageAgentListen()
+        {
+        }
+    }
+}
