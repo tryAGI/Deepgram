@@ -177,6 +177,14 @@ namespace Deepgram.Realtime
         /// 
         /// </summary>
         public global::Deepgram.Realtime.ListenV2ServerEvent? Type37 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Deepgram.Realtime.ListenV2ServerEventDiscriminator? Type38 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Deepgram.Realtime.ListenV2ServerEventDiscriminatorType? Type39 { get; set; }
 
         /// <summary>
         /// 

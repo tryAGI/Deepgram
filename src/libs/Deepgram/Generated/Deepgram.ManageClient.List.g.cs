@@ -42,7 +42,7 @@ namespace Deepgram
                 path: "/v1/models",
                 baseUri: HttpClient.BaseAddress); 
             __pathBuilder
-                .AddOptionalParameter("include_outdated", includeOutdated?.ToString()) 
+                .AddOptionalParameter("include_outdated", includeOutdated?.ToString().ToLowerInvariant()) 
                 ; 
             var __path = __pathBuilder.ToString();
             using var __httpRequest = new global::System.Net.Http.HttpRequestMessage(

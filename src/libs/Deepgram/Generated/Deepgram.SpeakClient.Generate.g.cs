@@ -106,7 +106,7 @@ namespace Deepgram
             __pathBuilder
                 .AddOptionalParameter("callback", callback)
                 .AddOptionalParameter("callback_method", callbackMethod?.ToValueString())
-                .AddOptionalParameter("mip_opt_out", mipOptOut?.ToString())
+                .AddOptionalParameter("mip_opt_out", mipOptOut?.ToString().ToLowerInvariant())
                 .AddOptionalParameter("tag", tag?.ToString())
                 .AddOptionalParameter("bit_rate", bitRate?.ToString())
                 .AddOptionalParameter("container", container?.ToString())

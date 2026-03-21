@@ -45,6 +45,10 @@ namespace Deepgram.Realtime
 
             typeof(global::Deepgram.Realtime.JsonConverters.ListenV1ServerEventDiscriminatorTypeNullableJsonConverter),
 
+            typeof(global::Deepgram.Realtime.JsonConverters.ListenV2ServerEventDiscriminatorTypeJsonConverter),
+
+            typeof(global::Deepgram.Realtime.JsonConverters.ListenV2ServerEventDiscriminatorTypeNullableJsonConverter),
+
             typeof(global::Deepgram.Realtime.JsonConverters.ListenV1ServerEventJsonConverter),
 
             typeof(global::Deepgram.Realtime.JsonConverters.ListenV2ServerEventJsonConverter),
@@ -88,6 +92,8 @@ namespace Deepgram.Realtime
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Deepgram.Realtime.ListenV1ServerEventDiscriminator))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Deepgram.Realtime.ListenV1ServerEventDiscriminatorType))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Deepgram.Realtime.ListenV2ServerEvent))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Deepgram.Realtime.ListenV2ServerEventDiscriminator))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Deepgram.Realtime.ListenV2ServerEventDiscriminatorType))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<double>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Deepgram.Realtime.Alternative>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<string>))]
