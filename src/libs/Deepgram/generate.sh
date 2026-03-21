@@ -33,3 +33,13 @@ autosdk generate openapi.yaml \
   --targetFramework net10.0 \
   --output Generated \
   --exclude-deprecated-operations
+
+# Generate WebSocket client from AsyncAPI spec (ListenV1 real-time STT)
+# Uses a curated asyncapi.json checked into the repo (derived from Deepgram's
+# upstream asyncapi.yml but simplified to a single channel for AutoSDK compatibility)
+autosdk generate asyncapi.json \
+  --namespace Deepgram.Realtime \
+  --websocket-class-name DeepgramRealtimeClient \
+  --json-serializer-context RealtimeSourceGenerationContext \
+  --targetFramework net10.0 \
+  --output Generated

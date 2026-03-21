@@ -1,0 +1,446 @@
+{
+  "asyncapi": "3.0.0",
+  "info": {
+    "title": "Deepgram Streaming Speech-to-Text",
+    "version": "1.0.0",
+    "description": "Deepgram real-time speech-to-text streaming WebSocket API (v1/listen)."
+  },
+  "servers": {
+    "production": {
+      "host": "api.deepgram.com",
+      "pathname": "/v1/listen",
+      "protocol": "wss",
+      "description": "Deepgram production streaming endpoint"
+    }
+  },
+  "channels": {
+    "listen": {
+      "address": "/v1/listen",
+      "messages": {
+        "finalize": {
+          "$ref": "#/components/messages/Finalize"
+        },
+        "closeStream": {
+          "$ref": "#/components/messages/CloseStream"
+        },
+        "keepAlive": {
+          "$ref": "#/components/messages/KeepAlive"
+        },
+        "results": {
+          "$ref": "#/components/messages/Results"
+        },
+        "metadata": {
+          "$ref": "#/components/messages/Metadata"
+        },
+        "utteranceEnd": {
+          "$ref": "#/components/messages/UtteranceEnd"
+        },
+        "speechStarted": {
+          "$ref": "#/components/messages/SpeechStarted"
+        }
+      }
+    }
+  },
+  "operations": {
+    "sendFinalize": {
+      "action": "send",
+      "channel": {
+        "$ref": "#/channels/listen"
+      },
+      "summary": "Flush the transcription buffer and receive any remaining results.",
+      "messages": [
+        {
+          "$ref": "#/channels/listen/messages/finalize"
+        }
+      ]
+    },
+    "sendCloseStream": {
+      "action": "send",
+      "channel": {
+        "$ref": "#/channels/listen"
+      },
+      "summary": "Close the WebSocket stream gracefully.",
+      "messages": [
+        {
+          "$ref": "#/channels/listen/messages/closeStream"
+        }
+      ]
+    },
+    "sendKeepAlive": {
+      "action": "send",
+      "channel": {
+        "$ref": "#/channels/listen"
+      },
+      "summary": "Keep the WebSocket connection alive.",
+      "messages": [
+        {
+          "$ref": "#/channels/listen/messages/keepAlive"
+        }
+      ]
+    },
+    "receiveResults": {
+      "action": "receive",
+      "channel": {
+        "$ref": "#/channels/listen"
+      },
+      "summary": "Receive transcription results.",
+      "messages": [
+        {
+          "$ref": "#/channels/listen/messages/results"
+        }
+      ]
+    },
+    "receiveMetadata": {
+      "action": "receive",
+      "channel": {
+        "$ref": "#/channels/listen"
+      },
+      "summary": "Receive metadata about the transcription session.",
+      "messages": [
+        {
+          "$ref": "#/channels/listen/messages/metadata"
+        }
+      ]
+    },
+    "receiveUtteranceEnd": {
+      "action": "receive",
+      "channel": {
+        "$ref": "#/channels/listen"
+      },
+      "summary": "Receive notification that an utterance has ended.",
+      "messages": [
+        {
+          "$ref": "#/channels/listen/messages/utteranceEnd"
+        }
+      ]
+    },
+    "receiveSpeechStarted": {
+      "action": "receive",
+      "channel": {
+        "$ref": "#/channels/listen"
+      },
+      "summary": "Receive notification that speech has been detected.",
+      "messages": [
+        {
+          "$ref": "#/channels/listen/messages/speechStarted"
+        }
+      ]
+    }
+  },
+  "components": {
+    "messages": {
+      "Finalize": {
+        "name": "Finalize",
+        "description": "Flush the transcription buffer",
+        "payload": {
+          "$ref": "#/components/schemas/FinalizePayload"
+        }
+      },
+      "CloseStream": {
+        "name": "CloseStream",
+        "description": "Close the WebSocket stream",
+        "payload": {
+          "$ref": "#/components/schemas/CloseStreamPayload"
+        }
+      },
+      "KeepAlive": {
+        "name": "KeepAlive",
+        "description": "Keep the connection alive",
+        "payload": {
+          "$ref": "#/components/schemas/KeepAlivePayload"
+        }
+      },
+      "Results": {
+        "name": "Results",
+        "description": "Transcription results from Deepgram",
+        "payload": {
+          "$ref": "#/components/schemas/ResultsPayload"
+        }
+      },
+      "Metadata": {
+        "name": "Metadata",
+        "description": "Metadata about the transcription session",
+        "payload": {
+          "$ref": "#/components/schemas/MetadataPayload"
+        }
+      },
+      "UtteranceEnd": {
+        "name": "UtteranceEnd",
+        "description": "An utterance has ended",
+        "payload": {
+          "$ref": "#/components/schemas/UtteranceEndPayload"
+        }
+      },
+      "SpeechStarted": {
+        "name": "SpeechStarted",
+        "description": "Speech has been detected",
+        "payload": {
+          "$ref": "#/components/schemas/SpeechStartedPayload"
+        }
+      }
+    },
+    "schemas": {
+      "FinalizePayload": {
+        "type": "object",
+        "properties": {
+          "type": {
+            "type": "string",
+            "enum": ["Finalize"],
+            "description": "Message type identifier"
+          }
+        },
+        "required": ["type"]
+      },
+      "CloseStreamPayload": {
+        "type": "object",
+        "properties": {
+          "type": {
+            "type": "string",
+            "enum": ["CloseStream"],
+            "description": "Message type identifier"
+          }
+        },
+        "required": ["type"]
+      },
+      "KeepAlivePayload": {
+        "type": "object",
+        "properties": {
+          "type": {
+            "type": "string",
+            "enum": ["KeepAlive"],
+            "description": "Message type identifier"
+          }
+        },
+        "required": ["type"]
+      },
+      "ResultsPayload": {
+        "type": "object",
+        "properties": {
+          "type": {
+            "type": "string",
+            "enum": ["Results"],
+            "description": "Message type identifier"
+          },
+          "channel_index": {
+            "type": "array",
+            "items": {
+              "type": "number"
+            },
+            "description": "The index of the channel"
+          },
+          "duration": {
+            "type": "number",
+            "description": "The duration of the audio segment in seconds"
+          },
+          "start": {
+            "type": "number",
+            "description": "The start time of the audio segment in seconds"
+          },
+          "is_final": {
+            "type": "boolean",
+            "description": "Whether this is a final transcription result"
+          },
+          "speech_final": {
+            "type": "boolean",
+            "description": "Whether this is the final result for the current speech segment"
+          },
+          "channel": {
+            "$ref": "#/components/schemas/Channel"
+          },
+          "metadata": {
+            "$ref": "#/components/schemas/ResultMetadata"
+          },
+          "from_finalize": {
+            "type": "boolean",
+            "description": "Whether this result was triggered by a Finalize message"
+          }
+        },
+        "required": ["type", "channel_index", "duration", "start", "channel", "metadata"]
+      },
+      "Channel": {
+        "type": "object",
+        "properties": {
+          "alternatives": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Alternative"
+            }
+          }
+        },
+        "required": ["alternatives"]
+      },
+      "Alternative": {
+        "type": "object",
+        "properties": {
+          "transcript": {
+            "type": "string",
+            "description": "The transcript text"
+          },
+          "confidence": {
+            "type": "number",
+            "description": "The confidence score"
+          },
+          "languages": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "Detected languages"
+          },
+          "words": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Word"
+            }
+          }
+        },
+        "required": ["transcript", "confidence", "words"]
+      },
+      "Word": {
+        "type": "object",
+        "properties": {
+          "word": {
+            "type": "string",
+            "description": "The word"
+          },
+          "start": {
+            "type": "number",
+            "description": "Start time in seconds"
+          },
+          "end": {
+            "type": "number",
+            "description": "End time in seconds"
+          },
+          "confidence": {
+            "type": "number",
+            "description": "Confidence score"
+          },
+          "language": {
+            "type": "string",
+            "description": "The language of the word"
+          },
+          "punctuated_word": {
+            "type": "string",
+            "description": "The punctuated word"
+          },
+          "speaker": {
+            "type": "number",
+            "description": "The speaker index"
+          }
+        },
+        "required": ["word", "start", "end", "confidence"]
+      },
+      "ResultMetadata": {
+        "type": "object",
+        "properties": {
+          "request_id": {
+            "type": "string",
+            "description": "The request ID"
+          },
+          "model_info": {
+            "$ref": "#/components/schemas/ModelInfo"
+          },
+          "model_uuid": {
+            "type": "string",
+            "description": "The model UUID"
+          }
+        },
+        "required": ["request_id", "model_info", "model_uuid"]
+      },
+      "ModelInfo": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string",
+            "description": "The model name"
+          },
+          "version": {
+            "type": "string",
+            "description": "The model version"
+          },
+          "arch": {
+            "type": "string",
+            "description": "The model architecture"
+          }
+        },
+        "required": ["name", "version", "arch"]
+      },
+      "MetadataPayload": {
+        "type": "object",
+        "properties": {
+          "type": {
+            "type": "string",
+            "enum": ["Metadata"],
+            "description": "Message type identifier"
+          },
+          "request_id": {
+            "type": "string",
+            "format": "uuid",
+            "description": "The request ID"
+          },
+          "sha256": {
+            "type": "string",
+            "description": "SHA256 hash"
+          },
+          "created": {
+            "type": "string",
+            "description": "Creation timestamp"
+          },
+          "duration": {
+            "type": "number",
+            "description": "Audio duration in seconds"
+          },
+          "channels": {
+            "type": "number",
+            "description": "Number of audio channels"
+          }
+        },
+        "required": ["type", "request_id", "sha256", "created", "duration", "channels"]
+      },
+      "UtteranceEndPayload": {
+        "type": "object",
+        "properties": {
+          "type": {
+            "type": "string",
+            "enum": ["UtteranceEnd"],
+            "description": "Message type identifier"
+          },
+          "channel": {
+            "type": "array",
+            "items": {
+              "type": "number"
+            },
+            "description": "The channel indices"
+          },
+          "last_word_end": {
+            "type": "number",
+            "description": "End time of the last word"
+          }
+        },
+        "required": ["type", "channel", "last_word_end"]
+      },
+      "SpeechStartedPayload": {
+        "type": "object",
+        "properties": {
+          "type": {
+            "type": "string",
+            "enum": ["SpeechStarted"],
+            "description": "Message type identifier"
+          },
+          "channel": {
+            "type": "array",
+            "items": {
+              "type": "number"
+            },
+            "description": "The channel indices"
+          },
+          "timestamp": {
+            "type": "number",
+            "description": "Timestamp when speech was detected"
+          }
+        },
+        "required": ["type", "channel", "timestamp"]
+      }
+    }
+  }
+}
