@@ -96,29 +96,18 @@ public partial class DeepgramClient : ISpeechToTextClient
                 "Ensure the client was created with an API key.");
         }
 
-        // Build the WebSocket URI with query parameters.
-        var uriBuilder = new UriBuilder(Realtime.DeepgramListenV1RealtimeClient.DefaultBaseUrl);
-        var queryParams = new List<string> { "interim_results=true" };
-
-        if (options?.ModelId is { Length: > 0 } modelId)
-        {
-            queryParams.Add($"model={Uri.EscapeDataString(modelId)}");
-        }
-
-        if (options?.SpeechLanguage is { Length: > 0 } language)
-        {
-            queryParams.Add($"language={Uri.EscapeDataString(language)}");
-        }
-
-        if (queryParams.Count > 0)
-        {
-            uriBuilder.Query = string.Join("&", queryParams);
-        }
-
-        // Create and configure the WebSocket client.
+        // Create and configure the WebSocket client with typed query parameters.
         await using var realtimeClient = new Realtime.DeepgramListenV1RealtimeClient();
         realtimeClient.AuthorizeUsingToken(apiKey);
-        await realtimeClient.ConnectAsync(uri: uriBuilder.Uri, cancellationToken: cancellationToken).ConfigureAwait(false);
+        await realtimeClient.ConnectAsync(
+            interimResults: Realtime.ListenV1InterimResults.True,
+            model: options?.ModelId is { Length: > 0 } modelId
+                ? Realtime.ListenV1ModelExtensions.ToEnum(modelId)
+                : null,
+            language: options?.SpeechLanguage is { Length: > 0 } language
+                ? language
+                : null,
+            cancellationToken: cancellationToken).ConfigureAwait(false);
 
         // Start sending audio in a background task.
         var sendTask = Task.Run(async () =>
