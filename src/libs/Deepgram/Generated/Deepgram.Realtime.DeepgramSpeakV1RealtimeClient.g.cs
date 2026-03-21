@@ -73,25 +73,16 @@ namespace Deepgram.Realtime
         /// <summary>
         /// Connects to the WebSocket server with typed query parameters.
         /// </summary>
-        /// <param name="encoding">Encoding allows you to specify the expected encoding of your audio output for streaming TTS. Only streaming-compatible encodings are supported.</param>
         /// <param name="mipOptOut">Opts out requests from the Deepgram Model Improvement Program. Refer to our Docs for pricing impacts before setting this to true. https://dpgr.am/deepgram-mip</param>
-        /// <param name="model">AI model used to process submitted text</param>
-        /// <param name="sampleRate">Sample Rate specifies the sample rate for the output audio. Based on encoding 8000 or 24000 are possible defaults. For some encodings sample rate is not configurable.</param>
         public async global::System.Threading.Tasks.Task ConnectAsync(
-            global::Deepgram.Realtime.SpeakV1Encoding? encoding = default,
             object? mipOptOut = default,
-            global::Deepgram.Realtime.SpeakV1Model? model = default,
-            global::Deepgram.Realtime.SpeakV1SampleRate? sampleRate = default,
             global::System.Uri? uri = null,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
             var __pathBuilder = new global::Deepgram.Realtime.PathBuilder(
                 path: uri?.ToString() ?? DefaultBaseUrl);
             __pathBuilder
-                .AddOptionalParameter("encoding", encoding?.ToValueString())
                 .AddOptionalParameter("mip_opt_out", mipOptOut?.ToString())
-                .AddOptionalParameter("model", model?.ToValueString())
-                .AddOptionalParameter("sample_rate", sampleRate?.ToValueString())
                 ;
             var __path = __pathBuilder.ToString();
 

@@ -74,9 +74,7 @@ namespace Deepgram.Realtime
         /// <summary>
         /// Connects to the WebSocket server with typed query parameters.
         /// </summary>
-        /// <param name="model">Defines the AI model used to process submitted audio.</param>
         /// <param name="eagerEotThreshold">End-of-turn confidence required to fire an eager end-of-turn event. When set, enables `EagerEndOfTurn` and `TurnResumed` events. Valid Values 0.3 - 0.9.</param>
-        /// <param name="encoding">Encoding of the audio stream. Required if sending non-containerized/raw audio. If sending containerized audio, this parameter should be omitted.</param>
         /// <param name="eotThreshold">End-of-turn confidence required to finish a turn. Valid Values 0.5 - 0.9.</param>
         /// <param name="eotTimeoutMs">A turn will be finished when this much time has passed after speech, regardless of EOT confidence.</param>
         /// <param name="keyterm">Keyterm prompting can improve recognition of specialized terminology. Pass multiple keyterm query parameters to boost multiple keyterms.</param>
@@ -84,9 +82,7 @@ namespace Deepgram.Realtime
         /// <param name="sampleRate">Sample rate of the audio stream in Hz. Required if sending non-containerized/raw audio. If sending containerized audio, this parameter should be omitted.</param>
         /// <param name="tag">Label your requests for the purpose of identification during usage reporting</param>
         public async global::System.Threading.Tasks.Task ConnectAsync(
-            global::Deepgram.Realtime.ListenV2Model model,
             object? eagerEotThreshold = default,
-            global::Deepgram.Realtime.ListenV2Encoding? encoding = default,
             object? eotThreshold = default,
             object? eotTimeoutMs = default,
             global::Deepgram.Realtime.ListenV2Keyterm? keyterm = default,
@@ -99,9 +95,7 @@ namespace Deepgram.Realtime
             var __pathBuilder = new global::Deepgram.Realtime.PathBuilder(
                 path: uri?.ToString() ?? DefaultBaseUrl);
             __pathBuilder
-                .AddRequiredParameter("model", model.ToValueString())
                 .AddOptionalParameter("eager_eot_threshold", eagerEotThreshold?.ToString())
-                .AddOptionalParameter("encoding", encoding?.ToValueString())
                 .AddOptionalParameter("eot_threshold", eotThreshold?.ToString())
                 .AddOptionalParameter("eot_timeout_ms", eotTimeoutMs?.ToString())
                 .AddOptionalParameter("keyterm", keyterm?.ToString())
@@ -113,16 +107,6 @@ namespace Deepgram.Realtime
 
             await _clientWebSocket.ConnectAsync(
                 new global::System.Uri(__path), cancellationToken).ConfigureAwait(false);
-        }
-
-        /// <inheritdoc cref="global::System.Net.WebSockets.ClientWebSocket.ConnectAsync(global::System.Uri, global::System.Threading.CancellationToken)"/>
-        public async global::System.Threading.Tasks.Task ConnectAsync(
-            global::System.Uri? uri = null,
-            global::System.Threading.CancellationToken cancellationToken = default)
-        {
-            uri ??= new global::System.Uri(DefaultBaseUrl);
-
-            await _clientWebSocket.ConnectAsync(uri, cancellationToken).ConfigureAwait(false);
         }
 
         /// <summary>
