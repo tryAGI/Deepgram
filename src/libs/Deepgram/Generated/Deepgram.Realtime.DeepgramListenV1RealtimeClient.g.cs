@@ -4,7 +4,7 @@
 namespace Deepgram.Realtime
 {
     /// <summary>
-    /// Deepgram real-time WebSocket APIs: ListenV1 (classic STT) and ListenV2 (Flux conversational STT).
+    /// Transcribe audio and video using Deepgram's speech-to-text WebSocket
     /// </summary>
     public sealed partial class DeepgramListenV1RealtimeClient : global::System.IDisposable, global::System.IAsyncDisposable
     {
@@ -39,6 +39,34 @@ namespace Deepgram.Realtime
             Initialized(_clientWebSocket);
         }
 
+
+        /// <summary>
+        /// Authorize using bearer authentication.
+        /// </summary>
+        /// <param name="apiKey"></param>
+        public void AuthorizeUsingBearer(
+            string apiKey)
+        {
+            apiKey = apiKey ?? throw new global::System.ArgumentNullException(nameof(apiKey));
+
+            _clientWebSocket.Options.SetRequestHeader("Authorization", $"Bearer {apiKey}");
+        }
+
+        /// <summary>
+        /// Creates a new instance with bearer token authentication.
+        /// </summary>
+        /// <param name="apiKey"></param>
+        /// <param name="clientWebSocket"></param>
+        public DeepgramListenV1RealtimeClient(
+            string apiKey,
+            global::System.Net.WebSockets.ClientWebSocket? clientWebSocket = null) : this(clientWebSocket)
+        {
+            Authorizing(_clientWebSocket, ref apiKey);
+
+            AuthorizeUsingBearer(apiKey);
+
+            Authorized(_clientWebSocket);
+        }
 
 
         /// <inheritdoc cref="global::System.Net.WebSockets.ClientWebSocket.ConnectAsync(global::System.Uri, global::System.Threading.CancellationToken)"/>

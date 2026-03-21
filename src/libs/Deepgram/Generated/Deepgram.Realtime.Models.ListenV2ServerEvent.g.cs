@@ -15,12 +15,12 @@ namespace Deepgram.Realtime
         public global::Deepgram.Realtime.ListenV2ServerEventDiscriminatorType? Type { get; }
 
         /// <summary>
-        /// Sent at the start of each connection, indicating the connection is active.
+        /// 
         /// </summary>
 #if NET6_0_OR_GREATER
-        public global::Deepgram.Realtime.V2ConnectedPayload? Connected { get; init; }
+        public global::Deepgram.Realtime.ListenV2ConnectedEvent? Connected { get; init; }
 #else
-        public global::Deepgram.Realtime.V2ConnectedPayload? Connected { get; }
+        public global::Deepgram.Realtime.ListenV2ConnectedEvent? Connected { get; }
 #endif
 
         /// <summary>
@@ -32,12 +32,12 @@ namespace Deepgram.Realtime
         public bool IsConnected => Connected != null;
 
         /// <summary>
-        /// Describes the current turn and latest transcription state.
+        /// Describes the current turn and latest state of the turn
         /// </summary>
 #if NET6_0_OR_GREATER
-        public global::Deepgram.Realtime.V2TurnInfoPayload? TurnInfo { get; init; }
+        public global::Deepgram.Realtime.ListenV2TurnInfoEvent? TurnInfo { get; init; }
 #else
-        public global::Deepgram.Realtime.V2TurnInfoPayload? TurnInfo { get; }
+        public global::Deepgram.Realtime.ListenV2TurnInfoEvent? TurnInfo { get; }
 #endif
 
         /// <summary>
@@ -49,12 +49,12 @@ namespace Deepgram.Realtime
         public bool IsTurnInfo => TurnInfo != null;
 
         /// <summary>
-        /// Sent when a Configure message was successfully applied.
+        /// 
         /// </summary>
 #if NET6_0_OR_GREATER
-        public global::Deepgram.Realtime.V2ConfigureSuccessPayload? ConfigureSuccess { get; init; }
+        public global::Deepgram.Realtime.ListenV2ConfigureSuccessEvent? ConfigureSuccess { get; init; }
 #else
-        public global::Deepgram.Realtime.V2ConfigureSuccessPayload? ConfigureSuccess { get; }
+        public global::Deepgram.Realtime.ListenV2ConfigureSuccessEvent? ConfigureSuccess { get; }
 #endif
 
         /// <summary>
@@ -66,12 +66,12 @@ namespace Deepgram.Realtime
         public bool IsConfigureSuccess => ConfigureSuccess != null;
 
         /// <summary>
-        /// Indicates that a Configure message was rejected.
+        /// 
         /// </summary>
 #if NET6_0_OR_GREATER
-        public global::Deepgram.Realtime.V2ConfigureFailurePayload? ConfigureFailure { get; init; }
+        public global::Deepgram.Realtime.ListenV2ConfigureFailureEvent? ConfigureFailure { get; init; }
 #else
-        public global::Deepgram.Realtime.V2ConfigureFailurePayload? ConfigureFailure { get; }
+        public global::Deepgram.Realtime.ListenV2ConfigureFailureEvent? ConfigureFailure { get; }
 #endif
 
         /// <summary>
@@ -81,20 +81,37 @@ namespace Deepgram.Realtime
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(ConfigureFailure))]
 #endif
         public bool IsConfigureFailure => ConfigureFailure != null;
-        /// <summary>
-        /// 
-        /// </summary>
-        public static implicit operator ListenV2ServerEvent(global::Deepgram.Realtime.V2ConnectedPayload value) => new ListenV2ServerEvent((global::Deepgram.Realtime.V2ConnectedPayload?)value);
 
         /// <summary>
         /// 
         /// </summary>
-        public static implicit operator global::Deepgram.Realtime.V2ConnectedPayload?(ListenV2ServerEvent @this) => @this.Connected;
+#if NET6_0_OR_GREATER
+        public global::Deepgram.Realtime.ListenV2FatalErrorEvent? Error { get; init; }
+#else
+        public global::Deepgram.Realtime.ListenV2FatalErrorEvent? Error { get; }
+#endif
 
         /// <summary>
         /// 
         /// </summary>
-        public ListenV2ServerEvent(global::Deepgram.Realtime.V2ConnectedPayload? value)
+#if NET6_0_OR_GREATER
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Error))]
+#endif
+        public bool IsError => Error != null;
+        /// <summary>
+        /// 
+        /// </summary>
+        public static implicit operator ListenV2ServerEvent(global::Deepgram.Realtime.ListenV2ConnectedEvent value) => new ListenV2ServerEvent((global::Deepgram.Realtime.ListenV2ConnectedEvent?)value);
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static implicit operator global::Deepgram.Realtime.ListenV2ConnectedEvent?(ListenV2ServerEvent @this) => @this.Connected;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public ListenV2ServerEvent(global::Deepgram.Realtime.ListenV2ConnectedEvent? value)
         {
             Connected = value;
         }
@@ -102,17 +119,17 @@ namespace Deepgram.Realtime
         /// <summary>
         /// 
         /// </summary>
-        public static implicit operator ListenV2ServerEvent(global::Deepgram.Realtime.V2TurnInfoPayload value) => new ListenV2ServerEvent((global::Deepgram.Realtime.V2TurnInfoPayload?)value);
+        public static implicit operator ListenV2ServerEvent(global::Deepgram.Realtime.ListenV2TurnInfoEvent value) => new ListenV2ServerEvent((global::Deepgram.Realtime.ListenV2TurnInfoEvent?)value);
 
         /// <summary>
         /// 
         /// </summary>
-        public static implicit operator global::Deepgram.Realtime.V2TurnInfoPayload?(ListenV2ServerEvent @this) => @this.TurnInfo;
+        public static implicit operator global::Deepgram.Realtime.ListenV2TurnInfoEvent?(ListenV2ServerEvent @this) => @this.TurnInfo;
 
         /// <summary>
         /// 
         /// </summary>
-        public ListenV2ServerEvent(global::Deepgram.Realtime.V2TurnInfoPayload? value)
+        public ListenV2ServerEvent(global::Deepgram.Realtime.ListenV2TurnInfoEvent? value)
         {
             TurnInfo = value;
         }
@@ -120,17 +137,17 @@ namespace Deepgram.Realtime
         /// <summary>
         /// 
         /// </summary>
-        public static implicit operator ListenV2ServerEvent(global::Deepgram.Realtime.V2ConfigureSuccessPayload value) => new ListenV2ServerEvent((global::Deepgram.Realtime.V2ConfigureSuccessPayload?)value);
+        public static implicit operator ListenV2ServerEvent(global::Deepgram.Realtime.ListenV2ConfigureSuccessEvent value) => new ListenV2ServerEvent((global::Deepgram.Realtime.ListenV2ConfigureSuccessEvent?)value);
 
         /// <summary>
         /// 
         /// </summary>
-        public static implicit operator global::Deepgram.Realtime.V2ConfigureSuccessPayload?(ListenV2ServerEvent @this) => @this.ConfigureSuccess;
+        public static implicit operator global::Deepgram.Realtime.ListenV2ConfigureSuccessEvent?(ListenV2ServerEvent @this) => @this.ConfigureSuccess;
 
         /// <summary>
         /// 
         /// </summary>
-        public ListenV2ServerEvent(global::Deepgram.Realtime.V2ConfigureSuccessPayload? value)
+        public ListenV2ServerEvent(global::Deepgram.Realtime.ListenV2ConfigureSuccessEvent? value)
         {
             ConfigureSuccess = value;
         }
@@ -138,17 +155,17 @@ namespace Deepgram.Realtime
         /// <summary>
         /// 
         /// </summary>
-        public static implicit operator ListenV2ServerEvent(global::Deepgram.Realtime.V2ConfigureFailurePayload value) => new ListenV2ServerEvent((global::Deepgram.Realtime.V2ConfigureFailurePayload?)value);
+        public static implicit operator ListenV2ServerEvent(global::Deepgram.Realtime.ListenV2ConfigureFailureEvent value) => new ListenV2ServerEvent((global::Deepgram.Realtime.ListenV2ConfigureFailureEvent?)value);
 
         /// <summary>
         /// 
         /// </summary>
-        public static implicit operator global::Deepgram.Realtime.V2ConfigureFailurePayload?(ListenV2ServerEvent @this) => @this.ConfigureFailure;
+        public static implicit operator global::Deepgram.Realtime.ListenV2ConfigureFailureEvent?(ListenV2ServerEvent @this) => @this.ConfigureFailure;
 
         /// <summary>
         /// 
         /// </summary>
-        public ListenV2ServerEvent(global::Deepgram.Realtime.V2ConfigureFailurePayload? value)
+        public ListenV2ServerEvent(global::Deepgram.Realtime.ListenV2ConfigureFailureEvent? value)
         {
             ConfigureFailure = value;
         }
@@ -156,12 +173,31 @@ namespace Deepgram.Realtime
         /// <summary>
         /// 
         /// </summary>
+        public static implicit operator ListenV2ServerEvent(global::Deepgram.Realtime.ListenV2FatalErrorEvent value) => new ListenV2ServerEvent((global::Deepgram.Realtime.ListenV2FatalErrorEvent?)value);
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static implicit operator global::Deepgram.Realtime.ListenV2FatalErrorEvent?(ListenV2ServerEvent @this) => @this.Error;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public ListenV2ServerEvent(global::Deepgram.Realtime.ListenV2FatalErrorEvent? value)
+        {
+            Error = value;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
         public ListenV2ServerEvent(
             global::Deepgram.Realtime.ListenV2ServerEventDiscriminatorType? type,
-            global::Deepgram.Realtime.V2ConnectedPayload? connected,
-            global::Deepgram.Realtime.V2TurnInfoPayload? turnInfo,
-            global::Deepgram.Realtime.V2ConfigureSuccessPayload? configureSuccess,
-            global::Deepgram.Realtime.V2ConfigureFailurePayload? configureFailure
+            global::Deepgram.Realtime.ListenV2ConnectedEvent? connected,
+            global::Deepgram.Realtime.ListenV2TurnInfoEvent? turnInfo,
+            global::Deepgram.Realtime.ListenV2ConfigureSuccessEvent? configureSuccess,
+            global::Deepgram.Realtime.ListenV2ConfigureFailureEvent? configureFailure,
+            global::Deepgram.Realtime.ListenV2FatalErrorEvent? error
             )
         {
             Type = type;
@@ -170,12 +206,14 @@ namespace Deepgram.Realtime
             TurnInfo = turnInfo;
             ConfigureSuccess = configureSuccess;
             ConfigureFailure = configureFailure;
+            Error = error;
         }
 
         /// <summary>
         /// 
         /// </summary>
         public object? Object =>
+            Error as object ??
             ConfigureFailure as object ??
             ConfigureSuccess as object ??
             TurnInfo as object ??
@@ -189,7 +227,8 @@ namespace Deepgram.Realtime
             Connected?.ToString() ??
             TurnInfo?.ToString() ??
             ConfigureSuccess?.ToString() ??
-            ConfigureFailure?.ToString() 
+            ConfigureFailure?.ToString() ??
+            Error?.ToString() 
             ;
 
         /// <summary>
@@ -197,17 +236,18 @@ namespace Deepgram.Realtime
         /// </summary>
         public bool Validate()
         {
-            return IsConnected && !IsTurnInfo && !IsConfigureSuccess && !IsConfigureFailure || !IsConnected && IsTurnInfo && !IsConfigureSuccess && !IsConfigureFailure || !IsConnected && !IsTurnInfo && IsConfigureSuccess && !IsConfigureFailure || !IsConnected && !IsTurnInfo && !IsConfigureSuccess && IsConfigureFailure;
+            return IsConnected && !IsTurnInfo && !IsConfigureSuccess && !IsConfigureFailure && !IsError || !IsConnected && IsTurnInfo && !IsConfigureSuccess && !IsConfigureFailure && !IsError || !IsConnected && !IsTurnInfo && IsConfigureSuccess && !IsConfigureFailure && !IsError || !IsConnected && !IsTurnInfo && !IsConfigureSuccess && IsConfigureFailure && !IsError || !IsConnected && !IsTurnInfo && !IsConfigureSuccess && !IsConfigureFailure && IsError;
         }
 
         /// <summary>
         /// 
         /// </summary>
         public TResult? Match<TResult>(
-            global::System.Func<global::Deepgram.Realtime.V2ConnectedPayload?, TResult>? connected = null,
-            global::System.Func<global::Deepgram.Realtime.V2TurnInfoPayload?, TResult>? turnInfo = null,
-            global::System.Func<global::Deepgram.Realtime.V2ConfigureSuccessPayload?, TResult>? configureSuccess = null,
-            global::System.Func<global::Deepgram.Realtime.V2ConfigureFailurePayload?, TResult>? configureFailure = null,
+            global::System.Func<global::Deepgram.Realtime.ListenV2ConnectedEvent?, TResult>? connected = null,
+            global::System.Func<global::Deepgram.Realtime.ListenV2TurnInfoEvent?, TResult>? turnInfo = null,
+            global::System.Func<global::Deepgram.Realtime.ListenV2ConfigureSuccessEvent?, TResult>? configureSuccess = null,
+            global::System.Func<global::Deepgram.Realtime.ListenV2ConfigureFailureEvent?, TResult>? configureFailure = null,
+            global::System.Func<global::Deepgram.Realtime.ListenV2FatalErrorEvent?, TResult>? error = null,
             bool validate = true)
         {
             if (validate)
@@ -231,6 +271,10 @@ namespace Deepgram.Realtime
             {
                 return configureFailure(ConfigureFailure!);
             }
+            else if (IsError && error != null)
+            {
+                return error(Error!);
+            }
 
             return default(TResult);
         }
@@ -239,10 +283,11 @@ namespace Deepgram.Realtime
         /// 
         /// </summary>
         public void Match(
-            global::System.Action<global::Deepgram.Realtime.V2ConnectedPayload?>? connected = null,
-            global::System.Action<global::Deepgram.Realtime.V2TurnInfoPayload?>? turnInfo = null,
-            global::System.Action<global::Deepgram.Realtime.V2ConfigureSuccessPayload?>? configureSuccess = null,
-            global::System.Action<global::Deepgram.Realtime.V2ConfigureFailurePayload?>? configureFailure = null,
+            global::System.Action<global::Deepgram.Realtime.ListenV2ConnectedEvent?>? connected = null,
+            global::System.Action<global::Deepgram.Realtime.ListenV2TurnInfoEvent?>? turnInfo = null,
+            global::System.Action<global::Deepgram.Realtime.ListenV2ConfigureSuccessEvent?>? configureSuccess = null,
+            global::System.Action<global::Deepgram.Realtime.ListenV2ConfigureFailureEvent?>? configureFailure = null,
+            global::System.Action<global::Deepgram.Realtime.ListenV2FatalErrorEvent?>? error = null,
             bool validate = true)
         {
             if (validate)
@@ -266,6 +311,10 @@ namespace Deepgram.Realtime
             {
                 configureFailure?.Invoke(ConfigureFailure!);
             }
+            else if (IsError)
+            {
+                error?.Invoke(Error!);
+            }
         }
 
         /// <summary>
@@ -276,13 +325,15 @@ namespace Deepgram.Realtime
             var fields = new object?[]
             {
                 Connected,
-                typeof(global::Deepgram.Realtime.V2ConnectedPayload),
+                typeof(global::Deepgram.Realtime.ListenV2ConnectedEvent),
                 TurnInfo,
-                typeof(global::Deepgram.Realtime.V2TurnInfoPayload),
+                typeof(global::Deepgram.Realtime.ListenV2TurnInfoEvent),
                 ConfigureSuccess,
-                typeof(global::Deepgram.Realtime.V2ConfigureSuccessPayload),
+                typeof(global::Deepgram.Realtime.ListenV2ConfigureSuccessEvent),
                 ConfigureFailure,
-                typeof(global::Deepgram.Realtime.V2ConfigureFailurePayload),
+                typeof(global::Deepgram.Realtime.ListenV2ConfigureFailureEvent),
+                Error,
+                typeof(global::Deepgram.Realtime.ListenV2FatalErrorEvent),
             };
             const int offset = unchecked((int)2166136261);
             const int prime = 16777619;
@@ -299,10 +350,11 @@ namespace Deepgram.Realtime
         public bool Equals(ListenV2ServerEvent other)
         {
             return
-                global::System.Collections.Generic.EqualityComparer<global::Deepgram.Realtime.V2ConnectedPayload?>.Default.Equals(Connected, other.Connected) &&
-                global::System.Collections.Generic.EqualityComparer<global::Deepgram.Realtime.V2TurnInfoPayload?>.Default.Equals(TurnInfo, other.TurnInfo) &&
-                global::System.Collections.Generic.EqualityComparer<global::Deepgram.Realtime.V2ConfigureSuccessPayload?>.Default.Equals(ConfigureSuccess, other.ConfigureSuccess) &&
-                global::System.Collections.Generic.EqualityComparer<global::Deepgram.Realtime.V2ConfigureFailurePayload?>.Default.Equals(ConfigureFailure, other.ConfigureFailure) 
+                global::System.Collections.Generic.EqualityComparer<global::Deepgram.Realtime.ListenV2ConnectedEvent?>.Default.Equals(Connected, other.Connected) &&
+                global::System.Collections.Generic.EqualityComparer<global::Deepgram.Realtime.ListenV2TurnInfoEvent?>.Default.Equals(TurnInfo, other.TurnInfo) &&
+                global::System.Collections.Generic.EqualityComparer<global::Deepgram.Realtime.ListenV2ConfigureSuccessEvent?>.Default.Equals(ConfigureSuccess, other.ConfigureSuccess) &&
+                global::System.Collections.Generic.EqualityComparer<global::Deepgram.Realtime.ListenV2ConfigureFailureEvent?>.Default.Equals(ConfigureFailure, other.ConfigureFailure) &&
+                global::System.Collections.Generic.EqualityComparer<global::Deepgram.Realtime.ListenV2FatalErrorEvent?>.Default.Equals(Error, other.Error) 
                 ;
         }
 

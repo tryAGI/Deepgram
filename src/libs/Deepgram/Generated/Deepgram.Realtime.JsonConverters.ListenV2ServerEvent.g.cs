@@ -21,33 +21,40 @@ namespace Deepgram.Realtime.JsonConverters
                             throw new global::System.InvalidOperationException($"Cannot get type info for {nameof(global::Deepgram.Realtime.ListenV2ServerEventDiscriminator)}");
             var discriminator = global::System.Text.Json.JsonSerializer.Deserialize(ref readerCopy, discriminatorTypeInfo);
 
-            global::Deepgram.Realtime.V2ConnectedPayload? connected = default;
+            global::Deepgram.Realtime.ListenV2ConnectedEvent? connected = default;
             if (discriminator?.Type == global::Deepgram.Realtime.ListenV2ServerEventDiscriminatorType.Connected)
             {
-                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Deepgram.Realtime.V2ConnectedPayload), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Deepgram.Realtime.V2ConnectedPayload> ??
-                               throw new global::System.InvalidOperationException($"Cannot get type info for {nameof(global::Deepgram.Realtime.V2ConnectedPayload)}");
+                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Deepgram.Realtime.ListenV2ConnectedEvent), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Deepgram.Realtime.ListenV2ConnectedEvent> ??
+                               throw new global::System.InvalidOperationException($"Cannot get type info for {nameof(global::Deepgram.Realtime.ListenV2ConnectedEvent)}");
                 connected = global::System.Text.Json.JsonSerializer.Deserialize(ref reader, typeInfo);
             }
-            global::Deepgram.Realtime.V2TurnInfoPayload? turnInfo = default;
+            global::Deepgram.Realtime.ListenV2TurnInfoEvent? turnInfo = default;
             if (discriminator?.Type == global::Deepgram.Realtime.ListenV2ServerEventDiscriminatorType.TurnInfo)
             {
-                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Deepgram.Realtime.V2TurnInfoPayload), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Deepgram.Realtime.V2TurnInfoPayload> ??
-                               throw new global::System.InvalidOperationException($"Cannot get type info for {nameof(global::Deepgram.Realtime.V2TurnInfoPayload)}");
+                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Deepgram.Realtime.ListenV2TurnInfoEvent), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Deepgram.Realtime.ListenV2TurnInfoEvent> ??
+                               throw new global::System.InvalidOperationException($"Cannot get type info for {nameof(global::Deepgram.Realtime.ListenV2TurnInfoEvent)}");
                 turnInfo = global::System.Text.Json.JsonSerializer.Deserialize(ref reader, typeInfo);
             }
-            global::Deepgram.Realtime.V2ConfigureSuccessPayload? configureSuccess = default;
+            global::Deepgram.Realtime.ListenV2ConfigureSuccessEvent? configureSuccess = default;
             if (discriminator?.Type == global::Deepgram.Realtime.ListenV2ServerEventDiscriminatorType.ConfigureSuccess)
             {
-                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Deepgram.Realtime.V2ConfigureSuccessPayload), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Deepgram.Realtime.V2ConfigureSuccessPayload> ??
-                               throw new global::System.InvalidOperationException($"Cannot get type info for {nameof(global::Deepgram.Realtime.V2ConfigureSuccessPayload)}");
+                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Deepgram.Realtime.ListenV2ConfigureSuccessEvent), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Deepgram.Realtime.ListenV2ConfigureSuccessEvent> ??
+                               throw new global::System.InvalidOperationException($"Cannot get type info for {nameof(global::Deepgram.Realtime.ListenV2ConfigureSuccessEvent)}");
                 configureSuccess = global::System.Text.Json.JsonSerializer.Deserialize(ref reader, typeInfo);
             }
-            global::Deepgram.Realtime.V2ConfigureFailurePayload? configureFailure = default;
+            global::Deepgram.Realtime.ListenV2ConfigureFailureEvent? configureFailure = default;
             if (discriminator?.Type == global::Deepgram.Realtime.ListenV2ServerEventDiscriminatorType.ConfigureFailure)
             {
-                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Deepgram.Realtime.V2ConfigureFailurePayload), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Deepgram.Realtime.V2ConfigureFailurePayload> ??
-                               throw new global::System.InvalidOperationException($"Cannot get type info for {nameof(global::Deepgram.Realtime.V2ConfigureFailurePayload)}");
+                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Deepgram.Realtime.ListenV2ConfigureFailureEvent), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Deepgram.Realtime.ListenV2ConfigureFailureEvent> ??
+                               throw new global::System.InvalidOperationException($"Cannot get type info for {nameof(global::Deepgram.Realtime.ListenV2ConfigureFailureEvent)}");
                 configureFailure = global::System.Text.Json.JsonSerializer.Deserialize(ref reader, typeInfo);
+            }
+            global::Deepgram.Realtime.ListenV2FatalErrorEvent? error = default;
+            if (discriminator?.Type == global::Deepgram.Realtime.ListenV2ServerEventDiscriminatorType.Error)
+            {
+                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Deepgram.Realtime.ListenV2FatalErrorEvent), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Deepgram.Realtime.ListenV2FatalErrorEvent> ??
+                               throw new global::System.InvalidOperationException($"Cannot get type info for {nameof(global::Deepgram.Realtime.ListenV2FatalErrorEvent)}");
+                error = global::System.Text.Json.JsonSerializer.Deserialize(ref reader, typeInfo);
             }
 
             var __value = new global::Deepgram.Realtime.ListenV2ServerEvent(
@@ -58,7 +65,9 @@ namespace Deepgram.Realtime.JsonConverters
 
                 configureSuccess,
 
-                configureFailure
+                configureFailure,
+
+                error
                 );
 
             return __value;
@@ -75,27 +84,33 @@ namespace Deepgram.Realtime.JsonConverters
 
             if (value.IsConnected)
             {
-                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Deepgram.Realtime.V2ConnectedPayload), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Deepgram.Realtime.V2ConnectedPayload?> ??
-                               throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Deepgram.Realtime.V2ConnectedPayload).Name}");
+                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Deepgram.Realtime.ListenV2ConnectedEvent), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Deepgram.Realtime.ListenV2ConnectedEvent?> ??
+                               throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Deepgram.Realtime.ListenV2ConnectedEvent).Name}");
                 global::System.Text.Json.JsonSerializer.Serialize(writer, value.Connected, typeInfo);
             }
             else if (value.IsTurnInfo)
             {
-                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Deepgram.Realtime.V2TurnInfoPayload), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Deepgram.Realtime.V2TurnInfoPayload?> ??
-                               throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Deepgram.Realtime.V2TurnInfoPayload).Name}");
+                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Deepgram.Realtime.ListenV2TurnInfoEvent), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Deepgram.Realtime.ListenV2TurnInfoEvent?> ??
+                               throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Deepgram.Realtime.ListenV2TurnInfoEvent).Name}");
                 global::System.Text.Json.JsonSerializer.Serialize(writer, value.TurnInfo, typeInfo);
             }
             else if (value.IsConfigureSuccess)
             {
-                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Deepgram.Realtime.V2ConfigureSuccessPayload), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Deepgram.Realtime.V2ConfigureSuccessPayload?> ??
-                               throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Deepgram.Realtime.V2ConfigureSuccessPayload).Name}");
+                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Deepgram.Realtime.ListenV2ConfigureSuccessEvent), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Deepgram.Realtime.ListenV2ConfigureSuccessEvent?> ??
+                               throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Deepgram.Realtime.ListenV2ConfigureSuccessEvent).Name}");
                 global::System.Text.Json.JsonSerializer.Serialize(writer, value.ConfigureSuccess, typeInfo);
             }
             else if (value.IsConfigureFailure)
             {
-                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Deepgram.Realtime.V2ConfigureFailurePayload), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Deepgram.Realtime.V2ConfigureFailurePayload?> ??
-                               throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Deepgram.Realtime.V2ConfigureFailurePayload).Name}");
+                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Deepgram.Realtime.ListenV2ConfigureFailureEvent), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Deepgram.Realtime.ListenV2ConfigureFailureEvent?> ??
+                               throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Deepgram.Realtime.ListenV2ConfigureFailureEvent).Name}");
                 global::System.Text.Json.JsonSerializer.Serialize(writer, value.ConfigureFailure, typeInfo);
+            }
+            else if (value.IsError)
+            {
+                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Deepgram.Realtime.ListenV2FatalErrorEvent), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Deepgram.Realtime.ListenV2FatalErrorEvent?> ??
+                               throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Deepgram.Realtime.ListenV2FatalErrorEvent).Name}");
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.Error, typeInfo);
             }
         }
     }

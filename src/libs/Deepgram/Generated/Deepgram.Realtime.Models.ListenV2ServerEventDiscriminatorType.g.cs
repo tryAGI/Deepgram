@@ -24,6 +24,10 @@ namespace Deepgram.Realtime
         /// 
         /// </summary>
         ConfigureFailure,
+        /// <summary>
+        /// 
+        /// </summary>
+        Error,
     }
 
     /// <summary>
@@ -42,6 +46,7 @@ namespace Deepgram.Realtime
                 ListenV2ServerEventDiscriminatorType.TurnInfo => "TurnInfo",
                 ListenV2ServerEventDiscriminatorType.ConfigureSuccess => "ConfigureSuccess",
                 ListenV2ServerEventDiscriminatorType.ConfigureFailure => "ConfigureFailure",
+                ListenV2ServerEventDiscriminatorType.Error => "Error",
                 _ => throw new global::System.ArgumentOutOfRangeException(nameof(value), value, null),
             };
         }
@@ -56,6 +61,7 @@ namespace Deepgram.Realtime
                 "TurnInfo" => ListenV2ServerEventDiscriminatorType.TurnInfo,
                 "ConfigureSuccess" => ListenV2ServerEventDiscriminatorType.ConfigureSuccess,
                 "ConfigureFailure" => ListenV2ServerEventDiscriminatorType.ConfigureFailure,
+                "Error" => ListenV2ServerEventDiscriminatorType.Error,
                 _ => null,
             };
         }
