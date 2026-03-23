@@ -11,15 +11,15 @@ namespace Deepgram
         /// <summary>
         /// 
         /// </summary>
-        Sync,
-        /// <summary>
-        /// 
-        /// </summary>
         Async,
         /// <summary>
         /// 
         /// </summary>
         Streaming,
+        /// <summary>
+        /// 
+        /// </summary>
+        Sync,
     }
 
     /// <summary>
@@ -34,9 +34,9 @@ namespace Deepgram
         {
             return value switch
             {
-                ManageV1ProjectsRequestsListMethod.Sync => "sync",
                 ManageV1ProjectsRequestsListMethod.Async => "async",
                 ManageV1ProjectsRequestsListMethod.Streaming => "streaming",
+                ManageV1ProjectsRequestsListMethod.Sync => "sync",
                 _ => throw new global::System.ArgumentOutOfRangeException(nameof(value), value, null),
             };
         }
@@ -47,9 +47,9 @@ namespace Deepgram
         {
             return value switch
             {
-                "sync" => ManageV1ProjectsRequestsListMethod.Sync,
                 "async" => ManageV1ProjectsRequestsListMethod.Async,
                 "streaming" => ManageV1ProjectsRequestsListMethod.Streaming,
+                "sync" => ManageV1ProjectsRequestsListMethod.Sync,
                 _ => null,
             };
         }

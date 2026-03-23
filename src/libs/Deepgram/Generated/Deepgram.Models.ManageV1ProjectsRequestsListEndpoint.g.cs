@@ -11,6 +11,10 @@ namespace Deepgram
         /// <summary>
         /// 
         /// </summary>
+        Agent,
+        /// <summary>
+        /// 
+        /// </summary>
         Listen,
         /// <summary>
         /// 
@@ -20,10 +24,6 @@ namespace Deepgram
         /// 
         /// </summary>
         Speak,
-        /// <summary>
-        /// 
-        /// </summary>
-        Agent,
     }
 
     /// <summary>
@@ -38,10 +38,10 @@ namespace Deepgram
         {
             return value switch
             {
+                ManageV1ProjectsRequestsListEndpoint.Agent => "agent",
                 ManageV1ProjectsRequestsListEndpoint.Listen => "listen",
                 ManageV1ProjectsRequestsListEndpoint.Read => "read",
                 ManageV1ProjectsRequestsListEndpoint.Speak => "speak",
-                ManageV1ProjectsRequestsListEndpoint.Agent => "agent",
                 _ => throw new global::System.ArgumentOutOfRangeException(nameof(value), value, null),
             };
         }
@@ -52,10 +52,10 @@ namespace Deepgram
         {
             return value switch
             {
+                "agent" => ManageV1ProjectsRequestsListEndpoint.Agent,
                 "listen" => ManageV1ProjectsRequestsListEndpoint.Listen,
                 "read" => ManageV1ProjectsRequestsListEndpoint.Read,
                 "speak" => ManageV1ProjectsRequestsListEndpoint.Speak,
-                "agent" => ManageV1ProjectsRequestsListEndpoint.Agent,
                 _ => null,
             };
         }

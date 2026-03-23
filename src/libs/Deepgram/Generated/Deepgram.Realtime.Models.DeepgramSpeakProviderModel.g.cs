@@ -11,51 +11,7 @@ namespace Deepgram.Realtime
         /// <summary>
         /// 
         /// </summary>
-        AuraAsteriaEn,
-        /// <summary>
-        /// 
-        /// </summary>
-        AuraLunaEn,
-        /// <summary>
-        /// 
-        /// </summary>
-        AuraStellaEn,
-        /// <summary>
-        /// 
-        /// </summary>
-        AuraAthenaEn,
-        /// <summary>
-        /// 
-        /// </summary>
-        AuraHeraEn,
-        /// <summary>
-        /// 
-        /// </summary>
-        AuraOrionEn,
-        /// <summary>
-        /// 
-        /// </summary>
-        AuraArcasEn,
-        /// <summary>
-        /// 
-        /// </summary>
-        AuraPerseusEn,
-        /// <summary>
-        /// 
-        /// </summary>
-        AuraAngusEn,
-        /// <summary>
-        /// 
-        /// </summary>
-        AuraOrpheusEn,
-        /// <summary>
-        /// 
-        /// </summary>
-        AuraHeliosEn,
-        /// <summary>
-        /// 
-        /// </summary>
-        AuraZeusEn,
+        Aura2AlvaroEs,
         /// <summary>
         /// 
         /// </summary>
@@ -68,6 +24,10 @@ namespace Deepgram.Realtime
         /// 
         /// </summary>
         Aura2ApolloEn,
+        /// <summary>
+        /// 
+        /// </summary>
+        Aura2AquilaEs,
         /// <summary>
         /// 
         /// </summary>
@@ -99,6 +59,14 @@ namespace Deepgram.Realtime
         /// <summary>
         /// 
         /// </summary>
+        Aura2CarinaEs,
+        /// <summary>
+        /// 
+        /// </summary>
+        Aura2CelesteEs,
+        /// <summary>
+        /// 
+        /// </summary>
         Aura2CoraEn,
         /// <summary>
         /// 
@@ -111,11 +79,19 @@ namespace Deepgram.Realtime
         /// <summary>
         /// 
         /// </summary>
+        Aura2DianaEs,
+        /// <summary>
+        /// 
+        /// </summary>
         Aura2DracoEn,
         /// <summary>
         /// 
         /// </summary>
         Aura2ElectraEn,
+        /// <summary>
+        /// 
+        /// </summary>
+        Aura2EstrellaEs,
         /// <summary>
         /// 
         /// </summary>
@@ -147,6 +123,10 @@ namespace Deepgram.Realtime
         /// <summary>
         /// 
         /// </summary>
+        Aura2JavierEs,
+        /// <summary>
+        /// 
+        /// </summary>
         Aura2JunoEn,
         /// <summary>
         /// 
@@ -168,6 +148,10 @@ namespace Deepgram.Realtime
         /// 
         /// </summary>
         Aura2NeptuneEn,
+        /// <summary>
+        /// 
+        /// </summary>
+        Aura2NestorEs,
         /// <summary>
         /// 
         /// </summary>
@@ -203,7 +187,15 @@ namespace Deepgram.Realtime
         /// <summary>
         /// 
         /// </summary>
+        Aura2SelenaEs,
+        /// <summary>
+        /// 
+        /// </summary>
         Aura2SeleneEn,
+        /// <summary>
+        /// 
+        /// </summary>
+        Aura2SirioEs,
         /// <summary>
         /// 
         /// </summary>
@@ -223,43 +215,51 @@ namespace Deepgram.Realtime
         /// <summary>
         /// 
         /// </summary>
-        Aura2SirioEs,
+        AuraAngusEn,
         /// <summary>
         /// 
         /// </summary>
-        Aura2NestorEs,
+        AuraArcasEn,
         /// <summary>
         /// 
         /// </summary>
-        Aura2CarinaEs,
+        AuraAsteriaEn,
         /// <summary>
         /// 
         /// </summary>
-        Aura2CelesteEs,
+        AuraAthenaEn,
         /// <summary>
         /// 
         /// </summary>
-        Aura2AlvaroEs,
+        AuraHeliosEn,
         /// <summary>
         /// 
         /// </summary>
-        Aura2DianaEs,
+        AuraHeraEn,
         /// <summary>
         /// 
         /// </summary>
-        Aura2AquilaEs,
+        AuraLunaEn,
         /// <summary>
         /// 
         /// </summary>
-        Aura2SelenaEs,
+        AuraOrionEn,
         /// <summary>
         /// 
         /// </summary>
-        Aura2EstrellaEs,
+        AuraOrpheusEn,
         /// <summary>
         /// 
         /// </summary>
-        Aura2JavierEs,
+        AuraPerseusEn,
+        /// <summary>
+        /// 
+        /// </summary>
+        AuraStellaEn,
+        /// <summary>
+        /// 
+        /// </summary>
+        AuraZeusEn,
     }
 
     /// <summary>
@@ -274,21 +274,11 @@ namespace Deepgram.Realtime
         {
             return value switch
             {
-                DeepgramSpeakProviderModel.AuraAsteriaEn => "aura-asteria-en",
-                DeepgramSpeakProviderModel.AuraLunaEn => "aura-luna-en",
-                DeepgramSpeakProviderModel.AuraStellaEn => "aura-stella-en",
-                DeepgramSpeakProviderModel.AuraAthenaEn => "aura-athena-en",
-                DeepgramSpeakProviderModel.AuraHeraEn => "aura-hera-en",
-                DeepgramSpeakProviderModel.AuraOrionEn => "aura-orion-en",
-                DeepgramSpeakProviderModel.AuraArcasEn => "aura-arcas-en",
-                DeepgramSpeakProviderModel.AuraPerseusEn => "aura-perseus-en",
-                DeepgramSpeakProviderModel.AuraAngusEn => "aura-angus-en",
-                DeepgramSpeakProviderModel.AuraOrpheusEn => "aura-orpheus-en",
-                DeepgramSpeakProviderModel.AuraHeliosEn => "aura-helios-en",
-                DeepgramSpeakProviderModel.AuraZeusEn => "aura-zeus-en",
+                DeepgramSpeakProviderModel.Aura2AlvaroEs => "aura-2-alvaro-es",
                 DeepgramSpeakProviderModel.Aura2AmaltheaEn => "aura-2-amalthea-en",
                 DeepgramSpeakProviderModel.Aura2AndromedaEn => "aura-2-andromeda-en",
                 DeepgramSpeakProviderModel.Aura2ApolloEn => "aura-2-apollo-en",
+                DeepgramSpeakProviderModel.Aura2AquilaEs => "aura-2-aquila-es",
                 DeepgramSpeakProviderModel.Aura2ArcasEn => "aura-2-arcas-en",
                 DeepgramSpeakProviderModel.Aura2AriesEn => "aura-2-aries-en",
                 DeepgramSpeakProviderModel.Aura2AsteriaEn => "aura-2-asteria-en",
@@ -296,11 +286,15 @@ namespace Deepgram.Realtime
                 DeepgramSpeakProviderModel.Aura2AtlasEn => "aura-2-atlas-en",
                 DeepgramSpeakProviderModel.Aura2AuroraEn => "aura-2-aurora-en",
                 DeepgramSpeakProviderModel.Aura2CallistaEn => "aura-2-callista-en",
+                DeepgramSpeakProviderModel.Aura2CarinaEs => "aura-2-carina-es",
+                DeepgramSpeakProviderModel.Aura2CelesteEs => "aura-2-celeste-es",
                 DeepgramSpeakProviderModel.Aura2CoraEn => "aura-2-cora-en",
                 DeepgramSpeakProviderModel.Aura2CordeliaEn => "aura-2-cordelia-en",
                 DeepgramSpeakProviderModel.Aura2DeliaEn => "aura-2-delia-en",
+                DeepgramSpeakProviderModel.Aura2DianaEs => "aura-2-diana-es",
                 DeepgramSpeakProviderModel.Aura2DracoEn => "aura-2-draco-en",
                 DeepgramSpeakProviderModel.Aura2ElectraEn => "aura-2-electra-en",
+                DeepgramSpeakProviderModel.Aura2EstrellaEs => "aura-2-estrella-es",
                 DeepgramSpeakProviderModel.Aura2HarmoniaEn => "aura-2-harmonia-en",
                 DeepgramSpeakProviderModel.Aura2HelenaEn => "aura-2-helena-en",
                 DeepgramSpeakProviderModel.Aura2HeraEn => "aura-2-hera-en",
@@ -308,12 +302,14 @@ namespace Deepgram.Realtime
                 DeepgramSpeakProviderModel.Aura2HyperionEn => "aura-2-hyperion-en",
                 DeepgramSpeakProviderModel.Aura2IrisEn => "aura-2-iris-en",
                 DeepgramSpeakProviderModel.Aura2JanusEn => "aura-2-janus-en",
+                DeepgramSpeakProviderModel.Aura2JavierEs => "aura-2-javier-es",
                 DeepgramSpeakProviderModel.Aura2JunoEn => "aura-2-juno-en",
                 DeepgramSpeakProviderModel.Aura2JupiterEn => "aura-2-jupiter-en",
                 DeepgramSpeakProviderModel.Aura2LunaEn => "aura-2-luna-en",
                 DeepgramSpeakProviderModel.Aura2MarsEn => "aura-2-mars-en",
                 DeepgramSpeakProviderModel.Aura2MinervaEn => "aura-2-minerva-en",
                 DeepgramSpeakProviderModel.Aura2NeptuneEn => "aura-2-neptune-en",
+                DeepgramSpeakProviderModel.Aura2NestorEs => "aura-2-nestor-es",
                 DeepgramSpeakProviderModel.Aura2OdysseusEn => "aura-2-odysseus-en",
                 DeepgramSpeakProviderModel.Aura2OpheliaEn => "aura-2-ophelia-en",
                 DeepgramSpeakProviderModel.Aura2OrionEn => "aura-2-orion-en",
@@ -322,21 +318,25 @@ namespace Deepgram.Realtime
                 DeepgramSpeakProviderModel.Aura2PhoebeEn => "aura-2-phoebe-en",
                 DeepgramSpeakProviderModel.Aura2PlutoEn => "aura-2-pluto-en",
                 DeepgramSpeakProviderModel.Aura2SaturnEn => "aura-2-saturn-en",
+                DeepgramSpeakProviderModel.Aura2SelenaEs => "aura-2-selena-es",
                 DeepgramSpeakProviderModel.Aura2SeleneEn => "aura-2-selene-en",
+                DeepgramSpeakProviderModel.Aura2SirioEs => "aura-2-sirio-es",
                 DeepgramSpeakProviderModel.Aura2ThaliaEn => "aura-2-thalia-en",
                 DeepgramSpeakProviderModel.Aura2TheiaEn => "aura-2-theia-en",
                 DeepgramSpeakProviderModel.Aura2VestaEn => "aura-2-vesta-en",
                 DeepgramSpeakProviderModel.Aura2ZeusEn => "aura-2-zeus-en",
-                DeepgramSpeakProviderModel.Aura2SirioEs => "aura-2-sirio-es",
-                DeepgramSpeakProviderModel.Aura2NestorEs => "aura-2-nestor-es",
-                DeepgramSpeakProviderModel.Aura2CarinaEs => "aura-2-carina-es",
-                DeepgramSpeakProviderModel.Aura2CelesteEs => "aura-2-celeste-es",
-                DeepgramSpeakProviderModel.Aura2AlvaroEs => "aura-2-alvaro-es",
-                DeepgramSpeakProviderModel.Aura2DianaEs => "aura-2-diana-es",
-                DeepgramSpeakProviderModel.Aura2AquilaEs => "aura-2-aquila-es",
-                DeepgramSpeakProviderModel.Aura2SelenaEs => "aura-2-selena-es",
-                DeepgramSpeakProviderModel.Aura2EstrellaEs => "aura-2-estrella-es",
-                DeepgramSpeakProviderModel.Aura2JavierEs => "aura-2-javier-es",
+                DeepgramSpeakProviderModel.AuraAngusEn => "aura-angus-en",
+                DeepgramSpeakProviderModel.AuraArcasEn => "aura-arcas-en",
+                DeepgramSpeakProviderModel.AuraAsteriaEn => "aura-asteria-en",
+                DeepgramSpeakProviderModel.AuraAthenaEn => "aura-athena-en",
+                DeepgramSpeakProviderModel.AuraHeliosEn => "aura-helios-en",
+                DeepgramSpeakProviderModel.AuraHeraEn => "aura-hera-en",
+                DeepgramSpeakProviderModel.AuraLunaEn => "aura-luna-en",
+                DeepgramSpeakProviderModel.AuraOrionEn => "aura-orion-en",
+                DeepgramSpeakProviderModel.AuraOrpheusEn => "aura-orpheus-en",
+                DeepgramSpeakProviderModel.AuraPerseusEn => "aura-perseus-en",
+                DeepgramSpeakProviderModel.AuraStellaEn => "aura-stella-en",
+                DeepgramSpeakProviderModel.AuraZeusEn => "aura-zeus-en",
                 _ => throw new global::System.ArgumentOutOfRangeException(nameof(value), value, null),
             };
         }
@@ -347,21 +347,11 @@ namespace Deepgram.Realtime
         {
             return value switch
             {
-                "aura-asteria-en" => DeepgramSpeakProviderModel.AuraAsteriaEn,
-                "aura-luna-en" => DeepgramSpeakProviderModel.AuraLunaEn,
-                "aura-stella-en" => DeepgramSpeakProviderModel.AuraStellaEn,
-                "aura-athena-en" => DeepgramSpeakProviderModel.AuraAthenaEn,
-                "aura-hera-en" => DeepgramSpeakProviderModel.AuraHeraEn,
-                "aura-orion-en" => DeepgramSpeakProviderModel.AuraOrionEn,
-                "aura-arcas-en" => DeepgramSpeakProviderModel.AuraArcasEn,
-                "aura-perseus-en" => DeepgramSpeakProviderModel.AuraPerseusEn,
-                "aura-angus-en" => DeepgramSpeakProviderModel.AuraAngusEn,
-                "aura-orpheus-en" => DeepgramSpeakProviderModel.AuraOrpheusEn,
-                "aura-helios-en" => DeepgramSpeakProviderModel.AuraHeliosEn,
-                "aura-zeus-en" => DeepgramSpeakProviderModel.AuraZeusEn,
+                "aura-2-alvaro-es" => DeepgramSpeakProviderModel.Aura2AlvaroEs,
                 "aura-2-amalthea-en" => DeepgramSpeakProviderModel.Aura2AmaltheaEn,
                 "aura-2-andromeda-en" => DeepgramSpeakProviderModel.Aura2AndromedaEn,
                 "aura-2-apollo-en" => DeepgramSpeakProviderModel.Aura2ApolloEn,
+                "aura-2-aquila-es" => DeepgramSpeakProviderModel.Aura2AquilaEs,
                 "aura-2-arcas-en" => DeepgramSpeakProviderModel.Aura2ArcasEn,
                 "aura-2-aries-en" => DeepgramSpeakProviderModel.Aura2AriesEn,
                 "aura-2-asteria-en" => DeepgramSpeakProviderModel.Aura2AsteriaEn,
@@ -369,11 +359,15 @@ namespace Deepgram.Realtime
                 "aura-2-atlas-en" => DeepgramSpeakProviderModel.Aura2AtlasEn,
                 "aura-2-aurora-en" => DeepgramSpeakProviderModel.Aura2AuroraEn,
                 "aura-2-callista-en" => DeepgramSpeakProviderModel.Aura2CallistaEn,
+                "aura-2-carina-es" => DeepgramSpeakProviderModel.Aura2CarinaEs,
+                "aura-2-celeste-es" => DeepgramSpeakProviderModel.Aura2CelesteEs,
                 "aura-2-cora-en" => DeepgramSpeakProviderModel.Aura2CoraEn,
                 "aura-2-cordelia-en" => DeepgramSpeakProviderModel.Aura2CordeliaEn,
                 "aura-2-delia-en" => DeepgramSpeakProviderModel.Aura2DeliaEn,
+                "aura-2-diana-es" => DeepgramSpeakProviderModel.Aura2DianaEs,
                 "aura-2-draco-en" => DeepgramSpeakProviderModel.Aura2DracoEn,
                 "aura-2-electra-en" => DeepgramSpeakProviderModel.Aura2ElectraEn,
+                "aura-2-estrella-es" => DeepgramSpeakProviderModel.Aura2EstrellaEs,
                 "aura-2-harmonia-en" => DeepgramSpeakProviderModel.Aura2HarmoniaEn,
                 "aura-2-helena-en" => DeepgramSpeakProviderModel.Aura2HelenaEn,
                 "aura-2-hera-en" => DeepgramSpeakProviderModel.Aura2HeraEn,
@@ -381,12 +375,14 @@ namespace Deepgram.Realtime
                 "aura-2-hyperion-en" => DeepgramSpeakProviderModel.Aura2HyperionEn,
                 "aura-2-iris-en" => DeepgramSpeakProviderModel.Aura2IrisEn,
                 "aura-2-janus-en" => DeepgramSpeakProviderModel.Aura2JanusEn,
+                "aura-2-javier-es" => DeepgramSpeakProviderModel.Aura2JavierEs,
                 "aura-2-juno-en" => DeepgramSpeakProviderModel.Aura2JunoEn,
                 "aura-2-jupiter-en" => DeepgramSpeakProviderModel.Aura2JupiterEn,
                 "aura-2-luna-en" => DeepgramSpeakProviderModel.Aura2LunaEn,
                 "aura-2-mars-en" => DeepgramSpeakProviderModel.Aura2MarsEn,
                 "aura-2-minerva-en" => DeepgramSpeakProviderModel.Aura2MinervaEn,
                 "aura-2-neptune-en" => DeepgramSpeakProviderModel.Aura2NeptuneEn,
+                "aura-2-nestor-es" => DeepgramSpeakProviderModel.Aura2NestorEs,
                 "aura-2-odysseus-en" => DeepgramSpeakProviderModel.Aura2OdysseusEn,
                 "aura-2-ophelia-en" => DeepgramSpeakProviderModel.Aura2OpheliaEn,
                 "aura-2-orion-en" => DeepgramSpeakProviderModel.Aura2OrionEn,
@@ -395,21 +391,25 @@ namespace Deepgram.Realtime
                 "aura-2-phoebe-en" => DeepgramSpeakProviderModel.Aura2PhoebeEn,
                 "aura-2-pluto-en" => DeepgramSpeakProviderModel.Aura2PlutoEn,
                 "aura-2-saturn-en" => DeepgramSpeakProviderModel.Aura2SaturnEn,
+                "aura-2-selena-es" => DeepgramSpeakProviderModel.Aura2SelenaEs,
                 "aura-2-selene-en" => DeepgramSpeakProviderModel.Aura2SeleneEn,
+                "aura-2-sirio-es" => DeepgramSpeakProviderModel.Aura2SirioEs,
                 "aura-2-thalia-en" => DeepgramSpeakProviderModel.Aura2ThaliaEn,
                 "aura-2-theia-en" => DeepgramSpeakProviderModel.Aura2TheiaEn,
                 "aura-2-vesta-en" => DeepgramSpeakProviderModel.Aura2VestaEn,
                 "aura-2-zeus-en" => DeepgramSpeakProviderModel.Aura2ZeusEn,
-                "aura-2-sirio-es" => DeepgramSpeakProviderModel.Aura2SirioEs,
-                "aura-2-nestor-es" => DeepgramSpeakProviderModel.Aura2NestorEs,
-                "aura-2-carina-es" => DeepgramSpeakProviderModel.Aura2CarinaEs,
-                "aura-2-celeste-es" => DeepgramSpeakProviderModel.Aura2CelesteEs,
-                "aura-2-alvaro-es" => DeepgramSpeakProviderModel.Aura2AlvaroEs,
-                "aura-2-diana-es" => DeepgramSpeakProviderModel.Aura2DianaEs,
-                "aura-2-aquila-es" => DeepgramSpeakProviderModel.Aura2AquilaEs,
-                "aura-2-selena-es" => DeepgramSpeakProviderModel.Aura2SelenaEs,
-                "aura-2-estrella-es" => DeepgramSpeakProviderModel.Aura2EstrellaEs,
-                "aura-2-javier-es" => DeepgramSpeakProviderModel.Aura2JavierEs,
+                "aura-angus-en" => DeepgramSpeakProviderModel.AuraAngusEn,
+                "aura-arcas-en" => DeepgramSpeakProviderModel.AuraArcasEn,
+                "aura-asteria-en" => DeepgramSpeakProviderModel.AuraAsteriaEn,
+                "aura-athena-en" => DeepgramSpeakProviderModel.AuraAthenaEn,
+                "aura-helios-en" => DeepgramSpeakProviderModel.AuraHeliosEn,
+                "aura-hera-en" => DeepgramSpeakProviderModel.AuraHeraEn,
+                "aura-luna-en" => DeepgramSpeakProviderModel.AuraLunaEn,
+                "aura-orion-en" => DeepgramSpeakProviderModel.AuraOrionEn,
+                "aura-orpheus-en" => DeepgramSpeakProviderModel.AuraOrpheusEn,
+                "aura-perseus-en" => DeepgramSpeakProviderModel.AuraPerseusEn,
+                "aura-stella-en" => DeepgramSpeakProviderModel.AuraStellaEn,
+                "aura-zeus-en" => DeepgramSpeakProviderModel.AuraZeusEn,
                 _ => null,
             };
         }

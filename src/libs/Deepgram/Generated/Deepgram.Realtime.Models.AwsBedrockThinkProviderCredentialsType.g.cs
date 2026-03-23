@@ -11,11 +11,11 @@ namespace Deepgram.Realtime
         /// <summary>
         /// 
         /// </summary>
-        Sts,
+        Iam,
         /// <summary>
         /// 
         /// </summary>
-        Iam,
+        Sts,
     }
 
     /// <summary>
@@ -30,8 +30,8 @@ namespace Deepgram.Realtime
         {
             return value switch
             {
-                AwsBedrockThinkProviderCredentialsType.Sts => "sts",
                 AwsBedrockThinkProviderCredentialsType.Iam => "iam",
+                AwsBedrockThinkProviderCredentialsType.Sts => "sts",
                 _ => throw new global::System.ArgumentOutOfRangeException(nameof(value), value, null),
             };
         }
@@ -42,8 +42,8 @@ namespace Deepgram.Realtime
         {
             return value switch
             {
-                "sts" => AwsBedrockThinkProviderCredentialsType.Sts,
                 "iam" => AwsBedrockThinkProviderCredentialsType.Iam,
+                "sts" => AwsBedrockThinkProviderCredentialsType.Sts,
                 _ => null,
             };
         }

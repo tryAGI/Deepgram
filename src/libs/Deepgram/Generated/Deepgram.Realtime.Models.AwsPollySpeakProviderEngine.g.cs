@@ -19,11 +19,11 @@ namespace Deepgram.Realtime
         /// <summary>
         /// 
         /// </summary>
-        Standard,
+        Neural,
         /// <summary>
         /// 
         /// </summary>
-        Neural,
+        Standard,
     }
 
     /// <summary>
@@ -40,8 +40,8 @@ namespace Deepgram.Realtime
             {
                 AwsPollySpeakProviderEngine.Generative => "generative",
                 AwsPollySpeakProviderEngine.LongForm => "long-form",
-                AwsPollySpeakProviderEngine.Standard => "standard",
                 AwsPollySpeakProviderEngine.Neural => "neural",
+                AwsPollySpeakProviderEngine.Standard => "standard",
                 _ => throw new global::System.ArgumentOutOfRangeException(nameof(value), value, null),
             };
         }
@@ -54,8 +54,8 @@ namespace Deepgram.Realtime
             {
                 "generative" => AwsPollySpeakProviderEngine.Generative,
                 "long-form" => AwsPollySpeakProviderEngine.LongForm,
-                "standard" => AwsPollySpeakProviderEngine.Standard,
                 "neural" => AwsPollySpeakProviderEngine.Neural,
+                "standard" => AwsPollySpeakProviderEngine.Standard,
                 _ => null,
             };
         }

@@ -11,11 +11,11 @@ namespace Deepgram.Realtime
         /// <summary>
         /// 
         /// </summary>
-        AnthropicClaude35Sonnet20240620V1_0,
+        AnthropicClaude35Haiku20240307V1_0,
         /// <summary>
         /// 
         /// </summary>
-        AnthropicClaude35Haiku20240307V1_0,
+        AnthropicClaude35Sonnet20240620V1_0,
     }
 
     /// <summary>
@@ -30,8 +30,8 @@ namespace Deepgram.Realtime
         {
             return value switch
             {
-                AwsBedrockThinkProviderModel.AnthropicClaude35Sonnet20240620V1_0 => "anthropic/claude-3-5-sonnet-20240620-v1:0",
                 AwsBedrockThinkProviderModel.AnthropicClaude35Haiku20240307V1_0 => "anthropic/claude-3-5-haiku-20240307-v1:0",
+                AwsBedrockThinkProviderModel.AnthropicClaude35Sonnet20240620V1_0 => "anthropic/claude-3-5-sonnet-20240620-v1:0",
                 _ => throw new global::System.ArgumentOutOfRangeException(nameof(value), value, null),
             };
         }
@@ -42,8 +42,8 @@ namespace Deepgram.Realtime
         {
             return value switch
             {
-                "anthropic/claude-3-5-sonnet-20240620-v1:0" => AwsBedrockThinkProviderModel.AnthropicClaude35Sonnet20240620V1_0,
                 "anthropic/claude-3-5-haiku-20240307-v1:0" => AwsBedrockThinkProviderModel.AnthropicClaude35Haiku20240307V1_0,
+                "anthropic/claude-3-5-sonnet-20240620-v1:0" => AwsBedrockThinkProviderModel.AnthropicClaude35Sonnet20240620V1_0,
                 _ => null,
             };
         }

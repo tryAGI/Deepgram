@@ -11,11 +11,43 @@ namespace Deepgram.Realtime
         /// <summary>
         /// 
         /// </summary>
+        AgentAudioDone,
+        /// <summary>
+        /// 
+        /// </summary>
+        AgentStartedSpeaking,
+        /// <summary>
+        /// 
+        /// </summary>
+        AgentThinking,
+        /// <summary>
+        /// 
+        /// </summary>
+        ConversationText,
+        /// <summary>
+        /// 
+        /// </summary>
+        Error,
+        /// <summary>
+        /// 
+        /// </summary>
+        FunctionCallRequest,
+        /// <summary>
+        /// 
+        /// </summary>
         FunctionCallResponse,
         /// <summary>
         /// 
         /// </summary>
+        InjectionRefused,
+        /// <summary>
+        /// 
+        /// </summary>
         PromptUpdated,
+        /// <summary>
+        /// 
+        /// </summary>
+        SettingsApplied,
         /// <summary>
         /// 
         /// </summary>
@@ -27,47 +59,15 @@ namespace Deepgram.Realtime
         /// <summary>
         /// 
         /// </summary>
-        InjectionRefused,
-        /// <summary>
-        /// 
-        /// </summary>
-        Welcome,
-        /// <summary>
-        /// 
-        /// </summary>
-        SettingsApplied,
-        /// <summary>
-        /// 
-        /// </summary>
-        ConversationText,
-        /// <summary>
-        /// 
-        /// </summary>
         UserStartedSpeaking,
         /// <summary>
         /// 
         /// </summary>
-        AgentThinking,
-        /// <summary>
-        /// 
-        /// </summary>
-        FunctionCallRequest,
-        /// <summary>
-        /// 
-        /// </summary>
-        AgentStartedSpeaking,
-        /// <summary>
-        /// 
-        /// </summary>
-        AgentAudioDone,
-        /// <summary>
-        /// 
-        /// </summary>
-        Error,
-        /// <summary>
-        /// 
-        /// </summary>
         Warning,
+        /// <summary>
+        /// 
+        /// </summary>
+        Welcome,
     }
 
     /// <summary>
@@ -82,21 +82,21 @@ namespace Deepgram.Realtime
         {
             return value switch
             {
+                AgentV1ServerEventDiscriminatorType.AgentAudioDone => "AgentAudioDone",
+                AgentV1ServerEventDiscriminatorType.AgentStartedSpeaking => "AgentStartedSpeaking",
+                AgentV1ServerEventDiscriminatorType.AgentThinking => "AgentThinking",
+                AgentV1ServerEventDiscriminatorType.ConversationText => "ConversationText",
+                AgentV1ServerEventDiscriminatorType.Error => "Error",
+                AgentV1ServerEventDiscriminatorType.FunctionCallRequest => "FunctionCallRequest",
                 AgentV1ServerEventDiscriminatorType.FunctionCallResponse => "FunctionCallResponse",
+                AgentV1ServerEventDiscriminatorType.InjectionRefused => "InjectionRefused",
                 AgentV1ServerEventDiscriminatorType.PromptUpdated => "PromptUpdated",
+                AgentV1ServerEventDiscriminatorType.SettingsApplied => "SettingsApplied",
                 AgentV1ServerEventDiscriminatorType.SpeakUpdated => "SpeakUpdated",
                 AgentV1ServerEventDiscriminatorType.ThinkUpdated => "ThinkUpdated",
-                AgentV1ServerEventDiscriminatorType.InjectionRefused => "InjectionRefused",
-                AgentV1ServerEventDiscriminatorType.Welcome => "Welcome",
-                AgentV1ServerEventDiscriminatorType.SettingsApplied => "SettingsApplied",
-                AgentV1ServerEventDiscriminatorType.ConversationText => "ConversationText",
                 AgentV1ServerEventDiscriminatorType.UserStartedSpeaking => "UserStartedSpeaking",
-                AgentV1ServerEventDiscriminatorType.AgentThinking => "AgentThinking",
-                AgentV1ServerEventDiscriminatorType.FunctionCallRequest => "FunctionCallRequest",
-                AgentV1ServerEventDiscriminatorType.AgentStartedSpeaking => "AgentStartedSpeaking",
-                AgentV1ServerEventDiscriminatorType.AgentAudioDone => "AgentAudioDone",
-                AgentV1ServerEventDiscriminatorType.Error => "Error",
                 AgentV1ServerEventDiscriminatorType.Warning => "Warning",
+                AgentV1ServerEventDiscriminatorType.Welcome => "Welcome",
                 _ => throw new global::System.ArgumentOutOfRangeException(nameof(value), value, null),
             };
         }
@@ -107,21 +107,21 @@ namespace Deepgram.Realtime
         {
             return value switch
             {
+                "AgentAudioDone" => AgentV1ServerEventDiscriminatorType.AgentAudioDone,
+                "AgentStartedSpeaking" => AgentV1ServerEventDiscriminatorType.AgentStartedSpeaking,
+                "AgentThinking" => AgentV1ServerEventDiscriminatorType.AgentThinking,
+                "ConversationText" => AgentV1ServerEventDiscriminatorType.ConversationText,
+                "Error" => AgentV1ServerEventDiscriminatorType.Error,
+                "FunctionCallRequest" => AgentV1ServerEventDiscriminatorType.FunctionCallRequest,
                 "FunctionCallResponse" => AgentV1ServerEventDiscriminatorType.FunctionCallResponse,
+                "InjectionRefused" => AgentV1ServerEventDiscriminatorType.InjectionRefused,
                 "PromptUpdated" => AgentV1ServerEventDiscriminatorType.PromptUpdated,
+                "SettingsApplied" => AgentV1ServerEventDiscriminatorType.SettingsApplied,
                 "SpeakUpdated" => AgentV1ServerEventDiscriminatorType.SpeakUpdated,
                 "ThinkUpdated" => AgentV1ServerEventDiscriminatorType.ThinkUpdated,
-                "InjectionRefused" => AgentV1ServerEventDiscriminatorType.InjectionRefused,
-                "Welcome" => AgentV1ServerEventDiscriminatorType.Welcome,
-                "SettingsApplied" => AgentV1ServerEventDiscriminatorType.SettingsApplied,
-                "ConversationText" => AgentV1ServerEventDiscriminatorType.ConversationText,
                 "UserStartedSpeaking" => AgentV1ServerEventDiscriminatorType.UserStartedSpeaking,
-                "AgentThinking" => AgentV1ServerEventDiscriminatorType.AgentThinking,
-                "FunctionCallRequest" => AgentV1ServerEventDiscriminatorType.FunctionCallRequest,
-                "AgentStartedSpeaking" => AgentV1ServerEventDiscriminatorType.AgentStartedSpeaking,
-                "AgentAudioDone" => AgentV1ServerEventDiscriminatorType.AgentAudioDone,
-                "Error" => AgentV1ServerEventDiscriminatorType.Error,
                 "Warning" => AgentV1ServerEventDiscriminatorType.Warning,
+                "Welcome" => AgentV1ServerEventDiscriminatorType.Welcome,
                 _ => null,
             };
         }

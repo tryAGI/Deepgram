@@ -11,11 +11,11 @@ namespace Deepgram.Realtime
         /// <summary>
         /// 
         /// </summary>
-        Finalize,
+        CloseStream,
         /// <summary>
         /// 
         /// </summary>
-        CloseStream,
+        Finalize,
         /// <summary>
         /// 
         /// </summary>
@@ -34,8 +34,8 @@ namespace Deepgram.Realtime
         {
             return value switch
             {
-                ListenV1ControlMessageType.Finalize => "Finalize",
                 ListenV1ControlMessageType.CloseStream => "CloseStream",
+                ListenV1ControlMessageType.Finalize => "Finalize",
                 ListenV1ControlMessageType.KeepAlive => "KeepAlive",
                 _ => throw new global::System.ArgumentOutOfRangeException(nameof(value), value, null),
             };
@@ -47,8 +47,8 @@ namespace Deepgram.Realtime
         {
             return value switch
             {
-                "Finalize" => ListenV1ControlMessageType.Finalize,
                 "CloseStream" => ListenV1ControlMessageType.CloseStream,
+                "Finalize" => ListenV1ControlMessageType.Finalize,
                 "KeepAlive" => ListenV1ControlMessageType.KeepAlive,
                 _ => null,
             };

@@ -11,15 +11,15 @@ namespace Deepgram.Realtime
         /// <summary>
         /// 
         /// </summary>
-        ElevenTurboV25,
-        /// <summary>
-        /// 
-        /// </summary>
         ElevenMonolingualV1,
         /// <summary>
         /// 
         /// </summary>
         ElevenMultilingualV2,
+        /// <summary>
+        /// 
+        /// </summary>
+        ElevenTurboV25,
     }
 
     /// <summary>
@@ -34,9 +34,9 @@ namespace Deepgram.Realtime
         {
             return value switch
             {
-                ElevenLabsSpeakProviderModelId.ElevenTurboV25 => "eleven_turbo_v2_5",
                 ElevenLabsSpeakProviderModelId.ElevenMonolingualV1 => "eleven_monolingual_v1",
                 ElevenLabsSpeakProviderModelId.ElevenMultilingualV2 => "eleven_multilingual_v2",
+                ElevenLabsSpeakProviderModelId.ElevenTurboV25 => "eleven_turbo_v2_5",
                 _ => throw new global::System.ArgumentOutOfRangeException(nameof(value), value, null),
             };
         }
@@ -47,9 +47,9 @@ namespace Deepgram.Realtime
         {
             return value switch
             {
-                "eleven_turbo_v2_5" => ElevenLabsSpeakProviderModelId.ElevenTurboV25,
                 "eleven_monolingual_v1" => ElevenLabsSpeakProviderModelId.ElevenMonolingualV1,
                 "eleven_multilingual_v2" => ElevenLabsSpeakProviderModelId.ElevenMultilingualV2,
+                "eleven_turbo_v2_5" => ElevenLabsSpeakProviderModelId.ElevenTurboV25,
                 _ => null,
             };
         }

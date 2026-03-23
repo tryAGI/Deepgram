@@ -27,19 +27,19 @@ namespace Deepgram.Realtime.JsonConverters
             }
 
             var __score0 = 0;
-            if (__jsonProps.Contains("type")) __score0++;
-            if (__jsonProps.Contains("request_id")) __score0++;
-            if (__jsonProps.Contains("model_name")) __score0++;
-            if (__jsonProps.Contains("model_version")) __score0++;
-            if (__jsonProps.Contains("model_uuid")) __score0++;
             if (__jsonProps.Contains("additional_model_uuids")) __score0++;
+            if (__jsonProps.Contains("model_name")) __score0++;
+            if (__jsonProps.Contains("model_uuid")) __score0++;
+            if (__jsonProps.Contains("model_version")) __score0++;
+            if (__jsonProps.Contains("request_id")) __score0++;
+            if (__jsonProps.Contains("type")) __score0++;
             var __score1 = 0;
-            if (__jsonProps.Contains("type")) __score1++;
             if (__jsonProps.Contains("sequence_id")) __score1++;
+            if (__jsonProps.Contains("type")) __score1++;
             var __score2 = 0;
-            if (__jsonProps.Contains("type")) __score2++;
-            if (__jsonProps.Contains("description")) __score2++;
             if (__jsonProps.Contains("code")) __score2++;
+            if (__jsonProps.Contains("description")) __score2++;
+            if (__jsonProps.Contains("type")) __score2++;
             var __bestScore = 0;
             var __bestIndex = -1;
             if (__score0 > __bestScore) { __bestScore = __score0; __bestIndex = 0; }

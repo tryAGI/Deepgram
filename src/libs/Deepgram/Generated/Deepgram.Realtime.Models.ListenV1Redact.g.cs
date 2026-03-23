@@ -12,7 +12,7 @@ namespace Deepgram.Realtime
         /// <summary>
         /// 
         /// </summary>
-        True,
+        AggressiveNumbers,
         /// <summary>
         /// 
         /// </summary>
@@ -20,19 +20,19 @@ namespace Deepgram.Realtime
         /// <summary>
         /// 
         /// </summary>
-        Pci,
-        /// <summary>
-        /// 
-        /// </summary>
         Numbers,
         /// <summary>
         /// 
         /// </summary>
-        AggressiveNumbers,
+        Pci,
         /// <summary>
         /// 
         /// </summary>
         Ssn,
+        /// <summary>
+        /// 
+        /// </summary>
+        True,
     }
 
     /// <summary>
@@ -47,12 +47,12 @@ namespace Deepgram.Realtime
         {
             return value switch
             {
-                ListenV1Redact.True => "true",
-                ListenV1Redact.False => "false",
-                ListenV1Redact.Pci => "pci",
-                ListenV1Redact.Numbers => "numbers",
                 ListenV1Redact.AggressiveNumbers => "aggressive_numbers",
+                ListenV1Redact.False => "false",
+                ListenV1Redact.Numbers => "numbers",
+                ListenV1Redact.Pci => "pci",
                 ListenV1Redact.Ssn => "ssn",
+                ListenV1Redact.True => "true",
                 _ => throw new global::System.ArgumentOutOfRangeException(nameof(value), value, null),
             };
         }
@@ -63,12 +63,12 @@ namespace Deepgram.Realtime
         {
             return value switch
             {
-                "true" => ListenV1Redact.True,
-                "false" => ListenV1Redact.False,
-                "pci" => ListenV1Redact.Pci,
-                "numbers" => ListenV1Redact.Numbers,
                 "aggressive_numbers" => ListenV1Redact.AggressiveNumbers,
+                "false" => ListenV1Redact.False,
+                "numbers" => ListenV1Redact.Numbers,
+                "pci" => ListenV1Redact.Pci,
                 "ssn" => ListenV1Redact.Ssn,
+                "true" => ListenV1Redact.True,
                 _ => null,
             };
         }

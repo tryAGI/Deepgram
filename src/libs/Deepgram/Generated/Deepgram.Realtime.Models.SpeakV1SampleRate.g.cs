@@ -12,10 +12,6 @@ namespace Deepgram.Realtime
         /// <summary>
         /// 
         /// </summary>
-        EightThousand,
-        /// <summary>
-        /// 
-        /// </summary>
         SixteenThousand,
         /// <summary>
         /// 
@@ -29,6 +25,10 @@ namespace Deepgram.Realtime
         /// 
         /// </summary>
         FortyEightThousand,
+        /// <summary>
+        /// 
+        /// </summary>
+        EightThousand,
     }
 
     /// <summary>
@@ -43,11 +43,11 @@ namespace Deepgram.Realtime
         {
             return value switch
             {
-                SpeakV1SampleRate.EightThousand => "8000",
                 SpeakV1SampleRate.SixteenThousand => "16000",
                 SpeakV1SampleRate.TwentyFourThousand => "24000",
                 SpeakV1SampleRate.ThirtyTwoThousand => "32000",
                 SpeakV1SampleRate.FortyEightThousand => "48000",
+                SpeakV1SampleRate.EightThousand => "8000",
                 _ => throw new global::System.ArgumentOutOfRangeException(nameof(value), value, null),
             };
         }
@@ -58,11 +58,11 @@ namespace Deepgram.Realtime
         {
             return value switch
             {
-                "8000" => SpeakV1SampleRate.EightThousand,
                 "16000" => SpeakV1SampleRate.SixteenThousand,
                 "24000" => SpeakV1SampleRate.TwentyFourThousand,
                 "32000" => SpeakV1SampleRate.ThirtyTwoThousand,
                 "48000" => SpeakV1SampleRate.FortyEightThousand,
+                "8000" => SpeakV1SampleRate.EightThousand,
                 _ => null,
             };
         }

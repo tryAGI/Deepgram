@@ -11,11 +11,11 @@ namespace Deepgram.Realtime
         /// <summary>
         /// 
         /// </summary>
-        Flushed,
+        Cleared,
         /// <summary>
         /// 
         /// </summary>
-        Cleared,
+        Flushed,
     }
 
     /// <summary>
@@ -30,8 +30,8 @@ namespace Deepgram.Realtime
         {
             return value switch
             {
-                SpeakV1ControlEventType.Flushed => "Flushed",
                 SpeakV1ControlEventType.Cleared => "Cleared",
+                SpeakV1ControlEventType.Flushed => "Flushed",
                 _ => throw new global::System.ArgumentOutOfRangeException(nameof(value), value, null),
             };
         }
@@ -42,8 +42,8 @@ namespace Deepgram.Realtime
         {
             return value switch
             {
-                "Flushed" => SpeakV1ControlEventType.Flushed,
                 "Cleared" => SpeakV1ControlEventType.Cleared,
+                "Flushed" => SpeakV1ControlEventType.Flushed,
                 _ => null,
             };
         }

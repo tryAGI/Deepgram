@@ -11,15 +11,15 @@ namespace Deepgram
         /// <summary>
         /// 
         /// </summary>
+        Numbers,
+        /// <summary>
+        /// 
+        /// </summary>
         Pci,
         /// <summary>
         /// 
         /// </summary>
         Pii,
-        /// <summary>
-        /// 
-        /// </summary>
-        Numbers,
     }
 
     /// <summary>
@@ -34,9 +34,9 @@ namespace Deepgram
         {
             return value switch
             {
+                ListenV1MediaTranscribeRedactVariant2Item.Numbers => "numbers",
                 ListenV1MediaTranscribeRedactVariant2Item.Pci => "pci",
                 ListenV1MediaTranscribeRedactVariant2Item.Pii => "pii",
-                ListenV1MediaTranscribeRedactVariant2Item.Numbers => "numbers",
                 _ => throw new global::System.ArgumentOutOfRangeException(nameof(value), value, null),
             };
         }
@@ -47,9 +47,9 @@ namespace Deepgram
         {
             return value switch
             {
+                "numbers" => ListenV1MediaTranscribeRedactVariant2Item.Numbers,
                 "pci" => ListenV1MediaTranscribeRedactVariant2Item.Pci,
                 "pii" => ListenV1MediaTranscribeRedactVariant2Item.Pii,
-                "numbers" => ListenV1MediaTranscribeRedactVariant2Item.Numbers,
                 _ => null,
             };
         }

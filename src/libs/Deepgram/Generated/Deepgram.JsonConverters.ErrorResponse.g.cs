@@ -34,8 +34,8 @@ namespace Deepgram.JsonConverters
             if (__jsonProps.Contains("request_id")) __score1++;
             var __score2 = 0;
             if (__jsonProps.Contains("category")) __score2++;
-            if (__jsonProps.Contains("message")) __score2++;
             if (__jsonProps.Contains("details")) __score2++;
+            if (__jsonProps.Contains("message")) __score2++;
             if (__jsonProps.Contains("request_id")) __score2++;
             var __bestScore = 0;
             var __bestIndex = -1;

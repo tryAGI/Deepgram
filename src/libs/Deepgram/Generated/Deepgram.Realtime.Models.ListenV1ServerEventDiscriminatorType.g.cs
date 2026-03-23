@@ -11,19 +11,19 @@ namespace Deepgram.Realtime
         /// <summary>
         /// 
         /// </summary>
-        Results,
-        /// <summary>
-        /// 
-        /// </summary>
         Metadata,
         /// <summary>
         /// 
         /// </summary>
-        UtteranceEnd,
+        Results,
         /// <summary>
         /// 
         /// </summary>
         SpeechStarted,
+        /// <summary>
+        /// 
+        /// </summary>
+        UtteranceEnd,
     }
 
     /// <summary>
@@ -38,10 +38,10 @@ namespace Deepgram.Realtime
         {
             return value switch
             {
-                ListenV1ServerEventDiscriminatorType.Results => "Results",
                 ListenV1ServerEventDiscriminatorType.Metadata => "Metadata",
-                ListenV1ServerEventDiscriminatorType.UtteranceEnd => "UtteranceEnd",
+                ListenV1ServerEventDiscriminatorType.Results => "Results",
                 ListenV1ServerEventDiscriminatorType.SpeechStarted => "SpeechStarted",
+                ListenV1ServerEventDiscriminatorType.UtteranceEnd => "UtteranceEnd",
                 _ => throw new global::System.ArgumentOutOfRangeException(nameof(value), value, null),
             };
         }
@@ -52,10 +52,10 @@ namespace Deepgram.Realtime
         {
             return value switch
             {
-                "Results" => ListenV1ServerEventDiscriminatorType.Results,
                 "Metadata" => ListenV1ServerEventDiscriminatorType.Metadata,
-                "UtteranceEnd" => ListenV1ServerEventDiscriminatorType.UtteranceEnd,
+                "Results" => ListenV1ServerEventDiscriminatorType.Results,
                 "SpeechStarted" => ListenV1ServerEventDiscriminatorType.SpeechStarted,
+                "UtteranceEnd" => ListenV1ServerEventDiscriminatorType.UtteranceEnd,
                 _ => null,
             };
         }

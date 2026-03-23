@@ -12,15 +12,15 @@ namespace Deepgram.Realtime
         /// <summary>
         /// 
         /// </summary>
+        Alaw,
+        /// <summary>
+        /// 
+        /// </summary>
         Linear16,
         /// <summary>
         /// 
         /// </summary>
         Mulaw,
-        /// <summary>
-        /// 
-        /// </summary>
-        Alaw,
     }
 
     /// <summary>
@@ -35,9 +35,9 @@ namespace Deepgram.Realtime
         {
             return value switch
             {
+                AgentV1SettingsMessageAudioOutputEncoding.Alaw => "alaw",
                 AgentV1SettingsMessageAudioOutputEncoding.Linear16 => "linear16",
                 AgentV1SettingsMessageAudioOutputEncoding.Mulaw => "mulaw",
-                AgentV1SettingsMessageAudioOutputEncoding.Alaw => "alaw",
                 _ => throw new global::System.ArgumentOutOfRangeException(nameof(value), value, null),
             };
         }
@@ -48,9 +48,9 @@ namespace Deepgram.Realtime
         {
             return value switch
             {
+                "alaw" => AgentV1SettingsMessageAudioOutputEncoding.Alaw,
                 "linear16" => AgentV1SettingsMessageAudioOutputEncoding.Linear16,
                 "mulaw" => AgentV1SettingsMessageAudioOutputEncoding.Mulaw,
-                "alaw" => AgentV1SettingsMessageAudioOutputEncoding.Alaw,
                 _ => null,
             };
         }

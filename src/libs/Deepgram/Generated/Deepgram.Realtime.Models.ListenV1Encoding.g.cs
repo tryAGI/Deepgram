@@ -11,23 +11,7 @@ namespace Deepgram.Realtime
         /// <summary>
         /// 
         /// </summary>
-        Linear16,
-        /// <summary>
-        /// 
-        /// </summary>
-        Linear32,
-        /// <summary>
-        /// 
-        /// </summary>
-        Flac,
-        /// <summary>
-        /// 
-        /// </summary>
         Alaw,
-        /// <summary>
-        /// 
-        /// </summary>
-        Mulaw,
         /// <summary>
         /// 
         /// </summary>
@@ -39,7 +23,23 @@ namespace Deepgram.Realtime
         /// <summary>
         /// 
         /// </summary>
-        Opus,
+        Flac,
+        /// <summary>
+        /// 
+        /// </summary>
+        G729,
+        /// <summary>
+        /// 
+        /// </summary>
+        Linear16,
+        /// <summary>
+        /// 
+        /// </summary>
+        Linear32,
+        /// <summary>
+        /// 
+        /// </summary>
+        Mulaw,
         /// <summary>
         /// 
         /// </summary>
@@ -47,11 +47,11 @@ namespace Deepgram.Realtime
         /// <summary>
         /// 
         /// </summary>
-        Speex,
+        Opus,
         /// <summary>
         /// 
         /// </summary>
-        G729,
+        Speex,
     }
 
     /// <summary>
@@ -66,17 +66,17 @@ namespace Deepgram.Realtime
         {
             return value switch
             {
-                ListenV1Encoding.Linear16 => "linear16",
-                ListenV1Encoding.Linear32 => "linear32",
-                ListenV1Encoding.Flac => "flac",
                 ListenV1Encoding.Alaw => "alaw",
-                ListenV1Encoding.Mulaw => "mulaw",
                 ListenV1Encoding.AmrNb => "amr-nb",
                 ListenV1Encoding.AmrWb => "amr-wb",
-                ListenV1Encoding.Opus => "opus",
-                ListenV1Encoding.OggOpus => "ogg-opus",
-                ListenV1Encoding.Speex => "speex",
+                ListenV1Encoding.Flac => "flac",
                 ListenV1Encoding.G729 => "g729",
+                ListenV1Encoding.Linear16 => "linear16",
+                ListenV1Encoding.Linear32 => "linear32",
+                ListenV1Encoding.Mulaw => "mulaw",
+                ListenV1Encoding.OggOpus => "ogg-opus",
+                ListenV1Encoding.Opus => "opus",
+                ListenV1Encoding.Speex => "speex",
                 _ => throw new global::System.ArgumentOutOfRangeException(nameof(value), value, null),
             };
         }
@@ -87,17 +87,17 @@ namespace Deepgram.Realtime
         {
             return value switch
             {
-                "linear16" => ListenV1Encoding.Linear16,
-                "linear32" => ListenV1Encoding.Linear32,
-                "flac" => ListenV1Encoding.Flac,
                 "alaw" => ListenV1Encoding.Alaw,
-                "mulaw" => ListenV1Encoding.Mulaw,
                 "amr-nb" => ListenV1Encoding.AmrNb,
                 "amr-wb" => ListenV1Encoding.AmrWb,
-                "opus" => ListenV1Encoding.Opus,
-                "ogg-opus" => ListenV1Encoding.OggOpus,
-                "speex" => ListenV1Encoding.Speex,
+                "flac" => ListenV1Encoding.Flac,
                 "g729" => ListenV1Encoding.G729,
+                "linear16" => ListenV1Encoding.Linear16,
+                "linear32" => ListenV1Encoding.Linear32,
+                "mulaw" => ListenV1Encoding.Mulaw,
+                "ogg-opus" => ListenV1Encoding.OggOpus,
+                "opus" => ListenV1Encoding.Opus,
+                "speex" => ListenV1Encoding.Speex,
                 _ => null,
             };
         }

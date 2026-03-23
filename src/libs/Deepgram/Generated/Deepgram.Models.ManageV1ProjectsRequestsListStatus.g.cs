@@ -11,11 +11,11 @@ namespace Deepgram
         /// <summary>
         /// 
         /// </summary>
-        Succeeded,
+        Failed,
         /// <summary>
         /// 
         /// </summary>
-        Failed,
+        Succeeded,
     }
 
     /// <summary>
@@ -30,8 +30,8 @@ namespace Deepgram
         {
             return value switch
             {
-                ManageV1ProjectsRequestsListStatus.Succeeded => "succeeded",
                 ManageV1ProjectsRequestsListStatus.Failed => "failed",
+                ManageV1ProjectsRequestsListStatus.Succeeded => "succeeded",
                 _ => throw new global::System.ArgumentOutOfRangeException(nameof(value), value, null),
             };
         }
@@ -42,8 +42,8 @@ namespace Deepgram
         {
             return value switch
             {
-                "succeeded" => ManageV1ProjectsRequestsListStatus.Succeeded,
                 "failed" => ManageV1ProjectsRequestsListStatus.Failed,
+                "succeeded" => ManageV1ProjectsRequestsListStatus.Succeeded,
                 _ => null,
             };
         }
