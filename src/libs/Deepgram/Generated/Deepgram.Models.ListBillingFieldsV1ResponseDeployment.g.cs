@@ -11,19 +11,19 @@ namespace Deepgram
         /// <summary>
         /// 
         /// </summary>
-        Hosted,
-        /// <summary>
-        /// 
-        /// </summary>
         Beta,
         /// <summary>
         /// 
         /// </summary>
-        SelfHosted,
+        Dedicated,
         /// <summary>
         /// 
         /// </summary>
-        Dedicated,
+        Hosted,
+        /// <summary>
+        /// 
+        /// </summary>
+        SelfHosted,
     }
 
     /// <summary>
@@ -38,10 +38,10 @@ namespace Deepgram
         {
             return value switch
             {
-                ListBillingFieldsV1ResponseDeployment.Hosted => "hosted",
                 ListBillingFieldsV1ResponseDeployment.Beta => "beta",
-                ListBillingFieldsV1ResponseDeployment.SelfHosted => "self-hosted",
                 ListBillingFieldsV1ResponseDeployment.Dedicated => "dedicated",
+                ListBillingFieldsV1ResponseDeployment.Hosted => "hosted",
+                ListBillingFieldsV1ResponseDeployment.SelfHosted => "self-hosted",
                 _ => throw new global::System.ArgumentOutOfRangeException(nameof(value), value, null),
             };
         }
@@ -52,10 +52,10 @@ namespace Deepgram
         {
             return value switch
             {
-                "hosted" => ListBillingFieldsV1ResponseDeployment.Hosted,
                 "beta" => ListBillingFieldsV1ResponseDeployment.Beta,
-                "self-hosted" => ListBillingFieldsV1ResponseDeployment.SelfHosted,
                 "dedicated" => ListBillingFieldsV1ResponseDeployment.Dedicated,
+                "hosted" => ListBillingFieldsV1ResponseDeployment.Hosted,
+                "self-hosted" => ListBillingFieldsV1ResponseDeployment.SelfHosted,
                 _ => null,
             };
         }

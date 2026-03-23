@@ -15,6 +15,10 @@ namespace Deepgram
         /// <summary>
         /// 
         /// </summary>
+        Deployment,
+        /// <summary>
+        /// 
+        /// </summary>
         Endpoint,
         /// <summary>
         /// 
@@ -23,19 +27,15 @@ namespace Deepgram
         /// <summary>
         /// 
         /// </summary>
-        Models,
-        /// <summary>
-        /// 
-        /// </summary>
         Method,
         /// <summary>
         /// 
         /// </summary>
-        Tags,
+        Models,
         /// <summary>
         /// 
         /// </summary>
-        Deployment,
+        Tags,
     }
 
     /// <summary>
@@ -51,12 +51,12 @@ namespace Deepgram
             return value switch
             {
                 ManageV1ProjectsUsageBreakdownGetGrouping.Accessor => "accessor",
+                ManageV1ProjectsUsageBreakdownGetGrouping.Deployment => "deployment",
                 ManageV1ProjectsUsageBreakdownGetGrouping.Endpoint => "endpoint",
                 ManageV1ProjectsUsageBreakdownGetGrouping.FeatureSet => "feature_set",
-                ManageV1ProjectsUsageBreakdownGetGrouping.Models => "models",
                 ManageV1ProjectsUsageBreakdownGetGrouping.Method => "method",
+                ManageV1ProjectsUsageBreakdownGetGrouping.Models => "models",
                 ManageV1ProjectsUsageBreakdownGetGrouping.Tags => "tags",
-                ManageV1ProjectsUsageBreakdownGetGrouping.Deployment => "deployment",
                 _ => throw new global::System.ArgumentOutOfRangeException(nameof(value), value, null),
             };
         }
@@ -68,12 +68,12 @@ namespace Deepgram
             return value switch
             {
                 "accessor" => ManageV1ProjectsUsageBreakdownGetGrouping.Accessor,
+                "deployment" => ManageV1ProjectsUsageBreakdownGetGrouping.Deployment,
                 "endpoint" => ManageV1ProjectsUsageBreakdownGetGrouping.Endpoint,
                 "feature_set" => ManageV1ProjectsUsageBreakdownGetGrouping.FeatureSet,
-                "models" => ManageV1ProjectsUsageBreakdownGetGrouping.Models,
                 "method" => ManageV1ProjectsUsageBreakdownGetGrouping.Method,
+                "models" => ManageV1ProjectsUsageBreakdownGetGrouping.Models,
                 "tags" => ManageV1ProjectsUsageBreakdownGetGrouping.Tags,
-                "deployment" => ManageV1ProjectsUsageBreakdownGetGrouping.Deployment,
                 _ => null,
             };
         }

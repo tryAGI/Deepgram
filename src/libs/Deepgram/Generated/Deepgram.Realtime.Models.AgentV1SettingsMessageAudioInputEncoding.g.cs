@@ -12,23 +12,7 @@ namespace Deepgram.Realtime
         /// <summary>
         /// 
         /// </summary>
-        Linear16,
-        /// <summary>
-        /// 
-        /// </summary>
-        Linear32,
-        /// <summary>
-        /// 
-        /// </summary>
-        Flac,
-        /// <summary>
-        /// 
-        /// </summary>
         Alaw,
-        /// <summary>
-        /// 
-        /// </summary>
-        Mulaw,
         /// <summary>
         /// 
         /// </summary>
@@ -40,7 +24,23 @@ namespace Deepgram.Realtime
         /// <summary>
         /// 
         /// </summary>
-        Opus,
+        Flac,
+        /// <summary>
+        /// 
+        /// </summary>
+        G729,
+        /// <summary>
+        /// 
+        /// </summary>
+        Linear16,
+        /// <summary>
+        /// 
+        /// </summary>
+        Linear32,
+        /// <summary>
+        /// 
+        /// </summary>
+        Mulaw,
         /// <summary>
         /// 
         /// </summary>
@@ -48,11 +48,11 @@ namespace Deepgram.Realtime
         /// <summary>
         /// 
         /// </summary>
-        Speex,
+        Opus,
         /// <summary>
         /// 
         /// </summary>
-        G729,
+        Speex,
     }
 
     /// <summary>
@@ -67,17 +67,17 @@ namespace Deepgram.Realtime
         {
             return value switch
             {
-                AgentV1SettingsMessageAudioInputEncoding.Linear16 => "linear16",
-                AgentV1SettingsMessageAudioInputEncoding.Linear32 => "linear32",
-                AgentV1SettingsMessageAudioInputEncoding.Flac => "flac",
                 AgentV1SettingsMessageAudioInputEncoding.Alaw => "alaw",
-                AgentV1SettingsMessageAudioInputEncoding.Mulaw => "mulaw",
                 AgentV1SettingsMessageAudioInputEncoding.AmrNb => "amr-nb",
                 AgentV1SettingsMessageAudioInputEncoding.AmrWb => "amr-wb",
-                AgentV1SettingsMessageAudioInputEncoding.Opus => "opus",
-                AgentV1SettingsMessageAudioInputEncoding.OggOpus => "ogg-opus",
-                AgentV1SettingsMessageAudioInputEncoding.Speex => "speex",
+                AgentV1SettingsMessageAudioInputEncoding.Flac => "flac",
                 AgentV1SettingsMessageAudioInputEncoding.G729 => "g729",
+                AgentV1SettingsMessageAudioInputEncoding.Linear16 => "linear16",
+                AgentV1SettingsMessageAudioInputEncoding.Linear32 => "linear32",
+                AgentV1SettingsMessageAudioInputEncoding.Mulaw => "mulaw",
+                AgentV1SettingsMessageAudioInputEncoding.OggOpus => "ogg-opus",
+                AgentV1SettingsMessageAudioInputEncoding.Opus => "opus",
+                AgentV1SettingsMessageAudioInputEncoding.Speex => "speex",
                 _ => throw new global::System.ArgumentOutOfRangeException(nameof(value), value, null),
             };
         }
@@ -88,17 +88,17 @@ namespace Deepgram.Realtime
         {
             return value switch
             {
-                "linear16" => AgentV1SettingsMessageAudioInputEncoding.Linear16,
-                "linear32" => AgentV1SettingsMessageAudioInputEncoding.Linear32,
-                "flac" => AgentV1SettingsMessageAudioInputEncoding.Flac,
                 "alaw" => AgentV1SettingsMessageAudioInputEncoding.Alaw,
-                "mulaw" => AgentV1SettingsMessageAudioInputEncoding.Mulaw,
                 "amr-nb" => AgentV1SettingsMessageAudioInputEncoding.AmrNb,
                 "amr-wb" => AgentV1SettingsMessageAudioInputEncoding.AmrWb,
-                "opus" => AgentV1SettingsMessageAudioInputEncoding.Opus,
-                "ogg-opus" => AgentV1SettingsMessageAudioInputEncoding.OggOpus,
-                "speex" => AgentV1SettingsMessageAudioInputEncoding.Speex,
+                "flac" => AgentV1SettingsMessageAudioInputEncoding.Flac,
                 "g729" => AgentV1SettingsMessageAudioInputEncoding.G729,
+                "linear16" => AgentV1SettingsMessageAudioInputEncoding.Linear16,
+                "linear32" => AgentV1SettingsMessageAudioInputEncoding.Linear32,
+                "mulaw" => AgentV1SettingsMessageAudioInputEncoding.Mulaw,
+                "ogg-opus" => AgentV1SettingsMessageAudioInputEncoding.OggOpus,
+                "opus" => AgentV1SettingsMessageAudioInputEncoding.Opus,
+                "speex" => AgentV1SettingsMessageAudioInputEncoding.Speex,
                 _ => null,
             };
         }

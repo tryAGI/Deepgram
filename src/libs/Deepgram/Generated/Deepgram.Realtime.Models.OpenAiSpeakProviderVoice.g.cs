@@ -23,11 +23,11 @@ namespace Deepgram.Realtime
         /// <summary>
         /// 
         /// </summary>
-        Onyx,
+        Nova,
         /// <summary>
         /// 
         /// </summary>
-        Nova,
+        Onyx,
         /// <summary>
         /// 
         /// </summary>
@@ -49,8 +49,8 @@ namespace Deepgram.Realtime
                 OpenAiSpeakProviderVoice.Alloy => "alloy",
                 OpenAiSpeakProviderVoice.Echo => "echo",
                 OpenAiSpeakProviderVoice.Fable => "fable",
-                OpenAiSpeakProviderVoice.Onyx => "onyx",
                 OpenAiSpeakProviderVoice.Nova => "nova",
+                OpenAiSpeakProviderVoice.Onyx => "onyx",
                 OpenAiSpeakProviderVoice.Shimmer => "shimmer",
                 _ => throw new global::System.ArgumentOutOfRangeException(nameof(value), value, null),
             };
@@ -65,8 +65,8 @@ namespace Deepgram.Realtime
                 "alloy" => OpenAiSpeakProviderVoice.Alloy,
                 "echo" => OpenAiSpeakProviderVoice.Echo,
                 "fable" => OpenAiSpeakProviderVoice.Fable,
-                "onyx" => OpenAiSpeakProviderVoice.Onyx,
                 "nova" => OpenAiSpeakProviderVoice.Nova,
+                "onyx" => OpenAiSpeakProviderVoice.Onyx,
                 "shimmer" => OpenAiSpeakProviderVoice.Shimmer,
                 _ => null,
             };

@@ -11,11 +11,11 @@ namespace Deepgram.Realtime
         /// <summary>
         /// 
         /// </summary>
-        Sts,
+        Iam,
         /// <summary>
         /// 
         /// </summary>
-        Iam,
+        Sts,
     }
 
     /// <summary>
@@ -30,8 +30,8 @@ namespace Deepgram.Realtime
         {
             return value switch
             {
-                AwsPollySpeakProviderCredentialsType.Sts => "sts",
                 AwsPollySpeakProviderCredentialsType.Iam => "iam",
+                AwsPollySpeakProviderCredentialsType.Sts => "sts",
                 _ => throw new global::System.ArgumentOutOfRangeException(nameof(value), value, null),
             };
         }
@@ -42,8 +42,8 @@ namespace Deepgram.Realtime
         {
             return value switch
             {
-                "sts" => AwsPollySpeakProviderCredentialsType.Sts,
                 "iam" => AwsPollySpeakProviderCredentialsType.Iam,
+                "sts" => AwsPollySpeakProviderCredentialsType.Sts,
                 _ => null,
             };
         }

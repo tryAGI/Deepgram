@@ -11,18 +11,6 @@ namespace Deepgram
         /// <summary>
         /// 
         /// </summary>
-        Gpt5,
-        /// <summary>
-        /// 
-        /// </summary>
-        Gpt5Mini,
-        /// <summary>
-        /// 
-        /// </summary>
-        Gpt5Nano,
-        /// <summary>
-        /// 
-        /// </summary>
         Gpt41,
         /// <summary>
         /// 
@@ -40,6 +28,18 @@ namespace Deepgram
         /// 
         /// </summary>
         Gpt4oMini,
+        /// <summary>
+        /// 
+        /// </summary>
+        Gpt5,
+        /// <summary>
+        /// 
+        /// </summary>
+        Gpt5Mini,
+        /// <summary>
+        /// 
+        /// </summary>
+        Gpt5Nano,
     }
 
     /// <summary>
@@ -54,14 +54,14 @@ namespace Deepgram
         {
             return value switch
             {
-                AgentThinkModelsV1ResponseModelVariant1Id.Gpt5 => "gpt-5",
-                AgentThinkModelsV1ResponseModelVariant1Id.Gpt5Mini => "gpt-5-mini",
-                AgentThinkModelsV1ResponseModelVariant1Id.Gpt5Nano => "gpt-5-nano",
                 AgentThinkModelsV1ResponseModelVariant1Id.Gpt41 => "gpt-4.1",
                 AgentThinkModelsV1ResponseModelVariant1Id.Gpt41Mini => "gpt-4.1-mini",
                 AgentThinkModelsV1ResponseModelVariant1Id.Gpt41Nano => "gpt-4.1-nano",
                 AgentThinkModelsV1ResponseModelVariant1Id.Gpt4o => "gpt-4o",
                 AgentThinkModelsV1ResponseModelVariant1Id.Gpt4oMini => "gpt-4o-mini",
+                AgentThinkModelsV1ResponseModelVariant1Id.Gpt5 => "gpt-5",
+                AgentThinkModelsV1ResponseModelVariant1Id.Gpt5Mini => "gpt-5-mini",
+                AgentThinkModelsV1ResponseModelVariant1Id.Gpt5Nano => "gpt-5-nano",
                 _ => throw new global::System.ArgumentOutOfRangeException(nameof(value), value, null),
             };
         }
@@ -72,14 +72,14 @@ namespace Deepgram
         {
             return value switch
             {
-                "gpt-5" => AgentThinkModelsV1ResponseModelVariant1Id.Gpt5,
-                "gpt-5-mini" => AgentThinkModelsV1ResponseModelVariant1Id.Gpt5Mini,
-                "gpt-5-nano" => AgentThinkModelsV1ResponseModelVariant1Id.Gpt5Nano,
                 "gpt-4.1" => AgentThinkModelsV1ResponseModelVariant1Id.Gpt41,
                 "gpt-4.1-mini" => AgentThinkModelsV1ResponseModelVariant1Id.Gpt41Mini,
                 "gpt-4.1-nano" => AgentThinkModelsV1ResponseModelVariant1Id.Gpt41Nano,
                 "gpt-4o" => AgentThinkModelsV1ResponseModelVariant1Id.Gpt4o,
                 "gpt-4o-mini" => AgentThinkModelsV1ResponseModelVariant1Id.Gpt4oMini,
+                "gpt-5" => AgentThinkModelsV1ResponseModelVariant1Id.Gpt5,
+                "gpt-5-mini" => AgentThinkModelsV1ResponseModelVariant1Id.Gpt5Mini,
+                "gpt-5-nano" => AgentThinkModelsV1ResponseModelVariant1Id.Gpt5Nano,
                 _ => null,
             };
         }

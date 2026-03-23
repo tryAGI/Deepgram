@@ -12,11 +12,11 @@ namespace Deepgram.Realtime
         /// <summary>
         /// 
         /// </summary>
-        True,
+        False,
         /// <summary>
         /// 
         /// </summary>
-        False,
+        True,
     }
 
     /// <summary>
@@ -31,8 +31,8 @@ namespace Deepgram.Realtime
         {
             return value switch
             {
-                ListenV1InterimResults.True => "true",
                 ListenV1InterimResults.False => "false",
+                ListenV1InterimResults.True => "true",
                 _ => throw new global::System.ArgumentOutOfRangeException(nameof(value), value, null),
             };
         }
@@ -43,8 +43,8 @@ namespace Deepgram.Realtime
         {
             return value switch
             {
-                "true" => ListenV1InterimResults.True,
                 "false" => ListenV1InterimResults.False,
+                "true" => ListenV1InterimResults.True,
                 _ => null,
             };
         }

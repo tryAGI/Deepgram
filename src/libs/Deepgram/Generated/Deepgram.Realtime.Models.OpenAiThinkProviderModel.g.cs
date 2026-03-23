@@ -11,18 +11,6 @@ namespace Deepgram.Realtime
         /// <summary>
         /// 
         /// </summary>
-        Gpt5,
-        /// <summary>
-        /// 
-        /// </summary>
-        Gpt5Mini,
-        /// <summary>
-        /// 
-        /// </summary>
-        Gpt5Nano,
-        /// <summary>
-        /// 
-        /// </summary>
         Gpt41,
         /// <summary>
         /// 
@@ -40,6 +28,18 @@ namespace Deepgram.Realtime
         /// 
         /// </summary>
         Gpt4oMini,
+        /// <summary>
+        /// 
+        /// </summary>
+        Gpt5,
+        /// <summary>
+        /// 
+        /// </summary>
+        Gpt5Mini,
+        /// <summary>
+        /// 
+        /// </summary>
+        Gpt5Nano,
     }
 
     /// <summary>
@@ -54,14 +54,14 @@ namespace Deepgram.Realtime
         {
             return value switch
             {
-                OpenAiThinkProviderModel.Gpt5 => "gpt-5",
-                OpenAiThinkProviderModel.Gpt5Mini => "gpt-5-mini",
-                OpenAiThinkProviderModel.Gpt5Nano => "gpt-5-nano",
                 OpenAiThinkProviderModel.Gpt41 => "gpt-4.1",
                 OpenAiThinkProviderModel.Gpt41Mini => "gpt-4.1-mini",
                 OpenAiThinkProviderModel.Gpt41Nano => "gpt-4.1-nano",
                 OpenAiThinkProviderModel.Gpt4o => "gpt-4o",
                 OpenAiThinkProviderModel.Gpt4oMini => "gpt-4o-mini",
+                OpenAiThinkProviderModel.Gpt5 => "gpt-5",
+                OpenAiThinkProviderModel.Gpt5Mini => "gpt-5-mini",
+                OpenAiThinkProviderModel.Gpt5Nano => "gpt-5-nano",
                 _ => throw new global::System.ArgumentOutOfRangeException(nameof(value), value, null),
             };
         }
@@ -72,14 +72,14 @@ namespace Deepgram.Realtime
         {
             return value switch
             {
-                "gpt-5" => OpenAiThinkProviderModel.Gpt5,
-                "gpt-5-mini" => OpenAiThinkProviderModel.Gpt5Mini,
-                "gpt-5-nano" => OpenAiThinkProviderModel.Gpt5Nano,
                 "gpt-4.1" => OpenAiThinkProviderModel.Gpt41,
                 "gpt-4.1-mini" => OpenAiThinkProviderModel.Gpt41Mini,
                 "gpt-4.1-nano" => OpenAiThinkProviderModel.Gpt41Nano,
                 "gpt-4o" => OpenAiThinkProviderModel.Gpt4o,
                 "gpt-4o-mini" => OpenAiThinkProviderModel.Gpt4oMini,
+                "gpt-5" => OpenAiThinkProviderModel.Gpt5,
+                "gpt-5-mini" => OpenAiThinkProviderModel.Gpt5Mini,
+                "gpt-5-nano" => OpenAiThinkProviderModel.Gpt5Nano,
                 _ => null,
             };
         }

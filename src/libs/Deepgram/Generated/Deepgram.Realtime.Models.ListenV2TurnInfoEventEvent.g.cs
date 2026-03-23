@@ -16,7 +16,11 @@ namespace Deepgram.Realtime
         /// <summary>
         /// 
         /// </summary>
-        Update,
+        EagerEndOfTurn,
+        /// <summary>
+        /// 
+        /// </summary>
+        EndOfTurn,
         /// <summary>
         /// 
         /// </summary>
@@ -24,15 +28,11 @@ namespace Deepgram.Realtime
         /// <summary>
         /// 
         /// </summary>
-        EagerEndOfTurn,
-        /// <summary>
-        /// 
-        /// </summary>
         TurnResumed,
         /// <summary>
         /// 
         /// </summary>
-        EndOfTurn,
+        Update,
     }
 
     /// <summary>
@@ -47,11 +47,11 @@ namespace Deepgram.Realtime
         {
             return value switch
             {
-                ListenV2TurnInfoEventEvent.Update => "Update",
-                ListenV2TurnInfoEventEvent.StartOfTurn => "StartOfTurn",
                 ListenV2TurnInfoEventEvent.EagerEndOfTurn => "EagerEndOfTurn",
-                ListenV2TurnInfoEventEvent.TurnResumed => "TurnResumed",
                 ListenV2TurnInfoEventEvent.EndOfTurn => "EndOfTurn",
+                ListenV2TurnInfoEventEvent.StartOfTurn => "StartOfTurn",
+                ListenV2TurnInfoEventEvent.TurnResumed => "TurnResumed",
+                ListenV2TurnInfoEventEvent.Update => "Update",
                 _ => throw new global::System.ArgumentOutOfRangeException(nameof(value), value, null),
             };
         }
@@ -62,11 +62,11 @@ namespace Deepgram.Realtime
         {
             return value switch
             {
-                "Update" => ListenV2TurnInfoEventEvent.Update,
-                "StartOfTurn" => ListenV2TurnInfoEventEvent.StartOfTurn,
                 "EagerEndOfTurn" => ListenV2TurnInfoEventEvent.EagerEndOfTurn,
-                "TurnResumed" => ListenV2TurnInfoEventEvent.TurnResumed,
                 "EndOfTurn" => ListenV2TurnInfoEventEvent.EndOfTurn,
+                "StartOfTurn" => ListenV2TurnInfoEventEvent.StartOfTurn,
+                "TurnResumed" => ListenV2TurnInfoEventEvent.TurnResumed,
+                "Update" => ListenV2TurnInfoEventEvent.Update,
                 _ => null,
             };
         }

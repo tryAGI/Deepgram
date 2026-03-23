@@ -11,11 +11,7 @@ namespace Deepgram.Realtime
         /// <summary>
         /// 
         /// </summary>
-        Connected,
-        /// <summary>
-        /// 
-        /// </summary>
-        TurnInfo,
+        ConfigureFailure,
         /// <summary>
         /// 
         /// </summary>
@@ -23,11 +19,15 @@ namespace Deepgram.Realtime
         /// <summary>
         /// 
         /// </summary>
-        ConfigureFailure,
+        Connected,
         /// <summary>
         /// 
         /// </summary>
         Error,
+        /// <summary>
+        /// 
+        /// </summary>
+        TurnInfo,
     }
 
     /// <summary>
@@ -42,11 +42,11 @@ namespace Deepgram.Realtime
         {
             return value switch
             {
-                ListenV2ServerEventDiscriminatorType.Connected => "Connected",
-                ListenV2ServerEventDiscriminatorType.TurnInfo => "TurnInfo",
-                ListenV2ServerEventDiscriminatorType.ConfigureSuccess => "ConfigureSuccess",
                 ListenV2ServerEventDiscriminatorType.ConfigureFailure => "ConfigureFailure",
+                ListenV2ServerEventDiscriminatorType.ConfigureSuccess => "ConfigureSuccess",
+                ListenV2ServerEventDiscriminatorType.Connected => "Connected",
                 ListenV2ServerEventDiscriminatorType.Error => "Error",
+                ListenV2ServerEventDiscriminatorType.TurnInfo => "TurnInfo",
                 _ => throw new global::System.ArgumentOutOfRangeException(nameof(value), value, null),
             };
         }
@@ -57,11 +57,11 @@ namespace Deepgram.Realtime
         {
             return value switch
             {
-                "Connected" => ListenV2ServerEventDiscriminatorType.Connected,
-                "TurnInfo" => ListenV2ServerEventDiscriminatorType.TurnInfo,
-                "ConfigureSuccess" => ListenV2ServerEventDiscriminatorType.ConfigureSuccess,
                 "ConfigureFailure" => ListenV2ServerEventDiscriminatorType.ConfigureFailure,
+                "ConfigureSuccess" => ListenV2ServerEventDiscriminatorType.ConfigureSuccess,
+                "Connected" => ListenV2ServerEventDiscriminatorType.Connected,
                 "Error" => ListenV2ServerEventDiscriminatorType.Error,
+                "TurnInfo" => ListenV2ServerEventDiscriminatorType.TurnInfo,
                 _ => null,
             };
         }

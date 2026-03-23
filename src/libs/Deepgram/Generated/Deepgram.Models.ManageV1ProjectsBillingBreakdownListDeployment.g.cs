@@ -11,11 +11,11 @@ namespace Deepgram
         /// <summary>
         /// 
         /// </summary>
-        Hosted,
+        Beta,
         /// <summary>
         /// 
         /// </summary>
-        Beta,
+        Hosted,
         /// <summary>
         /// 
         /// </summary>
@@ -34,8 +34,8 @@ namespace Deepgram
         {
             return value switch
             {
-                ManageV1ProjectsBillingBreakdownListDeployment.Hosted => "hosted",
                 ManageV1ProjectsBillingBreakdownListDeployment.Beta => "beta",
+                ManageV1ProjectsBillingBreakdownListDeployment.Hosted => "hosted",
                 ManageV1ProjectsBillingBreakdownListDeployment.SelfHosted => "self-hosted",
                 _ => throw new global::System.ArgumentOutOfRangeException(nameof(value), value, null),
             };
@@ -47,8 +47,8 @@ namespace Deepgram
         {
             return value switch
             {
-                "hosted" => ManageV1ProjectsBillingBreakdownListDeployment.Hosted,
                 "beta" => ManageV1ProjectsBillingBreakdownListDeployment.Beta,
+                "hosted" => ManageV1ProjectsBillingBreakdownListDeployment.Hosted,
                 "self-hosted" => ManageV1ProjectsBillingBreakdownListDeployment.SelfHosted,
                 _ => null,
             };

@@ -11,75 +11,23 @@ namespace Deepgram.Realtime
         /// <summary>
         /// 
         /// </summary>
-        Nova3,
+        Base,
         /// <summary>
         /// 
         /// </summary>
-        Nova3General,
+        Conversationalai,
         /// <summary>
         /// 
         /// </summary>
-        Nova3Medical,
-        /// <summary>
-        /// 
-        /// </summary>
-        Nova2,
-        /// <summary>
-        /// 
-        /// </summary>
-        Nova2General,
-        /// <summary>
-        /// 
-        /// </summary>
-        Nova2Meeting,
-        /// <summary>
-        /// 
-        /// </summary>
-        Nova2Finance,
-        /// <summary>
-        /// 
-        /// </summary>
-        Nova2Conversationalai,
-        /// <summary>
-        /// 
-        /// </summary>
-        Nova2Voicemail,
-        /// <summary>
-        /// 
-        /// </summary>
-        Nova2Video,
-        /// <summary>
-        /// 
-        /// </summary>
-        Nova2Medical,
-        /// <summary>
-        /// 
-        /// </summary>
-        Nova2Drivethru,
-        /// <summary>
-        /// 
-        /// </summary>
-        Nova2Automotive,
-        /// <summary>
-        /// 
-        /// </summary>
-        Nova,
-        /// <summary>
-        /// 
-        /// </summary>
-        NovaGeneral,
-        /// <summary>
-        /// 
-        /// </summary>
-        NovaPhonecall,
-        /// <summary>
-        /// 
-        /// </summary>
-        NovaMedical,
+        Custom,
         /// <summary>
         /// 
         /// </summary>
         Enhanced,
+        /// <summary>
+        /// 
+        /// </summary>
+        EnhancedFinance,
         /// <summary>
         /// 
         /// </summary>
@@ -95,11 +43,7 @@ namespace Deepgram.Realtime
         /// <summary>
         /// 
         /// </summary>
-        EnhancedFinance,
-        /// <summary>
-        /// 
-        /// </summary>
-        Base,
+        Finance,
         /// <summary>
         /// 
         /// </summary>
@@ -107,19 +51,75 @@ namespace Deepgram.Realtime
         /// <summary>
         /// 
         /// </summary>
+        Nova,
+        /// <summary>
+        /// 
+        /// </summary>
+        Nova2,
+        /// <summary>
+        /// 
+        /// </summary>
+        Nova2Automotive,
+        /// <summary>
+        /// 
+        /// </summary>
+        Nova2Conversationalai,
+        /// <summary>
+        /// 
+        /// </summary>
+        Nova2Drivethru,
+        /// <summary>
+        /// 
+        /// </summary>
+        Nova2Finance,
+        /// <summary>
+        /// 
+        /// </summary>
+        Nova2General,
+        /// <summary>
+        /// 
+        /// </summary>
+        Nova2Medical,
+        /// <summary>
+        /// 
+        /// </summary>
+        Nova2Meeting,
+        /// <summary>
+        /// 
+        /// </summary>
+        Nova2Video,
+        /// <summary>
+        /// 
+        /// </summary>
+        Nova2Voicemail,
+        /// <summary>
+        /// 
+        /// </summary>
+        Nova3,
+        /// <summary>
+        /// 
+        /// </summary>
+        Nova3General,
+        /// <summary>
+        /// 
+        /// </summary>
+        Nova3Medical,
+        /// <summary>
+        /// 
+        /// </summary>
+        NovaGeneral,
+        /// <summary>
+        /// 
+        /// </summary>
+        NovaMedical,
+        /// <summary>
+        /// 
+        /// </summary>
+        NovaPhonecall,
+        /// <summary>
+        /// 
+        /// </summary>
         Phonecall,
-        /// <summary>
-        /// 
-        /// </summary>
-        Finance,
-        /// <summary>
-        /// 
-        /// </summary>
-        Conversationalai,
-        /// <summary>
-        /// 
-        /// </summary>
-        Voicemail,
         /// <summary>
         /// 
         /// </summary>
@@ -127,7 +127,7 @@ namespace Deepgram.Realtime
         /// <summary>
         /// 
         /// </summary>
-        Custom,
+        Voicemail,
     }
 
     /// <summary>
@@ -142,36 +142,36 @@ namespace Deepgram.Realtime
         {
             return value switch
             {
-                ListenV1Model.Nova3 => "nova-3",
-                ListenV1Model.Nova3General => "nova-3-general",
-                ListenV1Model.Nova3Medical => "nova-3-medical",
-                ListenV1Model.Nova2 => "nova-2",
-                ListenV1Model.Nova2General => "nova-2-general",
-                ListenV1Model.Nova2Meeting => "nova-2-meeting",
-                ListenV1Model.Nova2Finance => "nova-2-finance",
-                ListenV1Model.Nova2Conversationalai => "nova-2-conversationalai",
-                ListenV1Model.Nova2Voicemail => "nova-2-voicemail",
-                ListenV1Model.Nova2Video => "nova-2-video",
-                ListenV1Model.Nova2Medical => "nova-2-medical",
-                ListenV1Model.Nova2Drivethru => "nova-2-drivethru",
-                ListenV1Model.Nova2Automotive => "nova-2-automotive",
-                ListenV1Model.Nova => "nova",
-                ListenV1Model.NovaGeneral => "nova-general",
-                ListenV1Model.NovaPhonecall => "nova-phonecall",
-                ListenV1Model.NovaMedical => "nova-medical",
+                ListenV1Model.Base => "base",
+                ListenV1Model.Conversationalai => "conversationalai",
+                ListenV1Model.Custom => "custom",
                 ListenV1Model.Enhanced => "enhanced",
+                ListenV1Model.EnhancedFinance => "enhanced-finance",
                 ListenV1Model.EnhancedGeneral => "enhanced-general",
                 ListenV1Model.EnhancedMeeting => "enhanced-meeting",
                 ListenV1Model.EnhancedPhonecall => "enhanced-phonecall",
-                ListenV1Model.EnhancedFinance => "enhanced-finance",
-                ListenV1Model.Base => "base",
-                ListenV1Model.Meeting => "meeting",
-                ListenV1Model.Phonecall => "phonecall",
                 ListenV1Model.Finance => "finance",
-                ListenV1Model.Conversationalai => "conversationalai",
-                ListenV1Model.Voicemail => "voicemail",
+                ListenV1Model.Meeting => "meeting",
+                ListenV1Model.Nova => "nova",
+                ListenV1Model.Nova2 => "nova-2",
+                ListenV1Model.Nova2Automotive => "nova-2-automotive",
+                ListenV1Model.Nova2Conversationalai => "nova-2-conversationalai",
+                ListenV1Model.Nova2Drivethru => "nova-2-drivethru",
+                ListenV1Model.Nova2Finance => "nova-2-finance",
+                ListenV1Model.Nova2General => "nova-2-general",
+                ListenV1Model.Nova2Medical => "nova-2-medical",
+                ListenV1Model.Nova2Meeting => "nova-2-meeting",
+                ListenV1Model.Nova2Video => "nova-2-video",
+                ListenV1Model.Nova2Voicemail => "nova-2-voicemail",
+                ListenV1Model.Nova3 => "nova-3",
+                ListenV1Model.Nova3General => "nova-3-general",
+                ListenV1Model.Nova3Medical => "nova-3-medical",
+                ListenV1Model.NovaGeneral => "nova-general",
+                ListenV1Model.NovaMedical => "nova-medical",
+                ListenV1Model.NovaPhonecall => "nova-phonecall",
+                ListenV1Model.Phonecall => "phonecall",
                 ListenV1Model.Video => "video",
-                ListenV1Model.Custom => "custom",
+                ListenV1Model.Voicemail => "voicemail",
                 _ => throw new global::System.ArgumentOutOfRangeException(nameof(value), value, null),
             };
         }
@@ -182,36 +182,36 @@ namespace Deepgram.Realtime
         {
             return value switch
             {
-                "nova-3" => ListenV1Model.Nova3,
-                "nova-3-general" => ListenV1Model.Nova3General,
-                "nova-3-medical" => ListenV1Model.Nova3Medical,
-                "nova-2" => ListenV1Model.Nova2,
-                "nova-2-general" => ListenV1Model.Nova2General,
-                "nova-2-meeting" => ListenV1Model.Nova2Meeting,
-                "nova-2-finance" => ListenV1Model.Nova2Finance,
-                "nova-2-conversationalai" => ListenV1Model.Nova2Conversationalai,
-                "nova-2-voicemail" => ListenV1Model.Nova2Voicemail,
-                "nova-2-video" => ListenV1Model.Nova2Video,
-                "nova-2-medical" => ListenV1Model.Nova2Medical,
-                "nova-2-drivethru" => ListenV1Model.Nova2Drivethru,
-                "nova-2-automotive" => ListenV1Model.Nova2Automotive,
-                "nova" => ListenV1Model.Nova,
-                "nova-general" => ListenV1Model.NovaGeneral,
-                "nova-phonecall" => ListenV1Model.NovaPhonecall,
-                "nova-medical" => ListenV1Model.NovaMedical,
+                "base" => ListenV1Model.Base,
+                "conversationalai" => ListenV1Model.Conversationalai,
+                "custom" => ListenV1Model.Custom,
                 "enhanced" => ListenV1Model.Enhanced,
+                "enhanced-finance" => ListenV1Model.EnhancedFinance,
                 "enhanced-general" => ListenV1Model.EnhancedGeneral,
                 "enhanced-meeting" => ListenV1Model.EnhancedMeeting,
                 "enhanced-phonecall" => ListenV1Model.EnhancedPhonecall,
-                "enhanced-finance" => ListenV1Model.EnhancedFinance,
-                "base" => ListenV1Model.Base,
-                "meeting" => ListenV1Model.Meeting,
-                "phonecall" => ListenV1Model.Phonecall,
                 "finance" => ListenV1Model.Finance,
-                "conversationalai" => ListenV1Model.Conversationalai,
-                "voicemail" => ListenV1Model.Voicemail,
+                "meeting" => ListenV1Model.Meeting,
+                "nova" => ListenV1Model.Nova,
+                "nova-2" => ListenV1Model.Nova2,
+                "nova-2-automotive" => ListenV1Model.Nova2Automotive,
+                "nova-2-conversationalai" => ListenV1Model.Nova2Conversationalai,
+                "nova-2-drivethru" => ListenV1Model.Nova2Drivethru,
+                "nova-2-finance" => ListenV1Model.Nova2Finance,
+                "nova-2-general" => ListenV1Model.Nova2General,
+                "nova-2-medical" => ListenV1Model.Nova2Medical,
+                "nova-2-meeting" => ListenV1Model.Nova2Meeting,
+                "nova-2-video" => ListenV1Model.Nova2Video,
+                "nova-2-voicemail" => ListenV1Model.Nova2Voicemail,
+                "nova-3" => ListenV1Model.Nova3,
+                "nova-3-general" => ListenV1Model.Nova3General,
+                "nova-3-medical" => ListenV1Model.Nova3Medical,
+                "nova-general" => ListenV1Model.NovaGeneral,
+                "nova-medical" => ListenV1Model.NovaMedical,
+                "nova-phonecall" => ListenV1Model.NovaPhonecall,
+                "phonecall" => ListenV1Model.Phonecall,
                 "video" => ListenV1Model.Video,
-                "custom" => ListenV1Model.Custom,
+                "voicemail" => ListenV1Model.Voicemail,
                 _ => null,
             };
         }

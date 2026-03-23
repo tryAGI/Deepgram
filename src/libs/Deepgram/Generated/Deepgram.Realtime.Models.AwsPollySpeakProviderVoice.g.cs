@@ -11,27 +11,7 @@ namespace Deepgram.Realtime
         /// <summary>
         /// 
         /// </summary>
-        Matthew,
-        /// <summary>
-        /// 
-        /// </summary>
-        Joanna,
-        /// <summary>
-        /// 
-        /// </summary>
         Amy,
-        /// <summary>
-        /// 
-        /// </summary>
-        Emma,
-        /// <summary>
-        /// 
-        /// </summary>
-        Brian,
-        /// <summary>
-        /// 
-        /// </summary>
-        Arthur,
         /// <summary>
         /// 
         /// </summary>
@@ -39,7 +19,27 @@ namespace Deepgram.Realtime
         /// <summary>
         /// 
         /// </summary>
+        Arthur,
+        /// <summary>
+        /// 
+        /// </summary>
         Ayanda,
+        /// <summary>
+        /// 
+        /// </summary>
+        Brian,
+        /// <summary>
+        /// 
+        /// </summary>
+        Emma,
+        /// <summary>
+        /// 
+        /// </summary>
+        Joanna,
+        /// <summary>
+        /// 
+        /// </summary>
+        Matthew,
     }
 
     /// <summary>
@@ -54,14 +54,14 @@ namespace Deepgram.Realtime
         {
             return value switch
             {
-                AwsPollySpeakProviderVoice.Matthew => "Matthew",
-                AwsPollySpeakProviderVoice.Joanna => "Joanna",
                 AwsPollySpeakProviderVoice.Amy => "Amy",
-                AwsPollySpeakProviderVoice.Emma => "Emma",
-                AwsPollySpeakProviderVoice.Brian => "Brian",
-                AwsPollySpeakProviderVoice.Arthur => "Arthur",
                 AwsPollySpeakProviderVoice.Aria => "Aria",
+                AwsPollySpeakProviderVoice.Arthur => "Arthur",
                 AwsPollySpeakProviderVoice.Ayanda => "Ayanda",
+                AwsPollySpeakProviderVoice.Brian => "Brian",
+                AwsPollySpeakProviderVoice.Emma => "Emma",
+                AwsPollySpeakProviderVoice.Joanna => "Joanna",
+                AwsPollySpeakProviderVoice.Matthew => "Matthew",
                 _ => throw new global::System.ArgumentOutOfRangeException(nameof(value), value, null),
             };
         }
@@ -72,14 +72,14 @@ namespace Deepgram.Realtime
         {
             return value switch
             {
-                "Matthew" => AwsPollySpeakProviderVoice.Matthew,
-                "Joanna" => AwsPollySpeakProviderVoice.Joanna,
                 "Amy" => AwsPollySpeakProviderVoice.Amy,
-                "Emma" => AwsPollySpeakProviderVoice.Emma,
-                "Brian" => AwsPollySpeakProviderVoice.Brian,
-                "Arthur" => AwsPollySpeakProviderVoice.Arthur,
                 "Aria" => AwsPollySpeakProviderVoice.Aria,
+                "Arthur" => AwsPollySpeakProviderVoice.Arthur,
                 "Ayanda" => AwsPollySpeakProviderVoice.Ayanda,
+                "Brian" => AwsPollySpeakProviderVoice.Brian,
+                "Emma" => AwsPollySpeakProviderVoice.Emma,
+                "Joanna" => AwsPollySpeakProviderVoice.Joanna,
+                "Matthew" => AwsPollySpeakProviderVoice.Matthew,
                 _ => null,
             };
         }

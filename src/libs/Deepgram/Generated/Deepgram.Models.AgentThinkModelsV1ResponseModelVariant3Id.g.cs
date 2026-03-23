@@ -11,15 +11,15 @@ namespace Deepgram
         /// <summary>
         /// 
         /// </summary>
-        Gemini25Flash,
-        /// <summary>
-        /// 
-        /// </summary>
         Gemini20Flash,
         /// <summary>
         /// 
         /// </summary>
         Gemini20FlashLite,
+        /// <summary>
+        /// 
+        /// </summary>
+        Gemini25Flash,
     }
 
     /// <summary>
@@ -34,9 +34,9 @@ namespace Deepgram
         {
             return value switch
             {
-                AgentThinkModelsV1ResponseModelVariant3Id.Gemini25Flash => "gemini-2.5-flash",
                 AgentThinkModelsV1ResponseModelVariant3Id.Gemini20Flash => "gemini-2.0-flash",
                 AgentThinkModelsV1ResponseModelVariant3Id.Gemini20FlashLite => "gemini-2.0-flash-lite",
+                AgentThinkModelsV1ResponseModelVariant3Id.Gemini25Flash => "gemini-2.5-flash",
                 _ => throw new global::System.ArgumentOutOfRangeException(nameof(value), value, null),
             };
         }
@@ -47,9 +47,9 @@ namespace Deepgram
         {
             return value switch
             {
-                "gemini-2.5-flash" => AgentThinkModelsV1ResponseModelVariant3Id.Gemini25Flash,
                 "gemini-2.0-flash" => AgentThinkModelsV1ResponseModelVariant3Id.Gemini20Flash,
                 "gemini-2.0-flash-lite" => AgentThinkModelsV1ResponseModelVariant3Id.Gemini20FlashLite,
+                "gemini-2.5-flash" => AgentThinkModelsV1ResponseModelVariant3Id.Gemini25Flash,
                 _ => null,
             };
         }

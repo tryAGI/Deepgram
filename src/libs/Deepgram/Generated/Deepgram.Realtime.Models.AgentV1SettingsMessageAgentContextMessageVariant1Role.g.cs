@@ -11,11 +11,11 @@ namespace Deepgram.Realtime
         /// <summary>
         /// 
         /// </summary>
-        User,
+        Assistant,
         /// <summary>
         /// 
         /// </summary>
-        Assistant,
+        User,
     }
 
     /// <summary>
@@ -30,8 +30,8 @@ namespace Deepgram.Realtime
         {
             return value switch
             {
-                AgentV1SettingsMessageAgentContextMessageVariant1Role.User => "user",
                 AgentV1SettingsMessageAgentContextMessageVariant1Role.Assistant => "assistant",
+                AgentV1SettingsMessageAgentContextMessageVariant1Role.User => "user",
                 _ => throw new global::System.ArgumentOutOfRangeException(nameof(value), value, null),
             };
         }
@@ -42,8 +42,8 @@ namespace Deepgram.Realtime
         {
             return value switch
             {
-                "user" => AgentV1SettingsMessageAgentContextMessageVariant1Role.User,
                 "assistant" => AgentV1SettingsMessageAgentContextMessageVariant1Role.Assistant,
+                "user" => AgentV1SettingsMessageAgentContextMessageVariant1Role.User,
                 _ => null,
             };
         }

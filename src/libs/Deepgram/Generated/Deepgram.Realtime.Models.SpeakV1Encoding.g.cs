@@ -12,15 +12,15 @@ namespace Deepgram.Realtime
         /// <summary>
         /// 
         /// </summary>
+        Alaw,
+        /// <summary>
+        /// 
+        /// </summary>
         Linear16,
         /// <summary>
         /// 
         /// </summary>
         Mulaw,
-        /// <summary>
-        /// 
-        /// </summary>
-        Alaw,
     }
 
     /// <summary>
@@ -35,9 +35,9 @@ namespace Deepgram.Realtime
         {
             return value switch
             {
+                SpeakV1Encoding.Alaw => "alaw",
                 SpeakV1Encoding.Linear16 => "linear16",
                 SpeakV1Encoding.Mulaw => "mulaw",
-                SpeakV1Encoding.Alaw => "alaw",
                 _ => throw new global::System.ArgumentOutOfRangeException(nameof(value), value, null),
             };
         }
@@ -48,9 +48,9 @@ namespace Deepgram.Realtime
         {
             return value switch
             {
+                "alaw" => SpeakV1Encoding.Alaw,
                 "linear16" => SpeakV1Encoding.Linear16,
                 "mulaw" => SpeakV1Encoding.Mulaw,
-                "alaw" => SpeakV1Encoding.Alaw,
                 _ => null,
             };
         }

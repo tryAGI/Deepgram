@@ -11,51 +11,7 @@ namespace Deepgram
         /// <summary>
         /// 
         /// </summary>
-        AuraAsteriaEn,
-        /// <summary>
-        /// 
-        /// </summary>
-        AuraLunaEn,
-        /// <summary>
-        /// 
-        /// </summary>
-        AuraStellaEn,
-        /// <summary>
-        /// 
-        /// </summary>
-        AuraAthenaEn,
-        /// <summary>
-        /// 
-        /// </summary>
-        AuraHeraEn,
-        /// <summary>
-        /// 
-        /// </summary>
-        AuraOrionEn,
-        /// <summary>
-        /// 
-        /// </summary>
-        AuraArcasEn,
-        /// <summary>
-        /// 
-        /// </summary>
-        AuraPerseusEn,
-        /// <summary>
-        /// 
-        /// </summary>
-        AuraAngusEn,
-        /// <summary>
-        /// 
-        /// </summary>
-        AuraOrpheusEn,
-        /// <summary>
-        /// 
-        /// </summary>
-        AuraHeliosEn,
-        /// <summary>
-        /// 
-        /// </summary>
-        AuraZeusEn,
+        Aura2AlvaroEs,
         /// <summary>
         /// 
         /// </summary>
@@ -68,6 +24,10 @@ namespace Deepgram
         /// 
         /// </summary>
         Aura2ApolloEn,
+        /// <summary>
+        /// 
+        /// </summary>
+        Aura2AquilaEs,
         /// <summary>
         /// 
         /// </summary>
@@ -99,7 +59,11 @@ namespace Deepgram
         /// <summary>
         /// 
         /// </summary>
-        Aura2CordeliaEn,
+        Aura2CarinaEs,
+        /// <summary>
+        /// 
+        /// </summary>
+        Aura2CelesteEs,
         /// <summary>
         /// 
         /// </summary>
@@ -107,7 +71,15 @@ namespace Deepgram
         /// <summary>
         /// 
         /// </summary>
+        Aura2CordeliaEn,
+        /// <summary>
+        /// 
+        /// </summary>
         Aura2DeliaEn,
+        /// <summary>
+        /// 
+        /// </summary>
+        Aura2DianaEs,
         /// <summary>
         /// 
         /// </summary>
@@ -116,6 +88,10 @@ namespace Deepgram
         /// 
         /// </summary>
         Aura2ElectraEn,
+        /// <summary>
+        /// 
+        /// </summary>
+        Aura2EstrellaEs,
         /// <summary>
         /// 
         /// </summary>
@@ -147,6 +123,10 @@ namespace Deepgram
         /// <summary>
         /// 
         /// </summary>
+        Aura2JavierEs,
+        /// <summary>
+        /// 
+        /// </summary>
         Aura2JunoEn,
         /// <summary>
         /// 
@@ -168,6 +148,10 @@ namespace Deepgram
         /// 
         /// </summary>
         Aura2NeptuneEn,
+        /// <summary>
+        /// 
+        /// </summary>
+        Aura2NestorEs,
         /// <summary>
         /// 
         /// </summary>
@@ -203,7 +187,15 @@ namespace Deepgram
         /// <summary>
         /// 
         /// </summary>
+        Aura2SelenaEs,
+        /// <summary>
+        /// 
+        /// </summary>
         Aura2SeleneEn,
+        /// <summary>
+        /// 
+        /// </summary>
+        Aura2SirioEs,
         /// <summary>
         /// 
         /// </summary>
@@ -223,43 +215,51 @@ namespace Deepgram
         /// <summary>
         /// 
         /// </summary>
-        Aura2SirioEs,
+        AuraAngusEn,
         /// <summary>
         /// 
         /// </summary>
-        Aura2NestorEs,
+        AuraArcasEn,
         /// <summary>
         /// 
         /// </summary>
-        Aura2CarinaEs,
+        AuraAsteriaEn,
         /// <summary>
         /// 
         /// </summary>
-        Aura2CelesteEs,
+        AuraAthenaEn,
         /// <summary>
         /// 
         /// </summary>
-        Aura2AlvaroEs,
+        AuraHeliosEn,
         /// <summary>
         /// 
         /// </summary>
-        Aura2DianaEs,
+        AuraHeraEn,
         /// <summary>
         /// 
         /// </summary>
-        Aura2AquilaEs,
+        AuraLunaEn,
         /// <summary>
         /// 
         /// </summary>
-        Aura2SelenaEs,
+        AuraOrionEn,
         /// <summary>
         /// 
         /// </summary>
-        Aura2EstrellaEs,
+        AuraOrpheusEn,
         /// <summary>
         /// 
         /// </summary>
-        Aura2JavierEs,
+        AuraPerseusEn,
+        /// <summary>
+        /// 
+        /// </summary>
+        AuraStellaEn,
+        /// <summary>
+        /// 
+        /// </summary>
+        AuraZeusEn,
     }
 
     /// <summary>
@@ -274,21 +274,11 @@ namespace Deepgram
         {
             return value switch
             {
-                SpeakV1AudioGenerateModel.AuraAsteriaEn => "aura-asteria-en",
-                SpeakV1AudioGenerateModel.AuraLunaEn => "aura-luna-en",
-                SpeakV1AudioGenerateModel.AuraStellaEn => "aura-stella-en",
-                SpeakV1AudioGenerateModel.AuraAthenaEn => "aura-athena-en",
-                SpeakV1AudioGenerateModel.AuraHeraEn => "aura-hera-en",
-                SpeakV1AudioGenerateModel.AuraOrionEn => "aura-orion-en",
-                SpeakV1AudioGenerateModel.AuraArcasEn => "aura-arcas-en",
-                SpeakV1AudioGenerateModel.AuraPerseusEn => "aura-perseus-en",
-                SpeakV1AudioGenerateModel.AuraAngusEn => "aura-angus-en",
-                SpeakV1AudioGenerateModel.AuraOrpheusEn => "aura-orpheus-en",
-                SpeakV1AudioGenerateModel.AuraHeliosEn => "aura-helios-en",
-                SpeakV1AudioGenerateModel.AuraZeusEn => "aura-zeus-en",
+                SpeakV1AudioGenerateModel.Aura2AlvaroEs => "aura-2-alvaro-es",
                 SpeakV1AudioGenerateModel.Aura2AmaltheaEn => "aura-2-amalthea-en",
                 SpeakV1AudioGenerateModel.Aura2AndromedaEn => "aura-2-andromeda-en",
                 SpeakV1AudioGenerateModel.Aura2ApolloEn => "aura-2-apollo-en",
+                SpeakV1AudioGenerateModel.Aura2AquilaEs => "aura-2-aquila-es",
                 SpeakV1AudioGenerateModel.Aura2ArcasEn => "aura-2-arcas-en",
                 SpeakV1AudioGenerateModel.Aura2AriesEn => "aura-2-aries-en",
                 SpeakV1AudioGenerateModel.Aura2AsteriaEn => "aura-2-asteria-en",
@@ -296,11 +286,15 @@ namespace Deepgram
                 SpeakV1AudioGenerateModel.Aura2AtlasEn => "aura-2-atlas-en",
                 SpeakV1AudioGenerateModel.Aura2AuroraEn => "aura-2-aurora-en",
                 SpeakV1AudioGenerateModel.Aura2CallistaEn => "aura-2-callista-en",
-                SpeakV1AudioGenerateModel.Aura2CordeliaEn => "aura-2-cordelia-en",
+                SpeakV1AudioGenerateModel.Aura2CarinaEs => "aura-2-carina-es",
+                SpeakV1AudioGenerateModel.Aura2CelesteEs => "aura-2-celeste-es",
                 SpeakV1AudioGenerateModel.Aura2CoraEn => "aura-2-cora-en",
+                SpeakV1AudioGenerateModel.Aura2CordeliaEn => "aura-2-cordelia-en",
                 SpeakV1AudioGenerateModel.Aura2DeliaEn => "aura-2-delia-en",
+                SpeakV1AudioGenerateModel.Aura2DianaEs => "aura-2-diana-es",
                 SpeakV1AudioGenerateModel.Aura2DracoEn => "aura-2-draco-en",
                 SpeakV1AudioGenerateModel.Aura2ElectraEn => "aura-2-electra-en",
+                SpeakV1AudioGenerateModel.Aura2EstrellaEs => "aura-2-estrella-es",
                 SpeakV1AudioGenerateModel.Aura2HarmoniaEn => "aura-2-harmonia-en",
                 SpeakV1AudioGenerateModel.Aura2HelenaEn => "aura-2-helena-en",
                 SpeakV1AudioGenerateModel.Aura2HeraEn => "aura-2-hera-en",
@@ -308,12 +302,14 @@ namespace Deepgram
                 SpeakV1AudioGenerateModel.Aura2HyperionEn => "aura-2-hyperion-en",
                 SpeakV1AudioGenerateModel.Aura2IrisEn => "aura-2-iris-en",
                 SpeakV1AudioGenerateModel.Aura2JanusEn => "aura-2-janus-en",
+                SpeakV1AudioGenerateModel.Aura2JavierEs => "aura-2-javier-es",
                 SpeakV1AudioGenerateModel.Aura2JunoEn => "aura-2-juno-en",
                 SpeakV1AudioGenerateModel.Aura2JupiterEn => "aura-2-jupiter-en",
                 SpeakV1AudioGenerateModel.Aura2LunaEn => "aura-2-luna-en",
                 SpeakV1AudioGenerateModel.Aura2MarsEn => "aura-2-mars-en",
                 SpeakV1AudioGenerateModel.Aura2MinervaEn => "aura-2-minerva-en",
                 SpeakV1AudioGenerateModel.Aura2NeptuneEn => "aura-2-neptune-en",
+                SpeakV1AudioGenerateModel.Aura2NestorEs => "aura-2-nestor-es",
                 SpeakV1AudioGenerateModel.Aura2OdysseusEn => "aura-2-odysseus-en",
                 SpeakV1AudioGenerateModel.Aura2OpheliaEn => "aura-2-ophelia-en",
                 SpeakV1AudioGenerateModel.Aura2OrionEn => "aura-2-orion-en",
@@ -322,21 +318,25 @@ namespace Deepgram
                 SpeakV1AudioGenerateModel.Aura2PhoebeEn => "aura-2-phoebe-en",
                 SpeakV1AudioGenerateModel.Aura2PlutoEn => "aura-2-pluto-en",
                 SpeakV1AudioGenerateModel.Aura2SaturnEn => "aura-2-saturn-en",
+                SpeakV1AudioGenerateModel.Aura2SelenaEs => "aura-2-selena-es",
                 SpeakV1AudioGenerateModel.Aura2SeleneEn => "aura-2-selene-en",
+                SpeakV1AudioGenerateModel.Aura2SirioEs => "aura-2-sirio-es",
                 SpeakV1AudioGenerateModel.Aura2ThaliaEn => "aura-2-thalia-en",
                 SpeakV1AudioGenerateModel.Aura2TheiaEn => "aura-2-theia-en",
                 SpeakV1AudioGenerateModel.Aura2VestaEn => "aura-2-vesta-en",
                 SpeakV1AudioGenerateModel.Aura2ZeusEn => "aura-2-zeus-en",
-                SpeakV1AudioGenerateModel.Aura2SirioEs => "aura-2-sirio-es",
-                SpeakV1AudioGenerateModel.Aura2NestorEs => "aura-2-nestor-es",
-                SpeakV1AudioGenerateModel.Aura2CarinaEs => "aura-2-carina-es",
-                SpeakV1AudioGenerateModel.Aura2CelesteEs => "aura-2-celeste-es",
-                SpeakV1AudioGenerateModel.Aura2AlvaroEs => "aura-2-alvaro-es",
-                SpeakV1AudioGenerateModel.Aura2DianaEs => "aura-2-diana-es",
-                SpeakV1AudioGenerateModel.Aura2AquilaEs => "aura-2-aquila-es",
-                SpeakV1AudioGenerateModel.Aura2SelenaEs => "aura-2-selena-es",
-                SpeakV1AudioGenerateModel.Aura2EstrellaEs => "aura-2-estrella-es",
-                SpeakV1AudioGenerateModel.Aura2JavierEs => "aura-2-javier-es",
+                SpeakV1AudioGenerateModel.AuraAngusEn => "aura-angus-en",
+                SpeakV1AudioGenerateModel.AuraArcasEn => "aura-arcas-en",
+                SpeakV1AudioGenerateModel.AuraAsteriaEn => "aura-asteria-en",
+                SpeakV1AudioGenerateModel.AuraAthenaEn => "aura-athena-en",
+                SpeakV1AudioGenerateModel.AuraHeliosEn => "aura-helios-en",
+                SpeakV1AudioGenerateModel.AuraHeraEn => "aura-hera-en",
+                SpeakV1AudioGenerateModel.AuraLunaEn => "aura-luna-en",
+                SpeakV1AudioGenerateModel.AuraOrionEn => "aura-orion-en",
+                SpeakV1AudioGenerateModel.AuraOrpheusEn => "aura-orpheus-en",
+                SpeakV1AudioGenerateModel.AuraPerseusEn => "aura-perseus-en",
+                SpeakV1AudioGenerateModel.AuraStellaEn => "aura-stella-en",
+                SpeakV1AudioGenerateModel.AuraZeusEn => "aura-zeus-en",
                 _ => throw new global::System.ArgumentOutOfRangeException(nameof(value), value, null),
             };
         }
@@ -347,21 +347,11 @@ namespace Deepgram
         {
             return value switch
             {
-                "aura-asteria-en" => SpeakV1AudioGenerateModel.AuraAsteriaEn,
-                "aura-luna-en" => SpeakV1AudioGenerateModel.AuraLunaEn,
-                "aura-stella-en" => SpeakV1AudioGenerateModel.AuraStellaEn,
-                "aura-athena-en" => SpeakV1AudioGenerateModel.AuraAthenaEn,
-                "aura-hera-en" => SpeakV1AudioGenerateModel.AuraHeraEn,
-                "aura-orion-en" => SpeakV1AudioGenerateModel.AuraOrionEn,
-                "aura-arcas-en" => SpeakV1AudioGenerateModel.AuraArcasEn,
-                "aura-perseus-en" => SpeakV1AudioGenerateModel.AuraPerseusEn,
-                "aura-angus-en" => SpeakV1AudioGenerateModel.AuraAngusEn,
-                "aura-orpheus-en" => SpeakV1AudioGenerateModel.AuraOrpheusEn,
-                "aura-helios-en" => SpeakV1AudioGenerateModel.AuraHeliosEn,
-                "aura-zeus-en" => SpeakV1AudioGenerateModel.AuraZeusEn,
+                "aura-2-alvaro-es" => SpeakV1AudioGenerateModel.Aura2AlvaroEs,
                 "aura-2-amalthea-en" => SpeakV1AudioGenerateModel.Aura2AmaltheaEn,
                 "aura-2-andromeda-en" => SpeakV1AudioGenerateModel.Aura2AndromedaEn,
                 "aura-2-apollo-en" => SpeakV1AudioGenerateModel.Aura2ApolloEn,
+                "aura-2-aquila-es" => SpeakV1AudioGenerateModel.Aura2AquilaEs,
                 "aura-2-arcas-en" => SpeakV1AudioGenerateModel.Aura2ArcasEn,
                 "aura-2-aries-en" => SpeakV1AudioGenerateModel.Aura2AriesEn,
                 "aura-2-asteria-en" => SpeakV1AudioGenerateModel.Aura2AsteriaEn,
@@ -369,11 +359,15 @@ namespace Deepgram
                 "aura-2-atlas-en" => SpeakV1AudioGenerateModel.Aura2AtlasEn,
                 "aura-2-aurora-en" => SpeakV1AudioGenerateModel.Aura2AuroraEn,
                 "aura-2-callista-en" => SpeakV1AudioGenerateModel.Aura2CallistaEn,
-                "aura-2-cordelia-en" => SpeakV1AudioGenerateModel.Aura2CordeliaEn,
+                "aura-2-carina-es" => SpeakV1AudioGenerateModel.Aura2CarinaEs,
+                "aura-2-celeste-es" => SpeakV1AudioGenerateModel.Aura2CelesteEs,
                 "aura-2-cora-en" => SpeakV1AudioGenerateModel.Aura2CoraEn,
+                "aura-2-cordelia-en" => SpeakV1AudioGenerateModel.Aura2CordeliaEn,
                 "aura-2-delia-en" => SpeakV1AudioGenerateModel.Aura2DeliaEn,
+                "aura-2-diana-es" => SpeakV1AudioGenerateModel.Aura2DianaEs,
                 "aura-2-draco-en" => SpeakV1AudioGenerateModel.Aura2DracoEn,
                 "aura-2-electra-en" => SpeakV1AudioGenerateModel.Aura2ElectraEn,
+                "aura-2-estrella-es" => SpeakV1AudioGenerateModel.Aura2EstrellaEs,
                 "aura-2-harmonia-en" => SpeakV1AudioGenerateModel.Aura2HarmoniaEn,
                 "aura-2-helena-en" => SpeakV1AudioGenerateModel.Aura2HelenaEn,
                 "aura-2-hera-en" => SpeakV1AudioGenerateModel.Aura2HeraEn,
@@ -381,12 +375,14 @@ namespace Deepgram
                 "aura-2-hyperion-en" => SpeakV1AudioGenerateModel.Aura2HyperionEn,
                 "aura-2-iris-en" => SpeakV1AudioGenerateModel.Aura2IrisEn,
                 "aura-2-janus-en" => SpeakV1AudioGenerateModel.Aura2JanusEn,
+                "aura-2-javier-es" => SpeakV1AudioGenerateModel.Aura2JavierEs,
                 "aura-2-juno-en" => SpeakV1AudioGenerateModel.Aura2JunoEn,
                 "aura-2-jupiter-en" => SpeakV1AudioGenerateModel.Aura2JupiterEn,
                 "aura-2-luna-en" => SpeakV1AudioGenerateModel.Aura2LunaEn,
                 "aura-2-mars-en" => SpeakV1AudioGenerateModel.Aura2MarsEn,
                 "aura-2-minerva-en" => SpeakV1AudioGenerateModel.Aura2MinervaEn,
                 "aura-2-neptune-en" => SpeakV1AudioGenerateModel.Aura2NeptuneEn,
+                "aura-2-nestor-es" => SpeakV1AudioGenerateModel.Aura2NestorEs,
                 "aura-2-odysseus-en" => SpeakV1AudioGenerateModel.Aura2OdysseusEn,
                 "aura-2-ophelia-en" => SpeakV1AudioGenerateModel.Aura2OpheliaEn,
                 "aura-2-orion-en" => SpeakV1AudioGenerateModel.Aura2OrionEn,
@@ -395,21 +391,25 @@ namespace Deepgram
                 "aura-2-phoebe-en" => SpeakV1AudioGenerateModel.Aura2PhoebeEn,
                 "aura-2-pluto-en" => SpeakV1AudioGenerateModel.Aura2PlutoEn,
                 "aura-2-saturn-en" => SpeakV1AudioGenerateModel.Aura2SaturnEn,
+                "aura-2-selena-es" => SpeakV1AudioGenerateModel.Aura2SelenaEs,
                 "aura-2-selene-en" => SpeakV1AudioGenerateModel.Aura2SeleneEn,
+                "aura-2-sirio-es" => SpeakV1AudioGenerateModel.Aura2SirioEs,
                 "aura-2-thalia-en" => SpeakV1AudioGenerateModel.Aura2ThaliaEn,
                 "aura-2-theia-en" => SpeakV1AudioGenerateModel.Aura2TheiaEn,
                 "aura-2-vesta-en" => SpeakV1AudioGenerateModel.Aura2VestaEn,
                 "aura-2-zeus-en" => SpeakV1AudioGenerateModel.Aura2ZeusEn,
-                "aura-2-sirio-es" => SpeakV1AudioGenerateModel.Aura2SirioEs,
-                "aura-2-nestor-es" => SpeakV1AudioGenerateModel.Aura2NestorEs,
-                "aura-2-carina-es" => SpeakV1AudioGenerateModel.Aura2CarinaEs,
-                "aura-2-celeste-es" => SpeakV1AudioGenerateModel.Aura2CelesteEs,
-                "aura-2-alvaro-es" => SpeakV1AudioGenerateModel.Aura2AlvaroEs,
-                "aura-2-diana-es" => SpeakV1AudioGenerateModel.Aura2DianaEs,
-                "aura-2-aquila-es" => SpeakV1AudioGenerateModel.Aura2AquilaEs,
-                "aura-2-selena-es" => SpeakV1AudioGenerateModel.Aura2SelenaEs,
-                "aura-2-estrella-es" => SpeakV1AudioGenerateModel.Aura2EstrellaEs,
-                "aura-2-javier-es" => SpeakV1AudioGenerateModel.Aura2JavierEs,
+                "aura-angus-en" => SpeakV1AudioGenerateModel.AuraAngusEn,
+                "aura-arcas-en" => SpeakV1AudioGenerateModel.AuraArcasEn,
+                "aura-asteria-en" => SpeakV1AudioGenerateModel.AuraAsteriaEn,
+                "aura-athena-en" => SpeakV1AudioGenerateModel.AuraAthenaEn,
+                "aura-helios-en" => SpeakV1AudioGenerateModel.AuraHeliosEn,
+                "aura-hera-en" => SpeakV1AudioGenerateModel.AuraHeraEn,
+                "aura-luna-en" => SpeakV1AudioGenerateModel.AuraLunaEn,
+                "aura-orion-en" => SpeakV1AudioGenerateModel.AuraOrionEn,
+                "aura-orpheus-en" => SpeakV1AudioGenerateModel.AuraOrpheusEn,
+                "aura-perseus-en" => SpeakV1AudioGenerateModel.AuraPerseusEn,
+                "aura-stella-en" => SpeakV1AudioGenerateModel.AuraStellaEn,
+                "aura-zeus-en" => SpeakV1AudioGenerateModel.AuraZeusEn,
                 _ => null,
             };
         }

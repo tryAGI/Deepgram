@@ -12,7 +12,7 @@ namespace Deepgram.Realtime
         /// <summary>
         /// 
         /// </summary>
-        Post,
+        Delete,
         /// <summary>
         /// 
         /// </summary>
@@ -20,11 +20,11 @@ namespace Deepgram.Realtime
         /// <summary>
         /// 
         /// </summary>
-        Put,
+        Post,
         /// <summary>
         /// 
         /// </summary>
-        Delete,
+        Put,
     }
 
     /// <summary>
@@ -39,10 +39,10 @@ namespace Deepgram.Realtime
         {
             return value switch
             {
-                ListenV1CallbackMethod.Post => "POST",
-                ListenV1CallbackMethod.Get => "GET",
-                ListenV1CallbackMethod.Put => "PUT",
                 ListenV1CallbackMethod.Delete => "DELETE",
+                ListenV1CallbackMethod.Get => "GET",
+                ListenV1CallbackMethod.Post => "POST",
+                ListenV1CallbackMethod.Put => "PUT",
                 _ => throw new global::System.ArgumentOutOfRangeException(nameof(value), value, null),
             };
         }
@@ -53,10 +53,10 @@ namespace Deepgram.Realtime
         {
             return value switch
             {
-                "POST" => ListenV1CallbackMethod.Post,
-                "GET" => ListenV1CallbackMethod.Get,
-                "PUT" => ListenV1CallbackMethod.Put,
                 "DELETE" => ListenV1CallbackMethod.Delete,
+                "GET" => ListenV1CallbackMethod.Get,
+                "POST" => ListenV1CallbackMethod.Post,
+                "PUT" => ListenV1CallbackMethod.Put,
                 _ => null,
             };
         }

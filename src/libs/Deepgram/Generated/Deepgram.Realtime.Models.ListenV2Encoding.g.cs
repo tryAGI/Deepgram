@@ -11,6 +11,10 @@ namespace Deepgram.Realtime
         /// <summary>
         /// 
         /// </summary>
+        Alaw,
+        /// <summary>
+        /// 
+        /// </summary>
         Linear16,
         /// <summary>
         /// 
@@ -23,15 +27,11 @@ namespace Deepgram.Realtime
         /// <summary>
         /// 
         /// </summary>
-        Alaw,
+        OggOpus,
         /// <summary>
         /// 
         /// </summary>
         Opus,
-        /// <summary>
-        /// 
-        /// </summary>
-        OggOpus,
     }
 
     /// <summary>
@@ -46,12 +46,12 @@ namespace Deepgram.Realtime
         {
             return value switch
             {
+                ListenV2Encoding.Alaw => "alaw",
                 ListenV2Encoding.Linear16 => "linear16",
                 ListenV2Encoding.Linear32 => "linear32",
                 ListenV2Encoding.Mulaw => "mulaw",
-                ListenV2Encoding.Alaw => "alaw",
-                ListenV2Encoding.Opus => "opus",
                 ListenV2Encoding.OggOpus => "ogg-opus",
+                ListenV2Encoding.Opus => "opus",
                 _ => throw new global::System.ArgumentOutOfRangeException(nameof(value), value, null),
             };
         }
@@ -62,12 +62,12 @@ namespace Deepgram.Realtime
         {
             return value switch
             {
+                "alaw" => ListenV2Encoding.Alaw,
                 "linear16" => ListenV2Encoding.Linear16,
                 "linear32" => ListenV2Encoding.Linear32,
                 "mulaw" => ListenV2Encoding.Mulaw,
-                "alaw" => ListenV2Encoding.Alaw,
-                "opus" => ListenV2Encoding.Opus,
                 "ogg-opus" => ListenV2Encoding.OggOpus,
+                "opus" => ListenV2Encoding.Opus,
                 _ => null,
             };
         }

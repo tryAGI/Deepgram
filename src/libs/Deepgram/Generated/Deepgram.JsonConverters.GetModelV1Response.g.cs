@@ -27,23 +27,23 @@ namespace Deepgram.JsonConverters
             }
 
             var __score0 = 0;
-            if (__jsonProps.Contains("name")) __score0++;
-            if (__jsonProps.Contains("canonical_name")) __score0++;
             if (__jsonProps.Contains("architecture")) __score0++;
-            if (__jsonProps.Contains("languages")) __score0++;
-            if (__jsonProps.Contains("version")) __score0++;
-            if (__jsonProps.Contains("uuid")) __score0++;
             if (__jsonProps.Contains("batch")) __score0++;
-            if (__jsonProps.Contains("streaming")) __score0++;
+            if (__jsonProps.Contains("canonical_name")) __score0++;
             if (__jsonProps.Contains("formatted_output")) __score0++;
+            if (__jsonProps.Contains("languages")) __score0++;
+            if (__jsonProps.Contains("name")) __score0++;
+            if (__jsonProps.Contains("streaming")) __score0++;
+            if (__jsonProps.Contains("uuid")) __score0++;
+            if (__jsonProps.Contains("version")) __score0++;
             var __score1 = 0;
-            if (__jsonProps.Contains("name")) __score1++;
-            if (__jsonProps.Contains("canonical_name")) __score1++;
             if (__jsonProps.Contains("architecture")) __score1++;
+            if (__jsonProps.Contains("canonical_name")) __score1++;
             if (__jsonProps.Contains("languages")) __score1++;
-            if (__jsonProps.Contains("version")) __score1++;
-            if (__jsonProps.Contains("uuid")) __score1++;
             if (__jsonProps.Contains("metadata")) __score1++;
+            if (__jsonProps.Contains("name")) __score1++;
+            if (__jsonProps.Contains("uuid")) __score1++;
+            if (__jsonProps.Contains("version")) __score1++;
             var __bestScore = 0;
             var __bestIndex = -1;
             if (__score0 > __bestScore) { __bestScore = __score0; __bestIndex = 0; }
