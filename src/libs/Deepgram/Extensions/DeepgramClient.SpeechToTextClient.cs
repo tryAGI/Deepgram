@@ -97,86 +97,89 @@ public partial class DeepgramClient : ISpeechToTextClient
         }
 
         // Create and configure the WebSocket client with typed query parameters.
-        await using var realtimeClient = new Realtime.DeepgramListenV1RealtimeClient();
-        realtimeClient.AuthorizeUsingToken(apiKey);
-        await realtimeClient.ConnectAsync(
-            interimResults: Realtime.ListenV1InterimResults.True,
-            model: options?.ModelId is { Length: > 0 } modelId
-                ? Realtime.ListenV1ModelExtensions.ToEnum(modelId)
-                : null,
-            language: options?.SpeechLanguage is { Length: > 0 } language
-                ? language
-                : null,
-            cancellationToken: cancellationToken).ConfigureAwait(false);
-
-        // Start sending audio in a background task.
-        var sendTask = Task.Run(async () =>
+        var realtimeClient = new Realtime.DeepgramListenV1RealtimeClient();
+        await using (realtimeClient.ConfigureAwait(false))
         {
-            var buffer = new byte[8192];
-            int bytesRead;
-            while ((bytesRead = await audioSpeechStream.ReadAsync(
-                buffer.AsMemory(0, buffer.Length), cancellationToken).ConfigureAwait(false)) > 0)
+            realtimeClient.AuthorizeUsingToken(apiKey);
+            await realtimeClient.ConnectAsync(
+                interimResults: Realtime.ListenV1InterimResults.True,
+                model: options?.ModelId is { Length: > 0 } modelId
+                    ? Realtime.ListenV1ModelExtensions.ToEnum(modelId)
+                    : null,
+                language: options?.SpeechLanguage is { Length: > 0 } language
+                    ? language
+                    : null,
+                cancellationToken: cancellationToken).ConfigureAwait(false);
+
+            // Start sending audio in a background task.
+            var sendTask = Task.Run(async () =>
             {
-                await realtimeClient.SendAsync(
-                    new ArraySegment<byte>(buffer, 0, bytesRead),
-                    System.Net.WebSockets.WebSocketMessageType.Binary,
-                    endOfMessage: true,
+                var buffer = new byte[8192];
+                int bytesRead;
+                while ((bytesRead = await audioSpeechStream.ReadAsync(
+                    buffer.AsMemory(0, buffer.Length), cancellationToken).ConfigureAwait(false)) > 0)
+                {
+                    await realtimeClient.SendAsync(
+                        new ArraySegment<byte>(buffer, 0, bytesRead),
+                        System.Net.WebSockets.WebSocketMessageType.Binary,
+                        endOfMessage: true,
+                        cancellationToken).ConfigureAwait(false);
+                }
+
+                // Signal end of audio using the control message (Finalize/CloseStream/KeepAlive).
+                await realtimeClient.SendListenV1CloseStreamAsync(
+                    new Realtime.ListenV1ControlMessage
+                    {
+                        Type = Realtime.ListenV1ControlMessageType.CloseStream,
+                    },
                     cancellationToken).ConfigureAwait(false);
-            }
+            }, cancellationToken);
 
-            // Signal end of audio using the control message (Finalize/CloseStream/KeepAlive).
-            await realtimeClient.SendListenV1CloseStreamAsync(
-                new Realtime.ListenV1ControlMessage
-                {
-                    Type = Realtime.ListenV1ControlMessageType.CloseStream,
-                },
-                cancellationToken).ConfigureAwait(false);
-        }, cancellationToken);
-
-        // Receive transcription events and yield MEAI updates.
-        string? responseId = null;
-        await foreach (var serverEvent in realtimeClient.ReceiveUpdatesAsync(cancellationToken).ConfigureAwait(false))
-        {
-            if (serverEvent.IsMetadata && serverEvent.Metadata is { } metadata)
+            // Receive transcription events and yield MEAI updates.
+            string? responseId = null;
+            await foreach (var serverEvent in realtimeClient.ReceiveUpdatesAsync(cancellationToken).ConfigureAwait(false))
             {
-                responseId = metadata.RequestId.ToString();
-                yield return new SpeechToTextResponseUpdate
+                if (serverEvent.IsMetadata && serverEvent.Metadata is { } metadata)
                 {
-                    Kind = SpeechToTextResponseUpdateKind.SessionOpen,
-                    ResponseId = responseId,
-                    RawRepresentation = metadata,
-                };
+                    responseId = metadata.RequestId.ToString();
+                    yield return new SpeechToTextResponseUpdate
+                    {
+                        Kind = SpeechToTextResponseUpdateKind.SessionOpen,
+                        ResponseId = responseId,
+                        RawRepresentation = metadata,
+                    };
+                }
+                else if (serverEvent.IsResults && serverEvent.Results is { } results)
+                {
+                    responseId ??= results.Metadata.RequestId;
+
+                    string transcript = results.Channel?.Alternatives is { Count: > 0 } alts
+                        ? alts[0].Transcript ?? string.Empty
+                        : string.Empty;
+
+                    var kind = results.IsFinal == true
+                        ? SpeechToTextResponseUpdateKind.TextUpdated
+                        : SpeechToTextResponseUpdateKind.TextUpdating;
+
+                    yield return new SpeechToTextResponseUpdate(transcript)
+                    {
+                        Kind = kind,
+                        ResponseId = responseId,
+                        StartTime = TimeSpan.FromSeconds(results.Start),
+                        EndTime = TimeSpan.FromSeconds(results.Start + results.Duration),
+                        RawRepresentation = results,
+                    };
+                }
             }
-            else if (serverEvent.IsResults && serverEvent.Results is { } results)
+
+            yield return new SpeechToTextResponseUpdate
             {
-                responseId ??= results.Metadata.RequestId;
+                Kind = SpeechToTextResponseUpdateKind.SessionClose,
+                ResponseId = responseId,
+            };
 
-                string transcript = results.Channel?.Alternatives is { Count: > 0 } alts
-                    ? alts[0].Transcript ?? string.Empty
-                    : string.Empty;
-
-                var kind = results.IsFinal == true
-                    ? SpeechToTextResponseUpdateKind.TextUpdated
-                    : SpeechToTextResponseUpdateKind.TextUpdating;
-
-                yield return new SpeechToTextResponseUpdate(transcript)
-                {
-                    Kind = kind,
-                    ResponseId = responseId,
-                    StartTime = TimeSpan.FromSeconds(results.Start),
-                    EndTime = TimeSpan.FromSeconds(results.Start + results.Duration),
-                    RawRepresentation = results,
-                };
-            }
+            // Ensure the send task completed without errors.
+            await sendTask.ConfigureAwait(false);
         }
-
-        yield return new SpeechToTextResponseUpdate
-        {
-            Kind = SpeechToTextResponseUpdateKind.SessionClose,
-            ResponseId = responseId,
-        };
-
-        // Ensure the send task completed without errors.
-        await sendTask.ConfigureAwait(false);
     }
 }
