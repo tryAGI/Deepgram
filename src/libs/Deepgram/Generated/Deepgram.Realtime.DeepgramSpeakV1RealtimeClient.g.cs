@@ -1,3 +1,4 @@
+#pragma warning disable CS1573 // Missing XML comment for publicly visible type or member
 
 #nullable enable
 

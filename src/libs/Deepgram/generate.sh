@@ -59,3 +59,12 @@ autosdk generate asyncapi.json \
   --json-serializer-context RealtimeSourceGenerationContext \
   --targetFramework net10.0 \
   --output Generated
+
+# Fix CS1573: AsyncAPI-generated ConnectAsync methods have XML doc comments for
+# spec-defined query parameters but omit <param> tags for `uri` and `cancellationToken`.
+# Suppress the warning in affected WebSocket client files.
+for f in Generated/Deepgram.Realtime.Deepgram*RealtimeClient.g.cs; do
+  if grep -q '/// <param name=' "$f"; then
+    sed -i '' '1s/^/#pragma warning disable CS1573 \/\/ Missing XML comment for publicly visible type or member\n/' "$f"
+  fi
+done
