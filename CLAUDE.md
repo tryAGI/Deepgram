@@ -19,7 +19,25 @@ Token auth with Deepgram API key (uses `Token` scheme, not `Bearer`):
 var client = new DeepgramClient(apiKey); // DEEPGRAM_API_KEY env var
 ```
 
-**Important:** Deepgram uses `Authorization: Token <key>`, not `Authorization: Bearer <key>`. Both the REST client (`DeepgramClient.Auth.cs`) and the WebSocket clients (`DeepgramRealtimeClient.Auth.cs`) override the generated Bearer scheme to Token.
+**Important:** Deepgram uses `Authorization: Token <key>`, not `Authorization: Bearer <key>`. The `Authorized` partial hook in `DeepgramClient.Auth.cs` rewrites the scheme:
+
+```csharp
+// In Extensions/DeepgramClient.Auth.cs
+partial void Authorized(HttpClient client)
+{
+    for (int i = 0; i < Authorizations.Count; i++)
+    {
+        var auth = Authorizations[i];
+        if (auth is { Type: "Http", Name: "Bearer" })
+            Authorizations[i] = new EndPointAuthorization
+            { Type = auth.Type, Location = auth.Location, Name = "Token", Value = auth.Value };
+    }
+}
+```
+
+The WebSocket clients (`DeepgramRealtimeClient.Auth.cs`) apply the same Token scheme conversion.
+
+> **Note:** The `--security-scheme ApiKey:Header:Authorization` CLI arg could potentially replace the jq auth conversion + `Authorized` hook, but Deepgram's `Token` scheme (using the `Authorization` header with a non-standard scheme name) is not directly expressible via `--security-scheme`.
 
 ## Key Files
 
