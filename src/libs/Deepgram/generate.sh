@@ -2,8 +2,7 @@ dotnet tool install --global autosdk.cli --prerelease
 rm -rf Generated
 curl -sL "https://raw.githubusercontent.com/deepgram/deepgram-api-specs/main/openapi.yml" -o openapi.yaml
 
-# Fix auth: convert apiKey scheme to http/bearer and add top-level security
-# Fix servers: use only the main API base URL
+# Fix 1: Convert apiKey scheme to http/bearer, add top-level security, set server URL.
 yq -i '
   .components.securitySchemes.ApiKeyAuth = {
     "type": "http",
@@ -13,8 +12,8 @@ yq -i '
   .servers = [{"url": "https://api.deepgram.com"}]
 ' openapi.yaml
 
-# Fix ErrorResponseTextError: it's `type: string` which causes AutoSDK to generate
-# a property named `string` (C# keyword). Convert to an object with a `value` property.
+# Fix 2: ErrorResponseTextError is `type: string` which generates a property named
+#         `string` (C# keyword). Convert to object with `value` property.
 yq -i '
   .components.schemas.ErrorResponseTextError = {
     "type": "object",
@@ -41,7 +40,7 @@ autosdk generate openapi.yaml \
 # - operationTraits → parsed for spec compliance
 curl -sL "https://raw.githubusercontent.com/deepgram/deepgram-api-specs/main/asyncapi.yml" -o asyncapi.yaml
 
-# Fix auth: convert httpApiKey to http/bearer, remove JwtAuth
+# Fix 3: Convert AsyncAPI httpApiKey to http/bearer, remove JwtAuth.
 yq -i '
   .components.securitySchemes.ApiKeyAuth = {
     "type": "http",
@@ -60,9 +59,8 @@ autosdk generate asyncapi.json \
   --targetFramework net10.0 \
   --output Generated
 
-# Fix CS1573: AsyncAPI-generated ConnectAsync methods have XML doc comments for
-# spec-defined query parameters but omit <param> tags for `uri` and `cancellationToken`.
-# Suppress the warning in affected WebSocket client files.
+# Fix 4: CS1573 pragma suppression — AsyncAPI-generated ConnectAsync methods omit
+#         <param> tags for `uri` and `cancellationToken`.
 for f in Generated/Deepgram.Realtime.Deepgram*RealtimeClient.g.cs; do
   if grep -q '/// <param name=' "$f"; then
     sed -i '' '1s/^/#pragma warning disable CS1573 \/\/ Missing XML comment for publicly visible type or member\n/' "$f"
