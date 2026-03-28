@@ -105,8 +105,19 @@ Voice agent channel (uses `agent.deepgram.com`):
 
 ## Spec Notes
 
-- OpenAPI spec: `https://raw.githubusercontent.com/deepgram/deepgram-api-specs/main/openapi.yml` (3.1.0)
-- AsyncAPI spec: `https://raw.githubusercontent.com/deepgram/deepgram-api-specs/main/asyncapi.yml` (3.0.0) — used directly (upstream)
+The `generate.sh` applies fixes via `yq` (pre-generation) and `sed` (post-generation):
+
+**Pre-generation (`yq`):**
+1. **REST auth conversion:** Converts `apiKey` security scheme to `http/bearer`; sets server to `https://api.deepgram.com`
+2. **ErrorResponseTextError fix:** Converts `type: string` schema to object with `value` property (avoids C# reserved keyword `string` as property name)
+3. **AsyncAPI auth conversion:** Converts `httpApiKey` scheme to `http/bearer`; removes `JwtAuth`
+
+**Post-generation (`sed`):**
+4. **CS1573 pragma suppression:** Injects `#pragma warning disable CS1573` in AsyncAPI-generated WebSocket client files (missing XML param doc comments from inherited parameters)
+
+**Spec sources:**
+- OpenAPI: `https://raw.githubusercontent.com/deepgram/deepgram-api-specs/main/openapi.yml` (3.1.0)
+- AsyncAPI: `https://raw.githubusercontent.com/deepgram/deepgram-api-specs/main/asyncapi.yml` (3.0.0) — used directly (upstream)
 - Note: Official .NET SDK exists (`Deepgram` on NuGet) but lacks MEAI integration
 
 ## NuGet
