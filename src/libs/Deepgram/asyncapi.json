@@ -94,8 +94,13 @@
     },
     "securitySchemes": {
       "ApiKeyAuth": {
-        "type": "http",
-        "scheme": "bearer"
+        "type": "httpApiKey",
+        "in": "header",
+        "name": "Authorization",
+        "x-fern-header": {
+          "prefix": "Token",
+          "env": "DEEPGRAM_API_KEY"
+        }
       }
     },
     "schemas": {

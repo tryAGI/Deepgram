@@ -13,12 +13,24 @@ info:
     name: Privacy Notice
     url: 'https://deepgram.com/privacy/'
 servers:
-  - url: https://api.deepgram.com
+  - url: 'https://api.deepgram.com'
+    description: Deepgram Production API
+    x-fern-server-name: Production
+  - url: 'https://agent.deepgram.com'
+    description: Deepgram Agent API
+    x-fern-server-name: Agent
 components:
   securitySchemes:
     ApiKeyAuth:
-      type: http
-      scheme: bearer
+      type: apiKey
+      in: header
+      name: Authorization
+      description: |
+        Use `Authorization: Token <API_KEY>`
+        Example: `Authorization: Token 12345abcdef`
+      x-fern-header:
+        prefix: Token
+        env: DEEPGRAM_API_KEY
     JwtAuth:
       type: http
       scheme: bearer
@@ -5179,5 +5191,3 @@ tags:
     description: AI agent operations
   - name: Self-Hosted
     description: On-premise deployments
-security:
-  - ApiKeyAuth: []

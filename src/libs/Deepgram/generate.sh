@@ -42,7 +42,12 @@ curl --fail --silent --show-error -L "https://raw.githubusercontent.com/deepgram
 # Convert YAML to JSON for reliable parsing
 yq -o json asyncapi.yaml > asyncapi.json
 
-# Auth: --security-scheme overrides AsyncAPI's httpApiKey/JwtAuth with HTTP bearer.
+# Fix 2: AsyncAPI spec has two security schemes (ApiKeyAuth + JwtAuth) that both
+#         map to HTTP bearer after --security-scheme override, producing duplicate
+#         AuthorizeUsingBearer methods. Remove JwtAuth to keep only one.
+jq 'del(.components.securitySchemes.JwtAuth)' asyncapi.json > asyncapi.tmp.json && mv asyncapi.tmp.json asyncapi.json
+
+# Auth: --security-scheme overrides AsyncAPI's httpApiKey with HTTP bearer.
 autosdk generate asyncapi.json \
   --namespace Deepgram.Realtime \
   --websocket-class-name DeepgramRealtimeClient \
@@ -50,11 +55,3 @@ autosdk generate asyncapi.json \
   --targetFramework net10.0 \
   --output Generated \
   --security-scheme Http:Header:Bearer
-
-# Fix 2: CS1573 pragma suppression — AsyncAPI-generated ConnectAsync methods omit
-#         <param> tags for `uri` and `cancellationToken`.
-for f in Generated/Deepgram.Realtime.Deepgram*RealtimeClient.g.cs; do
-  if grep -q '/// <param name=' "$f"; then
-    printf '%s\n' '#pragma warning disable CS1573 // Missing XML comment for publicly visible type or member' "$(cat "$f")" > "$f"
-  fi
-done

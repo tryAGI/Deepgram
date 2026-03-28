@@ -1,4 +1,3 @@
-#pragma warning disable CS1573 // Missing XML comment for publicly visible type or member
 
 #nullable enable
 
@@ -42,7 +41,7 @@ namespace Deepgram.Realtime
 
 
         /// <summary>
-        /// Authorize using bearer authentication.
+        /// Authorize using Bearer authentication.
         /// </summary>
         /// <param name="apiKey"></param>
         public void AuthorizeUsingBearer(
@@ -54,7 +53,7 @@ namespace Deepgram.Realtime
         }
 
         /// <summary>
-        /// Creates a new instance with bearer token authentication.
+        /// Creates a new instance with Bearer token authentication.
         /// </summary>
         /// <param name="apiKey"></param>
         /// <param name="clientWebSocket"></param>
@@ -102,35 +101,37 @@ namespace Deepgram.Realtime
         /// <param name="utteranceEndMs">Indicates how long Deepgram will wait to send an UtteranceEnd message after a word has been transcribed. Use with interim_results</param>
         /// <param name="vadEvents">Indicates that speech has started. You'll begin receiving Speech Started messages upon speech starting</param>
         /// <param name="version">Version of an AI model to use</param>
+        /// <param name="uri">Optional WebSocket endpoint override.</param>
+        /// <param name="cancellationToken">A cancellation token.</param>
         public async global::System.Threading.Tasks.Task ConnectAsync(
-            object? callback = default,
+            global::Deepgram.Realtime.ListenV1Callback? callback = default,
             global::Deepgram.Realtime.ListenV1CallbackMethod? callbackMethod = default,
-            object? channels = default,
+            global::Deepgram.Realtime.ListenV1Channels? channels = default,
             global::Deepgram.Realtime.ListenV1DetectEntities? detectEntities = default,
             global::Deepgram.Realtime.ListenV1Diarize? diarize = default,
             global::Deepgram.Realtime.ListenV1Dictation? dictation = default,
             global::Deepgram.Realtime.ListenV1Encoding? encoding = default,
-            object? endpointing = default,
-            object? extra = default,
+            global::Deepgram.Realtime.ListenV1Endpointing? endpointing = default,
+            global::Deepgram.Realtime.ListenV1Extra? extra = default,
             global::Deepgram.Realtime.ListenV1InterimResults? interimResults = default,
-            object? keyterm = default,
-            object? keywords = default,
-            object? language = default,
-            object? mipOptOut = default,
+            global::Deepgram.Realtime.ListenV1Keyterm? keyterm = default,
+            global::Deepgram.Realtime.ListenV1Keywords? keywords = default,
+            global::Deepgram.Realtime.ListenV1Language? language = default,
+            global::Deepgram.Realtime.ListenV1MipOptOut? mipOptOut = default,
             global::Deepgram.Realtime.ListenV1Model? model = default,
             global::Deepgram.Realtime.ListenV1Multichannel? multichannel = default,
             global::Deepgram.Realtime.ListenV1Numerals? numerals = default,
             global::Deepgram.Realtime.ListenV1ProfanityFilter? profanityFilter = default,
             global::Deepgram.Realtime.ListenV1Punctuate? punctuate = default,
             global::Deepgram.Realtime.ListenV1Redact? redact = default,
-            object? replace = default,
-            object? sampleRate = default,
-            object? search = default,
+            global::Deepgram.Realtime.ListenV1Replace? replace = default,
+            global::Deepgram.Realtime.ListenV1SampleRate? sampleRate = default,
+            global::Deepgram.Realtime.ListenV1Search? search = default,
             global::Deepgram.Realtime.ListenV1SmartFormat? smartFormat = default,
-            object? tag = default,
-            object? utteranceEndMs = default,
+            global::Deepgram.Realtime.ListenV1Tag? tag = default,
+            global::Deepgram.Realtime.ListenV1UtteranceEndMs? utteranceEndMs = default,
             global::Deepgram.Realtime.ListenV1VadEvents? vadEvents = default,
-            object? version = default,
+            global::Deepgram.Realtime.ListenV1Version? version = default,
             global::System.Uri? uri = null,
             global::System.Threading.CancellationToken cancellationToken = default)
         {

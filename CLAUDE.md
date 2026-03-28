@@ -37,7 +37,7 @@ partial void Authorized(HttpClient client)
 
 The WebSocket clients (`DeepgramRealtimeClient.Auth.cs`) apply the same Token scheme conversion.
 
-> **Note:** The `--security-scheme ApiKey:Header:Authorization` CLI arg could potentially replace the jq auth conversion + `Authorized` hook, but Deepgram's `Token` scheme (using the `Authorization` header with a non-standard scheme name) is not directly expressible via `--security-scheme`.
+> **Note:** `--security-scheme Http:Header:Bearer` is used for code generation, but the `Authorized` hook remains necessary to rewrite `Bearer` → `Token` at runtime since Deepgram's custom scheme name is not expressible via `--security-scheme`.
 
 ## Key Files
 
@@ -123,15 +123,17 @@ Voice agent channel (uses `agent.deepgram.com`):
 
 ## Spec Notes
 
-The `generate.sh` applies fixes via `yq` (pre-generation) and `sed` (post-generation):
+The `generate.sh` applies fixes via `yq` (pre-generation), `--security-scheme` + `--base-url` (CLI flags), and `sed` (post-generation):
+
+**CLI flags:**
+- `--security-scheme Http:Header:Bearer` — Overrides REST and AsyncAPI auth schemes
+- `--base-url https://api.deepgram.com` — Injects missing server URL
 
 **Pre-generation (`yq`):**
-1. **REST auth conversion:** Converts `apiKey` security scheme to `http/bearer`; sets server to `https://api.deepgram.com`
-2. **ErrorResponseTextError fix:** Converts `type: string` schema to object with `value` property (avoids C# reserved keyword `string` as property name)
-3. **AsyncAPI auth conversion:** Converts `httpApiKey` scheme to `http/bearer`; removes `JwtAuth`
+1. **ErrorResponseTextError fix:** Converts `type: string` schema to object with `value` property (avoids C# reserved keyword `string` as property name)
 
 **Post-generation (`sed`):**
-4. **CS1573 pragma suppression:** Injects `#pragma warning disable CS1573` in AsyncAPI-generated WebSocket client files (missing XML param doc comments from inherited parameters)
+2. **CS1573 pragma suppression:** Injects `#pragma warning disable CS1573` in AsyncAPI-generated WebSocket client files (missing XML param doc comments from inherited parameters)
 
 **Spec sources:**
 - OpenAPI: `https://raw.githubusercontent.com/deepgram/deepgram-api-specs/main/openapi.yml` (3.1.0)

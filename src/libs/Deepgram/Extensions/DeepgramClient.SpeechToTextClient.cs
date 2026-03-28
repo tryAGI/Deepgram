@@ -106,8 +106,8 @@ public partial class DeepgramClient : ISpeechToTextClient
                 model: options?.ModelId is { Length: > 0 } modelId
                     ? Realtime.ListenV1ModelExtensions.ToEnum(modelId)
                     : null,
-                language: options?.SpeechLanguage is { Length: > 0 } language
-                    ? language
+                language: options?.SpeechLanguage is { Length: > 0 } lang
+                    ? Realtime.ListenV1Language.FromString(lang)
                     : null,
                 cancellationToken: cancellationToken).ConfigureAwait(false);
 

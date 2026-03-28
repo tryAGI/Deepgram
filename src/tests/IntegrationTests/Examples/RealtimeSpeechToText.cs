@@ -27,7 +27,7 @@ public partial class Tests
         await realtimeClient.ConnectAsync(
             model: Realtime.ListenV1Model.Nova3,
             interimResults: Realtime.ListenV1InterimResults.True,
-            language: "en",
+            language: Realtime.ListenV1Language.FromString("en"),
             cancellationToken: cts.Token);
 
         realtimeClient.IsConnected.Should().BeTrue();

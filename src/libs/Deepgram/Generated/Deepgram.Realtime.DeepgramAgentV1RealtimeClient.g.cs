@@ -1,4 +1,3 @@
-#pragma warning disable CS1573 // Missing XML comment for publicly visible type or member
 
 #nullable enable
 
@@ -42,7 +41,7 @@ namespace Deepgram.Realtime
 
 
         /// <summary>
-        /// Authorize using bearer authentication.
+        /// Authorize using Bearer authentication.
         /// </summary>
         /// <param name="apiKey"></param>
         public void AuthorizeUsingBearer(
@@ -54,7 +53,7 @@ namespace Deepgram.Realtime
         }
 
         /// <summary>
-        /// Creates a new instance with bearer token authentication.
+        /// Creates a new instance with Bearer token authentication.
         /// </summary>
         /// <param name="apiKey"></param>
         /// <param name="clientWebSocket"></param>

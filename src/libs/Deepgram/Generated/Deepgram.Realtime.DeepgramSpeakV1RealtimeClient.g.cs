@@ -1,4 +1,3 @@
-#pragma warning disable CS1573 // Missing XML comment for publicly visible type or member
 
 #nullable enable
 
@@ -42,7 +41,7 @@ namespace Deepgram.Realtime
 
 
         /// <summary>
-        /// Authorize using bearer authentication.
+        /// Authorize using Bearer authentication.
         /// </summary>
         /// <param name="apiKey"></param>
         public void AuthorizeUsingBearer(
@@ -54,7 +53,7 @@ namespace Deepgram.Realtime
         }
 
         /// <summary>
-        /// Creates a new instance with bearer token authentication.
+        /// Creates a new instance with Bearer token authentication.
         /// </summary>
         /// <param name="apiKey"></param>
         /// <param name="clientWebSocket"></param>
@@ -78,9 +77,11 @@ namespace Deepgram.Realtime
         /// <param name="mipOptOut">Opts out requests from the Deepgram Model Improvement Program. Refer to our Docs for pricing impacts before setting this to true. https://dpgr.am/deepgram-mip</param>
         /// <param name="model">AI model used to process submitted text</param>
         /// <param name="sampleRate">Sample Rate specifies the sample rate for the output audio. Based on encoding 8000 or 24000 are possible defaults. For some encodings sample rate is not configurable.</param>
+        /// <param name="uri">Optional WebSocket endpoint override.</param>
+        /// <param name="cancellationToken">A cancellation token.</param>
         public async global::System.Threading.Tasks.Task ConnectAsync(
             global::Deepgram.Realtime.SpeakV1Encoding? encoding = default,
-            object? mipOptOut = default,
+            global::Deepgram.Realtime.SpeakV1MipOptOut? mipOptOut = default,
             global::Deepgram.Realtime.SpeakV1Model? model = default,
             global::Deepgram.Realtime.SpeakV1SampleRate? sampleRate = default,
             global::System.Uri? uri = null,

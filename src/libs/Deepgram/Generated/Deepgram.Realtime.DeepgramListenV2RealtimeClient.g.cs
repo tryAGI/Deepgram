@@ -1,4 +1,3 @@
-#pragma warning disable CS1573 // Missing XML comment for publicly visible type or member
 
 #nullable enable
 
@@ -43,7 +42,7 @@ namespace Deepgram.Realtime
 
 
         /// <summary>
-        /// Authorize using bearer authentication.
+        /// Authorize using Bearer authentication.
         /// </summary>
         /// <param name="apiKey"></param>
         public void AuthorizeUsingBearer(
@@ -55,7 +54,7 @@ namespace Deepgram.Realtime
         }
 
         /// <summary>
-        /// Creates a new instance with bearer token authentication.
+        /// Creates a new instance with Bearer token authentication.
         /// </summary>
         /// <param name="apiKey"></param>
         /// <param name="clientWebSocket"></param>
@@ -84,16 +83,18 @@ namespace Deepgram.Realtime
         /// <param name="mipOptOut">Opts out requests from the Deepgram Model Improvement Program. Refer to our Docs for pricing impacts before setting this to true. https://dpgr.am/deepgram-mip</param>
         /// <param name="sampleRate">Sample rate of the audio stream in Hz. Required if sending non-containerized/raw audio. If sending containerized audio, this parameter should be omitted.</param>
         /// <param name="tag">Label your requests for the purpose of identification during usage reporting</param>
+        /// <param name="uri">Optional WebSocket endpoint override.</param>
+        /// <param name="cancellationToken">A cancellation token.</param>
         public async global::System.Threading.Tasks.Task ConnectAsync(
             global::Deepgram.Realtime.ListenV2Model model,
-            object? eagerEotThreshold = default,
+            global::Deepgram.Realtime.ListenV2EagerEotThreshold? eagerEotThreshold = default,
             global::Deepgram.Realtime.ListenV2Encoding? encoding = default,
-            object? eotThreshold = default,
-            object? eotTimeoutMs = default,
+            global::Deepgram.Realtime.ListenV2EotThreshold? eotThreshold = default,
+            global::Deepgram.Realtime.ListenV2EotTimeoutMs? eotTimeoutMs = default,
             global::Deepgram.Realtime.ListenV2Keyterm? keyterm = default,
-            object? mipOptOut = default,
-            object? sampleRate = default,
-            object? tag = default,
+            global::Deepgram.Realtime.ListenV2MipOptOut? mipOptOut = default,
+            global::Deepgram.Realtime.ListenV2SampleRate? sampleRate = default,
+            global::Deepgram.Realtime.ListenV2Tag? tag = default,
             global::System.Uri? uri = null,
             global::System.Threading.CancellationToken cancellationToken = default)
         {

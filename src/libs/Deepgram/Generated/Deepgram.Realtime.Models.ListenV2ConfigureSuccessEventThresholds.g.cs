@@ -15,7 +15,7 @@ namespace Deepgram.Realtime
         /// Values 0.3 - 0.9.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("eager_eot_threshold")]
-        public object? EagerEotThreshold { get; set; }
+        public global::Deepgram.Realtime.ListenV2EagerEotThreshold? EagerEotThreshold { get; set; }
 
         /// <summary>
         /// End-of-turn confidence required to finish a turn. Valid Values 0.5 -<br/>
@@ -23,7 +23,7 @@ namespace Deepgram.Realtime
         /// Default Value: 0.7
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("eot_threshold")]
-        public object? EotThreshold { get; set; }
+        public global::Deepgram.Realtime.ListenV2EotThreshold? EotThreshold { get; set; }
 
         /// <summary>
         /// A turn will be finished when this much time has passed after speech,<br/>
@@ -31,7 +31,7 @@ namespace Deepgram.Realtime
         /// Default Value: 5000
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("eot_timeout_ms")]
-        public object? EotTimeoutMs { get; set; }
+        public global::Deepgram.Realtime.ListenV2EotTimeoutMs? EotTimeoutMs { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -61,9 +61,9 @@ namespace Deepgram.Realtime
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public ListenV2ConfigureSuccessEventThresholds(
-            object? eagerEotThreshold,
-            object? eotThreshold,
-            object? eotTimeoutMs)
+            global::Deepgram.Realtime.ListenV2EagerEotThreshold? eagerEotThreshold,
+            global::Deepgram.Realtime.ListenV2EotThreshold? eotThreshold,
+            global::Deepgram.Realtime.ListenV2EotTimeoutMs? eotTimeoutMs)
         {
             this.EagerEotThreshold = eagerEotThreshold;
             this.EotThreshold = eotThreshold;
