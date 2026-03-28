@@ -68,6 +68,6 @@ autosdk generate asyncapi.json \
 #         <param> tags for `uri` and `cancellationToken`.
 for f in Generated/Deepgram.Realtime.Deepgram*RealtimeClient.g.cs; do
   if grep -q '/// <param name=' "$f"; then
-    sed -i '' '1s/^/#pragma warning disable CS1573 \/\/ Missing XML comment for publicly visible type or member\n/' "$f"
+    printf '%s\n' '#pragma warning disable CS1573 // Missing XML comment for publicly visible type or member' "$(cat "$f")" > "$f"
   fi
 done
