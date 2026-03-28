@@ -3,7 +3,7 @@ set -euo pipefail
 
 dotnet tool install --global autosdk.cli --prerelease
 rm -rf Generated
-curl -sL "https://raw.githubusercontent.com/deepgram/deepgram-api-specs/main/openapi.yml" -o openapi.yaml
+curl --fail --silent --show-error -L "https://raw.githubusercontent.com/deepgram/deepgram-api-specs/main/openapi.yml" -o openapi.yaml
 
 # Fix 1: Convert apiKey scheme to http/bearer, add top-level security, set server URL.
 yq -i '
@@ -41,7 +41,7 @@ autosdk generate openapi.yaml \
 # - Inline message payloads → extracted to component schemas automatically
 # - Per-channel server refs → AgentV1 uses agent.deepgram.com
 # - operationTraits → parsed for spec compliance
-curl -sL "https://raw.githubusercontent.com/deepgram/deepgram-api-specs/main/asyncapi.yml" -o asyncapi.yaml
+curl --fail --silent --show-error -L "https://raw.githubusercontent.com/deepgram/deepgram-api-specs/main/asyncapi.yml" -o asyncapi.yaml
 
 # Fix 3: Convert AsyncAPI httpApiKey to http/bearer, remove JwtAuth.
 yq -i '
