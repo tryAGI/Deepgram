@@ -84,13 +84,42 @@ Console.WriteLine($"Duration: {raw.Metadata.Duration}s");
 Console.WriteLine($"Channels: {raw.Metadata.Channels}");
 ```
 
-### Streaming Behavior
+### Streaming with Raw Response Access
 
 Unlike most other STT SDKs, Deepgram provides **true real-time streaming** via `GetStreamingTextAsync`. It uses the `DeepgramListenV1RealtimeClient` WebSocket API to send audio frames and receive incremental transcription updates in real-time.
 
 - **`TextUpdating`** updates contain interim (non-final) transcriptions that may change as more audio is processed
 - **`TextUpdated`** updates contain final transcriptions for completed speech segments
 - **`SessionOpen`** and **`SessionClose`** events bracket the streaming session
+
+Each streaming update also carries a `RawRepresentation` with the provider-specific event data:
+
+```csharp
+ISpeechToTextClient sttClient = client;
+
+using var audioStream = File.OpenRead("audio.wav");
+await foreach (var update in sttClient.GetStreamingTextAsync(audioStream))
+{
+    Console.WriteLine($"[{update.Kind}] {update.Text}");
+
+    // Access the provider-specific event on each update
+    if (update.RawRepresentation is Deepgram.Realtime.ListenV1ResultsEvent results)
+    {
+        Console.WriteLine($"  Final: {results.IsFinal}, Start: {results.Start}s, " +
+            $"Duration: {results.Duration}s");
+
+        // Access word-level timestamps and confidence
+        if (results.Channel?.Alternatives is { Count: > 0 } alts)
+        {
+            foreach (var word in alts[0].Words)
+            {
+                Console.WriteLine($"    [{word.Start:F2}s - {word.End:F2}s] {word.Word} " +
+                    $"(confidence: {word.Confidence:P0})");
+            }
+        }
+    }
+}
+```
 
 This provides genuine incremental results, unlike other providers that delegate streaming to their batch APIs.
 
