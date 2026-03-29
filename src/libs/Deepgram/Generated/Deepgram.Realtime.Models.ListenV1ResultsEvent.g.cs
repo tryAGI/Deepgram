@@ -83,9 +83,6 @@ namespace Deepgram.Realtime
         /// <summary>
         /// Initializes a new instance of the <see cref="ListenV1ResultsEvent" /> class.
         /// </summary>
-        /// <param name="type">
-        /// Message type identifier
-        /// </param>
         /// <param name="channelIndex">
         /// The index of the channel
         /// </param>
@@ -95,14 +92,17 @@ namespace Deepgram.Realtime
         /// <param name="start">
         /// The start time of the transcription
         /// </param>
+        /// <param name="channel"></param>
+        /// <param name="metadata"></param>
+        /// <param name="type">
+        /// Message type identifier
+        /// </param>
         /// <param name="isFinal">
         /// Whether the transcription is final
         /// </param>
         /// <param name="speechFinal">
         /// Whether the transcription is speech final
         /// </param>
-        /// <param name="channel"></param>
-        /// <param name="metadata"></param>
         /// <param name="fromFinalize">
         /// Whether the transcription is from a finalize message
         /// </param>
@@ -124,14 +124,14 @@ namespace Deepgram.Realtime
             bool? fromFinalize,
             global::System.Collections.Generic.IList<global::Deepgram.Realtime.ListenV1ResultsEventEntities>? entities)
         {
+            this.Type = type;
             this.ChannelIndex = channelIndex ?? throw new global::System.ArgumentNullException(nameof(channelIndex));
             this.Duration = duration;
             this.Start = start;
-            this.Channel = channel ?? throw new global::System.ArgumentNullException(nameof(channel));
-            this.Metadata = metadata ?? throw new global::System.ArgumentNullException(nameof(metadata));
-            this.Type = type;
             this.IsFinal = isFinal;
             this.SpeechFinal = speechFinal;
+            this.Channel = channel ?? throw new global::System.ArgumentNullException(nameof(channel));
+            this.Metadata = metadata ?? throw new global::System.ArgumentNullException(nameof(metadata));
             this.FromFinalize = fromFinalize;
             this.Entities = entities;
         }

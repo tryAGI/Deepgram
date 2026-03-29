@@ -68,9 +68,6 @@ namespace Deepgram.Realtime
         /// <summary>
         /// Initializes a new instance of the <see cref="ListenV1MetadataEvent" /> class.
         /// </summary>
-        /// <param name="type">
-        /// Message type identifier
-        /// </param>
         /// <param name="transactionKey">
         /// The transaction key
         /// </param>
@@ -89,6 +86,9 @@ namespace Deepgram.Realtime
         /// <param name="channels">
         /// The channels
         /// </param>
+        /// <param name="type">
+        /// Message type identifier
+        /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -101,13 +101,13 @@ namespace Deepgram.Realtime
             double channels,
             global::Deepgram.Realtime.ListenV1MetadataEventType type)
         {
+            this.Type = type;
             this.TransactionKey = transactionKey ?? throw new global::System.ArgumentNullException(nameof(transactionKey));
             this.RequestId = requestId;
             this.Sha256 = sha256 ?? throw new global::System.ArgumentNullException(nameof(sha256));
             this.Created = created ?? throw new global::System.ArgumentNullException(nameof(created));
             this.Duration = duration;
             this.Channels = channels;
-            this.Type = type;
         }
 
         /// <summary>

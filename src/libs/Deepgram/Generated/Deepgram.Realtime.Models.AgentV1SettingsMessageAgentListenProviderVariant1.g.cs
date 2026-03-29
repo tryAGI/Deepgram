@@ -56,9 +56,6 @@ namespace Deepgram.Realtime
         /// <summary>
         /// Initializes a new instance of the <see cref="AgentV1SettingsMessageAgentListenProviderVariant1" /> class.
         /// </summary>
-        /// <param name="type">
-        /// Provider type for speech-to-text
-        /// </param>
         /// <param name="version">
         /// Specifies usage of the V1 Deepgram speech-to-text API
         /// </param>
@@ -73,6 +70,9 @@ namespace Deepgram.Realtime
         /// <param name="smartFormat">
         /// Applies smart formatting to improve transcript readability<br/>
         /// Default Value: false
+        /// </param>
+        /// <param name="type">
+        /// Provider type for speech-to-text
         /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]

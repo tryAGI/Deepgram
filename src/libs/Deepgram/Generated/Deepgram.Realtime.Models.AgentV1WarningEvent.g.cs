@@ -38,14 +38,14 @@ namespace Deepgram.Realtime
         /// <summary>
         /// Initializes a new instance of the <see cref="AgentV1WarningEvent" /> class.
         /// </summary>
-        /// <param name="type">
-        /// Message type identifier for warnings
-        /// </param>
         /// <param name="description">
         /// Description of the warning
         /// </param>
         /// <param name="code">
         /// Warning code identifier
+        /// </param>
+        /// <param name="type">
+        /// Message type identifier for warnings
         /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
@@ -55,9 +55,9 @@ namespace Deepgram.Realtime
             string code,
             global::Deepgram.Realtime.AgentV1WarningEventType type)
         {
+            this.Type = type;
             this.Description = description ?? throw new global::System.ArgumentNullException(nameof(description));
             this.Code = code ?? throw new global::System.ArgumentNullException(nameof(code));
-            this.Type = type;
         }
 
         /// <summary>

@@ -31,11 +31,11 @@ namespace Deepgram.Realtime
         /// <summary>
         /// Initializes a new instance of the <see cref="AgentV1InjectionRefusedEvent" /> class.
         /// </summary>
-        /// <param name="type">
-        /// Message type identifier for injection refused
-        /// </param>
         /// <param name="message">
         /// Details about why the injection was refused
+        /// </param>
+        /// <param name="type">
+        /// Message type identifier for injection refused
         /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
@@ -44,8 +44,8 @@ namespace Deepgram.Realtime
             string message,
             string type = "InjectionRefused")
         {
-            this.Message = message ?? throw new global::System.ArgumentNullException(nameof(message));
             this.Type = type;
+            this.Message = message ?? throw new global::System.ArgumentNullException(nameof(message));
         }
 
         /// <summary>

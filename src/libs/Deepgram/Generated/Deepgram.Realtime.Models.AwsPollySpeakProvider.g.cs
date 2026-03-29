@@ -63,7 +63,6 @@ namespace Deepgram.Realtime
         /// <summary>
         /// Initializes a new instance of the <see cref="AwsPollySpeakProvider" /> class.
         /// </summary>
-        /// <param name="type"></param>
         /// <param name="voice">
         /// AWS Polly voice name
         /// </param>
@@ -72,6 +71,7 @@ namespace Deepgram.Realtime
         /// </param>
         /// <param name="engine"></param>
         /// <param name="credentials"></param>
+        /// <param name="type"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -82,11 +82,11 @@ namespace Deepgram.Realtime
             global::Deepgram.Realtime.AwsPollySpeakProviderCredentials credentials,
             string type = "aws_polly")
         {
+            this.Type = type;
             this.Voice = voice;
             this.Language = language ?? throw new global::System.ArgumentNullException(nameof(language));
             this.Engine = engine;
             this.Credentials = credentials ?? throw new global::System.ArgumentNullException(nameof(credentials));
-            this.Type = type;
         }
 
         /// <summary>

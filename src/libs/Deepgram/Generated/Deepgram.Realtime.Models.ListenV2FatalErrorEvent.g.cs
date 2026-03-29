@@ -47,9 +47,6 @@ namespace Deepgram.Realtime
         /// <summary>
         /// Initializes a new instance of the <see cref="ListenV2FatalErrorEvent" /> class.
         /// </summary>
-        /// <param name="type">
-        /// Message type identifier
-        /// </param>
         /// <param name="sequenceId">
         /// Starts at `0` and increments for each message the server sends<br/>
         /// to the client.  This includes messages of other types, like<br/>
@@ -61,6 +58,9 @@ namespace Deepgram.Realtime
         /// <param name="description">
         /// Prose description of the error
         /// </param>
+        /// <param name="type">
+        /// Message type identifier
+        /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -70,10 +70,10 @@ namespace Deepgram.Realtime
             string description,
             global::Deepgram.Realtime.ListenV2FatalErrorEventType type)
         {
+            this.Type = type;
             this.SequenceId = sequenceId;
             this.Code = code ?? throw new global::System.ArgumentNullException(nameof(code));
             this.Description = description ?? throw new global::System.ArgumentNullException(nameof(description));
-            this.Type = type;
         }
 
         /// <summary>

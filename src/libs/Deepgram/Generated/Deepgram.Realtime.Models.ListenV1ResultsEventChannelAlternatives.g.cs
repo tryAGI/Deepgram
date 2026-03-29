@@ -50,8 +50,8 @@ namespace Deepgram.Realtime
         /// <param name="confidence">
         /// The confidence of the transcription
         /// </param>
-        /// <param name="languages"></param>
         /// <param name="words"></param>
+        /// <param name="languages"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -63,8 +63,8 @@ namespace Deepgram.Realtime
         {
             this.Transcript = transcript ?? throw new global::System.ArgumentNullException(nameof(transcript));
             this.Confidence = confidence;
-            this.Words = words ?? throw new global::System.ArgumentNullException(nameof(words));
             this.Languages = languages;
+            this.Words = words ?? throw new global::System.ArgumentNullException(nameof(words));
         }
 
         /// <summary>

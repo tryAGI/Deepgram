@@ -32,10 +32,10 @@ namespace Deepgram.Realtime
         /// <summary>
         /// Initializes a new instance of the <see cref="AgentV1UpdateSpeakMessage" /> class.
         /// </summary>
+        /// <param name="speak"></param>
         /// <param name="type">
         /// Message type identifier for updating the speak model
         /// </param>
-        /// <param name="speak"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -43,8 +43,8 @@ namespace Deepgram.Realtime
             global::Deepgram.Realtime.OneOf<global::Deepgram.Realtime.SpeakSettingsV1, global::System.Collections.Generic.IList<global::Deepgram.Realtime.SpeakSettingsV1>> speak,
             string type = "UpdateSpeak")
         {
-            this.Speak = speak;
             this.Type = type;
+            this.Speak = speak;
         }
 
         /// <summary>

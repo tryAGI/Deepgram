@@ -39,13 +39,13 @@ namespace Deepgram.Realtime
         /// <summary>
         /// Initializes a new instance of the <see cref="DeepgramSpeakProvider" /> class.
         /// </summary>
-        /// <param name="type"></param>
-        /// <param name="version">
-        /// The REST API version for the Deepgram text-to-speech API
-        /// </param>
         /// <param name="model">
         /// Deepgram TTS model
         /// </param>
+        /// <param name="version">
+        /// The REST API version for the Deepgram text-to-speech API
+        /// </param>
+        /// <param name="type"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -54,9 +54,9 @@ namespace Deepgram.Realtime
             global::Deepgram.Realtime.DeepgramSpeakProviderVersion? version,
             string type = "deepgram")
         {
-            this.Model = model;
             this.Type = type;
             this.Version = version;
+            this.Model = model;
         }
 
         /// <summary>

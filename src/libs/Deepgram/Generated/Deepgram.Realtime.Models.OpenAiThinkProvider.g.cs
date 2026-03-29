@@ -45,16 +45,16 @@ namespace Deepgram.Realtime
         /// <summary>
         /// Initializes a new instance of the <see cref="OpenAiThinkProvider" /> class.
         /// </summary>
-        /// <param name="type"></param>
-        /// <param name="version">
-        /// The REST API version for the OpenAI chat completions API
-        /// </param>
         /// <param name="model">
         /// OpenAI model to use
+        /// </param>
+        /// <param name="version">
+        /// The REST API version for the OpenAI chat completions API
         /// </param>
         /// <param name="temperature">
         /// OpenAI temperature (0-2)
         /// </param>
+        /// <param name="type"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -64,9 +64,9 @@ namespace Deepgram.Realtime
             double? temperature,
             string type = "open_ai")
         {
-            this.Model = model;
             this.Type = type;
             this.Version = version;
+            this.Model = model;
             this.Temperature = temperature;
         }
 

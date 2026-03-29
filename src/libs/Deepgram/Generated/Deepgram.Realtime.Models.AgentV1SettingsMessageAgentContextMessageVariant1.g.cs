@@ -39,14 +39,14 @@ namespace Deepgram.Realtime
         /// <summary>
         /// Initializes a new instance of the <see cref="AgentV1SettingsMessageAgentContextMessageVariant1" /> class.
         /// </summary>
-        /// <param name="type">
-        /// Message type identifier for conversation text
-        /// </param>
         /// <param name="role">
         /// Identifies who spoke the statement
         /// </param>
         /// <param name="content">
         /// The actual statement that was spoken
+        /// </param>
+        /// <param name="type">
+        /// Message type identifier for conversation text
         /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
@@ -56,9 +56,9 @@ namespace Deepgram.Realtime
             string content,
             string type = "History")
         {
+            this.Type = type;
             this.Role = role;
             this.Content = content ?? throw new global::System.ArgumentNullException(nameof(content));
-            this.Type = type;
         }
 
         /// <summary>

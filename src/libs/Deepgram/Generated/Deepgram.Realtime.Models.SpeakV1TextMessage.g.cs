@@ -35,13 +35,13 @@ namespace Deepgram.Realtime
         /// <summary>
         /// Initializes a new instance of the <see cref="SpeakV1TextMessage" /> class.
         /// </summary>
-        /// <param name="type">
-        /// Message type identifier<br/>
-        /// Example: Speak
-        /// </param>
         /// <param name="text">
         /// The input text to be converted to speech<br/>
         /// Example: Hello, world!
+        /// </param>
+        /// <param name="type">
+        /// Message type identifier<br/>
+        /// Example: Speak
         /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
@@ -50,8 +50,8 @@ namespace Deepgram.Realtime
             string text,
             global::Deepgram.Realtime.SpeakV1TextMessageType type)
         {
-            this.Text = text ?? throw new global::System.ArgumentNullException(nameof(text));
             this.Type = type;
+            this.Text = text ?? throw new global::System.ArgumentNullException(nameof(text));
         }
 
         /// <summary>

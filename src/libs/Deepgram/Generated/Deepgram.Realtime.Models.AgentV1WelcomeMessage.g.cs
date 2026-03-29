@@ -31,11 +31,11 @@ namespace Deepgram.Realtime
         /// <summary>
         /// Initializes a new instance of the <see cref="AgentV1WelcomeMessage" /> class.
         /// </summary>
-        /// <param name="type">
-        /// Message type identifier for welcome message
-        /// </param>
         /// <param name="requestId">
         /// Unique identifier for the request
+        /// </param>
+        /// <param name="type">
+        /// Message type identifier for welcome message
         /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
@@ -44,8 +44,8 @@ namespace Deepgram.Realtime
             string requestId,
             string type = "Welcome")
         {
-            this.RequestId = requestId ?? throw new global::System.ArgumentNullException(nameof(requestId));
             this.Type = type;
+            this.RequestId = requestId ?? throw new global::System.ArgumentNullException(nameof(requestId));
         }
 
         /// <summary>

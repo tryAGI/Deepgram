@@ -54,8 +54,11 @@ namespace Deepgram.Realtime
         /// <summary>
         /// Initializes a new instance of the <see cref="AgentV1FunctionCallResponseMessage" /> class.
         /// </summary>
-        /// <param name="type">
-        /// Message type identifier for function call responses
+        /// <param name="name">
+        /// The name of the function being called
+        /// </param>
+        /// <param name="content">
+        /// The content or result of the function call
         /// </param>
         /// <param name="id">
         /// The unique identifier for the function call.<br/>
@@ -64,11 +67,8 @@ namespace Deepgram.Realtime
         /// • **Optional for server responses**: Server may omit when responding<br/>
         ///   to internal function executions
         /// </param>
-        /// <param name="name">
-        /// The name of the function being called
-        /// </param>
-        /// <param name="content">
-        /// The content or result of the function call
+        /// <param name="type">
+        /// Message type identifier for function call responses
         /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
@@ -79,10 +79,10 @@ namespace Deepgram.Realtime
             string? id,
             string type = "FunctionCallResponse")
         {
-            this.Name = name ?? throw new global::System.ArgumentNullException(nameof(name));
-            this.Content = content ?? throw new global::System.ArgumentNullException(nameof(content));
             this.Type = type;
             this.Id = id;
+            this.Name = name ?? throw new global::System.ArgumentNullException(nameof(name));
+            this.Content = content ?? throw new global::System.ArgumentNullException(nameof(content));
         }
 
         /// <summary>

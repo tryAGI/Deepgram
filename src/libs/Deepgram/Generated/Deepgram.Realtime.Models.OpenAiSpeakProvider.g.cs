@@ -47,16 +47,16 @@ namespace Deepgram.Realtime
         /// <summary>
         /// Initializes a new instance of the <see cref="OpenAiSpeakProvider" /> class.
         /// </summary>
-        /// <param name="type"></param>
-        /// <param name="version">
-        /// The REST API version for the OpenAI text-to-speech API
-        /// </param>
         /// <param name="model">
         /// OpenAI TTS model
         /// </param>
         /// <param name="voice">
         /// OpenAI voice
         /// </param>
+        /// <param name="version">
+        /// The REST API version for the OpenAI text-to-speech API
+        /// </param>
+        /// <param name="type"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -66,10 +66,10 @@ namespace Deepgram.Realtime
             global::Deepgram.Realtime.OpenAiSpeakProviderVersion? version,
             string type = "open_ai")
         {
-            this.Model = model;
-            this.Voice = voice;
             this.Type = type;
             this.Version = version;
+            this.Model = model;
+            this.Voice = voice;
         }
 
         /// <summary>

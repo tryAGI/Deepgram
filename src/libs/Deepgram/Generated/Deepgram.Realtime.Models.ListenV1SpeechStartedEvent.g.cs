@@ -38,14 +38,14 @@ namespace Deepgram.Realtime
         /// <summary>
         /// Initializes a new instance of the <see cref="ListenV1SpeechStartedEvent" /> class.
         /// </summary>
-        /// <param name="type">
-        /// Message type identifier
-        /// </param>
         /// <param name="channel">
         /// The channel
         /// </param>
         /// <param name="timestamp">
         /// The timestamp
+        /// </param>
+        /// <param name="type">
+        /// Message type identifier
         /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
@@ -55,9 +55,9 @@ namespace Deepgram.Realtime
             double timestamp,
             global::Deepgram.Realtime.ListenV1SpeechStartedEventType type)
         {
+            this.Type = type;
             this.Channel = channel ?? throw new global::System.ArgumentNullException(nameof(channel));
             this.Timestamp = timestamp;
-            this.Type = type;
         }
 
         /// <summary>
