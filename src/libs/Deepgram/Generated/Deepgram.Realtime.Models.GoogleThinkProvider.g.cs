@@ -45,16 +45,16 @@ namespace Deepgram.Realtime
         /// <summary>
         /// Initializes a new instance of the <see cref="GoogleThinkProvider" /> class.
         /// </summary>
-        /// <param name="type"></param>
-        /// <param name="version">
-        /// The REST API version for the Google generative language API
-        /// </param>
         /// <param name="model">
         /// Google model to use
+        /// </param>
+        /// <param name="version">
+        /// The REST API version for the Google generative language API
         /// </param>
         /// <param name="temperature">
         /// Google temperature (0-2)
         /// </param>
+        /// <param name="type"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -64,9 +64,9 @@ namespace Deepgram.Realtime
             double? temperature,
             string type = "google")
         {
-            this.Model = model;
             this.Type = type;
             this.Version = version;
+            this.Model = model;
             this.Temperature = temperature;
         }
 

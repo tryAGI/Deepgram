@@ -38,14 +38,14 @@ namespace Deepgram.Realtime
         /// <summary>
         /// Initializes a new instance of the <see cref="AgentV1ErrorEvent" /> class.
         /// </summary>
-        /// <param name="type">
-        /// Message type identifier for error responses
-        /// </param>
         /// <param name="description">
         /// A description of what went wrong
         /// </param>
         /// <param name="code">
         /// Error code identifying the type of error
+        /// </param>
+        /// <param name="type">
+        /// Message type identifier for error responses
         /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
@@ -55,9 +55,9 @@ namespace Deepgram.Realtime
             string code,
             global::Deepgram.Realtime.AgentV1ErrorEventType type)
         {
+            this.Type = type;
             this.Description = description ?? throw new global::System.ArgumentNullException(nameof(description));
             this.Code = code ?? throw new global::System.ArgumentNullException(nameof(code));
-            this.Type = type;
         }
 
         /// <summary>

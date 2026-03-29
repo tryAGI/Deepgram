@@ -44,7 +44,6 @@ namespace Deepgram.Realtime
         /// <summary>
         /// Initializes a new instance of the <see cref="AwsBedrockThinkProvider" /> class.
         /// </summary>
-        /// <param name="type"></param>
         /// <param name="model">
         /// AWS Bedrock model to use
         /// </param>
@@ -54,6 +53,7 @@ namespace Deepgram.Realtime
         /// <param name="credentials">
         /// AWS credentials type (STS short-lived or IAM long-lived)
         /// </param>
+        /// <param name="type"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -63,8 +63,8 @@ namespace Deepgram.Realtime
             global::Deepgram.Realtime.AwsBedrockThinkProviderCredentials? credentials,
             string type = "aws_bedrock")
         {
-            this.Model = model;
             this.Type = type;
+            this.Model = model;
             this.Temperature = temperature;
             this.Credentials = credentials;
         }

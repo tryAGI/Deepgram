@@ -38,11 +38,11 @@ namespace Deepgram
         /// <summary>
         /// Initializes a new instance of the <see cref="AgentThinkModelsV1ResponseModelVariant4" /> class.
         /// </summary>
-        /// <param name="id">
-        /// The unique identifier of the Groq model
-        /// </param>
         /// <param name="name">
         /// The display name of the model
+        /// </param>
+        /// <param name="id">
+        /// The unique identifier of the Groq model
         /// </param>
         /// <param name="provider">
         /// The provider of the model
@@ -55,8 +55,8 @@ namespace Deepgram
             global::Deepgram.AgentThinkModelsV1ResponseModelVariant4Id id,
             string provider = "groq")
         {
-            this.Name = name ?? throw new global::System.ArgumentNullException(nameof(name));
             this.Id = id;
+            this.Name = name ?? throw new global::System.ArgumentNullException(nameof(name));
             this.Provider = provider;
         }
 

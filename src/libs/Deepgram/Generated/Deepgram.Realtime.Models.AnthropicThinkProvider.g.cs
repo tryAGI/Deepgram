@@ -45,16 +45,16 @@ namespace Deepgram.Realtime
         /// <summary>
         /// Initializes a new instance of the <see cref="AnthropicThinkProvider" /> class.
         /// </summary>
-        /// <param name="type"></param>
-        /// <param name="version">
-        /// The REST API version for the Anthropic Messages API
-        /// </param>
         /// <param name="model">
         /// Anthropic model to use
+        /// </param>
+        /// <param name="version">
+        /// The REST API version for the Anthropic Messages API
         /// </param>
         /// <param name="temperature">
         /// Anthropic temperature (0-1)
         /// </param>
+        /// <param name="type"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -64,9 +64,9 @@ namespace Deepgram.Realtime
             double? temperature,
             string type = "anthropic")
         {
-            this.Model = model;
             this.Type = type;
             this.Version = version;
+            this.Model = model;
             this.Temperature = temperature;
         }
 

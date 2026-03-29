@@ -43,16 +43,16 @@ namespace Deepgram.Realtime
         /// <summary>
         /// Initializes a new instance of the <see cref="AgentV1SettingsMessageAgentListenProviderVariant2" /> class.
         /// </summary>
-        /// <param name="type">
-        /// Provider type for speech-to-text
+        /// <param name="model">
+        /// Model to use for speech to text using the V2 API (e.g. flux-general-en)
         /// </param>
         /// <param name="version">
         /// Specifies usage of the V2 Deepgram speech-to-text API (e.g. Flux)
         /// </param>
-        /// <param name="model">
-        /// Model to use for speech to text using the V2 API (e.g. flux-general-en)
-        /// </param>
         /// <param name="keyterms"></param>
+        /// <param name="type">
+        /// Provider type for speech-to-text
+        /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -62,9 +62,9 @@ namespace Deepgram.Realtime
             global::System.Collections.Generic.IList<string>? keyterms,
             string type = "deepgram")
         {
-            this.Model = model ?? throw new global::System.ArgumentNullException(nameof(model));
             this.Type = type;
             this.Version = version;
+            this.Model = model ?? throw new global::System.ArgumentNullException(nameof(model));
             this.Keyterms = keyterms;
         }
 

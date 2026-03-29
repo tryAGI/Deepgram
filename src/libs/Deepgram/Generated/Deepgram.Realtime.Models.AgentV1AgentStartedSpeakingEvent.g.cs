@@ -45,9 +45,6 @@ namespace Deepgram.Realtime
         /// <summary>
         /// Initializes a new instance of the <see cref="AgentV1AgentStartedSpeakingEvent" /> class.
         /// </summary>
-        /// <param name="type">
-        /// Message type identifier for agent started speaking
-        /// </param>
         /// <param name="totalLatency">
         /// Seconds from receiving the user's utterance to producing the agent's reply
         /// </param>
@@ -56,6 +53,9 @@ namespace Deepgram.Realtime
         /// </param>
         /// <param name="tttLatency">
         /// The portion of total latency attributable to text-to-text (usually an LLM)
+        /// </param>
+        /// <param name="type">
+        /// Message type identifier for agent started speaking
         /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
@@ -66,10 +66,10 @@ namespace Deepgram.Realtime
             float tttLatency,
             string type = "AgentStartedSpeaking")
         {
+            this.Type = type;
             this.TotalLatency = totalLatency;
             this.TtsLatency = ttsLatency;
             this.TttLatency = tttLatency;
-            this.Type = type;
         }
 
         /// <summary>

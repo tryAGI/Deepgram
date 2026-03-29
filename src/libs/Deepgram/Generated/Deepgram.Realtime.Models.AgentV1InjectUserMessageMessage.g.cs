@@ -31,11 +31,11 @@ namespace Deepgram.Realtime
         /// <summary>
         /// Initializes a new instance of the <see cref="AgentV1InjectUserMessageMessage" /> class.
         /// </summary>
-        /// <param name="type">
-        /// Message type identifier for injecting a user message
-        /// </param>
         /// <param name="content">
         /// The specific phrase or statement the agent should respond to
+        /// </param>
+        /// <param name="type">
+        /// Message type identifier for injecting a user message
         /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
@@ -44,8 +44,8 @@ namespace Deepgram.Realtime
             string content,
             string type = "InjectUserMessage")
         {
-            this.Content = content ?? throw new global::System.ArgumentNullException(nameof(content));
             this.Type = type;
+            this.Content = content ?? throw new global::System.ArgumentNullException(nameof(content));
         }
 
         /// <summary>

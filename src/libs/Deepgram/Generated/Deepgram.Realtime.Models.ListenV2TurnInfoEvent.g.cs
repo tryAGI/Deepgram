@@ -93,7 +93,6 @@ namespace Deepgram.Realtime
         /// <summary>
         /// Initializes a new instance of the <see cref="ListenV2TurnInfoEvent" /> class.
         /// </summary>
-        /// <param name="type"></param>
         /// <param name="requestId">
         /// The unique identifier of the request
         /// </param>
@@ -126,6 +125,7 @@ namespace Deepgram.Realtime
         /// <param name="endOfTurnConfidence">
         /// Confidence that no more speech is coming in this turn
         /// </param>
+        /// <param name="type"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -141,6 +141,7 @@ namespace Deepgram.Realtime
             float endOfTurnConfidence,
             string type = "TurnInfo")
         {
+            this.Type = type;
             this.RequestId = requestId;
             this.SequenceId = sequenceId;
             this.Event = @event;
@@ -150,7 +151,6 @@ namespace Deepgram.Realtime
             this.Transcript = transcript ?? throw new global::System.ArgumentNullException(nameof(transcript));
             this.Words = words ?? throw new global::System.ArgumentNullException(nameof(words));
             this.EndOfTurnConfidence = endOfTurnConfidence;
-            this.Type = type;
         }
 
         /// <summary>

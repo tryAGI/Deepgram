@@ -31,10 +31,10 @@ namespace Deepgram.Realtime
         /// <summary>
         /// Initializes a new instance of the <see cref="AgentV1SettingsMessageAgentContextMessageVariant2" /> class.
         /// </summary>
-        /// <param name="type"></param>
         /// <param name="functionCalls">
         /// List of function call objects
         /// </param>
+        /// <param name="type"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -42,8 +42,8 @@ namespace Deepgram.Realtime
             global::System.Collections.Generic.IList<global::Deepgram.Realtime.AgentV1SettingsMessageAgentContextMessageVariant2FunctionCall> functionCalls,
             string type = "History")
         {
-            this.FunctionCalls = functionCalls ?? throw new global::System.ArgumentNullException(nameof(functionCalls));
             this.Type = type;
+            this.FunctionCalls = functionCalls ?? throw new global::System.ArgumentNullException(nameof(functionCalls));
         }
 
         /// <summary>

@@ -69,10 +69,6 @@ namespace Deepgram
         /// The provider of the distribution service<br/>
         /// Example: quay
         /// </param>
-        /// <param name="comment">
-        /// Optional comment about the credentials<br/>
-        /// Example: My Self-Hosted Distribution Credentials
-        /// </param>
         /// <param name="scopes">
         /// List of permission scopes for the credentials<br/>
         /// Example: [self-hosted:product:api, self-hosted:product:engine]
@@ -80,6 +76,10 @@ namespace Deepgram
         /// <param name="created">
         /// Timestamp when the credentials were created<br/>
         /// Example: 2023-06-28T15:36:59.609841Z
+        /// </param>
+        /// <param name="comment">
+        /// Optional comment about the credentials<br/>
+        /// Example: My Self-Hosted Distribution Credentials
         /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
@@ -93,9 +93,9 @@ namespace Deepgram
         {
             this.DistributionCredentialsId = distributionCredentialsId;
             this.Provider = provider ?? throw new global::System.ArgumentNullException(nameof(provider));
+            this.Comment = comment;
             this.Scopes = scopes ?? throw new global::System.ArgumentNullException(nameof(scopes));
             this.Created = created;
-            this.Comment = comment;
         }
 
         /// <summary>

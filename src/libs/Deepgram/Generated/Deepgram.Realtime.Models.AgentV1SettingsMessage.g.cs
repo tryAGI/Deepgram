@@ -65,7 +65,8 @@ namespace Deepgram.Realtime
         /// <summary>
         /// Initializes a new instance of the <see cref="AgentV1SettingsMessage" /> class.
         /// </summary>
-        /// <param name="type"></param>
+        /// <param name="audio"></param>
+        /// <param name="agent"></param>
         /// <param name="tags">
         /// Tags to associate with the request
         /// </param>
@@ -78,8 +79,7 @@ namespace Deepgram.Realtime
         /// To opt out of Deepgram Model Improvement Program<br/>
         /// Default Value: false
         /// </param>
-        /// <param name="audio"></param>
-        /// <param name="agent"></param>
+        /// <param name="type"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -92,13 +92,13 @@ namespace Deepgram.Realtime
             bool? mipOptOut,
             string type = "Settings")
         {
-            this.Audio = audio ?? throw new global::System.ArgumentNullException(nameof(audio));
-            this.Agent = agent;
             this.Type = type;
             this.Tags = tags;
             this.Experimental = experimental;
             this.Flags = flags;
             this.MipOptOut = mipOptOut;
+            this.Audio = audio ?? throw new global::System.ArgumentNullException(nameof(audio));
+            this.Agent = agent;
         }
 
         /// <summary>

@@ -38,14 +38,14 @@ namespace Deepgram.Realtime
         /// <summary>
         /// Initializes a new instance of the <see cref="ListenV1UtteranceEndEvent" /> class.
         /// </summary>
-        /// <param name="type">
-        /// Message type identifier
-        /// </param>
         /// <param name="channel">
         /// The channel
         /// </param>
         /// <param name="lastWordEnd">
         /// The last word end
+        /// </param>
+        /// <param name="type">
+        /// Message type identifier
         /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
@@ -55,9 +55,9 @@ namespace Deepgram.Realtime
             double lastWordEnd,
             global::Deepgram.Realtime.ListenV1UtteranceEndEventType type)
         {
+            this.Type = type;
             this.Channel = channel ?? throw new global::System.ArgumentNullException(nameof(channel));
             this.LastWordEnd = lastWordEnd;
-            this.Type = type;
         }
 
         /// <summary>

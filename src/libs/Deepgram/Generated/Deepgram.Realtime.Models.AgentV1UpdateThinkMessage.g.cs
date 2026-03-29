@@ -32,10 +32,10 @@ namespace Deepgram.Realtime
         /// <summary>
         /// Initializes a new instance of the <see cref="AgentV1UpdateThinkMessage" /> class.
         /// </summary>
+        /// <param name="think"></param>
         /// <param name="type">
         /// Message type identifier for updating the think model
         /// </param>
-        /// <param name="think"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -43,8 +43,8 @@ namespace Deepgram.Realtime
             global::Deepgram.Realtime.OneOf<global::Deepgram.Realtime.ThinkSettingsV1, global::System.Collections.Generic.IList<global::Deepgram.Realtime.ThinkSettingsV1>> think,
             string type = "UpdateThink")
         {
-            this.Think = think;
             this.Type = type;
+            this.Think = think;
         }
 
         /// <summary>

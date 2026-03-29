@@ -31,11 +31,11 @@ namespace Deepgram.Realtime
         /// <summary>
         /// Initializes a new instance of the <see cref="AgentV1FunctionCallRequestEvent" /> class.
         /// </summary>
-        /// <param name="type">
-        /// Message type identifier for function call requests
-        /// </param>
         /// <param name="functions">
         /// Array of functions to be called
+        /// </param>
+        /// <param name="type">
+        /// Message type identifier for function call requests
         /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
@@ -44,8 +44,8 @@ namespace Deepgram.Realtime
             global::System.Collections.Generic.IList<global::Deepgram.Realtime.AgentV1FunctionCallRequestEventFunctions> functions,
             string type = "FunctionCallRequest")
         {
-            this.Functions = functions ?? throw new global::System.ArgumentNullException(nameof(functions));
             this.Type = type;
+            this.Functions = functions ?? throw new global::System.ArgumentNullException(nameof(functions));
         }
 
         /// <summary>

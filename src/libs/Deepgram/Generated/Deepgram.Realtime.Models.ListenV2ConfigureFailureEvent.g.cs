@@ -40,9 +40,6 @@ namespace Deepgram.Realtime
         /// <summary>
         /// Initializes a new instance of the <see cref="ListenV2ConfigureFailureEvent" /> class.
         /// </summary>
-        /// <param name="type">
-        /// Message type identifier
-        /// </param>
         /// <param name="requestId">
         /// The unique identifier of the request
         /// </param>
@@ -50,6 +47,9 @@ namespace Deepgram.Realtime
         /// Starts at `0` and increments for each message the server sends<br/>
         /// to the client.  This includes messages of other types, like<br/>
         /// `TurnInfo` messages.
+        /// </param>
+        /// <param name="type">
+        /// Message type identifier
         /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
@@ -59,9 +59,9 @@ namespace Deepgram.Realtime
             double sequenceId,
             string type = "ConfigureFailure")
         {
+            this.Type = type;
             this.RequestId = requestId;
             this.SequenceId = sequenceId;
-            this.Type = type;
         }
 
         /// <summary>

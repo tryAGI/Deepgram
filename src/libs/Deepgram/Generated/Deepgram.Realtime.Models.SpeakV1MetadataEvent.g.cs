@@ -58,9 +58,6 @@ namespace Deepgram.Realtime
         /// <summary>
         /// Initializes a new instance of the <see cref="SpeakV1MetadataEvent" /> class.
         /// </summary>
-        /// <param name="type">
-        /// Message type identifier
-        /// </param>
         /// <param name="requestId">
         /// Unique identifier for the request
         /// </param>
@@ -72,6 +69,9 @@ namespace Deepgram.Realtime
         /// </param>
         /// <param name="modelUuid">
         /// Unique identifier for the primary model used
+        /// </param>
+        /// <param name="type">
+        /// Message type identifier
         /// </param>
         /// <param name="additionalModelUuids">
         /// List of unique identifiers for any additional models used to serve the request
@@ -87,11 +87,11 @@ namespace Deepgram.Realtime
             global::Deepgram.Realtime.SpeakV1MetadataEventType type,
             global::System.Collections.Generic.IList<global::System.Guid>? additionalModelUuids)
         {
+            this.Type = type;
             this.RequestId = requestId;
             this.ModelName = modelName ?? throw new global::System.ArgumentNullException(nameof(modelName));
             this.ModelVersion = modelVersion ?? throw new global::System.ArgumentNullException(nameof(modelVersion));
             this.ModelUuid = modelUuid;
-            this.Type = type;
             this.AdditionalModelUuids = additionalModelUuids;
         }
 

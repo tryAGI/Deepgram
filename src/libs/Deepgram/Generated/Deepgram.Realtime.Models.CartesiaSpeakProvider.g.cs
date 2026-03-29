@@ -52,17 +52,17 @@ namespace Deepgram.Realtime
         /// <summary>
         /// Initializes a new instance of the <see cref="CartesiaSpeakProvider" /> class.
         /// </summary>
-        /// <param name="type"></param>
-        /// <param name="version">
-        /// The API version header for the Cartesia text-to-speech API
-        /// </param>
         /// <param name="modelId">
         /// Cartesia model ID
         /// </param>
         /// <param name="voice"></param>
+        /// <param name="version">
+        /// The API version header for the Cartesia text-to-speech API
+        /// </param>
         /// <param name="language">
         /// Cartesia language code
         /// </param>
+        /// <param name="type"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -73,10 +73,10 @@ namespace Deepgram.Realtime
             string? language,
             string type = "cartesia")
         {
-            this.ModelId = modelId;
-            this.Voice = voice ?? throw new global::System.ArgumentNullException(nameof(voice));
             this.Type = type;
             this.Version = version;
+            this.ModelId = modelId;
+            this.Voice = voice ?? throw new global::System.ArgumentNullException(nameof(voice));
             this.Language = language;
         }
 

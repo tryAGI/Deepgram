@@ -44,7 +44,6 @@ namespace Deepgram.Realtime
         /// <summary>
         /// Initializes a new instance of the <see cref="GroqThinkProvider" /> class.
         /// </summary>
-        /// <param name="type"></param>
         /// <param name="version">
         /// The REST API version for the Groq's chat completions API (mostly OpenAI-compatible)
         /// </param>
@@ -54,6 +53,7 @@ namespace Deepgram.Realtime
         /// <param name="temperature">
         /// Groq temperature (0-2)
         /// </param>
+        /// <param name="type"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif

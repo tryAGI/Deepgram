@@ -31,11 +31,11 @@ namespace Deepgram.Realtime
         /// <summary>
         /// Initializes a new instance of the <see cref="AgentV1UpdatePromptMessage" /> class.
         /// </summary>
-        /// <param name="type">
-        /// Message type identifier for prompt update request
-        /// </param>
         /// <param name="prompt">
         /// The new system prompt to be used by the agent
+        /// </param>
+        /// <param name="type">
+        /// Message type identifier for prompt update request
         /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
@@ -44,8 +44,8 @@ namespace Deepgram.Realtime
             string prompt,
             string type = "UpdatePrompt")
         {
-            this.Prompt = prompt ?? throw new global::System.ArgumentNullException(nameof(prompt));
             this.Type = type;
+            this.Prompt = prompt ?? throw new global::System.ArgumentNullException(nameof(prompt));
         }
 
         /// <summary>

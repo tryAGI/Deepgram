@@ -31,11 +31,11 @@ namespace Deepgram.Realtime
         /// <summary>
         /// Initializes a new instance of the <see cref="AgentV1AgentThinkingEvent" /> class.
         /// </summary>
-        /// <param name="type">
-        /// Message type identifier for agent thinking
-        /// </param>
         /// <param name="content">
         /// The text of the agent's thought process
+        /// </param>
+        /// <param name="type">
+        /// Message type identifier for agent thinking
         /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
@@ -44,8 +44,8 @@ namespace Deepgram.Realtime
             string content,
             string type = "AgentThinking")
         {
-            this.Content = content ?? throw new global::System.ArgumentNullException(nameof(content));
             this.Type = type;
+            this.Content = content ?? throw new global::System.ArgumentNullException(nameof(content));
         }
 
         /// <summary>
