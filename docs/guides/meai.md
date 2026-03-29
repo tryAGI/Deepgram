@@ -84,6 +84,16 @@ Console.WriteLine($"Duration: {raw.Metadata.Duration}s");
 Console.WriteLine($"Channels: {raw.Metadata.Channels}");
 ```
 
+### Streaming Behavior
+
+Unlike most other STT SDKs, Deepgram provides **true real-time streaming** via `GetStreamingTextAsync`. It uses the `DeepgramListenV1RealtimeClient` WebSocket API to send audio frames and receive incremental transcription updates in real-time.
+
+- **`TextUpdating`** updates contain interim (non-final) transcriptions that may change as more audio is processed
+- **`TextUpdated`** updates contain final transcriptions for completed speech segments
+- **`SessionOpen`** and **`SessionClose`** events bracket the streaming session
+
+This provides genuine incremental results, unlike other providers that delegate streaming to their batch APIs.
+
 ### Accessing the Underlying Client
 
 Retrieve the `DeepgramClient` from the MEAI interface:
