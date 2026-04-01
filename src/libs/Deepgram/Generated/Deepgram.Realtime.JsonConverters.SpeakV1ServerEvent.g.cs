@@ -164,19 +164,19 @@ namespace Deepgram.Realtime.JsonConverters
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Deepgram.Realtime.SpeakV1MetadataEvent), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Deepgram.Realtime.SpeakV1MetadataEvent?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Deepgram.Realtime.SpeakV1MetadataEvent).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.Metadata, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.Metadata!, typeInfo);
             }
             else if (value.IsControl)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Deepgram.Realtime.SpeakV1ControlEvent), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Deepgram.Realtime.SpeakV1ControlEvent?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Deepgram.Realtime.SpeakV1ControlEvent).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.Control, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.Control!, typeInfo);
             }
             else if (value.IsWarning)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Deepgram.Realtime.SpeakV1WarningEvent), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Deepgram.Realtime.SpeakV1WarningEvent?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Deepgram.Realtime.SpeakV1WarningEvent).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.Warning, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.Warning!, typeInfo);
             }
         }
     }
