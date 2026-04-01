@@ -176,91 +176,91 @@ namespace Deepgram.Realtime.JsonConverters
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Deepgram.Realtime.AgentV1FunctionCallResponseMessage), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Deepgram.Realtime.AgentV1FunctionCallResponseMessage?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Deepgram.Realtime.AgentV1FunctionCallResponseMessage).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.FunctionCallResponse, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.FunctionCallResponse!, typeInfo);
             }
             else if (value.IsPromptUpdated)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Deepgram.Realtime.AgentV1PromptUpdatedEvent), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Deepgram.Realtime.AgentV1PromptUpdatedEvent?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Deepgram.Realtime.AgentV1PromptUpdatedEvent).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PromptUpdated, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PromptUpdated!, typeInfo);
             }
             else if (value.IsSpeakUpdated)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Deepgram.Realtime.AgentV1SpeakUpdatedEvent), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Deepgram.Realtime.AgentV1SpeakUpdatedEvent?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Deepgram.Realtime.AgentV1SpeakUpdatedEvent).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.SpeakUpdated, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.SpeakUpdated!, typeInfo);
             }
             else if (value.IsThinkUpdated)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Deepgram.Realtime.AgentV1ThinkUpdatedEvent), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Deepgram.Realtime.AgentV1ThinkUpdatedEvent?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Deepgram.Realtime.AgentV1ThinkUpdatedEvent).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.ThinkUpdated, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.ThinkUpdated!, typeInfo);
             }
             else if (value.IsInjectionRefused)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Deepgram.Realtime.AgentV1InjectionRefusedEvent), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Deepgram.Realtime.AgentV1InjectionRefusedEvent?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Deepgram.Realtime.AgentV1InjectionRefusedEvent).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.InjectionRefused, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.InjectionRefused!, typeInfo);
             }
             else if (value.IsWelcome)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Deepgram.Realtime.AgentV1WelcomeMessage), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Deepgram.Realtime.AgentV1WelcomeMessage?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Deepgram.Realtime.AgentV1WelcomeMessage).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.Welcome, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.Welcome!, typeInfo);
             }
             else if (value.IsSettingsApplied)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Deepgram.Realtime.AgentV1SettingsAppliedEvent), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Deepgram.Realtime.AgentV1SettingsAppliedEvent?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Deepgram.Realtime.AgentV1SettingsAppliedEvent).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.SettingsApplied, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.SettingsApplied!, typeInfo);
             }
             else if (value.IsConversationText)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Deepgram.Realtime.AgentV1ConversationTextEvent), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Deepgram.Realtime.AgentV1ConversationTextEvent?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Deepgram.Realtime.AgentV1ConversationTextEvent).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.ConversationText, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.ConversationText!, typeInfo);
             }
             else if (value.IsUserStartedSpeaking)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Deepgram.Realtime.AgentV1UserStartedSpeakingEvent), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Deepgram.Realtime.AgentV1UserStartedSpeakingEvent?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Deepgram.Realtime.AgentV1UserStartedSpeakingEvent).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.UserStartedSpeaking, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.UserStartedSpeaking!, typeInfo);
             }
             else if (value.IsAgentThinking)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Deepgram.Realtime.AgentV1AgentThinkingEvent), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Deepgram.Realtime.AgentV1AgentThinkingEvent?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Deepgram.Realtime.AgentV1AgentThinkingEvent).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.AgentThinking, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.AgentThinking!, typeInfo);
             }
             else if (value.IsFunctionCallRequest)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Deepgram.Realtime.AgentV1FunctionCallRequestEvent), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Deepgram.Realtime.AgentV1FunctionCallRequestEvent?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Deepgram.Realtime.AgentV1FunctionCallRequestEvent).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.FunctionCallRequest, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.FunctionCallRequest!, typeInfo);
             }
             else if (value.IsAgentStartedSpeaking)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Deepgram.Realtime.AgentV1AgentStartedSpeakingEvent), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Deepgram.Realtime.AgentV1AgentStartedSpeakingEvent?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Deepgram.Realtime.AgentV1AgentStartedSpeakingEvent).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.AgentStartedSpeaking, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.AgentStartedSpeaking!, typeInfo);
             }
             else if (value.IsAgentAudioDone)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Deepgram.Realtime.AgentV1AgentAudioDoneEvent), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Deepgram.Realtime.AgentV1AgentAudioDoneEvent?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Deepgram.Realtime.AgentV1AgentAudioDoneEvent).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.AgentAudioDone, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.AgentAudioDone!, typeInfo);
             }
             else if (value.IsError)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Deepgram.Realtime.AgentV1ErrorEvent), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Deepgram.Realtime.AgentV1ErrorEvent?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Deepgram.Realtime.AgentV1ErrorEvent).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.Error, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.Error!, typeInfo);
             }
             else if (value.IsWarning)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Deepgram.Realtime.AgentV1WarningEvent), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Deepgram.Realtime.AgentV1WarningEvent?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Deepgram.Realtime.AgentV1WarningEvent).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.Warning, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.Warning!, typeInfo);
             }
         }
     }
