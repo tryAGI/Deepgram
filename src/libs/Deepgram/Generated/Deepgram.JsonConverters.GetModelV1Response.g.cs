@@ -12,8 +12,7 @@ namespace Deepgram.JsonConverters
             global::System.Type typeToConvert,
             global::System.Text.Json.JsonSerializerOptions options)
         {
-            options = options ?? throw new global::System.ArgumentNullException(nameof(options));
-            var typeInfoResolver = options.TypeInfoResolver ?? throw new global::System.InvalidOperationException("TypeInfoResolver is not set.");
+            options = options ?? throw new global::System.ArgumentNullException(nameof(options)); 
 
             using var __jsonDocument = global::System.Text.Json.JsonDocument.ParseValue(ref reader);
             var __rawJson = __jsonDocument.RootElement.GetRawText();
@@ -57,9 +56,7 @@ namespace Deepgram.JsonConverters
                 {
                     try
                     {
-                        var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Deepgram.GetModelV1ResponseVariant1), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Deepgram.GetModelV1ResponseVariant1> ??
-                                       throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Deepgram.GetModelV1ResponseVariant1).Name}");
-                        getModelV1ResponseVariant1 = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
+                        getModelV1ResponseVariant1 = global::System.Text.Json.JsonSerializer.Deserialize<global::Deepgram.GetModelV1ResponseVariant1>(__rawJson, options);
                     }
                     catch (global::System.Text.Json.JsonException)
                     {
@@ -72,9 +69,7 @@ namespace Deepgram.JsonConverters
                 {
                     try
                     {
-                        var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Deepgram.GetModelV1ResponseVariant2), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Deepgram.GetModelV1ResponseVariant2> ??
-                                       throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Deepgram.GetModelV1ResponseVariant2).Name}");
-                        getModelV1ResponseVariant2 = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
+                        getModelV1ResponseVariant2 = global::System.Text.Json.JsonSerializer.Deserialize<global::Deepgram.GetModelV1ResponseVariant2>(__rawJson, options);
                     }
                     catch (global::System.Text.Json.JsonException)
                     {
@@ -89,9 +84,7 @@ namespace Deepgram.JsonConverters
             {
                 try
                 {
-                    var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Deepgram.GetModelV1ResponseVariant1), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Deepgram.GetModelV1ResponseVariant1> ??
-                                   throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Deepgram.GetModelV1ResponseVariant1).Name}");
-                    getModelV1ResponseVariant1 = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
+                    getModelV1ResponseVariant1 = global::System.Text.Json.JsonSerializer.Deserialize<global::Deepgram.GetModelV1ResponseVariant1>(__rawJson, options);
                 }
                 catch (global::System.Text.Json.JsonException)
                 {
@@ -102,9 +95,7 @@ namespace Deepgram.JsonConverters
 
                 try
                 {
-                    var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Deepgram.GetModelV1ResponseVariant2), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Deepgram.GetModelV1ResponseVariant2> ??
-                                   throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Deepgram.GetModelV1ResponseVariant2).Name}");
-                    getModelV1ResponseVariant2 = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
+                    getModelV1ResponseVariant2 = global::System.Text.Json.JsonSerializer.Deserialize<global::Deepgram.GetModelV1ResponseVariant2>(__rawJson, options);
                 }
                 catch (global::System.Text.Json.JsonException)
                 {
@@ -129,20 +120,15 @@ namespace Deepgram.JsonConverters
             global::Deepgram.GetModelV1Response value,
             global::System.Text.Json.JsonSerializerOptions options)
         {
-            options = options ?? throw new global::System.ArgumentNullException(nameof(options));
-            var typeInfoResolver = options.TypeInfoResolver ?? throw new global::System.InvalidOperationException("TypeInfoResolver is not set.");
+            options = options ?? throw new global::System.ArgumentNullException(nameof(options)); 
 
             if (value.IsGetModelV1ResponseVariant1)
             {
-                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Deepgram.GetModelV1ResponseVariant1), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Deepgram.GetModelV1ResponseVariant1?> ??
-                               throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Deepgram.GetModelV1ResponseVariant1).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.GetModelV1ResponseVariant1!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.GetModelV1ResponseVariant1, typeof(global::Deepgram.GetModelV1ResponseVariant1), options);
             }
             else if (value.IsGetModelV1ResponseVariant2)
             {
-                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Deepgram.GetModelV1ResponseVariant2), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Deepgram.GetModelV1ResponseVariant2?> ??
-                               throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Deepgram.GetModelV1ResponseVariant2).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.GetModelV1ResponseVariant2!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.GetModelV1ResponseVariant2, typeof(global::Deepgram.GetModelV1ResponseVariant2), options);
             }
         }
     }
