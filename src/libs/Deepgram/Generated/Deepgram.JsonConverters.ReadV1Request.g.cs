@@ -12,8 +12,7 @@ namespace Deepgram.JsonConverters
             global::System.Type typeToConvert,
             global::System.Text.Json.JsonSerializerOptions options)
         {
-            options = options ?? throw new global::System.ArgumentNullException(nameof(options));
-            var typeInfoResolver = options.TypeInfoResolver ?? throw new global::System.InvalidOperationException("TypeInfoResolver is not set.");
+            options = options ?? throw new global::System.ArgumentNullException(nameof(options)); 
 
             using var __jsonDocument = global::System.Text.Json.JsonDocument.ParseValue(ref reader);
             var __rawJson = __jsonDocument.RootElement.GetRawText();
@@ -43,9 +42,7 @@ namespace Deepgram.JsonConverters
                 {
                     try
                     {
-                        var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Deepgram.ReadV1RequestUrl), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Deepgram.ReadV1RequestUrl> ??
-                                       throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Deepgram.ReadV1RequestUrl).Name}");
-                        url = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
+                        url = global::System.Text.Json.JsonSerializer.Deserialize<global::Deepgram.ReadV1RequestUrl>(__rawJson, options);
                     }
                     catch (global::System.Text.Json.JsonException)
                     {
@@ -58,9 +55,7 @@ namespace Deepgram.JsonConverters
                 {
                     try
                     {
-                        var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Deepgram.ReadV1RequestText), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Deepgram.ReadV1RequestText> ??
-                                       throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Deepgram.ReadV1RequestText).Name}");
-                        text = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
+                        text = global::System.Text.Json.JsonSerializer.Deserialize<global::Deepgram.ReadV1RequestText>(__rawJson, options);
                     }
                     catch (global::System.Text.Json.JsonException)
                     {
@@ -75,9 +70,7 @@ namespace Deepgram.JsonConverters
             {
                 try
                 {
-                    var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Deepgram.ReadV1RequestUrl), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Deepgram.ReadV1RequestUrl> ??
-                                   throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Deepgram.ReadV1RequestUrl).Name}");
-                    url = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
+                    url = global::System.Text.Json.JsonSerializer.Deserialize<global::Deepgram.ReadV1RequestUrl>(__rawJson, options);
                 }
                 catch (global::System.Text.Json.JsonException)
                 {
@@ -88,9 +81,7 @@ namespace Deepgram.JsonConverters
 
                 try
                 {
-                    var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Deepgram.ReadV1RequestText), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Deepgram.ReadV1RequestText> ??
-                                   throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Deepgram.ReadV1RequestText).Name}");
-                    text = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
+                    text = global::System.Text.Json.JsonSerializer.Deserialize<global::Deepgram.ReadV1RequestText>(__rawJson, options);
                 }
                 catch (global::System.Text.Json.JsonException)
                 {
@@ -115,20 +106,15 @@ namespace Deepgram.JsonConverters
             global::Deepgram.ReadV1Request value,
             global::System.Text.Json.JsonSerializerOptions options)
         {
-            options = options ?? throw new global::System.ArgumentNullException(nameof(options));
-            var typeInfoResolver = options.TypeInfoResolver ?? throw new global::System.InvalidOperationException("TypeInfoResolver is not set.");
+            options = options ?? throw new global::System.ArgumentNullException(nameof(options)); 
 
             if (value.IsUrl)
             {
-                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Deepgram.ReadV1RequestUrl), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Deepgram.ReadV1RequestUrl?> ??
-                               throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Deepgram.ReadV1RequestUrl).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.Url!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.Url, typeof(global::Deepgram.ReadV1RequestUrl), options);
             }
             else if (value.IsText)
             {
-                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Deepgram.ReadV1RequestText), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Deepgram.ReadV1RequestText?> ??
-                               throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Deepgram.ReadV1RequestText).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.Text!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.Text, typeof(global::Deepgram.ReadV1RequestText), options);
             }
         }
     }
