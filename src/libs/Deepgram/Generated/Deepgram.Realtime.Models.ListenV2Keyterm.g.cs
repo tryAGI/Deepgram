@@ -14,35 +14,35 @@ namespace Deepgram.Realtime
         /// 
         /// </summary>
 #if NET6_0_OR_GREATER
-        public string? Value1 { get; init; }
+        public string? ListenV2KeytermVariant1 { get; init; }
 #else
-        public string? Value1 { get; }
+        public string? ListenV2KeytermVariant1 { get; }
 #endif
 
         /// <summary>
         /// 
         /// </summary>
 #if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Value1))]
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(ListenV2KeytermVariant1))]
 #endif
-        public bool IsValue1 => Value1 != null;
+        public bool IsListenV2KeytermVariant1 => ListenV2KeytermVariant1 != null;
 
         /// <summary>
         /// 
         /// </summary>
 #if NET6_0_OR_GREATER
-        public global::System.Collections.Generic.IList<string>? Value2 { get; init; }
+        public global::System.Collections.Generic.IList<string>? ListenV2KeytermVariant2 { get; init; }
 #else
-        public global::System.Collections.Generic.IList<string>? Value2 { get; }
+        public global::System.Collections.Generic.IList<string>? ListenV2KeytermVariant2 { get; }
 #endif
 
         /// <summary>
         /// 
         /// </summary>
 #if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Value2))]
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(ListenV2KeytermVariant2))]
 #endif
-        public bool IsValue2 => Value2 != null;
+        public bool IsListenV2KeytermVariant2 => ListenV2KeytermVariant2 != null;
         /// <summary>
         /// 
         /// </summary>
@@ -51,42 +51,42 @@ namespace Deepgram.Realtime
         /// <summary>
         /// 
         /// </summary>
-        public static implicit operator string?(ListenV2Keyterm @this) => @this.Value1;
+        public static implicit operator string?(ListenV2Keyterm @this) => @this.ListenV2KeytermVariant1;
 
         /// <summary>
         /// 
         /// </summary>
         public ListenV2Keyterm(string? value)
         {
-            Value1 = value;
+            ListenV2KeytermVariant1 = value;
         }
 
         /// <summary>
         /// 
         /// </summary>
         public ListenV2Keyterm(
-            string? value1,
-            global::System.Collections.Generic.IList<string>? value2
+            string? listenV2KeytermVariant1,
+            global::System.Collections.Generic.IList<string>? listenV2KeytermVariant2
             )
         {
-            Value1 = value1;
-            Value2 = value2;
+            ListenV2KeytermVariant1 = listenV2KeytermVariant1;
+            ListenV2KeytermVariant2 = listenV2KeytermVariant2;
         }
 
         /// <summary>
         /// 
         /// </summary>
         public object? Object =>
-            Value2 as object ??
-            Value1 as object 
+            ListenV2KeytermVariant2 as object ??
+            ListenV2KeytermVariant1 as object 
             ;
 
         /// <summary>
         /// 
         /// </summary>
         public override string? ToString() =>
-            Value1?.ToString() ??
-            Value2?.ToString() 
+            ListenV2KeytermVariant1?.ToString() ??
+            ListenV2KeytermVariant2?.ToString() 
             ;
 
         /// <summary>
@@ -94,15 +94,15 @@ namespace Deepgram.Realtime
         /// </summary>
         public bool Validate()
         {
-            return IsValue1 && !IsValue2 || !IsValue1 && IsValue2;
+            return IsListenV2KeytermVariant1 && !IsListenV2KeytermVariant2 || !IsListenV2KeytermVariant1 && IsListenV2KeytermVariant2;
         }
 
         /// <summary>
         /// 
         /// </summary>
         public TResult? Match<TResult>(
-            global::System.Func<string?, TResult>? value1 = null,
-            global::System.Func<global::System.Collections.Generic.IList<string>?, TResult>? value2 = null,
+            global::System.Func<string?, TResult>? listenV2KeytermVariant1 = null,
+            global::System.Func<global::System.Collections.Generic.IList<string>?, TResult>? listenV2KeytermVariant2 = null,
             bool validate = true)
         {
             if (validate)
@@ -110,13 +110,13 @@ namespace Deepgram.Realtime
                 Validate();
             }
 
-            if (IsValue1 && value1 != null)
+            if (IsListenV2KeytermVariant1 && listenV2KeytermVariant1 != null)
             {
-                return value1(Value1!);
+                return listenV2KeytermVariant1(ListenV2KeytermVariant1!);
             }
-            else if (IsValue2 && value2 != null)
+            else if (IsListenV2KeytermVariant2 && listenV2KeytermVariant2 != null)
             {
-                return value2(Value2!);
+                return listenV2KeytermVariant2(ListenV2KeytermVariant2!);
             }
 
             return default(TResult);
@@ -126,8 +126,8 @@ namespace Deepgram.Realtime
         /// 
         /// </summary>
         public void Match(
-            global::System.Action<string?>? value1 = null,
-            global::System.Action<global::System.Collections.Generic.IList<string>?>? value2 = null,
+            global::System.Action<string?>? listenV2KeytermVariant1 = null,
+            global::System.Action<global::System.Collections.Generic.IList<string>?>? listenV2KeytermVariant2 = null,
             bool validate = true)
         {
             if (validate)
@@ -135,13 +135,13 @@ namespace Deepgram.Realtime
                 Validate();
             }
 
-            if (IsValue1)
+            if (IsListenV2KeytermVariant1)
             {
-                value1?.Invoke(Value1!);
+                listenV2KeytermVariant1?.Invoke(ListenV2KeytermVariant1!);
             }
-            else if (IsValue2)
+            else if (IsListenV2KeytermVariant2)
             {
-                value2?.Invoke(Value2!);
+                listenV2KeytermVariant2?.Invoke(ListenV2KeytermVariant2!);
             }
         }
 
@@ -152,9 +152,9 @@ namespace Deepgram.Realtime
         {
             var fields = new object?[]
             {
-                Value1,
+                ListenV2KeytermVariant1,
                 typeof(string),
-                Value2,
+                ListenV2KeytermVariant2,
                 typeof(global::System.Collections.Generic.IList<string>),
             };
             const int offset = unchecked((int)2166136261);
@@ -172,8 +172,8 @@ namespace Deepgram.Realtime
         public bool Equals(ListenV2Keyterm other)
         {
             return
-                global::System.Collections.Generic.EqualityComparer<string?>.Default.Equals(Value1, other.Value1) &&
-                global::System.Collections.Generic.EqualityComparer<global::System.Collections.Generic.IList<string>?>.Default.Equals(Value2, other.Value2) 
+                global::System.Collections.Generic.EqualityComparer<string?>.Default.Equals(ListenV2KeytermVariant1, other.ListenV2KeytermVariant1) &&
+                global::System.Collections.Generic.EqualityComparer<global::System.Collections.Generic.IList<string>?>.Default.Equals(ListenV2KeytermVariant2, other.ListenV2KeytermVariant2) 
                 ;
         }
 
