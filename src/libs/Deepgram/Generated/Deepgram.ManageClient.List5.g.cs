@@ -112,13 +112,13 @@ namespace Deepgram
                     if (ReadResponseAsString)
                     {
                         __content_400 = await __response.Content.ReadAsStringAsync(cancellationToken).ConfigureAwait(false);
-                        __value_400 = global::Deepgram.ErrorResponse.FromJson(__content_400, JsonSerializerOptions);
+                        __value_400 = global::Deepgram.ErrorResponse.FromJson(__content_400, JsonSerializerContext);
                     }
                     else
                     {
                         __content_400 = await __response.Content.ReadAsStringAsync(cancellationToken).ConfigureAwait(false);
 
-                        __value_400 = global::Deepgram.ErrorResponse.FromJson(__content_400, JsonSerializerOptions);
+                        __value_400 = global::Deepgram.ErrorResponse.FromJson(__content_400, JsonSerializerContext);
                     }
                 }
                 catch (global::System.Exception __ex)
@@ -162,7 +162,7 @@ namespace Deepgram
                     __response.EnsureSuccessStatusCode();
 
                     return
-                        global::Deepgram.ListBillingFieldsV1Response.FromJson(__content, JsonSerializerOptions) ??
+                        global::Deepgram.ListBillingFieldsV1Response.FromJson(__content, JsonSerializerContext) ??
                         throw new global::System.InvalidOperationException($"Response deserialization failed for \"{__content}\" ");
                 }
                 catch (global::System.Exception __ex)
@@ -192,7 +192,7 @@ namespace Deepgram
                     ).ConfigureAwait(false);
 
                     return
-                        await global::Deepgram.ListBillingFieldsV1Response.FromJsonStreamAsync(__content, JsonSerializerOptions).ConfigureAwait(false) ??
+                        await global::Deepgram.ListBillingFieldsV1Response.FromJsonStreamAsync(__content, JsonSerializerContext).ConfigureAwait(false) ??
                         throw new global::System.InvalidOperationException("Response deserialization failed.");
                 }
                 catch (global::System.Exception __ex)

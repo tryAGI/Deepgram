@@ -78,7 +78,7 @@ namespace Deepgram
                     __httpRequest.Headers.Add(__authorization.Name, __authorization.Value);
                 }
             }
-            var __httpRequestContentBody = request.ToJson(JsonSerializerOptions);
+            var __httpRequestContentBody = request.ToJson(JsonSerializerContext);
             var __httpRequestContent = new global::System.Net.Http.StringContent(
                 content: __httpRequestContentBody,
                 encoding: global::System.Text.Encoding.UTF8,
@@ -117,13 +117,13 @@ namespace Deepgram
                     if (ReadResponseAsString)
                     {
                         __content_400 = await __response.Content.ReadAsStringAsync(cancellationToken).ConfigureAwait(false);
-                        __value_400 = global::Deepgram.ErrorResponse.FromJson(__content_400, JsonSerializerOptions);
+                        __value_400 = global::Deepgram.ErrorResponse.FromJson(__content_400, JsonSerializerContext);
                     }
                     else
                     {
                         __content_400 = await __response.Content.ReadAsStringAsync(cancellationToken).ConfigureAwait(false);
 
-                        __value_400 = global::Deepgram.ErrorResponse.FromJson(__content_400, JsonSerializerOptions);
+                        __value_400 = global::Deepgram.ErrorResponse.FromJson(__content_400, JsonSerializerContext);
                     }
                 }
                 catch (global::System.Exception __ex)
@@ -167,7 +167,7 @@ namespace Deepgram
                     __response.EnsureSuccessStatusCode();
 
                     return
-                        global::Deepgram.UpdateProjectMemberScopesV1Response.FromJson(__content, JsonSerializerOptions) ??
+                        global::Deepgram.UpdateProjectMemberScopesV1Response.FromJson(__content, JsonSerializerContext) ??
                         throw new global::System.InvalidOperationException($"Response deserialization failed for \"{__content}\" ");
                 }
                 catch (global::System.Exception __ex)
@@ -197,7 +197,7 @@ namespace Deepgram
                     ).ConfigureAwait(false);
 
                     return
-                        await global::Deepgram.UpdateProjectMemberScopesV1Response.FromJsonStreamAsync(__content, JsonSerializerOptions).ConfigureAwait(false) ??
+                        await global::Deepgram.UpdateProjectMemberScopesV1Response.FromJsonStreamAsync(__content, JsonSerializerContext).ConfigureAwait(false) ??
                         throw new global::System.InvalidOperationException("Response deserialization failed.");
                 }
                 catch (global::System.Exception __ex)
