@@ -5,6 +5,25 @@ namespace Deepgram
 {
     public partial class ManageClient
     {
+
+
+        private static readonly global::Deepgram.EndPointSecurityRequirement s_Get8SecurityRequirement0 =
+            new global::Deepgram.EndPointSecurityRequirement
+            {
+                Authorizations = new global::Deepgram.EndPointAuthorizationRequirement[]
+                {                    new global::Deepgram.EndPointAuthorizationRequirement
+                    {
+                        Type = "Http",
+                        Location = "Header",
+                        Name = "Bearer",
+                        FriendlyName = "Bearer",
+                    },
+                },
+            };
+        private static readonly global::Deepgram.EndPointSecurityRequirement[] s_Get8SecurityRequirements =
+            new global::Deepgram.EndPointSecurityRequirement[]
+            {                s_Get8SecurityRequirement0,
+            };
         partial void PrepareGet8Arguments(
             global::System.Net.Http.HttpClient httpClient,
             ref global::System.DateTime? start,
@@ -269,6 +288,12 @@ namespace Deepgram
                 version: ref version,
                 projectId: ref projectId);
 
+
+            var __authorizations = global::Deepgram.EndPointSecurityResolver.ResolveAuthorizations(
+                availableAuthorizations: Authorizations,
+                securityRequirements: s_Get8SecurityRequirements,
+                operationName: "Get8Async");
+
             var __pathBuilder = new global::Deepgram.PathBuilder(
                 path: $"/v1/projects/{projectId}/usage/breakdown",
                 baseUri: HttpClient.BaseAddress); 
@@ -318,7 +343,7 @@ namespace Deepgram
                 .AddOptionalParameter("utt_split", uttSplit?.ToString().ToLowerInvariant())
                 .AddOptionalParameter("utterances", utterances?.ToString().ToLowerInvariant())
                 .AddOptionalParameter("version", version?.ToString().ToLowerInvariant()) 
-                ; 
+                ;
             var __path = __pathBuilder.ToString();
             using var __httpRequest = new global::System.Net.Http.HttpRequestMessage(
                 method: global::System.Net.Http.HttpMethod.Get,
@@ -328,7 +353,7 @@ namespace Deepgram
             __httpRequest.VersionPolicy = global::System.Net.Http.HttpVersionPolicy.RequestVersionOrHigher;
 #endif
 
-            foreach (var __authorization in Authorizations)
+            foreach (var __authorization in __authorizations)
             {
                 if (__authorization.Type == "Http" ||
                     __authorization.Type == "OAuth2")

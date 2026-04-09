@@ -6,6 +6,7 @@ namespace Deepgram
     public sealed partial class DeepgramClient
     {
         /// <inheritdoc cref="DeepgramClient(global::System.Net.Http.HttpClient?, global::System.Uri?, global::System.Collections.Generic.List{global::Deepgram.EndPointAuthorization}?, bool)"/>
+
         public DeepgramClient(
             string apiKey,
             global::System.Net.Http.HttpClient? httpClient = null,

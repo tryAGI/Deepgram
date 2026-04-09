@@ -5,6 +5,25 @@ namespace Deepgram
 {
     public partial class ManageClient
     {
+
+
+        private static readonly global::Deepgram.EndPointSecurityRequirement s_List2SecurityRequirement0 =
+            new global::Deepgram.EndPointSecurityRequirement
+            {
+                Authorizations = new global::Deepgram.EndPointAuthorizationRequirement[]
+                {                    new global::Deepgram.EndPointAuthorizationRequirement
+                    {
+                        Type = "Http",
+                        Location = "Header",
+                        Name = "Bearer",
+                        FriendlyName = "Bearer",
+                    },
+                },
+            };
+        private static readonly global::Deepgram.EndPointSecurityRequirement[] s_List2SecurityRequirements =
+            new global::Deepgram.EndPointSecurityRequirement[]
+            {                s_List2SecurityRequirement0,
+            };
         partial void PrepareList2Arguments(
             global::System.Net.Http.HttpClient httpClient);
         partial void PrepareList2Request(
@@ -33,9 +52,15 @@ namespace Deepgram
             PrepareList2Arguments(
                 httpClient: HttpClient);
 
+
+            var __authorizations = global::Deepgram.EndPointSecurityResolver.ResolveAuthorizations(
+                availableAuthorizations: Authorizations,
+                securityRequirements: s_List2SecurityRequirements,
+                operationName: "List2Async");
+
             var __pathBuilder = new global::Deepgram.PathBuilder(
                 path: "/v1/projects",
-                baseUri: HttpClient.BaseAddress); 
+                baseUri: HttpClient.BaseAddress);
             var __path = __pathBuilder.ToString();
             using var __httpRequest = new global::System.Net.Http.HttpRequestMessage(
                 method: global::System.Net.Http.HttpMethod.Get,
@@ -45,7 +70,7 @@ namespace Deepgram
             __httpRequest.VersionPolicy = global::System.Net.Http.HttpVersionPolicy.RequestVersionOrHigher;
 #endif
 
-            foreach (var __authorization in Authorizations)
+            foreach (var __authorization in __authorizations)
             {
                 if (__authorization.Type == "Http" ||
                     __authorization.Type == "OAuth2")

@@ -5,6 +5,25 @@ namespace Deepgram
 {
     public partial class SelfHostedClient
     {
+
+
+        private static readonly global::Deepgram.EndPointSecurityRequirement s_GetSecurityRequirement0 =
+            new global::Deepgram.EndPointSecurityRequirement
+            {
+                Authorizations = new global::Deepgram.EndPointAuthorizationRequirement[]
+                {                    new global::Deepgram.EndPointAuthorizationRequirement
+                    {
+                        Type = "Http",
+                        Location = "Header",
+                        Name = "Bearer",
+                        FriendlyName = "Bearer",
+                    },
+                },
+            };
+        private static readonly global::Deepgram.EndPointSecurityRequirement[] s_GetSecurityRequirements =
+            new global::Deepgram.EndPointSecurityRequirement[]
+            {                s_GetSecurityRequirement0,
+            };
         partial void PrepareGetArguments(
             global::System.Net.Http.HttpClient httpClient,
             ref string projectId,
@@ -43,9 +62,15 @@ namespace Deepgram
                 projectId: ref projectId,
                 distributionCredentialsId: ref distributionCredentialsId);
 
+
+            var __authorizations = global::Deepgram.EndPointSecurityResolver.ResolveAuthorizations(
+                availableAuthorizations: Authorizations,
+                securityRequirements: s_GetSecurityRequirements,
+                operationName: "GetAsync");
+
             var __pathBuilder = new global::Deepgram.PathBuilder(
                 path: $"/v1/projects/{projectId}/self-hosted/distribution/credentials/{distributionCredentialsId}",
-                baseUri: HttpClient.BaseAddress); 
+                baseUri: HttpClient.BaseAddress);
             var __path = __pathBuilder.ToString();
             using var __httpRequest = new global::System.Net.Http.HttpRequestMessage(
                 method: global::System.Net.Http.HttpMethod.Get,
@@ -55,7 +80,7 @@ namespace Deepgram
             __httpRequest.VersionPolicy = global::System.Net.Http.HttpVersionPolicy.RequestVersionOrHigher;
 #endif
 
-            foreach (var __authorization in Authorizations)
+            foreach (var __authorization in __authorizations)
             {
                 if (__authorization.Type == "Http" ||
                     __authorization.Type == "OAuth2")

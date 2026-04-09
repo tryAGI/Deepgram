@@ -13,7 +13,7 @@ namespace Deepgram
         /// <summary>
         /// 
         /// </summary>
-        public const string DefaultBaseUrl = "https://api.deepgram.com";
+        public const string DefaultBaseUrl = "https://api.deepgram.com/";
 
         private bool _disposeHttpClient = true;
 
@@ -38,7 +38,7 @@ namespace Deepgram
 
 
         /// <summary>
-        /// AI agent operations
+        /// AI agent operations.
         /// </summary>
         public AgentClient Agent => new AgentClient(HttpClient, authorizations: Authorizations)
         {
@@ -47,7 +47,7 @@ namespace Deepgram
         };
 
         /// <summary>
-        /// Authentication operations
+        /// Authentication operations.
         /// </summary>
         public AuthClient Auth => new AuthClient(HttpClient, authorizations: Authorizations)
         {
@@ -56,7 +56,7 @@ namespace Deepgram
         };
 
         /// <summary>
-        /// Speech-to-text transcription
+        /// Speech-to-text transcription.
         /// </summary>
         public ListenClient Listen => new ListenClient(HttpClient, authorizations: Authorizations)
         {
@@ -65,7 +65,7 @@ namespace Deepgram
         };
 
         /// <summary>
-        /// Project and account management
+        /// Project and account management.
         /// </summary>
         public ManageClient Manage => new ManageClient(HttpClient, authorizations: Authorizations)
         {
@@ -74,7 +74,7 @@ namespace Deepgram
         };
 
         /// <summary>
-        /// Text analysis
+        /// Text analysis.
         /// </summary>
         public ReadClient Read => new ReadClient(HttpClient, authorizations: Authorizations)
         {
@@ -83,7 +83,7 @@ namespace Deepgram
         };
 
         /// <summary>
-        /// On-premise deployments
+        /// On-premise deployments.
         /// </summary>
         public SelfHostedClient SelfHosted => new SelfHostedClient(HttpClient, authorizations: Authorizations)
         {
@@ -92,7 +92,7 @@ namespace Deepgram
         };
 
         /// <summary>
-        /// Text-to-speech generation
+        /// Text-to-speech generation.
         /// </summary>
         public SpeakClient Speak => new SpeakClient(HttpClient, authorizations: Authorizations)
         {

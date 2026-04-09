@@ -5,6 +5,25 @@ namespace Deepgram
 {
     public partial class ListenClient
     {
+
+
+        private static readonly global::Deepgram.EndPointSecurityRequirement s_TranscribeSecurityRequirement0 =
+            new global::Deepgram.EndPointSecurityRequirement
+            {
+                Authorizations = new global::Deepgram.EndPointAuthorizationRequirement[]
+                {                    new global::Deepgram.EndPointAuthorizationRequirement
+                    {
+                        Type = "Http",
+                        Location = "Header",
+                        Name = "Bearer",
+                        FriendlyName = "Bearer",
+                    },
+                },
+            };
+        private static readonly global::Deepgram.EndPointSecurityRequirement[] s_TranscribeSecurityRequirements =
+            new global::Deepgram.EndPointSecurityRequirement[]
+            {                s_TranscribeSecurityRequirement0,
+            };
         partial void PrepareTranscribeArguments(
             global::System.Net.Http.HttpClient httpClient,
             ref string? callback,
@@ -270,6 +289,12 @@ namespace Deepgram
                 mipOptOut: ref mipOptOut,
                 request: request);
 
+
+            var __authorizations = global::Deepgram.EndPointSecurityResolver.ResolveAuthorizations(
+                availableAuthorizations: Authorizations,
+                securityRequirements: s_TranscribeSecurityRequirements,
+                operationName: "TranscribeAsync");
+
             var __pathBuilder = new global::Deepgram.PathBuilder(
                 path: "/v1/listen",
                 baseUri: HttpClient.BaseAddress); 
@@ -310,7 +335,7 @@ namespace Deepgram
                 .AddOptionalParameter("utt_split", uttSplit?.ToString())
                 .AddOptionalParameter("version", version?.ToString())
                 .AddOptionalParameter("mip_opt_out", mipOptOut?.ToString().ToLowerInvariant()) 
-                ; 
+                ;
             var __path = __pathBuilder.ToString();
             using var __httpRequest = new global::System.Net.Http.HttpRequestMessage(
                 method: global::System.Net.Http.HttpMethod.Post,
@@ -320,7 +345,7 @@ namespace Deepgram
             __httpRequest.VersionPolicy = global::System.Net.Http.HttpVersionPolicy.RequestVersionOrHigher;
 #endif
 
-            foreach (var __authorization in Authorizations)
+            foreach (var __authorization in __authorizations)
             {
                 if (__authorization.Type == "Http" ||
                     __authorization.Type == "OAuth2")

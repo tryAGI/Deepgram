@@ -5,6 +5,25 @@ namespace Deepgram
 {
     public partial class SpeakClient
     {
+
+
+        private static readonly global::Deepgram.EndPointSecurityRequirement s_GenerateSecurityRequirement0 =
+            new global::Deepgram.EndPointSecurityRequirement
+            {
+                Authorizations = new global::Deepgram.EndPointAuthorizationRequirement[]
+                {                    new global::Deepgram.EndPointAuthorizationRequirement
+                    {
+                        Type = "Http",
+                        Location = "Header",
+                        Name = "Bearer",
+                        FriendlyName = "Bearer",
+                    },
+                },
+            };
+        private static readonly global::Deepgram.EndPointSecurityRequirement[] s_GenerateSecurityRequirements =
+            new global::Deepgram.EndPointSecurityRequirement[]
+            {                s_GenerateSecurityRequirement0,
+            };
         partial void PrepareGenerateArguments(
             global::System.Net.Http.HttpClient httpClient,
             ref string? callback,
@@ -100,6 +119,12 @@ namespace Deepgram
                 sampleRate: ref sampleRate,
                 request: request);
 
+
+            var __authorizations = global::Deepgram.EndPointSecurityResolver.ResolveAuthorizations(
+                availableAuthorizations: Authorizations,
+                securityRequirements: s_GenerateSecurityRequirements,
+                operationName: "GenerateAsync");
+
             var __pathBuilder = new global::Deepgram.PathBuilder(
                 path: "/v1/speak",
                 baseUri: HttpClient.BaseAddress); 
@@ -113,7 +138,7 @@ namespace Deepgram
                 .AddOptionalParameter("encoding", encoding?.ToString())
                 .AddOptionalParameter("model", model?.ToValueString())
                 .AddOptionalParameter("sample_rate", sampleRate?.ToString()) 
-                ; 
+                ;
             var __path = __pathBuilder.ToString();
             using var __httpRequest = new global::System.Net.Http.HttpRequestMessage(
                 method: global::System.Net.Http.HttpMethod.Post,
@@ -123,7 +148,7 @@ namespace Deepgram
             __httpRequest.VersionPolicy = global::System.Net.Http.HttpVersionPolicy.RequestVersionOrHigher;
 #endif
 
-            foreach (var __authorization in Authorizations)
+            foreach (var __authorization in __authorizations)
             {
                 if (__authorization.Type == "Http" ||
                     __authorization.Type == "OAuth2")
