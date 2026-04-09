@@ -4,7 +4,7 @@
 namespace Deepgram
 {
     /// <summary>
-    /// Authentication operations<br/>
+    /// Authentication operations.<br/>
     /// If no httpClient is provided, a new one will be created.<br/>
     /// If no baseUri is provided, the default baseUri from OpenAPI spec will be used.
     /// </summary>
@@ -13,7 +13,7 @@ namespace Deepgram
         /// <summary>
         /// 
         /// </summary>
-        public const string DefaultBaseUrl = "https://api.deepgram.com";
+        public const string DefaultBaseUrl = "https://api.deepgram.com/";
 
         private bool _disposeHttpClient = true;
 

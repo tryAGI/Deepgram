@@ -5,6 +5,25 @@ namespace Deepgram
 {
     public partial class ManageClient
     {
+
+
+        private static readonly global::Deepgram.EndPointSecurityRequirement s_List5SecurityRequirement0 =
+            new global::Deepgram.EndPointSecurityRequirement
+            {
+                Authorizations = new global::Deepgram.EndPointAuthorizationRequirement[]
+                {                    new global::Deepgram.EndPointAuthorizationRequirement
+                    {
+                        Type = "Http",
+                        Location = "Header",
+                        Name = "Bearer",
+                        FriendlyName = "Bearer",
+                    },
+                },
+            };
+        private static readonly global::Deepgram.EndPointSecurityRequirement[] s_List5SecurityRequirements =
+            new global::Deepgram.EndPointSecurityRequirement[]
+            {                s_List5SecurityRequirement0,
+            };
         partial void PrepareList5Arguments(
             global::System.Net.Http.HttpClient httpClient,
             ref global::System.DateTime? start,
@@ -48,13 +67,19 @@ namespace Deepgram
                 end: ref end,
                 projectId: ref projectId);
 
+
+            var __authorizations = global::Deepgram.EndPointSecurityResolver.ResolveAuthorizations(
+                availableAuthorizations: Authorizations,
+                securityRequirements: s_List5SecurityRequirements,
+                operationName: "List5Async");
+
             var __pathBuilder = new global::Deepgram.PathBuilder(
                 path: $"/v1/projects/{projectId}/billing/fields",
                 baseUri: HttpClient.BaseAddress); 
             __pathBuilder
                 .AddOptionalParameter("start", start?.ToString("yyyy-MM-dd"))
                 .AddOptionalParameter("end", end?.ToString("yyyy-MM-dd")) 
-                ; 
+                ;
             var __path = __pathBuilder.ToString();
             using var __httpRequest = new global::System.Net.Http.HttpRequestMessage(
                 method: global::System.Net.Http.HttpMethod.Get,
@@ -64,7 +89,7 @@ namespace Deepgram
             __httpRequest.VersionPolicy = global::System.Net.Http.HttpVersionPolicy.RequestVersionOrHigher;
 #endif
 
-            foreach (var __authorization in Authorizations)
+            foreach (var __authorization in __authorizations)
             {
                 if (__authorization.Type == "Http" ||
                     __authorization.Type == "OAuth2")

@@ -41,37 +41,37 @@ namespace Deepgram
 
 
         /// <summary>
-        /// AI agent operations
+        /// AI agent operations.
         /// </summary>
         public AgentClient Agent { get; }
 
         /// <summary>
-        /// Authentication operations
+        /// Authentication operations.
         /// </summary>
         public AuthClient Auth { get; }
 
         /// <summary>
-        /// Speech-to-text transcription
+        /// Speech-to-text transcription.
         /// </summary>
         public ListenClient Listen { get; }
 
         /// <summary>
-        /// Project and account management
+        /// Project and account management.
         /// </summary>
         public ManageClient Manage { get; }
 
         /// <summary>
-        /// Text analysis
+        /// Text analysis.
         /// </summary>
         public ReadClient Read { get; }
 
         /// <summary>
-        /// On-premise deployments
+        /// On-premise deployments.
         /// </summary>
         public SelfHostedClient SelfHosted { get; }
 
         /// <summary>
-        /// Text-to-speech generation
+        /// Text-to-speech generation.
         /// </summary>
         public SpeakClient Speak { get; }
 
