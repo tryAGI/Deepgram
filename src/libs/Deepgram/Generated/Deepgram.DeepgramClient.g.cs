@@ -31,6 +31,9 @@ namespace Deepgram
 #if DEBUG
             = true;
 #endif
+
+        /// <inheritdoc/>
+        public global::Deepgram.AutoSDKClientOptions Options { get; }
         /// <summary>
         /// 
         /// </summary>
@@ -40,7 +43,7 @@ namespace Deepgram
         /// <summary>
         /// AI agent operations.
         /// </summary>
-        public AgentClient Agent => new AgentClient(HttpClient, authorizations: Authorizations)
+        public AgentClient Agent => new AgentClient(HttpClient, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -49,7 +52,7 @@ namespace Deepgram
         /// <summary>
         /// Authentication operations.
         /// </summary>
-        public AuthClient Auth => new AuthClient(HttpClient, authorizations: Authorizations)
+        public AuthClient Auth => new AuthClient(HttpClient, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -58,7 +61,7 @@ namespace Deepgram
         /// <summary>
         /// Speech-to-text transcription.
         /// </summary>
-        public ListenClient Listen => new ListenClient(HttpClient, authorizations: Authorizations)
+        public ListenClient Listen => new ListenClient(HttpClient, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -67,7 +70,7 @@ namespace Deepgram
         /// <summary>
         /// Project and account management.
         /// </summary>
-        public ManageClient Manage => new ManageClient(HttpClient, authorizations: Authorizations)
+        public ManageClient Manage => new ManageClient(HttpClient, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -76,7 +79,7 @@ namespace Deepgram
         /// <summary>
         /// Text analysis.
         /// </summary>
-        public ReadClient Read => new ReadClient(HttpClient, authorizations: Authorizations)
+        public ReadClient Read => new ReadClient(HttpClient, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -85,7 +88,7 @@ namespace Deepgram
         /// <summary>
         /// On-premise deployments.
         /// </summary>
-        public SelfHostedClient SelfHosted => new SelfHostedClient(HttpClient, authorizations: Authorizations)
+        public SelfHostedClient SelfHosted => new SelfHostedClient(HttpClient, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -94,7 +97,7 @@ namespace Deepgram
         /// <summary>
         /// Text-to-speech generation.
         /// </summary>
-        public SpeakClient Speak => new SpeakClient(HttpClient, authorizations: Authorizations)
+        public SpeakClient Speak => new SpeakClient(HttpClient, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -113,11 +116,37 @@ namespace Deepgram
             global::System.Net.Http.HttpClient? httpClient = null,
             global::System.Uri? baseUri = null,
             global::System.Collections.Generic.List<global::Deepgram.EndPointAuthorization>? authorizations = null,
+            bool disposeHttpClient = true) : this(
+                httpClient,
+                baseUri,
+                authorizations,
+                options: null,
+                disposeHttpClient: disposeHttpClient)
+        {
+        }
+
+        /// <summary>
+        /// Creates a new instance of the DeepgramClient.
+        /// If no httpClient is provided, a new one will be created.
+        /// If no baseUri is provided, the default baseUri from OpenAPI spec will be used.
+        /// </summary>
+        /// <param name="httpClient">The HttpClient instance. If not provided, a new one will be created.</param>
+        /// <param name="baseUri">The base URL for the API. If not provided, the default baseUri from OpenAPI spec will be used.</param>
+        /// <param name="authorizations">The authorizations to use for the requests.</param>
+        /// <param name="options">Client-wide request defaults such as headers, query parameters, retries, and timeout.</param>
+        /// <param name="disposeHttpClient">Dispose the HttpClient when the instance is disposed. True by default.</param>
+        public DeepgramClient(
+            global::System.Net.Http.HttpClient? httpClient = null,
+            global::System.Uri? baseUri = null,
+            global::System.Collections.Generic.List<global::Deepgram.EndPointAuthorization>? authorizations = null,
+            global::Deepgram.AutoSDKClientOptions? options = null,
             bool disposeHttpClient = true)
         {
+
             HttpClient = httpClient ?? new global::System.Net.Http.HttpClient();
             HttpClient.BaseAddress ??= baseUri ?? new global::System.Uri(DefaultBaseUrl);
             Authorizations = authorizations ?? new global::System.Collections.Generic.List<global::Deepgram.EndPointAuthorization>();
+            Options = options ?? new global::Deepgram.AutoSDKClientOptions();
             _disposeHttpClient = disposeHttpClient;
 
             Initialized(HttpClient);
