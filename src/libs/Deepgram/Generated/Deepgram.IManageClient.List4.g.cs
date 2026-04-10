@@ -18,6 +18,7 @@ namespace Deepgram
         /// <param name="lineItem"></param>
         /// <param name="grouping"></param>
         /// <param name="projectId"></param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Deepgram.ApiException"></exception>
         global::System.Threading.Tasks.Task<global::Deepgram.BillingBreakdownV1Response> List4Async(
@@ -29,6 +30,7 @@ namespace Deepgram
             string? tag = default,
             string? lineItem = default,
             global::System.Collections.Generic.IList<global::Deepgram.ManageV1ProjectsBillingBreakdownListGroupingItem>? grouping = default,
+            global::Deepgram.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
     }
 }

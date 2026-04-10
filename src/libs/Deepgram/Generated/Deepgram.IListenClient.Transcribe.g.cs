@@ -94,6 +94,7 @@ namespace Deepgram
         /// Default Value: false
         /// </param>
         /// <param name="request"></param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Deepgram.ApiException"></exception>
         global::System.Threading.Tasks.Task<global::Deepgram.OneOf<global::Deepgram.ListenV1Response, global::Deepgram.ListenV1AcceptedResponse>> TranscribeAsync(
@@ -135,6 +136,7 @@ namespace Deepgram
             double? uttSplit = default,
             global::Deepgram.OneOf<global::Deepgram.ListenV1MediaTranscribeVersion2?, string>? version = default,
             bool? mipOptOut = default,
+            global::Deepgram.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
         /// Transcribe and analyze pre-recorded audio and video<br/>
@@ -228,6 +230,7 @@ namespace Deepgram
         /// <param name="url">
         /// Example: https://dpgr.am/spacewalk.wav
         /// </param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::System.InvalidOperationException"></exception>
         global::System.Threading.Tasks.Task<global::Deepgram.OneOf<global::Deepgram.ListenV1Response, global::Deepgram.ListenV1AcceptedResponse>> TranscribeAsync(
@@ -268,6 +271,7 @@ namespace Deepgram
             double? uttSplit = default,
             global::Deepgram.OneOf<global::Deepgram.ListenV1MediaTranscribeVersion2?, string>? version = default,
             bool? mipOptOut = default,
+            global::Deepgram.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
     }
 }

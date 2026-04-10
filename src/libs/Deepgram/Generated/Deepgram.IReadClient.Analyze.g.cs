@@ -35,6 +35,7 @@ namespace Deepgram
         /// Default Value: en
         /// </param>
         /// <param name="request"></param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Deepgram.ApiException"></exception>
         global::System.Threading.Tasks.Task<global::Deepgram.ReadV1Response> AnalyzeAsync(
@@ -52,6 +53,7 @@ namespace Deepgram
             global::Deepgram.OneOf<string, global::System.Collections.Generic.IList<string>>? customIntent = default,
             global::Deepgram.ReadV1TextAnalyzeCustomIntentMode? customIntentMode = default,
             string? language = default,
+            global::Deepgram.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
         /// Analyze text content<br/>
@@ -83,6 +85,7 @@ namespace Deepgram
         /// <param name="language">
         /// Default Value: en
         /// </param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::System.InvalidOperationException"></exception>
         global::System.Threading.Tasks.Task<global::Deepgram.ReadV1Response> AnalyzeAsync(
@@ -98,6 +101,7 @@ namespace Deepgram
             global::Deepgram.OneOf<string, global::System.Collections.Generic.IList<string>>? customIntent = default,
             global::Deepgram.ReadV1TextAnalyzeCustomIntentMode? customIntentMode = default,
             string? language = default,
+            global::Deepgram.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
     }
 }
