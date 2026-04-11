@@ -92,7 +92,7 @@ namespace Deepgram
             {
                             var __pathBuilder = new global::Deepgram.PathBuilder(
                                 path: $"/v1/projects/{projectId}/keys",
-                                baseUri: HttpClient.BaseAddress);
+                                baseUri: HttpClient.BaseAddress ?? new global::System.Uri("https://api.deepgram.com/", global::System.UriKind.RelativeOrAbsolute));
                             var __path = __pathBuilder.ToString();
                 __path = global::Deepgram.AutoSDKRequestOptionsSupport.AppendQueryParameters(
                     path: __path,

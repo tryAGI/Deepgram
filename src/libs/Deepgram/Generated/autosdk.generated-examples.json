@@ -1,0 +1,92 @@
+{
+  "Examples": [
+    {
+      "Order": 1,
+      "Title": "Token-based Authentication",
+      "Slug": "auth-v1-tokens-grant",
+      "Description": "Generates a temporary JSON Web Token (JWT) with a 30-second (by default) TTL and usage::write permission for core voice APIs, requiring an API key with Member or higher authorization. Tokens created with this endpoint will not work with the Manage APIs.",
+      "Language": "http",
+      "Code": "### Token-based Authentication\n# @name auth.v1.tokens.grant\nPOST {{host}}/v1/auth/grant\nAuthorization: Bearer {{token}}\nContent-Type: application/json\nAccept: application/json\n\n{\n  \u0022ttl_seconds\u0022: 30\n}\n\n## Responses\n# 200\n# Description: Grant response\n# Content-Type: application/json\n# 400\n# Description: Invalid Request\n# Content-Type: application/json",
+      "Format": "http",
+      "OperationId": "auth.v1.tokens.grant",
+      "Setup": null
+    },
+    {
+      "Order": 2,
+      "Title": "Create a Project Key",
+      "Slug": "manage-projects-keys-create",
+      "Description": "Creates a new API key with specified settings for the project",
+      "Language": "http",
+      "Code": "### Create a Project Key\n# @name manage.projects.keys.create\nPOST {{host}}/v1/projects/{{project_id}}/keys\nAuthorization: Bearer {{token}}\nContent-Type: application/json\nAccept: application/json\n\n\u0022string\u0022\n\n## Responses\n# 200\n# Description: API key created successfully\n# Content-Type: application/json\n# 400\n# Description: Invalid Request\n# Content-Type: application/json",
+      "Format": "http",
+      "OperationId": "manage.projects.keys.create",
+      "Setup": null
+    },
+    {
+      "Order": 3,
+      "Title": "Get Project Usage",
+      "Slug": "manage-v1-projects-usage-get",
+      "Description": "Retrieves the usage for a specific project. Use Get Project Usage Breakdown for a more comprehensive usage summary.",
+      "Language": "http",
+      "Code": "### [DEPRECATED] Get Project Usage\n# @name manage.v1.projects.usage.get\nGET {{host}}/v1/projects/{{project_id}}/usage?start={{start}}\u0026end={{end}}\u0026accessor=12345678-1234-1234-1234-123456789012\u0026alternatives=true\u0026callback_method=true\u0026callback=true\u0026channels=true\u0026custom_intent_mode=true\u0026custom_intent=true\u0026custom_topic_mode=true\u0026custom_topic=true\u0026deployment=hosted\u0026detect_entities=true\u0026detect_language=true\u0026diarize=true\u0026dictation=true\u0026encoding=true\u0026endpoint=listen\u0026extra=true\u0026filler_words=true\u0026intents=true\u0026keyterm=true\u0026keywords=true\u0026language=true\u0026measurements=true\u0026method=async\u0026model=6f548761-c9c0-429a-9315-11a1d28499c8\u0026multichannel=true\u0026numerals=true\u0026paragraphs=true\u0026profanity_filter=true\u0026punctuate=true\u0026redact=true\u0026replace=true\u0026sample_rate={{sample_rate}}\u0026search=true\u0026sentiment=true\u0026smart_format=true\u0026summarize=true\u0026tag=tag1\u0026topics=true\u0026utt_split=true\u0026utterances=true\u0026version=true\nAuthorization: Bearer {{token}}\nAccept: application/json\n\n## Responses\n# 200\n# Description: A specific request for a specific project\n# Content-Type: application/json\n# 400\n# Description: Invalid Request\n# Content-Type: application/json",
+      "Format": "http",
+      "OperationId": "manage.v1.projects.usage.get",
+      "Setup": null
+    },
+    {
+      "Order": 4,
+      "Title": "Get Project Usage Breakdown",
+      "Slug": "manage-v1-projects-usage-breakdown-get",
+      "Description": "Retrieves the usage breakdown for a specific project, with various filter options by API feature or by groupings. Setting a feature (e.g. diarize) to true includes requests that used that feature, while false excludes requests that used it. Multiple true filters are combined with OR logic, while false filters use AND logic.",
+      "Language": "http",
+      "Code": "### Get Project Usage Breakdown\n# @name manage.v1.projects.usage.breakdown.get\nGET {{host}}/v1/projects/{{project_id}}/usage/breakdown?start={{start}}\u0026end={{end}}\u0026grouping=accessor\u0026accessor=12345678-1234-1234-1234-123456789012\u0026alternatives=true\u0026callback_method=true\u0026callback=true\u0026channels=true\u0026custom_intent_mode=true\u0026custom_intent=true\u0026custom_topic_mode=true\u0026custom_topic=true\u0026deployment=hosted\u0026detect_entities=true\u0026detect_language=true\u0026diarize=true\u0026dictation=true\u0026encoding=true\u0026endpoint=listen\u0026extra=true\u0026filler_words=true\u0026intents=true\u0026keyterm=true\u0026keywords=true\u0026language=true\u0026measurements=true\u0026method=async\u0026model=6f548761-c9c0-429a-9315-11a1d28499c8\u0026multichannel=true\u0026numerals=true\u0026paragraphs=true\u0026profanity_filter=true\u0026punctuate=true\u0026redact=true\u0026replace=true\u0026sample_rate={{sample_rate}}\u0026search=true\u0026sentiment=true\u0026smart_format=true\u0026summarize=true\u0026tag=tag1\u0026topics=true\u0026utt_split=true\u0026utterances=true\u0026version=true\nAuthorization: Bearer {{token}}\nAccept: application/json\n\n## Responses\n# 200\n# Description: Usage breakdown response\n# Content-Type: application/json\n# 400\n# Description: Invalid Request\n# Content-Type: application/json",
+      "Format": "http",
+      "OperationId": "manage.v1.projects.usage.breakdown.get",
+      "Setup": null
+    },
+    {
+      "Order": 5,
+      "Title": "Get Project Billing Breakdown",
+      "Slug": "manage-v1-projects-billing-breakdown-list",
+      "Description": "Retrieves the billing summary for a specific project, with various filter options or by grouping options.",
+      "Language": "csharp",
+      "Code": "using var client = new DeepgramClient(apiKey);\nvar response = await client.Agent.ListAsync();",
+      "Format": "sdk",
+      "OperationId": "manage.v1.projects.billing.breakdown.list",
+      "Setup": "This example assumes \u0060using Deepgram;\u0060 is in scope and \u0060apiKey\u0060 contains the required credential."
+    },
+    {
+      "Order": 6,
+      "Title": "List Project Requests",
+      "Slug": "manage-v1-projects-requests-list",
+      "Description": "Generates a list of requests for a specific project",
+      "Language": "csharp",
+      "Code": "using var client = new DeepgramClient(apiKey);\nvar response = await client.Agent.ListAsync();",
+      "Format": "sdk",
+      "OperationId": "manage.v1.projects.requests.list",
+      "Setup": "This example assumes \u0060using Deepgram;\u0060 is in scope and \u0060apiKey\u0060 contains the required credential."
+    },
+    {
+      "Order": 7,
+      "Title": "Update a Project",
+      "Slug": "manage-projects-update",
+      "Description": "Updates the name or other properties of an existing project",
+      "Language": "http",
+      "Code": "### Update a Project\n# @name manage.projects.update\nPATCH {{host}}/v1/projects/{{project_id}}\nAuthorization: Bearer {{token}}\nContent-Type: application/json\nAccept: application/json\n\n{\n  \u0022name\u0022: \u0022string\u0022\n}\n\n## Responses\n# 200\n# Description: A project\n# Content-Type: application/json\n# 400\n# Description: Invalid Request\n# Content-Type: application/json",
+      "Format": "http",
+      "OperationId": "manage.projects.update",
+      "Setup": null
+    },
+    {
+      "Order": 8,
+      "Title": "Text to Speech transformation",
+      "Slug": "speak-v1-audio-generate",
+      "Description": "Convert text into natural-sounding speech using Deepgram\u0027s TTS REST API",
+      "Language": "http",
+      "Code": "### Text to Speech transformation\n# @name speak.v1.audio.generate\nPOST {{host}}/v1/speak?callback={{callback}}\u0026callback_method=POST\u0026mip_opt_out=false\u0026tag={{tag}}\u0026bit_rate=48000\u0026container=wav\u0026encoding=mp3\u0026model=aura-2-thalia-en\u0026sample_rate=24000\nAuthorization: Bearer {{token}}\nContent-Type: application/json\nAccept: application/json, application/octet-stream\n\n{\n  \u0022text\u0022: \u0022Hello, welcome to Deepgram!\u0022\n}\n\n## Responses\n# 200\n# Description: Successful text-to-speech transformation\n# Content-Type: application/octet-stream\n# 400\n# Description: Invalid Request\n# Content-Type: application/json\n\n## Callbacks\n### [CALLBACK] Callback endpoint for text-to-speech results\n# Name: speakCallback\n# Target: {$request.query.callback}\n# Method: POST\n# Content-Type: application/octet-stream\n## Responses\n# 200\n# Description: We expect a 200 to determine whether the callback was successfully received",
+      "Format": "http",
+      "OperationId": "speak.v1.audio.generate",
+      "Setup": null
+    }
+  ]
+}

@@ -106,7 +106,7 @@ namespace Deepgram
             {
                             var __pathBuilder = new global::Deepgram.PathBuilder(
                                 path: $"/v1/projects/{projectId}/self-hosted/distribution/credentials",
-                                baseUri: HttpClient.BaseAddress); 
+                                baseUri: HttpClient.BaseAddress ?? new global::System.Uri("https://api.deepgram.com/", global::System.UriKind.RelativeOrAbsolute)); 
                             __pathBuilder
                                 .AddOptionalParameter("scopes", scopes, selector: static x => x.ToValueString(), delimiter: ",", explode: true)
                                 .AddOptionalParameter("provider", provider?.ToValueString()) 
