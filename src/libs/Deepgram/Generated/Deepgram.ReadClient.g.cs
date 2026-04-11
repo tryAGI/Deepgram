@@ -4,14 +4,14 @@
 namespace Deepgram
 {
     /// <summary>
-    /// Text analysis.<br/>
+    /// Text analysis<br/>
     /// If no httpClient is provided, a new one will be created.<br/>
     /// If no baseUri is provided, the default baseUri from OpenAPI spec will be used.
     /// </summary>
     public sealed partial class ReadClient : global::Deepgram.IReadClient, global::System.IDisposable
     {
         /// <summary>
-        /// 
+        /// Deepgram Production API
         /// </summary>
         public const string DefaultBaseUrl = "https://api.deepgram.com/";
 
@@ -34,6 +34,9 @@ namespace Deepgram
 
         /// <inheritdoc/>
         public global::Deepgram.AutoSDKClientOptions Options { get; }
+
+
+        internal global::Deepgram.AutoSDKServerConfiguration AutoSDKServerConfiguration { get; set; } = new global::Deepgram.AutoSDKServerConfiguration();
         /// <summary>
         /// 
         /// </summary>
@@ -85,6 +88,8 @@ namespace Deepgram
             Authorizations = authorizations ?? new global::System.Collections.Generic.List<global::Deepgram.EndPointAuthorization>();
             Options = options ?? new global::Deepgram.AutoSDKClientOptions();
             _disposeHttpClient = disposeHttpClient;
+
+            AutoSDKServerConfiguration.ExplicitBaseUri = baseUri ?? httpClient?.BaseAddress;
 
             Initialized(HttpClient);
         }

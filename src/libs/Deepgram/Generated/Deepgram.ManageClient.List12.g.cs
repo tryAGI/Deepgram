@@ -140,7 +140,7 @@ namespace Deepgram
             {
                             var __pathBuilder = new global::Deepgram.PathBuilder(
                                 path: $"/v1/projects/{projectId}/requests",
-                                baseUri: HttpClient.BaseAddress); 
+                                baseUri: HttpClient.BaseAddress ?? new global::System.Uri("https://api.deepgram.com/", global::System.UriKind.RelativeOrAbsolute)); 
                             __pathBuilder
                                 .AddOptionalParameter("start", start?.ToString("yyyy-MM-ddTHH:mm:ssZ"))
                                 .AddOptionalParameter("end", end?.ToString("yyyy-MM-ddTHH:mm:ssZ"))
