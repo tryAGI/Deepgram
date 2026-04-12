@@ -9,10 +9,8 @@ namespace Deepgram
     public sealed partial class SpeakV1Request
     {
         /// <summary>
-        /// The text content to be converted to speech<br/>
-        /// Example: Hello, welcome to Deepgram!
+        /// The text content to be converted to speech
         /// </summary>
-        /// <example>Hello, welcome to Deepgram!</example>
         [global::System.Text.Json.Serialization.JsonPropertyName("text")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string Text { get; set; }
@@ -27,8 +25,7 @@ namespace Deepgram
         /// Initializes a new instance of the <see cref="SpeakV1Request" /> class.
         /// </summary>
         /// <param name="text">
-        /// The text content to be converted to speech<br/>
-        /// Example: Hello, welcome to Deepgram!
+        /// The text content to be converted to speech
         /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]

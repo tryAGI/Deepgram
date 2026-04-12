@@ -4,8 +4,7 @@
 namespace Deepgram
 {
     /// <summary>
-    /// Map of line item names to human-readable descriptions for the time period<br/>
-    /// Example: {"streaming::nova-3":"Nova - 3 (Stream)","sync::aura-2":"Aura -2 (Sync)"}
+    /// Map of line item names to human-readable descriptions for the time period
     /// </summary>
     public sealed partial class ListBillingFieldsV1ResponseLineItems
     {

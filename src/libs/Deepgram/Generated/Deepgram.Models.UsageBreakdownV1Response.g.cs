@@ -9,19 +9,15 @@ namespace Deepgram
     public sealed partial class UsageBreakdownV1Response
     {
         /// <summary>
-        /// Start date of the usage period<br/>
-        /// Example: 2025-01-16
+        /// Start date of the usage period
         /// </summary>
-        /// <example>2025-01-16</example>
         [global::System.Text.Json.Serialization.JsonPropertyName("start")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required global::System.DateTime Start { get; set; }
 
         /// <summary>
-        /// End date of the usage period<br/>
-        /// Example: 2025-01-23
+        /// End date of the usage period
         /// </summary>
-        /// <example>2025-01-23</example>
         [global::System.Text.Json.Serialization.JsonPropertyName("end")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required global::System.DateTime End { get; set; }
@@ -38,7 +34,7 @@ namespace Deepgram
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("results")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::System.Collections.Generic.IList<global::Deepgram.UsageBreakdownV1ResponseResult> Results { get; set; }
+        public required global::System.Collections.Generic.IList<global::Deepgram.UsageBreakdownV1ResponseResultsItems> Results { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -50,12 +46,10 @@ namespace Deepgram
         /// Initializes a new instance of the <see cref="UsageBreakdownV1Response" /> class.
         /// </summary>
         /// <param name="start">
-        /// Start date of the usage period<br/>
-        /// Example: 2025-01-16
+        /// Start date of the usage period
         /// </param>
         /// <param name="end">
-        /// End date of the usage period<br/>
-        /// Example: 2025-01-23
+        /// End date of the usage period
         /// </param>
         /// <param name="resolution"></param>
         /// <param name="results"></param>
@@ -66,7 +60,7 @@ namespace Deepgram
             global::System.DateTime start,
             global::System.DateTime end,
             global::Deepgram.UsageBreakdownV1ResponseResolution resolution,
-            global::System.Collections.Generic.IList<global::Deepgram.UsageBreakdownV1ResponseResult> results)
+            global::System.Collections.Generic.IList<global::Deepgram.UsageBreakdownV1ResponseResultsItems> results)
         {
             this.Start = start;
             this.End = end;

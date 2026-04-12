@@ -42,7 +42,7 @@ namespace Deepgram
         /// The response of the request
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("response")]
-        public object? Response { get; set; }
+        public global::Deepgram.ProjectRequestResponseResponse? Response { get; set; }
 
         /// <summary>
         /// The response code of the request
@@ -107,7 +107,7 @@ namespace Deepgram
             global::System.DateTime? created,
             string? path,
             string? apiKeyId,
-            object? response,
+            global::Deepgram.ProjectRequestResponseResponse? response,
             double? code,
             string? deployment,
             string? callback)

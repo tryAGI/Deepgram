@@ -4,7 +4,7 @@
 namespace Deepgram.Realtime
 {
     /// <summary>
-    /// Arbitrary key-value pairs that are attached to the API response for usage in downstream processing
+    /// Any type
     /// </summary>
     public sealed partial class ListenV1Extra
     {

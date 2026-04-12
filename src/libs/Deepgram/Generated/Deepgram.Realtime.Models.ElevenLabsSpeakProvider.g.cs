@@ -1,6 +1,4 @@
 
-#pragma warning disable CS0618 // Type or member is obsolete
-
 #nullable enable
 
 namespace Deepgram.Realtime
@@ -13,9 +11,9 @@ namespace Deepgram.Realtime
         /// <summary>
         /// 
         /// </summary>
-        /// <default>"eleven_labs"</default>
         [global::System.Text.Json.Serialization.JsonPropertyName("type")]
-        public string Type { get; set; } = "eleven_labs";
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Deepgram.Realtime.JsonConverters.ElevenLabsSpeakProviderTypeJsonConverter))]
+        public global::Deepgram.Realtime.ElevenLabsSpeakProviderType Type { get; set; }
 
         /// <summary>
         /// The REST API version for the ElevenLabs text-to-speech API
@@ -42,7 +40,6 @@ namespace Deepgram.Realtime
         /// Use the `language` field instead.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("language_code")]
-        [global::System.Obsolete("This property marked as deprecated.")]
         public string? LanguageCode { get; set; }
 
         /// <summary>
@@ -57,26 +54,31 @@ namespace Deepgram.Realtime
         /// <param name="modelId">
         /// Eleven Labs model ID
         /// </param>
+        /// <param name="type"></param>
         /// <param name="version">
         /// The REST API version for the ElevenLabs text-to-speech API
         /// </param>
         /// <param name="language">
         /// Optional language to use, e.g. 'en-US'. Corresponds to the `language_code` parameter in the ElevenLabs API
         /// </param>
-        /// <param name="type"></param>
+        /// <param name="languageCode">
+        /// Use the `language` field instead.
+        /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public ElevenLabsSpeakProvider(
             global::Deepgram.Realtime.ElevenLabsSpeakProviderModelId modelId,
+            global::Deepgram.Realtime.ElevenLabsSpeakProviderType type,
             global::Deepgram.Realtime.ElevenLabsSpeakProviderVersion? version,
             string? language,
-            string type = "eleven_labs")
+            string? languageCode)
         {
             this.Type = type;
             this.Version = version;
             this.ModelId = modelId;
             this.Language = language;
+            this.LanguageCode = languageCode;
         }
 
         /// <summary>

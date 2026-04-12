@@ -13,7 +13,7 @@ namespace Deepgram
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("models")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::System.Collections.Generic.IList<global::Deepgram.OneOf<global::Deepgram.AgentThinkModelsV1ResponseModelVariant1, global::Deepgram.AgentThinkModelsV1ResponseModelVariant2, global::Deepgram.AgentThinkModelsV1ResponseModelVariant3, global::Deepgram.AgentThinkModelsV1ResponseModelVariant4, global::Deepgram.AgentThinkModelsV1ResponseModelVariant5>> Models { get; set; }
+        public required global::System.Collections.Generic.IList<global::Deepgram.AgentThinkModelsV1ResponseModelsItems> Models { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -29,7 +29,7 @@ namespace Deepgram
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public AgentThinkModelsV1Response(
-            global::System.Collections.Generic.IList<global::Deepgram.OneOf<global::Deepgram.AgentThinkModelsV1ResponseModelVariant1, global::Deepgram.AgentThinkModelsV1ResponseModelVariant2, global::Deepgram.AgentThinkModelsV1ResponseModelVariant3, global::Deepgram.AgentThinkModelsV1ResponseModelVariant4, global::Deepgram.AgentThinkModelsV1ResponseModelVariant5>> models)
+            global::System.Collections.Generic.IList<global::Deepgram.AgentThinkModelsV1ResponseModelsItems> models)
         {
             this.Models = models ?? throw new global::System.ArgumentNullException(nameof(models));
         }

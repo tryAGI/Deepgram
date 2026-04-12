@@ -4,7 +4,7 @@
 namespace Deepgram.Realtime
 {
     /// <summary>
-    /// Indicates how long Deepgram will wait to send an UtteranceEnd message after a word has been transcribed. Use with interim_results
+    /// Any type
     /// </summary>
     public sealed partial class ListenV1UtteranceEndMs
     {

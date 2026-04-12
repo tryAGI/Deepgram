@@ -30,35 +30,35 @@ namespace Deepgram
         /// 
         /// </summary>
 #if NET6_0_OR_GREATER
-        public global::Deepgram.ErrorResponseLegacyError? Legacy { get; init; }
+        public global::Deepgram.ErrorResponseLegacyError? ErrorResponseLegacyError { get; init; }
 #else
-        public global::Deepgram.ErrorResponseLegacyError? Legacy { get; }
+        public global::Deepgram.ErrorResponseLegacyError? ErrorResponseLegacyError { get; }
 #endif
 
         /// <summary>
         /// 
         /// </summary>
 #if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Legacy))]
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(ErrorResponseLegacyError))]
 #endif
-        public bool IsLegacy => Legacy != null;
+        public bool IsErrorResponseLegacyError => ErrorResponseLegacyError != null;
 
         /// <summary>
         /// 
         /// </summary>
 #if NET6_0_OR_GREATER
-        public global::Deepgram.ErrorResponseModernError? Modern { get; init; }
+        public global::Deepgram.ErrorResponseModernError? ErrorResponseModernError { get; init; }
 #else
-        public global::Deepgram.ErrorResponseModernError? Modern { get; }
+        public global::Deepgram.ErrorResponseModernError? ErrorResponseModernError { get; }
 #endif
 
         /// <summary>
         /// 
         /// </summary>
 #if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Modern))]
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(ErrorResponseModernError))]
 #endif
-        public bool IsModern => Modern != null;
+        public bool IsErrorResponseModernError => ErrorResponseModernError != null;
         /// <summary>
         /// 
         /// </summary>
@@ -85,14 +85,14 @@ namespace Deepgram
         /// <summary>
         /// 
         /// </summary>
-        public static implicit operator global::Deepgram.ErrorResponseLegacyError?(ErrorResponse @this) => @this.Legacy;
+        public static implicit operator global::Deepgram.ErrorResponseLegacyError?(ErrorResponse @this) => @this.ErrorResponseLegacyError;
 
         /// <summary>
         /// 
         /// </summary>
         public ErrorResponse(global::Deepgram.ErrorResponseLegacyError? value)
         {
-            Legacy = value;
+            ErrorResponseLegacyError = value;
         }
 
         /// <summary>
@@ -103,14 +103,14 @@ namespace Deepgram
         /// <summary>
         /// 
         /// </summary>
-        public static implicit operator global::Deepgram.ErrorResponseModernError?(ErrorResponse @this) => @this.Modern;
+        public static implicit operator global::Deepgram.ErrorResponseModernError?(ErrorResponse @this) => @this.ErrorResponseModernError;
 
         /// <summary>
         /// 
         /// </summary>
         public ErrorResponse(global::Deepgram.ErrorResponseModernError? value)
         {
-            Modern = value;
+            ErrorResponseModernError = value;
         }
 
         /// <summary>
@@ -118,21 +118,21 @@ namespace Deepgram
         /// </summary>
         public ErrorResponse(
             global::Deepgram.ErrorResponseTextError? text,
-            global::Deepgram.ErrorResponseLegacyError? legacy,
-            global::Deepgram.ErrorResponseModernError? modern
+            global::Deepgram.ErrorResponseLegacyError? errorResponseLegacyError,
+            global::Deepgram.ErrorResponseModernError? errorResponseModernError
             )
         {
             Text = text;
-            Legacy = legacy;
-            Modern = modern;
+            ErrorResponseLegacyError = errorResponseLegacyError;
+            ErrorResponseModernError = errorResponseModernError;
         }
 
         /// <summary>
         /// 
         /// </summary>
         public object? Object =>
-            Modern as object ??
-            Legacy as object ??
+            ErrorResponseModernError as object ??
+            ErrorResponseLegacyError as object ??
             Text as object 
             ;
 
@@ -141,8 +141,8 @@ namespace Deepgram
         /// </summary>
         public override string? ToString() =>
             Text?.ToString() ??
-            Legacy?.ToString() ??
-            Modern?.ToString() 
+            ErrorResponseLegacyError?.ToString() ??
+            ErrorResponseModernError?.ToString() 
             ;
 
         /// <summary>
@@ -150,7 +150,7 @@ namespace Deepgram
         /// </summary>
         public bool Validate()
         {
-            return IsText && !IsLegacy && !IsModern || !IsText && IsLegacy && !IsModern || !IsText && !IsLegacy && IsModern;
+            return IsText && !IsErrorResponseLegacyError && !IsErrorResponseModernError || !IsText && IsErrorResponseLegacyError && !IsErrorResponseModernError || !IsText && !IsErrorResponseLegacyError && IsErrorResponseModernError;
         }
 
         /// <summary>
@@ -158,8 +158,8 @@ namespace Deepgram
         /// </summary>
         public TResult? Match<TResult>(
             global::System.Func<global::Deepgram.ErrorResponseTextError?, TResult>? text = null,
-            global::System.Func<global::Deepgram.ErrorResponseLegacyError?, TResult>? legacy = null,
-            global::System.Func<global::Deepgram.ErrorResponseModernError?, TResult>? modern = null,
+            global::System.Func<global::Deepgram.ErrorResponseLegacyError?, TResult>? errorResponseLegacyError = null,
+            global::System.Func<global::Deepgram.ErrorResponseModernError?, TResult>? errorResponseModernError = null,
             bool validate = true)
         {
             if (validate)
@@ -171,13 +171,13 @@ namespace Deepgram
             {
                 return text(Text!);
             }
-            else if (IsLegacy && legacy != null)
+            else if (IsErrorResponseLegacyError && errorResponseLegacyError != null)
             {
-                return legacy(Legacy!);
+                return errorResponseLegacyError(ErrorResponseLegacyError!);
             }
-            else if (IsModern && modern != null)
+            else if (IsErrorResponseModernError && errorResponseModernError != null)
             {
-                return modern(Modern!);
+                return errorResponseModernError(ErrorResponseModernError!);
             }
 
             return default(TResult);
@@ -188,8 +188,8 @@ namespace Deepgram
         /// </summary>
         public void Match(
             global::System.Action<global::Deepgram.ErrorResponseTextError?>? text = null,
-            global::System.Action<global::Deepgram.ErrorResponseLegacyError?>? legacy = null,
-            global::System.Action<global::Deepgram.ErrorResponseModernError?>? modern = null,
+            global::System.Action<global::Deepgram.ErrorResponseLegacyError?>? errorResponseLegacyError = null,
+            global::System.Action<global::Deepgram.ErrorResponseModernError?>? errorResponseModernError = null,
             bool validate = true)
         {
             if (validate)
@@ -201,13 +201,13 @@ namespace Deepgram
             {
                 text?.Invoke(Text!);
             }
-            else if (IsLegacy)
+            else if (IsErrorResponseLegacyError)
             {
-                legacy?.Invoke(Legacy!);
+                errorResponseLegacyError?.Invoke(ErrorResponseLegacyError!);
             }
-            else if (IsModern)
+            else if (IsErrorResponseModernError)
             {
-                modern?.Invoke(Modern!);
+                errorResponseModernError?.Invoke(ErrorResponseModernError!);
             }
         }
 
@@ -220,9 +220,9 @@ namespace Deepgram
             {
                 Text,
                 typeof(global::Deepgram.ErrorResponseTextError),
-                Legacy,
+                ErrorResponseLegacyError,
                 typeof(global::Deepgram.ErrorResponseLegacyError),
-                Modern,
+                ErrorResponseModernError,
                 typeof(global::Deepgram.ErrorResponseModernError),
             };
             const int offset = unchecked((int)2166136261);
@@ -241,8 +241,8 @@ namespace Deepgram
         {
             return
                 global::System.Collections.Generic.EqualityComparer<global::Deepgram.ErrorResponseTextError?>.Default.Equals(Text, other.Text) &&
-                global::System.Collections.Generic.EqualityComparer<global::Deepgram.ErrorResponseLegacyError?>.Default.Equals(Legacy, other.Legacy) &&
-                global::System.Collections.Generic.EqualityComparer<global::Deepgram.ErrorResponseModernError?>.Default.Equals(Modern, other.Modern) 
+                global::System.Collections.Generic.EqualityComparer<global::Deepgram.ErrorResponseLegacyError?>.Default.Equals(ErrorResponseLegacyError, other.ErrorResponseLegacyError) &&
+                global::System.Collections.Generic.EqualityComparer<global::Deepgram.ErrorResponseModernError?>.Default.Equals(ErrorResponseModernError, other.ErrorResponseModernError) 
                 ;
         }
 

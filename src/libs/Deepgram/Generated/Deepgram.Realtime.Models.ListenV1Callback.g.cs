@@ -4,7 +4,7 @@
 namespace Deepgram.Realtime
 {
     /// <summary>
-    /// URL to which we'll make the callback request
+    /// Any type
     /// </summary>
     public sealed partial class ListenV1Callback
     {

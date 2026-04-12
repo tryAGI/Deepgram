@@ -12,9 +12,9 @@ namespace Deepgram.Realtime
         /// 
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("provider")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Deepgram.Realtime.JsonConverters.OneOfJsonConverter<global::Deepgram.Realtime.OpenAiThinkProvider, global::Deepgram.Realtime.AwsBedrockThinkProvider, global::Deepgram.Realtime.AnthropicThinkProvider, global::Deepgram.Realtime.GoogleThinkProvider, global::Deepgram.Realtime.GroqThinkProvider>))]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Deepgram.Realtime.JsonConverters.ThinkSettingsV1ProviderJsonConverter))]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Deepgram.Realtime.OneOf<global::Deepgram.Realtime.OpenAiThinkProvider, global::Deepgram.Realtime.AwsBedrockThinkProvider, global::Deepgram.Realtime.AnthropicThinkProvider, global::Deepgram.Realtime.GoogleThinkProvider, global::Deepgram.Realtime.GroqThinkProvider> Provider { get; set; }
+        public required global::Deepgram.Realtime.ThinkSettingsV1Provider Provider { get; set; }
 
         /// <summary>
         /// Optional for non-Deepgram LLM providers. When present, must include url field and headers object
@@ -26,7 +26,7 @@ namespace Deepgram.Realtime
         /// 
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("functions")]
-        public global::System.Collections.Generic.IList<global::Deepgram.Realtime.ThinkSettingsV1Function>? Functions { get; set; }
+        public global::System.Collections.Generic.IList<global::Deepgram.Realtime.ThinkSettingsV1FunctionsItems>? Functions { get; set; }
 
         /// <summary>
         /// 
@@ -38,8 +38,8 @@ namespace Deepgram.Realtime
         /// Specifies the number of characters retained in context between user messages, agent responses, and function calls. This setting is only configurable when a custom think endpoint is used
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("context_length")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Deepgram.Realtime.JsonConverters.OneOfJsonConverter<global::Deepgram.Realtime.ThinkSettingsV1ContextLength?, double?>))]
-        public global::Deepgram.Realtime.OneOf<global::Deepgram.Realtime.ThinkSettingsV1ContextLength?, double?>? ContextLength { get; set; }
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Deepgram.Realtime.JsonConverters.ThinkSettingsV1ContextLengthJsonConverter))]
+        public global::Deepgram.Realtime.ThinkSettingsV1ContextLength? ContextLength { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -63,11 +63,11 @@ namespace Deepgram.Realtime
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public ThinkSettingsV1(
-            global::Deepgram.Realtime.OneOf<global::Deepgram.Realtime.OpenAiThinkProvider, global::Deepgram.Realtime.AwsBedrockThinkProvider, global::Deepgram.Realtime.AnthropicThinkProvider, global::Deepgram.Realtime.GoogleThinkProvider, global::Deepgram.Realtime.GroqThinkProvider> provider,
+            global::Deepgram.Realtime.ThinkSettingsV1Provider provider,
             global::Deepgram.Realtime.ThinkSettingsV1Endpoint? endpoint,
-            global::System.Collections.Generic.IList<global::Deepgram.Realtime.ThinkSettingsV1Function>? functions,
+            global::System.Collections.Generic.IList<global::Deepgram.Realtime.ThinkSettingsV1FunctionsItems>? functions,
             string? prompt,
-            global::Deepgram.Realtime.OneOf<global::Deepgram.Realtime.ThinkSettingsV1ContextLength?, double?>? contextLength)
+            global::Deepgram.Realtime.ThinkSettingsV1ContextLength? contextLength)
         {
             this.Provider = provider;
             this.Endpoint = endpoint;

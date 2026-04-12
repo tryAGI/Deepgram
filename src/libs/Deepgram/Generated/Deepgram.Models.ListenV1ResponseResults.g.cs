@@ -13,13 +13,13 @@ namespace Deepgram
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("channels")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::System.Collections.Generic.IList<global::Deepgram.ListenV1ResponseResultsChannel> Channels { get; set; }
+        public required global::System.Collections.Generic.IList<global::Deepgram.ListenV1ResponseResultsChannelsItems> Channels { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("utterances")]
-        public global::System.Collections.Generic.IList<global::Deepgram.ListenV1ResponseResultsUtterance>? Utterances { get; set; }
+        public global::System.Collections.Generic.IList<global::Deepgram.ListenV1ResponseResultsUtterancesItems>? Utterances { get; set; }
 
         /// <summary>
         /// 
@@ -70,8 +70,8 @@ namespace Deepgram
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public ListenV1ResponseResults(
-            global::System.Collections.Generic.IList<global::Deepgram.ListenV1ResponseResultsChannel> channels,
-            global::System.Collections.Generic.IList<global::Deepgram.ListenV1ResponseResultsUtterance>? utterances,
+            global::System.Collections.Generic.IList<global::Deepgram.ListenV1ResponseResultsChannelsItems> channels,
+            global::System.Collections.Generic.IList<global::Deepgram.ListenV1ResponseResultsUtterancesItems>? utterances,
             global::Deepgram.ListenV1ResponseResultsSummary? summary,
             global::Deepgram.SharedTopics? topics,
             global::Deepgram.SharedIntents? intents,

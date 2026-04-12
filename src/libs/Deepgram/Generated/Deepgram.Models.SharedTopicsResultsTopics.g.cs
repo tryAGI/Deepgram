@@ -12,7 +12,7 @@ namespace Deepgram
         /// 
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("segments")]
-        public global::System.Collections.Generic.IList<global::Deepgram.SharedTopicsResultsTopicsSegment>? Segments { get; set; }
+        public global::System.Collections.Generic.IList<global::Deepgram.SharedTopicsResultsTopicsSegmentsItems>? Segments { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -28,7 +28,7 @@ namespace Deepgram
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public SharedTopicsResultsTopics(
-            global::System.Collections.Generic.IList<global::Deepgram.SharedTopicsResultsTopicsSegment>? segments)
+            global::System.Collections.Generic.IList<global::Deepgram.SharedTopicsResultsTopicsSegmentsItems>? segments)
         {
             this.Segments = segments;
         }

@@ -4,9 +4,7 @@
 namespace Deepgram.Realtime
 {
     /// <summary>
-    /// End-of-turn confidence required to finish a turn. Valid Values 0.5 -<br/>
-    /// 0.9.<br/>
-    /// Default Value: 0.7
+    /// Any type
     /// </summary>
     public sealed partial class ListenV2EotThreshold
     {

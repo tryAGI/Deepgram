@@ -4,8 +4,7 @@
 namespace Deepgram.Realtime
 {
     /// <summary>
-    /// Label your requests for the purpose of identification during usage<br/>
-    /// reporting
+    /// Any type
     /// </summary>
     public sealed partial class ListenV2Tag
     {

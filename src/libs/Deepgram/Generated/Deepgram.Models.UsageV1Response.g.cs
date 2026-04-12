@@ -9,16 +9,14 @@ namespace Deepgram
     public sealed partial class UsageV1Response
     {
         /// <summary>
-        /// Example: 2024-10-16
+        /// 
         /// </summary>
-        /// <example>2024-10-16</example>
         [global::System.Text.Json.Serialization.JsonPropertyName("start")]
         public global::System.DateTime? Start { get; set; }
 
         /// <summary>
-        /// Example: 2024-10-23
+        /// 
         /// </summary>
-        /// <example>2024-10-23</example>
         [global::System.Text.Json.Serialization.JsonPropertyName("end")]
         public global::System.DateTime? End { get; set; }
 
@@ -37,12 +35,8 @@ namespace Deepgram
         /// <summary>
         /// Initializes a new instance of the <see cref="UsageV1Response" /> class.
         /// </summary>
-        /// <param name="start">
-        /// Example: 2024-10-16
-        /// </param>
-        /// <param name="end">
-        /// Example: 2024-10-23
-        /// </param>
+        /// <param name="start"></param>
+        /// <param name="end"></param>
         /// <param name="resolution"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]

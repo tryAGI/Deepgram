@@ -44,8 +44,8 @@ namespace Deepgram.JsonConverters
             if (__score2 > __bestScore) { __bestScore = __score2; __bestIndex = 2; }
 
             global::Deepgram.ErrorResponseTextError? text = default;
-            global::Deepgram.ErrorResponseLegacyError? legacy = default;
-            global::Deepgram.ErrorResponseModernError? modern = default;
+            global::Deepgram.ErrorResponseLegacyError? errorResponseLegacyError = default;
+            global::Deepgram.ErrorResponseModernError? errorResponseModernError = default;
             if (__bestIndex >= 0)
             {
                 if (__bestIndex == 0)
@@ -69,7 +69,7 @@ namespace Deepgram.JsonConverters
                     {
                         var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Deepgram.ErrorResponseLegacyError), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Deepgram.ErrorResponseLegacyError> ??
                                        throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Deepgram.ErrorResponseLegacyError).Name}");
-                        legacy = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
+                        errorResponseLegacyError = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
                     }
                     catch (global::System.Text.Json.JsonException)
                     {
@@ -84,7 +84,7 @@ namespace Deepgram.JsonConverters
                     {
                         var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Deepgram.ErrorResponseModernError), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Deepgram.ErrorResponseModernError> ??
                                        throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Deepgram.ErrorResponseModernError).Name}");
-                        modern = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
+                        errorResponseModernError = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
                     }
                     catch (global::System.Text.Json.JsonException)
                     {
@@ -95,7 +95,7 @@ namespace Deepgram.JsonConverters
                 }
             }
 
-            if (text == null && legacy == null && modern == null)
+            if (text == null && errorResponseLegacyError == null && errorResponseModernError == null)
             {
                 try
                 {
@@ -114,7 +114,7 @@ namespace Deepgram.JsonConverters
                 {
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Deepgram.ErrorResponseLegacyError), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Deepgram.ErrorResponseLegacyError> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Deepgram.ErrorResponseLegacyError).Name}");
-                    legacy = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
+                    errorResponseLegacyError = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
                 }
                 catch (global::System.Text.Json.JsonException)
                 {
@@ -127,7 +127,7 @@ namespace Deepgram.JsonConverters
                 {
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Deepgram.ErrorResponseModernError), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Deepgram.ErrorResponseModernError> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Deepgram.ErrorResponseModernError).Name}");
-                    modern = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
+                    errorResponseModernError = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
                 }
                 catch (global::System.Text.Json.JsonException)
                 {
@@ -140,9 +140,9 @@ namespace Deepgram.JsonConverters
             var __value = new global::Deepgram.ErrorResponse(
                 text,
 
-                legacy,
+                errorResponseLegacyError,
 
-                modern
+                errorResponseModernError
                 );
 
             return __value;
@@ -163,17 +163,17 @@ namespace Deepgram.JsonConverters
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Deepgram.ErrorResponseTextError).Name}");
                 global::System.Text.Json.JsonSerializer.Serialize(writer, value.Text!, typeInfo);
             }
-            else if (value.IsLegacy)
+            else if (value.IsErrorResponseLegacyError)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Deepgram.ErrorResponseLegacyError), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Deepgram.ErrorResponseLegacyError?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Deepgram.ErrorResponseLegacyError).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.Legacy!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.ErrorResponseLegacyError!, typeInfo);
             }
-            else if (value.IsModern)
+            else if (value.IsErrorResponseModernError)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Deepgram.ErrorResponseModernError), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Deepgram.ErrorResponseModernError?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Deepgram.ErrorResponseModernError).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.Modern!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.ErrorResponseModernError!, typeInfo);
             }
         }
     }

@@ -12,6 +12,10 @@ namespace Deepgram.Realtime
         /// 
         /// </summary>
         FluxGeneralEn,
+        /// <summary>
+        /// 
+        /// </summary>
+        FluxGeneralMulti,
     }
 
     /// <summary>
@@ -27,6 +31,7 @@ namespace Deepgram.Realtime
             return value switch
             {
                 ListenV2Model.FluxGeneralEn => "flux-general-en",
+                ListenV2Model.FluxGeneralMulti => "flux-general-multi",
                 _ => throw new global::System.ArgumentOutOfRangeException(nameof(value), value, null),
             };
         }
@@ -38,6 +43,7 @@ namespace Deepgram.Realtime
             return value switch
             {
                 "flux-general-en" => ListenV2Model.FluxGeneralEn,
+                "flux-general-multi" => ListenV2Model.FluxGeneralMulti,
                 _ => null,
             };
         }

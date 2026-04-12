@@ -11,9 +11,9 @@ namespace Deepgram.Realtime
         /// <summary>
         /// 
         /// </summary>
-        /// <default>"anthropic"</default>
         [global::System.Text.Json.Serialization.JsonPropertyName("type")]
-        public string Type { get; set; } = "anthropic";
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Deepgram.Realtime.JsonConverters.AnthropicThinkProviderTypeJsonConverter))]
+        public global::Deepgram.Realtime.AnthropicThinkProviderType Type { get; set; }
 
         /// <summary>
         /// The REST API version for the Anthropic Messages API
@@ -48,21 +48,21 @@ namespace Deepgram.Realtime
         /// <param name="model">
         /// Anthropic model to use
         /// </param>
+        /// <param name="type"></param>
         /// <param name="version">
         /// The REST API version for the Anthropic Messages API
         /// </param>
         /// <param name="temperature">
         /// Anthropic temperature (0-1)
         /// </param>
-        /// <param name="type"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public AnthropicThinkProvider(
             global::Deepgram.Realtime.AnthropicThinkProviderModel model,
+            global::Deepgram.Realtime.AnthropicThinkProviderType type,
             global::Deepgram.Realtime.AnthropicThinkProviderVersion? version,
-            double? temperature,
-            string type = "anthropic")
+            double? temperature)
         {
             this.Type = type;
             this.Version = version;

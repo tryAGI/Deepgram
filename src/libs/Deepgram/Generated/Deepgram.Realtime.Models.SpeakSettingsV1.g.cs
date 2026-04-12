@@ -12,9 +12,9 @@ namespace Deepgram.Realtime
         /// 
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("provider")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Deepgram.Realtime.JsonConverters.OneOfJsonConverter<global::Deepgram.Realtime.DeepgramSpeakProvider, global::Deepgram.Realtime.ElevenLabsSpeakProvider, global::Deepgram.Realtime.CartesiaSpeakProvider, global::Deepgram.Realtime.OpenAiSpeakProvider, global::Deepgram.Realtime.AwsPollySpeakProvider>))]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Deepgram.Realtime.JsonConverters.SpeakSettingsV1ProviderJsonConverter))]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Deepgram.Realtime.OneOf<global::Deepgram.Realtime.DeepgramSpeakProvider, global::Deepgram.Realtime.ElevenLabsSpeakProvider, global::Deepgram.Realtime.CartesiaSpeakProvider, global::Deepgram.Realtime.OpenAiSpeakProvider, global::Deepgram.Realtime.AwsPollySpeakProvider> Provider { get; set; }
+        public required global::Deepgram.Realtime.SpeakSettingsV1Provider Provider { get; set; }
 
         /// <summary>
         /// Optional if provider is Deepgram. Required for non-Deepgram TTS providers.<br/>
@@ -41,7 +41,7 @@ namespace Deepgram.Realtime
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public SpeakSettingsV1(
-            global::Deepgram.Realtime.OneOf<global::Deepgram.Realtime.DeepgramSpeakProvider, global::Deepgram.Realtime.ElevenLabsSpeakProvider, global::Deepgram.Realtime.CartesiaSpeakProvider, global::Deepgram.Realtime.OpenAiSpeakProvider, global::Deepgram.Realtime.AwsPollySpeakProvider> provider,
+            global::Deepgram.Realtime.SpeakSettingsV1Provider provider,
             global::Deepgram.Realtime.SpeakSettingsV1Endpoint? endpoint)
         {
             this.Provider = provider;
