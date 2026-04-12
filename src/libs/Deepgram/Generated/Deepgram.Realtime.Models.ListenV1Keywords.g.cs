@@ -4,7 +4,7 @@
 namespace Deepgram.Realtime
 {
     /// <summary>
-    /// Keywords can boost or suppress specialized terminology and brands
+    /// Any type
     /// </summary>
     public sealed partial class ListenV1Keywords
     {

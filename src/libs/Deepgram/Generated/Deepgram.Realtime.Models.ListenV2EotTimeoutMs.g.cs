@@ -4,9 +4,7 @@
 namespace Deepgram.Realtime
 {
     /// <summary>
-    /// A turn will be finished when this much time has passed after speech,<br/>
-    /// regardless of EOT confidence.<br/>
-    /// Default Value: 5000
+    /// Any type
     /// </summary>
     public sealed partial class ListenV2EotTimeoutMs
     {

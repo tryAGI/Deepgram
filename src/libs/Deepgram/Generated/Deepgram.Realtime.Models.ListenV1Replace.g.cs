@@ -4,7 +4,7 @@
 namespace Deepgram.Realtime
 {
     /// <summary>
-    /// Search for terms or phrases in submitted audio and replaces them
+    /// Any type
     /// </summary>
     public sealed partial class ListenV1Replace
     {

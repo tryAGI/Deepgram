@@ -11,9 +11,9 @@ namespace Deepgram.Realtime
         /// <summary>
         /// 
         /// </summary>
-        /// <default>"cartesia"</default>
         [global::System.Text.Json.Serialization.JsonPropertyName("type")]
-        public string Type { get; set; } = "cartesia";
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Deepgram.Realtime.JsonConverters.CartesiaSpeakProviderTypeJsonConverter))]
+        public global::Deepgram.Realtime.CartesiaSpeakProviderType Type { get; set; }
 
         /// <summary>
         /// The API version header for the Cartesia text-to-speech API
@@ -44,6 +44,12 @@ namespace Deepgram.Realtime
         public string? Language { get; set; }
 
         /// <summary>
+        /// Volume level for Cartesia TTS output. Valid range: 0.5 to 2.0. See [Cartesia documentation](https://docs.cartesia.ai/build-with-cartesia/sonic-3/volume-speed-emotion#volume-speed-and-emotion).
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("volume")]
+        public double? Volume { get; set; }
+
+        /// <summary>
         /// Additional properties that are not explicitly defined in the schema
         /// </summary>
         [global::System.Text.Json.Serialization.JsonExtensionData]
@@ -56,28 +62,33 @@ namespace Deepgram.Realtime
         /// Cartesia model ID
         /// </param>
         /// <param name="voice"></param>
+        /// <param name="type"></param>
         /// <param name="version">
         /// The API version header for the Cartesia text-to-speech API
         /// </param>
         /// <param name="language">
         /// Cartesia language code
         /// </param>
-        /// <param name="type"></param>
+        /// <param name="volume">
+        /// Volume level for Cartesia TTS output. Valid range: 0.5 to 2.0. See [Cartesia documentation](https://docs.cartesia.ai/build-with-cartesia/sonic-3/volume-speed-emotion#volume-speed-and-emotion).
+        /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public CartesiaSpeakProvider(
             global::Deepgram.Realtime.CartesiaSpeakProviderModelId modelId,
             global::Deepgram.Realtime.CartesiaSpeakProviderVoice voice,
+            global::Deepgram.Realtime.CartesiaSpeakProviderType type,
             global::Deepgram.Realtime.CartesiaSpeakProviderVersion? version,
             string? language,
-            string type = "cartesia")
+            double? volume)
         {
             this.Type = type;
             this.Version = version;
             this.ModelId = modelId;
             this.Voice = voice ?? throw new global::System.ArgumentNullException(nameof(voice));
             this.Language = language;
+            this.Volume = volume;
         }
 
         /// <summary>

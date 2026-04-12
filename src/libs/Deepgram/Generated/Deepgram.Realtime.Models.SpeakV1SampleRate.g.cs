@@ -12,23 +12,23 @@ namespace Deepgram.Realtime
         /// <summary>
         /// 
         /// </summary>
-        SixteenThousand,
+        x16000,
         /// <summary>
         /// 
         /// </summary>
-        TwentyFourThousand,
+        x24000,
         /// <summary>
         /// 
         /// </summary>
-        ThirtyTwoThousand,
+        x32000,
         /// <summary>
         /// 
         /// </summary>
-        FortyEightThousand,
+        x48000,
         /// <summary>
         /// 
         /// </summary>
-        EightThousand,
+        x8000,
     }
 
     /// <summary>
@@ -43,11 +43,11 @@ namespace Deepgram.Realtime
         {
             return value switch
             {
-                SpeakV1SampleRate.SixteenThousand => "16000",
-                SpeakV1SampleRate.TwentyFourThousand => "24000",
-                SpeakV1SampleRate.ThirtyTwoThousand => "32000",
-                SpeakV1SampleRate.FortyEightThousand => "48000",
-                SpeakV1SampleRate.EightThousand => "8000",
+                SpeakV1SampleRate.x16000 => "16000",
+                SpeakV1SampleRate.x24000 => "24000",
+                SpeakV1SampleRate.x32000 => "32000",
+                SpeakV1SampleRate.x48000 => "48000",
+                SpeakV1SampleRate.x8000 => "8000",
                 _ => throw new global::System.ArgumentOutOfRangeException(nameof(value), value, null),
             };
         }
@@ -58,11 +58,11 @@ namespace Deepgram.Realtime
         {
             return value switch
             {
-                "16000" => SpeakV1SampleRate.SixteenThousand,
-                "24000" => SpeakV1SampleRate.TwentyFourThousand,
-                "32000" => SpeakV1SampleRate.ThirtyTwoThousand,
-                "48000" => SpeakV1SampleRate.FortyEightThousand,
-                "8000" => SpeakV1SampleRate.EightThousand,
+                "16000" => SpeakV1SampleRate.x16000,
+                "24000" => SpeakV1SampleRate.x24000,
+                "32000" => SpeakV1SampleRate.x32000,
+                "48000" => SpeakV1SampleRate.x48000,
+                "8000" => SpeakV1SampleRate.x8000,
                 _ => null,
             };
         }

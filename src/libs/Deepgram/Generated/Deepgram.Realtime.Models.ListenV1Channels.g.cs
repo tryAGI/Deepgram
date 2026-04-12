@@ -4,8 +4,7 @@
 namespace Deepgram.Realtime
 {
     /// <summary>
-    /// The number of channels in the submitted audio<br/>
-    /// Default Value: 1
+    /// Any type
     /// </summary>
     public sealed partial class ListenV1Channels
     {

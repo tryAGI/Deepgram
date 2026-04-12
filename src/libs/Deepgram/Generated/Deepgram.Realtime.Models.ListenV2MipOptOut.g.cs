@@ -4,9 +4,7 @@
 namespace Deepgram.Realtime
 {
     /// <summary>
-    /// Opts out requests from the Deepgram Model Improvement Program. Refer<br/>
-    /// to our Docs for pricing impacts before setting this to true.<br/>
-    /// https://dpgr.am/deepgram-mip
+    /// Any type
     /// </summary>
     public sealed partial class ListenV2MipOptOut
     {

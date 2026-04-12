@@ -9,30 +9,26 @@ namespace Deepgram
     public sealed partial class GetProjectKeyV1ResponseItemMember
     {
         /// <summary>
-        /// Example: 1000-2000-3000-4000
+        /// 
         /// </summary>
-        /// <example>1000-2000-3000-4000</example>
         [global::System.Text.Json.Serialization.JsonPropertyName("member_id")]
         public string? MemberId { get; set; }
 
         /// <summary>
-        /// Example: john@test.com
+        /// 
         /// </summary>
-        /// <example>john@test.com</example>
         [global::System.Text.Json.Serialization.JsonPropertyName("email")]
         public string? Email { get; set; }
 
         /// <summary>
-        /// Example: John
+        /// 
         /// </summary>
-        /// <example>John</example>
         [global::System.Text.Json.Serialization.JsonPropertyName("first_name")]
         public string? FirstName { get; set; }
 
         /// <summary>
-        /// Example: Doe
+        /// 
         /// </summary>
-        /// <example>Doe</example>
         [global::System.Text.Json.Serialization.JsonPropertyName("last_name")]
         public string? LastName { get; set; }
 
@@ -51,18 +47,10 @@ namespace Deepgram
         /// <summary>
         /// Initializes a new instance of the <see cref="GetProjectKeyV1ResponseItemMember" /> class.
         /// </summary>
-        /// <param name="memberId">
-        /// Example: 1000-2000-3000-4000
-        /// </param>
-        /// <param name="email">
-        /// Example: john@test.com
-        /// </param>
-        /// <param name="firstName">
-        /// Example: John
-        /// </param>
-        /// <param name="lastName">
-        /// Example: Doe
-        /// </param>
+        /// <param name="memberId"></param>
+        /// <param name="email"></param>
+        /// <param name="firstName"></param>
+        /// <param name="lastName"></param>
         /// <param name="apiKey"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]

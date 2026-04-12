@@ -4,7 +4,7 @@
 namespace Deepgram
 {
     /// <summary>
-    /// Example: {"message":"Successfully updated project info."}
+    /// 
     /// </summary>
     public sealed partial class UpdateProjectV1Response
     {

@@ -11,9 +11,9 @@ namespace Deepgram.Realtime
         /// <summary>
         /// 
         /// </summary>
-        /// <default>"groq"</default>
         [global::System.Text.Json.Serialization.JsonPropertyName("type")]
-        public string Type { get; set; } = "groq";
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Deepgram.Realtime.JsonConverters.GroqThinkProviderTypeJsonConverter))]
+        public global::Deepgram.Realtime.GroqThinkProviderType Type { get; set; }
 
         /// <summary>
         /// The REST API version for the Groq's chat completions API (mostly OpenAI-compatible)
@@ -44,6 +44,7 @@ namespace Deepgram.Realtime
         /// <summary>
         /// Initializes a new instance of the <see cref="GroqThinkProvider" /> class.
         /// </summary>
+        /// <param name="type"></param>
         /// <param name="version">
         /// The REST API version for the Groq's chat completions API (mostly OpenAI-compatible)
         /// </param>
@@ -53,15 +54,14 @@ namespace Deepgram.Realtime
         /// <param name="temperature">
         /// Groq temperature (0-2)
         /// </param>
-        /// <param name="type"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public GroqThinkProvider(
+            global::Deepgram.Realtime.GroqThinkProviderType type,
             global::Deepgram.Realtime.GroqThinkProviderVersion? version,
             global::Deepgram.Realtime.GroqThinkProviderModel model,
-            double? temperature,
-            string type = "groq")
+            double? temperature)
         {
             this.Type = type;
             this.Version = version;

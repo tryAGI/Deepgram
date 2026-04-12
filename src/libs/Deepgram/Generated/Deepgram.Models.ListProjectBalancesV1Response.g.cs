@@ -12,7 +12,7 @@ namespace Deepgram
         /// 
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("balances")]
-        public global::System.Collections.Generic.IList<global::Deepgram.ListProjectBalancesV1ResponseBalance>? Balances { get; set; }
+        public global::System.Collections.Generic.IList<global::Deepgram.ListProjectBalancesV1ResponseBalancesItems>? Balances { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -28,7 +28,7 @@ namespace Deepgram
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public ListProjectBalancesV1Response(
-            global::System.Collections.Generic.IList<global::Deepgram.ListProjectBalancesV1ResponseBalance>? balances)
+            global::System.Collections.Generic.IList<global::Deepgram.ListProjectBalancesV1ResponseBalancesItems>? balances)
         {
             this.Balances = balances;
         }

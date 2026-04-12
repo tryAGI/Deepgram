@@ -11,9 +11,9 @@ namespace Deepgram.Realtime
         /// <summary>
         /// 
         /// </summary>
-        /// <default>"deepgram"</default>
         [global::System.Text.Json.Serialization.JsonPropertyName("type")]
-        public string Type { get; set; } = "deepgram";
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Deepgram.Realtime.JsonConverters.DeepgramSpeakProviderTypeJsonConverter))]
+        public global::Deepgram.Realtime.DeepgramSpeakProviderType Type { get; set; }
 
         /// <summary>
         /// The REST API version for the Deepgram text-to-speech API
@@ -31,6 +31,13 @@ namespace Deepgram.Realtime
         public required global::Deepgram.Realtime.DeepgramSpeakProviderModel Model { get; set; }
 
         /// <summary>
+        /// Speaking rate multiplier that adjusts the pace of generated speech while preserving natural prosody and voice quality. Not yet supported in all languages.<br/>
+        /// Default Value: 1
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("speed")]
+        public double? Speed { get; set; }
+
+        /// <summary>
         /// Additional properties that are not explicitly defined in the schema
         /// </summary>
         [global::System.Text.Json.Serialization.JsonExtensionData]
@@ -42,21 +49,27 @@ namespace Deepgram.Realtime
         /// <param name="model">
         /// Deepgram TTS model
         /// </param>
+        /// <param name="type"></param>
         /// <param name="version">
         /// The REST API version for the Deepgram text-to-speech API
         /// </param>
-        /// <param name="type"></param>
+        /// <param name="speed">
+        /// Speaking rate multiplier that adjusts the pace of generated speech while preserving natural prosody and voice quality. Not yet supported in all languages.<br/>
+        /// Default Value: 1
+        /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public DeepgramSpeakProvider(
             global::Deepgram.Realtime.DeepgramSpeakProviderModel model,
+            global::Deepgram.Realtime.DeepgramSpeakProviderType type,
             global::Deepgram.Realtime.DeepgramSpeakProviderVersion? version,
-            string type = "deepgram")
+            double? speed)
         {
             this.Type = type;
             this.Version = version;
             this.Model = model;
+            this.Speed = speed;
         }
 
         /// <summary>

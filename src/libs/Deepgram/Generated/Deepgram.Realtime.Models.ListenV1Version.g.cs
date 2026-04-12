@@ -4,8 +4,7 @@
 namespace Deepgram.Realtime
 {
     /// <summary>
-    /// Version of an AI model to use<br/>
-    /// Default Value: latest
+    /// Any type
     /// </summary>
     public sealed partial class ListenV1Version
     {

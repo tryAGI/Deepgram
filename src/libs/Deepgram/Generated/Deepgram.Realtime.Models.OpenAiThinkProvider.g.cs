@@ -11,9 +11,9 @@ namespace Deepgram.Realtime
         /// <summary>
         /// 
         /// </summary>
-        /// <default>"open_ai"</default>
         [global::System.Text.Json.Serialization.JsonPropertyName("type")]
-        public string Type { get; set; } = "open_ai";
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Deepgram.Realtime.JsonConverters.OpenAiThinkProviderTypeJsonConverter))]
+        public global::Deepgram.Realtime.OpenAiThinkProviderType Type { get; set; }
 
         /// <summary>
         /// The REST API version for the OpenAI chat completions API
@@ -48,21 +48,21 @@ namespace Deepgram.Realtime
         /// <param name="model">
         /// OpenAI model to use
         /// </param>
+        /// <param name="type"></param>
         /// <param name="version">
         /// The REST API version for the OpenAI chat completions API
         /// </param>
         /// <param name="temperature">
         /// OpenAI temperature (0-2)
         /// </param>
-        /// <param name="type"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public OpenAiThinkProvider(
             global::Deepgram.Realtime.OpenAiThinkProviderModel model,
+            global::Deepgram.Realtime.OpenAiThinkProviderType type,
             global::Deepgram.Realtime.OpenAiThinkProviderVersion? version,
-            double? temperature,
-            string type = "open_ai")
+            double? temperature)
         {
             this.Type = type;
             this.Version = version;

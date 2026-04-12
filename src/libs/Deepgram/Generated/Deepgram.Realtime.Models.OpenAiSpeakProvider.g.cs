@@ -11,9 +11,9 @@ namespace Deepgram.Realtime
         /// <summary>
         /// 
         /// </summary>
-        /// <default>"open_ai"</default>
         [global::System.Text.Json.Serialization.JsonPropertyName("type")]
-        public string Type { get; set; } = "open_ai";
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Deepgram.Realtime.JsonConverters.OpenAiSpeakProviderTypeJsonConverter))]
+        public global::Deepgram.Realtime.OpenAiSpeakProviderType Type { get; set; }
 
         /// <summary>
         /// The REST API version for the OpenAI text-to-speech API
@@ -53,18 +53,18 @@ namespace Deepgram.Realtime
         /// <param name="voice">
         /// OpenAI voice
         /// </param>
+        /// <param name="type"></param>
         /// <param name="version">
         /// The REST API version for the OpenAI text-to-speech API
         /// </param>
-        /// <param name="type"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public OpenAiSpeakProvider(
             global::Deepgram.Realtime.OpenAiSpeakProviderModel model,
             global::Deepgram.Realtime.OpenAiSpeakProviderVoice voice,
-            global::Deepgram.Realtime.OpenAiSpeakProviderVersion? version,
-            string type = "open_ai")
+            global::Deepgram.Realtime.OpenAiSpeakProviderType type,
+            global::Deepgram.Realtime.OpenAiSpeakProviderVersion? version)
         {
             this.Type = type;
             this.Version = version;

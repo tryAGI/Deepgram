@@ -4,7 +4,7 @@
 namespace Deepgram
 {
     /// <summary>
-    /// 
+    /// Any type
     /// </summary>
     public sealed partial class CreateKeyV1RequestVariant1
     {

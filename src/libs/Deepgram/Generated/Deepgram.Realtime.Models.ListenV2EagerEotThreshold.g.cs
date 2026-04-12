@@ -4,9 +4,7 @@
 namespace Deepgram.Realtime
 {
     /// <summary>
-    /// End-of-turn confidence required to fire an eager end-of-turn event.<br/>
-    /// When set, enables `EagerEndOfTurn` and `TurnResumed` events. Valid<br/>
-    /// Values 0.3 - 0.9.
+    /// Any type
     /// </summary>
     public sealed partial class ListenV2EagerEotThreshold
     {

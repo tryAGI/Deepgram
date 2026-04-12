@@ -12,7 +12,7 @@ namespace Deepgram
         /// 
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("segments")]
-        public global::System.Collections.Generic.IList<global::Deepgram.SharedSentimentsSegment>? Segments { get; set; }
+        public global::System.Collections.Generic.IList<global::Deepgram.SharedSentimentsSegmentsItems>? Segments { get; set; }
 
         /// <summary>
         /// 
@@ -35,7 +35,7 @@ namespace Deepgram
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public SharedSentiments(
-            global::System.Collections.Generic.IList<global::Deepgram.SharedSentimentsSegment>? segments,
+            global::System.Collections.Generic.IList<global::Deepgram.SharedSentimentsSegmentsItems>? segments,
             global::Deepgram.SharedSentimentsAverage? average)
         {
             this.Segments = segments;

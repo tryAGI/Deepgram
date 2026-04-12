@@ -9,9 +9,8 @@ namespace Deepgram
     public sealed partial class ReadV1ResponseResultsSummaryResultsSummary
     {
         /// <summary>
-        /// Example: The summary of the text submitted.
+        /// 
         /// </summary>
-        /// <example>The summary of the text submitted.</example>
         [global::System.Text.Json.Serialization.JsonPropertyName("text")]
         public string? Text { get; set; }
 
@@ -24,9 +23,7 @@ namespace Deepgram
         /// <summary>
         /// Initializes a new instance of the <see cref="ReadV1ResponseResultsSummaryResultsSummary" /> class.
         /// </summary>
-        /// <param name="text">
-        /// Example: The summary of the text submitted.
-        /// </param>
+        /// <param name="text"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif

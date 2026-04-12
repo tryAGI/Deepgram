@@ -12,7 +12,7 @@ namespace Deepgram
         /// Array of distribution credentials with associated member information
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("distribution_credentials")]
-        public global::System.Collections.Generic.IList<global::Deepgram.ListProjectDistributionCredentialsV1ResponseDistributionCredential>? DistributionCredentials { get; set; }
+        public global::System.Collections.Generic.IList<global::Deepgram.ListProjectDistributionCredentialsV1ResponseDistributionCredentialsItems>? DistributionCredentials { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -30,7 +30,7 @@ namespace Deepgram
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public ListProjectDistributionCredentialsV1Response(
-            global::System.Collections.Generic.IList<global::Deepgram.ListProjectDistributionCredentialsV1ResponseDistributionCredential>? distributionCredentials)
+            global::System.Collections.Generic.IList<global::Deepgram.ListProjectDistributionCredentialsV1ResponseDistributionCredentialsItems>? distributionCredentials)
         {
             this.DistributionCredentials = distributionCredentials;
         }

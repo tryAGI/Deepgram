@@ -1,9 +1,10 @@
 #nullable enable
+#pragma warning disable CS0618 // Type or member is obsolete
 
 namespace Deepgram.Realtime.JsonConverters
 {
     /// <inheritdoc />
-    public sealed class ThinkSettingsV1ContextLengthJsonConverter : global::System.Text.Json.Serialization.JsonConverter<global::Deepgram.Realtime.ThinkSettingsV1ContextLength>
+    public class ThinkSettingsV1ContextLengthJsonConverter : global::System.Text.Json.Serialization.JsonConverter<global::Deepgram.Realtime.ThinkSettingsV1ContextLength>
     {
         /// <inheritdoc />
         public override global::Deepgram.Realtime.ThinkSettingsV1ContextLength Read(
@@ -11,32 +12,125 @@ namespace Deepgram.Realtime.JsonConverters
             global::System.Type typeToConvert,
             global::System.Text.Json.JsonSerializerOptions options)
         {
-            switch (reader.TokenType)
+            options = options ?? throw new global::System.ArgumentNullException(nameof(options));
+            var typeInfoResolver = options.TypeInfoResolver ?? throw new global::System.InvalidOperationException("TypeInfoResolver is not set.");
+
+
+            using var __jsonDocument = global::System.Text.Json.JsonDocument.ParseValue(ref reader);
+            var __rawJson = __jsonDocument.RootElement.GetRawText();
+            var __jsonProps = new global::System.Collections.Generic.HashSet<string>();
+            if (__jsonDocument.RootElement.ValueKind == global::System.Text.Json.JsonValueKind.Object)
             {
-                case global::System.Text.Json.JsonTokenType.String:
+                foreach (var __jsonProp in __jsonDocument.RootElement.EnumerateObject())
                 {
-                    var stringValue = reader.GetString();
-                    if (stringValue != null)
-                    {
-                        return global::Deepgram.Realtime.ThinkSettingsV1ContextLengthExtensions.ToEnum(stringValue) ?? default;
-                    }
-                    
-                    break;
+                    __jsonProps.Add(__jsonProp.Name);
                 }
-                case global::System.Text.Json.JsonTokenType.Number:
-                {
-                    var numValue = reader.GetInt32();
-                    return (global::Deepgram.Realtime.ThinkSettingsV1ContextLength)numValue;
-                }
-                case global::System.Text.Json.JsonTokenType.Null:
-                {
-                    return default(global::Deepgram.Realtime.ThinkSettingsV1ContextLength);
-                }
-                default:
-                    throw new global::System.ArgumentOutOfRangeException(nameof(reader));
             }
 
-            return default;
+            var __score0 = 0;
+            {
+                var __ti = typeInfoResolver.GetTypeInfo(typeof(global::Deepgram.Realtime.ThinkSettingsV1ContextLength0), options);
+                if (__ti != null && __ti.Kind == global::System.Text.Json.Serialization.Metadata.JsonTypeInfoKind.Object)
+                {
+                    foreach (var __prop in __ti.Properties)
+                    {
+                        if (__jsonProps.Contains(__prop.Name)) __score0++;
+                    }
+                }
+            }
+            var __score1 = 0;
+            {
+                var __ti = typeInfoResolver.GetTypeInfo(typeof(double), options);
+                if (__ti != null && __ti.Kind == global::System.Text.Json.Serialization.Metadata.JsonTypeInfoKind.Object)
+                {
+                    foreach (var __prop in __ti.Properties)
+                    {
+                        if (__jsonProps.Contains(__prop.Name)) __score1++;
+                    }
+                }
+            }
+            var __bestScore = 0;
+            var __bestIndex = -1;
+            if (__score0 > __bestScore) { __bestScore = __score0; __bestIndex = 0; }
+            if (__score1 > __bestScore) { __bestScore = __score1; __bestIndex = 1; }
+
+            global::Deepgram.Realtime.ThinkSettingsV1ContextLength0? thinkSettingsV1ContextLength0 = default;
+            double? thinkSettingsV1ContextLengthVariant2 = default;
+            if (__bestIndex >= 0)
+            {
+                if (__bestIndex == 0)
+                {
+                    try
+                    {
+
+                        var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Deepgram.Realtime.ThinkSettingsV1ContextLength0), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Deepgram.Realtime.ThinkSettingsV1ContextLength0> ??
+                                       throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Deepgram.Realtime.ThinkSettingsV1ContextLength0).Name}");
+                        thinkSettingsV1ContextLength0 = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
+                    }
+                    catch (global::System.Text.Json.JsonException)
+                    {
+                    }
+                    catch (global::System.InvalidOperationException)
+                    {
+                    }
+                }
+
+                else if (__bestIndex == 1)
+                {
+                    try
+                    {
+
+                        var typeInfo = typeInfoResolver.GetTypeInfo(typeof(double), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<double> ??
+                                       throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(double).Name}");
+                        thinkSettingsV1ContextLengthVariant2 = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
+                    }
+                    catch (global::System.Text.Json.JsonException)
+                    {
+                    }
+                    catch (global::System.InvalidOperationException)
+                    {
+                    }
+                }
+            }
+
+            if (thinkSettingsV1ContextLength0 == null && thinkSettingsV1ContextLengthVariant2 == null)
+            {
+                try
+                {
+
+                    var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Deepgram.Realtime.ThinkSettingsV1ContextLength0), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Deepgram.Realtime.ThinkSettingsV1ContextLength0> ??
+                                   throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Deepgram.Realtime.ThinkSettingsV1ContextLength0).Name}");
+                    thinkSettingsV1ContextLength0 = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
+                }
+                catch (global::System.Text.Json.JsonException)
+                {
+                }
+                catch (global::System.InvalidOperationException)
+                {
+                }
+
+                try
+                {
+
+                    var typeInfo = typeInfoResolver.GetTypeInfo(typeof(double), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<double> ??
+                                   throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(double).Name}");
+                    thinkSettingsV1ContextLengthVariant2 = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
+                }
+                catch (global::System.Text.Json.JsonException)
+                {
+                }
+                catch (global::System.InvalidOperationException)
+                {
+                }
+            }
+
+            var __value = new global::Deepgram.Realtime.ThinkSettingsV1ContextLength(
+                thinkSettingsV1ContextLength0,
+
+                thinkSettingsV1ContextLengthVariant2
+                );
+
+            return __value;
         }
 
         /// <inheritdoc />
@@ -45,9 +139,21 @@ namespace Deepgram.Realtime.JsonConverters
             global::Deepgram.Realtime.ThinkSettingsV1ContextLength value,
             global::System.Text.Json.JsonSerializerOptions options)
         {
-            writer = writer ?? throw new global::System.ArgumentNullException(nameof(writer));
+            options = options ?? throw new global::System.ArgumentNullException(nameof(options));
+            var typeInfoResolver = options.TypeInfoResolver ?? throw new global::System.InvalidOperationException("TypeInfoResolver is not set.");
 
-            writer.WriteStringValue(global::Deepgram.Realtime.ThinkSettingsV1ContextLengthExtensions.ToValueString(value));
+            if (value.IsThinkSettingsV1ContextLength0)
+            {
+                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Deepgram.Realtime.ThinkSettingsV1ContextLength0), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Deepgram.Realtime.ThinkSettingsV1ContextLength0> ??
+                               throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Deepgram.Realtime.ThinkSettingsV1ContextLength0).Name}");
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.ThinkSettingsV1ContextLength0!.Value, typeInfo);
+            }
+            else if (value.IsThinkSettingsV1ContextLengthVariant2)
+            {
+                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(double), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<double> ??
+                               throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(double).Name}");
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.ThinkSettingsV1ContextLengthVariant2!.Value, typeInfo);
+            }
         }
     }
 }

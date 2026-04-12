@@ -9,45 +9,35 @@ namespace Deepgram
     public sealed partial class GetProjectDistributionCredentialsV1ResponseDistributionCredentials
     {
         /// <summary>
-        /// Unique identifier for the distribution credentials<br/>
-        /// Example: 82c32c10-53b2-4d23-993f-864b3d44502a
+        /// Unique identifier for the distribution credentials
         /// </summary>
-        /// <example>82c32c10-53b2-4d23-993f-864b3d44502a</example>
         [global::System.Text.Json.Serialization.JsonPropertyName("distribution_credentials_id")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required global::System.Guid DistributionCredentialsId { get; set; }
 
         /// <summary>
-        /// The provider of the distribution service<br/>
-        /// Example: quay
+        /// The provider of the distribution service
         /// </summary>
-        /// <example>quay</example>
         [global::System.Text.Json.Serialization.JsonPropertyName("provider")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string Provider { get; set; }
 
         /// <summary>
-        /// Optional comment about the credentials<br/>
-        /// Example: My Self-Hosted Distribution Credentials
+        /// Optional comment about the credentials
         /// </summary>
-        /// <example>My Self-Hosted Distribution Credentials</example>
         [global::System.Text.Json.Serialization.JsonPropertyName("comment")]
         public string? Comment { get; set; }
 
         /// <summary>
-        /// List of permission scopes for the credentials<br/>
-        /// Example: [self-hosted:product:api, self-hosted:product:engine]
+        /// List of permission scopes for the credentials
         /// </summary>
-        /// <example>[self-hosted:product:api, self-hosted:product:engine]</example>
         [global::System.Text.Json.Serialization.JsonPropertyName("scopes")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required global::System.Collections.Generic.IList<string> Scopes { get; set; }
 
         /// <summary>
-        /// Timestamp when the credentials were created<br/>
-        /// Example: 2023-06-28T15:36:59.609841Z
+        /// Timestamp when the credentials were created
         /// </summary>
-        /// <example>2023-06-28T15:36:59.609841Z</example>
         [global::System.Text.Json.Serialization.JsonPropertyName("created")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required global::System.DateTime Created { get; set; }
@@ -62,24 +52,19 @@ namespace Deepgram
         /// Initializes a new instance of the <see cref="GetProjectDistributionCredentialsV1ResponseDistributionCredentials" /> class.
         /// </summary>
         /// <param name="distributionCredentialsId">
-        /// Unique identifier for the distribution credentials<br/>
-        /// Example: 82c32c10-53b2-4d23-993f-864b3d44502a
+        /// Unique identifier for the distribution credentials
         /// </param>
         /// <param name="provider">
-        /// The provider of the distribution service<br/>
-        /// Example: quay
+        /// The provider of the distribution service
         /// </param>
         /// <param name="scopes">
-        /// List of permission scopes for the credentials<br/>
-        /// Example: [self-hosted:product:api, self-hosted:product:engine]
+        /// List of permission scopes for the credentials
         /// </param>
         /// <param name="created">
-        /// Timestamp when the credentials were created<br/>
-        /// Example: 2023-06-28T15:36:59.609841Z
+        /// Timestamp when the credentials were created
         /// </param>
         /// <param name="comment">
-        /// Optional comment about the credentials<br/>
-        /// Example: My Self-Hosted Distribution Credentials
+        /// Optional comment about the credentials
         /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]

@@ -13,97 +13,97 @@ namespace Deepgram
         /// 
         /// </summary>
 #if NET6_0_OR_GREATER
-        public global::Deepgram.GetModelV1ResponseVariant1? GetModelV1ResponseVariant1 { get; init; }
+        public global::Deepgram.GetModelV1Response0? GetModelV1Response0 { get; init; }
 #else
-        public global::Deepgram.GetModelV1ResponseVariant1? GetModelV1ResponseVariant1 { get; }
+        public global::Deepgram.GetModelV1Response0? GetModelV1Response0 { get; }
 #endif
 
         /// <summary>
         /// 
         /// </summary>
 #if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(GetModelV1ResponseVariant1))]
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(GetModelV1Response0))]
 #endif
-        public bool IsGetModelV1ResponseVariant1 => GetModelV1ResponseVariant1 != null;
+        public bool IsGetModelV1Response0 => GetModelV1Response0 != null;
 
         /// <summary>
         /// 
         /// </summary>
 #if NET6_0_OR_GREATER
-        public global::Deepgram.GetModelV1ResponseVariant2? GetModelV1ResponseVariant2 { get; init; }
+        public global::Deepgram.GetModelV1Response1? GetModelV1Response1 { get; init; }
 #else
-        public global::Deepgram.GetModelV1ResponseVariant2? GetModelV1ResponseVariant2 { get; }
+        public global::Deepgram.GetModelV1Response1? GetModelV1Response1 { get; }
 #endif
 
         /// <summary>
         /// 
         /// </summary>
 #if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(GetModelV1ResponseVariant2))]
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(GetModelV1Response1))]
 #endif
-        public bool IsGetModelV1ResponseVariant2 => GetModelV1ResponseVariant2 != null;
+        public bool IsGetModelV1Response1 => GetModelV1Response1 != null;
         /// <summary>
         /// 
         /// </summary>
-        public static implicit operator GetModelV1Response(global::Deepgram.GetModelV1ResponseVariant1 value) => new GetModelV1Response((global::Deepgram.GetModelV1ResponseVariant1?)value);
+        public static implicit operator GetModelV1Response(global::Deepgram.GetModelV1Response0 value) => new GetModelV1Response((global::Deepgram.GetModelV1Response0?)value);
 
         /// <summary>
         /// 
         /// </summary>
-        public static implicit operator global::Deepgram.GetModelV1ResponseVariant1?(GetModelV1Response @this) => @this.GetModelV1ResponseVariant1;
+        public static implicit operator global::Deepgram.GetModelV1Response0?(GetModelV1Response @this) => @this.GetModelV1Response0;
 
         /// <summary>
         /// 
         /// </summary>
-        public GetModelV1Response(global::Deepgram.GetModelV1ResponseVariant1? value)
+        public GetModelV1Response(global::Deepgram.GetModelV1Response0? value)
         {
-            GetModelV1ResponseVariant1 = value;
+            GetModelV1Response0 = value;
         }
 
         /// <summary>
         /// 
         /// </summary>
-        public static implicit operator GetModelV1Response(global::Deepgram.GetModelV1ResponseVariant2 value) => new GetModelV1Response((global::Deepgram.GetModelV1ResponseVariant2?)value);
+        public static implicit operator GetModelV1Response(global::Deepgram.GetModelV1Response1 value) => new GetModelV1Response((global::Deepgram.GetModelV1Response1?)value);
 
         /// <summary>
         /// 
         /// </summary>
-        public static implicit operator global::Deepgram.GetModelV1ResponseVariant2?(GetModelV1Response @this) => @this.GetModelV1ResponseVariant2;
+        public static implicit operator global::Deepgram.GetModelV1Response1?(GetModelV1Response @this) => @this.GetModelV1Response1;
 
         /// <summary>
         /// 
         /// </summary>
-        public GetModelV1Response(global::Deepgram.GetModelV1ResponseVariant2? value)
+        public GetModelV1Response(global::Deepgram.GetModelV1Response1? value)
         {
-            GetModelV1ResponseVariant2 = value;
+            GetModelV1Response1 = value;
         }
 
         /// <summary>
         /// 
         /// </summary>
         public GetModelV1Response(
-            global::Deepgram.GetModelV1ResponseVariant1? getModelV1ResponseVariant1,
-            global::Deepgram.GetModelV1ResponseVariant2? getModelV1ResponseVariant2
+            global::Deepgram.GetModelV1Response0? getModelV1Response0,
+            global::Deepgram.GetModelV1Response1? getModelV1Response1
             )
         {
-            GetModelV1ResponseVariant1 = getModelV1ResponseVariant1;
-            GetModelV1ResponseVariant2 = getModelV1ResponseVariant2;
+            GetModelV1Response0 = getModelV1Response0;
+            GetModelV1Response1 = getModelV1Response1;
         }
 
         /// <summary>
         /// 
         /// </summary>
         public object? Object =>
-            GetModelV1ResponseVariant2 as object ??
-            GetModelV1ResponseVariant1 as object 
+            GetModelV1Response1 as object ??
+            GetModelV1Response0 as object 
             ;
 
         /// <summary>
         /// 
         /// </summary>
         public override string? ToString() =>
-            GetModelV1ResponseVariant1?.ToString() ??
-            GetModelV1ResponseVariant2?.ToString() 
+            GetModelV1Response0?.ToString() ??
+            GetModelV1Response1?.ToString() 
             ;
 
         /// <summary>
@@ -111,15 +111,15 @@ namespace Deepgram
         /// </summary>
         public bool Validate()
         {
-            return IsGetModelV1ResponseVariant1 && !IsGetModelV1ResponseVariant2 || !IsGetModelV1ResponseVariant1 && IsGetModelV1ResponseVariant2;
+            return IsGetModelV1Response0 && !IsGetModelV1Response1 || !IsGetModelV1Response0 && IsGetModelV1Response1;
         }
 
         /// <summary>
         /// 
         /// </summary>
         public TResult? Match<TResult>(
-            global::System.Func<global::Deepgram.GetModelV1ResponseVariant1?, TResult>? getModelV1ResponseVariant1 = null,
-            global::System.Func<global::Deepgram.GetModelV1ResponseVariant2?, TResult>? getModelV1ResponseVariant2 = null,
+            global::System.Func<global::Deepgram.GetModelV1Response0?, TResult>? getModelV1Response0 = null,
+            global::System.Func<global::Deepgram.GetModelV1Response1?, TResult>? getModelV1Response1 = null,
             bool validate = true)
         {
             if (validate)
@@ -127,13 +127,13 @@ namespace Deepgram
                 Validate();
             }
 
-            if (IsGetModelV1ResponseVariant1 && getModelV1ResponseVariant1 != null)
+            if (IsGetModelV1Response0 && getModelV1Response0 != null)
             {
-                return getModelV1ResponseVariant1(GetModelV1ResponseVariant1!);
+                return getModelV1Response0(GetModelV1Response0!);
             }
-            else if (IsGetModelV1ResponseVariant2 && getModelV1ResponseVariant2 != null)
+            else if (IsGetModelV1Response1 && getModelV1Response1 != null)
             {
-                return getModelV1ResponseVariant2(GetModelV1ResponseVariant2!);
+                return getModelV1Response1(GetModelV1Response1!);
             }
 
             return default(TResult);
@@ -143,8 +143,8 @@ namespace Deepgram
         /// 
         /// </summary>
         public void Match(
-            global::System.Action<global::Deepgram.GetModelV1ResponseVariant1?>? getModelV1ResponseVariant1 = null,
-            global::System.Action<global::Deepgram.GetModelV1ResponseVariant2?>? getModelV1ResponseVariant2 = null,
+            global::System.Action<global::Deepgram.GetModelV1Response0?>? getModelV1Response0 = null,
+            global::System.Action<global::Deepgram.GetModelV1Response1?>? getModelV1Response1 = null,
             bool validate = true)
         {
             if (validate)
@@ -152,13 +152,13 @@ namespace Deepgram
                 Validate();
             }
 
-            if (IsGetModelV1ResponseVariant1)
+            if (IsGetModelV1Response0)
             {
-                getModelV1ResponseVariant1?.Invoke(GetModelV1ResponseVariant1!);
+                getModelV1Response0?.Invoke(GetModelV1Response0!);
             }
-            else if (IsGetModelV1ResponseVariant2)
+            else if (IsGetModelV1Response1)
             {
-                getModelV1ResponseVariant2?.Invoke(GetModelV1ResponseVariant2!);
+                getModelV1Response1?.Invoke(GetModelV1Response1!);
             }
         }
 
@@ -169,10 +169,10 @@ namespace Deepgram
         {
             var fields = new object?[]
             {
-                GetModelV1ResponseVariant1,
-                typeof(global::Deepgram.GetModelV1ResponseVariant1),
-                GetModelV1ResponseVariant2,
-                typeof(global::Deepgram.GetModelV1ResponseVariant2),
+                GetModelV1Response0,
+                typeof(global::Deepgram.GetModelV1Response0),
+                GetModelV1Response1,
+                typeof(global::Deepgram.GetModelV1Response1),
             };
             const int offset = unchecked((int)2166136261);
             const int prime = 16777619;
@@ -189,8 +189,8 @@ namespace Deepgram
         public bool Equals(GetModelV1Response other)
         {
             return
-                global::System.Collections.Generic.EqualityComparer<global::Deepgram.GetModelV1ResponseVariant1?>.Default.Equals(GetModelV1ResponseVariant1, other.GetModelV1ResponseVariant1) &&
-                global::System.Collections.Generic.EqualityComparer<global::Deepgram.GetModelV1ResponseVariant2?>.Default.Equals(GetModelV1ResponseVariant2, other.GetModelV1ResponseVariant2) 
+                global::System.Collections.Generic.EqualityComparer<global::Deepgram.GetModelV1Response0?>.Default.Equals(GetModelV1Response0, other.GetModelV1Response0) &&
+                global::System.Collections.Generic.EqualityComparer<global::Deepgram.GetModelV1Response1?>.Default.Equals(GetModelV1Response1, other.GetModelV1Response1) 
                 ;
         }
 

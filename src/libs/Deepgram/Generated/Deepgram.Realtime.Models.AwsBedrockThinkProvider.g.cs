@@ -11,9 +11,9 @@ namespace Deepgram.Realtime
         /// <summary>
         /// 
         /// </summary>
-        /// <default>"aws_bedrock"</default>
         [global::System.Text.Json.Serialization.JsonPropertyName("type")]
-        public string Type { get; set; } = "aws_bedrock";
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Deepgram.Realtime.JsonConverters.AwsBedrockThinkProviderTypeJsonConverter))]
+        public global::Deepgram.Realtime.AwsBedrockThinkProviderType Type { get; set; }
 
         /// <summary>
         /// AWS Bedrock model to use
@@ -47,21 +47,21 @@ namespace Deepgram.Realtime
         /// <param name="model">
         /// AWS Bedrock model to use
         /// </param>
+        /// <param name="type"></param>
         /// <param name="temperature">
         /// AWS Bedrock temperature (0-2)
         /// </param>
         /// <param name="credentials">
         /// AWS credentials type (STS short-lived or IAM long-lived)
         /// </param>
-        /// <param name="type"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public AwsBedrockThinkProvider(
             global::Deepgram.Realtime.AwsBedrockThinkProviderModel model,
+            global::Deepgram.Realtime.AwsBedrockThinkProviderType type,
             double? temperature,
-            global::Deepgram.Realtime.AwsBedrockThinkProviderCredentials? credentials,
-            string type = "aws_bedrock")
+            global::Deepgram.Realtime.AwsBedrockThinkProviderCredentials? credentials)
         {
             this.Type = type;
             this.Model = model;

@@ -9,19 +9,15 @@ namespace Deepgram
     public sealed partial class BillingBreakdownV1ResponseResolution
     {
         /// <summary>
-        /// Time unit for the resolution<br/>
-        /// Example: day
+        /// Time unit for the resolution
         /// </summary>
-        /// <example>day</example>
         [global::System.Text.Json.Serialization.JsonPropertyName("units")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string Units { get; set; }
 
         /// <summary>
-        /// Amount of units<br/>
-        /// Example: 1
+        /// Amount of units
         /// </summary>
-        /// <example>1</example>
         [global::System.Text.Json.Serialization.JsonPropertyName("amount")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required double Amount { get; set; }
@@ -36,12 +32,10 @@ namespace Deepgram
         /// Initializes a new instance of the <see cref="BillingBreakdownV1ResponseResolution" /> class.
         /// </summary>
         /// <param name="units">
-        /// Time unit for the resolution<br/>
-        /// Example: day
+        /// Time unit for the resolution
         /// </param>
         /// <param name="amount">
-        /// Amount of units<br/>
-        /// Example: 1
+        /// Amount of units
         /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]

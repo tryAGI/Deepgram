@@ -4,8 +4,7 @@
 namespace Deepgram
 {
     /// <summary>
-    /// API key created<br/>
-    /// Example: {"api_key_id":"1234567890abcdef1234567890abcdef","key":"1234567890abcdef1234567890abcdef","comment":"a comment","scopes":["member"],"tags":["tag-1"],"expiration_date":"2024-05-01T00:00:00.000000Z"}
+    /// API key created
     /// </summary>
     public sealed partial class CreateKeyV1Response
     {

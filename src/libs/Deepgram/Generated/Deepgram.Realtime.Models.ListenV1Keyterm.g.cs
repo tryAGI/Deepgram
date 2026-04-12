@@ -4,7 +4,7 @@
 namespace Deepgram.Realtime
 {
     /// <summary>
-    /// Key term prompting can boost specialized terminology and brands. Only compatible with Nova-3
+    /// Any type
     /// </summary>
     public sealed partial class ListenV1Keyterm
     {

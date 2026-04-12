@@ -9,19 +9,15 @@ namespace Deepgram
     public sealed partial class BillingBreakdownV1Response
     {
         /// <summary>
-        /// Start date of the billing summmary period<br/>
-        /// Example: 2025-01-16
+        /// Start date of the billing summmary period
         /// </summary>
-        /// <example>2025-01-16</example>
         [global::System.Text.Json.Serialization.JsonPropertyName("start")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required global::System.DateTime Start { get; set; }
 
         /// <summary>
-        /// End date of the billing summary period<br/>
-        /// Example: 2025-01-23
+        /// End date of the billing summary period
         /// </summary>
-        /// <example>2025-01-23</example>
         [global::System.Text.Json.Serialization.JsonPropertyName("end")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required global::System.DateTime End { get; set; }
@@ -38,7 +34,7 @@ namespace Deepgram
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("results")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::System.Collections.Generic.IList<global::Deepgram.BillingBreakdownV1ResponseResult> Results { get; set; }
+        public required global::System.Collections.Generic.IList<global::Deepgram.BillingBreakdownV1ResponseResultsItems> Results { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -50,12 +46,10 @@ namespace Deepgram
         /// Initializes a new instance of the <see cref="BillingBreakdownV1Response" /> class.
         /// </summary>
         /// <param name="start">
-        /// Start date of the billing summmary period<br/>
-        /// Example: 2025-01-16
+        /// Start date of the billing summmary period
         /// </param>
         /// <param name="end">
-        /// End date of the billing summary period<br/>
-        /// Example: 2025-01-23
+        /// End date of the billing summary period
         /// </param>
         /// <param name="resolution"></param>
         /// <param name="results"></param>
@@ -66,7 +60,7 @@ namespace Deepgram
             global::System.DateTime start,
             global::System.DateTime end,
             global::Deepgram.BillingBreakdownV1ResponseResolution resolution,
-            global::System.Collections.Generic.IList<global::Deepgram.BillingBreakdownV1ResponseResult> results)
+            global::System.Collections.Generic.IList<global::Deepgram.BillingBreakdownV1ResponseResultsItems> results)
         {
             this.Start = start;
             this.End = end;

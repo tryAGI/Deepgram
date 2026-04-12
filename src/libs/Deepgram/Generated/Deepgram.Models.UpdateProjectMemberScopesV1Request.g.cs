@@ -9,10 +9,8 @@ namespace Deepgram
     public sealed partial class UpdateProjectMemberScopesV1Request
     {
         /// <summary>
-        /// A scope to update<br/>
-        /// Example: admin
+        /// A scope to update
         /// </summary>
-        /// <example>admin</example>
         [global::System.Text.Json.Serialization.JsonPropertyName("scope")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string Scope { get; set; }
@@ -27,8 +25,7 @@ namespace Deepgram
         /// Initializes a new instance of the <see cref="UpdateProjectMemberScopesV1Request" /> class.
         /// </summary>
         /// <param name="scope">
-        /// A scope to update<br/>
-        /// Example: admin
+        /// A scope to update
         /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]

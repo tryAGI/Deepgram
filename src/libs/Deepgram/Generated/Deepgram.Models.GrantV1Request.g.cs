@@ -9,10 +9,8 @@ namespace Deepgram
     public sealed partial class GrantV1Request
     {
         /// <summary>
-        /// Time to live in seconds for the token. Defaults to 30 seconds.<br/>
-        /// Example: 30
+        /// Time to live in seconds for the token. Defaults to 30 seconds.
         /// </summary>
-        /// <example>30</example>
         [global::System.Text.Json.Serialization.JsonPropertyName("ttl_seconds")]
         public double? TtlSeconds { get; set; }
 
@@ -26,8 +24,7 @@ namespace Deepgram
         /// Initializes a new instance of the <see cref="GrantV1Request" /> class.
         /// </summary>
         /// <param name="ttlSeconds">
-        /// Time to live in seconds for the token. Defaults to 30 seconds.<br/>
-        /// Example: 30
+        /// Time to live in seconds for the token. Defaults to 30 seconds.
         /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]

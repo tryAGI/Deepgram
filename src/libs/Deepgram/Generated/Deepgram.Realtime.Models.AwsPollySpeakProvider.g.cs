@@ -1,6 +1,4 @@
 
-#pragma warning disable CS0618 // Type or member is obsolete
-
 #nullable enable
 
 namespace Deepgram.Realtime
@@ -13,9 +11,9 @@ namespace Deepgram.Realtime
         /// <summary>
         /// 
         /// </summary>
-        /// <default>"aws_polly"</default>
         [global::System.Text.Json.Serialization.JsonPropertyName("type")]
-        public string Type { get; set; } = "aws_polly";
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Deepgram.Realtime.JsonConverters.AwsPollySpeakProviderTypeJsonConverter))]
+        public global::Deepgram.Realtime.AwsPollySpeakProviderType Type { get; set; }
 
         /// <summary>
         /// AWS Polly voice name
@@ -36,7 +34,6 @@ namespace Deepgram.Realtime
         /// Use the `language` field instead.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("language_code")]
-        [global::System.Obsolete("This property marked as deprecated.")]
         public string? LanguageCode { get; set; }
 
         /// <summary>
@@ -72,6 +69,9 @@ namespace Deepgram.Realtime
         /// <param name="engine"></param>
         /// <param name="credentials"></param>
         /// <param name="type"></param>
+        /// <param name="languageCode">
+        /// Use the `language` field instead.
+        /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -80,11 +80,13 @@ namespace Deepgram.Realtime
             string language,
             global::Deepgram.Realtime.AwsPollySpeakProviderEngine engine,
             global::Deepgram.Realtime.AwsPollySpeakProviderCredentials credentials,
-            string type = "aws_polly")
+            global::Deepgram.Realtime.AwsPollySpeakProviderType type,
+            string? languageCode)
         {
             this.Type = type;
             this.Voice = voice;
             this.Language = language ?? throw new global::System.ArgumentNullException(nameof(language));
+            this.LanguageCode = languageCode;
             this.Engine = engine;
             this.Credentials = credentials ?? throw new global::System.ArgumentNullException(nameof(credentials));
         }

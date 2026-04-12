@@ -4,7 +4,7 @@
 namespace Deepgram.Realtime
 {
     /// <summary>
-    /// Sample rate of submitted audio. Required (and only read) when a value is provided for encoding
+    /// Any type
     /// </summary>
     public sealed partial class ListenV1SampleRate
     {

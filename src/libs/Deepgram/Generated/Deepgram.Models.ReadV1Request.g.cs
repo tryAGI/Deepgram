@@ -13,35 +13,35 @@ namespace Deepgram
         /// 
         /// </summary>
 #if NET6_0_OR_GREATER
-        public global::Deepgram.ReadV1RequestUrl? Url { get; init; }
+        public global::Deepgram.ReadV1RequestUrl? ReadV1RequestUrl { get; init; }
 #else
-        public global::Deepgram.ReadV1RequestUrl? Url { get; }
+        public global::Deepgram.ReadV1RequestUrl? ReadV1RequestUrl { get; }
 #endif
 
         /// <summary>
         /// 
         /// </summary>
 #if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Url))]
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(ReadV1RequestUrl))]
 #endif
-        public bool IsUrl => Url != null;
+        public bool IsReadV1RequestUrl => ReadV1RequestUrl != null;
 
         /// <summary>
         /// 
         /// </summary>
 #if NET6_0_OR_GREATER
-        public global::Deepgram.ReadV1RequestText? Text { get; init; }
+        public global::Deepgram.ReadV1RequestText? ReadV1RequestText { get; init; }
 #else
-        public global::Deepgram.ReadV1RequestText? Text { get; }
+        public global::Deepgram.ReadV1RequestText? ReadV1RequestText { get; }
 #endif
 
         /// <summary>
         /// 
         /// </summary>
 #if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Text))]
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(ReadV1RequestText))]
 #endif
-        public bool IsText => Text != null;
+        public bool IsReadV1RequestText => ReadV1RequestText != null;
         /// <summary>
         /// 
         /// </summary>
@@ -50,14 +50,14 @@ namespace Deepgram
         /// <summary>
         /// 
         /// </summary>
-        public static implicit operator global::Deepgram.ReadV1RequestUrl?(ReadV1Request @this) => @this.Url;
+        public static implicit operator global::Deepgram.ReadV1RequestUrl?(ReadV1Request @this) => @this.ReadV1RequestUrl;
 
         /// <summary>
         /// 
         /// </summary>
         public ReadV1Request(global::Deepgram.ReadV1RequestUrl? value)
         {
-            Url = value;
+            ReadV1RequestUrl = value;
         }
 
         /// <summary>
@@ -68,42 +68,42 @@ namespace Deepgram
         /// <summary>
         /// 
         /// </summary>
-        public static implicit operator global::Deepgram.ReadV1RequestText?(ReadV1Request @this) => @this.Text;
+        public static implicit operator global::Deepgram.ReadV1RequestText?(ReadV1Request @this) => @this.ReadV1RequestText;
 
         /// <summary>
         /// 
         /// </summary>
         public ReadV1Request(global::Deepgram.ReadV1RequestText? value)
         {
-            Text = value;
+            ReadV1RequestText = value;
         }
 
         /// <summary>
         /// 
         /// </summary>
         public ReadV1Request(
-            global::Deepgram.ReadV1RequestUrl? url,
-            global::Deepgram.ReadV1RequestText? text
+            global::Deepgram.ReadV1RequestUrl? readV1RequestUrl,
+            global::Deepgram.ReadV1RequestText? readV1RequestText
             )
         {
-            Url = url;
-            Text = text;
+            ReadV1RequestUrl = readV1RequestUrl;
+            ReadV1RequestText = readV1RequestText;
         }
 
         /// <summary>
         /// 
         /// </summary>
         public object? Object =>
-            Text as object ??
-            Url as object 
+            ReadV1RequestText as object ??
+            ReadV1RequestUrl as object 
             ;
 
         /// <summary>
         /// 
         /// </summary>
         public override string? ToString() =>
-            Url?.ToString() ??
-            Text?.ToString() 
+            ReadV1RequestUrl?.ToString() ??
+            ReadV1RequestText?.ToString() 
             ;
 
         /// <summary>
@@ -111,15 +111,15 @@ namespace Deepgram
         /// </summary>
         public bool Validate()
         {
-            return IsUrl && !IsText || !IsUrl && IsText;
+            return IsReadV1RequestUrl && !IsReadV1RequestText || !IsReadV1RequestUrl && IsReadV1RequestText;
         }
 
         /// <summary>
         /// 
         /// </summary>
         public TResult? Match<TResult>(
-            global::System.Func<global::Deepgram.ReadV1RequestUrl?, TResult>? url = null,
-            global::System.Func<global::Deepgram.ReadV1RequestText?, TResult>? text = null,
+            global::System.Func<global::Deepgram.ReadV1RequestUrl?, TResult>? readV1RequestUrl = null,
+            global::System.Func<global::Deepgram.ReadV1RequestText?, TResult>? readV1RequestText = null,
             bool validate = true)
         {
             if (validate)
@@ -127,13 +127,13 @@ namespace Deepgram
                 Validate();
             }
 
-            if (IsUrl && url != null)
+            if (IsReadV1RequestUrl && readV1RequestUrl != null)
             {
-                return url(Url!);
+                return readV1RequestUrl(ReadV1RequestUrl!);
             }
-            else if (IsText && text != null)
+            else if (IsReadV1RequestText && readV1RequestText != null)
             {
-                return text(Text!);
+                return readV1RequestText(ReadV1RequestText!);
             }
 
             return default(TResult);
@@ -143,8 +143,8 @@ namespace Deepgram
         /// 
         /// </summary>
         public void Match(
-            global::System.Action<global::Deepgram.ReadV1RequestUrl?>? url = null,
-            global::System.Action<global::Deepgram.ReadV1RequestText?>? text = null,
+            global::System.Action<global::Deepgram.ReadV1RequestUrl?>? readV1RequestUrl = null,
+            global::System.Action<global::Deepgram.ReadV1RequestText?>? readV1RequestText = null,
             bool validate = true)
         {
             if (validate)
@@ -152,13 +152,13 @@ namespace Deepgram
                 Validate();
             }
 
-            if (IsUrl)
+            if (IsReadV1RequestUrl)
             {
-                url?.Invoke(Url!);
+                readV1RequestUrl?.Invoke(ReadV1RequestUrl!);
             }
-            else if (IsText)
+            else if (IsReadV1RequestText)
             {
-                text?.Invoke(Text!);
+                readV1RequestText?.Invoke(ReadV1RequestText!);
             }
         }
 
@@ -169,9 +169,9 @@ namespace Deepgram
         {
             var fields = new object?[]
             {
-                Url,
+                ReadV1RequestUrl,
                 typeof(global::Deepgram.ReadV1RequestUrl),
-                Text,
+                ReadV1RequestText,
                 typeof(global::Deepgram.ReadV1RequestText),
             };
             const int offset = unchecked((int)2166136261);
@@ -189,8 +189,8 @@ namespace Deepgram
         public bool Equals(ReadV1Request other)
         {
             return
-                global::System.Collections.Generic.EqualityComparer<global::Deepgram.ReadV1RequestUrl?>.Default.Equals(Url, other.Url) &&
-                global::System.Collections.Generic.EqualityComparer<global::Deepgram.ReadV1RequestText?>.Default.Equals(Text, other.Text) 
+                global::System.Collections.Generic.EqualityComparer<global::Deepgram.ReadV1RequestUrl?>.Default.Equals(ReadV1RequestUrl, other.ReadV1RequestUrl) &&
+                global::System.Collections.Generic.EqualityComparer<global::Deepgram.ReadV1RequestText?>.Default.Equals(ReadV1RequestText, other.ReadV1RequestText) 
                 ;
         }
 

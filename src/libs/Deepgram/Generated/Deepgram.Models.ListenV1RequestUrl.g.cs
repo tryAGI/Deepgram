@@ -9,9 +9,8 @@ namespace Deepgram
     public sealed partial class ListenV1RequestUrl
     {
         /// <summary>
-        /// Example: https://dpgr.am/spacewalk.wav
+        /// 
         /// </summary>
-        /// <example>https://dpgr.am/spacewalk.wav</example>
         [global::System.Text.Json.Serialization.JsonPropertyName("url")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string Url { get; set; }
@@ -25,9 +24,7 @@ namespace Deepgram
         /// <summary>
         /// Initializes a new instance of the <see cref="ListenV1RequestUrl" /> class.
         /// </summary>
-        /// <param name="url">
-        /// Example: https://dpgr.am/spacewalk.wav
-        /// </param>
+        /// <param name="url"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
