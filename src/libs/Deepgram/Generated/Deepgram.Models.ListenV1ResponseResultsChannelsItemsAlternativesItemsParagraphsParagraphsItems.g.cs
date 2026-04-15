@@ -18,13 +18,13 @@ namespace Deepgram
         /// 
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("speaker")]
-        public double? Speaker { get; set; }
+        public int? Speaker { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("num_words")]
-        public double? NumWords { get; set; }
+        public int? NumWords { get; set; }
 
         /// <summary>
         /// 
@@ -57,8 +57,8 @@ namespace Deepgram
 #endif
         public ListenV1ResponseResultsChannelsItemsAlternativesItemsParagraphsParagraphsItems(
             global::System.Collections.Generic.IList<global::Deepgram.ListenV1ResponseResultsChannelsItemsAlternativesItemsParagraphsParagraphsItemsSentencesItems>? sentences,
-            double? speaker,
-            double? numWords,
+            int? speaker,
+            int? numWords,
             double? start,
             double? end)
         {

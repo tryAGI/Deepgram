@@ -30,7 +30,7 @@ namespace Deepgram
         /// 
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("channel")]
-        public double? Channel { get; set; }
+        public int? Channel { get; set; }
 
         /// <summary>
         /// 
@@ -48,7 +48,7 @@ namespace Deepgram
         /// 
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("speaker")]
-        public double? Speaker { get; set; }
+        public int? Speaker { get; set; }
 
         /// <summary>
         /// 
@@ -80,10 +80,10 @@ namespace Deepgram
             double? start,
             double? end,
             double? confidence,
-            double? channel,
+            int? channel,
             string? transcript,
             global::System.Collections.Generic.IList<global::Deepgram.ListenV1ResponseResultsUtterancesItemsWordsItems>? words,
-            double? speaker,
+            int? speaker,
             global::System.Guid? id)
         {
             this.Start = start;

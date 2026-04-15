@@ -36,7 +36,7 @@ namespace Deepgram
         /// 
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("speaker")]
-        public double? Speaker { get; set; }
+        public int? Speaker { get; set; }
 
         /// <summary>
         /// 
@@ -74,7 +74,7 @@ namespace Deepgram
             double? start,
             double? end,
             double? confidence,
-            double? speaker,
+            int? speaker,
             double? speakerConfidence,
             string? punctuatedWord)
         {
