@@ -18,13 +18,13 @@ namespace Deepgram
         /// 
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("input_tokens")]
-        public double? InputTokens { get; set; }
+        public int? InputTokens { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("output_tokens")]
-        public double? OutputTokens { get; set; }
+        public int? OutputTokens { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -43,8 +43,8 @@ namespace Deepgram
 #endif
         public ReadV1ResponseMetadataMetadataTopicsInfo(
             global::System.Guid? modelUuid,
-            double? inputTokens,
-            double? outputTokens)
+            int? inputTokens,
+            int? outputTokens)
         {
             this.ModelUuid = modelUuid;
             this.InputTokens = inputTokens;

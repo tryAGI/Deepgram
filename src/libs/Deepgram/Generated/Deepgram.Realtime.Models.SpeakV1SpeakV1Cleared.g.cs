@@ -21,7 +21,7 @@ namespace Deepgram.Realtime
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("sequence_id")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required double SequenceId { get; set; }
+        public required int SequenceId { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -43,7 +43,7 @@ namespace Deepgram.Realtime
 #endif
         public SpeakV1SpeakV1Cleared(
             global::Deepgram.Realtime.ChannelsSpeakV1MessagesSpeakV1ClearedType type,
-            double sequenceId)
+            int sequenceId)
         {
             this.Type = type;
             this.SequenceId = sequenceId;

@@ -55,7 +55,7 @@ namespace Deepgram.Realtime
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("channels")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required double Channels { get; set; }
+        public required int Channels { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -96,7 +96,7 @@ namespace Deepgram.Realtime
             string sha256,
             string created,
             double duration,
-            double channels,
+            int channels,
             global::Deepgram.Realtime.ChannelsListenV1MessagesListenV1MetadataType type)
         {
             this.Type = type;

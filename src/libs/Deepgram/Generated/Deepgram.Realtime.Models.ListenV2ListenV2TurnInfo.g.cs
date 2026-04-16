@@ -27,7 +27,7 @@ namespace Deepgram.Realtime
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("sequence_id")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required double SequenceId { get; set; }
+        public required int SequenceId { get; set; }
 
         /// <summary>
         /// The type of event being reported.<br/>
@@ -47,7 +47,7 @@ namespace Deepgram.Realtime
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("turn_index")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required double TurnIndex { get; set; }
+        public required int TurnIndex { get; set; }
 
         /// <summary>
         /// Start time in seconds of the audio range that was transcribed
@@ -155,9 +155,9 @@ namespace Deepgram.Realtime
 #endif
         public ListenV2ListenV2TurnInfo(
             global::System.Guid requestId,
-            double sequenceId,
+            int sequenceId,
             global::Deepgram.Realtime.ChannelsListenV2MessagesListenV2TurnInfoEvent @event,
-            double turnIndex,
+            int turnIndex,
             double audioWindowStart,
             double audioWindowEnd,
             string transcript,

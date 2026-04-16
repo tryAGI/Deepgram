@@ -20,7 +20,7 @@ namespace Deepgram.Realtime
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("channel")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::System.Collections.Generic.IList<double> Channel { get; set; }
+        public required global::System.Collections.Generic.IList<int> Channel { get; set; }
 
         /// <summary>
         /// The last word end
@@ -51,7 +51,7 @@ namespace Deepgram.Realtime
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public ListenV1ListenV1UtteranceEnd(
-            global::System.Collections.Generic.IList<double> channel,
+            global::System.Collections.Generic.IList<int> channel,
             double lastWordEnd,
             global::Deepgram.Realtime.ChannelsListenV1MessagesListenV1UtteranceEndType type)
         {

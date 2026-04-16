@@ -44,7 +44,7 @@ namespace Deepgram.Realtime
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("sequence_id")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required double SequenceId { get; set; }
+        public required int SequenceId { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -80,7 +80,7 @@ namespace Deepgram.Realtime
             global::System.Guid requestId,
             global::Deepgram.Realtime.ChannelsListenV2MessagesListenV2ConfigureSuccessThresholds thresholds,
             object keyterms,
-            double sequenceId,
+            int sequenceId,
             global::Deepgram.Realtime.ListenV2ListenV2ConfigureSuccessType type)
         {
             this.Type = type;

@@ -22,7 +22,7 @@ namespace Deepgram.Realtime
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("sequence_id")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required double SequenceId { get; set; }
+        public required int SequenceId { get; set; }
 
         /// <summary>
         /// A string code describing the error, e.g. `INTERNAL_SERVER_ERROR`
@@ -65,7 +65,7 @@ namespace Deepgram.Realtime
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public ListenV2ListenV2FatalError(
-            double sequenceId,
+            int sequenceId,
             string code,
             string description,
             global::Deepgram.Realtime.ChannelsListenV2MessagesListenV2FatalErrorType type)

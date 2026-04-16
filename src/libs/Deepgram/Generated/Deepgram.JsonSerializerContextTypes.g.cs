@@ -276,27 +276,27 @@ namespace Deepgram
         /// <summary>
         /// 
         /// </summary>
-        public double? Type62 { get; set; }
+        public global::Deepgram.ListenV1ResponseMetadataSentimentInfo? Type62 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Deepgram.ListenV1ResponseMetadataSentimentInfo? Type63 { get; set; }
+        public global::Deepgram.ListenV1ResponseMetadataTopicsInfo? Type63 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Deepgram.ListenV1ResponseMetadataTopicsInfo? Type64 { get; set; }
+        public global::Deepgram.ListenV1ResponseMetadataIntentsInfo? Type64 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Deepgram.ListenV1ResponseMetadataIntentsInfo? Type65 { get; set; }
+        public global::Deepgram.ListenV1ResponseMetadata? Type65 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Deepgram.ListenV1ResponseMetadata? Type66 { get; set; }
+        public global::System.Guid? Type66 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Guid? Type67 { get; set; }
+        public double? Type67 { get; set; }
         /// <summary>
         /// 
         /// </summary>
