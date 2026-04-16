@@ -47,7 +47,7 @@ namespace Deepgram
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("channels")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required double Channels { get; set; }
+        public required int Channels { get; set; }
 
         /// <summary>
         /// 
@@ -125,7 +125,7 @@ namespace Deepgram
             string sha256,
             global::System.DateTime created,
             double duration,
-            double channels,
+            int channels,
             global::System.Collections.Generic.IList<string> models,
             global::Deepgram.ListenV1ResponseMetadataModelInfo modelInfo,
             string? transactionKey,

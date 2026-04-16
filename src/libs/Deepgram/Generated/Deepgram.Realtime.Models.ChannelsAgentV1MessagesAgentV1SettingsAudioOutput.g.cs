@@ -20,13 +20,13 @@ namespace Deepgram.Realtime
         /// Sample rate in Hz
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("sample_rate")]
-        public double? SampleRate { get; set; }
+        public int? SampleRate { get; set; }
 
         /// <summary>
         /// Audio bitrate in bits per second
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("bitrate")]
-        public double? Bitrate { get; set; }
+        public int? Bitrate { get; set; }
 
         /// <summary>
         /// Audio container format. If omitted, defaults to 'none'
@@ -61,8 +61,8 @@ namespace Deepgram.Realtime
 #endif
         public ChannelsAgentV1MessagesAgentV1SettingsAudioOutput(
             global::Deepgram.Realtime.ChannelsAgentV1MessagesAgentV1SettingsAudioOutputEncoding? encoding,
-            double? sampleRate,
-            double? bitrate,
+            int? sampleRate,
+            int? bitrate,
             string? container)
         {
             this.Encoding = encoding;

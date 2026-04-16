@@ -52,7 +52,7 @@ namespace Deepgram.Realtime
         /// The speaker of the word
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("speaker")]
-        public double? Speaker { get; set; }
+        public int? Speaker { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -94,7 +94,7 @@ namespace Deepgram.Realtime
             double confidence,
             string? language,
             string? punctuatedWord,
-            double? speaker)
+            int? speaker)
         {
             this.Word = word ?? throw new global::System.ArgumentNullException(nameof(word));
             this.Start = start;

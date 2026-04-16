@@ -24,7 +24,7 @@ namespace Deepgram.Realtime
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("sample_rate")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required double SampleRate { get; set; }
+        public required int SampleRate { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -48,7 +48,7 @@ namespace Deepgram.Realtime
 #endif
         public ChannelsAgentV1MessagesAgentV1SettingsAudioInput(
             global::Deepgram.Realtime.ChannelsAgentV1MessagesAgentV1SettingsAudioInputEncoding encoding,
-            double sampleRate)
+            int sampleRate)
         {
             this.Encoding = encoding;
             this.SampleRate = sampleRate;

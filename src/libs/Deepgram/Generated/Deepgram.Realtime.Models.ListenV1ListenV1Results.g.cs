@@ -20,7 +20,7 @@ namespace Deepgram.Realtime
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("channel_index")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::System.Collections.Generic.IList<double> ChannelIndex { get; set; }
+        public required global::System.Collections.Generic.IList<int> ChannelIndex { get; set; }
 
         /// <summary>
         /// The duration of the transcription
@@ -113,7 +113,7 @@ namespace Deepgram.Realtime
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public ListenV1ListenV1Results(
-            global::System.Collections.Generic.IList<double> channelIndex,
+            global::System.Collections.Generic.IList<int> channelIndex,
             double duration,
             double start,
             global::Deepgram.Realtime.ChannelsListenV1MessagesListenV1ResultsChannel channel,
