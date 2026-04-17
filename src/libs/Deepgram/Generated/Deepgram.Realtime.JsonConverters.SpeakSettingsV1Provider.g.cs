@@ -23,6 +23,14 @@ namespace Deepgram.Realtime.JsonConverters
                 foreach (var __jsonProp in __jsonDocument.RootElement.EnumerateObject())
                 {
                     __jsonProps.Add(__jsonProp.Name);
+                    if (__jsonProp.Value.ValueKind == global::System.Text.Json.JsonValueKind.Object)
+                    {
+                        foreach (var __nestedJsonProp in __jsonProp.Value.EnumerateObject())
+                        {
+                            __jsonProps.Add(__jsonProp.Name + "." + __nestedJsonProp.Name);
+                        }
+                    }
+
                 }
             }
 
@@ -43,6 +51,8 @@ namespace Deepgram.Realtime.JsonConverters
             if (__jsonProps.Contains("type")) __score2++;
             if (__jsonProps.Contains("version")) __score2++;
             if (__jsonProps.Contains("voice")) __score2++;
+            if (__jsonProps.Contains("voice.id")) __score2++;
+            if (__jsonProps.Contains("voice.mode")) __score2++;
             if (__jsonProps.Contains("volume")) __score2++;
             var __score3 = 0;
             if (__jsonProps.Contains("model")) __score3++;
@@ -51,6 +61,11 @@ namespace Deepgram.Realtime.JsonConverters
             if (__jsonProps.Contains("voice")) __score3++;
             var __score4 = 0;
             if (__jsonProps.Contains("credentials")) __score4++;
+            if (__jsonProps.Contains("credentials.access_key_id")) __score4++;
+            if (__jsonProps.Contains("credentials.region")) __score4++;
+            if (__jsonProps.Contains("credentials.secret_access_key")) __score4++;
+            if (__jsonProps.Contains("credentials.session_token")) __score4++;
+            if (__jsonProps.Contains("credentials.type")) __score4++;
             if (__jsonProps.Contains("engine")) __score4++;
             if (__jsonProps.Contains("language")) __score4++;
             if (__jsonProps.Contains("language_code")) __score4++;
