@@ -23,6 +23,14 @@ namespace Deepgram.JsonConverters
                 foreach (var __jsonProp in __jsonDocument.RootElement.EnumerateObject())
                 {
                     __jsonProps.Add(__jsonProp.Name);
+                    if (__jsonProp.Value.ValueKind == global::System.Text.Json.JsonValueKind.Object)
+                    {
+                        foreach (var __nestedJsonProp in __jsonProp.Value.EnumerateObject())
+                        {
+                            __jsonProps.Add(__jsonProp.Name + "." + __nestedJsonProp.Name);
+                        }
+                    }
+
                 }
             }
 
@@ -41,6 +49,13 @@ namespace Deepgram.JsonConverters
             if (__jsonProps.Contains("canonical_name")) __score1++;
             if (__jsonProps.Contains("languages")) __score1++;
             if (__jsonProps.Contains("metadata")) __score1++;
+            if (__jsonProps.Contains("metadata.accent")) __score1++;
+            if (__jsonProps.Contains("metadata.age")) __score1++;
+            if (__jsonProps.Contains("metadata.color")) __score1++;
+            if (__jsonProps.Contains("metadata.image")) __score1++;
+            if (__jsonProps.Contains("metadata.sample")) __score1++;
+            if (__jsonProps.Contains("metadata.tags")) __score1++;
+            if (__jsonProps.Contains("metadata.use_cases")) __score1++;
             if (__jsonProps.Contains("name")) __score1++;
             if (__jsonProps.Contains("uuid")) __score1++;
             if (__jsonProps.Contains("version")) __score1++;
