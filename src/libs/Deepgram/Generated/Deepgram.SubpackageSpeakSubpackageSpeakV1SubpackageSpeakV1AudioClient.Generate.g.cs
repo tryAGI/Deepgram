@@ -49,6 +49,7 @@ namespace Deepgram
             ref global::Deepgram.V1SpeakPostParametersEncoding? encoding,
             ref global::Deepgram.V1SpeakPostParametersModel? model,
             ref global::Deepgram.V1SpeakPostParametersSampleRate? sampleRate,
+            ref double? speed,
             global::Deepgram.SpeakV1Request request);
         partial void PrepareGenerateRequest(
             global::System.Net.Http.HttpClient httpClient,
@@ -62,6 +63,7 @@ namespace Deepgram
             global::Deepgram.V1SpeakPostParametersEncoding? encoding,
             global::Deepgram.V1SpeakPostParametersModel? model,
             global::Deepgram.V1SpeakPostParametersSampleRate? sampleRate,
+            double? speed,
             global::Deepgram.SpeakV1Request request);
         partial void ProcessGenerateResponse(
             global::System.Net.Http.HttpClient httpClient,
@@ -91,6 +93,9 @@ namespace Deepgram
         /// Default Value: aura-asteria-en
         /// </param>
         /// <param name="sampleRate"></param>
+        /// <param name="speed">
+        /// Default Value: 1
+        /// </param>
         /// <param name="request"></param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
@@ -107,6 +112,7 @@ namespace Deepgram
             global::Deepgram.V1SpeakPostParametersEncoding? encoding = default,
             global::Deepgram.V1SpeakPostParametersModel? model = default,
             global::Deepgram.V1SpeakPostParametersSampleRate? sampleRate = default,
+            double? speed = default,
             global::Deepgram.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
@@ -125,6 +131,7 @@ namespace Deepgram
                 encoding: ref encoding,
                 model: ref model,
                 sampleRate: ref sampleRate,
+                speed: ref speed,
                 request: request);
 
 
@@ -163,7 +170,8 @@ namespace Deepgram
                                 .AddOptionalParameter("container", container?.ToString())
                                 .AddOptionalParameter("encoding", encoding?.ToString())
                                 .AddOptionalParameter("model", model?.ToValueString())
-                                .AddOptionalParameter("sample_rate", sampleRate?.ToString()) 
+                                .AddOptionalParameter("sample_rate", sampleRate?.ToString())
+                                .AddOptionalParameter("speed", speed?.ToString()) 
                                 ;
                             var __path = __pathBuilder.ToString();
                 __path = global::Deepgram.AutoSDKRequestOptionsSupport.AppendQueryParameters(
@@ -220,6 +228,7 @@ namespace Deepgram
                     encoding: encoding,
                     model: model,
                     sampleRate: sampleRate,
+                    speed: speed,
                     request: request);
 
                 return __httpRequest;
@@ -530,6 +539,9 @@ namespace Deepgram
         /// Default Value: aura-asteria-en
         /// </param>
         /// <param name="sampleRate"></param>
+        /// <param name="speed">
+        /// Default Value: 1
+        /// </param>
         /// <param name="text">
         /// The text content to be converted to speech
         /// </param>
@@ -547,6 +559,7 @@ namespace Deepgram
             global::Deepgram.V1SpeakPostParametersEncoding? encoding = default,
             global::Deepgram.V1SpeakPostParametersModel? model = default,
             global::Deepgram.V1SpeakPostParametersSampleRate? sampleRate = default,
+            double? speed = default,
             global::Deepgram.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
@@ -565,6 +578,7 @@ namespace Deepgram
                 encoding: encoding,
                 model: model,
                 sampleRate: sampleRate,
+                speed: speed,
                 request: __request,
                 requestOptions: requestOptions,
                 cancellationToken: cancellationToken).ConfigureAwait(false);
