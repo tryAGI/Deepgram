@@ -23,6 +23,16 @@ namespace Deepgram.Realtime
         public required string Message { get; set; }
 
         /// <summary>
+        /// Controls how the injection interacts with any in-progress user or agent turn.<br/>
+        /// * `default` — The agent speaks only if neither the user nor the agent is mid-turn. If a turn is in progress, the server replies with `InjectionRefused`.<br/>
+        /// * `queue` — The message is appended after any already-queued `ConversationText` without interrupting the current agent turn or think response. If nothing is queued, the message plays immediately.<br/>
+        /// Default Value: default
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("behavior")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Deepgram.Realtime.JsonConverters.ChannelsAgentV1MessagesAgentV1InjectAgentMessageBehaviorJsonConverter))]
+        public global::Deepgram.Realtime.ChannelsAgentV1MessagesAgentV1InjectAgentMessageBehavior? Behavior { get; set; }
+
+        /// <summary>
         /// Additional properties that are not explicitly defined in the schema
         /// </summary>
         [global::System.Text.Json.Serialization.JsonExtensionData]
@@ -37,15 +47,23 @@ namespace Deepgram.Realtime
         /// <param name="type">
         /// Message type identifier for injecting an agent message
         /// </param>
+        /// <param name="behavior">
+        /// Controls how the injection interacts with any in-progress user or agent turn.<br/>
+        /// * `default` — The agent speaks only if neither the user nor the agent is mid-turn. If a turn is in progress, the server replies with `InjectionRefused`.<br/>
+        /// * `queue` — The message is appended after any already-queued `ConversationText` without interrupting the current agent turn or think response. If nothing is queued, the message plays immediately.<br/>
+        /// Default Value: default
+        /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public AgentV1AgentV1InjectAgentMessage(
             string message,
-            global::Deepgram.Realtime.AgentV1AgentV1InjectAgentMessageType type)
+            global::Deepgram.Realtime.AgentV1AgentV1InjectAgentMessageType type,
+            global::Deepgram.Realtime.ChannelsAgentV1MessagesAgentV1InjectAgentMessageBehavior? behavior)
         {
             this.Type = type;
             this.Message = message ?? throw new global::System.ArgumentNullException(nameof(message));
+            this.Behavior = behavior;
         }
 
         /// <summary>
