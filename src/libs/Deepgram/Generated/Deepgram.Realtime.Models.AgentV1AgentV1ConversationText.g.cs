@@ -31,6 +31,18 @@ namespace Deepgram.Realtime
         public required string Content { get; set; }
 
         /// <summary>
+        /// The language hints that were active at the time of the turn. Only present on user-role messages when the listen model is flux-general-multi.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("languages_hinted")]
+        public global::System.Collections.Generic.IList<string>? LanguagesHinted { get; set; }
+
+        /// <summary>
+        /// Languages detected in the user's speech, sorted by word count (descending). Only present on user-role messages when the listen model is flux-general-multi.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("languages")]
+        public global::System.Collections.Generic.IList<string>? Languages { get; set; }
+
+        /// <summary>
         /// Additional properties that are not explicitly defined in the schema
         /// </summary>
         [global::System.Text.Json.Serialization.JsonExtensionData]
@@ -48,17 +60,27 @@ namespace Deepgram.Realtime
         /// <param name="type">
         /// Message type identifier for conversation text
         /// </param>
+        /// <param name="languagesHinted">
+        /// The language hints that were active at the time of the turn. Only present on user-role messages when the listen model is flux-general-multi.
+        /// </param>
+        /// <param name="languages">
+        /// Languages detected in the user's speech, sorted by word count (descending). Only present on user-role messages when the listen model is flux-general-multi.
+        /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public AgentV1AgentV1ConversationText(
             global::Deepgram.Realtime.ChannelsAgentV1MessagesAgentV1ConversationTextRole role,
             string content,
-            global::Deepgram.Realtime.AgentV1AgentV1ConversationTextType type)
+            global::Deepgram.Realtime.AgentV1AgentV1ConversationTextType type,
+            global::System.Collections.Generic.IList<string>? languagesHinted,
+            global::System.Collections.Generic.IList<string>? languages)
         {
             this.Type = type;
             this.Role = role;
             this.Content = content ?? throw new global::System.ArgumentNullException(nameof(content));
+            this.LanguagesHinted = languagesHinted;
+            this.Languages = languages;
         }
 
         /// <summary>
