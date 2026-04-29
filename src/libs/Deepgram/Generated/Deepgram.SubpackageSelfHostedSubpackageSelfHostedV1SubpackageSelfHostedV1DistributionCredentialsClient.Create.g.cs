@@ -170,7 +170,7 @@ namespace Deepgram
                 PrepareCreateRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    projectId: projectId,
+                    projectId: projectId!,
                     scopes: scopes,
                     provider: provider,
                     request: request);

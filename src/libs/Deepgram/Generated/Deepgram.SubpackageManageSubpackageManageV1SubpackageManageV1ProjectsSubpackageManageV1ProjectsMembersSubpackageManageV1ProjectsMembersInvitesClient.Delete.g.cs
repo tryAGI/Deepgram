@@ -145,8 +145,8 @@ namespace Deepgram
                 PrepareDeleteRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    projectId: projectId,
-                    email: email);
+                    projectId: projectId!,
+                    email: email!);
 
                 return __httpRequest;
             }

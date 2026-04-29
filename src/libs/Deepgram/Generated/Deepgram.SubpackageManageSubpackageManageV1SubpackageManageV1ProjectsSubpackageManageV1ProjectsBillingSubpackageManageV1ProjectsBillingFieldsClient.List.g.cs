@@ -154,7 +154,7 @@ namespace Deepgram
                 PrepareListRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    projectId: projectId,
+                    projectId: projectId!,
                     start: start,
                     end: end);
 
