@@ -13,19 +13,19 @@ namespace Deepgram.Realtime
         /// Any type
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("eager_eot_threshold")]
-        public object? EagerEotThreshold { get; set; }
+        public global::Deepgram.Realtime.ListenV2EagerEotThreshold? EagerEotThreshold { get; set; }
 
         /// <summary>
         /// Any type
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("eot_threshold")]
-        public object? EotThreshold { get; set; }
+        public global::Deepgram.Realtime.ListenV2EotThreshold? EotThreshold { get; set; }
 
         /// <summary>
         /// Any type
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("eot_timeout_ms")]
-        public object? EotTimeoutMs { get; set; }
+        public global::Deepgram.Realtime.ListenV2EotTimeoutMs? EotTimeoutMs { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -49,9 +49,9 @@ namespace Deepgram.Realtime
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public ChannelsListenV2MessagesListenV2ConfigureSuccessThresholds(
-            object? eagerEotThreshold,
-            object? eotThreshold,
-            object? eotTimeoutMs)
+            global::Deepgram.Realtime.ListenV2EagerEotThreshold? eagerEotThreshold,
+            global::Deepgram.Realtime.ListenV2EotThreshold? eotThreshold,
+            global::Deepgram.Realtime.ListenV2EotTimeoutMs? eotTimeoutMs)
         {
             this.EagerEotThreshold = eagerEotThreshold;
             this.EotThreshold = eotThreshold;

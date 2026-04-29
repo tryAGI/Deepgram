@@ -2,7 +2,7 @@
 
 namespace Deepgram.Realtime
 {
-    public sealed partial class ChannelsListenV2MessagesListenV2ConfigureThresholdsEotTimeoutMs
+    public readonly partial struct AgentV1AgentV1History
     {
         /// <summary>
         /// Serializes the current instance to a JSON string using the provided JsonSerializerContext.
@@ -34,14 +34,14 @@ namespace Deepgram.Realtime
         /// <summary>
         /// Deserializes a JSON string using the provided JsonSerializerContext.
         /// </summary>
-        public static global::Deepgram.Realtime.ChannelsListenV2MessagesListenV2ConfigureThresholdsEotTimeoutMs? FromJson(
+        public static global::Deepgram.Realtime.AgentV1AgentV1History? FromJson(
             string json,
             global::System.Text.Json.Serialization.JsonSerializerContext jsonSerializerContext)
         {
             return global::System.Text.Json.JsonSerializer.Deserialize(
                 json,
-                typeof(global::Deepgram.Realtime.ChannelsListenV2MessagesListenV2ConfigureThresholdsEotTimeoutMs),
-                jsonSerializerContext) as global::Deepgram.Realtime.ChannelsListenV2MessagesListenV2ConfigureThresholdsEotTimeoutMs;
+                typeof(global::Deepgram.Realtime.AgentV1AgentV1History),
+                jsonSerializerContext) as global::Deepgram.Realtime.AgentV1AgentV1History?;
         }
 
         /// <summary>
@@ -51,11 +51,11 @@ namespace Deepgram.Realtime
         [global::System.Diagnostics.CodeAnalysis.RequiresUnreferencedCode("JSON serialization and deserialization might require types that cannot be statically analyzed. Use the overload that takes a JsonTypeInfo or JsonSerializerContext, or make sure all of the required types are preserved.")]
         [global::System.Diagnostics.CodeAnalysis.RequiresDynamicCode("JSON serialization and deserialization might require types that cannot be statically analyzed and might need runtime code generation. Use System.Text.Json source generation for native AOT applications.")]
 #endif
-        public static global::Deepgram.Realtime.ChannelsListenV2MessagesListenV2ConfigureThresholdsEotTimeoutMs? FromJson(
+        public static global::Deepgram.Realtime.AgentV1AgentV1History? FromJson(
             string json,
             global::System.Text.Json.JsonSerializerOptions? jsonSerializerOptions = null)
         {
-            return global::System.Text.Json.JsonSerializer.Deserialize<global::Deepgram.Realtime.ChannelsListenV2MessagesListenV2ConfigureThresholdsEotTimeoutMs>(
+            return global::System.Text.Json.JsonSerializer.Deserialize<global::Deepgram.Realtime.AgentV1AgentV1History>(
                 json,
                 jsonSerializerOptions);
         }
@@ -63,14 +63,14 @@ namespace Deepgram.Realtime
         /// <summary>
         /// Deserializes a JSON stream using the provided JsonSerializerContext.
         /// </summary>
-        public static async global::System.Threading.Tasks.ValueTask<global::Deepgram.Realtime.ChannelsListenV2MessagesListenV2ConfigureThresholdsEotTimeoutMs?> FromJsonStreamAsync(
+        public static async global::System.Threading.Tasks.ValueTask<global::Deepgram.Realtime.AgentV1AgentV1History?> FromJsonStreamAsync(
             global::System.IO.Stream jsonStream,
             global::System.Text.Json.Serialization.JsonSerializerContext jsonSerializerContext)
         {
             return (await global::System.Text.Json.JsonSerializer.DeserializeAsync(
                 jsonStream,
-                typeof(global::Deepgram.Realtime.ChannelsListenV2MessagesListenV2ConfigureThresholdsEotTimeoutMs),
-                jsonSerializerContext).ConfigureAwait(false)) as global::Deepgram.Realtime.ChannelsListenV2MessagesListenV2ConfigureThresholdsEotTimeoutMs;
+                typeof(global::Deepgram.Realtime.AgentV1AgentV1History),
+                jsonSerializerContext).ConfigureAwait(false)) as global::Deepgram.Realtime.AgentV1AgentV1History?;
         }
 
         /// <summary>
@@ -80,11 +80,11 @@ namespace Deepgram.Realtime
         [global::System.Diagnostics.CodeAnalysis.RequiresUnreferencedCode("JSON serialization and deserialization might require types that cannot be statically analyzed. Use the overload that takes a JsonTypeInfo or JsonSerializerContext, or make sure all of the required types are preserved.")]
         [global::System.Diagnostics.CodeAnalysis.RequiresDynamicCode("JSON serialization and deserialization might require types that cannot be statically analyzed and might need runtime code generation. Use System.Text.Json source generation for native AOT applications.")]
 #endif
-        public static global::System.Threading.Tasks.ValueTask<global::Deepgram.Realtime.ChannelsListenV2MessagesListenV2ConfigureThresholdsEotTimeoutMs?> FromJsonStreamAsync(
+        public static global::System.Threading.Tasks.ValueTask<global::Deepgram.Realtime.AgentV1AgentV1History?> FromJsonStreamAsync(
             global::System.IO.Stream jsonStream,
             global::System.Text.Json.JsonSerializerOptions? jsonSerializerOptions = null)
         {
-            return global::System.Text.Json.JsonSerializer.DeserializeAsync<global::Deepgram.Realtime.ChannelsListenV2MessagesListenV2ConfigureThresholdsEotTimeoutMs?>(
+            return global::System.Text.Json.JsonSerializer.DeserializeAsync<global::Deepgram.Realtime.AgentV1AgentV1History?>(
                 jsonStream,
                 jsonSerializerOptions);
         }

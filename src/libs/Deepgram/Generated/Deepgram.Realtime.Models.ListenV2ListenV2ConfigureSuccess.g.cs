@@ -31,11 +31,13 @@ namespace Deepgram.Realtime
         public required global::Deepgram.Realtime.ChannelsListenV2MessagesListenV2ConfigureSuccessThresholds Thresholds { get; set; }
 
         /// <summary>
-        /// Any type
+        /// Keyterm prompting can improve recognition of specialized terminology.<br/>
+        /// Pass multiple keyterm query parameters to boost multiple keyterms.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("keyterms")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Deepgram.Realtime.JsonConverters.ListenV2KeytermJsonConverter))]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required object Keyterms { get; set; }
+        public required global::Deepgram.Realtime.ListenV2Keyterm Keyterms { get; set; }
 
         /// <summary>
         /// Starts at `0` and increments for each message the server sends<br/>
@@ -63,7 +65,8 @@ namespace Deepgram.Realtime
         /// is not supplied, the configuration continues using the currently configured value.
         /// </param>
         /// <param name="keyterms">
-        /// Any type
+        /// Keyterm prompting can improve recognition of specialized terminology.<br/>
+        /// Pass multiple keyterm query parameters to boost multiple keyterms.
         /// </param>
         /// <param name="sequenceId">
         /// Starts at `0` and increments for each message the server sends<br/>
@@ -79,14 +82,14 @@ namespace Deepgram.Realtime
         public ListenV2ListenV2ConfigureSuccess(
             global::System.Guid requestId,
             global::Deepgram.Realtime.ChannelsListenV2MessagesListenV2ConfigureSuccessThresholds thresholds,
-            object keyterms,
+            global::Deepgram.Realtime.ListenV2Keyterm keyterms,
             int sequenceId,
             global::Deepgram.Realtime.ListenV2ListenV2ConfigureSuccessType type)
         {
             this.Type = type;
             this.RequestId = requestId;
             this.Thresholds = thresholds ?? throw new global::System.ArgumentNullException(nameof(thresholds));
-            this.Keyterms = keyterms ?? throw new global::System.ArgumentNullException(nameof(keyterms));
+            this.Keyterms = keyterms;
             this.SequenceId = sequenceId;
         }
 

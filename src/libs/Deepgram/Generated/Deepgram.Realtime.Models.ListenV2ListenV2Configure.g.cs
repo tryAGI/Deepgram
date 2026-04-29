@@ -23,10 +23,12 @@ namespace Deepgram.Realtime
         public global::Deepgram.Realtime.ChannelsListenV2MessagesListenV2ConfigureThresholds? Thresholds { get; set; }
 
         /// <summary>
-        /// Any type
+        /// Keyterm prompting can improve recognition of specialized terminology.<br/>
+        /// Pass multiple keyterm query parameters to boost multiple keyterms.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("keyterms")]
-        public object? Keyterms { get; set; }
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Deepgram.Realtime.JsonConverters.ListenV2KeytermJsonConverter))]
+        public global::Deepgram.Realtime.ListenV2Keyterm? Keyterms { get; set; }
 
         /// <summary>
         /// Language hints to constrain and prioritize language detection.<br/>
@@ -53,7 +55,8 @@ namespace Deepgram.Realtime
         /// is not supplied, the configuration continues using the currently configured value.
         /// </param>
         /// <param name="keyterms">
-        /// Any type
+        /// Keyterm prompting can improve recognition of specialized terminology.<br/>
+        /// Pass multiple keyterm query parameters to boost multiple keyterms.
         /// </param>
         /// <param name="languageHints">
         /// Language hints to constrain and prioritize language detection.<br/>
@@ -66,7 +69,7 @@ namespace Deepgram.Realtime
         public ListenV2ListenV2Configure(
             global::Deepgram.Realtime.ListenV2ListenV2ConfigureType type,
             global::Deepgram.Realtime.ChannelsListenV2MessagesListenV2ConfigureThresholds? thresholds,
-            object? keyterms,
+            global::Deepgram.Realtime.ListenV2Keyterm? keyterms,
             global::System.Collections.Generic.IList<string>? languageHints)
         {
             this.Type = type;
