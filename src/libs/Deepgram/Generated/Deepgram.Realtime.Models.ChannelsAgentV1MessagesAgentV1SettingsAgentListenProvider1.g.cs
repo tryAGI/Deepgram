@@ -30,6 +30,13 @@ namespace Deepgram.Realtime
         public required string Model { get; set; }
 
         /// <summary>
+        /// One or more BCP-47 language codes to bias the model toward specific languages. Only supported when model is flux-general-multi. Without hints, the model auto-detects the spoken language. See the Language Prompting guide for details.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("language_hint")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Deepgram.Realtime.JsonConverters.ChannelsAgentV1MessagesAgentV1SettingsAgentListenProviderOneOf1LanguageHintJsonConverter))]
+        public global::Deepgram.Realtime.ChannelsAgentV1MessagesAgentV1SettingsAgentListenProviderOneOf1LanguageHint? LanguageHint { get; set; }
+
+        /// <summary>
         /// Prompt keyterm recognition to improve Keyword Recall Rate
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("keyterms")]
@@ -53,6 +60,9 @@ namespace Deepgram.Realtime
         /// <param name="version">
         /// Specifies usage of the V2 Deepgram speech-to-text API (e.g. Flux)
         /// </param>
+        /// <param name="languageHint">
+        /// One or more BCP-47 language codes to bias the model toward specific languages. Only supported when model is flux-general-multi. Without hints, the model auto-detects the spoken language. See the Language Prompting guide for details.
+        /// </param>
         /// <param name="keyterms">
         /// Prompt keyterm recognition to improve Keyword Recall Rate
         /// </param>
@@ -63,11 +73,13 @@ namespace Deepgram.Realtime
             string model,
             global::Deepgram.Realtime.ChannelsAgentV1MessagesAgentV1SettingsAgentListenProvider1Type type,
             global::Deepgram.Realtime.ChannelsAgentV1MessagesAgentV1SettingsAgentListenProvider1Version? version,
+            global::Deepgram.Realtime.ChannelsAgentV1MessagesAgentV1SettingsAgentListenProviderOneOf1LanguageHint? languageHint,
             global::System.Collections.Generic.IList<string>? keyterms)
         {
             this.Type = type;
             this.Version = version;
             this.Model = model ?? throw new global::System.ArgumentNullException(nameof(model));
+            this.LanguageHint = languageHint;
             this.Keyterms = keyterms;
         }
 

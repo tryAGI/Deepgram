@@ -36,6 +36,7 @@ namespace Deepgram.Realtime.JsonConverters
             if (__jsonProps.Contains("version")) __score0++;
             var __score1 = 0;
             if (__jsonProps.Contains("keyterms")) __score1++;
+            if (__jsonProps.Contains("language_hint")) __score1++;
             if (__jsonProps.Contains("model")) __score1++;
             if (__jsonProps.Contains("type")) __score1++;
             if (__jsonProps.Contains("version")) __score1++;
