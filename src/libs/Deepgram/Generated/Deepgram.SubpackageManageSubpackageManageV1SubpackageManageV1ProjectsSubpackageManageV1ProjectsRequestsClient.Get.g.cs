@@ -145,8 +145,8 @@ namespace Deepgram
                 PrepareGetRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    projectId: projectId,
-                    requestId: requestId);
+                    projectId: projectId!,
+                    requestId: requestId!);
 
                 return __httpRequest;
             }

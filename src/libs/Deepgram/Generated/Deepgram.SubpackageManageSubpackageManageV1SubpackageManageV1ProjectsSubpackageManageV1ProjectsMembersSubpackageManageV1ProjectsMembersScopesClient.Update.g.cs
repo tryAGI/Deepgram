@@ -159,8 +159,8 @@ namespace Deepgram
                 PrepareUpdateRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    projectId: projectId,
-                    memberId: memberId,
+                    projectId: projectId!,
+                    memberId: memberId!,
                     request: request);
 
                 return __httpRequest;
