@@ -5,7 +5,7 @@
 namespace Deepgram.Realtime
 {
     /// <summary>
-    /// A message here is either a conversational message or a function call
+    /// A history message is either a conversational message or a function call
     /// </summary>
     public readonly partial struct ChannelsAgentV1MessagesAgentV1SettingsAgentContextMessagesItems : global::System.IEquatable<ChannelsAgentV1MessagesAgentV1SettingsAgentContextMessagesItems>
     {

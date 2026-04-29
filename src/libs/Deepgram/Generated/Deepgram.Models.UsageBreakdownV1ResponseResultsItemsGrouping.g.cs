@@ -51,10 +51,10 @@ namespace Deepgram
         public string? Method { get; set; }
 
         /// <summary>
-        /// Optional tags
+        /// Optional list of tags, null unless grouped by tags.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("tags")]
-        public string? Tags { get; set; }
+        public global::System.Collections.Generic.IList<string>? Tags { get; set; }
 
         /// <summary>
         /// Optional deployment identifier
@@ -91,7 +91,7 @@ namespace Deepgram
         /// Optional method identifier
         /// </param>
         /// <param name="tags">
-        /// Optional tags
+        /// Optional list of tags, null unless grouped by tags.
         /// </param>
         /// <param name="deployment">
         /// Optional deployment identifier
@@ -107,7 +107,7 @@ namespace Deepgram
             string? featureSet,
             global::System.Collections.Generic.IList<string>? models,
             string? method,
-            string? tags,
+            global::System.Collections.Generic.IList<string>? tags,
             string? deployment)
         {
             this.Start = start;
