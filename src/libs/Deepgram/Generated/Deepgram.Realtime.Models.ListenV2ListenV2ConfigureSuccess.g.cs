@@ -40,6 +40,12 @@ namespace Deepgram.Realtime
         public required global::Deepgram.Realtime.ListenV2Keyterm Keyterms { get; set; }
 
         /// <summary>
+        /// The currently active language hints. Only applicable to the flux-general-multi model.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("language_hints")]
+        public global::System.Collections.Generic.IList<string>? LanguageHints { get; set; }
+
+        /// <summary>
         /// Starts at `0` and increments for each message the server sends<br/>
         /// to the client.  This includes messages of other types, like<br/>
         /// `TurnInfo` messages.
@@ -76,6 +82,9 @@ namespace Deepgram.Realtime
         /// <param name="type">
         /// Message type identifier
         /// </param>
+        /// <param name="languageHints">
+        /// The currently active language hints. Only applicable to the flux-general-multi model.
+        /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -84,12 +93,14 @@ namespace Deepgram.Realtime
             global::Deepgram.Realtime.ChannelsListenV2MessagesListenV2ConfigureSuccessThresholds thresholds,
             global::Deepgram.Realtime.ListenV2Keyterm keyterms,
             int sequenceId,
-            global::Deepgram.Realtime.ListenV2ListenV2ConfigureSuccessType type)
+            global::Deepgram.Realtime.ListenV2ListenV2ConfigureSuccessType type,
+            global::System.Collections.Generic.IList<string>? languageHints)
         {
             this.Type = type;
             this.RequestId = requestId;
             this.Thresholds = thresholds ?? throw new global::System.ArgumentNullException(nameof(thresholds));
             this.Keyterms = keyterms;
+            this.LanguageHints = languageHints;
             this.SequenceId = sequenceId;
         }
 

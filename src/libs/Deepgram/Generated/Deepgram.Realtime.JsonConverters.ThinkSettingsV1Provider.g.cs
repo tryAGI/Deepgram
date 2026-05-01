@@ -36,6 +36,7 @@ namespace Deepgram.Realtime.JsonConverters
 
             var __score0 = 0;
             if (__jsonProps.Contains("model")) __score0++;
+            if (__jsonProps.Contains("reasoning_mode")) __score0++;
             if (__jsonProps.Contains("temperature")) __score0++;
             if (__jsonProps.Contains("type")) __score0++;
             if (__jsonProps.Contains("version")) __score0++;
@@ -61,6 +62,7 @@ namespace Deepgram.Realtime.JsonConverters
             if (__jsonProps.Contains("version")) __score3++;
             var __score4 = 0;
             if (__jsonProps.Contains("model")) __score4++;
+            if (__jsonProps.Contains("reasoning_mode")) __score4++;
             if (__jsonProps.Contains("temperature")) __score4++;
             if (__jsonProps.Contains("type")) __score4++;
             if (__jsonProps.Contains("version")) __score4++;

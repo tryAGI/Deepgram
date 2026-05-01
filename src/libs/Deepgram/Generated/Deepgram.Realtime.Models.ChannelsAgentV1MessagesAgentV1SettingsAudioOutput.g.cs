@@ -29,10 +29,12 @@ namespace Deepgram.Realtime
         public int? Bitrate { get; set; }
 
         /// <summary>
-        /// Audio container format. If omitted, defaults to 'none'
+        /// Audio container format.<br/>
+        /// Default Value: none
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("container")]
-        public string? Container { get; set; }
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Deepgram.Realtime.JsonConverters.ChannelsAgentV1MessagesAgentV1SettingsAudioOutputContainerJsonConverter))]
+        public global::Deepgram.Realtime.ChannelsAgentV1MessagesAgentV1SettingsAudioOutputContainer? Container { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -54,7 +56,8 @@ namespace Deepgram.Realtime
         /// Audio bitrate in bits per second
         /// </param>
         /// <param name="container">
-        /// Audio container format. If omitted, defaults to 'none'
+        /// Audio container format.<br/>
+        /// Default Value: none
         /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
@@ -63,7 +66,7 @@ namespace Deepgram.Realtime
             global::Deepgram.Realtime.ChannelsAgentV1MessagesAgentV1SettingsAudioOutputEncoding? encoding,
             int? sampleRate,
             int? bitrate,
-            string? container)
+            global::Deepgram.Realtime.ChannelsAgentV1MessagesAgentV1SettingsAudioOutputContainer? container)
         {
             this.Encoding = encoding;
             this.SampleRate = sampleRate;
