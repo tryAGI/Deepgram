@@ -36,6 +36,13 @@ namespace Deepgram.Realtime
         public double? Temperature { get; set; }
 
         /// <summary>
+        /// OpenAI reasoning_effort
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("reasoning_mode")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Deepgram.Realtime.JsonConverters.GroqThinkProviderReasoningModeJsonConverter))]
+        public global::Deepgram.Realtime.GroqThinkProviderReasoningMode? ReasoningMode { get; set; }
+
+        /// <summary>
         /// Additional properties that are not explicitly defined in the schema
         /// </summary>
         [global::System.Text.Json.Serialization.JsonExtensionData]
@@ -54,6 +61,9 @@ namespace Deepgram.Realtime
         /// <param name="temperature">
         /// Groq temperature (0-2)
         /// </param>
+        /// <param name="reasoningMode">
+        /// OpenAI reasoning_effort
+        /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -61,12 +71,14 @@ namespace Deepgram.Realtime
             global::Deepgram.Realtime.GroqThinkProviderType type,
             global::Deepgram.Realtime.GroqThinkProviderVersion? version,
             global::Deepgram.Realtime.GroqThinkProviderModel model,
-            double? temperature)
+            double? temperature,
+            global::Deepgram.Realtime.GroqThinkProviderReasoningMode? reasoningMode)
         {
             this.Type = type;
             this.Version = version;
             this.Model = model;
             this.Temperature = temperature;
+            this.ReasoningMode = reasoningMode;
         }
 
         /// <summary>

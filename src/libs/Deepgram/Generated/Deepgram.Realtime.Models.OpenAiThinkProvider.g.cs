@@ -37,6 +37,13 @@ namespace Deepgram.Realtime
         public double? Temperature { get; set; }
 
         /// <summary>
+        /// OpenAI reasoning_effort
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("reasoning_mode")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Deepgram.Realtime.JsonConverters.OpenAiThinkProviderReasoningModeJsonConverter))]
+        public global::Deepgram.Realtime.OpenAiThinkProviderReasoningMode? ReasoningMode { get; set; }
+
+        /// <summary>
         /// Additional properties that are not explicitly defined in the schema
         /// </summary>
         [global::System.Text.Json.Serialization.JsonExtensionData]
@@ -55,6 +62,9 @@ namespace Deepgram.Realtime
         /// <param name="temperature">
         /// OpenAI temperature (0-2)
         /// </param>
+        /// <param name="reasoningMode">
+        /// OpenAI reasoning_effort
+        /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -62,12 +72,14 @@ namespace Deepgram.Realtime
             global::Deepgram.Realtime.OpenAiThinkProviderModel model,
             global::Deepgram.Realtime.OpenAiThinkProviderType type,
             global::Deepgram.Realtime.OpenAiThinkProviderVersion? version,
-            double? temperature)
+            double? temperature,
+            global::Deepgram.Realtime.OpenAiThinkProviderReasoningMode? reasoningMode)
         {
             this.Type = type;
             this.Version = version;
             this.Model = model;
             this.Temperature = temperature;
+            this.ReasoningMode = reasoningMode;
         }
 
         /// <summary>

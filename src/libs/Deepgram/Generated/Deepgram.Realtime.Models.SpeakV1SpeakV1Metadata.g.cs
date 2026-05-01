@@ -30,18 +30,24 @@ namespace Deepgram.Realtime
         public required string ModelName { get; set; }
 
         /// <summary>
-        /// Version of the model being used
+        /// Version of the primary model being used
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("model_version")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string ModelVersion { get; set; }
 
         /// <summary>
-        /// Unique identifier for the model
+        /// Unique identifier for the primary model used
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("model_uuid")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required global::System.Guid ModelUuid { get; set; }
+
+        /// <summary>
+        /// List of unique identifiers for any additional models used to serve the request
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("additional_model_uuids")]
+        public global::System.Collections.Generic.IList<global::System.Guid>? AdditionalModelUuids { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -59,13 +65,16 @@ namespace Deepgram.Realtime
         /// Name of the model being used
         /// </param>
         /// <param name="modelVersion">
-        /// Version of the model being used
+        /// Version of the primary model being used
         /// </param>
         /// <param name="modelUuid">
-        /// Unique identifier for the model
+        /// Unique identifier for the primary model used
         /// </param>
         /// <param name="type">
         /// Message type identifier
+        /// </param>
+        /// <param name="additionalModelUuids">
+        /// List of unique identifiers for any additional models used to serve the request
         /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
@@ -75,13 +84,15 @@ namespace Deepgram.Realtime
             string modelName,
             string modelVersion,
             global::System.Guid modelUuid,
-            global::Deepgram.Realtime.ChannelsSpeakV1MessagesSpeakV1MetadataType type)
+            global::Deepgram.Realtime.ChannelsSpeakV1MessagesSpeakV1MetadataType type,
+            global::System.Collections.Generic.IList<global::System.Guid>? additionalModelUuids)
         {
             this.Type = type;
             this.RequestId = requestId;
             this.ModelName = modelName ?? throw new global::System.ArgumentNullException(nameof(modelName));
             this.ModelVersion = modelVersion ?? throw new global::System.ArgumentNullException(nameof(modelVersion));
             this.ModelUuid = modelUuid;
+            this.AdditionalModelUuids = additionalModelUuids;
         }
 
         /// <summary>

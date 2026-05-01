@@ -52,6 +52,7 @@ namespace Deepgram.Realtime
         /// 
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("agent")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Deepgram.Realtime.JsonConverters.ChannelsAgentV1MessagesAgentV1SettingsAgentJsonConverter))]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required global::Deepgram.Realtime.ChannelsAgentV1MessagesAgentV1SettingsAgent Agent { get; set; }
 
@@ -97,7 +98,7 @@ namespace Deepgram.Realtime
             this.Flags = flags;
             this.MipOptOut = mipOptOut;
             this.Audio = audio ?? throw new global::System.ArgumentNullException(nameof(audio));
-            this.Agent = agent ?? throw new global::System.ArgumentNullException(nameof(agent));
+            this.Agent = agent;
         }
 
         /// <summary>

@@ -1407,11 +1407,26 @@
         "enum": [
           "linear16",
           "mulaw",
-          "alaw"
+          "alaw",
+          "mp3",
+          "opus",
+          "flac",
+          "aac"
         ],
         "default": "linear16",
         "description": "Audio encoding format for streaming TTS output",
         "title": "ChannelsAgentV1MessagesAgentV1SettingsAudioOutputEncoding"
+      },
+      "ChannelsAgentV1MessagesAgentV1SettingsAudioOutputContainer": {
+        "type": "string",
+        "enum": [
+          "none",
+          "wav",
+          "ogg"
+        ],
+        "default": "none",
+        "description": "Audio container format.",
+        "title": "ChannelsAgentV1MessagesAgentV1SettingsAudioOutputContainer"
       },
       "ChannelsAgentV1MessagesAgentV1SettingsAudioOutput": {
         "type": "object",
@@ -1429,8 +1444,8 @@
             "description": "Audio bitrate in bits per second"
           },
           "container": {
-            "type": "string",
-            "description": "Audio container format. If omitted, defaults to 'none'"
+            "$ref": "#/components/schemas/ChannelsAgentV1MessagesAgentV1SettingsAudioOutputContainer",
+            "description": "Audio container format."
           }
         },
         "description": "Audio output configuration settings",
@@ -1450,16 +1465,16 @@
         },
         "title": "ChannelsAgentV1MessagesAgentV1SettingsAudio"
       },
-      "ChannelsAgentV1MessagesAgentV1SettingsAgentContextMessagesItemsOneOf0Role": {
+      "ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ContextMessagesItemsOneOf0Role": {
         "type": "string",
         "enum": [
           "user",
           "assistant"
         ],
         "description": "Identifies who spoke the statement",
-        "title": "ChannelsAgentV1MessagesAgentV1SettingsAgentContextMessagesItemsOneOf0Role"
+        "title": "ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ContextMessagesItemsOneOf0Role"
       },
-      "ChannelsAgentV1MessagesAgentV1SettingsAgentContextMessagesItems0": {
+      "ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ContextMessagesItems0": {
         "type": "object",
         "properties": {
           "type": {
@@ -1470,7 +1485,7 @@
             "description": "Message type identifier for conversation text"
           },
           "role": {
-            "$ref": "#/components/schemas/ChannelsAgentV1MessagesAgentV1SettingsAgentContextMessagesItemsOneOf0Role",
+            "$ref": "#/components/schemas/ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ContextMessagesItemsOneOf0Role",
             "description": "Identifies who spoke the statement"
           },
           "content": {
@@ -1484,9 +1499,9 @@
           "content"
         ],
         "description": "Conversation text as part of the conversation history",
-        "title": "ChannelsAgentV1MessagesAgentV1SettingsAgentContextMessagesItems0"
+        "title": "ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ContextMessagesItems0"
       },
-      "ChannelsAgentV1MessagesAgentV1SettingsAgentContextMessagesItemsOneOf1FunctionCallsItems": {
+      "ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ContextMessagesItemsOneOf1FunctionCallsItems": {
         "type": "object",
         "properties": {
           "id": {
@@ -1521,9 +1536,9 @@
           "arguments",
           "response"
         ],
-        "title": "ChannelsAgentV1MessagesAgentV1SettingsAgentContextMessagesItemsOneOf1FunctionCallsItems"
+        "title": "ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ContextMessagesItemsOneOf1FunctionCallsItems"
       },
-      "ChannelsAgentV1MessagesAgentV1SettingsAgentContextMessagesItems1": {
+      "ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ContextMessagesItems1": {
         "type": "object",
         "properties": {
           "type": {
@@ -1535,7 +1550,7 @@
           "function_calls": {
             "type": "array",
             "items": {
-              "$ref": "#/components/schemas/ChannelsAgentV1MessagesAgentV1SettingsAgentContextMessagesItemsOneOf1FunctionCallsItems"
+              "$ref": "#/components/schemas/ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ContextMessagesItemsOneOf1FunctionCallsItems"
             },
             "description": "List of function call objects"
           }
@@ -1545,35 +1560,35 @@
           "function_calls"
         ],
         "description": "Client-side or server-side function call request and response as part of the conversation history",
-        "title": "ChannelsAgentV1MessagesAgentV1SettingsAgentContextMessagesItems1"
+        "title": "ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ContextMessagesItems1"
       },
-      "ChannelsAgentV1MessagesAgentV1SettingsAgentContextMessagesItems": {
+      "ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ContextMessagesItems": {
         "oneOf": [
           {
-            "$ref": "#/components/schemas/ChannelsAgentV1MessagesAgentV1SettingsAgentContextMessagesItems0"
+            "$ref": "#/components/schemas/ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ContextMessagesItems0"
           },
           {
-            "$ref": "#/components/schemas/ChannelsAgentV1MessagesAgentV1SettingsAgentContextMessagesItems1"
+            "$ref": "#/components/schemas/ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ContextMessagesItems1"
           }
         ],
         "description": "A history message is either a conversational message or a function call",
-        "title": "ChannelsAgentV1MessagesAgentV1SettingsAgentContextMessagesItems"
+        "title": "ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ContextMessagesItems"
       },
-      "ChannelsAgentV1MessagesAgentV1SettingsAgentContext": {
+      "ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0Context": {
         "type": "object",
         "properties": {
           "messages": {
             "type": "array",
             "items": {
-              "$ref": "#/components/schemas/ChannelsAgentV1MessagesAgentV1SettingsAgentContextMessagesItems"
+              "$ref": "#/components/schemas/ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ContextMessagesItems"
             },
             "description": "Conversation history as a list of messages and function calls"
           }
         },
         "description": "Conversation context including the history of messages and function calls",
-        "title": "ChannelsAgentV1MessagesAgentV1SettingsAgentContext"
+        "title": "ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0Context"
       },
-      "ChannelsAgentV1MessagesAgentV1SettingsAgentListenProvider0": {
+      "ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ListenProvider0": {
         "type": "object",
         "properties": {
           "type": {
@@ -1615,9 +1630,9 @@
         "required": [
           "type"
         ],
-        "title": "ChannelsAgentV1MessagesAgentV1SettingsAgentListenProvider0"
+        "title": "ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ListenProvider0"
       },
-      "ChannelsAgentV1MessagesAgentV1SettingsAgentListenProviderOneOf1LanguageHint": {
+      "ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ListenProviderOneOf1LanguageHint": {
         "oneOf": [
           {
             "type": "string"
@@ -1630,9 +1645,9 @@
           }
         ],
         "description": "One or more BCP-47 language codes to bias the model toward specific languages. Only supported when model is flux-general-multi. Without hints, the model auto-detects the spoken language. See the Language Prompting guide for details.",
-        "title": "ChannelsAgentV1MessagesAgentV1SettingsAgentListenProviderOneOf1LanguageHint"
+        "title": "ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ListenProviderOneOf1LanguageHint"
       },
-      "ChannelsAgentV1MessagesAgentV1SettingsAgentListenProvider1": {
+      "ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ListenProvider1": {
         "type": "object",
         "properties": {
           "type": {
@@ -1651,10 +1666,10 @@
           },
           "model": {
             "type": "string",
-            "description": "Model to use for speech to text using the V2 API (e.g. flux-general-en)"
+            "description": "Model to use for speech to text using the V2 API (e.g. flux-general-en, flux-general-multi)"
           },
           "language_hint": {
-            "$ref": "#/components/schemas/ChannelsAgentV1MessagesAgentV1SettingsAgentListenProviderOneOf1LanguageHint",
+            "$ref": "#/components/schemas/ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ListenProviderOneOf1LanguageHint",
             "description": "One or more BCP-47 language codes to bias the model toward specific languages. Only supported when model is flux-general-multi. Without hints, the model auto-detects the spoken language. See the Language Prompting guide for details."
           },
           "keyterms": {
@@ -1669,27 +1684,27 @@
           "type",
           "model"
         ],
-        "title": "ChannelsAgentV1MessagesAgentV1SettingsAgentListenProvider1"
+        "title": "ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ListenProvider1"
       },
-      "ChannelsAgentV1MessagesAgentV1SettingsAgentListenProvider": {
+      "ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ListenProvider": {
         "oneOf": [
           {
-            "$ref": "#/components/schemas/ChannelsAgentV1MessagesAgentV1SettingsAgentListenProvider0"
+            "$ref": "#/components/schemas/ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ListenProvider0"
           },
           {
-            "$ref": "#/components/schemas/ChannelsAgentV1MessagesAgentV1SettingsAgentListenProvider1"
+            "$ref": "#/components/schemas/ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ListenProvider1"
           }
         ],
-        "title": "ChannelsAgentV1MessagesAgentV1SettingsAgentListenProvider"
+        "title": "ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ListenProvider"
       },
-      "ChannelsAgentV1MessagesAgentV1SettingsAgentListen": {
+      "ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0Listen": {
         "type": "object",
         "properties": {
           "provider": {
-            "$ref": "#/components/schemas/ChannelsAgentV1MessagesAgentV1SettingsAgentListenProvider"
+            "$ref": "#/components/schemas/ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ListenProvider"
           }
         },
-        "title": "ChannelsAgentV1MessagesAgentV1SettingsAgentListen"
+        "title": "ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0Listen"
       },
       "OpenAiThinkProviderVersion": {
         "type": "string",
@@ -1714,6 +1729,18 @@
         "description": "OpenAI model to use",
         "title": "OpenAiThinkProviderModel"
       },
+      "OpenAiThinkProviderReasoningMode": {
+        "type": "string",
+        "enum": [
+          "none",
+          "minimal",
+          "low",
+          "medium",
+          "high"
+        ],
+        "description": "OpenAI reasoning_effort",
+        "title": "OpenAiThinkProviderReasoningMode"
+      },
       "OpenAiThinkProvider": {
         "type": "object",
         "properties": {
@@ -1735,6 +1762,10 @@
             "type": "number",
             "format": "double",
             "description": "OpenAI temperature (0-2)"
+          },
+          "reasoning_mode": {
+            "$ref": "#/components/schemas/OpenAiThinkProviderReasoningMode",
+            "description": "OpenAI reasoning_effort"
           }
         },
         "required": [
@@ -1926,6 +1957,18 @@
         "description": "Groq model to use",
         "title": "GroqThinkProviderModel"
       },
+      "GroqThinkProviderReasoningMode": {
+        "type": "string",
+        "enum": [
+          "none",
+          "minimal",
+          "low",
+          "medium",
+          "high"
+        ],
+        "description": "OpenAI reasoning_effort",
+        "title": "GroqThinkProviderReasoningMode"
+      },
       "GroqThinkProvider": {
         "type": "object",
         "properties": {
@@ -1947,6 +1990,10 @@
             "type": "number",
             "format": "double",
             "description": "Groq temperature (0-2)"
+          },
+          "reasoning_mode": {
+            "$ref": "#/components/schemas/GroqThinkProviderReasoningMode",
+            "description": "OpenAI reasoning_effort"
           }
         },
         "required": [
@@ -2092,23 +2139,23 @@
         ],
         "title": "ThinkSettingsV1"
       },
-      "ChannelsAgentV1MessagesAgentV1SettingsAgentThink1": {
+      "ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0Think1": {
         "type": "array",
         "items": {
           "$ref": "#/components/schemas/ThinkSettingsV1"
         },
-        "title": "ChannelsAgentV1MessagesAgentV1SettingsAgentThink1"
+        "title": "ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0Think1"
       },
-      "ChannelsAgentV1MessagesAgentV1SettingsAgentThink": {
+      "ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0Think": {
         "oneOf": [
           {
             "$ref": "#/components/schemas/ThinkSettingsV1"
           },
           {
-            "$ref": "#/components/schemas/ChannelsAgentV1MessagesAgentV1SettingsAgentThink1"
+            "$ref": "#/components/schemas/ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0Think1"
           }
         ],
-        "title": "ChannelsAgentV1MessagesAgentV1SettingsAgentThink"
+        "title": "ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0Think"
       },
       "DeepgramSpeakProviderVersion": {
         "type": "string",
@@ -2550,25 +2597,25 @@
         ],
         "title": "SpeakSettingsV1"
       },
-      "ChannelsAgentV1MessagesAgentV1SettingsAgentSpeak1": {
+      "ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0Speak1": {
         "type": "array",
         "items": {
           "$ref": "#/components/schemas/SpeakSettingsV1"
         },
-        "title": "ChannelsAgentV1MessagesAgentV1SettingsAgentSpeak1"
+        "title": "ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0Speak1"
       },
-      "ChannelsAgentV1MessagesAgentV1SettingsAgentSpeak": {
+      "ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0Speak": {
         "oneOf": [
           {
             "$ref": "#/components/schemas/SpeakSettingsV1"
           },
           {
-            "$ref": "#/components/schemas/ChannelsAgentV1MessagesAgentV1SettingsAgentSpeak1"
+            "$ref": "#/components/schemas/ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0Speak1"
           }
         ],
-        "title": "ChannelsAgentV1MessagesAgentV1SettingsAgentSpeak"
+        "title": "ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0Speak"
       },
-      "ChannelsAgentV1MessagesAgentV1SettingsAgent": {
+      "ChannelsAgentV1MessagesAgentV1SettingsAgent0": {
         "type": "object",
         "properties": {
           "language": {
@@ -2577,23 +2624,35 @@
             "description": "Deprecated. Use `listen.provider.language` and `speak.provider.language` fields instead."
           },
           "context": {
-            "$ref": "#/components/schemas/ChannelsAgentV1MessagesAgentV1SettingsAgentContext",
+            "$ref": "#/components/schemas/ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0Context",
             "description": "Conversation context including the history of messages and function calls"
           },
           "listen": {
-            "$ref": "#/components/schemas/ChannelsAgentV1MessagesAgentV1SettingsAgentListen"
+            "$ref": "#/components/schemas/ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0Listen"
           },
           "think": {
-            "$ref": "#/components/schemas/ChannelsAgentV1MessagesAgentV1SettingsAgentThink"
+            "$ref": "#/components/schemas/ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0Think"
           },
           "speak": {
-            "$ref": "#/components/schemas/ChannelsAgentV1MessagesAgentV1SettingsAgentSpeak"
+            "$ref": "#/components/schemas/ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0Speak"
           },
           "greeting": {
             "type": "string",
             "description": "Optional message that agent will speak at the start"
           }
         },
+        "title": "ChannelsAgentV1MessagesAgentV1SettingsAgent0"
+      },
+      "ChannelsAgentV1MessagesAgentV1SettingsAgent": {
+        "oneOf": [
+          {
+            "$ref": "#/components/schemas/ChannelsAgentV1MessagesAgentV1SettingsAgent0"
+          },
+          {
+            "type": "string",
+            "format": "uuid"
+          }
+        ],
         "title": "ChannelsAgentV1MessagesAgentV1SettingsAgent"
       },
       "AgentV1_AgentV1Settings": {
@@ -3785,6 +3844,13 @@
           "keyterms": {
             "$ref": "#/components/schemas/ListenV2Keyterm"
           },
+          "language_hints": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "The currently active language hints. Only applicable to the flux-general-multi model.\n"
+          },
           "sequence_id": {
             "type": "integer",
             "description": "Starts at `0` and increments for each message the server sends\nto the client.  This includes messages of other types, like\n`TurnInfo` messages.\n"
@@ -4073,12 +4139,20 @@
           },
           "model_version": {
             "type": "string",
-            "description": "Version of the model being used"
+            "description": "Version of the primary model being used"
           },
           "model_uuid": {
             "type": "string",
             "format": "uuid",
-            "description": "Unique identifier for the model"
+            "description": "Unique identifier for the primary model used"
+          },
+          "additional_model_uuids": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "format": "uuid"
+            },
+            "description": "List of unique identifiers for any additional models used to serve the request"
           }
         },
         "required": [

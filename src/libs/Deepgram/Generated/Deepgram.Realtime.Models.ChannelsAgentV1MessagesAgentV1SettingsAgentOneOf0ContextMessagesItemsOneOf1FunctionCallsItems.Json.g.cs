@@ -2,7 +2,7 @@
 
 namespace Deepgram.Realtime
 {
-    public readonly partial struct ChannelsAgentV1MessagesAgentV1SettingsAgent
+    public sealed partial class ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ContextMessagesItemsOneOf1FunctionCallsItems
     {
         /// <summary>
         /// Serializes the current instance to a JSON string using the provided JsonSerializerContext.
@@ -34,14 +34,14 @@ namespace Deepgram.Realtime
         /// <summary>
         /// Deserializes a JSON string using the provided JsonSerializerContext.
         /// </summary>
-        public static global::Deepgram.Realtime.ChannelsAgentV1MessagesAgentV1SettingsAgent? FromJson(
+        public static global::Deepgram.Realtime.ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ContextMessagesItemsOneOf1FunctionCallsItems? FromJson(
             string json,
             global::System.Text.Json.Serialization.JsonSerializerContext jsonSerializerContext)
         {
             return global::System.Text.Json.JsonSerializer.Deserialize(
                 json,
-                typeof(global::Deepgram.Realtime.ChannelsAgentV1MessagesAgentV1SettingsAgent),
-                jsonSerializerContext) as global::Deepgram.Realtime.ChannelsAgentV1MessagesAgentV1SettingsAgent?;
+                typeof(global::Deepgram.Realtime.ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ContextMessagesItemsOneOf1FunctionCallsItems),
+                jsonSerializerContext) as global::Deepgram.Realtime.ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ContextMessagesItemsOneOf1FunctionCallsItems;
         }
 
         /// <summary>
@@ -51,11 +51,11 @@ namespace Deepgram.Realtime
         [global::System.Diagnostics.CodeAnalysis.RequiresUnreferencedCode("JSON serialization and deserialization might require types that cannot be statically analyzed. Use the overload that takes a JsonTypeInfo or JsonSerializerContext, or make sure all of the required types are preserved.")]
         [global::System.Diagnostics.CodeAnalysis.RequiresDynamicCode("JSON serialization and deserialization might require types that cannot be statically analyzed and might need runtime code generation. Use System.Text.Json source generation for native AOT applications.")]
 #endif
-        public static global::Deepgram.Realtime.ChannelsAgentV1MessagesAgentV1SettingsAgent? FromJson(
+        public static global::Deepgram.Realtime.ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ContextMessagesItemsOneOf1FunctionCallsItems? FromJson(
             string json,
             global::System.Text.Json.JsonSerializerOptions? jsonSerializerOptions = null)
         {
-            return global::System.Text.Json.JsonSerializer.Deserialize<global::Deepgram.Realtime.ChannelsAgentV1MessagesAgentV1SettingsAgent>(
+            return global::System.Text.Json.JsonSerializer.Deserialize<global::Deepgram.Realtime.ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ContextMessagesItemsOneOf1FunctionCallsItems>(
                 json,
                 jsonSerializerOptions);
         }
@@ -63,14 +63,14 @@ namespace Deepgram.Realtime
         /// <summary>
         /// Deserializes a JSON stream using the provided JsonSerializerContext.
         /// </summary>
-        public static async global::System.Threading.Tasks.ValueTask<global::Deepgram.Realtime.ChannelsAgentV1MessagesAgentV1SettingsAgent?> FromJsonStreamAsync(
+        public static async global::System.Threading.Tasks.ValueTask<global::Deepgram.Realtime.ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ContextMessagesItemsOneOf1FunctionCallsItems?> FromJsonStreamAsync(
             global::System.IO.Stream jsonStream,
             global::System.Text.Json.Serialization.JsonSerializerContext jsonSerializerContext)
         {
             return (await global::System.Text.Json.JsonSerializer.DeserializeAsync(
                 jsonStream,
-                typeof(global::Deepgram.Realtime.ChannelsAgentV1MessagesAgentV1SettingsAgent),
-                jsonSerializerContext).ConfigureAwait(false)) as global::Deepgram.Realtime.ChannelsAgentV1MessagesAgentV1SettingsAgent?;
+                typeof(global::Deepgram.Realtime.ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ContextMessagesItemsOneOf1FunctionCallsItems),
+                jsonSerializerContext).ConfigureAwait(false)) as global::Deepgram.Realtime.ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ContextMessagesItemsOneOf1FunctionCallsItems;
         }
 
         /// <summary>
@@ -80,11 +80,11 @@ namespace Deepgram.Realtime
         [global::System.Diagnostics.CodeAnalysis.RequiresUnreferencedCode("JSON serialization and deserialization might require types that cannot be statically analyzed. Use the overload that takes a JsonTypeInfo or JsonSerializerContext, or make sure all of the required types are preserved.")]
         [global::System.Diagnostics.CodeAnalysis.RequiresDynamicCode("JSON serialization and deserialization might require types that cannot be statically analyzed and might need runtime code generation. Use System.Text.Json source generation for native AOT applications.")]
 #endif
-        public static global::System.Threading.Tasks.ValueTask<global::Deepgram.Realtime.ChannelsAgentV1MessagesAgentV1SettingsAgent?> FromJsonStreamAsync(
+        public static global::System.Threading.Tasks.ValueTask<global::Deepgram.Realtime.ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ContextMessagesItemsOneOf1FunctionCallsItems?> FromJsonStreamAsync(
             global::System.IO.Stream jsonStream,
             global::System.Text.Json.JsonSerializerOptions? jsonSerializerOptions = null)
         {
-            return global::System.Text.Json.JsonSerializer.DeserializeAsync<global::Deepgram.Realtime.ChannelsAgentV1MessagesAgentV1SettingsAgent?>(
+            return global::System.Text.Json.JsonSerializer.DeserializeAsync<global::Deepgram.Realtime.ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ContextMessagesItemsOneOf1FunctionCallsItems?>(
                 jsonStream,
                 jsonSerializerOptions);
         }
