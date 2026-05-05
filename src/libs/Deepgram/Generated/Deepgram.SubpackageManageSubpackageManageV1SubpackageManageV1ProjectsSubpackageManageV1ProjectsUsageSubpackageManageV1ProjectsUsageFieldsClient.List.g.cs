@@ -75,6 +75,33 @@ namespace Deepgram
             global::Deepgram.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
+            var __response = await ListAsResponseAsync(
+                projectId: projectId,
+                start: start,
+                end: end,
+                requestOptions: requestOptions,
+                cancellationToken: cancellationToken
+            ).ConfigureAwait(false);
+
+            return __response.Body;
+        }
+        /// <summary>
+        /// List Project Usage Fields<br/>
+        /// Lists the features, models, tags, languages, and processing method used for requests in the specified project
+        /// </summary>
+        /// <param name="projectId"></param>
+        /// <param name="start"></param>
+        /// <param name="end"></param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
+        /// <param name="cancellationToken">The token to cancel the operation with</param>
+        /// <exception cref="global::Deepgram.ApiException"></exception>
+        public async global::System.Threading.Tasks.Task<global::Deepgram.AutoSDKHttpResponse<global::Deepgram.UsageFieldsV1Response>> ListAsResponseAsync(
+            string projectId,
+            global::System.DateTime? start = default,
+            global::System.DateTime? end = default,
+            global::Deepgram.AutoSDKRequestOptions? requestOptions = default,
+            global::System.Threading.CancellationToken cancellationToken = default)
+        {
             PrepareArguments(
                 client: HttpClient);
             PrepareListArguments(
@@ -105,14 +132,15 @@ namespace Deepgram
 
             global::System.Net.Http.HttpRequestMessage __CreateHttpRequest()
             {
+
                             var __pathBuilder = new global::Deepgram.PathBuilder(
                                 path: $"/v1/projects/{projectId}/usage/fields",
                                 baseUri: ResolveBaseUri(
                                 servers: s_ListServers,
-                                defaultBaseUrl: "https://api.deepgram.com/")); 
+                                defaultBaseUrl: "https://api.deepgram.com/"));
                             __pathBuilder
                                 .AddOptionalParameter("start", start?.ToString("yyyy-MM-dd"))
-                                .AddOptionalParameter("end", end?.ToString("yyyy-MM-dd")) 
+                                .AddOptionalParameter("end", end?.ToString("yyyy-MM-dd"))
                                 ;
                             var __path = __pathBuilder.ToString();
                 __path = global::Deepgram.AutoSDKRequestOptionsSupport.AppendQueryParameters(
@@ -186,6 +214,8 @@ namespace Deepgram
                                 attempt: __attempt,
                                 maxAttempts: __maxAttempts,
                                 willRetry: false,
+                                retryDelay: null,
+                                retryReason: global::System.String.Empty,
                                 cancellationToken: __effectiveCancellationToken)).ConfigureAwait(false);
                     try
                     {
@@ -196,6 +226,11 @@ namespace Deepgram
                     }
                     catch (global::System.Net.Http.HttpRequestException __exception)
                     {
+                        var __retryDelay = global::Deepgram.AutoSDKRequestOptionsSupport.GetRetryDelay(
+                            clientOptions: Options,
+                            requestOptions: requestOptions,
+                            response: null,
+                            attempt: __attempt);
                         var __willRetry = __attempt < __maxAttempts && !__effectiveCancellationToken.IsCancellationRequested;
                         await global::Deepgram.AutoSDKRequestOptionsSupport.OnAfterErrorAsync(
                             clientOptions: Options,
@@ -213,6 +248,8 @@ namespace Deepgram
                                 attempt: __attempt,
                                 maxAttempts: __maxAttempts,
                                 willRetry: __willRetry,
+                                retryDelay: __willRetry ? __retryDelay : (global::System.TimeSpan?)null,
+                                retryReason: "exception",
                                 cancellationToken: __effectiveCancellationToken)).ConfigureAwait(false);
                         if (!__willRetry)
                         {
@@ -222,8 +259,7 @@ namespace Deepgram
                         __httpRequest.Dispose();
                         __httpRequest = null;
                         await global::Deepgram.AutoSDKRequestOptionsSupport.DelayBeforeRetryAsync(
-                            clientOptions: Options,
-                            requestOptions: requestOptions,
+                            retryDelay: __retryDelay,
                             cancellationToken: __effectiveCancellationToken).ConfigureAwait(false);
                         continue;
                     }
@@ -232,6 +268,11 @@ namespace Deepgram
                         __attempt < __maxAttempts &&
                         global::Deepgram.AutoSDKRequestOptionsSupport.ShouldRetryStatusCode(__response.StatusCode))
                     {
+                        var __retryDelay = global::Deepgram.AutoSDKRequestOptionsSupport.GetRetryDelay(
+                            clientOptions: Options,
+                            requestOptions: requestOptions,
+                            response: __response,
+                            attempt: __attempt);
                         await global::Deepgram.AutoSDKRequestOptionsSupport.OnAfterErrorAsync(
                             clientOptions: Options,
                             context: global::Deepgram.AutoSDKRequestOptionsSupport.CreateHookContext(
@@ -248,14 +289,15 @@ namespace Deepgram
                                 attempt: __attempt,
                                 maxAttempts: __maxAttempts,
                                 willRetry: true,
+                                retryDelay: __retryDelay,
+                                retryReason: "status:" + ((int)__response.StatusCode).ToString(global::System.Globalization.CultureInfo.InvariantCulture),
                                 cancellationToken: __effectiveCancellationToken)).ConfigureAwait(false);
                         __response.Dispose();
                         __response = null;
                         __httpRequest.Dispose();
                         __httpRequest = null;
                         await global::Deepgram.AutoSDKRequestOptionsSupport.DelayBeforeRetryAsync(
-                            clientOptions: Options,
-                            requestOptions: requestOptions,
+                            retryDelay: __retryDelay,
                             cancellationToken: __effectiveCancellationToken).ConfigureAwait(false);
                         continue;
                     }
@@ -295,6 +337,8 @@ namespace Deepgram
                                 attempt: __attemptNumber,
                                 maxAttempts: __maxAttempts,
                                 willRetry: false,
+                                retryDelay: null,
+                                retryReason: global::System.String.Empty,
                                 cancellationToken: __effectiveCancellationToken)).ConfigureAwait(false);
                 }
                 else
@@ -315,6 +359,8 @@ namespace Deepgram
                                 attempt: __attemptNumber,
                                 maxAttempts: __maxAttempts,
                                 willRetry: false,
+                                retryDelay: null,
+                                retryReason: global::System.String.Empty,
                                 cancellationToken: __effectiveCancellationToken)).ConfigureAwait(false);
                 }
                             // Invalid Request
@@ -377,9 +423,13 @@ namespace Deepgram
                                 {
                                     __response.EnsureSuccessStatusCode();
 
-                                    return
-                                        global::Deepgram.UsageFieldsV1Response.FromJson(__content, JsonSerializerContext) ??
+                                    var __value = global::Deepgram.UsageFieldsV1Response.FromJson(__content, JsonSerializerContext) ??
                                         throw new global::System.InvalidOperationException($"Response deserialization failed for \"{__content}\" ");
+                                    return new global::Deepgram.AutoSDKHttpResponse<global::Deepgram.UsageFieldsV1Response>(
+                                        statusCode: __response.StatusCode,
+                                        headers: global::Deepgram.AutoSDKHttpResponse.CreateHeaders(__response),
+                                        requestUri: __response.RequestMessage?.RequestUri,
+                                        body: __value);
                                 }
                                 catch (global::System.Exception __ex)
                                 {
@@ -407,9 +457,13 @@ namespace Deepgram
                 #endif
                                     ).ConfigureAwait(false);
 
-                                    return
-                                        await global::Deepgram.UsageFieldsV1Response.FromJsonStreamAsync(__content, JsonSerializerContext).ConfigureAwait(false) ??
+                                    var __value = await global::Deepgram.UsageFieldsV1Response.FromJsonStreamAsync(__content, JsonSerializerContext).ConfigureAwait(false) ??
                                         throw new global::System.InvalidOperationException("Response deserialization failed.");
+                                    return new global::Deepgram.AutoSDKHttpResponse<global::Deepgram.UsageFieldsV1Response>(
+                                        statusCode: __response.StatusCode,
+                                        headers: global::Deepgram.AutoSDKHttpResponse.CreateHeaders(__response),
+                                        requestUri: __response.RequestMessage?.RequestUri,
+                                        body: __value);
                                 }
                                 catch (global::System.Exception __ex)
                                 {

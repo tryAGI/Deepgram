@@ -24,6 +24,21 @@ namespace Deepgram
         /// Creates a new reusable agent configuration. The `config` field must be a valid JSON string representing the `agent` block of a Settings message. The returned `agent_id` can be passed in place of the full `agent` object in future Settings messages.
         /// </summary>
         /// <param name="projectId"></param>
+        /// <param name="request"></param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
+        /// <param name="cancellationToken">The token to cancel the operation with</param>
+        /// <exception cref="global::Deepgram.ApiException"></exception>
+        global::System.Threading.Tasks.Task<global::Deepgram.AutoSDKHttpResponse<global::Deepgram.CreateAgentConfigurationV1Response>> CreateAsResponseAsync(
+            string projectId,
+
+            global::Deepgram.CreateAgentConfigurationV1Request request,
+            global::Deepgram.AutoSDKRequestOptions? requestOptions = default,
+            global::System.Threading.CancellationToken cancellationToken = default);
+        /// <summary>
+        /// Create an Agent Configuration<br/>
+        /// Creates a new reusable agent configuration. The `config` field must be a valid JSON string representing the `agent` block of a Settings message. The returned `agent_id` can be passed in place of the full `agent` object in future Settings messages.
+        /// </summary>
+        /// <param name="projectId"></param>
         /// <param name="config">
         /// A valid JSON string representing the agent block of a Settings message
         /// </param>

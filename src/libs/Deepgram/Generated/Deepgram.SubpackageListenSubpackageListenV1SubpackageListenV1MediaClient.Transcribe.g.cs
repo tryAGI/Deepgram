@@ -254,6 +254,179 @@ namespace Deepgram
             global::Deepgram.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
+            var __response = await TranscribeAsResponseAsync(
+
+                request: request,
+                callback: callback,
+                callbackMethod: callbackMethod,
+                extra: extra,
+                sentiment: sentiment,
+                summarize: summarize,
+                tag: tag,
+                topics: topics,
+                customTopic: customTopic,
+                customTopicMode: customTopicMode,
+                intents: intents,
+                customIntent: customIntent,
+                customIntentMode: customIntentMode,
+                detectEntities: detectEntities,
+                detectLanguage: detectLanguage,
+                diarize: diarize,
+                dictation: dictation,
+                encoding: encoding,
+                fillerWords: fillerWords,
+                keyterm: keyterm,
+                keywords: keywords,
+                language: language,
+                measurements: measurements,
+                model: model,
+                multichannel: multichannel,
+                numerals: numerals,
+                paragraphs: paragraphs,
+                profanityFilter: profanityFilter,
+                punctuate: punctuate,
+                redact: redact,
+                replace: replace,
+                search: search,
+                smartFormat: smartFormat,
+                utterances: utterances,
+                uttSplit: uttSplit,
+                version: version,
+                mipOptOut: mipOptOut,
+                requestOptions: requestOptions,
+                cancellationToken: cancellationToken
+            ).ConfigureAwait(false);
+
+            return __response.Body;
+        }
+        /// <summary>
+        /// Transcribe and analyze pre-recorded audio and video<br/>
+        /// Transcribe audio and video using Deepgram's speech-to-text REST API
+        /// </summary>
+        /// <param name="callback"></param>
+        /// <param name="callbackMethod">
+        /// Default Value: POST
+        /// </param>
+        /// <param name="extra"></param>
+        /// <param name="sentiment">
+        /// Default Value: false
+        /// </param>
+        /// <param name="summarize"></param>
+        /// <param name="tag"></param>
+        /// <param name="topics">
+        /// Default Value: false
+        /// </param>
+        /// <param name="customTopic"></param>
+        /// <param name="customTopicMode">
+        /// Default Value: extended
+        /// </param>
+        /// <param name="intents">
+        /// Default Value: false
+        /// </param>
+        /// <param name="customIntent"></param>
+        /// <param name="customIntentMode">
+        /// Default Value: extended
+        /// </param>
+        /// <param name="detectEntities">
+        /// Default Value: false
+        /// </param>
+        /// <param name="detectLanguage"></param>
+        /// <param name="diarize">
+        /// Default Value: false
+        /// </param>
+        /// <param name="dictation">
+        /// Default Value: false
+        /// </param>
+        /// <param name="encoding"></param>
+        /// <param name="fillerWords">
+        /// Default Value: false
+        /// </param>
+        /// <param name="keyterm"></param>
+        /// <param name="keywords"></param>
+        /// <param name="language">
+        /// Default Value: en
+        /// </param>
+        /// <param name="measurements">
+        /// Default Value: false
+        /// </param>
+        /// <param name="model"></param>
+        /// <param name="multichannel">
+        /// Default Value: false
+        /// </param>
+        /// <param name="numerals">
+        /// Default Value: false
+        /// </param>
+        /// <param name="paragraphs">
+        /// Default Value: false
+        /// </param>
+        /// <param name="profanityFilter">
+        /// Default Value: false
+        /// </param>
+        /// <param name="punctuate">
+        /// Default Value: false
+        /// </param>
+        /// <param name="redact"></param>
+        /// <param name="replace"></param>
+        /// <param name="search"></param>
+        /// <param name="smartFormat">
+        /// Default Value: false
+        /// </param>
+        /// <param name="utterances">
+        /// Default Value: false
+        /// </param>
+        /// <param name="uttSplit">
+        /// Default Value: 0.8
+        /// </param>
+        /// <param name="version"></param>
+        /// <param name="mipOptOut">
+        /// Default Value: false
+        /// </param>
+        /// <param name="request"></param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
+        /// <param name="cancellationToken">The token to cancel the operation with</param>
+        /// <exception cref="global::Deepgram.ApiException"></exception>
+        public async global::System.Threading.Tasks.Task<global::Deepgram.AutoSDKHttpResponse<global::Deepgram.ListenV1MediaTranscribeResponse200>> TranscribeAsResponseAsync(
+
+            global::Deepgram.ListenV1RequestUrl request,
+            string? callback = default,
+            global::Deepgram.V1ListenPostParametersCallbackMethod? callbackMethod = default,
+            global::Deepgram.V1ListenPostParametersExtra? extra = default,
+            bool? sentiment = default,
+            global::Deepgram.V1ListenPostParametersSummarize? summarize = default,
+            global::Deepgram.V1ListenPostParametersTag? tag = default,
+            bool? topics = default,
+            global::Deepgram.V1ListenPostParametersCustomTopic? customTopic = default,
+            global::Deepgram.V1ListenPostParametersCustomTopicMode? customTopicMode = default,
+            bool? intents = default,
+            global::Deepgram.V1ListenPostParametersCustomIntent? customIntent = default,
+            global::Deepgram.V1ListenPostParametersCustomIntentMode? customIntentMode = default,
+            bool? detectEntities = default,
+            global::Deepgram.V1ListenPostParametersDetectLanguage? detectLanguage = default,
+            bool? diarize = default,
+            bool? dictation = default,
+            global::Deepgram.V1ListenPostParametersEncoding? encoding = default,
+            bool? fillerWords = default,
+            global::System.Collections.Generic.IList<string>? keyterm = default,
+            global::Deepgram.V1ListenPostParametersKeywords? keywords = default,
+            string? language = default,
+            bool? measurements = default,
+            global::Deepgram.V1ListenPostParametersModel? model = default,
+            bool? multichannel = default,
+            bool? numerals = default,
+            bool? paragraphs = default,
+            bool? profanityFilter = default,
+            bool? punctuate = default,
+            global::Deepgram.V1ListenPostParametersRedact? redact = default,
+            global::Deepgram.V1ListenPostParametersReplace? replace = default,
+            global::Deepgram.V1ListenPostParametersSearch? search = default,
+            bool? smartFormat = default,
+            bool? utterances = default,
+            double? uttSplit = default,
+            global::Deepgram.V1ListenPostParametersVersion? version = default,
+            bool? mipOptOut = default,
+            global::Deepgram.AutoSDKRequestOptions? requestOptions = default,
+            global::System.Threading.CancellationToken cancellationToken = default)
+        {
             request = request ?? throw new global::System.ArgumentNullException(nameof(request));
 
             PrepareArguments(
@@ -320,11 +493,12 @@ namespace Deepgram
 
             global::System.Net.Http.HttpRequestMessage __CreateHttpRequest()
             {
+
                             var __pathBuilder = new global::Deepgram.PathBuilder(
                                 path: "/v1/listen",
                                 baseUri: ResolveBaseUri(
                                 servers: s_TranscribeServers,
-                                defaultBaseUrl: "https://api.deepgram.com/")); 
+                                defaultBaseUrl: "https://api.deepgram.com/"));
                             __pathBuilder
                                 .AddOptionalParameter("callback", callback)
                                 .AddOptionalParameter("callback_method", callbackMethod?.ToValueString())
@@ -361,7 +535,7 @@ namespace Deepgram
                                 .AddOptionalParameter("utterances", utterances?.ToString().ToLowerInvariant())
                                 .AddOptionalParameter("utt_split", uttSplit?.ToString())
                                 .AddOptionalParameter("version", version?.ToString())
-                                .AddOptionalParameter("mip_opt_out", mipOptOut?.ToString().ToLowerInvariant()) 
+                                .AddOptionalParameter("mip_opt_out", mipOptOut?.ToString().ToLowerInvariant())
                                 ;
                             var __path = __pathBuilder.ToString();
                 __path = global::Deepgram.AutoSDKRequestOptionsSupport.AppendQueryParameters(
@@ -475,6 +649,8 @@ namespace Deepgram
                                 attempt: __attempt,
                                 maxAttempts: __maxAttempts,
                                 willRetry: false,
+                                retryDelay: null,
+                                retryReason: global::System.String.Empty,
                                 cancellationToken: __effectiveCancellationToken)).ConfigureAwait(false);
                     try
                     {
@@ -485,6 +661,11 @@ namespace Deepgram
                     }
                     catch (global::System.Net.Http.HttpRequestException __exception)
                     {
+                        var __retryDelay = global::Deepgram.AutoSDKRequestOptionsSupport.GetRetryDelay(
+                            clientOptions: Options,
+                            requestOptions: requestOptions,
+                            response: null,
+                            attempt: __attempt);
                         var __willRetry = __attempt < __maxAttempts && !__effectiveCancellationToken.IsCancellationRequested;
                         await global::Deepgram.AutoSDKRequestOptionsSupport.OnAfterErrorAsync(
                             clientOptions: Options,
@@ -502,6 +683,8 @@ namespace Deepgram
                                 attempt: __attempt,
                                 maxAttempts: __maxAttempts,
                                 willRetry: __willRetry,
+                                retryDelay: __willRetry ? __retryDelay : (global::System.TimeSpan?)null,
+                                retryReason: "exception",
                                 cancellationToken: __effectiveCancellationToken)).ConfigureAwait(false);
                         if (!__willRetry)
                         {
@@ -511,8 +694,7 @@ namespace Deepgram
                         __httpRequest.Dispose();
                         __httpRequest = null;
                         await global::Deepgram.AutoSDKRequestOptionsSupport.DelayBeforeRetryAsync(
-                            clientOptions: Options,
-                            requestOptions: requestOptions,
+                            retryDelay: __retryDelay,
                             cancellationToken: __effectiveCancellationToken).ConfigureAwait(false);
                         continue;
                     }
@@ -521,6 +703,11 @@ namespace Deepgram
                         __attempt < __maxAttempts &&
                         global::Deepgram.AutoSDKRequestOptionsSupport.ShouldRetryStatusCode(__response.StatusCode))
                     {
+                        var __retryDelay = global::Deepgram.AutoSDKRequestOptionsSupport.GetRetryDelay(
+                            clientOptions: Options,
+                            requestOptions: requestOptions,
+                            response: __response,
+                            attempt: __attempt);
                         await global::Deepgram.AutoSDKRequestOptionsSupport.OnAfterErrorAsync(
                             clientOptions: Options,
                             context: global::Deepgram.AutoSDKRequestOptionsSupport.CreateHookContext(
@@ -537,14 +724,15 @@ namespace Deepgram
                                 attempt: __attempt,
                                 maxAttempts: __maxAttempts,
                                 willRetry: true,
+                                retryDelay: __retryDelay,
+                                retryReason: "status:" + ((int)__response.StatusCode).ToString(global::System.Globalization.CultureInfo.InvariantCulture),
                                 cancellationToken: __effectiveCancellationToken)).ConfigureAwait(false);
                         __response.Dispose();
                         __response = null;
                         __httpRequest.Dispose();
                         __httpRequest = null;
                         await global::Deepgram.AutoSDKRequestOptionsSupport.DelayBeforeRetryAsync(
-                            clientOptions: Options,
-                            requestOptions: requestOptions,
+                            retryDelay: __retryDelay,
                             cancellationToken: __effectiveCancellationToken).ConfigureAwait(false);
                         continue;
                     }
@@ -584,6 +772,8 @@ namespace Deepgram
                                 attempt: __attemptNumber,
                                 maxAttempts: __maxAttempts,
                                 willRetry: false,
+                                retryDelay: null,
+                                retryReason: global::System.String.Empty,
                                 cancellationToken: __effectiveCancellationToken)).ConfigureAwait(false);
                 }
                 else
@@ -604,6 +794,8 @@ namespace Deepgram
                                 attempt: __attemptNumber,
                                 maxAttempts: __maxAttempts,
                                 willRetry: false,
+                                retryDelay: null,
+                                retryReason: global::System.String.Empty,
                                 cancellationToken: __effectiveCancellationToken)).ConfigureAwait(false);
                 }
                             // Invalid Request
@@ -666,9 +858,13 @@ namespace Deepgram
                                 {
                                     __response.EnsureSuccessStatusCode();
 
-                                    return
-                                        global::Deepgram.ListenV1MediaTranscribeResponse200.FromJson(__content, JsonSerializerContext) ??
+                                    var __value = global::Deepgram.ListenV1MediaTranscribeResponse200.FromJson(__content, JsonSerializerContext) ??
                                         throw new global::System.InvalidOperationException($"Response deserialization failed for \"{__content}\" ");
+                                    return new global::Deepgram.AutoSDKHttpResponse<global::Deepgram.ListenV1MediaTranscribeResponse200>(
+                                        statusCode: __response.StatusCode,
+                                        headers: global::Deepgram.AutoSDKHttpResponse.CreateHeaders(__response),
+                                        requestUri: __response.RequestMessage?.RequestUri,
+                                        body: __value);
                                 }
                                 catch (global::System.Exception __ex)
                                 {
@@ -696,9 +892,13 @@ namespace Deepgram
                 #endif
                                     ).ConfigureAwait(false);
 
-                                    return
-                                        await global::Deepgram.ListenV1MediaTranscribeResponse200.FromJsonStreamAsync(__content, JsonSerializerContext).ConfigureAwait(false) ??
+                                    var __value = await global::Deepgram.ListenV1MediaTranscribeResponse200.FromJsonStreamAsync(__content, JsonSerializerContext).ConfigureAwait(false) ??
                                         throw new global::System.InvalidOperationException("Response deserialization failed.");
+                                    return new global::Deepgram.AutoSDKHttpResponse<global::Deepgram.ListenV1MediaTranscribeResponse200>(
+                                        statusCode: __response.StatusCode,
+                                        headers: global::Deepgram.AutoSDKHttpResponse.CreateHeaders(__response),
+                                        requestUri: __response.RequestMessage?.RequestUri,
+                                        body: __value);
                                 }
                                 catch (global::System.Exception __ex)
                                 {

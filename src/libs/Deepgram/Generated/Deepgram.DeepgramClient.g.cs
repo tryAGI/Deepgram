@@ -45,7 +45,7 @@ namespace Deepgram
         /// <summary>
         /// 
         /// </summary>
-        public SubpackageAgentSubpackageAgentV1SubpackageAgentV1SettingsSubpackageAgentV1SettingsThinkSubpackageAgentV1SettingsThinkModelsClient SubpackageAgentSubpackageAgentV1SubpackageAgentV1SettingsSubpackageAgentV1SettingsThinkSubpackageAgentV1SettingsThinkModels => new SubpackageAgentSubpackageAgentV1SubpackageAgentV1SettingsSubpackageAgentV1SettingsThinkSubpackageAgentV1SettingsThinkModelsClient(HttpClient, authorizations: Authorizations, options: Options)
+        public SubpackageAgentSubpackageAgentV1SubpackageAgentV1SettingsSubpackageAgentV1SettingsThinkSubpackageAgentV1SettingsThinkModelsClient SubpackageAgentSubpackageAgentV1SubpackageAgentV1SettingsSubpackageAgentV1SettingsThinkSubpackageAgentV1SettingsThinkModels => new SubpackageAgentSubpackageAgentV1SubpackageAgentV1SettingsSubpackageAgentV1SettingsThinkSubpackageAgentV1SettingsThinkModelsClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -55,7 +55,7 @@ namespace Deepgram
         /// <summary>
         /// 
         /// </summary>
-        public SubpackageAuthSubpackageAuthV1SubpackageAuthV1TokensClient SubpackageAuthSubpackageAuthV1SubpackageAuthV1Tokens => new SubpackageAuthSubpackageAuthV1SubpackageAuthV1TokensClient(HttpClient, authorizations: Authorizations, options: Options)
+        public SubpackageAuthSubpackageAuthV1SubpackageAuthV1TokensClient SubpackageAuthSubpackageAuthV1SubpackageAuthV1Tokens => new SubpackageAuthSubpackageAuthV1SubpackageAuthV1TokensClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -65,7 +65,7 @@ namespace Deepgram
         /// <summary>
         /// 
         /// </summary>
-        public SubpackageListenSubpackageListenV1SubpackageListenV1MediaClient SubpackageListenSubpackageListenV1SubpackageListenV1Media => new SubpackageListenSubpackageListenV1SubpackageListenV1MediaClient(HttpClient, authorizations: Authorizations, options: Options)
+        public SubpackageListenSubpackageListenV1SubpackageListenV1MediaClient SubpackageListenSubpackageListenV1SubpackageListenV1Media => new SubpackageListenSubpackageListenV1SubpackageListenV1MediaClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -75,7 +75,7 @@ namespace Deepgram
         /// <summary>
         /// 
         /// </summary>
-        public SubpackageManageSubpackageManageV1SubpackageManageV1ModelsClient SubpackageManageSubpackageManageV1SubpackageManageV1Models => new SubpackageManageSubpackageManageV1SubpackageManageV1ModelsClient(HttpClient, authorizations: Authorizations, options: Options)
+        public SubpackageManageSubpackageManageV1SubpackageManageV1ModelsClient SubpackageManageSubpackageManageV1SubpackageManageV1Models => new SubpackageManageSubpackageManageV1SubpackageManageV1ModelsClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -85,7 +85,7 @@ namespace Deepgram
         /// <summary>
         /// 
         /// </summary>
-        public SubpackageManageSubpackageManageV1SubpackageManageV1ProjectsClient SubpackageManageSubpackageManageV1SubpackageManageV1Projects => new SubpackageManageSubpackageManageV1SubpackageManageV1ProjectsClient(HttpClient, authorizations: Authorizations, options: Options)
+        public SubpackageManageSubpackageManageV1SubpackageManageV1ProjectsClient SubpackageManageSubpackageManageV1SubpackageManageV1Projects => new SubpackageManageSubpackageManageV1SubpackageManageV1ProjectsClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -95,7 +95,7 @@ namespace Deepgram
         /// <summary>
         /// 
         /// </summary>
-        public SubpackageManageSubpackageManageV1SubpackageManageV1ProjectsSubpackageManageV1ProjectsBillingSubpackageManageV1ProjectsBillingBalancesClient SubpackageManageSubpackageManageV1SubpackageManageV1ProjectsSubpackageManageV1ProjectsBillingSubpackageManageV1ProjectsBillingBalances => new SubpackageManageSubpackageManageV1SubpackageManageV1ProjectsSubpackageManageV1ProjectsBillingSubpackageManageV1ProjectsBillingBalancesClient(HttpClient, authorizations: Authorizations, options: Options)
+        public SubpackageManageSubpackageManageV1SubpackageManageV1ProjectsSubpackageManageV1ProjectsBillingSubpackageManageV1ProjectsBillingBalancesClient SubpackageManageSubpackageManageV1SubpackageManageV1ProjectsSubpackageManageV1ProjectsBillingSubpackageManageV1ProjectsBillingBalances => new SubpackageManageSubpackageManageV1SubpackageManageV1ProjectsSubpackageManageV1ProjectsBillingSubpackageManageV1ProjectsBillingBalancesClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -105,7 +105,7 @@ namespace Deepgram
         /// <summary>
         /// 
         /// </summary>
-        public SubpackageManageSubpackageManageV1SubpackageManageV1ProjectsSubpackageManageV1ProjectsBillingSubpackageManageV1ProjectsBillingBreakdownClient SubpackageManageSubpackageManageV1SubpackageManageV1ProjectsSubpackageManageV1ProjectsBillingSubpackageManageV1ProjectsBillingBreakdown => new SubpackageManageSubpackageManageV1SubpackageManageV1ProjectsSubpackageManageV1ProjectsBillingSubpackageManageV1ProjectsBillingBreakdownClient(HttpClient, authorizations: Authorizations, options: Options)
+        public SubpackageManageSubpackageManageV1SubpackageManageV1ProjectsSubpackageManageV1ProjectsBillingSubpackageManageV1ProjectsBillingBreakdownClient SubpackageManageSubpackageManageV1SubpackageManageV1ProjectsSubpackageManageV1ProjectsBillingSubpackageManageV1ProjectsBillingBreakdown => new SubpackageManageSubpackageManageV1SubpackageManageV1ProjectsSubpackageManageV1ProjectsBillingSubpackageManageV1ProjectsBillingBreakdownClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -115,7 +115,7 @@ namespace Deepgram
         /// <summary>
         /// 
         /// </summary>
-        public SubpackageManageSubpackageManageV1SubpackageManageV1ProjectsSubpackageManageV1ProjectsBillingSubpackageManageV1ProjectsBillingFieldsClient SubpackageManageSubpackageManageV1SubpackageManageV1ProjectsSubpackageManageV1ProjectsBillingSubpackageManageV1ProjectsBillingFields => new SubpackageManageSubpackageManageV1SubpackageManageV1ProjectsSubpackageManageV1ProjectsBillingSubpackageManageV1ProjectsBillingFieldsClient(HttpClient, authorizations: Authorizations, options: Options)
+        public SubpackageManageSubpackageManageV1SubpackageManageV1ProjectsSubpackageManageV1ProjectsBillingSubpackageManageV1ProjectsBillingFieldsClient SubpackageManageSubpackageManageV1SubpackageManageV1ProjectsSubpackageManageV1ProjectsBillingSubpackageManageV1ProjectsBillingFields => new SubpackageManageSubpackageManageV1SubpackageManageV1ProjectsSubpackageManageV1ProjectsBillingSubpackageManageV1ProjectsBillingFieldsClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -125,7 +125,7 @@ namespace Deepgram
         /// <summary>
         /// 
         /// </summary>
-        public SubpackageManageSubpackageManageV1SubpackageManageV1ProjectsSubpackageManageV1ProjectsBillingSubpackageManageV1ProjectsBillingPurchasesClient SubpackageManageSubpackageManageV1SubpackageManageV1ProjectsSubpackageManageV1ProjectsBillingSubpackageManageV1ProjectsBillingPurchases => new SubpackageManageSubpackageManageV1SubpackageManageV1ProjectsSubpackageManageV1ProjectsBillingSubpackageManageV1ProjectsBillingPurchasesClient(HttpClient, authorizations: Authorizations, options: Options)
+        public SubpackageManageSubpackageManageV1SubpackageManageV1ProjectsSubpackageManageV1ProjectsBillingSubpackageManageV1ProjectsBillingPurchasesClient SubpackageManageSubpackageManageV1SubpackageManageV1ProjectsSubpackageManageV1ProjectsBillingSubpackageManageV1ProjectsBillingPurchases => new SubpackageManageSubpackageManageV1SubpackageManageV1ProjectsSubpackageManageV1ProjectsBillingSubpackageManageV1ProjectsBillingPurchasesClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -135,7 +135,7 @@ namespace Deepgram
         /// <summary>
         /// 
         /// </summary>
-        public SubpackageManageSubpackageManageV1SubpackageManageV1ProjectsSubpackageManageV1ProjectsKeysClient SubpackageManageSubpackageManageV1SubpackageManageV1ProjectsSubpackageManageV1ProjectsKeys => new SubpackageManageSubpackageManageV1SubpackageManageV1ProjectsSubpackageManageV1ProjectsKeysClient(HttpClient, authorizations: Authorizations, options: Options)
+        public SubpackageManageSubpackageManageV1SubpackageManageV1ProjectsSubpackageManageV1ProjectsKeysClient SubpackageManageSubpackageManageV1SubpackageManageV1ProjectsSubpackageManageV1ProjectsKeys => new SubpackageManageSubpackageManageV1SubpackageManageV1ProjectsSubpackageManageV1ProjectsKeysClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -145,7 +145,7 @@ namespace Deepgram
         /// <summary>
         /// 
         /// </summary>
-        public SubpackageManageSubpackageManageV1SubpackageManageV1ProjectsSubpackageManageV1ProjectsMembersClient SubpackageManageSubpackageManageV1SubpackageManageV1ProjectsSubpackageManageV1ProjectsMembers => new SubpackageManageSubpackageManageV1SubpackageManageV1ProjectsSubpackageManageV1ProjectsMembersClient(HttpClient, authorizations: Authorizations, options: Options)
+        public SubpackageManageSubpackageManageV1SubpackageManageV1ProjectsSubpackageManageV1ProjectsMembersClient SubpackageManageSubpackageManageV1SubpackageManageV1ProjectsSubpackageManageV1ProjectsMembers => new SubpackageManageSubpackageManageV1SubpackageManageV1ProjectsSubpackageManageV1ProjectsMembersClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -155,7 +155,7 @@ namespace Deepgram
         /// <summary>
         /// 
         /// </summary>
-        public SubpackageManageSubpackageManageV1SubpackageManageV1ProjectsSubpackageManageV1ProjectsMembersSubpackageManageV1ProjectsMembersInvitesClient SubpackageManageSubpackageManageV1SubpackageManageV1ProjectsSubpackageManageV1ProjectsMembersSubpackageManageV1ProjectsMembersInvites => new SubpackageManageSubpackageManageV1SubpackageManageV1ProjectsSubpackageManageV1ProjectsMembersSubpackageManageV1ProjectsMembersInvitesClient(HttpClient, authorizations: Authorizations, options: Options)
+        public SubpackageManageSubpackageManageV1SubpackageManageV1ProjectsSubpackageManageV1ProjectsMembersSubpackageManageV1ProjectsMembersInvitesClient SubpackageManageSubpackageManageV1SubpackageManageV1ProjectsSubpackageManageV1ProjectsMembersSubpackageManageV1ProjectsMembersInvites => new SubpackageManageSubpackageManageV1SubpackageManageV1ProjectsSubpackageManageV1ProjectsMembersSubpackageManageV1ProjectsMembersInvitesClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -165,7 +165,7 @@ namespace Deepgram
         /// <summary>
         /// 
         /// </summary>
-        public SubpackageManageSubpackageManageV1SubpackageManageV1ProjectsSubpackageManageV1ProjectsMembersSubpackageManageV1ProjectsMembersScopesClient SubpackageManageSubpackageManageV1SubpackageManageV1ProjectsSubpackageManageV1ProjectsMembersSubpackageManageV1ProjectsMembersScopes => new SubpackageManageSubpackageManageV1SubpackageManageV1ProjectsSubpackageManageV1ProjectsMembersSubpackageManageV1ProjectsMembersScopesClient(HttpClient, authorizations: Authorizations, options: Options)
+        public SubpackageManageSubpackageManageV1SubpackageManageV1ProjectsSubpackageManageV1ProjectsMembersSubpackageManageV1ProjectsMembersScopesClient SubpackageManageSubpackageManageV1SubpackageManageV1ProjectsSubpackageManageV1ProjectsMembersSubpackageManageV1ProjectsMembersScopes => new SubpackageManageSubpackageManageV1SubpackageManageV1ProjectsSubpackageManageV1ProjectsMembersSubpackageManageV1ProjectsMembersScopesClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -175,7 +175,7 @@ namespace Deepgram
         /// <summary>
         /// 
         /// </summary>
-        public SubpackageManageSubpackageManageV1SubpackageManageV1ProjectsSubpackageManageV1ProjectsModelsClient SubpackageManageSubpackageManageV1SubpackageManageV1ProjectsSubpackageManageV1ProjectsModels => new SubpackageManageSubpackageManageV1SubpackageManageV1ProjectsSubpackageManageV1ProjectsModelsClient(HttpClient, authorizations: Authorizations, options: Options)
+        public SubpackageManageSubpackageManageV1SubpackageManageV1ProjectsSubpackageManageV1ProjectsModelsClient SubpackageManageSubpackageManageV1SubpackageManageV1ProjectsSubpackageManageV1ProjectsModels => new SubpackageManageSubpackageManageV1SubpackageManageV1ProjectsSubpackageManageV1ProjectsModelsClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -185,7 +185,7 @@ namespace Deepgram
         /// <summary>
         /// 
         /// </summary>
-        public SubpackageManageSubpackageManageV1SubpackageManageV1ProjectsSubpackageManageV1ProjectsRequestsClient SubpackageManageSubpackageManageV1SubpackageManageV1ProjectsSubpackageManageV1ProjectsRequests => new SubpackageManageSubpackageManageV1SubpackageManageV1ProjectsSubpackageManageV1ProjectsRequestsClient(HttpClient, authorizations: Authorizations, options: Options)
+        public SubpackageManageSubpackageManageV1SubpackageManageV1ProjectsSubpackageManageV1ProjectsRequestsClient SubpackageManageSubpackageManageV1SubpackageManageV1ProjectsSubpackageManageV1ProjectsRequests => new SubpackageManageSubpackageManageV1SubpackageManageV1ProjectsSubpackageManageV1ProjectsRequestsClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -195,7 +195,7 @@ namespace Deepgram
         /// <summary>
         /// 
         /// </summary>
-        public SubpackageManageSubpackageManageV1SubpackageManageV1ProjectsSubpackageManageV1ProjectsUsageClient SubpackageManageSubpackageManageV1SubpackageManageV1ProjectsSubpackageManageV1ProjectsUsage => new SubpackageManageSubpackageManageV1SubpackageManageV1ProjectsSubpackageManageV1ProjectsUsageClient(HttpClient, authorizations: Authorizations, options: Options)
+        public SubpackageManageSubpackageManageV1SubpackageManageV1ProjectsSubpackageManageV1ProjectsUsageClient SubpackageManageSubpackageManageV1SubpackageManageV1ProjectsSubpackageManageV1ProjectsUsage => new SubpackageManageSubpackageManageV1SubpackageManageV1ProjectsSubpackageManageV1ProjectsUsageClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -205,7 +205,7 @@ namespace Deepgram
         /// <summary>
         /// 
         /// </summary>
-        public SubpackageManageSubpackageManageV1SubpackageManageV1ProjectsSubpackageManageV1ProjectsUsageSubpackageManageV1ProjectsUsageBreakdownClient SubpackageManageSubpackageManageV1SubpackageManageV1ProjectsSubpackageManageV1ProjectsUsageSubpackageManageV1ProjectsUsageBreakdown => new SubpackageManageSubpackageManageV1SubpackageManageV1ProjectsSubpackageManageV1ProjectsUsageSubpackageManageV1ProjectsUsageBreakdownClient(HttpClient, authorizations: Authorizations, options: Options)
+        public SubpackageManageSubpackageManageV1SubpackageManageV1ProjectsSubpackageManageV1ProjectsUsageSubpackageManageV1ProjectsUsageBreakdownClient SubpackageManageSubpackageManageV1SubpackageManageV1ProjectsSubpackageManageV1ProjectsUsageSubpackageManageV1ProjectsUsageBreakdown => new SubpackageManageSubpackageManageV1SubpackageManageV1ProjectsSubpackageManageV1ProjectsUsageSubpackageManageV1ProjectsUsageBreakdownClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -215,7 +215,7 @@ namespace Deepgram
         /// <summary>
         /// 
         /// </summary>
-        public SubpackageManageSubpackageManageV1SubpackageManageV1ProjectsSubpackageManageV1ProjectsUsageSubpackageManageV1ProjectsUsageFieldsClient SubpackageManageSubpackageManageV1SubpackageManageV1ProjectsSubpackageManageV1ProjectsUsageSubpackageManageV1ProjectsUsageFields => new SubpackageManageSubpackageManageV1SubpackageManageV1ProjectsSubpackageManageV1ProjectsUsageSubpackageManageV1ProjectsUsageFieldsClient(HttpClient, authorizations: Authorizations, options: Options)
+        public SubpackageManageSubpackageManageV1SubpackageManageV1ProjectsSubpackageManageV1ProjectsUsageSubpackageManageV1ProjectsUsageFieldsClient SubpackageManageSubpackageManageV1SubpackageManageV1ProjectsSubpackageManageV1ProjectsUsageSubpackageManageV1ProjectsUsageFields => new SubpackageManageSubpackageManageV1SubpackageManageV1ProjectsSubpackageManageV1ProjectsUsageSubpackageManageV1ProjectsUsageFieldsClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -225,7 +225,7 @@ namespace Deepgram
         /// <summary>
         /// 
         /// </summary>
-        public SubpackageReadSubpackageReadV1SubpackageReadV1TextClient SubpackageReadSubpackageReadV1SubpackageReadV1Text => new SubpackageReadSubpackageReadV1SubpackageReadV1TextClient(HttpClient, authorizations: Authorizations, options: Options)
+        public SubpackageReadSubpackageReadV1SubpackageReadV1TextClient SubpackageReadSubpackageReadV1SubpackageReadV1Text => new SubpackageReadSubpackageReadV1SubpackageReadV1TextClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -235,7 +235,7 @@ namespace Deepgram
         /// <summary>
         /// 
         /// </summary>
-        public SubpackageSelfHostedSubpackageSelfHostedV1SubpackageSelfHostedV1DistributionCredentialsClient SubpackageSelfHostedSubpackageSelfHostedV1SubpackageSelfHostedV1DistributionCredentials => new SubpackageSelfHostedSubpackageSelfHostedV1SubpackageSelfHostedV1DistributionCredentialsClient(HttpClient, authorizations: Authorizations, options: Options)
+        public SubpackageSelfHostedSubpackageSelfHostedV1SubpackageSelfHostedV1DistributionCredentialsClient SubpackageSelfHostedSubpackageSelfHostedV1SubpackageSelfHostedV1DistributionCredentials => new SubpackageSelfHostedSubpackageSelfHostedV1SubpackageSelfHostedV1DistributionCredentialsClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -245,7 +245,7 @@ namespace Deepgram
         /// <summary>
         /// 
         /// </summary>
-        public SubpackageSpeakSubpackageSpeakV1SubpackageSpeakV1AudioClient SubpackageSpeakSubpackageSpeakV1SubpackageSpeakV1Audio => new SubpackageSpeakSubpackageSpeakV1SubpackageSpeakV1AudioClient(HttpClient, authorizations: Authorizations, options: Options)
+        public SubpackageSpeakSubpackageSpeakV1SubpackageSpeakV1AudioClient SubpackageSpeakSubpackageSpeakV1SubpackageSpeakV1Audio => new SubpackageSpeakSubpackageSpeakV1SubpackageSpeakV1AudioClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -255,7 +255,7 @@ namespace Deepgram
         /// <summary>
         /// 
         /// </summary>
-        public SubpackageVoiceAgentSubpackageVoiceAgentConfigurationsClient SubpackageVoiceAgentSubpackageVoiceAgentConfigurations => new SubpackageVoiceAgentSubpackageVoiceAgentConfigurationsClient(HttpClient, authorizations: Authorizations, options: Options)
+        public SubpackageVoiceAgentSubpackageVoiceAgentConfigurationsClient SubpackageVoiceAgentSubpackageVoiceAgentConfigurations => new SubpackageVoiceAgentSubpackageVoiceAgentConfigurationsClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -265,7 +265,7 @@ namespace Deepgram
         /// <summary>
         /// 
         /// </summary>
-        public SubpackageVoiceAgentSubpackageVoiceAgentVariablesClient SubpackageVoiceAgentSubpackageVoiceAgentVariables => new SubpackageVoiceAgentSubpackageVoiceAgentVariablesClient(HttpClient, authorizations: Authorizations, options: Options)
+        public SubpackageVoiceAgentSubpackageVoiceAgentVariablesClient SubpackageVoiceAgentSubpackageVoiceAgentVariables => new SubpackageVoiceAgentSubpackageVoiceAgentVariablesClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -333,10 +333,10 @@ namespace Deepgram
         /// <param name="options">Client-wide request defaults such as headers, query parameters, retries, and timeout.</param>
         /// <param name="disposeHttpClient">Dispose the HttpClient when the instance is disposed. True by default.</param>
         public DeepgramClient(
-            global::System.Net.Http.HttpClient? httpClient = null,
-            global::System.Uri? baseUri = null,
-            global::System.Collections.Generic.List<global::Deepgram.EndPointAuthorization>? authorizations = null,
-            global::Deepgram.AutoSDKClientOptions? options = null,
+            global::System.Net.Http.HttpClient? httpClient,
+            global::System.Uri? baseUri,
+            global::System.Collections.Generic.List<global::Deepgram.EndPointAuthorization>? authorizations,
+            global::Deepgram.AutoSDKClientOptions? options,
             bool disposeHttpClient = true)
         {
 
