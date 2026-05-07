@@ -29,6 +29,7 @@ namespace Deepgram.Realtime.JsonConverters
 
             var __score0 = 0;
             var __score1 = 0;
+            if (__jsonProps.Contains("additional_model_uuids")) __score1++;
             if (__jsonProps.Contains("model_name")) __score1++;
             if (__jsonProps.Contains("model_uuid")) __score1++;
             if (__jsonProps.Contains("model_version")) __score1++;
