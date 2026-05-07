@@ -473,6 +473,14 @@ namespace Deepgram.Realtime
 
             typeof(global::Deepgram.Realtime.JsonConverters.ChannelsSpeakV1MessagesSpeakV1CloseTypeNullableJsonConverter),
 
+            typeof(global::Deepgram.Realtime.JsonConverters.AgentV1ServerEventDiscriminatorMessageTypeJsonConverter),
+
+            typeof(global::Deepgram.Realtime.JsonConverters.AgentV1ServerEventDiscriminatorMessageTypeNullableJsonConverter),
+
+            typeof(global::Deepgram.Realtime.JsonConverters.ListenV2ServerEventDiscriminatorMessageTypeJsonConverter),
+
+            typeof(global::Deepgram.Realtime.JsonConverters.ListenV2ServerEventDiscriminatorMessageTypeNullableJsonConverter),
+
             typeof(global::Deepgram.Realtime.JsonConverters.AgentV1AgentV1HistoryJsonConverter),
 
             typeof(global::Deepgram.Realtime.JsonConverters.ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ContextMessagesItemsJsonConverter),
@@ -500,6 +508,14 @@ namespace Deepgram.Realtime
             typeof(global::Deepgram.Realtime.JsonConverters.ListenV2KeytermJsonConverter),
 
             typeof(global::Deepgram.Realtime.JsonConverters.ListenV2LanguageHintJsonConverter),
+
+            typeof(global::Deepgram.Realtime.JsonConverters.AgentV1ServerEventJsonConverter),
+
+            typeof(global::Deepgram.Realtime.JsonConverters.ListenV1ServerEventJsonConverter),
+
+            typeof(global::Deepgram.Realtime.JsonConverters.ListenV2ServerEventJsonConverter),
+
+            typeof(global::Deepgram.Realtime.JsonConverters.SpeakV1ServerEventJsonConverter),
         })]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Deepgram.Realtime.JsonSerializerContextTypes))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Deepgram.Realtime.AgentV1AgentV1ReceiveFunctionCallResponse))]
@@ -763,6 +779,14 @@ namespace Deepgram.Realtime
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Deepgram.Realtime.SpeakV1SpeakV1Clear))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Deepgram.Realtime.ChannelsSpeakV1MessagesSpeakV1CloseType), TypeInfoPropertyName = "ChannelsSpeakV1MessagesSpeakV1CloseType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Deepgram.Realtime.SpeakV1SpeakV1Close))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Deepgram.Realtime.AgentV1ServerEvent), TypeInfoPropertyName = "AgentV1ServerEvent2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Deepgram.Realtime.AgentV1ServerEventDiscriminator))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Deepgram.Realtime.AgentV1ServerEventDiscriminatorMessageType), TypeInfoPropertyName = "AgentV1ServerEventDiscriminatorMessageType2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Deepgram.Realtime.ListenV1ServerEvent), TypeInfoPropertyName = "ListenV1ServerEvent2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Deepgram.Realtime.ListenV2ServerEvent), TypeInfoPropertyName = "ListenV2ServerEvent2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Deepgram.Realtime.ListenV2ServerEventDiscriminator))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Deepgram.Realtime.ListenV2ServerEventDiscriminatorMessageType), TypeInfoPropertyName = "ListenV2ServerEventDiscriminatorMessageType2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Deepgram.Realtime.SpeakV1ServerEvent), TypeInfoPropertyName = "SpeakV1ServerEvent2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<string>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Deepgram.Realtime.ChannelsAgentV1MessagesAgentV1FunctionCallRequestFunctionsItems>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Deepgram.Realtime.ChannelsAgentV1MessagesAgentV1HistoryOneOf1FunctionCallsItems>))]

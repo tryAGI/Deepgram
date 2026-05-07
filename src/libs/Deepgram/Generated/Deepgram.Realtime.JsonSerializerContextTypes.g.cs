@@ -1069,6 +1069,38 @@ namespace Deepgram.Realtime
         /// 
         /// </summary>
         public global::Deepgram.Realtime.SpeakV1SpeakV1Close? Type260 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Deepgram.Realtime.AgentV1ServerEvent? Type261 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Deepgram.Realtime.AgentV1ServerEventDiscriminator? Type262 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Deepgram.Realtime.AgentV1ServerEventDiscriminatorMessageType? Type263 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Deepgram.Realtime.ListenV1ServerEvent? Type264 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Deepgram.Realtime.ListenV2ServerEvent? Type265 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Deepgram.Realtime.ListenV2ServerEventDiscriminator? Type266 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Deepgram.Realtime.ListenV2ServerEventDiscriminatorMessageType? Type267 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Deepgram.Realtime.SpeakV1ServerEvent? Type268 { get; set; }
 
         /// <summary>
         /// 

@@ -40,15 +40,19 @@ public partial class DeepgramClient : ISpeechToTextClient
         string? language = options?.SpeechLanguage;
         string? modelId = options?.ModelId;
 
-        var result = await Listen.TranscribeAsync(
+        V1ListenPostParametersModel? model = default;
+        if (modelId is { Length: > 0 })
+        {
+            model = new V1ListenPostParametersModel(modelId);
+        }
+
+        var result = await SubpackageListenSubpackageListenV1SubpackageListenV1Media.TranscribeAsync(
             request: request,
             language: language,
-            model: modelId is not null
-                ? new OneOf<ListenV1MediaTranscribeModel2?, string>(modelId)
-                : default,
+            model: model,
             cancellationToken: cancellationToken).ConfigureAwait(false);
 
-        var response = result.Value1
+        var response = result.ListenV1Response
             ?? throw new InvalidOperationException("Deepgram returned an accepted (async) response instead of a transcription result.");
 
         string text = response.Results.Channels is { Count: > 0 } channels
