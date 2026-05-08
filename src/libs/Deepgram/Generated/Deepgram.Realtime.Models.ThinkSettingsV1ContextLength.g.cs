@@ -29,6 +29,19 @@ namespace Deepgram.Realtime
         /// <summary>
         /// 
         /// </summary>
+        public bool TryPickThinkSettingsV1ContextLength0(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Deepgram.Realtime.ThinkSettingsV1ContextLength0? value)
+        {
+            value = ThinkSettingsV1ContextLength0;
+            return IsThinkSettingsV1ContextLength0;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public double? ThinkSettingsV1ContextLengthVariant2 { get; init; }
 #else
@@ -42,6 +55,19 @@ namespace Deepgram.Realtime
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(ThinkSettingsV1ContextLengthVariant2))]
 #endif
         public bool IsThinkSettingsV1ContextLengthVariant2 => ThinkSettingsV1ContextLengthVariant2 != null;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickThinkSettingsV1ContextLengthVariant2(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out double? value)
+        {
+            value = ThinkSettingsV1ContextLengthVariant2;
+            return IsThinkSettingsV1ContextLengthVariant2;
+        }
         /// <summary>
         /// 
         /// </summary>
@@ -143,6 +169,30 @@ namespace Deepgram.Realtime
         /// 
         /// </summary>
         public void Match(
+            global::System.Action<global::Deepgram.Realtime.ThinkSettingsV1ContextLength0?>? thinkSettingsV1ContextLength0 = null,
+
+            global::System.Action<double?>? thinkSettingsV1ContextLengthVariant2 = null,
+            bool validate = true)
+        {
+            if (validate)
+            {
+                Validate();
+            }
+
+            if (IsThinkSettingsV1ContextLength0)
+            {
+                thinkSettingsV1ContextLength0?.Invoke(ThinkSettingsV1ContextLength0!);
+            }
+            else if (IsThinkSettingsV1ContextLengthVariant2)
+            {
+                thinkSettingsV1ContextLengthVariant2?.Invoke(ThinkSettingsV1ContextLengthVariant2!);
+            }
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public void Switch(
             global::System.Action<global::Deepgram.Realtime.ThinkSettingsV1ContextLength0?>? thinkSettingsV1ContextLength0 = null,
             global::System.Action<double?>? thinkSettingsV1ContextLengthVariant2 = null,
             bool validate = true)

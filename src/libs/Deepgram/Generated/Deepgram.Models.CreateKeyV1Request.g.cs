@@ -27,6 +27,19 @@ namespace Deepgram
         public bool IsCreateKeyV1RequestVariant1 => CreateKeyV1RequestVariant1 != null;
 
         /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickCreateKeyV1RequestVariant1(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out object? value)
+        {
+            value = CreateKeyV1RequestVariant1;
+            return IsCreateKeyV1RequestVariant1;
+        }
+
+        /// <summary>
         /// Any type
         /// </summary>
 #if NET6_0_OR_GREATER
@@ -42,6 +55,19 @@ namespace Deepgram
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(CreateKeyV1RequestVariant2))]
 #endif
         public bool IsCreateKeyV1RequestVariant2 => CreateKeyV1RequestVariant2 != null;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickCreateKeyV1RequestVariant2(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out object? value)
+        {
+            value = CreateKeyV1RequestVariant2;
+            return IsCreateKeyV1RequestVariant2;
+        }
 
         /// <summary>
         /// 
@@ -83,8 +109,8 @@ namespace Deepgram
         /// 
         /// </summary>
         public TResult? Match<TResult>(
-            global::System.Func<object?, TResult>? createKeyV1RequestVariant1 = null,
-            global::System.Func<object?, TResult>? createKeyV1RequestVariant2 = null,
+            global::System.Func<object, TResult>? createKeyV1RequestVariant1 = null,
+            global::System.Func<object, TResult>? createKeyV1RequestVariant2 = null,
             bool validate = true)
         {
             if (validate)
@@ -108,8 +134,32 @@ namespace Deepgram
         /// 
         /// </summary>
         public void Match(
-            global::System.Action<object?>? createKeyV1RequestVariant1 = null,
-            global::System.Action<object?>? createKeyV1RequestVariant2 = null,
+            global::System.Action<object>? createKeyV1RequestVariant1 = null,
+
+            global::System.Action<object>? createKeyV1RequestVariant2 = null,
+            bool validate = true)
+        {
+            if (validate)
+            {
+                Validate();
+            }
+
+            if (IsCreateKeyV1RequestVariant1)
+            {
+                createKeyV1RequestVariant1?.Invoke(CreateKeyV1RequestVariant1!);
+            }
+            else if (IsCreateKeyV1RequestVariant2)
+            {
+                createKeyV1RequestVariant2?.Invoke(CreateKeyV1RequestVariant2!);
+            }
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public void Switch(
+            global::System.Action<object>? createKeyV1RequestVariant1 = null,
+            global::System.Action<object>? createKeyV1RequestVariant2 = null,
             bool validate = true)
         {
             if (validate)

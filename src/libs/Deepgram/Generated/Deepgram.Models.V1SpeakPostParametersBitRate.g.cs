@@ -29,6 +29,19 @@ namespace Deepgram
         /// <summary>
         /// 
         /// </summary>
+        public bool TryPickV1SpeakPostParametersBitRate0(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Deepgram.V1SpeakPostParametersBitRate0? value)
+        {
+            value = V1SpeakPostParametersBitRate0;
+            return IsV1SpeakPostParametersBitRate0;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public double? V1SpeakPostParametersBitRateVariant2 { get; init; }
 #else
@@ -46,6 +59,19 @@ namespace Deepgram
         /// <summary>
         /// 
         /// </summary>
+        public bool TryPickV1SpeakPostParametersBitRateVariant2(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out double? value)
+        {
+            value = V1SpeakPostParametersBitRateVariant2;
+            return IsV1SpeakPostParametersBitRateVariant2;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public double? V1SpeakPostParametersBitRateVariant3 { get; init; }
 #else
@@ -59,6 +85,19 @@ namespace Deepgram
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(V1SpeakPostParametersBitRateVariant3))]
 #endif
         public bool IsV1SpeakPostParametersBitRateVariant3 => V1SpeakPostParametersBitRateVariant3 != null;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickV1SpeakPostParametersBitRateVariant3(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out double? value)
+        {
+            value = V1SpeakPostParametersBitRateVariant3;
+            return IsV1SpeakPostParametersBitRateVariant3;
+        }
         /// <summary>
         /// 
         /// </summary>
@@ -169,6 +208,36 @@ namespace Deepgram
         /// 
         /// </summary>
         public void Match(
+            global::System.Action<global::Deepgram.V1SpeakPostParametersBitRate0?>? v1SpeakPostParametersBitRate0 = null,
+
+            global::System.Action<double?>? v1SpeakPostParametersBitRateVariant2 = null,
+
+            global::System.Action<double?>? v1SpeakPostParametersBitRateVariant3 = null,
+            bool validate = true)
+        {
+            if (validate)
+            {
+                Validate();
+            }
+
+            if (IsV1SpeakPostParametersBitRate0)
+            {
+                v1SpeakPostParametersBitRate0?.Invoke(V1SpeakPostParametersBitRate0!);
+            }
+            else if (IsV1SpeakPostParametersBitRateVariant2)
+            {
+                v1SpeakPostParametersBitRateVariant2?.Invoke(V1SpeakPostParametersBitRateVariant2!);
+            }
+            else if (IsV1SpeakPostParametersBitRateVariant3)
+            {
+                v1SpeakPostParametersBitRateVariant3?.Invoke(V1SpeakPostParametersBitRateVariant3!);
+            }
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public void Switch(
             global::System.Action<global::Deepgram.V1SpeakPostParametersBitRate0?>? v1SpeakPostParametersBitRate0 = null,
             global::System.Action<double?>? v1SpeakPostParametersBitRateVariant2 = null,
             global::System.Action<double?>? v1SpeakPostParametersBitRateVariant3 = null,

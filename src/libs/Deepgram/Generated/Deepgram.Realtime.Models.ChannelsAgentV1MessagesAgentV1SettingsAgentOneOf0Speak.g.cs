@@ -29,6 +29,19 @@ namespace Deepgram.Realtime
         /// <summary>
         /// 
         /// </summary>
+        public bool TryPickSpeakSettingsV1(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Deepgram.Realtime.SpeakSettingsV1? value)
+        {
+            value = SpeakSettingsV1;
+            return IsSpeakSettingsV1;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public global::System.Collections.Generic.IList<global::Deepgram.Realtime.SpeakSettingsV1>? ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0Speak1 { get; init; }
 #else
@@ -42,6 +55,19 @@ namespace Deepgram.Realtime
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0Speak1))]
 #endif
         public bool IsChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0Speak1 => ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0Speak1 != null;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0Speak1(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::System.Collections.Generic.IList<global::Deepgram.Realtime.SpeakSettingsV1>? value)
+        {
+            value = ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0Speak1;
+            return IsChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0Speak1;
+        }
         /// <summary>
         /// 
         /// </summary>
@@ -100,8 +126,8 @@ namespace Deepgram.Realtime
         /// 
         /// </summary>
         public TResult? Match<TResult>(
-            global::System.Func<global::Deepgram.Realtime.SpeakSettingsV1?, TResult>? speakSettingsV1 = null,
-            global::System.Func<global::System.Collections.Generic.IList<global::Deepgram.Realtime.SpeakSettingsV1>?, TResult>? channelsAgentV1MessagesAgentV1SettingsAgentOneOf0Speak1 = null,
+            global::System.Func<global::Deepgram.Realtime.SpeakSettingsV1, TResult>? speakSettingsV1 = null,
+            global::System.Func<global::System.Collections.Generic.IList<global::Deepgram.Realtime.SpeakSettingsV1>, TResult>? channelsAgentV1MessagesAgentV1SettingsAgentOneOf0Speak1 = null,
             bool validate = true)
         {
             if (validate)
@@ -125,8 +151,32 @@ namespace Deepgram.Realtime
         /// 
         /// </summary>
         public void Match(
-            global::System.Action<global::Deepgram.Realtime.SpeakSettingsV1?>? speakSettingsV1 = null,
-            global::System.Action<global::System.Collections.Generic.IList<global::Deepgram.Realtime.SpeakSettingsV1>?>? channelsAgentV1MessagesAgentV1SettingsAgentOneOf0Speak1 = null,
+            global::System.Action<global::Deepgram.Realtime.SpeakSettingsV1>? speakSettingsV1 = null,
+
+            global::System.Action<global::System.Collections.Generic.IList<global::Deepgram.Realtime.SpeakSettingsV1>>? channelsAgentV1MessagesAgentV1SettingsAgentOneOf0Speak1 = null,
+            bool validate = true)
+        {
+            if (validate)
+            {
+                Validate();
+            }
+
+            if (IsSpeakSettingsV1)
+            {
+                speakSettingsV1?.Invoke(SpeakSettingsV1!);
+            }
+            else if (IsChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0Speak1)
+            {
+                channelsAgentV1MessagesAgentV1SettingsAgentOneOf0Speak1?.Invoke(ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0Speak1!);
+            }
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public void Switch(
+            global::System.Action<global::Deepgram.Realtime.SpeakSettingsV1>? speakSettingsV1 = null,
+            global::System.Action<global::System.Collections.Generic.IList<global::Deepgram.Realtime.SpeakSettingsV1>>? channelsAgentV1MessagesAgentV1SettingsAgentOneOf0Speak1 = null,
             bool validate = true)
         {
             if (validate)

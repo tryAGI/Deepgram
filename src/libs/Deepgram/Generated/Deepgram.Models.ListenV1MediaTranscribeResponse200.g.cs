@@ -27,6 +27,19 @@ namespace Deepgram
         public bool IsListenV1Response => ListenV1Response != null;
 
         /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickListenV1Response(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Deepgram.ListenV1Response? value)
+        {
+            value = ListenV1Response;
+            return IsListenV1Response;
+        }
+
+        /// <summary>
         /// Accepted response for asynchronous transcription requests
         /// </summary>
 #if NET6_0_OR_GREATER
@@ -42,6 +55,19 @@ namespace Deepgram
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(ListenV1AcceptedResponse))]
 #endif
         public bool IsListenV1AcceptedResponse => ListenV1AcceptedResponse != null;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickListenV1AcceptedResponse(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Deepgram.ListenV1AcceptedResponse? value)
+        {
+            value = ListenV1AcceptedResponse;
+            return IsListenV1AcceptedResponse;
+        }
         /// <summary>
         /// 
         /// </summary>
@@ -118,8 +144,8 @@ namespace Deepgram
         /// 
         /// </summary>
         public TResult? Match<TResult>(
-            global::System.Func<global::Deepgram.ListenV1Response?, TResult>? listenV1Response = null,
-            global::System.Func<global::Deepgram.ListenV1AcceptedResponse?, TResult>? listenV1AcceptedResponse = null,
+            global::System.Func<global::Deepgram.ListenV1Response, TResult>? listenV1Response = null,
+            global::System.Func<global::Deepgram.ListenV1AcceptedResponse, TResult>? listenV1AcceptedResponse = null,
             bool validate = true)
         {
             if (validate)
@@ -143,8 +169,32 @@ namespace Deepgram
         /// 
         /// </summary>
         public void Match(
-            global::System.Action<global::Deepgram.ListenV1Response?>? listenV1Response = null,
-            global::System.Action<global::Deepgram.ListenV1AcceptedResponse?>? listenV1AcceptedResponse = null,
+            global::System.Action<global::Deepgram.ListenV1Response>? listenV1Response = null,
+
+            global::System.Action<global::Deepgram.ListenV1AcceptedResponse>? listenV1AcceptedResponse = null,
+            bool validate = true)
+        {
+            if (validate)
+            {
+                Validate();
+            }
+
+            if (IsListenV1Response)
+            {
+                listenV1Response?.Invoke(ListenV1Response!);
+            }
+            else if (IsListenV1AcceptedResponse)
+            {
+                listenV1AcceptedResponse?.Invoke(ListenV1AcceptedResponse!);
+            }
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public void Switch(
+            global::System.Action<global::Deepgram.ListenV1Response>? listenV1Response = null,
+            global::System.Action<global::Deepgram.ListenV1AcceptedResponse>? listenV1AcceptedResponse = null,
             bool validate = true)
         {
             if (validate)
