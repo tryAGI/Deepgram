@@ -29,6 +29,19 @@ namespace Deepgram
         /// <summary>
         /// 
         /// </summary>
+        public bool TryPickGetModelV1Response0(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Deepgram.GetModelV1Response0? value)
+        {
+            value = GetModelV1Response0;
+            return IsGetModelV1Response0;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public global::Deepgram.GetModelV1Response1? GetModelV1Response1 { get; init; }
 #else
@@ -42,6 +55,19 @@ namespace Deepgram
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(GetModelV1Response1))]
 #endif
         public bool IsGetModelV1Response1 => GetModelV1Response1 != null;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickGetModelV1Response1(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Deepgram.GetModelV1Response1? value)
+        {
+            value = GetModelV1Response1;
+            return IsGetModelV1Response1;
+        }
         /// <summary>
         /// 
         /// </summary>
@@ -118,8 +144,8 @@ namespace Deepgram
         /// 
         /// </summary>
         public TResult? Match<TResult>(
-            global::System.Func<global::Deepgram.GetModelV1Response0?, TResult>? getModelV1Response0 = null,
-            global::System.Func<global::Deepgram.GetModelV1Response1?, TResult>? getModelV1Response1 = null,
+            global::System.Func<global::Deepgram.GetModelV1Response0, TResult>? getModelV1Response0 = null,
+            global::System.Func<global::Deepgram.GetModelV1Response1, TResult>? getModelV1Response1 = null,
             bool validate = true)
         {
             if (validate)
@@ -143,8 +169,32 @@ namespace Deepgram
         /// 
         /// </summary>
         public void Match(
-            global::System.Action<global::Deepgram.GetModelV1Response0?>? getModelV1Response0 = null,
-            global::System.Action<global::Deepgram.GetModelV1Response1?>? getModelV1Response1 = null,
+            global::System.Action<global::Deepgram.GetModelV1Response0>? getModelV1Response0 = null,
+
+            global::System.Action<global::Deepgram.GetModelV1Response1>? getModelV1Response1 = null,
+            bool validate = true)
+        {
+            if (validate)
+            {
+                Validate();
+            }
+
+            if (IsGetModelV1Response0)
+            {
+                getModelV1Response0?.Invoke(GetModelV1Response0!);
+            }
+            else if (IsGetModelV1Response1)
+            {
+                getModelV1Response1?.Invoke(GetModelV1Response1!);
+            }
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public void Switch(
+            global::System.Action<global::Deepgram.GetModelV1Response0>? getModelV1Response0 = null,
+            global::System.Action<global::Deepgram.GetModelV1Response1>? getModelV1Response1 = null,
             bool validate = true)
         {
             if (validate)

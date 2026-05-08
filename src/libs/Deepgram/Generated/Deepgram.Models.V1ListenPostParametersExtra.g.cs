@@ -29,6 +29,19 @@ namespace Deepgram
         /// <summary>
         /// 
         /// </summary>
+        public bool TryPickV1ListenPostParametersExtraVariant1(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out string? value)
+        {
+            value = V1ListenPostParametersExtraVariant1;
+            return IsV1ListenPostParametersExtraVariant1;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public global::System.Collections.Generic.IList<string>? V1ListenPostParametersExtraVariant2 { get; init; }
 #else
@@ -42,6 +55,19 @@ namespace Deepgram
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(V1ListenPostParametersExtraVariant2))]
 #endif
         public bool IsV1ListenPostParametersExtraVariant2 => V1ListenPostParametersExtraVariant2 != null;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickV1ListenPostParametersExtraVariant2(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::System.Collections.Generic.IList<string>? value)
+        {
+            value = V1ListenPostParametersExtraVariant2;
+            return IsV1ListenPostParametersExtraVariant2;
+        }
         /// <summary>
         /// 
         /// </summary>
@@ -100,8 +126,8 @@ namespace Deepgram
         /// 
         /// </summary>
         public TResult? Match<TResult>(
-            global::System.Func<string?, TResult>? v1ListenPostParametersExtraVariant1 = null,
-            global::System.Func<global::System.Collections.Generic.IList<string>?, TResult>? v1ListenPostParametersExtraVariant2 = null,
+            global::System.Func<string, TResult>? v1ListenPostParametersExtraVariant1 = null,
+            global::System.Func<global::System.Collections.Generic.IList<string>, TResult>? v1ListenPostParametersExtraVariant2 = null,
             bool validate = true)
         {
             if (validate)
@@ -125,8 +151,32 @@ namespace Deepgram
         /// 
         /// </summary>
         public void Match(
-            global::System.Action<string?>? v1ListenPostParametersExtraVariant1 = null,
-            global::System.Action<global::System.Collections.Generic.IList<string>?>? v1ListenPostParametersExtraVariant2 = null,
+            global::System.Action<string>? v1ListenPostParametersExtraVariant1 = null,
+
+            global::System.Action<global::System.Collections.Generic.IList<string>>? v1ListenPostParametersExtraVariant2 = null,
+            bool validate = true)
+        {
+            if (validate)
+            {
+                Validate();
+            }
+
+            if (IsV1ListenPostParametersExtraVariant1)
+            {
+                v1ListenPostParametersExtraVariant1?.Invoke(V1ListenPostParametersExtraVariant1!);
+            }
+            else if (IsV1ListenPostParametersExtraVariant2)
+            {
+                v1ListenPostParametersExtraVariant2?.Invoke(V1ListenPostParametersExtraVariant2!);
+            }
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public void Switch(
+            global::System.Action<string>? v1ListenPostParametersExtraVariant1 = null,
+            global::System.Action<global::System.Collections.Generic.IList<string>>? v1ListenPostParametersExtraVariant2 = null,
             bool validate = true)
         {
             if (validate)

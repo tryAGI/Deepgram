@@ -30,6 +30,19 @@ namespace Deepgram.Realtime
         /// <summary>
         /// 
         /// </summary>
+        public bool TryPickListenV2KeytermVariant1(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out string? value)
+        {
+            value = ListenV2KeytermVariant1;
+            return IsListenV2KeytermVariant1;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public global::System.Collections.Generic.IList<string>? ListenV2KeytermVariant2 { get; init; }
 #else
@@ -43,6 +56,19 @@ namespace Deepgram.Realtime
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(ListenV2KeytermVariant2))]
 #endif
         public bool IsListenV2KeytermVariant2 => ListenV2KeytermVariant2 != null;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickListenV2KeytermVariant2(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::System.Collections.Generic.IList<string>? value)
+        {
+            value = ListenV2KeytermVariant2;
+            return IsListenV2KeytermVariant2;
+        }
         /// <summary>
         /// 
         /// </summary>
@@ -101,8 +127,8 @@ namespace Deepgram.Realtime
         /// 
         /// </summary>
         public TResult? Match<TResult>(
-            global::System.Func<string?, TResult>? listenV2KeytermVariant1 = null,
-            global::System.Func<global::System.Collections.Generic.IList<string>?, TResult>? listenV2KeytermVariant2 = null,
+            global::System.Func<string, TResult>? listenV2KeytermVariant1 = null,
+            global::System.Func<global::System.Collections.Generic.IList<string>, TResult>? listenV2KeytermVariant2 = null,
             bool validate = true)
         {
             if (validate)
@@ -126,8 +152,32 @@ namespace Deepgram.Realtime
         /// 
         /// </summary>
         public void Match(
-            global::System.Action<string?>? listenV2KeytermVariant1 = null,
-            global::System.Action<global::System.Collections.Generic.IList<string>?>? listenV2KeytermVariant2 = null,
+            global::System.Action<string>? listenV2KeytermVariant1 = null,
+
+            global::System.Action<global::System.Collections.Generic.IList<string>>? listenV2KeytermVariant2 = null,
+            bool validate = true)
+        {
+            if (validate)
+            {
+                Validate();
+            }
+
+            if (IsListenV2KeytermVariant1)
+            {
+                listenV2KeytermVariant1?.Invoke(ListenV2KeytermVariant1!);
+            }
+            else if (IsListenV2KeytermVariant2)
+            {
+                listenV2KeytermVariant2?.Invoke(ListenV2KeytermVariant2!);
+            }
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public void Switch(
+            global::System.Action<string>? listenV2KeytermVariant1 = null,
+            global::System.Action<global::System.Collections.Generic.IList<string>>? listenV2KeytermVariant2 = null,
             bool validate = true)
         {
             if (validate)

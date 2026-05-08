@@ -29,6 +29,19 @@ namespace Deepgram
         /// <summary>
         /// 
         /// </summary>
+        public bool TryPickV1SpeakPostParametersTagVariant1(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out string? value)
+        {
+            value = V1SpeakPostParametersTagVariant1;
+            return IsV1SpeakPostParametersTagVariant1;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public global::System.Collections.Generic.IList<string>? V1SpeakPostParametersTagVariant2 { get; init; }
 #else
@@ -42,6 +55,19 @@ namespace Deepgram
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(V1SpeakPostParametersTagVariant2))]
 #endif
         public bool IsV1SpeakPostParametersTagVariant2 => V1SpeakPostParametersTagVariant2 != null;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickV1SpeakPostParametersTagVariant2(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::System.Collections.Generic.IList<string>? value)
+        {
+            value = V1SpeakPostParametersTagVariant2;
+            return IsV1SpeakPostParametersTagVariant2;
+        }
         /// <summary>
         /// 
         /// </summary>
@@ -100,8 +126,8 @@ namespace Deepgram
         /// 
         /// </summary>
         public TResult? Match<TResult>(
-            global::System.Func<string?, TResult>? v1SpeakPostParametersTagVariant1 = null,
-            global::System.Func<global::System.Collections.Generic.IList<string>?, TResult>? v1SpeakPostParametersTagVariant2 = null,
+            global::System.Func<string, TResult>? v1SpeakPostParametersTagVariant1 = null,
+            global::System.Func<global::System.Collections.Generic.IList<string>, TResult>? v1SpeakPostParametersTagVariant2 = null,
             bool validate = true)
         {
             if (validate)
@@ -125,8 +151,32 @@ namespace Deepgram
         /// 
         /// </summary>
         public void Match(
-            global::System.Action<string?>? v1SpeakPostParametersTagVariant1 = null,
-            global::System.Action<global::System.Collections.Generic.IList<string>?>? v1SpeakPostParametersTagVariant2 = null,
+            global::System.Action<string>? v1SpeakPostParametersTagVariant1 = null,
+
+            global::System.Action<global::System.Collections.Generic.IList<string>>? v1SpeakPostParametersTagVariant2 = null,
+            bool validate = true)
+        {
+            if (validate)
+            {
+                Validate();
+            }
+
+            if (IsV1SpeakPostParametersTagVariant1)
+            {
+                v1SpeakPostParametersTagVariant1?.Invoke(V1SpeakPostParametersTagVariant1!);
+            }
+            else if (IsV1SpeakPostParametersTagVariant2)
+            {
+                v1SpeakPostParametersTagVariant2?.Invoke(V1SpeakPostParametersTagVariant2!);
+            }
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public void Switch(
+            global::System.Action<string>? v1SpeakPostParametersTagVariant1 = null,
+            global::System.Action<global::System.Collections.Generic.IList<string>>? v1SpeakPostParametersTagVariant2 = null,
             bool validate = true)
         {
             if (validate)

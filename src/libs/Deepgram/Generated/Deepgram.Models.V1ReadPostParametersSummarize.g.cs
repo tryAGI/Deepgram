@@ -27,6 +27,19 @@ namespace Deepgram
         public bool IsV1ReadPostParametersSummarize0 => V1ReadPostParametersSummarize0 != null;
 
         /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickV1ReadPostParametersSummarize0(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Deepgram.V1ReadPostParametersSummarize0? value)
+        {
+            value = V1ReadPostParametersSummarize0;
+            return IsV1ReadPostParametersSummarize0;
+        }
+
+        /// <summary>
         /// Default Value: false
         /// </summary>
 #if NET6_0_OR_GREATER
@@ -42,6 +55,19 @@ namespace Deepgram
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(V1ReadPostParametersSummarizeVariant2))]
 #endif
         public bool IsV1ReadPostParametersSummarizeVariant2 => V1ReadPostParametersSummarizeVariant2 != null;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickV1ReadPostParametersSummarizeVariant2(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out bool? value)
+        {
+            value = V1ReadPostParametersSummarizeVariant2;
+            return IsV1ReadPostParametersSummarizeVariant2;
+        }
         /// <summary>
         /// 
         /// </summary>
@@ -143,6 +169,30 @@ namespace Deepgram
         /// 
         /// </summary>
         public void Match(
+            global::System.Action<global::Deepgram.V1ReadPostParametersSummarize0?>? v1ReadPostParametersSummarize0 = null,
+
+            global::System.Action<bool?>? v1ReadPostParametersSummarizeVariant2 = null,
+            bool validate = true)
+        {
+            if (validate)
+            {
+                Validate();
+            }
+
+            if (IsV1ReadPostParametersSummarize0)
+            {
+                v1ReadPostParametersSummarize0?.Invoke(V1ReadPostParametersSummarize0!);
+            }
+            else if (IsV1ReadPostParametersSummarizeVariant2)
+            {
+                v1ReadPostParametersSummarizeVariant2?.Invoke(V1ReadPostParametersSummarizeVariant2!);
+            }
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public void Switch(
             global::System.Action<global::Deepgram.V1ReadPostParametersSummarize0?>? v1ReadPostParametersSummarize0 = null,
             global::System.Action<bool?>? v1ReadPostParametersSummarizeVariant2 = null,
             bool validate = true)

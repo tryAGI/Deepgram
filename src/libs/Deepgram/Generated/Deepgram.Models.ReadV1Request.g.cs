@@ -29,6 +29,19 @@ namespace Deepgram
         /// <summary>
         /// 
         /// </summary>
+        public bool TryPickReadV1RequestUrl(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Deepgram.ReadV1RequestUrl? value)
+        {
+            value = ReadV1RequestUrl;
+            return IsReadV1RequestUrl;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public global::Deepgram.ReadV1RequestText? ReadV1RequestText { get; init; }
 #else
@@ -42,6 +55,19 @@ namespace Deepgram
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(ReadV1RequestText))]
 #endif
         public bool IsReadV1RequestText => ReadV1RequestText != null;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickReadV1RequestText(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Deepgram.ReadV1RequestText? value)
+        {
+            value = ReadV1RequestText;
+            return IsReadV1RequestText;
+        }
         /// <summary>
         /// 
         /// </summary>
@@ -118,8 +144,8 @@ namespace Deepgram
         /// 
         /// </summary>
         public TResult? Match<TResult>(
-            global::System.Func<global::Deepgram.ReadV1RequestUrl?, TResult>? readV1RequestUrl = null,
-            global::System.Func<global::Deepgram.ReadV1RequestText?, TResult>? readV1RequestText = null,
+            global::System.Func<global::Deepgram.ReadV1RequestUrl, TResult>? readV1RequestUrl = null,
+            global::System.Func<global::Deepgram.ReadV1RequestText, TResult>? readV1RequestText = null,
             bool validate = true)
         {
             if (validate)
@@ -143,8 +169,32 @@ namespace Deepgram
         /// 
         /// </summary>
         public void Match(
-            global::System.Action<global::Deepgram.ReadV1RequestUrl?>? readV1RequestUrl = null,
-            global::System.Action<global::Deepgram.ReadV1RequestText?>? readV1RequestText = null,
+            global::System.Action<global::Deepgram.ReadV1RequestUrl>? readV1RequestUrl = null,
+
+            global::System.Action<global::Deepgram.ReadV1RequestText>? readV1RequestText = null,
+            bool validate = true)
+        {
+            if (validate)
+            {
+                Validate();
+            }
+
+            if (IsReadV1RequestUrl)
+            {
+                readV1RequestUrl?.Invoke(ReadV1RequestUrl!);
+            }
+            else if (IsReadV1RequestText)
+            {
+                readV1RequestText?.Invoke(ReadV1RequestText!);
+            }
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public void Switch(
+            global::System.Action<global::Deepgram.ReadV1RequestUrl>? readV1RequestUrl = null,
+            global::System.Action<global::Deepgram.ReadV1RequestText>? readV1RequestText = null,
             bool validate = true)
         {
             if (validate)

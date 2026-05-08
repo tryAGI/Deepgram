@@ -29,6 +29,19 @@ namespace Deepgram.Realtime
         /// <summary>
         /// 
         /// </summary>
+        public bool TryPickChannelsAgentV1MessagesAgentV1SettingsAgent0(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Deepgram.Realtime.ChannelsAgentV1MessagesAgentV1SettingsAgent0? value)
+        {
+            value = ChannelsAgentV1MessagesAgentV1SettingsAgent0;
+            return IsChannelsAgentV1MessagesAgentV1SettingsAgent0;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public global::System.Guid? Guid { get; init; }
 #else
@@ -42,6 +55,19 @@ namespace Deepgram.Realtime
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Guid))]
 #endif
         public bool IsGuid => Guid != null;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickGuid(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::System.Guid? value)
+        {
+            value = Guid;
+            return IsGuid;
+        }
         /// <summary>
         /// 
         /// </summary>
@@ -118,7 +144,7 @@ namespace Deepgram.Realtime
         /// 
         /// </summary>
         public TResult? Match<TResult>(
-            global::System.Func<global::Deepgram.Realtime.ChannelsAgentV1MessagesAgentV1SettingsAgent0?, TResult>? channelsAgentV1MessagesAgentV1SettingsAgent0 = null,
+            global::System.Func<global::Deepgram.Realtime.ChannelsAgentV1MessagesAgentV1SettingsAgent0, TResult>? channelsAgentV1MessagesAgentV1SettingsAgent0 = null,
             global::System.Func<global::System.Guid?, TResult>? guid = null,
             bool validate = true)
         {
@@ -143,7 +169,31 @@ namespace Deepgram.Realtime
         /// 
         /// </summary>
         public void Match(
-            global::System.Action<global::Deepgram.Realtime.ChannelsAgentV1MessagesAgentV1SettingsAgent0?>? channelsAgentV1MessagesAgentV1SettingsAgent0 = null,
+            global::System.Action<global::Deepgram.Realtime.ChannelsAgentV1MessagesAgentV1SettingsAgent0>? channelsAgentV1MessagesAgentV1SettingsAgent0 = null,
+
+            global::System.Action<global::System.Guid?>? guid = null,
+            bool validate = true)
+        {
+            if (validate)
+            {
+                Validate();
+            }
+
+            if (IsChannelsAgentV1MessagesAgentV1SettingsAgent0)
+            {
+                channelsAgentV1MessagesAgentV1SettingsAgent0?.Invoke(ChannelsAgentV1MessagesAgentV1SettingsAgent0!);
+            }
+            else if (IsGuid)
+            {
+                guid?.Invoke(Guid!);
+            }
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public void Switch(
+            global::System.Action<global::Deepgram.Realtime.ChannelsAgentV1MessagesAgentV1SettingsAgent0>? channelsAgentV1MessagesAgentV1SettingsAgent0 = null,
             global::System.Action<global::System.Guid?>? guid = null,
             bool validate = true)
         {

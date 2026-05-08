@@ -27,6 +27,19 @@ namespace Deepgram
         public bool IsV1ListenPostParametersSummarize0 => V1ListenPostParametersSummarize0 != null;
 
         /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickV1ListenPostParametersSummarize0(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Deepgram.V1ListenPostParametersSummarize0? value)
+        {
+            value = V1ListenPostParametersSummarize0;
+            return IsV1ListenPostParametersSummarize0;
+        }
+
+        /// <summary>
         /// Default Value: false
         /// </summary>
 #if NET6_0_OR_GREATER
@@ -42,6 +55,19 @@ namespace Deepgram
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(V1ListenPostParametersSummarizeVariant2))]
 #endif
         public bool IsV1ListenPostParametersSummarizeVariant2 => V1ListenPostParametersSummarizeVariant2 != null;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickV1ListenPostParametersSummarizeVariant2(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out bool? value)
+        {
+            value = V1ListenPostParametersSummarizeVariant2;
+            return IsV1ListenPostParametersSummarizeVariant2;
+        }
         /// <summary>
         /// 
         /// </summary>
@@ -143,6 +169,30 @@ namespace Deepgram
         /// 
         /// </summary>
         public void Match(
+            global::System.Action<global::Deepgram.V1ListenPostParametersSummarize0?>? v1ListenPostParametersSummarize0 = null,
+
+            global::System.Action<bool?>? v1ListenPostParametersSummarizeVariant2 = null,
+            bool validate = true)
+        {
+            if (validate)
+            {
+                Validate();
+            }
+
+            if (IsV1ListenPostParametersSummarize0)
+            {
+                v1ListenPostParametersSummarize0?.Invoke(V1ListenPostParametersSummarize0!);
+            }
+            else if (IsV1ListenPostParametersSummarizeVariant2)
+            {
+                v1ListenPostParametersSummarizeVariant2?.Invoke(V1ListenPostParametersSummarizeVariant2!);
+            }
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public void Switch(
             global::System.Action<global::Deepgram.V1ListenPostParametersSummarize0?>? v1ListenPostParametersSummarize0 = null,
             global::System.Action<bool?>? v1ListenPostParametersSummarizeVariant2 = null,
             bool validate = true)

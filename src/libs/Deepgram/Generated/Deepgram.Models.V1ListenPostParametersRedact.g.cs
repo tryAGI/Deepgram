@@ -29,6 +29,19 @@ namespace Deepgram
         /// <summary>
         /// 
         /// </summary>
+        public bool TryPickV1ListenPostParametersRedactVariant1(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out string? value)
+        {
+            value = V1ListenPostParametersRedactVariant1;
+            return IsV1ListenPostParametersRedactVariant1;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public global::System.Collections.Generic.IList<global::Deepgram.V1ListenPostParametersRedactSchemaOneOf1Items>? V1ListenPostParametersRedact1 { get; init; }
 #else
@@ -42,6 +55,19 @@ namespace Deepgram
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(V1ListenPostParametersRedact1))]
 #endif
         public bool IsV1ListenPostParametersRedact1 => V1ListenPostParametersRedact1 != null;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickV1ListenPostParametersRedact1(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::System.Collections.Generic.IList<global::Deepgram.V1ListenPostParametersRedactSchemaOneOf1Items>? value)
+        {
+            value = V1ListenPostParametersRedact1;
+            return IsV1ListenPostParametersRedact1;
+        }
         /// <summary>
         /// 
         /// </summary>
@@ -100,8 +126,8 @@ namespace Deepgram
         /// 
         /// </summary>
         public TResult? Match<TResult>(
-            global::System.Func<string?, TResult>? v1ListenPostParametersRedactVariant1 = null,
-            global::System.Func<global::System.Collections.Generic.IList<global::Deepgram.V1ListenPostParametersRedactSchemaOneOf1Items>?, TResult>? v1ListenPostParametersRedact1 = null,
+            global::System.Func<string, TResult>? v1ListenPostParametersRedactVariant1 = null,
+            global::System.Func<global::System.Collections.Generic.IList<global::Deepgram.V1ListenPostParametersRedactSchemaOneOf1Items>, TResult>? v1ListenPostParametersRedact1 = null,
             bool validate = true)
         {
             if (validate)
@@ -125,8 +151,32 @@ namespace Deepgram
         /// 
         /// </summary>
         public void Match(
-            global::System.Action<string?>? v1ListenPostParametersRedactVariant1 = null,
-            global::System.Action<global::System.Collections.Generic.IList<global::Deepgram.V1ListenPostParametersRedactSchemaOneOf1Items>?>? v1ListenPostParametersRedact1 = null,
+            global::System.Action<string>? v1ListenPostParametersRedactVariant1 = null,
+
+            global::System.Action<global::System.Collections.Generic.IList<global::Deepgram.V1ListenPostParametersRedactSchemaOneOf1Items>>? v1ListenPostParametersRedact1 = null,
+            bool validate = true)
+        {
+            if (validate)
+            {
+                Validate();
+            }
+
+            if (IsV1ListenPostParametersRedactVariant1)
+            {
+                v1ListenPostParametersRedactVariant1?.Invoke(V1ListenPostParametersRedactVariant1!);
+            }
+            else if (IsV1ListenPostParametersRedact1)
+            {
+                v1ListenPostParametersRedact1?.Invoke(V1ListenPostParametersRedact1!);
+            }
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public void Switch(
+            global::System.Action<string>? v1ListenPostParametersRedactVariant1 = null,
+            global::System.Action<global::System.Collections.Generic.IList<global::Deepgram.V1ListenPostParametersRedactSchemaOneOf1Items>>? v1ListenPostParametersRedact1 = null,
             bool validate = true)
         {
             if (validate)

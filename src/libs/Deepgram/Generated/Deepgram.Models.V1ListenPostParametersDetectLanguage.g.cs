@@ -29,6 +29,19 @@ namespace Deepgram
         /// <summary>
         /// 
         /// </summary>
+        public bool TryPickV1ListenPostParametersDetectLanguageVariant1(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out bool? value)
+        {
+            value = V1ListenPostParametersDetectLanguageVariant1;
+            return IsV1ListenPostParametersDetectLanguageVariant1;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public global::System.Collections.Generic.IList<string>? V1ListenPostParametersDetectLanguageVariant2 { get; init; }
 #else
@@ -42,6 +55,19 @@ namespace Deepgram
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(V1ListenPostParametersDetectLanguageVariant2))]
 #endif
         public bool IsV1ListenPostParametersDetectLanguageVariant2 => V1ListenPostParametersDetectLanguageVariant2 != null;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickV1ListenPostParametersDetectLanguageVariant2(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::System.Collections.Generic.IList<string>? value)
+        {
+            value = V1ListenPostParametersDetectLanguageVariant2;
+            return IsV1ListenPostParametersDetectLanguageVariant2;
+        }
         /// <summary>
         /// 
         /// </summary>
@@ -101,7 +127,7 @@ namespace Deepgram
         /// </summary>
         public TResult? Match<TResult>(
             global::System.Func<bool?, TResult>? v1ListenPostParametersDetectLanguageVariant1 = null,
-            global::System.Func<global::System.Collections.Generic.IList<string>?, TResult>? v1ListenPostParametersDetectLanguageVariant2 = null,
+            global::System.Func<global::System.Collections.Generic.IList<string>, TResult>? v1ListenPostParametersDetectLanguageVariant2 = null,
             bool validate = true)
         {
             if (validate)
@@ -126,7 +152,31 @@ namespace Deepgram
         /// </summary>
         public void Match(
             global::System.Action<bool?>? v1ListenPostParametersDetectLanguageVariant1 = null,
-            global::System.Action<global::System.Collections.Generic.IList<string>?>? v1ListenPostParametersDetectLanguageVariant2 = null,
+
+            global::System.Action<global::System.Collections.Generic.IList<string>>? v1ListenPostParametersDetectLanguageVariant2 = null,
+            bool validate = true)
+        {
+            if (validate)
+            {
+                Validate();
+            }
+
+            if (IsV1ListenPostParametersDetectLanguageVariant1)
+            {
+                v1ListenPostParametersDetectLanguageVariant1?.Invoke(V1ListenPostParametersDetectLanguageVariant1!);
+            }
+            else if (IsV1ListenPostParametersDetectLanguageVariant2)
+            {
+                v1ListenPostParametersDetectLanguageVariant2?.Invoke(V1ListenPostParametersDetectLanguageVariant2!);
+            }
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public void Switch(
+            global::System.Action<bool?>? v1ListenPostParametersDetectLanguageVariant1 = null,
+            global::System.Action<global::System.Collections.Generic.IList<string>>? v1ListenPostParametersDetectLanguageVariant2 = null,
             bool validate = true)
         {
             if (validate)
