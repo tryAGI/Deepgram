@@ -141,6 +141,7 @@ namespace Deepgram.Realtime.JsonConverters
             {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(byte[]), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<byte[]> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(byte[]).Name}");
                     speakV1SpeakV1Audio = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
@@ -151,9 +152,13 @@ namespace Deepgram.Realtime.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (speakV1SpeakV1Audio == null && speakV1SpeakV1Metadata == null && speakV1SpeakV1Flushed == null && speakV1SpeakV1Cleared == null && speakV1SpeakV1Warning == null)
+            {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Deepgram.Realtime.SpeakV1SpeakV1Metadata), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Deepgram.Realtime.SpeakV1SpeakV1Metadata> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Deepgram.Realtime.SpeakV1SpeakV1Metadata).Name}");
                     speakV1SpeakV1Metadata = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
@@ -164,9 +169,13 @@ namespace Deepgram.Realtime.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (speakV1SpeakV1Audio == null && speakV1SpeakV1Metadata == null && speakV1SpeakV1Flushed == null && speakV1SpeakV1Cleared == null && speakV1SpeakV1Warning == null)
+            {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Deepgram.Realtime.SpeakV1SpeakV1Flushed), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Deepgram.Realtime.SpeakV1SpeakV1Flushed> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Deepgram.Realtime.SpeakV1SpeakV1Flushed).Name}");
                     speakV1SpeakV1Flushed = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
@@ -177,9 +186,13 @@ namespace Deepgram.Realtime.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (speakV1SpeakV1Audio == null && speakV1SpeakV1Metadata == null && speakV1SpeakV1Flushed == null && speakV1SpeakV1Cleared == null && speakV1SpeakV1Warning == null)
+            {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Deepgram.Realtime.SpeakV1SpeakV1Cleared), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Deepgram.Realtime.SpeakV1SpeakV1Cleared> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Deepgram.Realtime.SpeakV1SpeakV1Cleared).Name}");
                     speakV1SpeakV1Cleared = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
@@ -190,9 +203,13 @@ namespace Deepgram.Realtime.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (speakV1SpeakV1Audio == null && speakV1SpeakV1Metadata == null && speakV1SpeakV1Flushed == null && speakV1SpeakV1Cleared == null && speakV1SpeakV1Warning == null)
+            {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Deepgram.Realtime.SpeakV1SpeakV1Warning), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Deepgram.Realtime.SpeakV1SpeakV1Warning> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Deepgram.Realtime.SpeakV1SpeakV1Warning).Name}");
                     speakV1SpeakV1Warning = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);

@@ -143,6 +143,7 @@ namespace Deepgram.JsonConverters
             {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Deepgram.AgentThinkModelsV1ResponseModelsItems0), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Deepgram.AgentThinkModelsV1ResponseModelsItems0> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Deepgram.AgentThinkModelsV1ResponseModelsItems0).Name}");
                     agentThinkModelsV1ResponseModelsItems0 = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
@@ -153,9 +154,13 @@ namespace Deepgram.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (agentThinkModelsV1ResponseModelsItems0 == null && agentThinkModelsV1ResponseModelsItems1 == null && agentThinkModelsV1ResponseModelsItems2 == null && agentThinkModelsV1ResponseModelsItems3 == null && agentThinkModelsV1ResponseModelsItems4 == null)
+            {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Deepgram.AgentThinkModelsV1ResponseModelsItems1), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Deepgram.AgentThinkModelsV1ResponseModelsItems1> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Deepgram.AgentThinkModelsV1ResponseModelsItems1).Name}");
                     agentThinkModelsV1ResponseModelsItems1 = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
@@ -166,9 +171,13 @@ namespace Deepgram.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (agentThinkModelsV1ResponseModelsItems0 == null && agentThinkModelsV1ResponseModelsItems1 == null && agentThinkModelsV1ResponseModelsItems2 == null && agentThinkModelsV1ResponseModelsItems3 == null && agentThinkModelsV1ResponseModelsItems4 == null)
+            {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Deepgram.AgentThinkModelsV1ResponseModelsItems2), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Deepgram.AgentThinkModelsV1ResponseModelsItems2> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Deepgram.AgentThinkModelsV1ResponseModelsItems2).Name}");
                     agentThinkModelsV1ResponseModelsItems2 = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
@@ -179,9 +188,13 @@ namespace Deepgram.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (agentThinkModelsV1ResponseModelsItems0 == null && agentThinkModelsV1ResponseModelsItems1 == null && agentThinkModelsV1ResponseModelsItems2 == null && agentThinkModelsV1ResponseModelsItems3 == null && agentThinkModelsV1ResponseModelsItems4 == null)
+            {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Deepgram.AgentThinkModelsV1ResponseModelsItems3), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Deepgram.AgentThinkModelsV1ResponseModelsItems3> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Deepgram.AgentThinkModelsV1ResponseModelsItems3).Name}");
                     agentThinkModelsV1ResponseModelsItems3 = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
@@ -192,9 +205,13 @@ namespace Deepgram.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (agentThinkModelsV1ResponseModelsItems0 == null && agentThinkModelsV1ResponseModelsItems1 == null && agentThinkModelsV1ResponseModelsItems2 == null && agentThinkModelsV1ResponseModelsItems3 == null && agentThinkModelsV1ResponseModelsItems4 == null)
+            {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Deepgram.AgentThinkModelsV1ResponseModelsItems4), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Deepgram.AgentThinkModelsV1ResponseModelsItems4> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Deepgram.AgentThinkModelsV1ResponseModelsItems4).Name}");
                     agentThinkModelsV1ResponseModelsItems4 = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);

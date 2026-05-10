@@ -108,7 +108,10 @@ namespace Deepgram.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (createKeyV1RequestVariant1 == null && createKeyV1RequestVariant2 == null)
+            {
                 try
                 {
 

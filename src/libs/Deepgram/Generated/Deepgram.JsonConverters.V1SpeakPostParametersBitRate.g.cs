@@ -138,7 +138,10 @@ namespace Deepgram.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (v1SpeakPostParametersBitRate0 == null && v1SpeakPostParametersBitRateVariant2 == null && v1SpeakPostParametersBitRateVariant3 == null)
+            {
                 try
                 {
 
@@ -152,7 +155,10 @@ namespace Deepgram.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (v1SpeakPostParametersBitRate0 == null && v1SpeakPostParametersBitRateVariant2 == null && v1SpeakPostParametersBitRateVariant3 == null)
+            {
                 try
                 {
 
