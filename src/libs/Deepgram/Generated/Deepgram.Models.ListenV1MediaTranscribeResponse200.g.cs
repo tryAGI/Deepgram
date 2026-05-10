@@ -40,6 +40,13 @@ namespace Deepgram
         }
 
         /// <summary>
+        /// 
+        /// </summary>
+        public global::Deepgram.ListenV1Response PickListenV1Response() => IsListenV1Response
+            ? ListenV1Response!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'ListenV1Response' but the value was {ToString()}.");
+
+        /// <summary>
         /// Accepted response for asynchronous transcription requests
         /// </summary>
 #if NET6_0_OR_GREATER
@@ -68,6 +75,13 @@ namespace Deepgram
             value = ListenV1AcceptedResponse;
             return IsListenV1AcceptedResponse;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Deepgram.ListenV1AcceptedResponse PickListenV1AcceptedResponse() => IsListenV1AcceptedResponse
+            ? ListenV1AcceptedResponse!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'ListenV1AcceptedResponse' but the value was {ToString()}.");
         /// <summary>
         /// 
         /// </summary>
@@ -89,6 +103,11 @@ namespace Deepgram
         /// <summary>
         /// 
         /// </summary>
+        public static ListenV1MediaTranscribeResponse200 FromListenV1Response(global::Deepgram.ListenV1Response? value) => new ListenV1MediaTranscribeResponse200(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator ListenV1MediaTranscribeResponse200(global::Deepgram.ListenV1AcceptedResponse value) => new ListenV1MediaTranscribeResponse200((global::Deepgram.ListenV1AcceptedResponse?)value);
 
         /// <summary>
@@ -103,6 +122,11 @@ namespace Deepgram
         {
             ListenV1AcceptedResponse = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static ListenV1MediaTranscribeResponse200 FromListenV1AcceptedResponse(global::Deepgram.ListenV1AcceptedResponse? value) => new ListenV1MediaTranscribeResponse200(value);
 
         /// <summary>
         /// 

@@ -40,6 +40,13 @@ namespace Deepgram.Realtime
         }
 
         /// <summary>
+        /// 
+        /// </summary>
+        public global::Deepgram.Realtime.ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ContextMessagesItems0 PickChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ContextMessagesItems0() => IsChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ContextMessagesItems0
+            ? ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ContextMessagesItems0!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ContextMessagesItems0' but the value was {ToString()}.");
+
+        /// <summary>
         /// Client-side or server-side function call request and response as part of the conversation history
         /// </summary>
 #if NET6_0_OR_GREATER
@@ -68,6 +75,13 @@ namespace Deepgram.Realtime
             value = ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ContextMessagesItems1;
             return IsChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ContextMessagesItems1;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Deepgram.Realtime.ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ContextMessagesItems1 PickChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ContextMessagesItems1() => IsChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ContextMessagesItems1
+            ? ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ContextMessagesItems1!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ContextMessagesItems1' but the value was {ToString()}.");
         /// <summary>
         /// 
         /// </summary>
@@ -89,6 +103,11 @@ namespace Deepgram.Realtime
         /// <summary>
         /// 
         /// </summary>
+        public static ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ContextMessagesItems FromChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ContextMessagesItems0(global::Deepgram.Realtime.ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ContextMessagesItems0? value) => new ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ContextMessagesItems(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ContextMessagesItems(global::Deepgram.Realtime.ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ContextMessagesItems1 value) => new ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ContextMessagesItems((global::Deepgram.Realtime.ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ContextMessagesItems1?)value);
 
         /// <summary>
@@ -103,6 +122,11 @@ namespace Deepgram.Realtime
         {
             ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ContextMessagesItems1 = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ContextMessagesItems FromChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ContextMessagesItems1(global::Deepgram.Realtime.ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ContextMessagesItems1? value) => new ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ContextMessagesItems(value);
 
         /// <summary>
         /// 

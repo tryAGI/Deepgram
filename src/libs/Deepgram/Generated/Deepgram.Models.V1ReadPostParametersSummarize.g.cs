@@ -40,6 +40,13 @@ namespace Deepgram
         }
 
         /// <summary>
+        /// 
+        /// </summary>
+        public global::Deepgram.V1ReadPostParametersSummarize0 PickV1ReadPostParametersSummarize0() => IsV1ReadPostParametersSummarize0
+            ? V1ReadPostParametersSummarize0!.Value
+            : throw new global::System.InvalidOperationException($"Expected union variant 'V1ReadPostParametersSummarize0' but the value was {ToString()}.");
+
+        /// <summary>
         /// Default Value: false
         /// </summary>
 #if NET6_0_OR_GREATER
@@ -68,6 +75,13 @@ namespace Deepgram
             value = V1ReadPostParametersSummarizeVariant2;
             return IsV1ReadPostParametersSummarizeVariant2;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool PickV1ReadPostParametersSummarizeVariant2() => IsV1ReadPostParametersSummarizeVariant2
+            ? V1ReadPostParametersSummarizeVariant2!.Value
+            : throw new global::System.InvalidOperationException($"Expected union variant 'V1ReadPostParametersSummarizeVariant2' but the value was {ToString()}.");
         /// <summary>
         /// 
         /// </summary>
@@ -89,6 +103,11 @@ namespace Deepgram
         /// <summary>
         /// 
         /// </summary>
+        public static V1ReadPostParametersSummarize FromV1ReadPostParametersSummarize0(global::Deepgram.V1ReadPostParametersSummarize0? value) => new V1ReadPostParametersSummarize(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator V1ReadPostParametersSummarize(bool value) => new V1ReadPostParametersSummarize((bool?)value);
 
         /// <summary>
@@ -103,6 +122,11 @@ namespace Deepgram
         {
             V1ReadPostParametersSummarizeVariant2 = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static V1ReadPostParametersSummarize FromV1ReadPostParametersSummarizeVariant2(bool? value) => new V1ReadPostParametersSummarize(value);
 
         /// <summary>
         /// 

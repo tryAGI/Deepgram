@@ -42,6 +42,13 @@ namespace Deepgram.Realtime
         /// <summary>
         /// 
         /// </summary>
+        public global::Deepgram.Realtime.ThinkSettingsV1 PickThinkSettingsV1() => IsThinkSettingsV1
+            ? ThinkSettingsV1!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'ThinkSettingsV1' but the value was {ToString()}.");
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public global::System.Collections.Generic.IList<global::Deepgram.Realtime.ThinkSettingsV1>? ChannelsAgentV1MessagesAgentV1UpdateThinkThink1 { get; init; }
 #else
@@ -68,6 +75,13 @@ namespace Deepgram.Realtime
             value = ChannelsAgentV1MessagesAgentV1UpdateThinkThink1;
             return IsChannelsAgentV1MessagesAgentV1UpdateThinkThink1;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::System.Collections.Generic.IList<global::Deepgram.Realtime.ThinkSettingsV1> PickChannelsAgentV1MessagesAgentV1UpdateThinkThink1() => IsChannelsAgentV1MessagesAgentV1UpdateThinkThink1
+            ? ChannelsAgentV1MessagesAgentV1UpdateThinkThink1!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'ChannelsAgentV1MessagesAgentV1UpdateThinkThink1' but the value was {ToString()}.");
         /// <summary>
         /// 
         /// </summary>
@@ -85,6 +99,11 @@ namespace Deepgram.Realtime
         {
             ThinkSettingsV1 = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static ChannelsAgentV1MessagesAgentV1UpdateThinkThink FromThinkSettingsV1(global::Deepgram.Realtime.ThinkSettingsV1? value) => new ChannelsAgentV1MessagesAgentV1UpdateThinkThink(value);
 
         /// <summary>
         /// 

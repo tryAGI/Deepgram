@@ -40,6 +40,13 @@ namespace Deepgram
         }
 
         /// <summary>
+        /// 
+        /// </summary>
+        public global::Deepgram.V1SpeakPostParametersSampleRate0 PickV1SpeakPostParametersSampleRate0() => IsV1SpeakPostParametersSampleRate0
+            ? V1SpeakPostParametersSampleRate0!.Value
+            : throw new global::System.InvalidOperationException($"Expected union variant 'V1SpeakPostParametersSampleRate0' but the value was {ToString()}.");
+
+        /// <summary>
         /// Encoding - mulaw. Supported sample rates - 8000, 16000 Hz.
         /// </summary>
 #if NET6_0_OR_GREATER
@@ -68,6 +75,13 @@ namespace Deepgram
             value = V1SpeakPostParametersSampleRate1;
             return IsV1SpeakPostParametersSampleRate1;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Deepgram.V1SpeakPostParametersSampleRate1 PickV1SpeakPostParametersSampleRate1() => IsV1SpeakPostParametersSampleRate1
+            ? V1SpeakPostParametersSampleRate1!.Value
+            : throw new global::System.InvalidOperationException($"Expected union variant 'V1SpeakPostParametersSampleRate1' but the value was {ToString()}.");
 
         /// <summary>
         /// Encoding - alaw. Supported sample rates - 8000, 16000 Hz.
@@ -100,6 +114,13 @@ namespace Deepgram
         }
 
         /// <summary>
+        /// 
+        /// </summary>
+        public global::Deepgram.V1SpeakPostParametersSampleRate2 PickV1SpeakPostParametersSampleRate2() => IsV1SpeakPostParametersSampleRate2
+            ? V1SpeakPostParametersSampleRate2!.Value
+            : throw new global::System.InvalidOperationException($"Expected union variant 'V1SpeakPostParametersSampleRate2' but the value was {ToString()}.");
+
+        /// <summary>
         /// Encoding - mp3. Sample rate is fixed and not configurable (22050 Hz).
         /// </summary>
 #if NET6_0_OR_GREATER
@@ -130,6 +151,13 @@ namespace Deepgram
         }
 
         /// <summary>
+        /// 
+        /// </summary>
+        public global::Deepgram.V1SpeakPostParametersSampleRate3 PickV1SpeakPostParametersSampleRate3() => IsV1SpeakPostParametersSampleRate3
+            ? V1SpeakPostParametersSampleRate3!.Value
+            : throw new global::System.InvalidOperationException($"Expected union variant 'V1SpeakPostParametersSampleRate3' but the value was {ToString()}.");
+
+        /// <summary>
         /// Encoding - opus. Sample rate is fixed at 48000 Hz.
         /// </summary>
 #if NET6_0_OR_GREATER
@@ -158,6 +186,13 @@ namespace Deepgram
             value = V1SpeakPostParametersSampleRate4;
             return IsV1SpeakPostParametersSampleRate4;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Deepgram.V1SpeakPostParametersSampleRate4 PickV1SpeakPostParametersSampleRate4() => IsV1SpeakPostParametersSampleRate4
+            ? V1SpeakPostParametersSampleRate4!.Value
+            : throw new global::System.InvalidOperationException($"Expected union variant 'V1SpeakPostParametersSampleRate4' but the value was {ToString()}.");
         /// <summary>
         /// 
         /// </summary>
@@ -175,6 +210,11 @@ namespace Deepgram
         {
             V1SpeakPostParametersSampleRate0 = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static V1SpeakPostParametersSampleRate FromV1SpeakPostParametersSampleRate0(global::Deepgram.V1SpeakPostParametersSampleRate0? value) => new V1SpeakPostParametersSampleRate(value);
 
         /// <summary>
         /// 
@@ -197,6 +237,11 @@ namespace Deepgram
         /// <summary>
         /// 
         /// </summary>
+        public static V1SpeakPostParametersSampleRate FromV1SpeakPostParametersSampleRate1(global::Deepgram.V1SpeakPostParametersSampleRate1? value) => new V1SpeakPostParametersSampleRate(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator V1SpeakPostParametersSampleRate(global::Deepgram.V1SpeakPostParametersSampleRate2 value) => new V1SpeakPostParametersSampleRate((global::Deepgram.V1SpeakPostParametersSampleRate2?)value);
 
         /// <summary>
@@ -211,6 +256,11 @@ namespace Deepgram
         {
             V1SpeakPostParametersSampleRate2 = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static V1SpeakPostParametersSampleRate FromV1SpeakPostParametersSampleRate2(global::Deepgram.V1SpeakPostParametersSampleRate2? value) => new V1SpeakPostParametersSampleRate(value);
 
         /// <summary>
         /// 
@@ -233,6 +283,11 @@ namespace Deepgram
         /// <summary>
         /// 
         /// </summary>
+        public static V1SpeakPostParametersSampleRate FromV1SpeakPostParametersSampleRate3(global::Deepgram.V1SpeakPostParametersSampleRate3? value) => new V1SpeakPostParametersSampleRate(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator V1SpeakPostParametersSampleRate(global::Deepgram.V1SpeakPostParametersSampleRate4 value) => new V1SpeakPostParametersSampleRate((global::Deepgram.V1SpeakPostParametersSampleRate4?)value);
 
         /// <summary>
@@ -247,6 +302,11 @@ namespace Deepgram
         {
             V1SpeakPostParametersSampleRate4 = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static V1SpeakPostParametersSampleRate FromV1SpeakPostParametersSampleRate4(global::Deepgram.V1SpeakPostParametersSampleRate4? value) => new V1SpeakPostParametersSampleRate(value);
 
         /// <summary>
         /// 

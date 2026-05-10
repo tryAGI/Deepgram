@@ -40,6 +40,13 @@ namespace Deepgram
         }
 
         /// <summary>
+        /// 
+        /// </summary>
+        public object PickCreateKeyV1RequestVariant1() => IsCreateKeyV1RequestVariant1
+            ? CreateKeyV1RequestVariant1!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'CreateKeyV1RequestVariant1' but the value was {ToString()}.");
+
+        /// <summary>
         /// Any type
         /// </summary>
 #if NET6_0_OR_GREATER
@@ -68,6 +75,13 @@ namespace Deepgram
             value = CreateKeyV1RequestVariant2;
             return IsCreateKeyV1RequestVariant2;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public object PickCreateKeyV1RequestVariant2() => IsCreateKeyV1RequestVariant2
+            ? CreateKeyV1RequestVariant2!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'CreateKeyV1RequestVariant2' but the value was {ToString()}.");
 
         /// <summary>
         /// 

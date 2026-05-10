@@ -40,6 +40,13 @@ namespace Deepgram
         }
 
         /// <summary>
+        /// 
+        /// </summary>
+        public global::Deepgram.V1ListenPostParametersSummarize0 PickV1ListenPostParametersSummarize0() => IsV1ListenPostParametersSummarize0
+            ? V1ListenPostParametersSummarize0!.Value
+            : throw new global::System.InvalidOperationException($"Expected union variant 'V1ListenPostParametersSummarize0' but the value was {ToString()}.");
+
+        /// <summary>
         /// Default Value: false
         /// </summary>
 #if NET6_0_OR_GREATER
@@ -68,6 +75,13 @@ namespace Deepgram
             value = V1ListenPostParametersSummarizeVariant2;
             return IsV1ListenPostParametersSummarizeVariant2;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool PickV1ListenPostParametersSummarizeVariant2() => IsV1ListenPostParametersSummarizeVariant2
+            ? V1ListenPostParametersSummarizeVariant2!.Value
+            : throw new global::System.InvalidOperationException($"Expected union variant 'V1ListenPostParametersSummarizeVariant2' but the value was {ToString()}.");
         /// <summary>
         /// 
         /// </summary>
@@ -89,6 +103,11 @@ namespace Deepgram
         /// <summary>
         /// 
         /// </summary>
+        public static V1ListenPostParametersSummarize FromV1ListenPostParametersSummarize0(global::Deepgram.V1ListenPostParametersSummarize0? value) => new V1ListenPostParametersSummarize(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator V1ListenPostParametersSummarize(bool value) => new V1ListenPostParametersSummarize((bool?)value);
 
         /// <summary>
@@ -103,6 +122,11 @@ namespace Deepgram
         {
             V1ListenPostParametersSummarizeVariant2 = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static V1ListenPostParametersSummarize FromV1ListenPostParametersSummarizeVariant2(bool? value) => new V1ListenPostParametersSummarize(value);
 
         /// <summary>
         /// 

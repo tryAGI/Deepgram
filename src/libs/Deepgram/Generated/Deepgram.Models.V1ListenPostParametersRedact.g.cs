@@ -42,6 +42,13 @@ namespace Deepgram
         /// <summary>
         /// 
         /// </summary>
+        public string PickV1ListenPostParametersRedactVariant1() => IsV1ListenPostParametersRedactVariant1
+            ? V1ListenPostParametersRedactVariant1!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'V1ListenPostParametersRedactVariant1' but the value was {ToString()}.");
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public global::System.Collections.Generic.IList<global::Deepgram.V1ListenPostParametersRedactSchemaOneOf1Items>? V1ListenPostParametersRedact1 { get; init; }
 #else
@@ -68,6 +75,13 @@ namespace Deepgram
             value = V1ListenPostParametersRedact1;
             return IsV1ListenPostParametersRedact1;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::System.Collections.Generic.IList<global::Deepgram.V1ListenPostParametersRedactSchemaOneOf1Items> PickV1ListenPostParametersRedact1() => IsV1ListenPostParametersRedact1
+            ? V1ListenPostParametersRedact1!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'V1ListenPostParametersRedact1' but the value was {ToString()}.");
         /// <summary>
         /// 
         /// </summary>
@@ -85,6 +99,11 @@ namespace Deepgram
         {
             V1ListenPostParametersRedactVariant1 = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static V1ListenPostParametersRedact FromV1ListenPostParametersRedactVariant1(string? value) => new V1ListenPostParametersRedact(value);
 
         /// <summary>
         /// 

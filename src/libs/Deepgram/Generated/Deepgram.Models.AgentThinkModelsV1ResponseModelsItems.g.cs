@@ -40,6 +40,13 @@ namespace Deepgram
         }
 
         /// <summary>
+        /// 
+        /// </summary>
+        public global::Deepgram.AgentThinkModelsV1ResponseModelsItems0 PickAgentThinkModelsV1ResponseModelsItems0() => IsAgentThinkModelsV1ResponseModelsItems0
+            ? AgentThinkModelsV1ResponseModelsItems0!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'AgentThinkModelsV1ResponseModelsItems0' but the value was {ToString()}.");
+
+        /// <summary>
         /// Anthropic models
         /// </summary>
 #if NET6_0_OR_GREATER
@@ -68,6 +75,13 @@ namespace Deepgram
             value = AgentThinkModelsV1ResponseModelsItems1;
             return IsAgentThinkModelsV1ResponseModelsItems1;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Deepgram.AgentThinkModelsV1ResponseModelsItems1 PickAgentThinkModelsV1ResponseModelsItems1() => IsAgentThinkModelsV1ResponseModelsItems1
+            ? AgentThinkModelsV1ResponseModelsItems1!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'AgentThinkModelsV1ResponseModelsItems1' but the value was {ToString()}.");
 
         /// <summary>
         /// Google models
@@ -100,6 +114,13 @@ namespace Deepgram
         }
 
         /// <summary>
+        /// 
+        /// </summary>
+        public global::Deepgram.AgentThinkModelsV1ResponseModelsItems2 PickAgentThinkModelsV1ResponseModelsItems2() => IsAgentThinkModelsV1ResponseModelsItems2
+            ? AgentThinkModelsV1ResponseModelsItems2!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'AgentThinkModelsV1ResponseModelsItems2' but the value was {ToString()}.");
+
+        /// <summary>
         /// Groq models
         /// </summary>
 #if NET6_0_OR_GREATER
@@ -130,6 +151,13 @@ namespace Deepgram
         }
 
         /// <summary>
+        /// 
+        /// </summary>
+        public global::Deepgram.AgentThinkModelsV1ResponseModelsItems3 PickAgentThinkModelsV1ResponseModelsItems3() => IsAgentThinkModelsV1ResponseModelsItems3
+            ? AgentThinkModelsV1ResponseModelsItems3!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'AgentThinkModelsV1ResponseModelsItems3' but the value was {ToString()}.");
+
+        /// <summary>
         /// AWS Bedrock models (custom models accepted)
         /// </summary>
 #if NET6_0_OR_GREATER
@@ -158,6 +186,13 @@ namespace Deepgram
             value = AgentThinkModelsV1ResponseModelsItems4;
             return IsAgentThinkModelsV1ResponseModelsItems4;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Deepgram.AgentThinkModelsV1ResponseModelsItems4 PickAgentThinkModelsV1ResponseModelsItems4() => IsAgentThinkModelsV1ResponseModelsItems4
+            ? AgentThinkModelsV1ResponseModelsItems4!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'AgentThinkModelsV1ResponseModelsItems4' but the value was {ToString()}.");
         /// <summary>
         /// 
         /// </summary>
@@ -175,6 +210,11 @@ namespace Deepgram
         {
             AgentThinkModelsV1ResponseModelsItems0 = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static AgentThinkModelsV1ResponseModelsItems FromAgentThinkModelsV1ResponseModelsItems0(global::Deepgram.AgentThinkModelsV1ResponseModelsItems0? value) => new AgentThinkModelsV1ResponseModelsItems(value);
 
         /// <summary>
         /// 
@@ -197,6 +237,11 @@ namespace Deepgram
         /// <summary>
         /// 
         /// </summary>
+        public static AgentThinkModelsV1ResponseModelsItems FromAgentThinkModelsV1ResponseModelsItems1(global::Deepgram.AgentThinkModelsV1ResponseModelsItems1? value) => new AgentThinkModelsV1ResponseModelsItems(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator AgentThinkModelsV1ResponseModelsItems(global::Deepgram.AgentThinkModelsV1ResponseModelsItems2 value) => new AgentThinkModelsV1ResponseModelsItems((global::Deepgram.AgentThinkModelsV1ResponseModelsItems2?)value);
 
         /// <summary>
@@ -211,6 +256,11 @@ namespace Deepgram
         {
             AgentThinkModelsV1ResponseModelsItems2 = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static AgentThinkModelsV1ResponseModelsItems FromAgentThinkModelsV1ResponseModelsItems2(global::Deepgram.AgentThinkModelsV1ResponseModelsItems2? value) => new AgentThinkModelsV1ResponseModelsItems(value);
 
         /// <summary>
         /// 
@@ -233,6 +283,11 @@ namespace Deepgram
         /// <summary>
         /// 
         /// </summary>
+        public static AgentThinkModelsV1ResponseModelsItems FromAgentThinkModelsV1ResponseModelsItems3(global::Deepgram.AgentThinkModelsV1ResponseModelsItems3? value) => new AgentThinkModelsV1ResponseModelsItems(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator AgentThinkModelsV1ResponseModelsItems(global::Deepgram.AgentThinkModelsV1ResponseModelsItems4 value) => new AgentThinkModelsV1ResponseModelsItems((global::Deepgram.AgentThinkModelsV1ResponseModelsItems4?)value);
 
         /// <summary>
@@ -247,6 +302,11 @@ namespace Deepgram
         {
             AgentThinkModelsV1ResponseModelsItems4 = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static AgentThinkModelsV1ResponseModelsItems FromAgentThinkModelsV1ResponseModelsItems4(global::Deepgram.AgentThinkModelsV1ResponseModelsItems4? value) => new AgentThinkModelsV1ResponseModelsItems(value);
 
         /// <summary>
         /// 

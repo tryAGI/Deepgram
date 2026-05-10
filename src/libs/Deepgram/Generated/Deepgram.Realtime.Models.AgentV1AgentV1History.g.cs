@@ -40,6 +40,13 @@ namespace Deepgram.Realtime
         }
 
         /// <summary>
+        /// 
+        /// </summary>
+        public global::Deepgram.Realtime.AgentV1AgentV1History0 PickAgentV1AgentV1History0() => IsAgentV1AgentV1History0
+            ? AgentV1AgentV1History0!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'AgentV1AgentV1History0' but the value was {ToString()}.");
+
+        /// <summary>
         /// Client-side or server-side function call request and response as part of the conversation history
         /// </summary>
 #if NET6_0_OR_GREATER
@@ -68,6 +75,13 @@ namespace Deepgram.Realtime
             value = AgentV1AgentV1History1;
             return IsAgentV1AgentV1History1;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Deepgram.Realtime.AgentV1AgentV1History1 PickAgentV1AgentV1History1() => IsAgentV1AgentV1History1
+            ? AgentV1AgentV1History1!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'AgentV1AgentV1History1' but the value was {ToString()}.");
         /// <summary>
         /// 
         /// </summary>
@@ -89,6 +103,11 @@ namespace Deepgram.Realtime
         /// <summary>
         /// 
         /// </summary>
+        public static AgentV1AgentV1History FromAgentV1AgentV1History0(global::Deepgram.Realtime.AgentV1AgentV1History0? value) => new AgentV1AgentV1History(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator AgentV1AgentV1History(global::Deepgram.Realtime.AgentV1AgentV1History1 value) => new AgentV1AgentV1History((global::Deepgram.Realtime.AgentV1AgentV1History1?)value);
 
         /// <summary>
@@ -103,6 +122,11 @@ namespace Deepgram.Realtime
         {
             AgentV1AgentV1History1 = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static AgentV1AgentV1History FromAgentV1AgentV1History1(global::Deepgram.Realtime.AgentV1AgentV1History1? value) => new AgentV1AgentV1History(value);
 
         /// <summary>
         /// 

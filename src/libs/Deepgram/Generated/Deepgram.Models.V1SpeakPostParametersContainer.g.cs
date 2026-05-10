@@ -40,6 +40,13 @@ namespace Deepgram
         }
 
         /// <summary>
+        /// 
+        /// </summary>
+        public global::Deepgram.V1SpeakPostParametersContainer0 PickV1SpeakPostParametersContainer0() => IsV1SpeakPostParametersContainer0
+            ? V1SpeakPostParametersContainer0!.Value
+            : throw new global::System.InvalidOperationException($"Expected union variant 'V1SpeakPostParametersContainer0' but the value was {ToString()}.");
+
+        /// <summary>
         /// Encoding - linear16. Supported container - wav (default), or no container.
         /// </summary>
 #if NET6_0_OR_GREATER
@@ -68,6 +75,13 @@ namespace Deepgram
             value = V1SpeakPostParametersContainer1;
             return IsV1SpeakPostParametersContainer1;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Deepgram.V1SpeakPostParametersContainer1 PickV1SpeakPostParametersContainer1() => IsV1SpeakPostParametersContainer1
+            ? V1SpeakPostParametersContainer1!.Value
+            : throw new global::System.InvalidOperationException($"Expected union variant 'V1SpeakPostParametersContainer1' but the value was {ToString()}.");
 
         /// <summary>
         /// Encoding - mulaw. Supported container - wav (default), or no container.
@@ -100,6 +114,13 @@ namespace Deepgram
         }
 
         /// <summary>
+        /// 
+        /// </summary>
+        public global::Deepgram.V1SpeakPostParametersContainer2 PickV1SpeakPostParametersContainer2() => IsV1SpeakPostParametersContainer2
+            ? V1SpeakPostParametersContainer2!.Value
+            : throw new global::System.InvalidOperationException($"Expected union variant 'V1SpeakPostParametersContainer2' but the value was {ToString()}.");
+
+        /// <summary>
         /// Encoding - alaw. Supported container - wav (default), or no container.
         /// </summary>
 #if NET6_0_OR_GREATER
@@ -130,6 +151,13 @@ namespace Deepgram
         }
 
         /// <summary>
+        /// 
+        /// </summary>
+        public global::Deepgram.V1SpeakPostParametersContainer3 PickV1SpeakPostParametersContainer3() => IsV1SpeakPostParametersContainer3
+            ? V1SpeakPostParametersContainer3!.Value
+            : throw new global::System.InvalidOperationException($"Expected union variant 'V1SpeakPostParametersContainer3' but the value was {ToString()}.");
+
+        /// <summary>
         /// Encoding - opus. Supported container - ogg (default).
         /// </summary>
 #if NET6_0_OR_GREATER
@@ -158,6 +186,13 @@ namespace Deepgram
             value = V1SpeakPostParametersContainer4;
             return IsV1SpeakPostParametersContainer4;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Deepgram.V1SpeakPostParametersContainer4 PickV1SpeakPostParametersContainer4() => IsV1SpeakPostParametersContainer4
+            ? V1SpeakPostParametersContainer4!.Value
+            : throw new global::System.InvalidOperationException($"Expected union variant 'V1SpeakPostParametersContainer4' but the value was {ToString()}.");
         /// <summary>
         /// 
         /// </summary>
@@ -175,6 +210,11 @@ namespace Deepgram
         {
             V1SpeakPostParametersContainer0 = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static V1SpeakPostParametersContainer FromV1SpeakPostParametersContainer0(global::Deepgram.V1SpeakPostParametersContainer0? value) => new V1SpeakPostParametersContainer(value);
 
         /// <summary>
         /// 
@@ -197,6 +237,11 @@ namespace Deepgram
         /// <summary>
         /// 
         /// </summary>
+        public static V1SpeakPostParametersContainer FromV1SpeakPostParametersContainer1(global::Deepgram.V1SpeakPostParametersContainer1? value) => new V1SpeakPostParametersContainer(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator V1SpeakPostParametersContainer(global::Deepgram.V1SpeakPostParametersContainer2 value) => new V1SpeakPostParametersContainer((global::Deepgram.V1SpeakPostParametersContainer2?)value);
 
         /// <summary>
@@ -211,6 +256,11 @@ namespace Deepgram
         {
             V1SpeakPostParametersContainer2 = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static V1SpeakPostParametersContainer FromV1SpeakPostParametersContainer2(global::Deepgram.V1SpeakPostParametersContainer2? value) => new V1SpeakPostParametersContainer(value);
 
         /// <summary>
         /// 
@@ -233,6 +283,11 @@ namespace Deepgram
         /// <summary>
         /// 
         /// </summary>
+        public static V1SpeakPostParametersContainer FromV1SpeakPostParametersContainer3(global::Deepgram.V1SpeakPostParametersContainer3? value) => new V1SpeakPostParametersContainer(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator V1SpeakPostParametersContainer(global::Deepgram.V1SpeakPostParametersContainer4 value) => new V1SpeakPostParametersContainer((global::Deepgram.V1SpeakPostParametersContainer4?)value);
 
         /// <summary>
@@ -247,6 +302,11 @@ namespace Deepgram
         {
             V1SpeakPostParametersContainer4 = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static V1SpeakPostParametersContainer FromV1SpeakPostParametersContainer4(global::Deepgram.V1SpeakPostParametersContainer4? value) => new V1SpeakPostParametersContainer(value);
 
         /// <summary>
         /// 

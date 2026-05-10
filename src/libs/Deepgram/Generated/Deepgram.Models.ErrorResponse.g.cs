@@ -42,6 +42,13 @@ namespace Deepgram
         /// <summary>
         /// 
         /// </summary>
+        public global::Deepgram.ErrorResponseTextError PickText() => IsText
+            ? Text!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'Text' but the value was {ToString()}.");
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public global::Deepgram.ErrorResponseLegacyError? ErrorResponseLegacyError { get; init; }
 #else
@@ -72,6 +79,13 @@ namespace Deepgram
         /// <summary>
         /// 
         /// </summary>
+        public global::Deepgram.ErrorResponseLegacyError PickErrorResponseLegacyError() => IsErrorResponseLegacyError
+            ? ErrorResponseLegacyError!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'ErrorResponseLegacyError' but the value was {ToString()}.");
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public global::Deepgram.ErrorResponseModernError? ErrorResponseModernError { get; init; }
 #else
@@ -98,6 +112,13 @@ namespace Deepgram
             value = ErrorResponseModernError;
             return IsErrorResponseModernError;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Deepgram.ErrorResponseModernError PickErrorResponseModernError() => IsErrorResponseModernError
+            ? ErrorResponseModernError!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'ErrorResponseModernError' but the value was {ToString()}.");
         /// <summary>
         /// 
         /// </summary>
@@ -115,6 +136,11 @@ namespace Deepgram
         {
             Text = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static ErrorResponse FromText(global::Deepgram.ErrorResponseTextError? value) => new ErrorResponse(value);
 
         /// <summary>
         /// 
@@ -137,6 +163,11 @@ namespace Deepgram
         /// <summary>
         /// 
         /// </summary>
+        public static ErrorResponse FromErrorResponseLegacyError(global::Deepgram.ErrorResponseLegacyError? value) => new ErrorResponse(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator ErrorResponse(global::Deepgram.ErrorResponseModernError value) => new ErrorResponse((global::Deepgram.ErrorResponseModernError?)value);
 
         /// <summary>
@@ -151,6 +182,11 @@ namespace Deepgram
         {
             ErrorResponseModernError = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static ErrorResponse FromErrorResponseModernError(global::Deepgram.ErrorResponseModernError? value) => new ErrorResponse(value);
 
         /// <summary>
         /// 

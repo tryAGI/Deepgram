@@ -42,6 +42,13 @@ namespace Deepgram
         /// <summary>
         /// 
         /// </summary>
+        public global::Deepgram.ReadV1RequestUrl PickReadV1RequestUrl() => IsReadV1RequestUrl
+            ? ReadV1RequestUrl!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'ReadV1RequestUrl' but the value was {ToString()}.");
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public global::Deepgram.ReadV1RequestText? ReadV1RequestText { get; init; }
 #else
@@ -68,6 +75,13 @@ namespace Deepgram
             value = ReadV1RequestText;
             return IsReadV1RequestText;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Deepgram.ReadV1RequestText PickReadV1RequestText() => IsReadV1RequestText
+            ? ReadV1RequestText!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'ReadV1RequestText' but the value was {ToString()}.");
         /// <summary>
         /// 
         /// </summary>
@@ -89,6 +103,11 @@ namespace Deepgram
         /// <summary>
         /// 
         /// </summary>
+        public static ReadV1Request FromReadV1RequestUrl(global::Deepgram.ReadV1RequestUrl? value) => new ReadV1Request(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator ReadV1Request(global::Deepgram.ReadV1RequestText value) => new ReadV1Request((global::Deepgram.ReadV1RequestText?)value);
 
         /// <summary>
@@ -103,6 +122,11 @@ namespace Deepgram
         {
             ReadV1RequestText = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static ReadV1Request FromReadV1RequestText(global::Deepgram.ReadV1RequestText? value) => new ReadV1Request(value);
 
         /// <summary>
         /// 

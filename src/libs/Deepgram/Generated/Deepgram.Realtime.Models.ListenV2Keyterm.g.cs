@@ -43,6 +43,13 @@ namespace Deepgram.Realtime
         /// <summary>
         /// 
         /// </summary>
+        public string PickListenV2KeytermVariant1() => IsListenV2KeytermVariant1
+            ? ListenV2KeytermVariant1!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'ListenV2KeytermVariant1' but the value was {ToString()}.");
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public global::System.Collections.Generic.IList<string>? ListenV2KeytermVariant2 { get; init; }
 #else
@@ -69,6 +76,13 @@ namespace Deepgram.Realtime
             value = ListenV2KeytermVariant2;
             return IsListenV2KeytermVariant2;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::System.Collections.Generic.IList<string> PickListenV2KeytermVariant2() => IsListenV2KeytermVariant2
+            ? ListenV2KeytermVariant2!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'ListenV2KeytermVariant2' but the value was {ToString()}.");
         /// <summary>
         /// 
         /// </summary>
@@ -86,6 +100,11 @@ namespace Deepgram.Realtime
         {
             ListenV2KeytermVariant1 = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static ListenV2Keyterm FromListenV2KeytermVariant1(string? value) => new ListenV2Keyterm(value);
 
         /// <summary>
         /// 

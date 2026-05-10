@@ -40,6 +40,13 @@ namespace Deepgram
         }
 
         /// <summary>
+        /// 
+        /// </summary>
+        public global::Deepgram.V1SpeakPostParametersEncoding0 PickV1SpeakPostParametersEncoding0() => IsV1SpeakPostParametersEncoding0
+            ? V1SpeakPostParametersEncoding0!.Value
+            : throw new global::System.InvalidOperationException($"Expected union variant 'V1SpeakPostParametersEncoding0' but the value was {ToString()}.");
+
+        /// <summary>
         /// Encoding - flac. Lossless audio format for high-quality compression.
         /// </summary>
 #if NET6_0_OR_GREATER
@@ -68,6 +75,13 @@ namespace Deepgram
             value = V1SpeakPostParametersEncoding1;
             return IsV1SpeakPostParametersEncoding1;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Deepgram.V1SpeakPostParametersEncoding1 PickV1SpeakPostParametersEncoding1() => IsV1SpeakPostParametersEncoding1
+            ? V1SpeakPostParametersEncoding1!.Value
+            : throw new global::System.InvalidOperationException($"Expected union variant 'V1SpeakPostParametersEncoding1' but the value was {ToString()}.");
 
         /// <summary>
         /// Encoding - mulaw. Compressed audio format commonly used in telephony.
@@ -100,6 +114,13 @@ namespace Deepgram
         }
 
         /// <summary>
+        /// 
+        /// </summary>
+        public global::Deepgram.V1SpeakPostParametersEncoding2 PickV1SpeakPostParametersEncoding2() => IsV1SpeakPostParametersEncoding2
+            ? V1SpeakPostParametersEncoding2!.Value
+            : throw new global::System.InvalidOperationException($"Expected union variant 'V1SpeakPostParametersEncoding2' but the value was {ToString()}.");
+
+        /// <summary>
         /// Encoding - alaw. Similar to mulaw but used in international telephony.
         /// </summary>
 #if NET6_0_OR_GREATER
@@ -128,6 +149,13 @@ namespace Deepgram
             value = V1SpeakPostParametersEncoding3;
             return IsV1SpeakPostParametersEncoding3;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Deepgram.V1SpeakPostParametersEncoding3 PickV1SpeakPostParametersEncoding3() => IsV1SpeakPostParametersEncoding3
+            ? V1SpeakPostParametersEncoding3!.Value
+            : throw new global::System.InvalidOperationException($"Expected union variant 'V1SpeakPostParametersEncoding3' but the value was {ToString()}.");
 
         /// <summary>
         /// Encoding - mp3. Popular compressed audio format for music and streaming.
@@ -160,6 +188,13 @@ namespace Deepgram
         }
 
         /// <summary>
+        /// 
+        /// </summary>
+        public global::Deepgram.V1SpeakPostParametersEncoding4 PickV1SpeakPostParametersEncoding4() => IsV1SpeakPostParametersEncoding4
+            ? V1SpeakPostParametersEncoding4!.Value
+            : throw new global::System.InvalidOperationException($"Expected union variant 'V1SpeakPostParametersEncoding4' but the value was {ToString()}.");
+
+        /// <summary>
         /// Encoding - opus. High-compression audio format optimized for real-time communications.
         /// </summary>
 #if NET6_0_OR_GREATER
@@ -190,6 +225,13 @@ namespace Deepgram
         }
 
         /// <summary>
+        /// 
+        /// </summary>
+        public global::Deepgram.V1SpeakPostParametersEncoding5 PickV1SpeakPostParametersEncoding5() => IsV1SpeakPostParametersEncoding5
+            ? V1SpeakPostParametersEncoding5!.Value
+            : throw new global::System.InvalidOperationException($"Expected union variant 'V1SpeakPostParametersEncoding5' but the value was {ToString()}.");
+
+        /// <summary>
         /// Encoding - aac. Advanced audio format offering better quality at smaller file sizes than mp3.
         /// </summary>
 #if NET6_0_OR_GREATER
@@ -218,6 +260,13 @@ namespace Deepgram
             value = V1SpeakPostParametersEncoding6;
             return IsV1SpeakPostParametersEncoding6;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Deepgram.V1SpeakPostParametersEncoding6 PickV1SpeakPostParametersEncoding6() => IsV1SpeakPostParametersEncoding6
+            ? V1SpeakPostParametersEncoding6!.Value
+            : throw new global::System.InvalidOperationException($"Expected union variant 'V1SpeakPostParametersEncoding6' but the value was {ToString()}.");
         /// <summary>
         /// 
         /// </summary>
@@ -235,6 +284,11 @@ namespace Deepgram
         {
             V1SpeakPostParametersEncoding0 = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static V1SpeakPostParametersEncoding FromV1SpeakPostParametersEncoding0(global::Deepgram.V1SpeakPostParametersEncoding0? value) => new V1SpeakPostParametersEncoding(value);
 
         /// <summary>
         /// 
@@ -257,6 +311,11 @@ namespace Deepgram
         /// <summary>
         /// 
         /// </summary>
+        public static V1SpeakPostParametersEncoding FromV1SpeakPostParametersEncoding1(global::Deepgram.V1SpeakPostParametersEncoding1? value) => new V1SpeakPostParametersEncoding(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator V1SpeakPostParametersEncoding(global::Deepgram.V1SpeakPostParametersEncoding2 value) => new V1SpeakPostParametersEncoding((global::Deepgram.V1SpeakPostParametersEncoding2?)value);
 
         /// <summary>
@@ -271,6 +330,11 @@ namespace Deepgram
         {
             V1SpeakPostParametersEncoding2 = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static V1SpeakPostParametersEncoding FromV1SpeakPostParametersEncoding2(global::Deepgram.V1SpeakPostParametersEncoding2? value) => new V1SpeakPostParametersEncoding(value);
 
         /// <summary>
         /// 
@@ -293,6 +357,11 @@ namespace Deepgram
         /// <summary>
         /// 
         /// </summary>
+        public static V1SpeakPostParametersEncoding FromV1SpeakPostParametersEncoding3(global::Deepgram.V1SpeakPostParametersEncoding3? value) => new V1SpeakPostParametersEncoding(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator V1SpeakPostParametersEncoding(global::Deepgram.V1SpeakPostParametersEncoding4 value) => new V1SpeakPostParametersEncoding((global::Deepgram.V1SpeakPostParametersEncoding4?)value);
 
         /// <summary>
@@ -307,6 +376,11 @@ namespace Deepgram
         {
             V1SpeakPostParametersEncoding4 = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static V1SpeakPostParametersEncoding FromV1SpeakPostParametersEncoding4(global::Deepgram.V1SpeakPostParametersEncoding4? value) => new V1SpeakPostParametersEncoding(value);
 
         /// <summary>
         /// 
@@ -329,6 +403,11 @@ namespace Deepgram
         /// <summary>
         /// 
         /// </summary>
+        public static V1SpeakPostParametersEncoding FromV1SpeakPostParametersEncoding5(global::Deepgram.V1SpeakPostParametersEncoding5? value) => new V1SpeakPostParametersEncoding(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator V1SpeakPostParametersEncoding(global::Deepgram.V1SpeakPostParametersEncoding6 value) => new V1SpeakPostParametersEncoding((global::Deepgram.V1SpeakPostParametersEncoding6?)value);
 
         /// <summary>
@@ -343,6 +422,11 @@ namespace Deepgram
         {
             V1SpeakPostParametersEncoding6 = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static V1SpeakPostParametersEncoding FromV1SpeakPostParametersEncoding6(global::Deepgram.V1SpeakPostParametersEncoding6? value) => new V1SpeakPostParametersEncoding(value);
 
         /// <summary>
         /// 
