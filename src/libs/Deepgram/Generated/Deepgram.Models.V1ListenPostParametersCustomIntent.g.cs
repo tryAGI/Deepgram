@@ -42,6 +42,13 @@ namespace Deepgram
         /// <summary>
         /// 
         /// </summary>
+        public string PickV1ListenPostParametersCustomIntentVariant1() => IsV1ListenPostParametersCustomIntentVariant1
+            ? V1ListenPostParametersCustomIntentVariant1!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'V1ListenPostParametersCustomIntentVariant1' but the value was {ToString()}.");
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public global::System.Collections.Generic.IList<string>? V1ListenPostParametersCustomIntentVariant2 { get; init; }
 #else
@@ -68,6 +75,13 @@ namespace Deepgram
             value = V1ListenPostParametersCustomIntentVariant2;
             return IsV1ListenPostParametersCustomIntentVariant2;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::System.Collections.Generic.IList<string> PickV1ListenPostParametersCustomIntentVariant2() => IsV1ListenPostParametersCustomIntentVariant2
+            ? V1ListenPostParametersCustomIntentVariant2!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'V1ListenPostParametersCustomIntentVariant2' but the value was {ToString()}.");
         /// <summary>
         /// 
         /// </summary>
@@ -85,6 +99,11 @@ namespace Deepgram
         {
             V1ListenPostParametersCustomIntentVariant1 = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static V1ListenPostParametersCustomIntent FromV1ListenPostParametersCustomIntentVariant1(string? value) => new V1ListenPostParametersCustomIntent(value);
 
         /// <summary>
         /// 

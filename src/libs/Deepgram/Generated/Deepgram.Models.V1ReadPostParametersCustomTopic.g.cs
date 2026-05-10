@@ -42,6 +42,13 @@ namespace Deepgram
         /// <summary>
         /// 
         /// </summary>
+        public string PickV1ReadPostParametersCustomTopicVariant1() => IsV1ReadPostParametersCustomTopicVariant1
+            ? V1ReadPostParametersCustomTopicVariant1!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'V1ReadPostParametersCustomTopicVariant1' but the value was {ToString()}.");
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public global::System.Collections.Generic.IList<string>? V1ReadPostParametersCustomTopicVariant2 { get; init; }
 #else
@@ -68,6 +75,13 @@ namespace Deepgram
             value = V1ReadPostParametersCustomTopicVariant2;
             return IsV1ReadPostParametersCustomTopicVariant2;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::System.Collections.Generic.IList<string> PickV1ReadPostParametersCustomTopicVariant2() => IsV1ReadPostParametersCustomTopicVariant2
+            ? V1ReadPostParametersCustomTopicVariant2!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'V1ReadPostParametersCustomTopicVariant2' but the value was {ToString()}.");
         /// <summary>
         /// 
         /// </summary>
@@ -85,6 +99,11 @@ namespace Deepgram
         {
             V1ReadPostParametersCustomTopicVariant1 = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static V1ReadPostParametersCustomTopic FromV1ReadPostParametersCustomTopicVariant1(string? value) => new V1ReadPostParametersCustomTopic(value);
 
         /// <summary>
         /// 

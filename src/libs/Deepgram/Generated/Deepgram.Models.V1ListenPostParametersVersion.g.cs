@@ -42,6 +42,13 @@ namespace Deepgram
         /// <summary>
         /// 
         /// </summary>
+        public global::Deepgram.V1ListenPostParametersVersion0 PickV1ListenPostParametersVersion0() => IsV1ListenPostParametersVersion0
+            ? V1ListenPostParametersVersion0!.Value
+            : throw new global::System.InvalidOperationException($"Expected union variant 'V1ListenPostParametersVersion0' but the value was {ToString()}.");
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public string? V1ListenPostParametersVersionVariant2 { get; init; }
 #else
@@ -68,6 +75,13 @@ namespace Deepgram
             value = V1ListenPostParametersVersionVariant2;
             return IsV1ListenPostParametersVersionVariant2;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public string PickV1ListenPostParametersVersionVariant2() => IsV1ListenPostParametersVersionVariant2
+            ? V1ListenPostParametersVersionVariant2!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'V1ListenPostParametersVersionVariant2' but the value was {ToString()}.");
         /// <summary>
         /// 
         /// </summary>
@@ -89,6 +103,11 @@ namespace Deepgram
         /// <summary>
         /// 
         /// </summary>
+        public static V1ListenPostParametersVersion FromV1ListenPostParametersVersion0(global::Deepgram.V1ListenPostParametersVersion0? value) => new V1ListenPostParametersVersion(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator V1ListenPostParametersVersion(string value) => new V1ListenPostParametersVersion((string?)value);
 
         /// <summary>
@@ -103,6 +122,11 @@ namespace Deepgram
         {
             V1ListenPostParametersVersionVariant2 = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static V1ListenPostParametersVersion FromV1ListenPostParametersVersionVariant2(string? value) => new V1ListenPostParametersVersion(value);
 
         /// <summary>
         /// 

@@ -48,6 +48,13 @@ namespace Deepgram.Realtime
         /// <summary>
         /// 
         /// </summary>
+        public global::Deepgram.Realtime.AgentV1AgentV1ReceiveFunctionCallResponse PickAgentV1AgentV1ReceiveFunctionCallResponse() => IsAgentV1AgentV1ReceiveFunctionCallResponse
+            ? AgentV1AgentV1ReceiveFunctionCallResponse!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'AgentV1AgentV1ReceiveFunctionCallResponse' but the value was {ToString()}.");
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public global::Deepgram.Realtime.AgentV1AgentV1PromptUpdated? AgentV1AgentV1PromptUpdated { get; init; }
 #else
@@ -74,6 +81,13 @@ namespace Deepgram.Realtime
             value = AgentV1AgentV1PromptUpdated;
             return IsAgentV1AgentV1PromptUpdated;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Deepgram.Realtime.AgentV1AgentV1PromptUpdated PickAgentV1AgentV1PromptUpdated() => IsAgentV1AgentV1PromptUpdated
+            ? AgentV1AgentV1PromptUpdated!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'AgentV1AgentV1PromptUpdated' but the value was {ToString()}.");
 
         /// <summary>
         /// 
@@ -108,6 +122,13 @@ namespace Deepgram.Realtime
         /// <summary>
         /// 
         /// </summary>
+        public global::Deepgram.Realtime.AgentV1AgentV1SpeakUpdated PickAgentV1AgentV1SpeakUpdated() => IsAgentV1AgentV1SpeakUpdated
+            ? AgentV1AgentV1SpeakUpdated!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'AgentV1AgentV1SpeakUpdated' but the value was {ToString()}.");
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public global::Deepgram.Realtime.AgentV1AgentV1ThinkUpdated? AgentV1AgentV1ThinkUpdated { get; init; }
 #else
@@ -134,6 +155,13 @@ namespace Deepgram.Realtime
             value = AgentV1AgentV1ThinkUpdated;
             return IsAgentV1AgentV1ThinkUpdated;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Deepgram.Realtime.AgentV1AgentV1ThinkUpdated PickAgentV1AgentV1ThinkUpdated() => IsAgentV1AgentV1ThinkUpdated
+            ? AgentV1AgentV1ThinkUpdated!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'AgentV1AgentV1ThinkUpdated' but the value was {ToString()}.");
 
         /// <summary>
         /// 
@@ -168,6 +196,13 @@ namespace Deepgram.Realtime
         /// <summary>
         /// 
         /// </summary>
+        public global::Deepgram.Realtime.AgentV1AgentV1InjectionRefused PickAgentV1AgentV1InjectionRefused() => IsAgentV1AgentV1InjectionRefused
+            ? AgentV1AgentV1InjectionRefused!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'AgentV1AgentV1InjectionRefused' but the value was {ToString()}.");
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public global::Deepgram.Realtime.AgentV1AgentV1Welcome? AgentV1AgentV1Welcome { get; init; }
 #else
@@ -194,6 +229,13 @@ namespace Deepgram.Realtime
             value = AgentV1AgentV1Welcome;
             return IsAgentV1AgentV1Welcome;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Deepgram.Realtime.AgentV1AgentV1Welcome PickAgentV1AgentV1Welcome() => IsAgentV1AgentV1Welcome
+            ? AgentV1AgentV1Welcome!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'AgentV1AgentV1Welcome' but the value was {ToString()}.");
 
         /// <summary>
         /// 
@@ -228,6 +270,13 @@ namespace Deepgram.Realtime
         /// <summary>
         /// 
         /// </summary>
+        public global::Deepgram.Realtime.AgentV1AgentV1SettingsApplied PickAgentV1AgentV1SettingsApplied() => IsAgentV1AgentV1SettingsApplied
+            ? AgentV1AgentV1SettingsApplied!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'AgentV1AgentV1SettingsApplied' but the value was {ToString()}.");
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public global::Deepgram.Realtime.AgentV1AgentV1ConversationText? AgentV1AgentV1ConversationText { get; init; }
 #else
@@ -254,6 +303,13 @@ namespace Deepgram.Realtime
             value = AgentV1AgentV1ConversationText;
             return IsAgentV1AgentV1ConversationText;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Deepgram.Realtime.AgentV1AgentV1ConversationText PickAgentV1AgentV1ConversationText() => IsAgentV1AgentV1ConversationText
+            ? AgentV1AgentV1ConversationText!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'AgentV1AgentV1ConversationText' but the value was {ToString()}.");
 
         /// <summary>
         /// 
@@ -288,6 +344,13 @@ namespace Deepgram.Realtime
         /// <summary>
         /// 
         /// </summary>
+        public global::Deepgram.Realtime.AgentV1AgentV1UserStartedSpeaking PickAgentV1AgentV1UserStartedSpeaking() => IsAgentV1AgentV1UserStartedSpeaking
+            ? AgentV1AgentV1UserStartedSpeaking!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'AgentV1AgentV1UserStartedSpeaking' but the value was {ToString()}.");
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public global::Deepgram.Realtime.AgentV1AgentV1AgentThinking? AgentV1AgentV1AgentThinking { get; init; }
 #else
@@ -314,6 +377,13 @@ namespace Deepgram.Realtime
             value = AgentV1AgentV1AgentThinking;
             return IsAgentV1AgentV1AgentThinking;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Deepgram.Realtime.AgentV1AgentV1AgentThinking PickAgentV1AgentV1AgentThinking() => IsAgentV1AgentV1AgentThinking
+            ? AgentV1AgentV1AgentThinking!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'AgentV1AgentV1AgentThinking' but the value was {ToString()}.");
 
         /// <summary>
         /// 
@@ -348,6 +418,13 @@ namespace Deepgram.Realtime
         /// <summary>
         /// 
         /// </summary>
+        public global::Deepgram.Realtime.AgentV1AgentV1FunctionCallRequest PickAgentV1AgentV1FunctionCallRequest() => IsAgentV1AgentV1FunctionCallRequest
+            ? AgentV1AgentV1FunctionCallRequest!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'AgentV1AgentV1FunctionCallRequest' but the value was {ToString()}.");
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public global::Deepgram.Realtime.AgentV1AgentV1AgentStartedSpeaking? AgentV1AgentV1AgentStartedSpeaking { get; init; }
 #else
@@ -374,6 +451,13 @@ namespace Deepgram.Realtime
             value = AgentV1AgentV1AgentStartedSpeaking;
             return IsAgentV1AgentV1AgentStartedSpeaking;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Deepgram.Realtime.AgentV1AgentV1AgentStartedSpeaking PickAgentV1AgentV1AgentStartedSpeaking() => IsAgentV1AgentV1AgentStartedSpeaking
+            ? AgentV1AgentV1AgentStartedSpeaking!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'AgentV1AgentV1AgentStartedSpeaking' but the value was {ToString()}.");
 
         /// <summary>
         /// 
@@ -408,6 +492,13 @@ namespace Deepgram.Realtime
         /// <summary>
         /// 
         /// </summary>
+        public global::Deepgram.Realtime.AgentV1AgentV1AgentAudioDone PickAgentV1AgentV1AgentAudioDone() => IsAgentV1AgentV1AgentAudioDone
+            ? AgentV1AgentV1AgentAudioDone!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'AgentV1AgentV1AgentAudioDone' but the value was {ToString()}.");
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public global::Deepgram.Realtime.AgentV1AgentV1Error? AgentV1AgentV1Error { get; init; }
 #else
@@ -434,6 +525,13 @@ namespace Deepgram.Realtime
             value = AgentV1AgentV1Error;
             return IsAgentV1AgentV1Error;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Deepgram.Realtime.AgentV1AgentV1Error PickAgentV1AgentV1Error() => IsAgentV1AgentV1Error
+            ? AgentV1AgentV1Error!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'AgentV1AgentV1Error' but the value was {ToString()}.");
 
         /// <summary>
         /// Notifies the client of non-fatal errors or warnings
@@ -464,6 +562,13 @@ namespace Deepgram.Realtime
             value = AgentV1AgentV1Warning;
             return IsAgentV1AgentV1Warning;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Deepgram.Realtime.AgentV1AgentV1Warning PickAgentV1AgentV1Warning() => IsAgentV1AgentV1Warning
+            ? AgentV1AgentV1Warning!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'AgentV1AgentV1Warning' but the value was {ToString()}.");
 
         /// <summary>
         /// A history message is either a conversational message or a function call
@@ -498,6 +603,13 @@ namespace Deepgram.Realtime
         /// <summary>
         /// 
         /// </summary>
+        public global::Deepgram.Realtime.AgentV1AgentV1History PickAgentV1AgentV1History() => IsAgentV1AgentV1History
+            ? AgentV1AgentV1History!.Value
+            : throw new global::System.InvalidOperationException($"Expected union variant 'AgentV1AgentV1History' but the value was {ToString()}.");
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public byte[]? AgentV1AgentV1Audio { get; init; }
 #else
@@ -524,6 +636,13 @@ namespace Deepgram.Realtime
             value = AgentV1AgentV1Audio;
             return IsAgentV1AgentV1Audio;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public byte[] PickAgentV1AgentV1Audio() => IsAgentV1AgentV1Audio
+            ? AgentV1AgentV1Audio!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'AgentV1AgentV1Audio' but the value was {ToString()}.");
         /// <summary>
         /// 
         /// </summary>
@@ -541,6 +660,11 @@ namespace Deepgram.Realtime
         {
             AgentV1AgentV1ReceiveFunctionCallResponse = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static AgentV1ServerEvent FromAgentV1AgentV1ReceiveFunctionCallResponse(global::Deepgram.Realtime.AgentV1AgentV1ReceiveFunctionCallResponse? value) => new AgentV1ServerEvent(value);
 
         /// <summary>
         /// 
@@ -563,6 +687,11 @@ namespace Deepgram.Realtime
         /// <summary>
         /// 
         /// </summary>
+        public static AgentV1ServerEvent FromAgentV1AgentV1PromptUpdated(global::Deepgram.Realtime.AgentV1AgentV1PromptUpdated? value) => new AgentV1ServerEvent(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator AgentV1ServerEvent(global::Deepgram.Realtime.AgentV1AgentV1SpeakUpdated value) => new AgentV1ServerEvent((global::Deepgram.Realtime.AgentV1AgentV1SpeakUpdated?)value);
 
         /// <summary>
@@ -577,6 +706,11 @@ namespace Deepgram.Realtime
         {
             AgentV1AgentV1SpeakUpdated = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static AgentV1ServerEvent FromAgentV1AgentV1SpeakUpdated(global::Deepgram.Realtime.AgentV1AgentV1SpeakUpdated? value) => new AgentV1ServerEvent(value);
 
         /// <summary>
         /// 
@@ -599,6 +733,11 @@ namespace Deepgram.Realtime
         /// <summary>
         /// 
         /// </summary>
+        public static AgentV1ServerEvent FromAgentV1AgentV1ThinkUpdated(global::Deepgram.Realtime.AgentV1AgentV1ThinkUpdated? value) => new AgentV1ServerEvent(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator AgentV1ServerEvent(global::Deepgram.Realtime.AgentV1AgentV1InjectionRefused value) => new AgentV1ServerEvent((global::Deepgram.Realtime.AgentV1AgentV1InjectionRefused?)value);
 
         /// <summary>
@@ -613,6 +752,11 @@ namespace Deepgram.Realtime
         {
             AgentV1AgentV1InjectionRefused = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static AgentV1ServerEvent FromAgentV1AgentV1InjectionRefused(global::Deepgram.Realtime.AgentV1AgentV1InjectionRefused? value) => new AgentV1ServerEvent(value);
 
         /// <summary>
         /// 
@@ -635,6 +779,11 @@ namespace Deepgram.Realtime
         /// <summary>
         /// 
         /// </summary>
+        public static AgentV1ServerEvent FromAgentV1AgentV1Welcome(global::Deepgram.Realtime.AgentV1AgentV1Welcome? value) => new AgentV1ServerEvent(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator AgentV1ServerEvent(global::Deepgram.Realtime.AgentV1AgentV1SettingsApplied value) => new AgentV1ServerEvent((global::Deepgram.Realtime.AgentV1AgentV1SettingsApplied?)value);
 
         /// <summary>
@@ -649,6 +798,11 @@ namespace Deepgram.Realtime
         {
             AgentV1AgentV1SettingsApplied = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static AgentV1ServerEvent FromAgentV1AgentV1SettingsApplied(global::Deepgram.Realtime.AgentV1AgentV1SettingsApplied? value) => new AgentV1ServerEvent(value);
 
         /// <summary>
         /// 
@@ -671,6 +825,11 @@ namespace Deepgram.Realtime
         /// <summary>
         /// 
         /// </summary>
+        public static AgentV1ServerEvent FromAgentV1AgentV1ConversationText(global::Deepgram.Realtime.AgentV1AgentV1ConversationText? value) => new AgentV1ServerEvent(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator AgentV1ServerEvent(global::Deepgram.Realtime.AgentV1AgentV1UserStartedSpeaking value) => new AgentV1ServerEvent((global::Deepgram.Realtime.AgentV1AgentV1UserStartedSpeaking?)value);
 
         /// <summary>
@@ -685,6 +844,11 @@ namespace Deepgram.Realtime
         {
             AgentV1AgentV1UserStartedSpeaking = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static AgentV1ServerEvent FromAgentV1AgentV1UserStartedSpeaking(global::Deepgram.Realtime.AgentV1AgentV1UserStartedSpeaking? value) => new AgentV1ServerEvent(value);
 
         /// <summary>
         /// 
@@ -707,6 +871,11 @@ namespace Deepgram.Realtime
         /// <summary>
         /// 
         /// </summary>
+        public static AgentV1ServerEvent FromAgentV1AgentV1AgentThinking(global::Deepgram.Realtime.AgentV1AgentV1AgentThinking? value) => new AgentV1ServerEvent(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator AgentV1ServerEvent(global::Deepgram.Realtime.AgentV1AgentV1FunctionCallRequest value) => new AgentV1ServerEvent((global::Deepgram.Realtime.AgentV1AgentV1FunctionCallRequest?)value);
 
         /// <summary>
@@ -721,6 +890,11 @@ namespace Deepgram.Realtime
         {
             AgentV1AgentV1FunctionCallRequest = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static AgentV1ServerEvent FromAgentV1AgentV1FunctionCallRequest(global::Deepgram.Realtime.AgentV1AgentV1FunctionCallRequest? value) => new AgentV1ServerEvent(value);
 
         /// <summary>
         /// 
@@ -743,6 +917,11 @@ namespace Deepgram.Realtime
         /// <summary>
         /// 
         /// </summary>
+        public static AgentV1ServerEvent FromAgentV1AgentV1AgentStartedSpeaking(global::Deepgram.Realtime.AgentV1AgentV1AgentStartedSpeaking? value) => new AgentV1ServerEvent(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator AgentV1ServerEvent(global::Deepgram.Realtime.AgentV1AgentV1AgentAudioDone value) => new AgentV1ServerEvent((global::Deepgram.Realtime.AgentV1AgentV1AgentAudioDone?)value);
 
         /// <summary>
@@ -757,6 +936,11 @@ namespace Deepgram.Realtime
         {
             AgentV1AgentV1AgentAudioDone = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static AgentV1ServerEvent FromAgentV1AgentV1AgentAudioDone(global::Deepgram.Realtime.AgentV1AgentV1AgentAudioDone? value) => new AgentV1ServerEvent(value);
 
         /// <summary>
         /// 
@@ -779,6 +963,11 @@ namespace Deepgram.Realtime
         /// <summary>
         /// 
         /// </summary>
+        public static AgentV1ServerEvent FromAgentV1AgentV1Error(global::Deepgram.Realtime.AgentV1AgentV1Error? value) => new AgentV1ServerEvent(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator AgentV1ServerEvent(global::Deepgram.Realtime.AgentV1AgentV1Warning value) => new AgentV1ServerEvent((global::Deepgram.Realtime.AgentV1AgentV1Warning?)value);
 
         /// <summary>
@@ -793,6 +982,11 @@ namespace Deepgram.Realtime
         {
             AgentV1AgentV1Warning = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static AgentV1ServerEvent FromAgentV1AgentV1Warning(global::Deepgram.Realtime.AgentV1AgentV1Warning? value) => new AgentV1ServerEvent(value);
 
         /// <summary>
         /// 
@@ -815,6 +1009,11 @@ namespace Deepgram.Realtime
         /// <summary>
         /// 
         /// </summary>
+        public static AgentV1ServerEvent FromAgentV1AgentV1History(global::Deepgram.Realtime.AgentV1AgentV1History? value) => new AgentV1ServerEvent(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator AgentV1ServerEvent(byte[] value) => new AgentV1ServerEvent((byte[]?)value);
 
         /// <summary>
@@ -829,6 +1028,11 @@ namespace Deepgram.Realtime
         {
             AgentV1AgentV1Audio = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static AgentV1ServerEvent FromAgentV1AgentV1Audio(byte[]? value) => new AgentV1ServerEvent(value);
 
         /// <summary>
         /// 

@@ -42,6 +42,13 @@ namespace Deepgram.Realtime
         /// <summary>
         /// 
         /// </summary>
+        public global::Deepgram.Realtime.ListenV1ListenV1Results PickListenV1ListenV1Results() => IsListenV1ListenV1Results
+            ? ListenV1ListenV1Results!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'ListenV1ListenV1Results' but the value was {ToString()}.");
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public global::Deepgram.Realtime.ListenV1ListenV1Metadata? ListenV1ListenV1Metadata { get; init; }
 #else
@@ -68,6 +75,13 @@ namespace Deepgram.Realtime
             value = ListenV1ListenV1Metadata;
             return IsListenV1ListenV1Metadata;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Deepgram.Realtime.ListenV1ListenV1Metadata PickListenV1ListenV1Metadata() => IsListenV1ListenV1Metadata
+            ? ListenV1ListenV1Metadata!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'ListenV1ListenV1Metadata' but the value was {ToString()}.");
 
         /// <summary>
         /// 
@@ -102,6 +116,13 @@ namespace Deepgram.Realtime
         /// <summary>
         /// 
         /// </summary>
+        public global::Deepgram.Realtime.ListenV1ListenV1UtteranceEnd PickListenV1ListenV1UtteranceEnd() => IsListenV1ListenV1UtteranceEnd
+            ? ListenV1ListenV1UtteranceEnd!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'ListenV1ListenV1UtteranceEnd' but the value was {ToString()}.");
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public global::Deepgram.Realtime.ListenV1ListenV1SpeechStarted? ListenV1ListenV1SpeechStarted { get; init; }
 #else
@@ -128,6 +149,13 @@ namespace Deepgram.Realtime
             value = ListenV1ListenV1SpeechStarted;
             return IsListenV1ListenV1SpeechStarted;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Deepgram.Realtime.ListenV1ListenV1SpeechStarted PickListenV1ListenV1SpeechStarted() => IsListenV1ListenV1SpeechStarted
+            ? ListenV1ListenV1SpeechStarted!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'ListenV1ListenV1SpeechStarted' but the value was {ToString()}.");
         /// <summary>
         /// 
         /// </summary>
@@ -145,6 +173,11 @@ namespace Deepgram.Realtime
         {
             ListenV1ListenV1Results = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static ListenV1ServerEvent FromListenV1ListenV1Results(global::Deepgram.Realtime.ListenV1ListenV1Results? value) => new ListenV1ServerEvent(value);
 
         /// <summary>
         /// 
@@ -167,6 +200,11 @@ namespace Deepgram.Realtime
         /// <summary>
         /// 
         /// </summary>
+        public static ListenV1ServerEvent FromListenV1ListenV1Metadata(global::Deepgram.Realtime.ListenV1ListenV1Metadata? value) => new ListenV1ServerEvent(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator ListenV1ServerEvent(global::Deepgram.Realtime.ListenV1ListenV1UtteranceEnd value) => new ListenV1ServerEvent((global::Deepgram.Realtime.ListenV1ListenV1UtteranceEnd?)value);
 
         /// <summary>
@@ -185,6 +223,11 @@ namespace Deepgram.Realtime
         /// <summary>
         /// 
         /// </summary>
+        public static ListenV1ServerEvent FromListenV1ListenV1UtteranceEnd(global::Deepgram.Realtime.ListenV1ListenV1UtteranceEnd? value) => new ListenV1ServerEvent(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator ListenV1ServerEvent(global::Deepgram.Realtime.ListenV1ListenV1SpeechStarted value) => new ListenV1ServerEvent((global::Deepgram.Realtime.ListenV1ListenV1SpeechStarted?)value);
 
         /// <summary>
@@ -199,6 +242,11 @@ namespace Deepgram.Realtime
         {
             ListenV1ListenV1SpeechStarted = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static ListenV1ServerEvent FromListenV1ListenV1SpeechStarted(global::Deepgram.Realtime.ListenV1ListenV1SpeechStarted? value) => new ListenV1ServerEvent(value);
 
         /// <summary>
         /// 

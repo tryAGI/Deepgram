@@ -42,6 +42,13 @@ namespace Deepgram
         /// <summary>
         /// 
         /// </summary>
+        public global::Deepgram.GetModelV1Response0 PickGetModelV1Response0() => IsGetModelV1Response0
+            ? GetModelV1Response0!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'GetModelV1Response0' but the value was {ToString()}.");
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public global::Deepgram.GetModelV1Response1? GetModelV1Response1 { get; init; }
 #else
@@ -68,6 +75,13 @@ namespace Deepgram
             value = GetModelV1Response1;
             return IsGetModelV1Response1;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Deepgram.GetModelV1Response1 PickGetModelV1Response1() => IsGetModelV1Response1
+            ? GetModelV1Response1!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'GetModelV1Response1' but the value was {ToString()}.");
         /// <summary>
         /// 
         /// </summary>
@@ -89,6 +103,11 @@ namespace Deepgram
         /// <summary>
         /// 
         /// </summary>
+        public static GetModelV1Response FromGetModelV1Response0(global::Deepgram.GetModelV1Response0? value) => new GetModelV1Response(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator GetModelV1Response(global::Deepgram.GetModelV1Response1 value) => new GetModelV1Response((global::Deepgram.GetModelV1Response1?)value);
 
         /// <summary>
@@ -103,6 +122,11 @@ namespace Deepgram
         {
             GetModelV1Response1 = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static GetModelV1Response FromGetModelV1Response1(global::Deepgram.GetModelV1Response1? value) => new GetModelV1Response(value);
 
         /// <summary>
         /// 

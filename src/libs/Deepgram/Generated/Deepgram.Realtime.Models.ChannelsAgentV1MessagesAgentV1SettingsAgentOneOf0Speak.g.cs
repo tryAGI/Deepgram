@@ -42,6 +42,13 @@ namespace Deepgram.Realtime
         /// <summary>
         /// 
         /// </summary>
+        public global::Deepgram.Realtime.SpeakSettingsV1 PickSpeakSettingsV1() => IsSpeakSettingsV1
+            ? SpeakSettingsV1!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'SpeakSettingsV1' but the value was {ToString()}.");
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public global::System.Collections.Generic.IList<global::Deepgram.Realtime.SpeakSettingsV1>? ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0Speak1 { get; init; }
 #else
@@ -68,6 +75,13 @@ namespace Deepgram.Realtime
             value = ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0Speak1;
             return IsChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0Speak1;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::System.Collections.Generic.IList<global::Deepgram.Realtime.SpeakSettingsV1> PickChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0Speak1() => IsChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0Speak1
+            ? ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0Speak1!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0Speak1' but the value was {ToString()}.");
         /// <summary>
         /// 
         /// </summary>
@@ -85,6 +99,11 @@ namespace Deepgram.Realtime
         {
             SpeakSettingsV1 = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0Speak FromSpeakSettingsV1(global::Deepgram.Realtime.SpeakSettingsV1? value) => new ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0Speak(value);
 
         /// <summary>
         /// 

@@ -42,6 +42,13 @@ namespace Deepgram
         /// <summary>
         /// 
         /// </summary>
+        public bool PickV1ListenPostParametersDetectLanguageVariant1() => IsV1ListenPostParametersDetectLanguageVariant1
+            ? V1ListenPostParametersDetectLanguageVariant1!.Value
+            : throw new global::System.InvalidOperationException($"Expected union variant 'V1ListenPostParametersDetectLanguageVariant1' but the value was {ToString()}.");
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public global::System.Collections.Generic.IList<string>? V1ListenPostParametersDetectLanguageVariant2 { get; init; }
 #else
@@ -68,6 +75,13 @@ namespace Deepgram
             value = V1ListenPostParametersDetectLanguageVariant2;
             return IsV1ListenPostParametersDetectLanguageVariant2;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::System.Collections.Generic.IList<string> PickV1ListenPostParametersDetectLanguageVariant2() => IsV1ListenPostParametersDetectLanguageVariant2
+            ? V1ListenPostParametersDetectLanguageVariant2!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'V1ListenPostParametersDetectLanguageVariant2' but the value was {ToString()}.");
         /// <summary>
         /// 
         /// </summary>
@@ -85,6 +99,11 @@ namespace Deepgram
         {
             V1ListenPostParametersDetectLanguageVariant1 = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static V1ListenPostParametersDetectLanguage FromV1ListenPostParametersDetectLanguageVariant1(bool? value) => new V1ListenPostParametersDetectLanguage(value);
 
         /// <summary>
         /// 

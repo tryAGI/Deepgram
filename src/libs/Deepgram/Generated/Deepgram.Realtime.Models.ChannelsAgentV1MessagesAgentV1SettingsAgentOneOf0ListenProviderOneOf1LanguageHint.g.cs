@@ -42,6 +42,13 @@ namespace Deepgram.Realtime
         /// <summary>
         /// 
         /// </summary>
+        public string PickChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ListenProviderOneOf1LanguageHintVariant1() => IsChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ListenProviderOneOf1LanguageHintVariant1
+            ? ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ListenProviderOneOf1LanguageHintVariant1!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ListenProviderOneOf1LanguageHintVariant1' but the value was {ToString()}.");
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public global::System.Collections.Generic.IList<string>? ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ListenProviderOneOf1LanguageHintVariant2 { get; init; }
 #else
@@ -68,6 +75,13 @@ namespace Deepgram.Realtime
             value = ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ListenProviderOneOf1LanguageHintVariant2;
             return IsChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ListenProviderOneOf1LanguageHintVariant2;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::System.Collections.Generic.IList<string> PickChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ListenProviderOneOf1LanguageHintVariant2() => IsChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ListenProviderOneOf1LanguageHintVariant2
+            ? ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ListenProviderOneOf1LanguageHintVariant2!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ListenProviderOneOf1LanguageHintVariant2' but the value was {ToString()}.");
         /// <summary>
         /// 
         /// </summary>
@@ -85,6 +99,11 @@ namespace Deepgram.Realtime
         {
             ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ListenProviderOneOf1LanguageHintVariant1 = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ListenProviderOneOf1LanguageHint FromChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ListenProviderOneOf1LanguageHintVariant1(string? value) => new ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ListenProviderOneOf1LanguageHint(value);
 
         /// <summary>
         /// 

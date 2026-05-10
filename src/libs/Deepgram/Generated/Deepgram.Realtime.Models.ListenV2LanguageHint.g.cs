@@ -45,6 +45,13 @@ namespace Deepgram.Realtime
         /// <summary>
         /// 
         /// </summary>
+        public string PickListenV2LanguageHintVariant1() => IsListenV2LanguageHintVariant1
+            ? ListenV2LanguageHintVariant1!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'ListenV2LanguageHintVariant1' but the value was {ToString()}.");
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public global::System.Collections.Generic.IList<string>? ListenV2LanguageHintVariant2 { get; init; }
 #else
@@ -71,6 +78,13 @@ namespace Deepgram.Realtime
             value = ListenV2LanguageHintVariant2;
             return IsListenV2LanguageHintVariant2;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::System.Collections.Generic.IList<string> PickListenV2LanguageHintVariant2() => IsListenV2LanguageHintVariant2
+            ? ListenV2LanguageHintVariant2!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'ListenV2LanguageHintVariant2' but the value was {ToString()}.");
         /// <summary>
         /// 
         /// </summary>
@@ -88,6 +102,11 @@ namespace Deepgram.Realtime
         {
             ListenV2LanguageHintVariant1 = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static ListenV2LanguageHint FromListenV2LanguageHintVariant1(string? value) => new ListenV2LanguageHint(value);
 
         /// <summary>
         /// 

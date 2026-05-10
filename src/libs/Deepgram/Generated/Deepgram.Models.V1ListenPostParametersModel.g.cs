@@ -42,6 +42,13 @@ namespace Deepgram
         /// <summary>
         /// 
         /// </summary>
+        public global::Deepgram.V1ListenPostParametersModel0 PickV1ListenPostParametersModel0() => IsV1ListenPostParametersModel0
+            ? V1ListenPostParametersModel0!.Value
+            : throw new global::System.InvalidOperationException($"Expected union variant 'V1ListenPostParametersModel0' but the value was {ToString()}.");
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public string? V1ListenPostParametersModelVariant2 { get; init; }
 #else
@@ -68,6 +75,13 @@ namespace Deepgram
             value = V1ListenPostParametersModelVariant2;
             return IsV1ListenPostParametersModelVariant2;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public string PickV1ListenPostParametersModelVariant2() => IsV1ListenPostParametersModelVariant2
+            ? V1ListenPostParametersModelVariant2!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'V1ListenPostParametersModelVariant2' but the value was {ToString()}.");
         /// <summary>
         /// 
         /// </summary>
@@ -89,6 +103,11 @@ namespace Deepgram
         /// <summary>
         /// 
         /// </summary>
+        public static V1ListenPostParametersModel FromV1ListenPostParametersModel0(global::Deepgram.V1ListenPostParametersModel0? value) => new V1ListenPostParametersModel(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator V1ListenPostParametersModel(string value) => new V1ListenPostParametersModel((string?)value);
 
         /// <summary>
@@ -103,6 +122,11 @@ namespace Deepgram
         {
             V1ListenPostParametersModelVariant2 = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static V1ListenPostParametersModel FromV1ListenPostParametersModelVariant2(string? value) => new V1ListenPostParametersModel(value);
 
         /// <summary>
         /// 

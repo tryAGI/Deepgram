@@ -42,6 +42,13 @@ namespace Deepgram
         /// <summary>
         /// 
         /// </summary>
+        public global::Deepgram.V1SpeakPostParametersBitRate0 PickV1SpeakPostParametersBitRate0() => IsV1SpeakPostParametersBitRate0
+            ? V1SpeakPostParametersBitRate0!.Value
+            : throw new global::System.InvalidOperationException($"Expected union variant 'V1SpeakPostParametersBitRate0' but the value was {ToString()}.");
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public double? V1SpeakPostParametersBitRateVariant2 { get; init; }
 #else
@@ -72,6 +79,13 @@ namespace Deepgram
         /// <summary>
         /// 
         /// </summary>
+        public double PickV1SpeakPostParametersBitRateVariant2() => IsV1SpeakPostParametersBitRateVariant2
+            ? V1SpeakPostParametersBitRateVariant2!.Value
+            : throw new global::System.InvalidOperationException($"Expected union variant 'V1SpeakPostParametersBitRateVariant2' but the value was {ToString()}.");
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public double? V1SpeakPostParametersBitRateVariant3 { get; init; }
 #else
@@ -98,6 +112,13 @@ namespace Deepgram
             value = V1SpeakPostParametersBitRateVariant3;
             return IsV1SpeakPostParametersBitRateVariant3;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public double PickV1SpeakPostParametersBitRateVariant3() => IsV1SpeakPostParametersBitRateVariant3
+            ? V1SpeakPostParametersBitRateVariant3!.Value
+            : throw new global::System.InvalidOperationException($"Expected union variant 'V1SpeakPostParametersBitRateVariant3' but the value was {ToString()}.");
         /// <summary>
         /// 
         /// </summary>
@@ -119,6 +140,11 @@ namespace Deepgram
         /// <summary>
         /// 
         /// </summary>
+        public static V1SpeakPostParametersBitRate FromV1SpeakPostParametersBitRate0(global::Deepgram.V1SpeakPostParametersBitRate0? value) => new V1SpeakPostParametersBitRate(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator V1SpeakPostParametersBitRate(double value) => new V1SpeakPostParametersBitRate((double?)value);
 
         /// <summary>
@@ -133,6 +159,11 @@ namespace Deepgram
         {
             V1SpeakPostParametersBitRateVariant2 = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static V1SpeakPostParametersBitRate FromV1SpeakPostParametersBitRateVariant2(double? value) => new V1SpeakPostParametersBitRate(value);
 
         /// <summary>
         /// 

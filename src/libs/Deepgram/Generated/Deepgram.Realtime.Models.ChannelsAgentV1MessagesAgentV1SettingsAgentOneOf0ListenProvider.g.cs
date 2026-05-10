@@ -42,6 +42,13 @@ namespace Deepgram.Realtime
         /// <summary>
         /// 
         /// </summary>
+        public global::Deepgram.Realtime.ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ListenProvider0 PickChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ListenProvider0() => IsChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ListenProvider0
+            ? ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ListenProvider0!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ListenProvider0' but the value was {ToString()}.");
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public global::Deepgram.Realtime.ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ListenProvider1? ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ListenProvider1 { get; init; }
 #else
@@ -68,6 +75,13 @@ namespace Deepgram.Realtime
             value = ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ListenProvider1;
             return IsChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ListenProvider1;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Deepgram.Realtime.ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ListenProvider1 PickChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ListenProvider1() => IsChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ListenProvider1
+            ? ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ListenProvider1!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ListenProvider1' but the value was {ToString()}.");
         /// <summary>
         /// 
         /// </summary>
@@ -89,6 +103,11 @@ namespace Deepgram.Realtime
         /// <summary>
         /// 
         /// </summary>
+        public static ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ListenProvider FromChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ListenProvider0(global::Deepgram.Realtime.ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ListenProvider0? value) => new ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ListenProvider(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ListenProvider(global::Deepgram.Realtime.ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ListenProvider1 value) => new ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ListenProvider((global::Deepgram.Realtime.ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ListenProvider1?)value);
 
         /// <summary>
@@ -103,6 +122,11 @@ namespace Deepgram.Realtime
         {
             ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ListenProvider1 = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ListenProvider FromChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ListenProvider1(global::Deepgram.Realtime.ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ListenProvider1? value) => new ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ListenProvider(value);
 
         /// <summary>
         /// 

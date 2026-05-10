@@ -42,6 +42,13 @@ namespace Deepgram
         /// <summary>
         /// 
         /// </summary>
+        public string PickV1ListenPostParametersKeywordsVariant1() => IsV1ListenPostParametersKeywordsVariant1
+            ? V1ListenPostParametersKeywordsVariant1!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'V1ListenPostParametersKeywordsVariant1' but the value was {ToString()}.");
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public global::System.Collections.Generic.IList<string>? V1ListenPostParametersKeywordsVariant2 { get; init; }
 #else
@@ -68,6 +75,13 @@ namespace Deepgram
             value = V1ListenPostParametersKeywordsVariant2;
             return IsV1ListenPostParametersKeywordsVariant2;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::System.Collections.Generic.IList<string> PickV1ListenPostParametersKeywordsVariant2() => IsV1ListenPostParametersKeywordsVariant2
+            ? V1ListenPostParametersKeywordsVariant2!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'V1ListenPostParametersKeywordsVariant2' but the value was {ToString()}.");
         /// <summary>
         /// 
         /// </summary>
@@ -85,6 +99,11 @@ namespace Deepgram
         {
             V1ListenPostParametersKeywordsVariant1 = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static V1ListenPostParametersKeywords FromV1ListenPostParametersKeywordsVariant1(string? value) => new V1ListenPostParametersKeywords(value);
 
         /// <summary>
         /// 

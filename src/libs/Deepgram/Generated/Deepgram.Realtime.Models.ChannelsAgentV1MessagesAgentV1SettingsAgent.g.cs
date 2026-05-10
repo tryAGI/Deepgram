@@ -42,6 +42,13 @@ namespace Deepgram.Realtime
         /// <summary>
         /// 
         /// </summary>
+        public global::Deepgram.Realtime.ChannelsAgentV1MessagesAgentV1SettingsAgent0 PickChannelsAgentV1MessagesAgentV1SettingsAgent0() => IsChannelsAgentV1MessagesAgentV1SettingsAgent0
+            ? ChannelsAgentV1MessagesAgentV1SettingsAgent0!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'ChannelsAgentV1MessagesAgentV1SettingsAgent0' but the value was {ToString()}.");
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public global::System.Guid? Guid { get; init; }
 #else
@@ -68,6 +75,13 @@ namespace Deepgram.Realtime
             value = Guid;
             return IsGuid;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::System.Guid PickGuid() => IsGuid
+            ? Guid!.Value
+            : throw new global::System.InvalidOperationException($"Expected union variant 'Guid' but the value was {ToString()}.");
         /// <summary>
         /// 
         /// </summary>
@@ -89,6 +103,11 @@ namespace Deepgram.Realtime
         /// <summary>
         /// 
         /// </summary>
+        public static ChannelsAgentV1MessagesAgentV1SettingsAgent FromChannelsAgentV1MessagesAgentV1SettingsAgent0(global::Deepgram.Realtime.ChannelsAgentV1MessagesAgentV1SettingsAgent0? value) => new ChannelsAgentV1MessagesAgentV1SettingsAgent(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator ChannelsAgentV1MessagesAgentV1SettingsAgent(global::System.Guid value) => new ChannelsAgentV1MessagesAgentV1SettingsAgent((global::System.Guid?)value);
 
         /// <summary>
@@ -103,6 +122,11 @@ namespace Deepgram.Realtime
         {
             Guid = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static ChannelsAgentV1MessagesAgentV1SettingsAgent FromGuid(global::System.Guid? value) => new ChannelsAgentV1MessagesAgentV1SettingsAgent(value);
 
         /// <summary>
         /// 

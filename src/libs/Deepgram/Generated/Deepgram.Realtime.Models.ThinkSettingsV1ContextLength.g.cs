@@ -42,6 +42,13 @@ namespace Deepgram.Realtime
         /// <summary>
         /// 
         /// </summary>
+        public global::Deepgram.Realtime.ThinkSettingsV1ContextLength0 PickThinkSettingsV1ContextLength0() => IsThinkSettingsV1ContextLength0
+            ? ThinkSettingsV1ContextLength0!.Value
+            : throw new global::System.InvalidOperationException($"Expected union variant 'ThinkSettingsV1ContextLength0' but the value was {ToString()}.");
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public double? ThinkSettingsV1ContextLengthVariant2 { get; init; }
 #else
@@ -68,6 +75,13 @@ namespace Deepgram.Realtime
             value = ThinkSettingsV1ContextLengthVariant2;
             return IsThinkSettingsV1ContextLengthVariant2;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public double PickThinkSettingsV1ContextLengthVariant2() => IsThinkSettingsV1ContextLengthVariant2
+            ? ThinkSettingsV1ContextLengthVariant2!.Value
+            : throw new global::System.InvalidOperationException($"Expected union variant 'ThinkSettingsV1ContextLengthVariant2' but the value was {ToString()}.");
         /// <summary>
         /// 
         /// </summary>
@@ -89,6 +103,11 @@ namespace Deepgram.Realtime
         /// <summary>
         /// 
         /// </summary>
+        public static ThinkSettingsV1ContextLength FromThinkSettingsV1ContextLength0(global::Deepgram.Realtime.ThinkSettingsV1ContextLength0? value) => new ThinkSettingsV1ContextLength(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator ThinkSettingsV1ContextLength(double value) => new ThinkSettingsV1ContextLength((double?)value);
 
         /// <summary>
@@ -103,6 +122,11 @@ namespace Deepgram.Realtime
         {
             ThinkSettingsV1ContextLengthVariant2 = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static ThinkSettingsV1ContextLength FromThinkSettingsV1ContextLengthVariant2(double? value) => new ThinkSettingsV1ContextLength(value);
 
         /// <summary>
         /// 
