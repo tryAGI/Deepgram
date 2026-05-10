@@ -40,5 +40,6 @@ namespace Deepgram.Realtime
         public AgentV1ServerEventDiscriminator()
         {
         }
+
     }
 }

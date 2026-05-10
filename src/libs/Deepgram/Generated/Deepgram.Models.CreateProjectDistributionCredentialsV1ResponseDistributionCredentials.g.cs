@@ -89,5 +89,6 @@ namespace Deepgram
         public CreateProjectDistributionCredentialsV1ResponseDistributionCredentials()
         {
         }
+
     }
 }

@@ -76,5 +76,6 @@ namespace Deepgram.Realtime
         public AnthropicThinkProvider()
         {
         }
+
     }
 }

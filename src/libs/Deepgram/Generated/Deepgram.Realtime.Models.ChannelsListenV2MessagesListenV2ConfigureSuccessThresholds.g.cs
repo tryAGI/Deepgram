@@ -64,5 +64,6 @@ namespace Deepgram.Realtime
         public ChannelsListenV2MessagesListenV2ConfigureSuccessThresholds()
         {
         }
+
     }
 }

@@ -101,5 +101,6 @@ namespace Deepgram.Realtime
         public ChannelsAgentV1MessagesAgentV1HistoryOneOf1FunctionCallsItems()
         {
         }
+
     }
 }

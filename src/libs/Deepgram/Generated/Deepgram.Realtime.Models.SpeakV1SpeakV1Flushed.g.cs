@@ -55,5 +55,6 @@ namespace Deepgram.Realtime
         public SpeakV1SpeakV1Flushed()
         {
         }
+
     }
 }

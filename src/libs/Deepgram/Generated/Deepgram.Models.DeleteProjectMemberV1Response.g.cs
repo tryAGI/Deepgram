@@ -41,5 +41,6 @@ namespace Deepgram
         public DeleteProjectMemberV1Response()
         {
         }
+
     }
 }

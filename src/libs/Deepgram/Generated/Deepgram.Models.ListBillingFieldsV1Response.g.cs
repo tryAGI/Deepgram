@@ -74,5 +74,6 @@ namespace Deepgram
         public ListBillingFieldsV1Response()
         {
         }
+
     }
 }

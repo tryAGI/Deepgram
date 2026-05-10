@@ -97,5 +97,6 @@ namespace Deepgram.Realtime
         public CartesiaSpeakProvider()
         {
         }
+
     }
 }

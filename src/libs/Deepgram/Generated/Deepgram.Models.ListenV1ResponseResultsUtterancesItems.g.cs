@@ -102,5 +102,6 @@ namespace Deepgram
         public ListenV1ResponseResultsUtterancesItems()
         {
         }
+
     }
 }

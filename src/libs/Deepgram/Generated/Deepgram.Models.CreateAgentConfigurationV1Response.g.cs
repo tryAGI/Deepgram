@@ -65,5 +65,6 @@ namespace Deepgram
         public CreateAgentConfigurationV1Response()
         {
         }
+
     }
 }
