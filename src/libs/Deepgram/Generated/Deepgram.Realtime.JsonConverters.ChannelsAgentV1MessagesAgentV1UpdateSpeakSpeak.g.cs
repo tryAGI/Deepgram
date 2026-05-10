@@ -85,6 +85,7 @@ namespace Deepgram.Realtime.JsonConverters
             {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Deepgram.Realtime.SpeakSettingsV1), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Deepgram.Realtime.SpeakSettingsV1> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Deepgram.Realtime.SpeakSettingsV1).Name}");
                     speakSettingsV1 = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
@@ -95,9 +96,13 @@ namespace Deepgram.Realtime.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (speakSettingsV1 == null && channelsAgentV1MessagesAgentV1UpdateSpeakSpeak1 == null)
+            {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::System.Collections.Generic.IList<global::Deepgram.Realtime.SpeakSettingsV1>), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::System.Collections.Generic.IList<global::Deepgram.Realtime.SpeakSettingsV1>> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::System.Collections.Generic.IList<global::Deepgram.Realtime.SpeakSettingsV1>).Name}");
                     channelsAgentV1MessagesAgentV1UpdateSpeakSpeak1 = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);

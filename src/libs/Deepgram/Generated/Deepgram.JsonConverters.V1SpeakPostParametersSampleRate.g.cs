@@ -198,7 +198,10 @@ namespace Deepgram.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (v1SpeakPostParametersSampleRate0 == null && v1SpeakPostParametersSampleRate1 == null && v1SpeakPostParametersSampleRate2 == null && v1SpeakPostParametersSampleRate3 == null && v1SpeakPostParametersSampleRate4 == null)
+            {
                 try
                 {
 
@@ -212,7 +215,10 @@ namespace Deepgram.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (v1SpeakPostParametersSampleRate0 == null && v1SpeakPostParametersSampleRate1 == null && v1SpeakPostParametersSampleRate2 == null && v1SpeakPostParametersSampleRate3 == null && v1SpeakPostParametersSampleRate4 == null)
+            {
                 try
                 {
 
@@ -226,7 +232,10 @@ namespace Deepgram.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (v1SpeakPostParametersSampleRate0 == null && v1SpeakPostParametersSampleRate1 == null && v1SpeakPostParametersSampleRate2 == null && v1SpeakPostParametersSampleRate3 == null && v1SpeakPostParametersSampleRate4 == null)
+            {
                 try
                 {
 
@@ -240,7 +249,10 @@ namespace Deepgram.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (v1SpeakPostParametersSampleRate0 == null && v1SpeakPostParametersSampleRate1 == null && v1SpeakPostParametersSampleRate2 == null && v1SpeakPostParametersSampleRate3 == null && v1SpeakPostParametersSampleRate4 == null)
+            {
                 try
                 {
 

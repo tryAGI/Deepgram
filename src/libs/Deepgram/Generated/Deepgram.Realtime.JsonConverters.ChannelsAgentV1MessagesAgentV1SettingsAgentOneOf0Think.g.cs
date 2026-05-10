@@ -88,6 +88,7 @@ namespace Deepgram.Realtime.JsonConverters
             {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Deepgram.Realtime.ThinkSettingsV1), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Deepgram.Realtime.ThinkSettingsV1> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Deepgram.Realtime.ThinkSettingsV1).Name}");
                     thinkSettingsV1 = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
@@ -98,9 +99,13 @@ namespace Deepgram.Realtime.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (thinkSettingsV1 == null && channelsAgentV1MessagesAgentV1SettingsAgentOneOf0Think1 == null)
+            {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::System.Collections.Generic.IList<global::Deepgram.Realtime.ThinkSettingsV1>), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::System.Collections.Generic.IList<global::Deepgram.Realtime.ThinkSettingsV1>> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::System.Collections.Generic.IList<global::Deepgram.Realtime.ThinkSettingsV1>).Name}");
                     channelsAgentV1MessagesAgentV1SettingsAgentOneOf0Think1 = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);

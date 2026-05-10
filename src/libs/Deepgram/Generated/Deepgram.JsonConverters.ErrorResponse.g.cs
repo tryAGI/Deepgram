@@ -100,6 +100,7 @@ namespace Deepgram.JsonConverters
             {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Deepgram.ErrorResponseTextError), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Deepgram.ErrorResponseTextError> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Deepgram.ErrorResponseTextError).Name}");
                     text = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
@@ -110,9 +111,13 @@ namespace Deepgram.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (text == null && errorResponseLegacyError == null && errorResponseModernError == null)
+            {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Deepgram.ErrorResponseLegacyError), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Deepgram.ErrorResponseLegacyError> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Deepgram.ErrorResponseLegacyError).Name}");
                     errorResponseLegacyError = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
@@ -123,9 +128,13 @@ namespace Deepgram.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (text == null && errorResponseLegacyError == null && errorResponseModernError == null)
+            {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Deepgram.ErrorResponseModernError), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Deepgram.ErrorResponseModernError> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Deepgram.ErrorResponseModernError).Name}");
                     errorResponseModernError = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);

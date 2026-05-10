@@ -144,6 +144,7 @@ namespace Deepgram.Realtime.JsonConverters
             {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Deepgram.Realtime.ListenV1ListenV1Results), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Deepgram.Realtime.ListenV1ListenV1Results> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Deepgram.Realtime.ListenV1ListenV1Results).Name}");
                     listenV1ListenV1Results = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
@@ -154,9 +155,13 @@ namespace Deepgram.Realtime.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (listenV1ListenV1Results == null && listenV1ListenV1Metadata == null && listenV1ListenV1UtteranceEnd == null && listenV1ListenV1SpeechStarted == null)
+            {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Deepgram.Realtime.ListenV1ListenV1Metadata), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Deepgram.Realtime.ListenV1ListenV1Metadata> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Deepgram.Realtime.ListenV1ListenV1Metadata).Name}");
                     listenV1ListenV1Metadata = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
@@ -167,9 +172,13 @@ namespace Deepgram.Realtime.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (listenV1ListenV1Results == null && listenV1ListenV1Metadata == null && listenV1ListenV1UtteranceEnd == null && listenV1ListenV1SpeechStarted == null)
+            {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Deepgram.Realtime.ListenV1ListenV1UtteranceEnd), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Deepgram.Realtime.ListenV1ListenV1UtteranceEnd> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Deepgram.Realtime.ListenV1ListenV1UtteranceEnd).Name}");
                     listenV1ListenV1UtteranceEnd = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
@@ -180,9 +189,13 @@ namespace Deepgram.Realtime.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (listenV1ListenV1Results == null && listenV1ListenV1Metadata == null && listenV1ListenV1UtteranceEnd == null && listenV1ListenV1SpeechStarted == null)
+            {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Deepgram.Realtime.ListenV1ListenV1SpeechStarted), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Deepgram.Realtime.ListenV1ListenV1SpeechStarted> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Deepgram.Realtime.ListenV1ListenV1SpeechStarted).Name}");
                     listenV1ListenV1SpeechStarted = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
