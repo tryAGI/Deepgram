@@ -102,5 +102,6 @@ namespace Deepgram.Realtime
         public ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ListenProvider0()
         {
         }
+
     }
 }

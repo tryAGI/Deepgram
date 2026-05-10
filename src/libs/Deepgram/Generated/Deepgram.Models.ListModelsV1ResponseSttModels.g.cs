@@ -111,5 +111,6 @@ namespace Deepgram
         public ListModelsV1ResponseSttModels()
         {
         }
+
     }
 }

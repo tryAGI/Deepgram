@@ -57,5 +57,6 @@ namespace Deepgram
         public ReadV1ResponseMetadataMetadataIntentsInfo()
         {
         }
+
     }
 }

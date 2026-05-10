@@ -93,5 +93,6 @@ namespace Deepgram
         public GetModelV1ResponseOneOf1Metadata()
         {
         }
+
     }
 }

@@ -50,5 +50,6 @@ namespace Deepgram
         public ListenV1Response()
         {
         }
+
     }
 }

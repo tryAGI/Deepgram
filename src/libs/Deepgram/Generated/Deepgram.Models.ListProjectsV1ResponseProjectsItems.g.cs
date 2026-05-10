@@ -52,5 +52,6 @@ namespace Deepgram
         public ListProjectsV1ResponseProjectsItems()
         {
         }
+
     }
 }

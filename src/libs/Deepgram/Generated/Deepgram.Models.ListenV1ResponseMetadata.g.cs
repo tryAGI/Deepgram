@@ -156,5 +156,6 @@ namespace Deepgram
         public ListenV1ResponseMetadata()
         {
         }
+
     }
 }

@@ -42,5 +42,6 @@ namespace Deepgram
         public SpeakV1Request()
         {
         }
+
     }
 }

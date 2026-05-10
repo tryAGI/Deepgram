@@ -124,5 +124,6 @@ namespace Deepgram
         public UsageBreakdownV1ResponseResultsItems()
         {
         }
+
     }
 }

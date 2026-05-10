@@ -67,5 +67,6 @@ namespace Deepgram
         public CreateAgentVariableV1Request()
         {
         }
+
     }
 }

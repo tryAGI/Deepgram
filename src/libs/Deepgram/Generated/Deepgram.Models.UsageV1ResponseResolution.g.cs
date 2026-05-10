@@ -48,5 +48,6 @@ namespace Deepgram
         public UsageV1ResponseResolution()
         {
         }
+
     }
 }

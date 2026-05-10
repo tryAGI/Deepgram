@@ -74,5 +74,6 @@ namespace Deepgram
         public UsageFieldsV1ResponseModelsItems()
         {
         }
+
     }
 }

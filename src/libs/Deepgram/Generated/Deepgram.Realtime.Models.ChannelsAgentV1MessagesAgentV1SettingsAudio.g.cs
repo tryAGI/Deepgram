@@ -52,5 +52,6 @@ namespace Deepgram.Realtime
         public ChannelsAgentV1MessagesAgentV1SettingsAudio()
         {
         }
+
     }
 }
