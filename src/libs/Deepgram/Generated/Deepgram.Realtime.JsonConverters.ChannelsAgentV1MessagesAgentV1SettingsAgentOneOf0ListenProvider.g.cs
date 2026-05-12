@@ -45,17 +45,17 @@ namespace Deepgram.Realtime.JsonConverters
             if (__score0 > __bestScore) { __bestScore = __score0; __bestIndex = 0; }
             if (__score1 > __bestScore) { __bestScore = __score1; __bestIndex = 1; }
 
-            global::Deepgram.Realtime.ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ListenProvider0? channelsAgentV1MessagesAgentV1SettingsAgentOneOf0ListenProvider0 = default;
-            global::Deepgram.Realtime.ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ListenProvider1? channelsAgentV1MessagesAgentV1SettingsAgentOneOf0ListenProvider1 = default;
+            global::Deepgram.Realtime.DeepgramListenProviderV1? deepgramListenProviderV1 = default;
+            global::Deepgram.Realtime.DeepgramListenProviderV2? deepgramListenProviderV2 = default;
             if (__bestIndex >= 0)
             {
                 if (__bestIndex == 0)
                 {
                     try
                     {
-                        var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Deepgram.Realtime.ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ListenProvider0), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Deepgram.Realtime.ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ListenProvider0> ??
-                                       throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Deepgram.Realtime.ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ListenProvider0).Name}");
-                        channelsAgentV1MessagesAgentV1SettingsAgentOneOf0ListenProvider0 = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
+                        var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Deepgram.Realtime.DeepgramListenProviderV1), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Deepgram.Realtime.DeepgramListenProviderV1> ??
+                                       throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Deepgram.Realtime.DeepgramListenProviderV1).Name}");
+                        deepgramListenProviderV1 = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
                     }
                     catch (global::System.Text.Json.JsonException)
                     {
@@ -68,9 +68,9 @@ namespace Deepgram.Realtime.JsonConverters
                 {
                     try
                     {
-                        var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Deepgram.Realtime.ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ListenProvider1), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Deepgram.Realtime.ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ListenProvider1> ??
-                                       throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Deepgram.Realtime.ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ListenProvider1).Name}");
-                        channelsAgentV1MessagesAgentV1SettingsAgentOneOf0ListenProvider1 = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
+                        var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Deepgram.Realtime.DeepgramListenProviderV2), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Deepgram.Realtime.DeepgramListenProviderV2> ??
+                                       throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Deepgram.Realtime.DeepgramListenProviderV2).Name}");
+                        deepgramListenProviderV2 = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
                     }
                     catch (global::System.Text.Json.JsonException)
                     {
@@ -81,14 +81,14 @@ namespace Deepgram.Realtime.JsonConverters
                 }
             }
 
-            if (channelsAgentV1MessagesAgentV1SettingsAgentOneOf0ListenProvider0 == null && channelsAgentV1MessagesAgentV1SettingsAgentOneOf0ListenProvider1 == null)
+            if (deepgramListenProviderV1 == null && deepgramListenProviderV2 == null)
             {
                 try
                 {
 
-                    var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Deepgram.Realtime.ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ListenProvider0), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Deepgram.Realtime.ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ListenProvider0> ??
-                                   throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Deepgram.Realtime.ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ListenProvider0).Name}");
-                    channelsAgentV1MessagesAgentV1SettingsAgentOneOf0ListenProvider0 = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
+                    var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Deepgram.Realtime.DeepgramListenProviderV1), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Deepgram.Realtime.DeepgramListenProviderV1> ??
+                                   throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Deepgram.Realtime.DeepgramListenProviderV1).Name}");
+                    deepgramListenProviderV1 = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
                 }
                 catch (global::System.Text.Json.JsonException)
                 {
@@ -98,14 +98,14 @@ namespace Deepgram.Realtime.JsonConverters
                 }
             }
 
-            if (channelsAgentV1MessagesAgentV1SettingsAgentOneOf0ListenProvider0 == null && channelsAgentV1MessagesAgentV1SettingsAgentOneOf0ListenProvider1 == null)
+            if (deepgramListenProviderV1 == null && deepgramListenProviderV2 == null)
             {
                 try
                 {
 
-                    var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Deepgram.Realtime.ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ListenProvider1), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Deepgram.Realtime.ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ListenProvider1> ??
-                                   throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Deepgram.Realtime.ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ListenProvider1).Name}");
-                    channelsAgentV1MessagesAgentV1SettingsAgentOneOf0ListenProvider1 = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
+                    var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Deepgram.Realtime.DeepgramListenProviderV2), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Deepgram.Realtime.DeepgramListenProviderV2> ??
+                                   throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Deepgram.Realtime.DeepgramListenProviderV2).Name}");
+                    deepgramListenProviderV2 = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
                 }
                 catch (global::System.Text.Json.JsonException)
                 {
@@ -116,9 +116,9 @@ namespace Deepgram.Realtime.JsonConverters
             }
 
             var __value = new global::Deepgram.Realtime.ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ListenProvider(
-                channelsAgentV1MessagesAgentV1SettingsAgentOneOf0ListenProvider0,
+                deepgramListenProviderV1,
 
-                channelsAgentV1MessagesAgentV1SettingsAgentOneOf0ListenProvider1
+                deepgramListenProviderV2
                 );
 
             return __value;
@@ -133,17 +133,17 @@ namespace Deepgram.Realtime.JsonConverters
             options = options ?? throw new global::System.ArgumentNullException(nameof(options));
             var typeInfoResolver = options.TypeInfoResolver ?? throw new global::System.InvalidOperationException("TypeInfoResolver is not set.");
 
-            if (value.IsChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ListenProvider0)
+            if (value.IsDeepgramListenProviderV1)
             {
-                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Deepgram.Realtime.ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ListenProvider0), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Deepgram.Realtime.ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ListenProvider0?> ??
-                               throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Deepgram.Realtime.ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ListenProvider0).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ListenProvider0!, typeInfo);
+                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Deepgram.Realtime.DeepgramListenProviderV1), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Deepgram.Realtime.DeepgramListenProviderV1?> ??
+                               throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Deepgram.Realtime.DeepgramListenProviderV1).Name}");
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.DeepgramListenProviderV1!, typeInfo);
             }
-            else if (value.IsChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ListenProvider1)
+            else if (value.IsDeepgramListenProviderV2)
             {
-                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Deepgram.Realtime.ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ListenProvider1), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Deepgram.Realtime.ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ListenProvider1?> ??
-                               throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Deepgram.Realtime.ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ListenProvider1).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ListenProvider1!, typeInfo);
+                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Deepgram.Realtime.DeepgramListenProviderV2), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Deepgram.Realtime.DeepgramListenProviderV2?> ??
+                               throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Deepgram.Realtime.DeepgramListenProviderV2).Name}");
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.DeepgramListenProviderV2!, typeInfo);
             }
         }
     }

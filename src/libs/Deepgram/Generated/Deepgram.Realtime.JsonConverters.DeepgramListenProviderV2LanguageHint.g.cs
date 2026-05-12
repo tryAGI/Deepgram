@@ -4,10 +4,10 @@
 namespace Deepgram.Realtime.JsonConverters
 {
     /// <inheritdoc />
-    public class ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ListenProviderOneOf1LanguageHintJsonConverter : global::System.Text.Json.Serialization.JsonConverter<global::Deepgram.Realtime.ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ListenProviderOneOf1LanguageHint>
+    public class DeepgramListenProviderV2LanguageHintJsonConverter : global::System.Text.Json.Serialization.JsonConverter<global::Deepgram.Realtime.DeepgramListenProviderV2LanguageHint>
     {
         /// <inheritdoc />
-        public override global::Deepgram.Realtime.ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ListenProviderOneOf1LanguageHint Read(
+        public override global::Deepgram.Realtime.DeepgramListenProviderV2LanguageHint Read(
             ref global::System.Text.Json.Utf8JsonReader reader,
             global::System.Type typeToConvert,
             global::System.Text.Json.JsonSerializerOptions options)
@@ -54,8 +54,8 @@ namespace Deepgram.Realtime.JsonConverters
             if (__score0 > __bestScore) { __bestScore = __score0; __bestIndex = 0; }
             if (__score1 > __bestScore) { __bestScore = __score1; __bestIndex = 1; }
 
-            string? channelsAgentV1MessagesAgentV1SettingsAgentOneOf0ListenProviderOneOf1LanguageHintVariant1 = default;
-            global::System.Collections.Generic.IList<string>? channelsAgentV1MessagesAgentV1SettingsAgentOneOf0ListenProviderOneOf1LanguageHintVariant2 = default;
+            string? deepgramListenProviderV2LanguageHintVariant1 = default;
+            global::System.Collections.Generic.IList<string>? deepgramListenProviderV2LanguageHintVariant2 = default;
             if (__bestIndex >= 0)
             {
                 if (__bestIndex == 0)
@@ -65,7 +65,7 @@ namespace Deepgram.Realtime.JsonConverters
 
                         var typeInfo = typeInfoResolver.GetTypeInfo(typeof(string), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<string> ??
                                        throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(string).Name}");
-                        channelsAgentV1MessagesAgentV1SettingsAgentOneOf0ListenProviderOneOf1LanguageHintVariant1 = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
+                        deepgramListenProviderV2LanguageHintVariant1 = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
                     }
                     catch (global::System.Text.Json.JsonException)
                     {
@@ -82,7 +82,7 @@ namespace Deepgram.Realtime.JsonConverters
 
                         var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::System.Collections.Generic.IList<string>), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::System.Collections.Generic.IList<string>> ??
                                        throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::System.Collections.Generic.IList<string>).Name}");
-                        channelsAgentV1MessagesAgentV1SettingsAgentOneOf0ListenProviderOneOf1LanguageHintVariant2 = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
+                        deepgramListenProviderV2LanguageHintVariant2 = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
                     }
                     catch (global::System.Text.Json.JsonException)
                     {
@@ -93,14 +93,14 @@ namespace Deepgram.Realtime.JsonConverters
                 }
             }
 
-            if (channelsAgentV1MessagesAgentV1SettingsAgentOneOf0ListenProviderOneOf1LanguageHintVariant1 == null && channelsAgentV1MessagesAgentV1SettingsAgentOneOf0ListenProviderOneOf1LanguageHintVariant2 == null)
+            if (deepgramListenProviderV2LanguageHintVariant1 == null && deepgramListenProviderV2LanguageHintVariant2 == null)
             {
                 try
                 {
 
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(string), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<string> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(string).Name}");
-                    channelsAgentV1MessagesAgentV1SettingsAgentOneOf0ListenProviderOneOf1LanguageHintVariant1 = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
+                    deepgramListenProviderV2LanguageHintVariant1 = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
                 }
                 catch (global::System.Text.Json.JsonException)
                 {
@@ -110,14 +110,14 @@ namespace Deepgram.Realtime.JsonConverters
                 }
             }
 
-            if (channelsAgentV1MessagesAgentV1SettingsAgentOneOf0ListenProviderOneOf1LanguageHintVariant1 == null && channelsAgentV1MessagesAgentV1SettingsAgentOneOf0ListenProviderOneOf1LanguageHintVariant2 == null)
+            if (deepgramListenProviderV2LanguageHintVariant1 == null && deepgramListenProviderV2LanguageHintVariant2 == null)
             {
                 try
                 {
 
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::System.Collections.Generic.IList<string>), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::System.Collections.Generic.IList<string>> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::System.Collections.Generic.IList<string>).Name}");
-                    channelsAgentV1MessagesAgentV1SettingsAgentOneOf0ListenProviderOneOf1LanguageHintVariant2 = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
+                    deepgramListenProviderV2LanguageHintVariant2 = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
                 }
                 catch (global::System.Text.Json.JsonException)
                 {
@@ -127,10 +127,10 @@ namespace Deepgram.Realtime.JsonConverters
                 }
             }
 
-            var __value = new global::Deepgram.Realtime.ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ListenProviderOneOf1LanguageHint(
-                channelsAgentV1MessagesAgentV1SettingsAgentOneOf0ListenProviderOneOf1LanguageHintVariant1,
+            var __value = new global::Deepgram.Realtime.DeepgramListenProviderV2LanguageHint(
+                deepgramListenProviderV2LanguageHintVariant1,
 
-                channelsAgentV1MessagesAgentV1SettingsAgentOneOf0ListenProviderOneOf1LanguageHintVariant2
+                deepgramListenProviderV2LanguageHintVariant2
                 );
 
             return __value;
@@ -139,23 +139,23 @@ namespace Deepgram.Realtime.JsonConverters
         /// <inheritdoc />
         public override void Write(
             global::System.Text.Json.Utf8JsonWriter writer,
-            global::Deepgram.Realtime.ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ListenProviderOneOf1LanguageHint value,
+            global::Deepgram.Realtime.DeepgramListenProviderV2LanguageHint value,
             global::System.Text.Json.JsonSerializerOptions options)
         {
             options = options ?? throw new global::System.ArgumentNullException(nameof(options));
             var typeInfoResolver = options.TypeInfoResolver ?? throw new global::System.InvalidOperationException("TypeInfoResolver is not set.");
 
-            if (value.IsChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ListenProviderOneOf1LanguageHintVariant1)
+            if (value.IsDeepgramListenProviderV2LanguageHintVariant1)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(string), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<string?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(string).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ListenProviderOneOf1LanguageHintVariant1!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.DeepgramListenProviderV2LanguageHintVariant1!, typeInfo);
             }
-            else if (value.IsChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ListenProviderOneOf1LanguageHintVariant2)
+            else if (value.IsDeepgramListenProviderV2LanguageHintVariant2)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::System.Collections.Generic.IList<string>), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::System.Collections.Generic.IList<string>?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::System.Collections.Generic.IList<string>).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ListenProviderOneOf1LanguageHintVariant2!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.DeepgramListenProviderV2LanguageHintVariant2!, typeInfo);
             }
         }
     }

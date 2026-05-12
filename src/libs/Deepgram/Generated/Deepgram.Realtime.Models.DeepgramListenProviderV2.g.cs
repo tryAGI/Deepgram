@@ -6,21 +6,21 @@ namespace Deepgram.Realtime
     /// <summary>
     /// 
     /// </summary>
-    public sealed partial class ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ListenProvider1
+    public sealed partial class DeepgramListenProviderV2
     {
         /// <summary>
         /// Provider type for speech-to-text
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("type")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Deepgram.Realtime.JsonConverters.ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ListenProvider1TypeJsonConverter))]
-        public global::Deepgram.Realtime.ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ListenProvider1Type Type { get; set; }
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Deepgram.Realtime.JsonConverters.DeepgramListenProviderV2TypeJsonConverter))]
+        public global::Deepgram.Realtime.DeepgramListenProviderV2Type Type { get; set; }
 
         /// <summary>
         /// Specifies usage of the V2 Deepgram speech-to-text API (e.g. Flux)
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("version")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Deepgram.Realtime.JsonConverters.ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ListenProvider1VersionJsonConverter))]
-        public global::Deepgram.Realtime.ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ListenProvider1Version? Version { get; set; }
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Deepgram.Realtime.JsonConverters.DeepgramListenProviderV2VersionJsonConverter))]
+        public global::Deepgram.Realtime.DeepgramListenProviderV2Version? Version { get; set; }
 
         /// <summary>
         /// Model to use for speech to text using the V2 API (e.g. flux-general-en, flux-general-multi)
@@ -33,8 +33,8 @@ namespace Deepgram.Realtime
         /// One or more BCP-47 language codes to bias the model toward specific languages. Only supported when model is flux-general-multi. Without hints, the model auto-detects the spoken language. See the Language Prompting guide for details.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("language_hint")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Deepgram.Realtime.JsonConverters.ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ListenProviderOneOf1LanguageHintJsonConverter))]
-        public global::Deepgram.Realtime.ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ListenProviderOneOf1LanguageHint? LanguageHint { get; set; }
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Deepgram.Realtime.JsonConverters.DeepgramListenProviderV2LanguageHintJsonConverter))]
+        public global::Deepgram.Realtime.DeepgramListenProviderV2LanguageHint? LanguageHint { get; set; }
 
         /// <summary>
         /// Prompt keyterm recognition to improve Keyword Recall Rate
@@ -49,7 +49,7 @@ namespace Deepgram.Realtime
         public global::System.Collections.Generic.IDictionary<string, object> AdditionalProperties { get; set; } = new global::System.Collections.Generic.Dictionary<string, object>();
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ListenProvider1" /> class.
+        /// Initializes a new instance of the <see cref="DeepgramListenProviderV2" /> class.
         /// </summary>
         /// <param name="model">
         /// Model to use for speech to text using the V2 API (e.g. flux-general-en, flux-general-multi)
@@ -69,11 +69,11 @@ namespace Deepgram.Realtime
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
-        public ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ListenProvider1(
+        public DeepgramListenProviderV2(
             string model,
-            global::Deepgram.Realtime.ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ListenProvider1Type type,
-            global::Deepgram.Realtime.ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ListenProvider1Version? version,
-            global::Deepgram.Realtime.ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ListenProviderOneOf1LanguageHint? languageHint,
+            global::Deepgram.Realtime.DeepgramListenProviderV2Type type,
+            global::Deepgram.Realtime.DeepgramListenProviderV2Version? version,
+            global::Deepgram.Realtime.DeepgramListenProviderV2LanguageHint? languageHint,
             global::System.Collections.Generic.IList<string>? keyterms)
         {
             this.Type = type;
@@ -84,9 +84,9 @@ namespace Deepgram.Realtime
         }
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ListenProvider1" /> class.
+        /// Initializes a new instance of the <see cref="DeepgramListenProviderV2" /> class.
         /// </summary>
-        public ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ListenProvider1()
+        public DeepgramListenProviderV2()
         {
         }
 
