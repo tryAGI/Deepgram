@@ -6,21 +6,21 @@ namespace Deepgram.Realtime
     /// <summary>
     /// 
     /// </summary>
-    public sealed partial class ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ListenProvider0
+    public sealed partial class DeepgramListenProviderV1
     {
         /// <summary>
         /// Provider type for speech-to-text
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("type")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Deepgram.Realtime.JsonConverters.ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ListenProvider0TypeJsonConverter))]
-        public global::Deepgram.Realtime.ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ListenProvider0Type Type { get; set; }
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Deepgram.Realtime.JsonConverters.DeepgramListenProviderV1TypeJsonConverter))]
+        public global::Deepgram.Realtime.DeepgramListenProviderV1Type Type { get; set; }
 
         /// <summary>
         /// Specifies usage of the V1 Deepgram speech-to-text API
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("version")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Deepgram.Realtime.JsonConverters.ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ListenProvider0VersionJsonConverter))]
-        public global::Deepgram.Realtime.ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ListenProvider0Version? Version { get; set; }
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Deepgram.Realtime.JsonConverters.DeepgramListenProviderV1VersionJsonConverter))]
+        public global::Deepgram.Realtime.DeepgramListenProviderV1Version? Version { get; set; }
 
         /// <summary>
         /// Model to use for speech to text using the V1 API (e.g. Nova-3, Nova-2)
@@ -55,7 +55,7 @@ namespace Deepgram.Realtime
         public global::System.Collections.Generic.IDictionary<string, object> AdditionalProperties { get; set; } = new global::System.Collections.Generic.Dictionary<string, object>();
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ListenProvider0" /> class.
+        /// Initializes a new instance of the <see cref="DeepgramListenProviderV1" /> class.
         /// </summary>
         /// <param name="type">
         /// Provider type for speech-to-text
@@ -80,9 +80,9 @@ namespace Deepgram.Realtime
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
-        public ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ListenProvider0(
-            global::Deepgram.Realtime.ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ListenProvider0Type type,
-            global::Deepgram.Realtime.ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ListenProvider0Version? version,
+        public DeepgramListenProviderV1(
+            global::Deepgram.Realtime.DeepgramListenProviderV1Type type,
+            global::Deepgram.Realtime.DeepgramListenProviderV1Version? version,
             string? model,
             string? language,
             global::System.Collections.Generic.IList<string>? keyterms,
@@ -97,9 +97,9 @@ namespace Deepgram.Realtime
         }
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ListenProvider0" /> class.
+        /// Initializes a new instance of the <see cref="DeepgramListenProviderV1" /> class.
         /// </summary>
-        public ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ListenProvider0()
+        public DeepgramListenProviderV1()
         {
         }
 
