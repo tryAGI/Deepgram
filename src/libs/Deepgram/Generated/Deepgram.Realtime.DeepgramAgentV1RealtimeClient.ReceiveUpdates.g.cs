@@ -168,7 +168,7 @@ namespace Deepgram.Realtime
                     rawText,
                     json));
 
-            if (@event.AgentV1ReceiveFunctionCallResponse is { } __AgentV1ReceiveFunctionCallResponseReceived)
+            if (@event.AgentV1AgentV1ReceiveFunctionCallResponse is { } __AgentV1ReceiveFunctionCallResponseReceived)
             {
                 AgentV1ReceiveFunctionCallResponseReceived?.Invoke(
                     this,
@@ -177,7 +177,7 @@ namespace Deepgram.Realtime
                         rawText,
                         json));
             }
-            if (@event.AgentV1PromptUpdated is { } __AgentV1PromptUpdatedReceived)
+            if (@event.AgentV1AgentV1PromptUpdated is { } __AgentV1PromptUpdatedReceived)
             {
                 AgentV1PromptUpdatedReceived?.Invoke(
                     this,
@@ -186,7 +186,7 @@ namespace Deepgram.Realtime
                         rawText,
                         json));
             }
-            if (@event.AgentV1SpeakUpdated is { } __AgentV1SpeakUpdatedReceived)
+            if (@event.AgentV1AgentV1SpeakUpdated is { } __AgentV1SpeakUpdatedReceived)
             {
                 AgentV1SpeakUpdatedReceived?.Invoke(
                     this,
@@ -195,7 +195,7 @@ namespace Deepgram.Realtime
                         rawText,
                         json));
             }
-            if (@event.AgentV1ThinkUpdated is { } __AgentV1ThinkUpdatedReceived)
+            if (@event.AgentV1AgentV1ThinkUpdated is { } __AgentV1ThinkUpdatedReceived)
             {
                 AgentV1ThinkUpdatedReceived?.Invoke(
                     this,
@@ -204,7 +204,7 @@ namespace Deepgram.Realtime
                         rawText,
                         json));
             }
-            if (@event.AgentV1InjectionRefused is { } __AgentV1InjectionRefusedReceived)
+            if (@event.AgentV1AgentV1InjectionRefused is { } __AgentV1InjectionRefusedReceived)
             {
                 AgentV1InjectionRefusedReceived?.Invoke(
                     this,
@@ -213,7 +213,7 @@ namespace Deepgram.Realtime
                         rawText,
                         json));
             }
-            if (@event.AgentV1Welcome is { } __AgentV1WelcomeReceived)
+            if (@event.AgentV1AgentV1Welcome is { } __AgentV1WelcomeReceived)
             {
                 AgentV1WelcomeReceived?.Invoke(
                     this,
@@ -222,7 +222,7 @@ namespace Deepgram.Realtime
                         rawText,
                         json));
             }
-            if (@event.AgentV1SettingsApplied is { } __AgentV1SettingsAppliedReceived)
+            if (@event.AgentV1AgentV1SettingsApplied is { } __AgentV1SettingsAppliedReceived)
             {
                 AgentV1SettingsAppliedReceived?.Invoke(
                     this,
@@ -231,7 +231,7 @@ namespace Deepgram.Realtime
                         rawText,
                         json));
             }
-            if (@event.AgentV1ConversationText is { } __AgentV1ConversationTextReceived)
+            if (@event.AgentV1AgentV1ConversationText is { } __AgentV1ConversationTextReceived)
             {
                 AgentV1ConversationTextReceived?.Invoke(
                     this,
@@ -240,7 +240,7 @@ namespace Deepgram.Realtime
                         rawText,
                         json));
             }
-            if (@event.AgentV1UserStartedSpeaking is { } __AgentV1UserStartedSpeakingReceived)
+            if (@event.AgentV1AgentV1UserStartedSpeaking is { } __AgentV1UserStartedSpeakingReceived)
             {
                 AgentV1UserStartedSpeakingReceived?.Invoke(
                     this,
@@ -249,7 +249,7 @@ namespace Deepgram.Realtime
                         rawText,
                         json));
             }
-            if (@event.AgentV1AgentThinking is { } __AgentV1AgentThinkingReceived)
+            if (@event.AgentV1AgentV1AgentThinking is { } __AgentV1AgentThinkingReceived)
             {
                 AgentV1AgentThinkingReceived?.Invoke(
                     this,
@@ -258,7 +258,7 @@ namespace Deepgram.Realtime
                         rawText,
                         json));
             }
-            if (@event.AgentV1FunctionCallRequest is { } __AgentV1FunctionCallRequestReceived)
+            if (@event.AgentV1AgentV1FunctionCallRequest is { } __AgentV1FunctionCallRequestReceived)
             {
                 AgentV1FunctionCallRequestReceived?.Invoke(
                     this,
@@ -267,7 +267,7 @@ namespace Deepgram.Realtime
                         rawText,
                         json));
             }
-            if (@event.AgentV1AgentStartedSpeaking is { } __AgentV1AgentStartedSpeakingReceived)
+            if (@event.AgentV1AgentV1AgentStartedSpeaking is { } __AgentV1AgentStartedSpeakingReceived)
             {
                 AgentV1AgentStartedSpeakingReceived?.Invoke(
                     this,
@@ -276,7 +276,7 @@ namespace Deepgram.Realtime
                         rawText,
                         json));
             }
-            if (@event.AgentV1AgentAudioDone is { } __AgentV1AgentAudioDoneReceived)
+            if (@event.AgentV1AgentV1AgentAudioDone is { } __AgentV1AgentAudioDoneReceived)
             {
                 AgentV1AgentAudioDoneReceived?.Invoke(
                     this,
@@ -285,7 +285,7 @@ namespace Deepgram.Realtime
                         rawText,
                         json));
             }
-            if (@event.AgentV1Error is { } __AgentV1ErrorReceived)
+            if (@event.AgentV1AgentV1Error is { } __AgentV1ErrorReceived)
             {
                 AgentV1ErrorReceived?.Invoke(
                     this,
@@ -294,7 +294,7 @@ namespace Deepgram.Realtime
                         rawText,
                         json));
             }
-            if (@event.AgentV1Warning is { } __AgentV1WarningReceived)
+            if (@event.AgentV1AgentV1Warning is { } __AgentV1WarningReceived)
             {
                 AgentV1WarningReceived?.Invoke(
                     this,
@@ -303,7 +303,7 @@ namespace Deepgram.Realtime
                         rawText,
                         json));
             }
-            if (@event.AgentV1History is { } __AgentV1HistoryReceived)
+            if (@event.AgentV1AgentV1History is { } __AgentV1HistoryReceived)
             {
                 AgentV1HistoryReceived?.Invoke(
                     this,
@@ -312,7 +312,7 @@ namespace Deepgram.Realtime
                         rawText,
                         json));
             }
-            if (@event.AgentV1Audio is { } __AgentV1AudioReceived)
+            if (@event.AgentV1AgentV1Audio is { } __AgentV1AudioReceived)
             {
                 AgentV1AudioReceived?.Invoke(
                     this,
