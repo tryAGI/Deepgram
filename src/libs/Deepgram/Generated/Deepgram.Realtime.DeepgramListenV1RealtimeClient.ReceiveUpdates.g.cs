@@ -168,7 +168,7 @@ namespace Deepgram.Realtime
                     rawText,
                     json));
 
-            if (@event.ListenV1Results is { } __ListenV1ResultsReceived)
+            if (@event.ListenV1ListenV1Results is { } __ListenV1ResultsReceived)
             {
                 ListenV1ResultsReceived?.Invoke(
                     this,
@@ -177,7 +177,7 @@ namespace Deepgram.Realtime
                         rawText,
                         json));
             }
-            if (@event.ListenV1Metadata is { } __ListenV1MetadataReceived)
+            if (@event.ListenV1ListenV1Metadata is { } __ListenV1MetadataReceived)
             {
                 ListenV1MetadataReceived?.Invoke(
                     this,
@@ -186,7 +186,7 @@ namespace Deepgram.Realtime
                         rawText,
                         json));
             }
-            if (@event.ListenV1UtteranceEnd is { } __ListenV1UtteranceEndReceived)
+            if (@event.ListenV1ListenV1UtteranceEnd is { } __ListenV1UtteranceEndReceived)
             {
                 ListenV1UtteranceEndReceived?.Invoke(
                     this,
@@ -195,7 +195,7 @@ namespace Deepgram.Realtime
                         rawText,
                         json));
             }
-            if (@event.ListenV1SpeechStarted is { } __ListenV1SpeechStartedReceived)
+            if (@event.ListenV1ListenV1SpeechStarted is { } __ListenV1SpeechStartedReceived)
             {
                 ListenV1SpeechStartedReceived?.Invoke(
                     this,
