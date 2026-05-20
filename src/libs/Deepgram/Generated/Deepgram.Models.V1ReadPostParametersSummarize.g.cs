@@ -27,6 +27,26 @@ namespace Deepgram
         public bool IsV1ReadPostParametersSummarize0 => V1ReadPostParametersSummarize0 != null;
 
         /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickV1ReadPostParametersSummarize0(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Deepgram.V1ReadPostParametersSummarize0? value)
+        {
+            value = V1ReadPostParametersSummarize0;
+            return IsV1ReadPostParametersSummarize0;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Deepgram.V1ReadPostParametersSummarize0 PickV1ReadPostParametersSummarize0() => IsV1ReadPostParametersSummarize0
+            ? V1ReadPostParametersSummarize0!.Value
+            : throw new global::System.InvalidOperationException($"Expected union variant 'V1ReadPostParametersSummarize0' but the value was {ToString()}.");
+
+        /// <summary>
         /// Default Value: false
         /// </summary>
 #if NET6_0_OR_GREATER
@@ -42,6 +62,26 @@ namespace Deepgram
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(V1ReadPostParametersSummarizeVariant2))]
 #endif
         public bool IsV1ReadPostParametersSummarizeVariant2 => V1ReadPostParametersSummarizeVariant2 != null;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickV1ReadPostParametersSummarizeVariant2(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out bool? value)
+        {
+            value = V1ReadPostParametersSummarizeVariant2;
+            return IsV1ReadPostParametersSummarizeVariant2;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool PickV1ReadPostParametersSummarizeVariant2() => IsV1ReadPostParametersSummarizeVariant2
+            ? V1ReadPostParametersSummarizeVariant2!.Value
+            : throw new global::System.InvalidOperationException($"Expected union variant 'V1ReadPostParametersSummarizeVariant2' but the value was {ToString()}.");
         /// <summary>
         /// 
         /// </summary>
@@ -63,6 +103,11 @@ namespace Deepgram
         /// <summary>
         /// 
         /// </summary>
+        public static V1ReadPostParametersSummarize FromV1ReadPostParametersSummarize0(global::Deepgram.V1ReadPostParametersSummarize0? value) => new V1ReadPostParametersSummarize(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator V1ReadPostParametersSummarize(bool value) => new V1ReadPostParametersSummarize((bool?)value);
 
         /// <summary>
@@ -77,6 +122,11 @@ namespace Deepgram
         {
             V1ReadPostParametersSummarizeVariant2 = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static V1ReadPostParametersSummarize FromV1ReadPostParametersSummarizeVariant2(bool? value) => new V1ReadPostParametersSummarize(value);
 
         /// <summary>
         /// 
@@ -143,6 +193,30 @@ namespace Deepgram
         /// 
         /// </summary>
         public void Match(
+            global::System.Action<global::Deepgram.V1ReadPostParametersSummarize0?>? v1ReadPostParametersSummarize0 = null,
+
+            global::System.Action<bool?>? v1ReadPostParametersSummarizeVariant2 = null,
+            bool validate = true)
+        {
+            if (validate)
+            {
+                Validate();
+            }
+
+            if (IsV1ReadPostParametersSummarize0)
+            {
+                v1ReadPostParametersSummarize0?.Invoke(V1ReadPostParametersSummarize0!);
+            }
+            else if (IsV1ReadPostParametersSummarizeVariant2)
+            {
+                v1ReadPostParametersSummarizeVariant2?.Invoke(V1ReadPostParametersSummarizeVariant2!);
+            }
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public void Switch(
             global::System.Action<global::Deepgram.V1ReadPostParametersSummarize0?>? v1ReadPostParametersSummarize0 = null,
             global::System.Action<bool?>? v1ReadPostParametersSummarizeVariant2 = null,
             bool validate = true)

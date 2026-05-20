@@ -87,5 +87,6 @@ namespace Deepgram
         public AgentConfigurationV1()
         {
         }
+
     }
 }

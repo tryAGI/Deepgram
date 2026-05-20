@@ -29,6 +29,26 @@ namespace Deepgram
         /// <summary>
         /// 
         /// </summary>
+        public bool TryPickV1ReadPostParametersCustomTopicVariant1(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out string? value)
+        {
+            value = V1ReadPostParametersCustomTopicVariant1;
+            return IsV1ReadPostParametersCustomTopicVariant1;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public string PickV1ReadPostParametersCustomTopicVariant1() => IsV1ReadPostParametersCustomTopicVariant1
+            ? V1ReadPostParametersCustomTopicVariant1!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'V1ReadPostParametersCustomTopicVariant1' but the value was {ToString()}.");
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public global::System.Collections.Generic.IList<string>? V1ReadPostParametersCustomTopicVariant2 { get; init; }
 #else
@@ -42,6 +62,26 @@ namespace Deepgram
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(V1ReadPostParametersCustomTopicVariant2))]
 #endif
         public bool IsV1ReadPostParametersCustomTopicVariant2 => V1ReadPostParametersCustomTopicVariant2 != null;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickV1ReadPostParametersCustomTopicVariant2(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::System.Collections.Generic.IList<string>? value)
+        {
+            value = V1ReadPostParametersCustomTopicVariant2;
+            return IsV1ReadPostParametersCustomTopicVariant2;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::System.Collections.Generic.IList<string> PickV1ReadPostParametersCustomTopicVariant2() => IsV1ReadPostParametersCustomTopicVariant2
+            ? V1ReadPostParametersCustomTopicVariant2!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'V1ReadPostParametersCustomTopicVariant2' but the value was {ToString()}.");
         /// <summary>
         /// 
         /// </summary>
@@ -59,6 +99,11 @@ namespace Deepgram
         {
             V1ReadPostParametersCustomTopicVariant1 = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static V1ReadPostParametersCustomTopic FromV1ReadPostParametersCustomTopicVariant1(string? value) => new V1ReadPostParametersCustomTopic(value);
 
         /// <summary>
         /// 
@@ -100,8 +145,8 @@ namespace Deepgram
         /// 
         /// </summary>
         public TResult? Match<TResult>(
-            global::System.Func<string?, TResult>? v1ReadPostParametersCustomTopicVariant1 = null,
-            global::System.Func<global::System.Collections.Generic.IList<string>?, TResult>? v1ReadPostParametersCustomTopicVariant2 = null,
+            global::System.Func<string, TResult>? v1ReadPostParametersCustomTopicVariant1 = null,
+            global::System.Func<global::System.Collections.Generic.IList<string>, TResult>? v1ReadPostParametersCustomTopicVariant2 = null,
             bool validate = true)
         {
             if (validate)
@@ -125,8 +170,32 @@ namespace Deepgram
         /// 
         /// </summary>
         public void Match(
-            global::System.Action<string?>? v1ReadPostParametersCustomTopicVariant1 = null,
-            global::System.Action<global::System.Collections.Generic.IList<string>?>? v1ReadPostParametersCustomTopicVariant2 = null,
+            global::System.Action<string>? v1ReadPostParametersCustomTopicVariant1 = null,
+
+            global::System.Action<global::System.Collections.Generic.IList<string>>? v1ReadPostParametersCustomTopicVariant2 = null,
+            bool validate = true)
+        {
+            if (validate)
+            {
+                Validate();
+            }
+
+            if (IsV1ReadPostParametersCustomTopicVariant1)
+            {
+                v1ReadPostParametersCustomTopicVariant1?.Invoke(V1ReadPostParametersCustomTopicVariant1!);
+            }
+            else if (IsV1ReadPostParametersCustomTopicVariant2)
+            {
+                v1ReadPostParametersCustomTopicVariant2?.Invoke(V1ReadPostParametersCustomTopicVariant2!);
+            }
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public void Switch(
+            global::System.Action<string>? v1ReadPostParametersCustomTopicVariant1 = null,
+            global::System.Action<global::System.Collections.Generic.IList<string>>? v1ReadPostParametersCustomTopicVariant2 = null,
             bool validate = true)
         {
             if (validate)

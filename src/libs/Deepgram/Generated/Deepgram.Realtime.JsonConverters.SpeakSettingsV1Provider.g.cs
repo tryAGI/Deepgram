@@ -167,6 +167,7 @@ namespace Deepgram.Realtime.JsonConverters
             {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Deepgram.Realtime.DeepgramSpeakProvider), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Deepgram.Realtime.DeepgramSpeakProvider> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Deepgram.Realtime.DeepgramSpeakProvider).Name}");
                     deepgramSpeakProvider = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
@@ -177,9 +178,13 @@ namespace Deepgram.Realtime.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (deepgramSpeakProvider == null && elevenLabsSpeakProvider == null && cartesiaSpeakProvider == null && openAiSpeakProvider == null && awsPollySpeakProvider == null)
+            {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Deepgram.Realtime.ElevenLabsSpeakProvider), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Deepgram.Realtime.ElevenLabsSpeakProvider> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Deepgram.Realtime.ElevenLabsSpeakProvider).Name}");
                     elevenLabsSpeakProvider = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
@@ -190,9 +195,13 @@ namespace Deepgram.Realtime.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (deepgramSpeakProvider == null && elevenLabsSpeakProvider == null && cartesiaSpeakProvider == null && openAiSpeakProvider == null && awsPollySpeakProvider == null)
+            {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Deepgram.Realtime.CartesiaSpeakProvider), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Deepgram.Realtime.CartesiaSpeakProvider> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Deepgram.Realtime.CartesiaSpeakProvider).Name}");
                     cartesiaSpeakProvider = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
@@ -203,9 +212,13 @@ namespace Deepgram.Realtime.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (deepgramSpeakProvider == null && elevenLabsSpeakProvider == null && cartesiaSpeakProvider == null && openAiSpeakProvider == null && awsPollySpeakProvider == null)
+            {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Deepgram.Realtime.OpenAiSpeakProvider), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Deepgram.Realtime.OpenAiSpeakProvider> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Deepgram.Realtime.OpenAiSpeakProvider).Name}");
                     openAiSpeakProvider = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
@@ -216,9 +229,13 @@ namespace Deepgram.Realtime.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (deepgramSpeakProvider == null && elevenLabsSpeakProvider == null && cartesiaSpeakProvider == null && openAiSpeakProvider == null && awsPollySpeakProvider == null)
+            {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Deepgram.Realtime.AwsPollySpeakProvider), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Deepgram.Realtime.AwsPollySpeakProvider> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Deepgram.Realtime.AwsPollySpeakProvider).Name}");
                     awsPollySpeakProvider = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);

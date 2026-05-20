@@ -93,5 +93,6 @@ namespace Deepgram
         public GetModelV1Response1()
         {
         }
+
     }
 }

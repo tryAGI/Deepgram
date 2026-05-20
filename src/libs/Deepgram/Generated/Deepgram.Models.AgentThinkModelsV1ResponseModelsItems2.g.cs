@@ -67,5 +67,6 @@ namespace Deepgram
         public AgentThinkModelsV1ResponseModelsItems2()
         {
         }
+
     }
 }

@@ -284,31 +284,31 @@ namespace Deepgram.Realtime
         /// <summary>
         /// 
         /// </summary>
-        public global::Deepgram.Realtime.ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ListenProvider0? Type64 { get; set; }
+        public global::Deepgram.Realtime.DeepgramListenProviderV1? Type64 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Deepgram.Realtime.ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ListenProvider0Type? Type65 { get; set; }
+        public global::Deepgram.Realtime.DeepgramListenProviderV1Type? Type65 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Deepgram.Realtime.ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ListenProvider0Version? Type66 { get; set; }
+        public global::Deepgram.Realtime.DeepgramListenProviderV1Version? Type66 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Deepgram.Realtime.ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ListenProviderOneOf1LanguageHint? Type67 { get; set; }
+        public global::Deepgram.Realtime.DeepgramListenProviderV2LanguageHint? Type67 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Deepgram.Realtime.ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ListenProvider1? Type68 { get; set; }
+        public global::Deepgram.Realtime.DeepgramListenProviderV2? Type68 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Deepgram.Realtime.ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ListenProvider1Type? Type69 { get; set; }
+        public global::Deepgram.Realtime.DeepgramListenProviderV2Type? Type69 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Deepgram.Realtime.ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ListenProvider1Version? Type70 { get; set; }
+        public global::Deepgram.Realtime.DeepgramListenProviderV2Version? Type70 { get; set; }
         /// <summary>
         /// 
         /// </summary>

@@ -39,5 +39,6 @@ namespace Deepgram
         public SharedTopics()
         {
         }
+
     }
 }

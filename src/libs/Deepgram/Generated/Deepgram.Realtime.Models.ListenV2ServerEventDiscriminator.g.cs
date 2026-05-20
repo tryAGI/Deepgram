@@ -40,5 +40,6 @@ namespace Deepgram.Realtime
         public ListenV2ServerEventDiscriminator()
         {
         }
+
     }
 }

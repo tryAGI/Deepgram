@@ -48,5 +48,6 @@ namespace Deepgram
         public ListenV1ResponseResultsChannelsItemsSearchItems()
         {
         }
+
     }
 }

@@ -53,5 +53,6 @@ namespace Deepgram
         public GrantV1Response()
         {
         }
+
     }
 }

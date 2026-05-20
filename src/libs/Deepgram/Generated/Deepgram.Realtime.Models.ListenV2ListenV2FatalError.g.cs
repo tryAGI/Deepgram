@@ -82,5 +82,6 @@ namespace Deepgram.Realtime
         public ListenV2ListenV2FatalError()
         {
         }
+
     }
 }

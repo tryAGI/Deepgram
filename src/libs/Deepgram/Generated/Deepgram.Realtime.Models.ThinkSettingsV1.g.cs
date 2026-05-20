@@ -82,5 +82,6 @@ namespace Deepgram.Realtime
         public ThinkSettingsV1()
         {
         }
+
     }
 }

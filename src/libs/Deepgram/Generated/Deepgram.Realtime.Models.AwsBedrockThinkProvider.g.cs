@@ -75,5 +75,6 @@ namespace Deepgram.Realtime
         public AwsBedrockThinkProvider()
         {
         }
+
     }
 }

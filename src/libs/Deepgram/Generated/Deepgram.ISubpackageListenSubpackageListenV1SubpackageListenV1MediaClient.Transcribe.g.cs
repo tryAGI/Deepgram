@@ -39,6 +39,7 @@ namespace Deepgram
         /// <param name="diarize">
         /// Default Value: false
         /// </param>
+        /// <param name="diarizeModel"></param>
         /// <param name="dictation">
         /// Default Value: false
         /// </param>
@@ -108,6 +109,7 @@ namespace Deepgram
             bool? detectEntities = default,
             global::Deepgram.V1ListenPostParametersDetectLanguage? detectLanguage = default,
             bool? diarize = default,
+            global::Deepgram.V1ListenPostParametersDiarizeModel? diarizeModel = default,
             bool? dictation = default,
             global::Deepgram.V1ListenPostParametersEncoding? encoding = default,
             bool? fillerWords = default,
@@ -166,6 +168,7 @@ namespace Deepgram
         /// <param name="diarize">
         /// Default Value: false
         /// </param>
+        /// <param name="diarizeModel"></param>
         /// <param name="dictation">
         /// Default Value: false
         /// </param>
@@ -235,6 +238,7 @@ namespace Deepgram
             bool? detectEntities = default,
             global::Deepgram.V1ListenPostParametersDetectLanguage? detectLanguage = default,
             bool? diarize = default,
+            global::Deepgram.V1ListenPostParametersDiarizeModel? diarizeModel = default,
             bool? dictation = default,
             global::Deepgram.V1ListenPostParametersEncoding? encoding = default,
             bool? fillerWords = default,
@@ -293,6 +297,7 @@ namespace Deepgram
         /// <param name="diarize">
         /// Default Value: false
         /// </param>
+        /// <param name="diarizeModel"></param>
         /// <param name="dictation">
         /// Default Value: false
         /// </param>
@@ -361,6 +366,7 @@ namespace Deepgram
             bool? detectEntities = default,
             global::Deepgram.V1ListenPostParametersDetectLanguage? detectLanguage = default,
             bool? diarize = default,
+            global::Deepgram.V1ListenPostParametersDiarizeModel? diarizeModel = default,
             bool? dictation = default,
             global::Deepgram.V1ListenPostParametersEncoding? encoding = default,
             bool? fillerWords = default,

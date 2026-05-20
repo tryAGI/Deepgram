@@ -51,5 +51,6 @@ namespace Deepgram.Realtime
         public SpeakSettingsV1Endpoint()
         {
         }
+
     }
 }

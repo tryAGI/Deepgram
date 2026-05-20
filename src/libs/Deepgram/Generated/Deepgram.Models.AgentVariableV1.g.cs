@@ -88,5 +88,6 @@ namespace Deepgram
         public AgentVariableV1()
         {
         }
+
     }
 }

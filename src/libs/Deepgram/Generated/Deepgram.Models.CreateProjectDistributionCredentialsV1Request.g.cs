@@ -41,5 +41,6 @@ namespace Deepgram
         public CreateProjectDistributionCredentialsV1Request()
         {
         }
+
     }
 }

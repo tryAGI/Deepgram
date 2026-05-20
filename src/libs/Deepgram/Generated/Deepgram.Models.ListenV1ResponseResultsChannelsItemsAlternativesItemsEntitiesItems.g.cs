@@ -84,5 +84,6 @@ namespace Deepgram
         public ListenV1ResponseResultsChannelsItemsAlternativesItemsEntitiesItems()
         {
         }
+
     }
 }

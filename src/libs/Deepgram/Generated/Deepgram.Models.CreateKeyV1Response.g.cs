@@ -96,5 +96,6 @@ namespace Deepgram
         public CreateKeyV1Response()
         {
         }
+
     }
 }

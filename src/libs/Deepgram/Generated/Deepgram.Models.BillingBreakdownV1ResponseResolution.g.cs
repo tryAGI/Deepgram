@@ -54,5 +54,6 @@ namespace Deepgram
         public BillingBreakdownV1ResponseResolution()
         {
         }
+
     }
 }

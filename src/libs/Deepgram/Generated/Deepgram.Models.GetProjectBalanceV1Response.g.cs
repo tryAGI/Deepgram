@@ -76,5 +76,6 @@ namespace Deepgram
         public GetProjectBalanceV1Response()
         {
         }
+
     }
 }

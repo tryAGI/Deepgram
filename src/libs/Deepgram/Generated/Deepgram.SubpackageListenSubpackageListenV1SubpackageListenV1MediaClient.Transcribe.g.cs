@@ -55,6 +55,7 @@ namespace Deepgram
             ref bool? detectEntities,
             ref global::Deepgram.V1ListenPostParametersDetectLanguage? detectLanguage,
             ref bool? diarize,
+            ref global::Deepgram.V1ListenPostParametersDiarizeModel? diarizeModel,
             ref bool? dictation,
             ref global::Deepgram.V1ListenPostParametersEncoding? encoding,
             ref bool? fillerWords,
@@ -95,6 +96,7 @@ namespace Deepgram
             bool? detectEntities,
             global::Deepgram.V1ListenPostParametersDetectLanguage? detectLanguage,
             bool? diarize,
+            global::Deepgram.V1ListenPostParametersDiarizeModel? diarizeModel,
             bool? dictation,
             global::Deepgram.V1ListenPostParametersEncoding? encoding,
             bool? fillerWords,
@@ -161,6 +163,7 @@ namespace Deepgram
         /// <param name="diarize">
         /// Default Value: false
         /// </param>
+        /// <param name="diarizeModel"></param>
         /// <param name="dictation">
         /// Default Value: false
         /// </param>
@@ -230,6 +233,7 @@ namespace Deepgram
             bool? detectEntities = default,
             global::Deepgram.V1ListenPostParametersDetectLanguage? detectLanguage = default,
             bool? diarize = default,
+            global::Deepgram.V1ListenPostParametersDiarizeModel? diarizeModel = default,
             bool? dictation = default,
             global::Deepgram.V1ListenPostParametersEncoding? encoding = default,
             bool? fillerWords = default,
@@ -272,6 +276,7 @@ namespace Deepgram
                 detectEntities: detectEntities,
                 detectLanguage: detectLanguage,
                 diarize: diarize,
+                diarizeModel: diarizeModel,
                 dictation: dictation,
                 encoding: encoding,
                 fillerWords: fillerWords,
@@ -334,6 +339,7 @@ namespace Deepgram
         /// <param name="diarize">
         /// Default Value: false
         /// </param>
+        /// <param name="diarizeModel"></param>
         /// <param name="dictation">
         /// Default Value: false
         /// </param>
@@ -403,6 +409,7 @@ namespace Deepgram
             bool? detectEntities = default,
             global::Deepgram.V1ListenPostParametersDetectLanguage? detectLanguage = default,
             bool? diarize = default,
+            global::Deepgram.V1ListenPostParametersDiarizeModel? diarizeModel = default,
             bool? dictation = default,
             global::Deepgram.V1ListenPostParametersEncoding? encoding = default,
             bool? fillerWords = default,
@@ -448,6 +455,7 @@ namespace Deepgram
                 detectEntities: ref detectEntities,
                 detectLanguage: ref detectLanguage,
                 diarize: ref diarize,
+                diarizeModel: ref diarizeModel,
                 dictation: ref dictation,
                 encoding: ref encoding,
                 fillerWords: ref fillerWords,
@@ -515,6 +523,7 @@ namespace Deepgram
                                 .AddOptionalParameter("detect_entities", detectEntities?.ToString().ToLowerInvariant())
                                 .AddOptionalParameter("detect_language", detectLanguage?.ToString())
                                 .AddOptionalParameter("diarize", diarize?.ToString().ToLowerInvariant())
+                                .AddOptionalParameter("diarize_model", diarizeModel?.ToValueString())
                                 .AddOptionalParameter("dictation", dictation?.ToString().ToLowerInvariant())
                                 .AddOptionalParameter("encoding", encoding?.ToValueString())
                                 .AddOptionalParameter("filler_words", fillerWords?.ToString().ToLowerInvariant())
@@ -598,6 +607,7 @@ namespace Deepgram
                     detectEntities: detectEntities,
                     detectLanguage: detectLanguage,
                     diarize: diarize,
+                    diarizeModel: diarizeModel,
                     dictation: dictation,
                     encoding: encoding,
                     fillerWords: fillerWords,
@@ -971,6 +981,7 @@ namespace Deepgram
         /// <param name="diarize">
         /// Default Value: false
         /// </param>
+        /// <param name="diarizeModel"></param>
         /// <param name="dictation">
         /// Default Value: false
         /// </param>
@@ -1039,6 +1050,7 @@ namespace Deepgram
             bool? detectEntities = default,
             global::Deepgram.V1ListenPostParametersDetectLanguage? detectLanguage = default,
             bool? diarize = default,
+            global::Deepgram.V1ListenPostParametersDiarizeModel? diarizeModel = default,
             bool? dictation = default,
             global::Deepgram.V1ListenPostParametersEncoding? encoding = default,
             bool? fillerWords = default,
@@ -1084,6 +1096,7 @@ namespace Deepgram
                 detectEntities: detectEntities,
                 detectLanguage: detectLanguage,
                 diarize: diarize,
+                diarizeModel: diarizeModel,
                 dictation: dictation,
                 encoding: encoding,
                 fillerWords: fillerWords,

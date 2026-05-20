@@ -54,5 +54,6 @@ namespace Deepgram.Realtime
         public AgentV1AgentV1FunctionCallRequest()
         {
         }
+
     }
 }

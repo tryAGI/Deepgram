@@ -108,7 +108,10 @@ namespace Deepgram.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (v1ListenPostParametersCustomIntentVariant1 == null && v1ListenPostParametersCustomIntentVariant2 == null)
+            {
                 try
                 {
 

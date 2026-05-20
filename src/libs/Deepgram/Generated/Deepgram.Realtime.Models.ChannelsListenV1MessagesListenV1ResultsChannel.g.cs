@@ -40,5 +40,6 @@ namespace Deepgram.Realtime
         public ChannelsListenV1MessagesListenV1ResultsChannel()
         {
         }
+
     }
 }

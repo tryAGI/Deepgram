@@ -39,5 +39,6 @@ namespace Deepgram
         public GetProjectKeyV1Response()
         {
         }
+
     }
 }

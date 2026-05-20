@@ -41,5 +41,6 @@ namespace Deepgram
         public DeleteProjectInviteV1Response()
         {
         }
+
     }
 }

@@ -29,6 +29,26 @@ namespace Deepgram.Realtime
         /// <summary>
         /// 
         /// </summary>
+        public bool TryPickSpeakV1SpeakV1Audio(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out byte[]? value)
+        {
+            value = SpeakV1SpeakV1Audio;
+            return IsSpeakV1SpeakV1Audio;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public byte[] PickSpeakV1SpeakV1Audio() => IsSpeakV1SpeakV1Audio
+            ? SpeakV1SpeakV1Audio!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'SpeakV1SpeakV1Audio' but the value was {ToString()}.");
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public global::Deepgram.Realtime.SpeakV1SpeakV1Metadata? SpeakV1SpeakV1Metadata { get; init; }
 #else
@@ -42,6 +62,26 @@ namespace Deepgram.Realtime
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(SpeakV1SpeakV1Metadata))]
 #endif
         public bool IsSpeakV1SpeakV1Metadata => SpeakV1SpeakV1Metadata != null;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickSpeakV1SpeakV1Metadata(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Deepgram.Realtime.SpeakV1SpeakV1Metadata? value)
+        {
+            value = SpeakV1SpeakV1Metadata;
+            return IsSpeakV1SpeakV1Metadata;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Deepgram.Realtime.SpeakV1SpeakV1Metadata PickSpeakV1SpeakV1Metadata() => IsSpeakV1SpeakV1Metadata
+            ? SpeakV1SpeakV1Metadata!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'SpeakV1SpeakV1Metadata' but the value was {ToString()}.");
 
         /// <summary>
         /// 
@@ -63,6 +103,26 @@ namespace Deepgram.Realtime
         /// <summary>
         /// 
         /// </summary>
+        public bool TryPickSpeakV1SpeakV1Flushed(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Deepgram.Realtime.SpeakV1SpeakV1Flushed? value)
+        {
+            value = SpeakV1SpeakV1Flushed;
+            return IsSpeakV1SpeakV1Flushed;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Deepgram.Realtime.SpeakV1SpeakV1Flushed PickSpeakV1SpeakV1Flushed() => IsSpeakV1SpeakV1Flushed
+            ? SpeakV1SpeakV1Flushed!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'SpeakV1SpeakV1Flushed' but the value was {ToString()}.");
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public global::Deepgram.Realtime.SpeakV1SpeakV1Cleared? SpeakV1SpeakV1Cleared { get; init; }
 #else
@@ -80,6 +140,26 @@ namespace Deepgram.Realtime
         /// <summary>
         /// 
         /// </summary>
+        public bool TryPickSpeakV1SpeakV1Cleared(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Deepgram.Realtime.SpeakV1SpeakV1Cleared? value)
+        {
+            value = SpeakV1SpeakV1Cleared;
+            return IsSpeakV1SpeakV1Cleared;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Deepgram.Realtime.SpeakV1SpeakV1Cleared PickSpeakV1SpeakV1Cleared() => IsSpeakV1SpeakV1Cleared
+            ? SpeakV1SpeakV1Cleared!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'SpeakV1SpeakV1Cleared' but the value was {ToString()}.");
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public global::Deepgram.Realtime.SpeakV1SpeakV1Warning? SpeakV1SpeakV1Warning { get; init; }
 #else
@@ -93,6 +173,26 @@ namespace Deepgram.Realtime
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(SpeakV1SpeakV1Warning))]
 #endif
         public bool IsSpeakV1SpeakV1Warning => SpeakV1SpeakV1Warning != null;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickSpeakV1SpeakV1Warning(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Deepgram.Realtime.SpeakV1SpeakV1Warning? value)
+        {
+            value = SpeakV1SpeakV1Warning;
+            return IsSpeakV1SpeakV1Warning;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Deepgram.Realtime.SpeakV1SpeakV1Warning PickSpeakV1SpeakV1Warning() => IsSpeakV1SpeakV1Warning
+            ? SpeakV1SpeakV1Warning!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'SpeakV1SpeakV1Warning' but the value was {ToString()}.");
         /// <summary>
         /// 
         /// </summary>
@@ -110,6 +210,11 @@ namespace Deepgram.Realtime
         {
             SpeakV1SpeakV1Audio = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static SpeakV1ServerEvent FromSpeakV1SpeakV1Audio(byte[]? value) => new SpeakV1ServerEvent(value);
 
         /// <summary>
         /// 
@@ -132,6 +237,11 @@ namespace Deepgram.Realtime
         /// <summary>
         /// 
         /// </summary>
+        public static SpeakV1ServerEvent FromSpeakV1SpeakV1Metadata(global::Deepgram.Realtime.SpeakV1SpeakV1Metadata? value) => new SpeakV1ServerEvent(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator SpeakV1ServerEvent(global::Deepgram.Realtime.SpeakV1SpeakV1Flushed value) => new SpeakV1ServerEvent((global::Deepgram.Realtime.SpeakV1SpeakV1Flushed?)value);
 
         /// <summary>
@@ -146,6 +256,11 @@ namespace Deepgram.Realtime
         {
             SpeakV1SpeakV1Flushed = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static SpeakV1ServerEvent FromSpeakV1SpeakV1Flushed(global::Deepgram.Realtime.SpeakV1SpeakV1Flushed? value) => new SpeakV1ServerEvent(value);
 
         /// <summary>
         /// 
@@ -168,6 +283,11 @@ namespace Deepgram.Realtime
         /// <summary>
         /// 
         /// </summary>
+        public static SpeakV1ServerEvent FromSpeakV1SpeakV1Cleared(global::Deepgram.Realtime.SpeakV1SpeakV1Cleared? value) => new SpeakV1ServerEvent(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator SpeakV1ServerEvent(global::Deepgram.Realtime.SpeakV1SpeakV1Warning value) => new SpeakV1ServerEvent((global::Deepgram.Realtime.SpeakV1SpeakV1Warning?)value);
 
         /// <summary>
@@ -182,6 +302,11 @@ namespace Deepgram.Realtime
         {
             SpeakV1SpeakV1Warning = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static SpeakV1ServerEvent FromSpeakV1SpeakV1Warning(global::Deepgram.Realtime.SpeakV1SpeakV1Warning? value) => new SpeakV1ServerEvent(value);
 
         /// <summary>
         /// 
@@ -235,11 +360,11 @@ namespace Deepgram.Realtime
         /// 
         /// </summary>
         public TResult? Match<TResult>(
-            global::System.Func<byte[]?, TResult>? speakV1SpeakV1Audio = null,
-            global::System.Func<global::Deepgram.Realtime.SpeakV1SpeakV1Metadata?, TResult>? speakV1SpeakV1Metadata = null,
-            global::System.Func<global::Deepgram.Realtime.SpeakV1SpeakV1Flushed?, TResult>? speakV1SpeakV1Flushed = null,
-            global::System.Func<global::Deepgram.Realtime.SpeakV1SpeakV1Cleared?, TResult>? speakV1SpeakV1Cleared = null,
-            global::System.Func<global::Deepgram.Realtime.SpeakV1SpeakV1Warning?, TResult>? speakV1SpeakV1Warning = null,
+            global::System.Func<byte[], TResult>? speakV1SpeakV1Audio = null,
+            global::System.Func<global::Deepgram.Realtime.SpeakV1SpeakV1Metadata, TResult>? speakV1SpeakV1Metadata = null,
+            global::System.Func<global::Deepgram.Realtime.SpeakV1SpeakV1Flushed, TResult>? speakV1SpeakV1Flushed = null,
+            global::System.Func<global::Deepgram.Realtime.SpeakV1SpeakV1Cleared, TResult>? speakV1SpeakV1Cleared = null,
+            global::System.Func<global::Deepgram.Realtime.SpeakV1SpeakV1Warning, TResult>? speakV1SpeakV1Warning = null,
             bool validate = true)
         {
             if (validate)
@@ -275,11 +400,53 @@ namespace Deepgram.Realtime
         /// 
         /// </summary>
         public void Match(
-            global::System.Action<byte[]?>? speakV1SpeakV1Audio = null,
-            global::System.Action<global::Deepgram.Realtime.SpeakV1SpeakV1Metadata?>? speakV1SpeakV1Metadata = null,
-            global::System.Action<global::Deepgram.Realtime.SpeakV1SpeakV1Flushed?>? speakV1SpeakV1Flushed = null,
-            global::System.Action<global::Deepgram.Realtime.SpeakV1SpeakV1Cleared?>? speakV1SpeakV1Cleared = null,
-            global::System.Action<global::Deepgram.Realtime.SpeakV1SpeakV1Warning?>? speakV1SpeakV1Warning = null,
+            global::System.Action<byte[]>? speakV1SpeakV1Audio = null,
+
+            global::System.Action<global::Deepgram.Realtime.SpeakV1SpeakV1Metadata>? speakV1SpeakV1Metadata = null,
+
+            global::System.Action<global::Deepgram.Realtime.SpeakV1SpeakV1Flushed>? speakV1SpeakV1Flushed = null,
+
+            global::System.Action<global::Deepgram.Realtime.SpeakV1SpeakV1Cleared>? speakV1SpeakV1Cleared = null,
+
+            global::System.Action<global::Deepgram.Realtime.SpeakV1SpeakV1Warning>? speakV1SpeakV1Warning = null,
+            bool validate = true)
+        {
+            if (validate)
+            {
+                Validate();
+            }
+
+            if (IsSpeakV1SpeakV1Audio)
+            {
+                speakV1SpeakV1Audio?.Invoke(SpeakV1SpeakV1Audio!);
+            }
+            else if (IsSpeakV1SpeakV1Metadata)
+            {
+                speakV1SpeakV1Metadata?.Invoke(SpeakV1SpeakV1Metadata!);
+            }
+            else if (IsSpeakV1SpeakV1Flushed)
+            {
+                speakV1SpeakV1Flushed?.Invoke(SpeakV1SpeakV1Flushed!);
+            }
+            else if (IsSpeakV1SpeakV1Cleared)
+            {
+                speakV1SpeakV1Cleared?.Invoke(SpeakV1SpeakV1Cleared!);
+            }
+            else if (IsSpeakV1SpeakV1Warning)
+            {
+                speakV1SpeakV1Warning?.Invoke(SpeakV1SpeakV1Warning!);
+            }
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public void Switch(
+            global::System.Action<byte[]>? speakV1SpeakV1Audio = null,
+            global::System.Action<global::Deepgram.Realtime.SpeakV1SpeakV1Metadata>? speakV1SpeakV1Metadata = null,
+            global::System.Action<global::Deepgram.Realtime.SpeakV1SpeakV1Flushed>? speakV1SpeakV1Flushed = null,
+            global::System.Action<global::Deepgram.Realtime.SpeakV1SpeakV1Cleared>? speakV1SpeakV1Cleared = null,
+            global::System.Action<global::Deepgram.Realtime.SpeakV1SpeakV1Warning>? speakV1SpeakV1Warning = null,
             bool validate = true)
         {
             if (validate)

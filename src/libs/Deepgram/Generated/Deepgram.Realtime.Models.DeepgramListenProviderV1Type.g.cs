@@ -6,7 +6,7 @@ namespace Deepgram.Realtime
     /// <summary>
     /// Provider type for speech-to-text
     /// </summary>
-    public enum ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ListenProvider1Type
+    public enum DeepgramListenProviderV1Type
     {
         /// <summary>
         /// 
@@ -17,27 +17,27 @@ namespace Deepgram.Realtime
     /// <summary>
     /// Enum extensions to do fast conversions without the reflection.
     /// </summary>
-    public static class ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ListenProvider1TypeExtensions
+    public static class DeepgramListenProviderV1TypeExtensions
     {
         /// <summary>
         /// Converts an enum to a string.
         /// </summary>
-        public static string ToValueString(this ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ListenProvider1Type value)
+        public static string ToValueString(this DeepgramListenProviderV1Type value)
         {
             return value switch
             {
-                ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ListenProvider1Type.Deepgram => "deepgram",
+                DeepgramListenProviderV1Type.Deepgram => "deepgram",
                 _ => throw new global::System.ArgumentOutOfRangeException(nameof(value), value, null),
             };
         }
         /// <summary>
         /// Converts an string to a enum.
         /// </summary>
-        public static ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ListenProvider1Type? ToEnum(string value)
+        public static DeepgramListenProviderV1Type? ToEnum(string value)
         {
             return value switch
             {
-                "deepgram" => ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ListenProvider1Type.Deepgram,
+                "deepgram" => DeepgramListenProviderV1Type.Deepgram,
                 _ => null,
             };
         }

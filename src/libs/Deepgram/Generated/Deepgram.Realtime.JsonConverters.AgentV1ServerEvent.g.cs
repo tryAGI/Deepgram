@@ -377,6 +377,7 @@ namespace Deepgram.Realtime.JsonConverters
             {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Deepgram.Realtime.AgentV1AgentV1ReceiveFunctionCallResponse), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Deepgram.Realtime.AgentV1AgentV1ReceiveFunctionCallResponse> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Deepgram.Realtime.AgentV1AgentV1ReceiveFunctionCallResponse).Name}");
                     agentV1AgentV1ReceiveFunctionCallResponse = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
@@ -387,9 +388,13 @@ namespace Deepgram.Realtime.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (agentV1AgentV1ReceiveFunctionCallResponse == null && agentV1AgentV1PromptUpdated == null && agentV1AgentV1SpeakUpdated == null && agentV1AgentV1ThinkUpdated == null && agentV1AgentV1InjectionRefused == null && agentV1AgentV1Welcome == null && agentV1AgentV1SettingsApplied == null && agentV1AgentV1ConversationText == null && agentV1AgentV1UserStartedSpeaking == null && agentV1AgentV1AgentThinking == null && agentV1AgentV1FunctionCallRequest == null && agentV1AgentV1AgentStartedSpeaking == null && agentV1AgentV1AgentAudioDone == null && agentV1AgentV1Error == null && agentV1AgentV1Warning == null && agentV1AgentV1History == null && agentV1AgentV1Audio == null)
+            {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Deepgram.Realtime.AgentV1AgentV1PromptUpdated), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Deepgram.Realtime.AgentV1AgentV1PromptUpdated> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Deepgram.Realtime.AgentV1AgentV1PromptUpdated).Name}");
                     agentV1AgentV1PromptUpdated = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
@@ -400,9 +405,13 @@ namespace Deepgram.Realtime.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (agentV1AgentV1ReceiveFunctionCallResponse == null && agentV1AgentV1PromptUpdated == null && agentV1AgentV1SpeakUpdated == null && agentV1AgentV1ThinkUpdated == null && agentV1AgentV1InjectionRefused == null && agentV1AgentV1Welcome == null && agentV1AgentV1SettingsApplied == null && agentV1AgentV1ConversationText == null && agentV1AgentV1UserStartedSpeaking == null && agentV1AgentV1AgentThinking == null && agentV1AgentV1FunctionCallRequest == null && agentV1AgentV1AgentStartedSpeaking == null && agentV1AgentV1AgentAudioDone == null && agentV1AgentV1Error == null && agentV1AgentV1Warning == null && agentV1AgentV1History == null && agentV1AgentV1Audio == null)
+            {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Deepgram.Realtime.AgentV1AgentV1SpeakUpdated), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Deepgram.Realtime.AgentV1AgentV1SpeakUpdated> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Deepgram.Realtime.AgentV1AgentV1SpeakUpdated).Name}");
                     agentV1AgentV1SpeakUpdated = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
@@ -413,9 +422,13 @@ namespace Deepgram.Realtime.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (agentV1AgentV1ReceiveFunctionCallResponse == null && agentV1AgentV1PromptUpdated == null && agentV1AgentV1SpeakUpdated == null && agentV1AgentV1ThinkUpdated == null && agentV1AgentV1InjectionRefused == null && agentV1AgentV1Welcome == null && agentV1AgentV1SettingsApplied == null && agentV1AgentV1ConversationText == null && agentV1AgentV1UserStartedSpeaking == null && agentV1AgentV1AgentThinking == null && agentV1AgentV1FunctionCallRequest == null && agentV1AgentV1AgentStartedSpeaking == null && agentV1AgentV1AgentAudioDone == null && agentV1AgentV1Error == null && agentV1AgentV1Warning == null && agentV1AgentV1History == null && agentV1AgentV1Audio == null)
+            {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Deepgram.Realtime.AgentV1AgentV1ThinkUpdated), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Deepgram.Realtime.AgentV1AgentV1ThinkUpdated> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Deepgram.Realtime.AgentV1AgentV1ThinkUpdated).Name}");
                     agentV1AgentV1ThinkUpdated = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
@@ -426,9 +439,13 @@ namespace Deepgram.Realtime.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (agentV1AgentV1ReceiveFunctionCallResponse == null && agentV1AgentV1PromptUpdated == null && agentV1AgentV1SpeakUpdated == null && agentV1AgentV1ThinkUpdated == null && agentV1AgentV1InjectionRefused == null && agentV1AgentV1Welcome == null && agentV1AgentV1SettingsApplied == null && agentV1AgentV1ConversationText == null && agentV1AgentV1UserStartedSpeaking == null && agentV1AgentV1AgentThinking == null && agentV1AgentV1FunctionCallRequest == null && agentV1AgentV1AgentStartedSpeaking == null && agentV1AgentV1AgentAudioDone == null && agentV1AgentV1Error == null && agentV1AgentV1Warning == null && agentV1AgentV1History == null && agentV1AgentV1Audio == null)
+            {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Deepgram.Realtime.AgentV1AgentV1InjectionRefused), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Deepgram.Realtime.AgentV1AgentV1InjectionRefused> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Deepgram.Realtime.AgentV1AgentV1InjectionRefused).Name}");
                     agentV1AgentV1InjectionRefused = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
@@ -439,9 +456,13 @@ namespace Deepgram.Realtime.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (agentV1AgentV1ReceiveFunctionCallResponse == null && agentV1AgentV1PromptUpdated == null && agentV1AgentV1SpeakUpdated == null && agentV1AgentV1ThinkUpdated == null && agentV1AgentV1InjectionRefused == null && agentV1AgentV1Welcome == null && agentV1AgentV1SettingsApplied == null && agentV1AgentV1ConversationText == null && agentV1AgentV1UserStartedSpeaking == null && agentV1AgentV1AgentThinking == null && agentV1AgentV1FunctionCallRequest == null && agentV1AgentV1AgentStartedSpeaking == null && agentV1AgentV1AgentAudioDone == null && agentV1AgentV1Error == null && agentV1AgentV1Warning == null && agentV1AgentV1History == null && agentV1AgentV1Audio == null)
+            {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Deepgram.Realtime.AgentV1AgentV1Welcome), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Deepgram.Realtime.AgentV1AgentV1Welcome> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Deepgram.Realtime.AgentV1AgentV1Welcome).Name}");
                     agentV1AgentV1Welcome = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
@@ -452,9 +473,13 @@ namespace Deepgram.Realtime.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (agentV1AgentV1ReceiveFunctionCallResponse == null && agentV1AgentV1PromptUpdated == null && agentV1AgentV1SpeakUpdated == null && agentV1AgentV1ThinkUpdated == null && agentV1AgentV1InjectionRefused == null && agentV1AgentV1Welcome == null && agentV1AgentV1SettingsApplied == null && agentV1AgentV1ConversationText == null && agentV1AgentV1UserStartedSpeaking == null && agentV1AgentV1AgentThinking == null && agentV1AgentV1FunctionCallRequest == null && agentV1AgentV1AgentStartedSpeaking == null && agentV1AgentV1AgentAudioDone == null && agentV1AgentV1Error == null && agentV1AgentV1Warning == null && agentV1AgentV1History == null && agentV1AgentV1Audio == null)
+            {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Deepgram.Realtime.AgentV1AgentV1SettingsApplied), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Deepgram.Realtime.AgentV1AgentV1SettingsApplied> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Deepgram.Realtime.AgentV1AgentV1SettingsApplied).Name}");
                     agentV1AgentV1SettingsApplied = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
@@ -465,9 +490,13 @@ namespace Deepgram.Realtime.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (agentV1AgentV1ReceiveFunctionCallResponse == null && agentV1AgentV1PromptUpdated == null && agentV1AgentV1SpeakUpdated == null && agentV1AgentV1ThinkUpdated == null && agentV1AgentV1InjectionRefused == null && agentV1AgentV1Welcome == null && agentV1AgentV1SettingsApplied == null && agentV1AgentV1ConversationText == null && agentV1AgentV1UserStartedSpeaking == null && agentV1AgentV1AgentThinking == null && agentV1AgentV1FunctionCallRequest == null && agentV1AgentV1AgentStartedSpeaking == null && agentV1AgentV1AgentAudioDone == null && agentV1AgentV1Error == null && agentV1AgentV1Warning == null && agentV1AgentV1History == null && agentV1AgentV1Audio == null)
+            {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Deepgram.Realtime.AgentV1AgentV1ConversationText), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Deepgram.Realtime.AgentV1AgentV1ConversationText> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Deepgram.Realtime.AgentV1AgentV1ConversationText).Name}");
                     agentV1AgentV1ConversationText = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
@@ -478,9 +507,13 @@ namespace Deepgram.Realtime.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (agentV1AgentV1ReceiveFunctionCallResponse == null && agentV1AgentV1PromptUpdated == null && agentV1AgentV1SpeakUpdated == null && agentV1AgentV1ThinkUpdated == null && agentV1AgentV1InjectionRefused == null && agentV1AgentV1Welcome == null && agentV1AgentV1SettingsApplied == null && agentV1AgentV1ConversationText == null && agentV1AgentV1UserStartedSpeaking == null && agentV1AgentV1AgentThinking == null && agentV1AgentV1FunctionCallRequest == null && agentV1AgentV1AgentStartedSpeaking == null && agentV1AgentV1AgentAudioDone == null && agentV1AgentV1Error == null && agentV1AgentV1Warning == null && agentV1AgentV1History == null && agentV1AgentV1Audio == null)
+            {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Deepgram.Realtime.AgentV1AgentV1UserStartedSpeaking), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Deepgram.Realtime.AgentV1AgentV1UserStartedSpeaking> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Deepgram.Realtime.AgentV1AgentV1UserStartedSpeaking).Name}");
                     agentV1AgentV1UserStartedSpeaking = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
@@ -491,9 +524,13 @@ namespace Deepgram.Realtime.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (agentV1AgentV1ReceiveFunctionCallResponse == null && agentV1AgentV1PromptUpdated == null && agentV1AgentV1SpeakUpdated == null && agentV1AgentV1ThinkUpdated == null && agentV1AgentV1InjectionRefused == null && agentV1AgentV1Welcome == null && agentV1AgentV1SettingsApplied == null && agentV1AgentV1ConversationText == null && agentV1AgentV1UserStartedSpeaking == null && agentV1AgentV1AgentThinking == null && agentV1AgentV1FunctionCallRequest == null && agentV1AgentV1AgentStartedSpeaking == null && agentV1AgentV1AgentAudioDone == null && agentV1AgentV1Error == null && agentV1AgentV1Warning == null && agentV1AgentV1History == null && agentV1AgentV1Audio == null)
+            {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Deepgram.Realtime.AgentV1AgentV1AgentThinking), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Deepgram.Realtime.AgentV1AgentV1AgentThinking> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Deepgram.Realtime.AgentV1AgentV1AgentThinking).Name}");
                     agentV1AgentV1AgentThinking = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
@@ -504,9 +541,13 @@ namespace Deepgram.Realtime.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (agentV1AgentV1ReceiveFunctionCallResponse == null && agentV1AgentV1PromptUpdated == null && agentV1AgentV1SpeakUpdated == null && agentV1AgentV1ThinkUpdated == null && agentV1AgentV1InjectionRefused == null && agentV1AgentV1Welcome == null && agentV1AgentV1SettingsApplied == null && agentV1AgentV1ConversationText == null && agentV1AgentV1UserStartedSpeaking == null && agentV1AgentV1AgentThinking == null && agentV1AgentV1FunctionCallRequest == null && agentV1AgentV1AgentStartedSpeaking == null && agentV1AgentV1AgentAudioDone == null && agentV1AgentV1Error == null && agentV1AgentV1Warning == null && agentV1AgentV1History == null && agentV1AgentV1Audio == null)
+            {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Deepgram.Realtime.AgentV1AgentV1FunctionCallRequest), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Deepgram.Realtime.AgentV1AgentV1FunctionCallRequest> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Deepgram.Realtime.AgentV1AgentV1FunctionCallRequest).Name}");
                     agentV1AgentV1FunctionCallRequest = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
@@ -517,9 +558,13 @@ namespace Deepgram.Realtime.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (agentV1AgentV1ReceiveFunctionCallResponse == null && agentV1AgentV1PromptUpdated == null && agentV1AgentV1SpeakUpdated == null && agentV1AgentV1ThinkUpdated == null && agentV1AgentV1InjectionRefused == null && agentV1AgentV1Welcome == null && agentV1AgentV1SettingsApplied == null && agentV1AgentV1ConversationText == null && agentV1AgentV1UserStartedSpeaking == null && agentV1AgentV1AgentThinking == null && agentV1AgentV1FunctionCallRequest == null && agentV1AgentV1AgentStartedSpeaking == null && agentV1AgentV1AgentAudioDone == null && agentV1AgentV1Error == null && agentV1AgentV1Warning == null && agentV1AgentV1History == null && agentV1AgentV1Audio == null)
+            {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Deepgram.Realtime.AgentV1AgentV1AgentStartedSpeaking), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Deepgram.Realtime.AgentV1AgentV1AgentStartedSpeaking> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Deepgram.Realtime.AgentV1AgentV1AgentStartedSpeaking).Name}");
                     agentV1AgentV1AgentStartedSpeaking = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
@@ -530,9 +575,13 @@ namespace Deepgram.Realtime.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (agentV1AgentV1ReceiveFunctionCallResponse == null && agentV1AgentV1PromptUpdated == null && agentV1AgentV1SpeakUpdated == null && agentV1AgentV1ThinkUpdated == null && agentV1AgentV1InjectionRefused == null && agentV1AgentV1Welcome == null && agentV1AgentV1SettingsApplied == null && agentV1AgentV1ConversationText == null && agentV1AgentV1UserStartedSpeaking == null && agentV1AgentV1AgentThinking == null && agentV1AgentV1FunctionCallRequest == null && agentV1AgentV1AgentStartedSpeaking == null && agentV1AgentV1AgentAudioDone == null && agentV1AgentV1Error == null && agentV1AgentV1Warning == null && agentV1AgentV1History == null && agentV1AgentV1Audio == null)
+            {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Deepgram.Realtime.AgentV1AgentV1AgentAudioDone), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Deepgram.Realtime.AgentV1AgentV1AgentAudioDone> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Deepgram.Realtime.AgentV1AgentV1AgentAudioDone).Name}");
                     agentV1AgentV1AgentAudioDone = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
@@ -543,9 +592,13 @@ namespace Deepgram.Realtime.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (agentV1AgentV1ReceiveFunctionCallResponse == null && agentV1AgentV1PromptUpdated == null && agentV1AgentV1SpeakUpdated == null && agentV1AgentV1ThinkUpdated == null && agentV1AgentV1InjectionRefused == null && agentV1AgentV1Welcome == null && agentV1AgentV1SettingsApplied == null && agentV1AgentV1ConversationText == null && agentV1AgentV1UserStartedSpeaking == null && agentV1AgentV1AgentThinking == null && agentV1AgentV1FunctionCallRequest == null && agentV1AgentV1AgentStartedSpeaking == null && agentV1AgentV1AgentAudioDone == null && agentV1AgentV1Error == null && agentV1AgentV1Warning == null && agentV1AgentV1History == null && agentV1AgentV1Audio == null)
+            {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Deepgram.Realtime.AgentV1AgentV1Error), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Deepgram.Realtime.AgentV1AgentV1Error> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Deepgram.Realtime.AgentV1AgentV1Error).Name}");
                     agentV1AgentV1Error = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
@@ -556,9 +609,13 @@ namespace Deepgram.Realtime.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (agentV1AgentV1ReceiveFunctionCallResponse == null && agentV1AgentV1PromptUpdated == null && agentV1AgentV1SpeakUpdated == null && agentV1AgentV1ThinkUpdated == null && agentV1AgentV1InjectionRefused == null && agentV1AgentV1Welcome == null && agentV1AgentV1SettingsApplied == null && agentV1AgentV1ConversationText == null && agentV1AgentV1UserStartedSpeaking == null && agentV1AgentV1AgentThinking == null && agentV1AgentV1FunctionCallRequest == null && agentV1AgentV1AgentStartedSpeaking == null && agentV1AgentV1AgentAudioDone == null && agentV1AgentV1Error == null && agentV1AgentV1Warning == null && agentV1AgentV1History == null && agentV1AgentV1Audio == null)
+            {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Deepgram.Realtime.AgentV1AgentV1Warning), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Deepgram.Realtime.AgentV1AgentV1Warning> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Deepgram.Realtime.AgentV1AgentV1Warning).Name}");
                     agentV1AgentV1Warning = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
@@ -569,9 +626,13 @@ namespace Deepgram.Realtime.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (agentV1AgentV1ReceiveFunctionCallResponse == null && agentV1AgentV1PromptUpdated == null && agentV1AgentV1SpeakUpdated == null && agentV1AgentV1ThinkUpdated == null && agentV1AgentV1InjectionRefused == null && agentV1AgentV1Welcome == null && agentV1AgentV1SettingsApplied == null && agentV1AgentV1ConversationText == null && agentV1AgentV1UserStartedSpeaking == null && agentV1AgentV1AgentThinking == null && agentV1AgentV1FunctionCallRequest == null && agentV1AgentV1AgentStartedSpeaking == null && agentV1AgentV1AgentAudioDone == null && agentV1AgentV1Error == null && agentV1AgentV1Warning == null && agentV1AgentV1History == null && agentV1AgentV1Audio == null)
+            {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Deepgram.Realtime.AgentV1AgentV1History), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Deepgram.Realtime.AgentV1AgentV1History> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Deepgram.Realtime.AgentV1AgentV1History).Name}");
                     agentV1AgentV1History = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
@@ -582,9 +643,13 @@ namespace Deepgram.Realtime.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (agentV1AgentV1ReceiveFunctionCallResponse == null && agentV1AgentV1PromptUpdated == null && agentV1AgentV1SpeakUpdated == null && agentV1AgentV1ThinkUpdated == null && agentV1AgentV1InjectionRefused == null && agentV1AgentV1Welcome == null && agentV1AgentV1SettingsApplied == null && agentV1AgentV1ConversationText == null && agentV1AgentV1UserStartedSpeaking == null && agentV1AgentV1AgentThinking == null && agentV1AgentV1FunctionCallRequest == null && agentV1AgentV1AgentStartedSpeaking == null && agentV1AgentV1AgentAudioDone == null && agentV1AgentV1Error == null && agentV1AgentV1Warning == null && agentV1AgentV1History == null && agentV1AgentV1Audio == null)
+            {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(byte[]), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<byte[]> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(byte[]).Name}");
                     agentV1AgentV1Audio = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);

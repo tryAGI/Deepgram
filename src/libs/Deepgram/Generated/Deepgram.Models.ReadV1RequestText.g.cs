@@ -42,5 +42,6 @@ namespace Deepgram
         public ReadV1RequestText()
         {
         }
+
     }
 }

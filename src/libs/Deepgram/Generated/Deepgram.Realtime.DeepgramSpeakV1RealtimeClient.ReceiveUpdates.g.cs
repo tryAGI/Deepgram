@@ -168,7 +168,7 @@ namespace Deepgram.Realtime
                     rawText,
                     json));
 
-            if (@event.SpeakV1Audio is { } __SpeakV1AudioReceived)
+            if (@event.SpeakV1SpeakV1Audio is { } __SpeakV1AudioReceived)
             {
                 SpeakV1AudioReceived?.Invoke(
                     this,
@@ -177,7 +177,7 @@ namespace Deepgram.Realtime
                         rawText,
                         json));
             }
-            if (@event.SpeakV1Metadata is { } __SpeakV1MetadataReceived)
+            if (@event.SpeakV1SpeakV1Metadata is { } __SpeakV1MetadataReceived)
             {
                 SpeakV1MetadataReceived?.Invoke(
                     this,
@@ -186,7 +186,7 @@ namespace Deepgram.Realtime
                         rawText,
                         json));
             }
-            if (@event.SpeakV1Flushed is { } __SpeakV1FlushedReceived)
+            if (@event.SpeakV1SpeakV1Flushed is { } __SpeakV1FlushedReceived)
             {
                 SpeakV1FlushedReceived?.Invoke(
                     this,
@@ -195,7 +195,7 @@ namespace Deepgram.Realtime
                         rawText,
                         json));
             }
-            if (@event.SpeakV1Cleared is { } __SpeakV1ClearedReceived)
+            if (@event.SpeakV1SpeakV1Cleared is { } __SpeakV1ClearedReceived)
             {
                 SpeakV1ClearedReceived?.Invoke(
                     this,
@@ -204,7 +204,7 @@ namespace Deepgram.Realtime
                         rawText,
                         json));
             }
-            if (@event.SpeakV1Warning is { } __SpeakV1WarningReceived)
+            if (@event.SpeakV1SpeakV1Warning is { } __SpeakV1WarningReceived)
             {
                 SpeakV1WarningReceived?.Invoke(
                     this,

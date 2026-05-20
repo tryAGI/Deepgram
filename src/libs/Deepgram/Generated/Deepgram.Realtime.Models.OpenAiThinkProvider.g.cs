@@ -88,5 +88,6 @@ namespace Deepgram.Realtime
         public OpenAiThinkProvider()
         {
         }
+
     }
 }

@@ -29,6 +29,26 @@ namespace Deepgram
         /// <summary>
         /// 
         /// </summary>
+        public bool TryPickV1ListenPostParametersReplaceVariant1(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out string? value)
+        {
+            value = V1ListenPostParametersReplaceVariant1;
+            return IsV1ListenPostParametersReplaceVariant1;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public string PickV1ListenPostParametersReplaceVariant1() => IsV1ListenPostParametersReplaceVariant1
+            ? V1ListenPostParametersReplaceVariant1!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'V1ListenPostParametersReplaceVariant1' but the value was {ToString()}.");
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public global::System.Collections.Generic.IList<string>? V1ListenPostParametersReplaceVariant2 { get; init; }
 #else
@@ -42,6 +62,26 @@ namespace Deepgram
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(V1ListenPostParametersReplaceVariant2))]
 #endif
         public bool IsV1ListenPostParametersReplaceVariant2 => V1ListenPostParametersReplaceVariant2 != null;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickV1ListenPostParametersReplaceVariant2(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::System.Collections.Generic.IList<string>? value)
+        {
+            value = V1ListenPostParametersReplaceVariant2;
+            return IsV1ListenPostParametersReplaceVariant2;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::System.Collections.Generic.IList<string> PickV1ListenPostParametersReplaceVariant2() => IsV1ListenPostParametersReplaceVariant2
+            ? V1ListenPostParametersReplaceVariant2!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'V1ListenPostParametersReplaceVariant2' but the value was {ToString()}.");
         /// <summary>
         /// 
         /// </summary>
@@ -59,6 +99,11 @@ namespace Deepgram
         {
             V1ListenPostParametersReplaceVariant1 = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static V1ListenPostParametersReplace FromV1ListenPostParametersReplaceVariant1(string? value) => new V1ListenPostParametersReplace(value);
 
         /// <summary>
         /// 
@@ -100,8 +145,8 @@ namespace Deepgram
         /// 
         /// </summary>
         public TResult? Match<TResult>(
-            global::System.Func<string?, TResult>? v1ListenPostParametersReplaceVariant1 = null,
-            global::System.Func<global::System.Collections.Generic.IList<string>?, TResult>? v1ListenPostParametersReplaceVariant2 = null,
+            global::System.Func<string, TResult>? v1ListenPostParametersReplaceVariant1 = null,
+            global::System.Func<global::System.Collections.Generic.IList<string>, TResult>? v1ListenPostParametersReplaceVariant2 = null,
             bool validate = true)
         {
             if (validate)
@@ -125,8 +170,32 @@ namespace Deepgram
         /// 
         /// </summary>
         public void Match(
-            global::System.Action<string?>? v1ListenPostParametersReplaceVariant1 = null,
-            global::System.Action<global::System.Collections.Generic.IList<string>?>? v1ListenPostParametersReplaceVariant2 = null,
+            global::System.Action<string>? v1ListenPostParametersReplaceVariant1 = null,
+
+            global::System.Action<global::System.Collections.Generic.IList<string>>? v1ListenPostParametersReplaceVariant2 = null,
+            bool validate = true)
+        {
+            if (validate)
+            {
+                Validate();
+            }
+
+            if (IsV1ListenPostParametersReplaceVariant1)
+            {
+                v1ListenPostParametersReplaceVariant1?.Invoke(V1ListenPostParametersReplaceVariant1!);
+            }
+            else if (IsV1ListenPostParametersReplaceVariant2)
+            {
+                v1ListenPostParametersReplaceVariant2?.Invoke(V1ListenPostParametersReplaceVariant2!);
+            }
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public void Switch(
+            global::System.Action<string>? v1ListenPostParametersReplaceVariant1 = null,
+            global::System.Action<global::System.Collections.Generic.IList<string>>? v1ListenPostParametersReplaceVariant2 = null,
             bool validate = true)
         {
             if (validate)

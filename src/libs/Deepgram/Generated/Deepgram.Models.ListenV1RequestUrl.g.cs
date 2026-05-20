@@ -40,5 +40,6 @@ namespace Deepgram
         public ListenV1RequestUrl()
         {
         }
+
     }
 }

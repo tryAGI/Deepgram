@@ -41,5 +41,6 @@ namespace Deepgram
         public ListAgentConfigurationsV1Response()
         {
         }
+
     }
 }

@@ -108,7 +108,10 @@ namespace Deepgram.Realtime.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (listenV2LanguageHintVariant1 == null && listenV2LanguageHintVariant2 == null)
+            {
                 try
                 {
 

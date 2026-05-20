@@ -79,6 +79,7 @@ namespace Deepgram.Realtime.JsonConverters
             {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Deepgram.Realtime.ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ContextMessagesItems0), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Deepgram.Realtime.ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ContextMessagesItems0> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Deepgram.Realtime.ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ContextMessagesItems0).Name}");
                     channelsAgentV1MessagesAgentV1SettingsAgentOneOf0ContextMessagesItems0 = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
@@ -89,9 +90,13 @@ namespace Deepgram.Realtime.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (channelsAgentV1MessagesAgentV1SettingsAgentOneOf0ContextMessagesItems0 == null && channelsAgentV1MessagesAgentV1SettingsAgentOneOf0ContextMessagesItems1 == null)
+            {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Deepgram.Realtime.ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ContextMessagesItems1), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Deepgram.Realtime.ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ContextMessagesItems1> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Deepgram.Realtime.ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ContextMessagesItems1).Name}");
                     channelsAgentV1MessagesAgentV1SettingsAgentOneOf0ContextMessagesItems1 = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);

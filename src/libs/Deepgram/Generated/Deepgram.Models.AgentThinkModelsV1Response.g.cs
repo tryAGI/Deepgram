@@ -40,5 +40,6 @@ namespace Deepgram
         public AgentThinkModelsV1Response()
         {
         }
+
     }
 }

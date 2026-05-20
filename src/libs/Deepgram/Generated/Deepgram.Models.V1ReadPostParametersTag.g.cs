@@ -29,6 +29,26 @@ namespace Deepgram
         /// <summary>
         /// 
         /// </summary>
+        public bool TryPickV1ReadPostParametersTagVariant1(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out string? value)
+        {
+            value = V1ReadPostParametersTagVariant1;
+            return IsV1ReadPostParametersTagVariant1;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public string PickV1ReadPostParametersTagVariant1() => IsV1ReadPostParametersTagVariant1
+            ? V1ReadPostParametersTagVariant1!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'V1ReadPostParametersTagVariant1' but the value was {ToString()}.");
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public global::System.Collections.Generic.IList<string>? V1ReadPostParametersTagVariant2 { get; init; }
 #else
@@ -42,6 +62,26 @@ namespace Deepgram
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(V1ReadPostParametersTagVariant2))]
 #endif
         public bool IsV1ReadPostParametersTagVariant2 => V1ReadPostParametersTagVariant2 != null;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickV1ReadPostParametersTagVariant2(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::System.Collections.Generic.IList<string>? value)
+        {
+            value = V1ReadPostParametersTagVariant2;
+            return IsV1ReadPostParametersTagVariant2;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::System.Collections.Generic.IList<string> PickV1ReadPostParametersTagVariant2() => IsV1ReadPostParametersTagVariant2
+            ? V1ReadPostParametersTagVariant2!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'V1ReadPostParametersTagVariant2' but the value was {ToString()}.");
         /// <summary>
         /// 
         /// </summary>
@@ -59,6 +99,11 @@ namespace Deepgram
         {
             V1ReadPostParametersTagVariant1 = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static V1ReadPostParametersTag FromV1ReadPostParametersTagVariant1(string? value) => new V1ReadPostParametersTag(value);
 
         /// <summary>
         /// 
@@ -100,8 +145,8 @@ namespace Deepgram
         /// 
         /// </summary>
         public TResult? Match<TResult>(
-            global::System.Func<string?, TResult>? v1ReadPostParametersTagVariant1 = null,
-            global::System.Func<global::System.Collections.Generic.IList<string>?, TResult>? v1ReadPostParametersTagVariant2 = null,
+            global::System.Func<string, TResult>? v1ReadPostParametersTagVariant1 = null,
+            global::System.Func<global::System.Collections.Generic.IList<string>, TResult>? v1ReadPostParametersTagVariant2 = null,
             bool validate = true)
         {
             if (validate)
@@ -125,8 +170,32 @@ namespace Deepgram
         /// 
         /// </summary>
         public void Match(
-            global::System.Action<string?>? v1ReadPostParametersTagVariant1 = null,
-            global::System.Action<global::System.Collections.Generic.IList<string>?>? v1ReadPostParametersTagVariant2 = null,
+            global::System.Action<string>? v1ReadPostParametersTagVariant1 = null,
+
+            global::System.Action<global::System.Collections.Generic.IList<string>>? v1ReadPostParametersTagVariant2 = null,
+            bool validate = true)
+        {
+            if (validate)
+            {
+                Validate();
+            }
+
+            if (IsV1ReadPostParametersTagVariant1)
+            {
+                v1ReadPostParametersTagVariant1?.Invoke(V1ReadPostParametersTagVariant1!);
+            }
+            else if (IsV1ReadPostParametersTagVariant2)
+            {
+                v1ReadPostParametersTagVariant2?.Invoke(V1ReadPostParametersTagVariant2!);
+            }
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public void Switch(
+            global::System.Action<string>? v1ReadPostParametersTagVariant1 = null,
+            global::System.Action<global::System.Collections.Generic.IList<string>>? v1ReadPostParametersTagVariant2 = null,
             bool validate = true)
         {
             if (validate)

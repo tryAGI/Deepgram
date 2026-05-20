@@ -41,5 +41,6 @@ namespace Deepgram
         public CreateProjectInviteV1Response()
         {
         }
+
     }
 }

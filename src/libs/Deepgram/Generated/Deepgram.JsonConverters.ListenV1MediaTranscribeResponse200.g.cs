@@ -103,6 +103,7 @@ namespace Deepgram.JsonConverters
             {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Deepgram.ListenV1Response), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Deepgram.ListenV1Response> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Deepgram.ListenV1Response).Name}");
                     listenV1Response = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
@@ -113,9 +114,13 @@ namespace Deepgram.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (listenV1Response == null && listenV1AcceptedResponse == null)
+            {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Deepgram.ListenV1AcceptedResponse), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Deepgram.ListenV1AcceptedResponse> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Deepgram.ListenV1AcceptedResponse).Name}");
                     listenV1AcceptedResponse = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);

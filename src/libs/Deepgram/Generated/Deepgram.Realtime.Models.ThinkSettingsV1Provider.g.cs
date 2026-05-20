@@ -29,6 +29,26 @@ namespace Deepgram.Realtime
         /// <summary>
         /// 
         /// </summary>
+        public bool TryPickOpenAiThinkProvider(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Deepgram.Realtime.OpenAiThinkProvider? value)
+        {
+            value = OpenAiThinkProvider;
+            return IsOpenAiThinkProvider;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Deepgram.Realtime.OpenAiThinkProvider PickOpenAiThinkProvider() => IsOpenAiThinkProvider
+            ? OpenAiThinkProvider!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'OpenAiThinkProvider' but the value was {ToString()}.");
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public global::Deepgram.Realtime.AwsBedrockThinkProvider? AwsBedrockThinkProvider { get; init; }
 #else
@@ -42,6 +62,26 @@ namespace Deepgram.Realtime
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(AwsBedrockThinkProvider))]
 #endif
         public bool IsAwsBedrockThinkProvider => AwsBedrockThinkProvider != null;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickAwsBedrockThinkProvider(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Deepgram.Realtime.AwsBedrockThinkProvider? value)
+        {
+            value = AwsBedrockThinkProvider;
+            return IsAwsBedrockThinkProvider;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Deepgram.Realtime.AwsBedrockThinkProvider PickAwsBedrockThinkProvider() => IsAwsBedrockThinkProvider
+            ? AwsBedrockThinkProvider!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'AwsBedrockThinkProvider' but the value was {ToString()}.");
 
         /// <summary>
         /// 
@@ -63,6 +103,26 @@ namespace Deepgram.Realtime
         /// <summary>
         /// 
         /// </summary>
+        public bool TryPickAnthropicThinkProvider(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Deepgram.Realtime.AnthropicThinkProvider? value)
+        {
+            value = AnthropicThinkProvider;
+            return IsAnthropicThinkProvider;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Deepgram.Realtime.AnthropicThinkProvider PickAnthropicThinkProvider() => IsAnthropicThinkProvider
+            ? AnthropicThinkProvider!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'AnthropicThinkProvider' but the value was {ToString()}.");
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public global::Deepgram.Realtime.GoogleThinkProvider? GoogleThinkProvider { get; init; }
 #else
@@ -80,6 +140,26 @@ namespace Deepgram.Realtime
         /// <summary>
         /// 
         /// </summary>
+        public bool TryPickGoogleThinkProvider(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Deepgram.Realtime.GoogleThinkProvider? value)
+        {
+            value = GoogleThinkProvider;
+            return IsGoogleThinkProvider;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Deepgram.Realtime.GoogleThinkProvider PickGoogleThinkProvider() => IsGoogleThinkProvider
+            ? GoogleThinkProvider!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'GoogleThinkProvider' but the value was {ToString()}.");
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public global::Deepgram.Realtime.GroqThinkProvider? GroqThinkProvider { get; init; }
 #else
@@ -93,6 +173,26 @@ namespace Deepgram.Realtime
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(GroqThinkProvider))]
 #endif
         public bool IsGroqThinkProvider => GroqThinkProvider != null;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickGroqThinkProvider(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Deepgram.Realtime.GroqThinkProvider? value)
+        {
+            value = GroqThinkProvider;
+            return IsGroqThinkProvider;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Deepgram.Realtime.GroqThinkProvider PickGroqThinkProvider() => IsGroqThinkProvider
+            ? GroqThinkProvider!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'GroqThinkProvider' but the value was {ToString()}.");
         /// <summary>
         /// 
         /// </summary>
@@ -110,6 +210,11 @@ namespace Deepgram.Realtime
         {
             OpenAiThinkProvider = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static ThinkSettingsV1Provider FromOpenAiThinkProvider(global::Deepgram.Realtime.OpenAiThinkProvider? value) => new ThinkSettingsV1Provider(value);
 
         /// <summary>
         /// 
@@ -132,6 +237,11 @@ namespace Deepgram.Realtime
         /// <summary>
         /// 
         /// </summary>
+        public static ThinkSettingsV1Provider FromAwsBedrockThinkProvider(global::Deepgram.Realtime.AwsBedrockThinkProvider? value) => new ThinkSettingsV1Provider(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator ThinkSettingsV1Provider(global::Deepgram.Realtime.AnthropicThinkProvider value) => new ThinkSettingsV1Provider((global::Deepgram.Realtime.AnthropicThinkProvider?)value);
 
         /// <summary>
@@ -146,6 +256,11 @@ namespace Deepgram.Realtime
         {
             AnthropicThinkProvider = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static ThinkSettingsV1Provider FromAnthropicThinkProvider(global::Deepgram.Realtime.AnthropicThinkProvider? value) => new ThinkSettingsV1Provider(value);
 
         /// <summary>
         /// 
@@ -168,6 +283,11 @@ namespace Deepgram.Realtime
         /// <summary>
         /// 
         /// </summary>
+        public static ThinkSettingsV1Provider FromGoogleThinkProvider(global::Deepgram.Realtime.GoogleThinkProvider? value) => new ThinkSettingsV1Provider(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator ThinkSettingsV1Provider(global::Deepgram.Realtime.GroqThinkProvider value) => new ThinkSettingsV1Provider((global::Deepgram.Realtime.GroqThinkProvider?)value);
 
         /// <summary>
@@ -182,6 +302,11 @@ namespace Deepgram.Realtime
         {
             GroqThinkProvider = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static ThinkSettingsV1Provider FromGroqThinkProvider(global::Deepgram.Realtime.GroqThinkProvider? value) => new ThinkSettingsV1Provider(value);
 
         /// <summary>
         /// 
@@ -235,11 +360,11 @@ namespace Deepgram.Realtime
         /// 
         /// </summary>
         public TResult? Match<TResult>(
-            global::System.Func<global::Deepgram.Realtime.OpenAiThinkProvider?, TResult>? openAiThinkProvider = null,
-            global::System.Func<global::Deepgram.Realtime.AwsBedrockThinkProvider?, TResult>? awsBedrockThinkProvider = null,
-            global::System.Func<global::Deepgram.Realtime.AnthropicThinkProvider?, TResult>? anthropicThinkProvider = null,
-            global::System.Func<global::Deepgram.Realtime.GoogleThinkProvider?, TResult>? googleThinkProvider = null,
-            global::System.Func<global::Deepgram.Realtime.GroqThinkProvider?, TResult>? groqThinkProvider = null,
+            global::System.Func<global::Deepgram.Realtime.OpenAiThinkProvider, TResult>? openAiThinkProvider = null,
+            global::System.Func<global::Deepgram.Realtime.AwsBedrockThinkProvider, TResult>? awsBedrockThinkProvider = null,
+            global::System.Func<global::Deepgram.Realtime.AnthropicThinkProvider, TResult>? anthropicThinkProvider = null,
+            global::System.Func<global::Deepgram.Realtime.GoogleThinkProvider, TResult>? googleThinkProvider = null,
+            global::System.Func<global::Deepgram.Realtime.GroqThinkProvider, TResult>? groqThinkProvider = null,
             bool validate = true)
         {
             if (validate)
@@ -275,11 +400,53 @@ namespace Deepgram.Realtime
         /// 
         /// </summary>
         public void Match(
-            global::System.Action<global::Deepgram.Realtime.OpenAiThinkProvider?>? openAiThinkProvider = null,
-            global::System.Action<global::Deepgram.Realtime.AwsBedrockThinkProvider?>? awsBedrockThinkProvider = null,
-            global::System.Action<global::Deepgram.Realtime.AnthropicThinkProvider?>? anthropicThinkProvider = null,
-            global::System.Action<global::Deepgram.Realtime.GoogleThinkProvider?>? googleThinkProvider = null,
-            global::System.Action<global::Deepgram.Realtime.GroqThinkProvider?>? groqThinkProvider = null,
+            global::System.Action<global::Deepgram.Realtime.OpenAiThinkProvider>? openAiThinkProvider = null,
+
+            global::System.Action<global::Deepgram.Realtime.AwsBedrockThinkProvider>? awsBedrockThinkProvider = null,
+
+            global::System.Action<global::Deepgram.Realtime.AnthropicThinkProvider>? anthropicThinkProvider = null,
+
+            global::System.Action<global::Deepgram.Realtime.GoogleThinkProvider>? googleThinkProvider = null,
+
+            global::System.Action<global::Deepgram.Realtime.GroqThinkProvider>? groqThinkProvider = null,
+            bool validate = true)
+        {
+            if (validate)
+            {
+                Validate();
+            }
+
+            if (IsOpenAiThinkProvider)
+            {
+                openAiThinkProvider?.Invoke(OpenAiThinkProvider!);
+            }
+            else if (IsAwsBedrockThinkProvider)
+            {
+                awsBedrockThinkProvider?.Invoke(AwsBedrockThinkProvider!);
+            }
+            else if (IsAnthropicThinkProvider)
+            {
+                anthropicThinkProvider?.Invoke(AnthropicThinkProvider!);
+            }
+            else if (IsGoogleThinkProvider)
+            {
+                googleThinkProvider?.Invoke(GoogleThinkProvider!);
+            }
+            else if (IsGroqThinkProvider)
+            {
+                groqThinkProvider?.Invoke(GroqThinkProvider!);
+            }
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public void Switch(
+            global::System.Action<global::Deepgram.Realtime.OpenAiThinkProvider>? openAiThinkProvider = null,
+            global::System.Action<global::Deepgram.Realtime.AwsBedrockThinkProvider>? awsBedrockThinkProvider = null,
+            global::System.Action<global::Deepgram.Realtime.AnthropicThinkProvider>? anthropicThinkProvider = null,
+            global::System.Action<global::Deepgram.Realtime.GoogleThinkProvider>? googleThinkProvider = null,
+            global::System.Action<global::Deepgram.Realtime.GroqThinkProvider>? groqThinkProvider = null,
             bool validate = true)
         {
             if (validate)

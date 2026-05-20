@@ -93,5 +93,6 @@ namespace Deepgram
         public ListModelsV1ResponseTtsModelsMetadata()
         {
         }
+
     }
 }

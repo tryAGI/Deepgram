@@ -1,12 +1,12 @@
 #nullable enable
 
-namespace Deepgram.Realtime.JsonConverters
+namespace Deepgram.JsonConverters
 {
     /// <inheritdoc />
-    public sealed class ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ListenProvider0TypeNullableJsonConverter : global::System.Text.Json.Serialization.JsonConverter<global::Deepgram.Realtime.ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ListenProvider0Type?>
+    public sealed class V1ListenPostParametersDiarizeModelNullableJsonConverter : global::System.Text.Json.Serialization.JsonConverter<global::Deepgram.V1ListenPostParametersDiarizeModel?>
     {
         /// <inheritdoc />
-        public override global::Deepgram.Realtime.ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ListenProvider0Type? Read(
+        public override global::Deepgram.V1ListenPostParametersDiarizeModel? Read(
             ref global::System.Text.Json.Utf8JsonReader reader,
             global::System.Type typeToConvert,
             global::System.Text.Json.JsonSerializerOptions options)
@@ -18,7 +18,7 @@ namespace Deepgram.Realtime.JsonConverters
                     var stringValue = reader.GetString();
                     if (stringValue != null)
                     {
-                        return global::Deepgram.Realtime.ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ListenProvider0TypeExtensions.ToEnum(stringValue);
+                        return global::Deepgram.V1ListenPostParametersDiarizeModelExtensions.ToEnum(stringValue);
                     }
                     
                     break;
@@ -26,11 +26,11 @@ namespace Deepgram.Realtime.JsonConverters
                 case global::System.Text.Json.JsonTokenType.Number:
                 {
                     var numValue = reader.GetInt32();
-                    return (global::Deepgram.Realtime.ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ListenProvider0Type)numValue;
+                    return (global::Deepgram.V1ListenPostParametersDiarizeModel)numValue;
                 }
                 case global::System.Text.Json.JsonTokenType.Null:
                 {
-                    return default(global::Deepgram.Realtime.ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ListenProvider0Type?);
+                    return default(global::Deepgram.V1ListenPostParametersDiarizeModel?);
                 }
                 default:
                     throw new global::System.ArgumentOutOfRangeException(nameof(reader));
@@ -42,7 +42,7 @@ namespace Deepgram.Realtime.JsonConverters
         /// <inheritdoc />
         public override void Write(
             global::System.Text.Json.Utf8JsonWriter writer,
-            global::Deepgram.Realtime.ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ListenProvider0Type? value,
+            global::Deepgram.V1ListenPostParametersDiarizeModel? value,
             global::System.Text.Json.JsonSerializerOptions options)
         {
             writer = writer ?? throw new global::System.ArgumentNullException(nameof(writer));
@@ -53,7 +53,7 @@ namespace Deepgram.Realtime.JsonConverters
             }
             else
             {
-                writer.WriteStringValue(global::Deepgram.Realtime.ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ListenProvider0TypeExtensions.ToValueString(value.Value));
+                writer.WriteStringValue(global::Deepgram.V1ListenPostParametersDiarizeModelExtensions.ToValueString(value.Value));
             }
         }
     }

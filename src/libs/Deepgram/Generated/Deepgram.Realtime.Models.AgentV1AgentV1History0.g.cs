@@ -67,5 +67,6 @@ namespace Deepgram.Realtime
         public AgentV1AgentV1History0()
         {
         }
+
     }
 }

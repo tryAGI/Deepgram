@@ -42,5 +42,6 @@ namespace Deepgram
         public UpdateAgentMetadataV1Request()
         {
         }
+
     }
 }

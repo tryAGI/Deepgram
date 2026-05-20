@@ -27,6 +27,26 @@ namespace Deepgram.Realtime
         public bool IsChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ContextMessagesItems0 => ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ContextMessagesItems0 != null;
 
         /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ContextMessagesItems0(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Deepgram.Realtime.ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ContextMessagesItems0? value)
+        {
+            value = ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ContextMessagesItems0;
+            return IsChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ContextMessagesItems0;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Deepgram.Realtime.ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ContextMessagesItems0 PickChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ContextMessagesItems0() => IsChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ContextMessagesItems0
+            ? ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ContextMessagesItems0!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ContextMessagesItems0' but the value was {ToString()}.");
+
+        /// <summary>
         /// Client-side or server-side function call request and response as part of the conversation history
         /// </summary>
 #if NET6_0_OR_GREATER
@@ -42,6 +62,26 @@ namespace Deepgram.Realtime
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ContextMessagesItems1))]
 #endif
         public bool IsChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ContextMessagesItems1 => ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ContextMessagesItems1 != null;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ContextMessagesItems1(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Deepgram.Realtime.ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ContextMessagesItems1? value)
+        {
+            value = ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ContextMessagesItems1;
+            return IsChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ContextMessagesItems1;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Deepgram.Realtime.ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ContextMessagesItems1 PickChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ContextMessagesItems1() => IsChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ContextMessagesItems1
+            ? ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ContextMessagesItems1!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ContextMessagesItems1' but the value was {ToString()}.");
         /// <summary>
         /// 
         /// </summary>
@@ -63,6 +103,11 @@ namespace Deepgram.Realtime
         /// <summary>
         /// 
         /// </summary>
+        public static ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ContextMessagesItems FromChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ContextMessagesItems0(global::Deepgram.Realtime.ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ContextMessagesItems0? value) => new ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ContextMessagesItems(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ContextMessagesItems(global::Deepgram.Realtime.ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ContextMessagesItems1 value) => new ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ContextMessagesItems((global::Deepgram.Realtime.ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ContextMessagesItems1?)value);
 
         /// <summary>
@@ -77,6 +122,11 @@ namespace Deepgram.Realtime
         {
             ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ContextMessagesItems1 = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ContextMessagesItems FromChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ContextMessagesItems1(global::Deepgram.Realtime.ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ContextMessagesItems1? value) => new ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ContextMessagesItems(value);
 
         /// <summary>
         /// 
@@ -118,8 +168,8 @@ namespace Deepgram.Realtime
         /// 
         /// </summary>
         public TResult? Match<TResult>(
-            global::System.Func<global::Deepgram.Realtime.ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ContextMessagesItems0?, TResult>? channelsAgentV1MessagesAgentV1SettingsAgentOneOf0ContextMessagesItems0 = null,
-            global::System.Func<global::Deepgram.Realtime.ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ContextMessagesItems1?, TResult>? channelsAgentV1MessagesAgentV1SettingsAgentOneOf0ContextMessagesItems1 = null,
+            global::System.Func<global::Deepgram.Realtime.ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ContextMessagesItems0, TResult>? channelsAgentV1MessagesAgentV1SettingsAgentOneOf0ContextMessagesItems0 = null,
+            global::System.Func<global::Deepgram.Realtime.ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ContextMessagesItems1, TResult>? channelsAgentV1MessagesAgentV1SettingsAgentOneOf0ContextMessagesItems1 = null,
             bool validate = true)
         {
             if (validate)
@@ -143,8 +193,32 @@ namespace Deepgram.Realtime
         /// 
         /// </summary>
         public void Match(
-            global::System.Action<global::Deepgram.Realtime.ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ContextMessagesItems0?>? channelsAgentV1MessagesAgentV1SettingsAgentOneOf0ContextMessagesItems0 = null,
-            global::System.Action<global::Deepgram.Realtime.ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ContextMessagesItems1?>? channelsAgentV1MessagesAgentV1SettingsAgentOneOf0ContextMessagesItems1 = null,
+            global::System.Action<global::Deepgram.Realtime.ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ContextMessagesItems0>? channelsAgentV1MessagesAgentV1SettingsAgentOneOf0ContextMessagesItems0 = null,
+
+            global::System.Action<global::Deepgram.Realtime.ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ContextMessagesItems1>? channelsAgentV1MessagesAgentV1SettingsAgentOneOf0ContextMessagesItems1 = null,
+            bool validate = true)
+        {
+            if (validate)
+            {
+                Validate();
+            }
+
+            if (IsChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ContextMessagesItems0)
+            {
+                channelsAgentV1MessagesAgentV1SettingsAgentOneOf0ContextMessagesItems0?.Invoke(ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ContextMessagesItems0!);
+            }
+            else if (IsChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ContextMessagesItems1)
+            {
+                channelsAgentV1MessagesAgentV1SettingsAgentOneOf0ContextMessagesItems1?.Invoke(ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ContextMessagesItems1!);
+            }
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public void Switch(
+            global::System.Action<global::Deepgram.Realtime.ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ContextMessagesItems0>? channelsAgentV1MessagesAgentV1SettingsAgentOneOf0ContextMessagesItems0 = null,
+            global::System.Action<global::Deepgram.Realtime.ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ContextMessagesItems1>? channelsAgentV1MessagesAgentV1SettingsAgentOneOf0ContextMessagesItems1 = null,
             bool validate = true)
         {
             if (validate)

@@ -27,6 +27,26 @@ namespace Deepgram
         public bool IsV1ListenPostParametersSummarize0 => V1ListenPostParametersSummarize0 != null;
 
         /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickV1ListenPostParametersSummarize0(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Deepgram.V1ListenPostParametersSummarize0? value)
+        {
+            value = V1ListenPostParametersSummarize0;
+            return IsV1ListenPostParametersSummarize0;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Deepgram.V1ListenPostParametersSummarize0 PickV1ListenPostParametersSummarize0() => IsV1ListenPostParametersSummarize0
+            ? V1ListenPostParametersSummarize0!.Value
+            : throw new global::System.InvalidOperationException($"Expected union variant 'V1ListenPostParametersSummarize0' but the value was {ToString()}.");
+
+        /// <summary>
         /// Default Value: false
         /// </summary>
 #if NET6_0_OR_GREATER
@@ -42,6 +62,26 @@ namespace Deepgram
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(V1ListenPostParametersSummarizeVariant2))]
 #endif
         public bool IsV1ListenPostParametersSummarizeVariant2 => V1ListenPostParametersSummarizeVariant2 != null;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickV1ListenPostParametersSummarizeVariant2(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out bool? value)
+        {
+            value = V1ListenPostParametersSummarizeVariant2;
+            return IsV1ListenPostParametersSummarizeVariant2;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool PickV1ListenPostParametersSummarizeVariant2() => IsV1ListenPostParametersSummarizeVariant2
+            ? V1ListenPostParametersSummarizeVariant2!.Value
+            : throw new global::System.InvalidOperationException($"Expected union variant 'V1ListenPostParametersSummarizeVariant2' but the value was {ToString()}.");
         /// <summary>
         /// 
         /// </summary>
@@ -63,6 +103,11 @@ namespace Deepgram
         /// <summary>
         /// 
         /// </summary>
+        public static V1ListenPostParametersSummarize FromV1ListenPostParametersSummarize0(global::Deepgram.V1ListenPostParametersSummarize0? value) => new V1ListenPostParametersSummarize(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator V1ListenPostParametersSummarize(bool value) => new V1ListenPostParametersSummarize((bool?)value);
 
         /// <summary>
@@ -77,6 +122,11 @@ namespace Deepgram
         {
             V1ListenPostParametersSummarizeVariant2 = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static V1ListenPostParametersSummarize FromV1ListenPostParametersSummarizeVariant2(bool? value) => new V1ListenPostParametersSummarize(value);
 
         /// <summary>
         /// 
@@ -143,6 +193,30 @@ namespace Deepgram
         /// 
         /// </summary>
         public void Match(
+            global::System.Action<global::Deepgram.V1ListenPostParametersSummarize0?>? v1ListenPostParametersSummarize0 = null,
+
+            global::System.Action<bool?>? v1ListenPostParametersSummarizeVariant2 = null,
+            bool validate = true)
+        {
+            if (validate)
+            {
+                Validate();
+            }
+
+            if (IsV1ListenPostParametersSummarize0)
+            {
+                v1ListenPostParametersSummarize0?.Invoke(V1ListenPostParametersSummarize0!);
+            }
+            else if (IsV1ListenPostParametersSummarizeVariant2)
+            {
+                v1ListenPostParametersSummarizeVariant2?.Invoke(V1ListenPostParametersSummarizeVariant2!);
+            }
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public void Switch(
             global::System.Action<global::Deepgram.V1ListenPostParametersSummarize0?>? v1ListenPostParametersSummarize0 = null,
             global::System.Action<bool?>? v1ListenPostParametersSummarizeVariant2 = null,
             bool validate = true)

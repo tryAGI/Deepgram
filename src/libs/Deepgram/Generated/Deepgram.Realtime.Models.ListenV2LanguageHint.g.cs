@@ -32,6 +32,26 @@ namespace Deepgram.Realtime
         /// <summary>
         /// 
         /// </summary>
+        public bool TryPickListenV2LanguageHintVariant1(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out string? value)
+        {
+            value = ListenV2LanguageHintVariant1;
+            return IsListenV2LanguageHintVariant1;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public string PickListenV2LanguageHintVariant1() => IsListenV2LanguageHintVariant1
+            ? ListenV2LanguageHintVariant1!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'ListenV2LanguageHintVariant1' but the value was {ToString()}.");
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public global::System.Collections.Generic.IList<string>? ListenV2LanguageHintVariant2 { get; init; }
 #else
@@ -45,6 +65,26 @@ namespace Deepgram.Realtime
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(ListenV2LanguageHintVariant2))]
 #endif
         public bool IsListenV2LanguageHintVariant2 => ListenV2LanguageHintVariant2 != null;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickListenV2LanguageHintVariant2(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::System.Collections.Generic.IList<string>? value)
+        {
+            value = ListenV2LanguageHintVariant2;
+            return IsListenV2LanguageHintVariant2;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::System.Collections.Generic.IList<string> PickListenV2LanguageHintVariant2() => IsListenV2LanguageHintVariant2
+            ? ListenV2LanguageHintVariant2!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'ListenV2LanguageHintVariant2' but the value was {ToString()}.");
         /// <summary>
         /// 
         /// </summary>
@@ -62,6 +102,11 @@ namespace Deepgram.Realtime
         {
             ListenV2LanguageHintVariant1 = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static ListenV2LanguageHint FromListenV2LanguageHintVariant1(string? value) => new ListenV2LanguageHint(value);
 
         /// <summary>
         /// 
@@ -103,8 +148,8 @@ namespace Deepgram.Realtime
         /// 
         /// </summary>
         public TResult? Match<TResult>(
-            global::System.Func<string?, TResult>? listenV2LanguageHintVariant1 = null,
-            global::System.Func<global::System.Collections.Generic.IList<string>?, TResult>? listenV2LanguageHintVariant2 = null,
+            global::System.Func<string, TResult>? listenV2LanguageHintVariant1 = null,
+            global::System.Func<global::System.Collections.Generic.IList<string>, TResult>? listenV2LanguageHintVariant2 = null,
             bool validate = true)
         {
             if (validate)
@@ -128,8 +173,32 @@ namespace Deepgram.Realtime
         /// 
         /// </summary>
         public void Match(
-            global::System.Action<string?>? listenV2LanguageHintVariant1 = null,
-            global::System.Action<global::System.Collections.Generic.IList<string>?>? listenV2LanguageHintVariant2 = null,
+            global::System.Action<string>? listenV2LanguageHintVariant1 = null,
+
+            global::System.Action<global::System.Collections.Generic.IList<string>>? listenV2LanguageHintVariant2 = null,
+            bool validate = true)
+        {
+            if (validate)
+            {
+                Validate();
+            }
+
+            if (IsListenV2LanguageHintVariant1)
+            {
+                listenV2LanguageHintVariant1?.Invoke(ListenV2LanguageHintVariant1!);
+            }
+            else if (IsListenV2LanguageHintVariant2)
+            {
+                listenV2LanguageHintVariant2?.Invoke(ListenV2LanguageHintVariant2!);
+            }
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public void Switch(
+            global::System.Action<string>? listenV2LanguageHintVariant1 = null,
+            global::System.Action<global::System.Collections.Generic.IList<string>>? listenV2LanguageHintVariant2 = null,
             bool validate = true)
         {
             if (validate)

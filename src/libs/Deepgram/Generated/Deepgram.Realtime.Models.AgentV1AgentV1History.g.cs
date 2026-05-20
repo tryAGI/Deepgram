@@ -27,6 +27,26 @@ namespace Deepgram.Realtime
         public bool IsAgentV1AgentV1History0 => AgentV1AgentV1History0 != null;
 
         /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickAgentV1AgentV1History0(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Deepgram.Realtime.AgentV1AgentV1History0? value)
+        {
+            value = AgentV1AgentV1History0;
+            return IsAgentV1AgentV1History0;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Deepgram.Realtime.AgentV1AgentV1History0 PickAgentV1AgentV1History0() => IsAgentV1AgentV1History0
+            ? AgentV1AgentV1History0!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'AgentV1AgentV1History0' but the value was {ToString()}.");
+
+        /// <summary>
         /// Client-side or server-side function call request and response as part of the conversation history
         /// </summary>
 #if NET6_0_OR_GREATER
@@ -42,6 +62,26 @@ namespace Deepgram.Realtime
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(AgentV1AgentV1History1))]
 #endif
         public bool IsAgentV1AgentV1History1 => AgentV1AgentV1History1 != null;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickAgentV1AgentV1History1(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Deepgram.Realtime.AgentV1AgentV1History1? value)
+        {
+            value = AgentV1AgentV1History1;
+            return IsAgentV1AgentV1History1;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Deepgram.Realtime.AgentV1AgentV1History1 PickAgentV1AgentV1History1() => IsAgentV1AgentV1History1
+            ? AgentV1AgentV1History1!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'AgentV1AgentV1History1' but the value was {ToString()}.");
         /// <summary>
         /// 
         /// </summary>
@@ -63,6 +103,11 @@ namespace Deepgram.Realtime
         /// <summary>
         /// 
         /// </summary>
+        public static AgentV1AgentV1History FromAgentV1AgentV1History0(global::Deepgram.Realtime.AgentV1AgentV1History0? value) => new AgentV1AgentV1History(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator AgentV1AgentV1History(global::Deepgram.Realtime.AgentV1AgentV1History1 value) => new AgentV1AgentV1History((global::Deepgram.Realtime.AgentV1AgentV1History1?)value);
 
         /// <summary>
@@ -77,6 +122,11 @@ namespace Deepgram.Realtime
         {
             AgentV1AgentV1History1 = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static AgentV1AgentV1History FromAgentV1AgentV1History1(global::Deepgram.Realtime.AgentV1AgentV1History1? value) => new AgentV1AgentV1History(value);
 
         /// <summary>
         /// 
@@ -118,8 +168,8 @@ namespace Deepgram.Realtime
         /// 
         /// </summary>
         public TResult? Match<TResult>(
-            global::System.Func<global::Deepgram.Realtime.AgentV1AgentV1History0?, TResult>? agentV1AgentV1History0 = null,
-            global::System.Func<global::Deepgram.Realtime.AgentV1AgentV1History1?, TResult>? agentV1AgentV1History1 = null,
+            global::System.Func<global::Deepgram.Realtime.AgentV1AgentV1History0, TResult>? agentV1AgentV1History0 = null,
+            global::System.Func<global::Deepgram.Realtime.AgentV1AgentV1History1, TResult>? agentV1AgentV1History1 = null,
             bool validate = true)
         {
             if (validate)
@@ -143,8 +193,32 @@ namespace Deepgram.Realtime
         /// 
         /// </summary>
         public void Match(
-            global::System.Action<global::Deepgram.Realtime.AgentV1AgentV1History0?>? agentV1AgentV1History0 = null,
-            global::System.Action<global::Deepgram.Realtime.AgentV1AgentV1History1?>? agentV1AgentV1History1 = null,
+            global::System.Action<global::Deepgram.Realtime.AgentV1AgentV1History0>? agentV1AgentV1History0 = null,
+
+            global::System.Action<global::Deepgram.Realtime.AgentV1AgentV1History1>? agentV1AgentV1History1 = null,
+            bool validate = true)
+        {
+            if (validate)
+            {
+                Validate();
+            }
+
+            if (IsAgentV1AgentV1History0)
+            {
+                agentV1AgentV1History0?.Invoke(AgentV1AgentV1History0!);
+            }
+            else if (IsAgentV1AgentV1History1)
+            {
+                agentV1AgentV1History1?.Invoke(AgentV1AgentV1History1!);
+            }
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public void Switch(
+            global::System.Action<global::Deepgram.Realtime.AgentV1AgentV1History0>? agentV1AgentV1History0 = null,
+            global::System.Action<global::Deepgram.Realtime.AgentV1AgentV1History1>? agentV1AgentV1History1 = null,
             bool validate = true)
         {
             if (validate)

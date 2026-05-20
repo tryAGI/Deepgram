@@ -29,6 +29,26 @@ namespace Deepgram.Realtime
         /// <summary>
         /// 
         /// </summary>
+        public bool TryPickThinkSettingsV1(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Deepgram.Realtime.ThinkSettingsV1? value)
+        {
+            value = ThinkSettingsV1;
+            return IsThinkSettingsV1;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Deepgram.Realtime.ThinkSettingsV1 PickThinkSettingsV1() => IsThinkSettingsV1
+            ? ThinkSettingsV1!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'ThinkSettingsV1' but the value was {ToString()}.");
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public global::System.Collections.Generic.IList<global::Deepgram.Realtime.ThinkSettingsV1>? ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0Think1 { get; init; }
 #else
@@ -42,6 +62,26 @@ namespace Deepgram.Realtime
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0Think1))]
 #endif
         public bool IsChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0Think1 => ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0Think1 != null;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0Think1(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::System.Collections.Generic.IList<global::Deepgram.Realtime.ThinkSettingsV1>? value)
+        {
+            value = ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0Think1;
+            return IsChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0Think1;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::System.Collections.Generic.IList<global::Deepgram.Realtime.ThinkSettingsV1> PickChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0Think1() => IsChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0Think1
+            ? ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0Think1!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0Think1' but the value was {ToString()}.");
         /// <summary>
         /// 
         /// </summary>
@@ -59,6 +99,11 @@ namespace Deepgram.Realtime
         {
             ThinkSettingsV1 = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0Think FromThinkSettingsV1(global::Deepgram.Realtime.ThinkSettingsV1? value) => new ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0Think(value);
 
         /// <summary>
         /// 
@@ -100,8 +145,8 @@ namespace Deepgram.Realtime
         /// 
         /// </summary>
         public TResult? Match<TResult>(
-            global::System.Func<global::Deepgram.Realtime.ThinkSettingsV1?, TResult>? thinkSettingsV1 = null,
-            global::System.Func<global::System.Collections.Generic.IList<global::Deepgram.Realtime.ThinkSettingsV1>?, TResult>? channelsAgentV1MessagesAgentV1SettingsAgentOneOf0Think1 = null,
+            global::System.Func<global::Deepgram.Realtime.ThinkSettingsV1, TResult>? thinkSettingsV1 = null,
+            global::System.Func<global::System.Collections.Generic.IList<global::Deepgram.Realtime.ThinkSettingsV1>, TResult>? channelsAgentV1MessagesAgentV1SettingsAgentOneOf0Think1 = null,
             bool validate = true)
         {
             if (validate)
@@ -125,8 +170,32 @@ namespace Deepgram.Realtime
         /// 
         /// </summary>
         public void Match(
-            global::System.Action<global::Deepgram.Realtime.ThinkSettingsV1?>? thinkSettingsV1 = null,
-            global::System.Action<global::System.Collections.Generic.IList<global::Deepgram.Realtime.ThinkSettingsV1>?>? channelsAgentV1MessagesAgentV1SettingsAgentOneOf0Think1 = null,
+            global::System.Action<global::Deepgram.Realtime.ThinkSettingsV1>? thinkSettingsV1 = null,
+
+            global::System.Action<global::System.Collections.Generic.IList<global::Deepgram.Realtime.ThinkSettingsV1>>? channelsAgentV1MessagesAgentV1SettingsAgentOneOf0Think1 = null,
+            bool validate = true)
+        {
+            if (validate)
+            {
+                Validate();
+            }
+
+            if (IsThinkSettingsV1)
+            {
+                thinkSettingsV1?.Invoke(ThinkSettingsV1!);
+            }
+            else if (IsChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0Think1)
+            {
+                channelsAgentV1MessagesAgentV1SettingsAgentOneOf0Think1?.Invoke(ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0Think1!);
+            }
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public void Switch(
+            global::System.Action<global::Deepgram.Realtime.ThinkSettingsV1>? thinkSettingsV1 = null,
+            global::System.Action<global::System.Collections.Generic.IList<global::Deepgram.Realtime.ThinkSettingsV1>>? channelsAgentV1MessagesAgentV1SettingsAgentOneOf0Think1 = null,
             bool validate = true)
         {
             if (validate)

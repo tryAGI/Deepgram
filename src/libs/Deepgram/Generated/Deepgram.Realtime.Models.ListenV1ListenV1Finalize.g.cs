@@ -43,5 +43,6 @@ namespace Deepgram.Realtime
         public ListenV1ListenV1Finalize()
         {
         }
+
     }
 }

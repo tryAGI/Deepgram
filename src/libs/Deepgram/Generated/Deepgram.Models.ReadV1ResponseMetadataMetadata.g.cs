@@ -93,5 +93,6 @@ namespace Deepgram
         public ReadV1ResponseMetadataMetadata()
         {
         }
+
     }
 }

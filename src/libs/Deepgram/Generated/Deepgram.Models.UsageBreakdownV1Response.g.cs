@@ -74,5 +74,6 @@ namespace Deepgram
         public UsageBreakdownV1Response()
         {
         }
+
     }
 }

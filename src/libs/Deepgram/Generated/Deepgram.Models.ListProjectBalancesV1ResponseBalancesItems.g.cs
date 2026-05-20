@@ -76,5 +76,6 @@ namespace Deepgram
         public ListProjectBalancesV1ResponseBalancesItems()
         {
         }
+
     }
 }
