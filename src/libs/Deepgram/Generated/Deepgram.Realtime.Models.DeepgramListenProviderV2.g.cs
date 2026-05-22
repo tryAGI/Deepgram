@@ -30,11 +30,10 @@ namespace Deepgram.Realtime
         public required string Model { get; set; }
 
         /// <summary>
-        /// One or more BCP-47 language codes to bias the model toward specific languages. Only supported when model is flux-general-multi. Without hints, the model auto-detects the spoken language. See the Language Prompting guide for details.
+        /// An array of one or more BCP-47 language codes to bias the model toward specific languages. Only supported when model is flux-general-multi. Without hints, the model auto-detects the spoken language. See the Language Prompting guide for details.
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("language_hint")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Deepgram.Realtime.JsonConverters.DeepgramListenProviderV2LanguageHintJsonConverter))]
-        public global::Deepgram.Realtime.DeepgramListenProviderV2LanguageHint? LanguageHint { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("language_hints")]
+        public global::System.Collections.Generic.IList<string>? LanguageHints { get; set; }
 
         /// <summary>
         /// Prompt keyterm recognition to improve Keyword Recall Rate
@@ -60,8 +59,8 @@ namespace Deepgram.Realtime
         /// <param name="version">
         /// Specifies usage of the V2 Deepgram speech-to-text API (e.g. Flux)
         /// </param>
-        /// <param name="languageHint">
-        /// One or more BCP-47 language codes to bias the model toward specific languages. Only supported when model is flux-general-multi. Without hints, the model auto-detects the spoken language. See the Language Prompting guide for details.
+        /// <param name="languageHints">
+        /// An array of one or more BCP-47 language codes to bias the model toward specific languages. Only supported when model is flux-general-multi. Without hints, the model auto-detects the spoken language. See the Language Prompting guide for details.
         /// </param>
         /// <param name="keyterms">
         /// Prompt keyterm recognition to improve Keyword Recall Rate
@@ -73,13 +72,13 @@ namespace Deepgram.Realtime
             string model,
             global::Deepgram.Realtime.DeepgramListenProviderV2Type type,
             global::Deepgram.Realtime.DeepgramListenProviderV2Version? version,
-            global::Deepgram.Realtime.DeepgramListenProviderV2LanguageHint? languageHint,
+            global::System.Collections.Generic.IList<string>? languageHints,
             global::System.Collections.Generic.IList<string>? keyterms)
         {
             this.Type = type;
             this.Version = version;
             this.Model = model ?? throw new global::System.ArgumentNullException(nameof(model));
-            this.LanguageHint = languageHint;
+            this.LanguageHints = languageHints;
             this.Keyterms = keyterms;
         }
 
