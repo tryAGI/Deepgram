@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <TargetFramework>net10.0</TargetFramework>
-    <NoWarn>$(NoWarn);MEAI001</NoWarn>
+    <NoWarn>$(NoWarn);MEAI001;CS1570;CS1584;CS1658;CS0419</NoWarn>
   </PropertyGroup>
 
   <PropertyGroup Label="Nuget">

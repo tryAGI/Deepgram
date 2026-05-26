@@ -29,6 +29,10 @@ autosdk generate openapi.yaml \
   --targetFramework net10.0 \
   --output Generated \
   --exclude-deprecated-operations \
+  --generate-http-exception-hierarchy \
+  --generate-retry-handler \
+  --generate-pageable-helpers \
+  --generate-multipart-upload-helpers \
   --security-scheme Http:Header:Bearer \
   --base-url https://api.deepgram.com
 
