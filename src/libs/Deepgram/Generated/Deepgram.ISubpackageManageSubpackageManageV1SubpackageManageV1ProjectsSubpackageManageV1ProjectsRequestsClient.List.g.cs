@@ -80,5 +80,40 @@ namespace Deepgram
             global::Deepgram.V1ProjectsProjectIdRequestsGetParametersStatus? status = default,
             global::Deepgram.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
+
+        /// <summary>
+        /// Wraps ListAsync as an IAsyncEnumerable<global::Deepgram.ProjectRequestResponse> that auto-pages over the response.
+        /// </summary>
+        /// <param name="projectId"></param>
+        /// <param name="start"></param>
+        /// <param name="end"></param>
+        /// <param name="limit">
+        /// Default Value: 10
+        /// </param>
+        /// <param name="accessor"></param>
+        /// <param name="requestId"></param>
+        /// <param name="deployment">
+        /// Deployment type for the requests
+        /// </param>
+        /// <param name="endpoint"></param>
+        /// <param name="method">
+        /// Method type for the request
+        /// </param>
+        /// <param name="status"></param> 
+        /// <param name="page">Initial page number to start enumerating from. Defaults to 1.</param>
+        /// <param name="cancellationToken"></param>
+        global::System.Collections.Generic.IAsyncEnumerable<global::Deepgram.ProjectRequestResponse> ListAutoPagingAsync(
+            string projectId,             global::System.DateTime? start = default,
+            global::System.DateTime? end = default,
+            double? limit = default,
+            string? accessor = default,
+            string? requestId = default,
+            global::Deepgram.V1ProjectsProjectIdRequestsGetParametersDeployment? deployment = default,
+            global::Deepgram.V1ProjectsProjectIdRequestsGetParametersEndpoint? endpoint = default,
+            global::Deepgram.V1ProjectsProjectIdRequestsGetParametersMethod? method = default,
+            global::Deepgram.V1ProjectsProjectIdRequestsGetParametersStatus? status = default,
+            int? page = null,
+            global::System.Threading.CancellationToken cancellationToken = default);
+
     }
 }
