@@ -3,9 +3,30 @@ set -euo pipefail
 
 # OpenAPI spec: https://raw.githubusercontent.com/deepgram/deepgram-api-specs/main/openapi.yml (+ AsyncAPI)
 
+use_pinned_spec=false
+for arg in "$@"; do
+  case "$arg" in
+    --pinned-spec)
+      use_pinned_spec=true
+      ;;
+    *)
+      echo "Unknown argument: $arg" >&2
+      exit 1
+      ;;
+  esac
+done
+if [[ "${TRYAGI_PINNED_SPEC:-0}" == "1" ]]; then
+  use_pinned_spec=true
+fi
+
 dotnet tool install --global autosdk.cli --prerelease
 rm -rf Generated
-curl --fail --silent --show-error -L "https://raw.githubusercontent.com/deepgram/deepgram-api-specs/main/openapi.yml" -o openapi.yaml
+if [[ "$use_pinned_spec" == false ]]; then
+  curl --fail --silent --show-error -L "https://raw.githubusercontent.com/deepgram/deepgram-api-specs/main/openapi.yml" -o openapi.yaml
+elif [[ ! -f openapi.yaml ]]; then
+  echo "error: --pinned-spec requested but openapi.yaml does not exist." >&2
+  exit 1
+fi
 
 # Fix 1: ErrorResponseTextError is `type: string` which generates a property named
 #         `string` (C# keyword). Convert to object with `value` property.
@@ -41,7 +62,12 @@ autosdk generate openapi.yaml \
 # - Inline message payloads → extracted to component schemas automatically
 # - Per-channel server refs → AgentV1 uses agent.deepgram.com
 # - operationTraits → parsed for spec compliance
-curl --fail --silent --show-error -L "https://raw.githubusercontent.com/deepgram/deepgram-api-specs/main/asyncapi.yml" -o asyncapi.yaml
+if [[ "$use_pinned_spec" == false ]]; then
+  curl --fail --silent --show-error -L "https://raw.githubusercontent.com/deepgram/deepgram-api-specs/main/asyncapi.yml" -o asyncapi.yaml
+elif [[ ! -f asyncapi.yaml ]]; then
+  echo "error: --pinned-spec requested but asyncapi.yaml does not exist." >&2
+  exit 1
+fi
 
 # Convert YAML to JSON for reliable parsing
 yq -o json asyncapi.yaml > asyncapi.json
