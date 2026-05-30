@@ -529,6 +529,7 @@ namespace Deepgram.Realtime
         /// <param name="languageHint">Language hints constrain and prioritize language detection for the flux-general-multi model. Pass multiple language_hint query parameters to specify multiple language codes. Empty values are rejected. Only valid when model is flux-general-multi.</param>
         /// <param name="mipOptOut">Any type</param>
         /// <param name="model">Defines the AI model used to process submitted audio.</param>
+        /// <param name="profanityFilter">Profanity Filter looks for recognized profanity and converts it to the nearest recognized non-profane word or removes it from the transcript completely.</param>
         /// <param name="sampleRate">Any type</param>
         /// <param name="tag">Any type</param>
         /// <param name="uri">Optional WebSocket endpoint override.</param>
@@ -546,6 +547,7 @@ namespace Deepgram.Realtime
             global::Deepgram.Realtime.ListenV2LanguageHint? languageHint = default,
             global::Deepgram.Realtime.ListenV2MipOptOut? mipOptOut = default,
             global::Deepgram.Realtime.ListenV2Model? model = default,
+            global::Deepgram.Realtime.ListenV2ProfanityFilter? profanityFilter = default,
             global::Deepgram.Realtime.ListenV2SampleRate? sampleRate = default,
             global::Deepgram.Realtime.ListenV2Tag? tag = default,
             global::System.Uri? uri = null,
@@ -574,6 +576,7 @@ namespace Deepgram.Realtime
                 .AddOptionalParameter("language_hint", languageHint?.ToString())
                 .AddOptionalParameter("mip_opt_out", mipOptOut?.ToString())
                 .AddOptionalParameter("model", model?.ToValueString())
+                .AddOptionalParameter("profanity_filter", profanityFilter?.ToValueString())
                 .AddOptionalParameter("sample_rate", sampleRate?.ToString())
                 .AddOptionalParameter("tag", tag?.ToString())
                 ;
