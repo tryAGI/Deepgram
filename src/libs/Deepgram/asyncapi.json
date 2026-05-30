@@ -443,6 +443,9 @@
               "language_hint": {
                 "$ref": "#/components/schemas/ListenV2LanguageHint"
               },
+              "profanity_filter": {
+                "$ref": "#/components/schemas/ListenV2ProfanityFilter"
+              },
               "mip_opt_out": {
                 "$ref": "#/components/schemas/ListenV2MipOptOut"
               },
@@ -3866,6 +3869,16 @@
         ],
         "description": "Language hints constrain and prioritize language detection for the\nflux-general-multi model. Pass multiple language_hint query parameters\nto specify multiple language codes. Empty values are rejected.\nOnly valid when model is flux-general-multi.\n",
         "title": "ListenV2LanguageHint"
+      },
+      "ListenV2ProfanityFilter": {
+        "type": "string",
+        "enum": [
+          "true",
+          "false"
+        ],
+        "default": "false",
+        "description": "Profanity Filter looks for recognized profanity and converts it to the nearest recognized non-profane word or removes it from the transcript completely.",
+        "title": "ListenV2ProfanityFilter"
       },
       "ListenV2MipOptOut": {
         "description": "Any type",
