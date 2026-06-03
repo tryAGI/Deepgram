@@ -16,13 +16,15 @@ namespace Deepgram.Realtime
         public global::Deepgram.Realtime.ListenV2EagerEotThreshold? EagerEotThreshold { get; set; }
 
         /// <summary>
-        /// Any type
+        /// Any type<br/>
+        /// Default Value: 0.7
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("eot_threshold")]
         public global::Deepgram.Realtime.ListenV2EotThreshold? EotThreshold { get; set; }
 
         /// <summary>
-        /// Any type
+        /// Any type<br/>
+        /// Default Value: 5000
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("eot_timeout_ms")]
         public global::Deepgram.Realtime.ListenV2EotTimeoutMs? EotTimeoutMs { get; set; }
@@ -40,10 +42,12 @@ namespace Deepgram.Realtime
         /// Any type
         /// </param>
         /// <param name="eotThreshold">
-        /// Any type
+        /// Any type<br/>
+        /// Default Value: 0.7
         /// </param>
         /// <param name="eotTimeoutMs">
-        /// Any type
+        /// Any type<br/>
+        /// Default Value: 5000
         /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]

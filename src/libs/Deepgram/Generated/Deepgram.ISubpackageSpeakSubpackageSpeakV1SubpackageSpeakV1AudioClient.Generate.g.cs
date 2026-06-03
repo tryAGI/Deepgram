@@ -16,13 +16,21 @@ namespace Deepgram
         /// Default Value: false
         /// </param>
         /// <param name="tag"></param>
-        /// <param name="bitRate"></param>
-        /// <param name="container"></param>
-        /// <param name="encoding"></param>
+        /// <param name="bitRate">
+        /// Default Value: 48000
+        /// </param>
+        /// <param name="container">
+        /// Default Value: wav
+        /// </param>
+        /// <param name="encoding">
+        /// Default Value: mp3
+        /// </param>
         /// <param name="model">
         /// Default Value: aura-asteria-en
         /// </param>
-        /// <param name="sampleRate"></param>
+        /// <param name="sampleRate">
+        /// Default Value: 24000
+        /// </param>
         /// <param name="speed">
         /// Default Value: 1
         /// </param>
@@ -57,13 +65,21 @@ namespace Deepgram
         /// Default Value: false
         /// </param>
         /// <param name="tag"></param>
-        /// <param name="bitRate"></param>
-        /// <param name="container"></param>
-        /// <param name="encoding"></param>
+        /// <param name="bitRate">
+        /// Default Value: 48000
+        /// </param>
+        /// <param name="container">
+        /// Default Value: wav
+        /// </param>
+        /// <param name="encoding">
+        /// Default Value: mp3
+        /// </param>
         /// <param name="model">
         /// Default Value: aura-asteria-en
         /// </param>
-        /// <param name="sampleRate"></param>
+        /// <param name="sampleRate">
+        /// Default Value: 24000
+        /// </param>
         /// <param name="speed">
         /// Default Value: 1
         /// </param>
@@ -98,13 +114,21 @@ namespace Deepgram
         /// Default Value: false
         /// </param>
         /// <param name="tag"></param>
-        /// <param name="bitRate"></param>
-        /// <param name="container"></param>
-        /// <param name="encoding"></param>
+        /// <param name="bitRate">
+        /// Default Value: 48000
+        /// </param>
+        /// <param name="container">
+        /// Default Value: wav
+        /// </param>
+        /// <param name="encoding">
+        /// Default Value: mp3
+        /// </param>
         /// <param name="model">
         /// Default Value: aura-asteria-en
         /// </param>
-        /// <param name="sampleRate"></param>
+        /// <param name="sampleRate">
+        /// Default Value: 24000
+        /// </param>
         /// <param name="speed">
         /// Default Value: 1
         /// </param>
