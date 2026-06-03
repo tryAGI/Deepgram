@@ -65,7 +65,9 @@ namespace Deepgram
         /// Creates a set of distribution credentials for the specified project
         /// </summary>
         /// <param name="projectId"></param>
-        /// <param name="scopes"></param>
+        /// <param name="scopes">
+        /// Default Value: [self-hosted:products]
+        /// </param>
         /// <param name="provider">
         /// Default Value: quay
         /// </param>
@@ -99,7 +101,9 @@ namespace Deepgram
         /// Creates a set of distribution credentials for the specified project
         /// </summary>
         /// <param name="projectId"></param>
-        /// <param name="scopes"></param>
+        /// <param name="scopes">
+        /// Default Value: [self-hosted:products]
+        /// </param>
         /// <param name="provider">
         /// Default Value: quay
         /// </param>
@@ -525,7 +529,9 @@ namespace Deepgram
         /// Creates a set of distribution credentials for the specified project
         /// </summary>
         /// <param name="projectId"></param>
-        /// <param name="scopes"></param>
+        /// <param name="scopes">
+        /// Default Value: [self-hosted:products]
+        /// </param>
         /// <param name="provider">
         /// Default Value: quay
         /// </param>

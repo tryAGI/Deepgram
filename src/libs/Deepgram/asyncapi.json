@@ -247,31 +247,38 @@
                 "$ref": "#/components/schemas/ListenV1Callback"
               },
               "callback_method": {
-                "$ref": "#/components/schemas/ListenV1CallbackMethod"
+                "$ref": "#/components/schemas/ListenV1CallbackMethod",
+                "default": "POST"
               },
               "channels": {
-                "$ref": "#/components/schemas/ListenV1Channels"
+                "$ref": "#/components/schemas/ListenV1Channels",
+                "default": "1"
               },
               "detect_entities": {
-                "$ref": "#/components/schemas/ListenV1DetectEntities"
+                "$ref": "#/components/schemas/ListenV1DetectEntities",
+                "default": "false"
               },
               "diarize": {
-                "$ref": "#/components/schemas/ListenV1Diarize"
+                "$ref": "#/components/schemas/ListenV1Diarize",
+                "default": "false"
               },
               "dictation": {
-                "$ref": "#/components/schemas/ListenV1Dictation"
+                "$ref": "#/components/schemas/ListenV1Dictation",
+                "default": "false"
               },
               "encoding": {
                 "$ref": "#/components/schemas/ListenV1Encoding"
               },
               "endpointing": {
-                "$ref": "#/components/schemas/ListenV1Endpointing"
+                "$ref": "#/components/schemas/ListenV1Endpointing",
+                "default": "10"
               },
               "extra": {
                 "$ref": "#/components/schemas/ListenV1Extra"
               },
               "interim_results": {
-                "$ref": "#/components/schemas/ListenV1InterimResults"
+                "$ref": "#/components/schemas/ListenV1InterimResults",
+                "default": "false"
               },
               "keyterm": {
                 "$ref": "#/components/schemas/ListenV1Keyterm"
@@ -280,28 +287,35 @@
                 "$ref": "#/components/schemas/ListenV1Keywords"
               },
               "language": {
-                "$ref": "#/components/schemas/ListenV1Language"
+                "$ref": "#/components/schemas/ListenV1Language",
+                "default": "en"
               },
               "mip_opt_out": {
-                "$ref": "#/components/schemas/ListenV1MipOptOut"
+                "$ref": "#/components/schemas/ListenV1MipOptOut",
+                "default": "false"
               },
               "model": {
                 "$ref": "#/components/schemas/ListenV1Model"
               },
               "multichannel": {
-                "$ref": "#/components/schemas/ListenV1Multichannel"
+                "$ref": "#/components/schemas/ListenV1Multichannel",
+                "default": "false"
               },
               "numerals": {
-                "$ref": "#/components/schemas/ListenV1Numerals"
+                "$ref": "#/components/schemas/ListenV1Numerals",
+                "default": "false"
               },
               "profanity_filter": {
-                "$ref": "#/components/schemas/ListenV1ProfanityFilter"
+                "$ref": "#/components/schemas/ListenV1ProfanityFilter",
+                "default": "false"
               },
               "punctuate": {
-                "$ref": "#/components/schemas/ListenV1Punctuate"
+                "$ref": "#/components/schemas/ListenV1Punctuate",
+                "default": "false"
               },
               "redact": {
-                "$ref": "#/components/schemas/ListenV1Redact"
+                "$ref": "#/components/schemas/ListenV1Redact",
+                "default": "false"
               },
               "replace": {
                 "$ref": "#/components/schemas/ListenV1Replace"
@@ -313,7 +327,8 @@
                 "$ref": "#/components/schemas/ListenV1Search"
               },
               "smart_format": {
-                "$ref": "#/components/schemas/ListenV1SmartFormat"
+                "$ref": "#/components/schemas/ListenV1SmartFormat",
+                "default": "false"
               },
               "tag": {
                 "$ref": "#/components/schemas/ListenV1Tag"
@@ -322,10 +337,12 @@
                 "$ref": "#/components/schemas/ListenV1UtteranceEndMs"
               },
               "vad_events": {
-                "$ref": "#/components/schemas/ListenV1VadEvents"
+                "$ref": "#/components/schemas/ListenV1VadEvents",
+                "default": "false"
               },
               "version": {
-                "$ref": "#/components/schemas/ListenV1Version"
+                "$ref": "#/components/schemas/ListenV1Version",
+                "default": "latest"
               }
             }
           },
@@ -432,10 +449,12 @@
                 "$ref": "#/components/schemas/ListenV2EagerEotThreshold"
               },
               "eot_threshold": {
-                "$ref": "#/components/schemas/ListenV2EotThreshold"
+                "$ref": "#/components/schemas/ListenV2EotThreshold",
+                "default": "0.7"
               },
               "eot_timeout_ms": {
-                "$ref": "#/components/schemas/ListenV2EotTimeoutMs"
+                "$ref": "#/components/schemas/ListenV2EotTimeoutMs",
+                "default": "5000"
               },
               "keyterm": {
                 "$ref": "#/components/schemas/ListenV2Keyterm"
@@ -444,7 +463,8 @@
                 "$ref": "#/components/schemas/ListenV2LanguageHint"
               },
               "profanity_filter": {
-                "$ref": "#/components/schemas/ListenV2ProfanityFilter"
+                "$ref": "#/components/schemas/ListenV2ProfanityFilter",
+                "default": "false"
               },
               "mip_opt_out": {
                 "$ref": "#/components/schemas/ListenV2MipOptOut"
@@ -545,19 +565,24 @@
             "type": "object",
             "properties": {
               "encoding": {
-                "$ref": "#/components/schemas/SpeakV1Encoding"
+                "$ref": "#/components/schemas/SpeakV1Encoding",
+                "default": "linear16"
               },
               "mip_opt_out": {
-                "$ref": "#/components/schemas/SpeakV1MipOptOut"
+                "$ref": "#/components/schemas/SpeakV1MipOptOut",
+                "default": "false"
               },
               "model": {
-                "$ref": "#/components/schemas/SpeakV1Model"
+                "$ref": "#/components/schemas/SpeakV1Model",
+                "default": "aura-asteria-en"
               },
               "sample_rate": {
-                "$ref": "#/components/schemas/SpeakV1SampleRate"
+                "$ref": "#/components/schemas/SpeakV1SampleRate",
+                "default": "24000"
               },
               "speed": {
-                "$ref": "#/components/schemas/SpeakV1Speed"
+                "$ref": "#/components/schemas/SpeakV1Speed",
+                "default": 1
               }
             }
           },
@@ -1662,6 +1687,7 @@
         "properties": {
           "encoding": {
             "$ref": "#/components/schemas/ChannelsAgentV1MessagesAgentV1SettingsAudioOutputEncoding",
+            "default": "linear16",
             "description": "Audio encoding format for streaming TTS output"
           },
           "sample_rate": {
@@ -1674,6 +1700,7 @@
           },
           "container": {
             "$ref": "#/components/schemas/ChannelsAgentV1MessagesAgentV1SettingsAudioOutputContainer",
+            "default": "none",
             "description": "Audio container format."
           }
         },
@@ -3000,6 +3027,7 @@
           },
           "behavior": {
             "$ref": "#/components/schemas/ChannelsAgentV1MessagesAgentV1InjectAgentMessageBehavior",
+            "default": "default",
             "description": "Controls how the injection interacts with any in-progress user or agent turn.\n\n* `default` — The agent speaks only if neither the user nor the agent is mid-turn. If a turn is in progress, the server replies with `InjectionRefused`.\n* `queue` — The message is appended after any already-queued `ConversationText` without interrupting the current agent turn or think response. If nothing is queued, the message plays immediately.\n"
           }
         },
@@ -4040,10 +4068,12 @@
             "$ref": "#/components/schemas/ListenV2EagerEotThreshold"
           },
           "eot_threshold": {
-            "$ref": "#/components/schemas/ListenV2EotThreshold"
+            "$ref": "#/components/schemas/ListenV2EotThreshold",
+            "default": "0.7"
           },
           "eot_timeout_ms": {
-            "$ref": "#/components/schemas/ListenV2EotTimeoutMs"
+            "$ref": "#/components/schemas/ListenV2EotTimeoutMs",
+            "default": "5000"
           }
         },
         "description": "Updates each parameter, if it is supplied. If a particular threshold parameter\nis not supplied, the configuration continues using the currently configured value.\n",
@@ -4190,10 +4220,12 @@
             "$ref": "#/components/schemas/ListenV2EagerEotThreshold"
           },
           "eot_threshold": {
-            "$ref": "#/components/schemas/ListenV2EotThreshold"
+            "$ref": "#/components/schemas/ListenV2EotThreshold",
+            "default": "0.7"
           },
           "eot_timeout_ms": {
-            "$ref": "#/components/schemas/ListenV2EotTimeoutMs"
+            "$ref": "#/components/schemas/ListenV2EotTimeoutMs",
+            "default": "5000"
           }
         },
         "description": "Updates each parameter, if it is supplied. If a particular threshold parameter\nis not supplied, the configuration continues using the currently configured value.\n",

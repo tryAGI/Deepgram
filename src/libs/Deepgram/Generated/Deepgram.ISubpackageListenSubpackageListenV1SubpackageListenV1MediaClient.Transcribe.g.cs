@@ -55,7 +55,9 @@ namespace Deepgram
         /// <param name="measurements">
         /// Default Value: false
         /// </param>
-        /// <param name="model"></param>
+        /// <param name="model">
+        /// Default Value: base-general
+        /// </param>
         /// <param name="multichannel">
         /// Default Value: false
         /// </param>
@@ -71,7 +73,9 @@ namespace Deepgram
         /// <param name="punctuate">
         /// Default Value: false
         /// </param>
-        /// <param name="redact"></param>
+        /// <param name="redact">
+        /// Default Value: false
+        /// </param>
         /// <param name="replace"></param>
         /// <param name="search"></param>
         /// <param name="smartFormat">
@@ -83,7 +87,9 @@ namespace Deepgram
         /// <param name="uttSplit">
         /// Default Value: 0.8
         /// </param>
-        /// <param name="version"></param>
+        /// <param name="version">
+        /// Default Value: latest
+        /// </param>
         /// <param name="mipOptOut">
         /// Default Value: false
         /// </param>
@@ -184,7 +190,9 @@ namespace Deepgram
         /// <param name="measurements">
         /// Default Value: false
         /// </param>
-        /// <param name="model"></param>
+        /// <param name="model">
+        /// Default Value: base-general
+        /// </param>
         /// <param name="multichannel">
         /// Default Value: false
         /// </param>
@@ -200,7 +208,9 @@ namespace Deepgram
         /// <param name="punctuate">
         /// Default Value: false
         /// </param>
-        /// <param name="redact"></param>
+        /// <param name="redact">
+        /// Default Value: false
+        /// </param>
         /// <param name="replace"></param>
         /// <param name="search"></param>
         /// <param name="smartFormat">
@@ -212,7 +222,9 @@ namespace Deepgram
         /// <param name="uttSplit">
         /// Default Value: 0.8
         /// </param>
-        /// <param name="version"></param>
+        /// <param name="version">
+        /// Default Value: latest
+        /// </param>
         /// <param name="mipOptOut">
         /// Default Value: false
         /// </param>
@@ -313,7 +325,9 @@ namespace Deepgram
         /// <param name="measurements">
         /// Default Value: false
         /// </param>
-        /// <param name="model"></param>
+        /// <param name="model">
+        /// Default Value: base-general
+        /// </param>
         /// <param name="multichannel">
         /// Default Value: false
         /// </param>
@@ -329,7 +343,9 @@ namespace Deepgram
         /// <param name="punctuate">
         /// Default Value: false
         /// </param>
-        /// <param name="redact"></param>
+        /// <param name="redact">
+        /// Default Value: false
+        /// </param>
         /// <param name="replace"></param>
         /// <param name="search"></param>
         /// <param name="smartFormat">
@@ -341,7 +357,9 @@ namespace Deepgram
         /// <param name="uttSplit">
         /// Default Value: 0.8
         /// </param>
-        /// <param name="version"></param>
+        /// <param name="version">
+        /// Default Value: latest
+        /// </param>
         /// <param name="mipOptOut">
         /// Default Value: false
         /// </param>
