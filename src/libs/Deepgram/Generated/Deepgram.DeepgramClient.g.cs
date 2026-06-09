@@ -281,9 +281,9 @@ namespace Deepgram
                 description: ""),
             new global::Deepgram.AutoSDKServer(
                 id: "https-agent-deepgram-com",
-                name: "agent.deepgram.com",
+                name: "Production",
                 url: "https://agent.deepgram.com/",
-                description: ""),
+                description: "Production"),
         };
 
         /// <summary>
