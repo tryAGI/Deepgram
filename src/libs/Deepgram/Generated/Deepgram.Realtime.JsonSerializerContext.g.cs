@@ -317,6 +317,10 @@ namespace Deepgram.Realtime
 
             typeof(global::Deepgram.Realtime.JsonConverters.ListenV1DiarizeNullableJsonConverter),
 
+            typeof(global::Deepgram.Realtime.JsonConverters.ListenV1DiarizeModelJsonConverter),
+
+            typeof(global::Deepgram.Realtime.JsonConverters.ListenV1DiarizeModelNullableJsonConverter),
+
             typeof(global::Deepgram.Realtime.JsonConverters.ListenV1DictationJsonConverter),
 
             typeof(global::Deepgram.Realtime.JsonConverters.ListenV1DictationNullableJsonConverter),
@@ -683,6 +687,7 @@ namespace Deepgram.Realtime
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Deepgram.Realtime.ListenV1Channels))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Deepgram.Realtime.ListenV1DetectEntities), TypeInfoPropertyName = "ListenV1DetectEntities2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Deepgram.Realtime.ListenV1Diarize), TypeInfoPropertyName = "ListenV1Diarize2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Deepgram.Realtime.ListenV1DiarizeModel), TypeInfoPropertyName = "ListenV1DiarizeModel2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Deepgram.Realtime.ListenV1Dictation), TypeInfoPropertyName = "ListenV1Dictation2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Deepgram.Realtime.ListenV1Encoding), TypeInfoPropertyName = "ListenV1Encoding2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Deepgram.Realtime.ListenV1Endpointing))]
