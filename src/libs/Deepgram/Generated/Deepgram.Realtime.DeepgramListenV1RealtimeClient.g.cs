@@ -520,7 +520,7 @@ namespace Deepgram.Realtime
         /// <param name="callbackMethod">HTTP method by which the callback request will be made</param>
         /// <param name="channels">Any type</param>
         /// <param name="detectEntities">Identifies and extracts key entities from content in submitted audio. Entities appear in final results. When enabled, Punctuation will also be enabled by default</param>
-        /// <param name="diarize">Defaults to `false`. Recognize speaker changes. Each word in the transcript will be assigned a speaker number starting at 0</param>
+        /// <param name="diarize">Deprecated. Use `diarize_model` instead. Defaults to `false`. Recognize speaker changes. Each word in the transcript will be assigned a speaker number starting at 0</param>
         /// <param name="dictation">Identify and extract key entities from content in submitted audio</param>
         /// <param name="encoding">Specify the expected encoding of your submitted audio</param>
         /// <param name="endpointing">Any type</param>
@@ -556,6 +556,7 @@ namespace Deepgram.Realtime
             global::Deepgram.Realtime.ListenV1Channels? channels = default,
             global::Deepgram.Realtime.ListenV1DetectEntities? detectEntities = default,
             global::Deepgram.Realtime.ListenV1Diarize? diarize = default,
+            global::Deepgram.Realtime.ListenV1DiarizeModel? diarizeModel = default,
             global::Deepgram.Realtime.ListenV1Dictation? dictation = default,
             global::Deepgram.Realtime.ListenV1Encoding? encoding = default,
             global::Deepgram.Realtime.ListenV1Endpointing? endpointing = default,
@@ -602,6 +603,7 @@ namespace Deepgram.Realtime
                 .AddOptionalParameter("channels", channels?.ToString())
                 .AddOptionalParameter("detect_entities", detectEntities?.ToValueString())
                 .AddOptionalParameter("diarize", diarize?.ToValueString())
+                .AddOptionalParameter("diarize_model", diarizeModel?.ToValueString())
                 .AddOptionalParameter("dictation", dictation?.ToValueString())
                 .AddOptionalParameter("encoding", encoding?.ToValueString())
                 .AddOptionalParameter("endpointing", endpointing?.ToString())
