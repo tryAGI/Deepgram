@@ -10,13 +10,13 @@ internal static partial class SubpackageManageSubpackageManageV1SubpackageManage
     private static Argument<string> ProjectId { get; } = new(
         name: @"project-id")
     {
-        Description = @"",
+        Description = @"The unique identifier of the project",
     };
 
     private static Argument<string> BalanceId { get; } = new(
         name: @"balance-id")
     {
-        Description = @"",
+        Description = @"The unique identifier of the balance",
     };
 
                     private static string FormatResponse(ParseResult parseResult, global::Deepgram.GetProjectBalanceV1Response value, global::System.Text.Json.Serialization.JsonSerializerContext context, bool truncateLongStrings)

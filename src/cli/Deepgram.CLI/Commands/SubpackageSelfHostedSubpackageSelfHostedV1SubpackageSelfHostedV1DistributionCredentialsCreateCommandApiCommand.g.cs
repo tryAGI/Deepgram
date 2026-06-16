@@ -10,7 +10,7 @@ internal static partial class SubpackageSelfHostedSubpackageSelfHostedV1Subpacka
     private static Argument<string> ProjectId { get; } = new(
         name: @"project-id")
     {
-        Description = @"",
+        Description = @"The unique identifier of the project",
     };
 
     private static Option<global::System.Collections.Generic.IList<global::Deepgram.V1ProjectsProjectIdSelfHostedDistributionCredentialsPostParametersScopesSchemaItems>?> Scopes { get; } = new(
