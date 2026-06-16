@@ -10,7 +10,7 @@ internal static partial class SubpackageVoiceAgentSubpackageVoiceAgentConfigurat
     private static Argument<string> ProjectId { get; } = new(
         name: @"project-id")
     {
-        Description = @"",
+        Description = @"The unique identifier of the project",
     };
 
     private static Option<string> Config { get; } = new(

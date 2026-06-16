@@ -10,13 +10,13 @@ internal static partial class SubpackageVoiceAgentSubpackageVoiceAgentVariablesD
     private static Argument<string> ProjectId { get; } = new(
         name: @"project-id")
     {
-        Description = @"",
+        Description = @"The unique identifier of the project",
     };
 
     private static Argument<string> VariableId { get; } = new(
         name: @"variable-id")
     {
-        Description = @"",
+        Description = @"The unique identifier of the agent variable",
     };
 
                     private static string FormatResponse(ParseResult parseResult, global::Deepgram.DeleteAgentVariableV1Response value, global::System.Text.Json.Serialization.JsonSerializerContext context, bool truncateLongStrings)

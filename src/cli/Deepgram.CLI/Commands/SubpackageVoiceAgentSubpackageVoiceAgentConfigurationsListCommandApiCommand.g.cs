@@ -10,7 +10,7 @@ internal static partial class SubpackageVoiceAgentSubpackageVoiceAgentConfigurat
     private static Argument<string> ProjectId { get; } = new(
         name: @"project-id")
     {
-        Description = @"",
+        Description = @"The unique identifier of the project",
     };
 
                     private static string FormatResponse(ParseResult parseResult, global::Deepgram.ListAgentConfigurationsV1Response value, global::System.Text.Json.Serialization.JsonSerializerContext context, bool truncateLongStrings)

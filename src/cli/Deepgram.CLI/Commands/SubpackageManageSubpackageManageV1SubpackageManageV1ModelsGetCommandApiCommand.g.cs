@@ -10,7 +10,7 @@ internal static partial class SubpackageManageSubpackageManageV1SubpackageManage
     private static Argument<string> ModelId { get; } = new(
         name: @"model-id")
     {
-        Description = @"",
+        Description = @"The specific UUID of the model",
     };
 
                     private static string FormatResponse(ParseResult parseResult, global::Deepgram.GetModelV1Response value, global::System.Text.Json.Serialization.JsonSerializerContext context, bool truncateLongStrings)
