@@ -13,8 +13,7 @@ namespace Deepgram.Realtime
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("type")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Deepgram.Realtime.JsonConverters.ChannelsListenV2MessagesListenV2CloseStreamTypeJsonConverter))]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Deepgram.Realtime.ChannelsListenV2MessagesListenV2CloseStreamType Type { get; set; }
+        public global::Deepgram.Realtime.ChannelsListenV2MessagesListenV2CloseStreamType Type { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema

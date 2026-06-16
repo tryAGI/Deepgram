@@ -12,14 +12,6 @@ namespace Deepgram.Realtime
         /// 
         /// </summary>
         CloseStream,
-        /// <summary>
-        /// 
-        /// </summary>
-        Finalize,
-        /// <summary>
-        /// 
-        /// </summary>
-        KeepAlive,
     }
 
     /// <summary>
@@ -35,8 +27,6 @@ namespace Deepgram.Realtime
             return value switch
             {
                 ChannelsListenV2MessagesListenV2CloseStreamType.CloseStream => "CloseStream",
-                ChannelsListenV2MessagesListenV2CloseStreamType.Finalize => "Finalize",
-                ChannelsListenV2MessagesListenV2CloseStreamType.KeepAlive => "KeepAlive",
                 _ => throw new global::System.ArgumentOutOfRangeException(nameof(value), value, null),
             };
         }
@@ -48,8 +38,6 @@ namespace Deepgram.Realtime
             return value switch
             {
                 "CloseStream" => ChannelsListenV2MessagesListenV2CloseStreamType.CloseStream,
-                "Finalize" => ChannelsListenV2MessagesListenV2CloseStreamType.Finalize,
-                "KeepAlive" => ChannelsListenV2MessagesListenV2CloseStreamType.KeepAlive,
                 _ => null,
             };
         }

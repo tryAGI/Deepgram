@@ -4204,9 +4204,7 @@
       "ChannelsListenV2MessagesListenV2CloseStreamType": {
         "type": "string",
         "enum": [
-          "Finalize",
-          "CloseStream",
-          "KeepAlive"
+          "CloseStream"
         ],
         "description": "Message type identifier",
         "title": "ChannelsListenV2MessagesListenV2CloseStreamType"
