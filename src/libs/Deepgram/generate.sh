@@ -1,6 +1,18 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
+install_autosdk_cli() {
+  dotnet tool update --global autosdk.cli --prerelease >/dev/null 2>&1 || \
+    dotnet tool install --global autosdk.cli --prerelease
+}
+
+fetch_spec() {
+  curl "$@" \
+    --fail --silent --show-error --location \
+    --retry 5 --retry-delay 10 --retry-all-errors \
+    --connect-timeout 30 --max-time 300
+}
+
 # OpenAPI spec: https://raw.githubusercontent.com/deepgram/deepgram-api-specs/main/openapi.yml (+ AsyncAPI)
 
 use_pinned_spec=false
@@ -18,11 +30,10 @@ done
 if [[ "${TRYAGI_PINNED_SPEC:-0}" == "1" ]]; then
   use_pinned_spec=true
 fi
-
-dotnet tool install --global autosdk.cli --prerelease
+install_autosdk_cli
 rm -rf Generated
 if [[ "$use_pinned_spec" == false ]]; then
-  curl --fail --silent --show-error -L "https://raw.githubusercontent.com/deepgram/deepgram-api-specs/main/openapi.yml" -o openapi.yaml
+  fetch_spec --fail --silent --show-error -L "https://raw.githubusercontent.com/deepgram/deepgram-api-specs/main/openapi.yml" -o openapi.yaml
 elif [[ ! -f openapi.yaml ]]; then
   echo "error: --pinned-spec requested but openapi.yaml does not exist." >&2
   exit 1
@@ -82,7 +93,7 @@ autosdk cli-project openapi.yaml \
 # - Per-channel server refs → AgentV1 uses agent.deepgram.com
 # - operationTraits → parsed for spec compliance
 if [[ "$use_pinned_spec" == false ]]; then
-  curl --fail --silent --show-error -L "https://raw.githubusercontent.com/deepgram/deepgram-api-specs/main/asyncapi.yml" -o asyncapi.yaml
+  fetch_spec --fail --silent --show-error -L "https://raw.githubusercontent.com/deepgram/deepgram-api-specs/main/asyncapi.yml" -o asyncapi.yaml
 elif [[ ! -f asyncapi.yaml ]]; then
   echo "error: --pinned-spec requested but asyncapi.yaml does not exist." >&2
   exit 1
