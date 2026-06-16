@@ -10,13 +10,13 @@ internal static partial class SubpackageSelfHostedSubpackageSelfHostedV1Subpacka
     private static Argument<string> ProjectId { get; } = new(
         name: @"project-id")
     {
-        Description = @"",
+        Description = @"The unique identifier of the project",
     };
 
     private static Argument<string> DistributionCredentialsId { get; } = new(
         name: @"distribution-credentials-id")
     {
-        Description = @"",
+        Description = @"The UUID of the distribution credentials",
     };
 
                     private static string FormatResponse(ParseResult parseResult, global::Deepgram.GetProjectDistributionCredentialsV1Response value, global::System.Text.Json.Serialization.JsonSerializerContext context, bool truncateLongStrings)
