@@ -57,6 +57,25 @@ autosdk generate openapi.yaml \
   --security-scheme Http:Header:Bearer \
   --base-url https://api.deepgram.com
 
+rm -rf ../../cli/Deepgram.CLI
+
+autosdk cli-project openapi.yaml \
+  --output ../../cli/Deepgram.CLI \
+  --sdk-project ../../libs/Deepgram/Deepgram.csproj \
+  --targetFramework net10.0 \
+  --namespace Deepgram \
+  --clientClassName DeepgramClient \
+  --package-id Deepgram.CLI \
+  --tool-command-name deepgram \
+  --user-secrets-id Deepgram.CLI \
+  --api-key-env-var DEEPGRAM_API_KEY \
+  --base-url-env-var DEEPGRAM_BASE_URL \
+  --cli-credential-file \
+  --cli-keep-api-group \
+  --exclude-deprecated-operations \
+  --security-scheme Http:Header:Bearer \
+  --base-url https://api.deepgram.com
+
 # Generate WebSocket clients from upstream AsyncAPI spec (4 channels:
 # SpeakV1, ListenV1, ListenV2, AgentV1). AutoSDK natively handles:
 # - Inline message payloads → extracted to component schemas automatically

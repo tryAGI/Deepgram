@@ -19,6 +19,13 @@ using Deepgram;
 using var client = new DeepgramClient(apiKey);
 ```
 
+### CLI
+
+```bash
+dotnet tool install --global Deepgram.CLI --prerelease
+deepgram api --help
+```
+
 <!-- EXAMPLES:START -->
 <!-- EXAMPLES:END -->
 

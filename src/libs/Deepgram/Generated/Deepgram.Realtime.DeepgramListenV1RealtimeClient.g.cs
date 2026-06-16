@@ -521,6 +521,7 @@ namespace Deepgram.Realtime
         /// <param name="channels">Any type</param>
         /// <param name="detectEntities">Identifies and extracts key entities from content in submitted audio. Entities appear in final results. When enabled, Punctuation will also be enabled by default</param>
         /// <param name="diarize">Deprecated. Use `diarize_model` instead. Defaults to `false`. Recognize speaker changes. Each word in the transcript will be assigned a speaker number starting at 0</param>
+        /// <param name="diarizeModel"></param>
         /// <param name="dictation">Identify and extract key entities from content in submitted audio</param>
         /// <param name="encoding">Specify the expected encoding of your submitted audio</param>
         /// <param name="endpointing">Any type</param>
