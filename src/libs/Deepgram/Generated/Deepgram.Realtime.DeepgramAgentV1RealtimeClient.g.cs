@@ -265,6 +265,14 @@ namespace Deepgram.Realtime
         /// </summary>
         public event global::System.EventHandler<AutoSDKWebSocketMessageEventArgs<global::Deepgram.Realtime.AgentV1ServerEvent>>? MessageReceived;
         /// <summary>
+        /// Raised after a AgentV1ListenUpdated message is deserialized.
+        /// </summary>
+        public event global::System.EventHandler<AutoSDKWebSocketMessageEventArgs<global::Deepgram.Realtime.AgentV1AgentV1ListenUpdated>>? AgentV1ListenUpdatedReceived;
+        /// <summary>
+        /// Raised after a AgentV1ThinkUpdated message is deserialized.
+        /// </summary>
+        public event global::System.EventHandler<AutoSDKWebSocketMessageEventArgs<global::Deepgram.Realtime.AgentV1AgentV1ThinkUpdated>>? AgentV1ThinkUpdatedReceived;
+        /// <summary>
         /// Raised after a AgentV1ReceiveFunctionCallResponse message is deserialized.
         /// </summary>
         public event global::System.EventHandler<AutoSDKWebSocketMessageEventArgs<global::Deepgram.Realtime.AgentV1AgentV1ReceiveFunctionCallResponse>>? AgentV1ReceiveFunctionCallResponseReceived;
@@ -276,10 +284,6 @@ namespace Deepgram.Realtime
         /// Raised after a AgentV1SpeakUpdated message is deserialized.
         /// </summary>
         public event global::System.EventHandler<AutoSDKWebSocketMessageEventArgs<global::Deepgram.Realtime.AgentV1AgentV1SpeakUpdated>>? AgentV1SpeakUpdatedReceived;
-        /// <summary>
-        /// Raised after a AgentV1ThinkUpdated message is deserialized.
-        /// </summary>
-        public event global::System.EventHandler<AutoSDKWebSocketMessageEventArgs<global::Deepgram.Realtime.AgentV1AgentV1ThinkUpdated>>? AgentV1ThinkUpdatedReceived;
         /// <summary>
         /// Raised after a AgentV1InjectionRefused message is deserialized.
         /// </summary>
