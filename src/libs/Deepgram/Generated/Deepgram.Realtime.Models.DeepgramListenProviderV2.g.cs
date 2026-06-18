@@ -36,6 +36,24 @@ namespace Deepgram.Realtime
         public global::System.Collections.Generic.IList<string>? LanguageHints { get; set; }
 
         /// <summary>
+        /// End-of-turn confidence required to finish a turn. Valid range: 0.5 - 0.9. Defaults to 0.7.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("eot_threshold")]
+        public double? EotThreshold { get; set; }
+
+        /// <summary>
+        /// End-of-turn confidence required to fire an eager end-of-turn event. When set, enables EagerEndOfTurn and TurnResumed events. Valid range: 0.3 - 0.9.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("eager_eot_threshold")]
+        public double? EagerEotThreshold { get; set; }
+
+        /// <summary>
+        /// A turn will be finished when this much time in milliseconds has passed after speech, regardless of EOT confidence. Defaults to 5000.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("eot_timeout_ms")]
+        public int? EotTimeoutMs { get; set; }
+
+        /// <summary>
         /// Prompt keyterm recognition to improve Keyword Recall Rate
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("keyterms")]
@@ -62,6 +80,15 @@ namespace Deepgram.Realtime
         /// <param name="languageHints">
         /// An array of one or more BCP-47 language codes to bias the model toward specific languages. Only supported when model is flux-general-multi. Without hints, the model auto-detects the spoken language. See the Language Prompting guide for details.
         /// </param>
+        /// <param name="eotThreshold">
+        /// End-of-turn confidence required to finish a turn. Valid range: 0.5 - 0.9. Defaults to 0.7.
+        /// </param>
+        /// <param name="eagerEotThreshold">
+        /// End-of-turn confidence required to fire an eager end-of-turn event. When set, enables EagerEndOfTurn and TurnResumed events. Valid range: 0.3 - 0.9.
+        /// </param>
+        /// <param name="eotTimeoutMs">
+        /// A turn will be finished when this much time in milliseconds has passed after speech, regardless of EOT confidence. Defaults to 5000.
+        /// </param>
         /// <param name="keyterms">
         /// Prompt keyterm recognition to improve Keyword Recall Rate
         /// </param>
@@ -73,12 +100,18 @@ namespace Deepgram.Realtime
             global::Deepgram.Realtime.DeepgramListenProviderV2Type type,
             global::Deepgram.Realtime.DeepgramListenProviderV2Version? version,
             global::System.Collections.Generic.IList<string>? languageHints,
+            double? eotThreshold,
+            double? eagerEotThreshold,
+            int? eotTimeoutMs,
             global::System.Collections.Generic.IList<string>? keyterms)
         {
             this.Type = type;
             this.Version = version;
             this.Model = model ?? throw new global::System.ArgumentNullException(nameof(model));
             this.LanguageHints = languageHints;
+            this.EotThreshold = eotThreshold;
+            this.EagerEotThreshold = eagerEotThreshold;
+            this.EotTimeoutMs = eotTimeoutMs;
             this.Keyterms = keyterms;
         }
 

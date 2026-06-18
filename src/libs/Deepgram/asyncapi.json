@@ -26,6 +26,22 @@
         }
       ],
       "messages": {
+        "AgentV1ListenUpdated": {
+          "name": "AgentV1ListenUpdated",
+          "title": "AgentV1ListenUpdated",
+          "description": "Receive listen update from Deepgram's Voice Agent API",
+          "payload": {
+            "$ref": "#/components/schemas/AgentV1_AgentV1ListenUpdated"
+          }
+        },
+        "AgentV1ThinkUpdated": {
+          "name": "AgentV1ThinkUpdated",
+          "title": "AgentV1ThinkUpdated",
+          "description": "Receive think update from Deepgram's Voice Agent API",
+          "payload": {
+            "$ref": "#/components/schemas/AgentV1_AgentV1ThinkUpdated"
+          }
+        },
         "AgentV1ReceiveFunctionCallResponse": {
           "name": "AgentV1ReceiveFunctionCallResponse",
           "title": "AgentV1ReceiveFunctionCallResponse",
@@ -48,14 +64,6 @@
           "description": "Receive speak update from Deepgram's Voice Agent API",
           "payload": {
             "$ref": "#/components/schemas/AgentV1_AgentV1SpeakUpdated"
-          }
-        },
-        "AgentV1ThinkUpdated": {
-          "name": "AgentV1ThinkUpdated",
-          "title": "AgentV1ThinkUpdated",
-          "description": "Receive think update from Deepgram's Voice Agent API",
-          "payload": {
-            "$ref": "#/components/schemas/AgentV1_AgentV1ThinkUpdated"
           }
         },
         "AgentV1InjectionRefused": {
@@ -170,6 +178,22 @@
             "$ref": "#/components/schemas/AgentV1_AgentV1Settings"
           }
         },
+        "AgentV1UpdateListen": {
+          "name": "AgentV1UpdateListen",
+          "title": "AgentV1UpdateListen",
+          "description": "Send update listen to Deepgram's Voice Agent API",
+          "payload": {
+            "$ref": "#/components/schemas/AgentV1_AgentV1UpdateListen"
+          }
+        },
+        "AgentV1UpdateThink": {
+          "name": "AgentV1UpdateThink",
+          "title": "AgentV1UpdateThink",
+          "description": "Send update think to Deepgram's Voice Agent API",
+          "payload": {
+            "$ref": "#/components/schemas/AgentV1_AgentV1UpdateThink"
+          }
+        },
         "AgentV1UpdateSpeak": {
           "name": "AgentV1UpdateSpeak",
           "title": "AgentV1UpdateSpeak",
@@ -216,14 +240,6 @@
           "description": "Send a prompt update to Deepgram's Voice Agent API",
           "payload": {
             "$ref": "#/components/schemas/AgentV1_AgentV1UpdatePrompt"
-          }
-        },
-        "AgentV1UpdateThink": {
-          "name": "AgentV1UpdateThink",
-          "title": "AgentV1UpdateThink",
-          "description": "Send update think to Deepgram's Voice Agent API",
-          "payload": {
-            "$ref": "#/components/schemas/AgentV1_AgentV1UpdateThink"
           }
         },
         "AgentV1Media": {
@@ -693,31 +709,15 @@
   },
   "components": {
     "messages": {
-      "subpackage_agent/v1.agent.v1-server-0-AgentV1ReceiveFunctionCallResponse": {
-        "name": "AgentV1ReceiveFunctionCallResponse",
-        "title": "AgentV1ReceiveFunctionCallResponse",
-        "description": "Receive a function call response from the server after the server\nhas executed a server-side function call internally. This occurs\nwhen functions are marked with `client_side: false`.\n",
+      "subpackage_agent/v1.agent.v1-server-0-AgentV1ListenUpdated": {
+        "name": "AgentV1ListenUpdated",
+        "title": "AgentV1ListenUpdated",
+        "description": "Receive listen update from Deepgram's Voice Agent API",
         "payload": {
-          "$ref": "#/components/schemas/AgentV1_AgentV1ReceiveFunctionCallResponse"
+          "$ref": "#/components/schemas/AgentV1_AgentV1ListenUpdated"
         }
       },
-      "subpackage_agent/v1.agent.v1-server-1-AgentV1PromptUpdated": {
-        "name": "AgentV1PromptUpdated",
-        "title": "AgentV1PromptUpdated",
-        "description": "Receive prompt update from Deepgram's Voice Agent API",
-        "payload": {
-          "$ref": "#/components/schemas/AgentV1_AgentV1PromptUpdated"
-        }
-      },
-      "subpackage_agent/v1.agent.v1-server-2-AgentV1SpeakUpdated": {
-        "name": "AgentV1SpeakUpdated",
-        "title": "AgentV1SpeakUpdated",
-        "description": "Receive speak update from Deepgram's Voice Agent API",
-        "payload": {
-          "$ref": "#/components/schemas/AgentV1_AgentV1SpeakUpdated"
-        }
-      },
-      "subpackage_agent/v1.agent.v1-server-3-AgentV1ThinkUpdated": {
+      "subpackage_agent/v1.agent.v1-server-1-AgentV1ThinkUpdated": {
         "name": "AgentV1ThinkUpdated",
         "title": "AgentV1ThinkUpdated",
         "description": "Receive think update from Deepgram's Voice Agent API",
@@ -725,7 +725,31 @@
           "$ref": "#/components/schemas/AgentV1_AgentV1ThinkUpdated"
         }
       },
-      "subpackage_agent/v1.agent.v1-server-4-AgentV1InjectionRefused": {
+      "subpackage_agent/v1.agent.v1-server-2-AgentV1ReceiveFunctionCallResponse": {
+        "name": "AgentV1ReceiveFunctionCallResponse",
+        "title": "AgentV1ReceiveFunctionCallResponse",
+        "description": "Receive a function call response from the server after the server\nhas executed a server-side function call internally. This occurs\nwhen functions are marked with `client_side: false`.\n",
+        "payload": {
+          "$ref": "#/components/schemas/AgentV1_AgentV1ReceiveFunctionCallResponse"
+        }
+      },
+      "subpackage_agent/v1.agent.v1-server-3-AgentV1PromptUpdated": {
+        "name": "AgentV1PromptUpdated",
+        "title": "AgentV1PromptUpdated",
+        "description": "Receive prompt update from Deepgram's Voice Agent API",
+        "payload": {
+          "$ref": "#/components/schemas/AgentV1_AgentV1PromptUpdated"
+        }
+      },
+      "subpackage_agent/v1.agent.v1-server-4-AgentV1SpeakUpdated": {
+        "name": "AgentV1SpeakUpdated",
+        "title": "AgentV1SpeakUpdated",
+        "description": "Receive speak update from Deepgram's Voice Agent API",
+        "payload": {
+          "$ref": "#/components/schemas/AgentV1_AgentV1SpeakUpdated"
+        }
+      },
+      "subpackage_agent/v1.agent.v1-server-5-AgentV1InjectionRefused": {
         "name": "AgentV1InjectionRefused",
         "title": "AgentV1InjectionRefused",
         "description": "Receive injection refused message from Deepgram's Voice Agent API",
@@ -733,7 +757,7 @@
           "$ref": "#/components/schemas/AgentV1_AgentV1InjectionRefused"
         }
       },
-      "subpackage_agent/v1.agent.v1-server-5-AgentV1Welcome": {
+      "subpackage_agent/v1.agent.v1-server-6-AgentV1Welcome": {
         "name": "AgentV1Welcome",
         "title": "AgentV1Welcome",
         "description": "Receive welcome message from Deepgram's Voice Agent API",
@@ -741,7 +765,7 @@
           "$ref": "#/components/schemas/AgentV1_AgentV1Welcome"
         }
       },
-      "subpackage_agent/v1.agent.v1-server-6-AgentV1SettingsApplied": {
+      "subpackage_agent/v1.agent.v1-server-7-AgentV1SettingsApplied": {
         "name": "AgentV1SettingsApplied",
         "title": "AgentV1SettingsApplied",
         "description": "Receive settings applied message from Deepgram's Voice Agent API",
@@ -749,7 +773,7 @@
           "$ref": "#/components/schemas/AgentV1_AgentV1SettingsApplied"
         }
       },
-      "subpackage_agent/v1.agent.v1-server-7-AgentV1ConversationText": {
+      "subpackage_agent/v1.agent.v1-server-8-AgentV1ConversationText": {
         "name": "AgentV1ConversationText",
         "title": "AgentV1ConversationText",
         "description": "Receive conversation text from Deepgram's Voice Agent API",
@@ -757,7 +781,7 @@
           "$ref": "#/components/schemas/AgentV1_AgentV1ConversationText"
         }
       },
-      "subpackage_agent/v1.agent.v1-server-8-AgentV1UserStartedSpeaking": {
+      "subpackage_agent/v1.agent.v1-server-9-AgentV1UserStartedSpeaking": {
         "name": "AgentV1UserStartedSpeaking",
         "title": "AgentV1UserStartedSpeaking",
         "description": "Receive user started speaking message from Deepgram's Voice Agent API",
@@ -765,7 +789,7 @@
           "$ref": "#/components/schemas/AgentV1_AgentV1UserStartedSpeaking"
         }
       },
-      "subpackage_agent/v1.agent.v1-server-9-AgentV1AgentThinking": {
+      "subpackage_agent/v1.agent.v1-server-10-AgentV1AgentThinking": {
         "name": "AgentV1AgentThinking",
         "title": "AgentV1AgentThinking",
         "description": "Receive agent thinking message from Deepgram's Voice Agent API",
@@ -773,7 +797,7 @@
           "$ref": "#/components/schemas/AgentV1_AgentV1AgentThinking"
         }
       },
-      "subpackage_agent/v1.agent.v1-server-10-AgentV1FunctionCallRequest": {
+      "subpackage_agent/v1.agent.v1-server-11-AgentV1FunctionCallRequest": {
         "name": "AgentV1FunctionCallRequest",
         "title": "AgentV1FunctionCallRequest",
         "description": "Receive function call request from Deepgram's Voice Agent API",
@@ -781,7 +805,7 @@
           "$ref": "#/components/schemas/AgentV1_AgentV1FunctionCallRequest"
         }
       },
-      "subpackage_agent/v1.agent.v1-server-11-AgentV1AgentStartedSpeaking": {
+      "subpackage_agent/v1.agent.v1-server-12-AgentV1AgentStartedSpeaking": {
         "name": "AgentV1AgentStartedSpeaking",
         "title": "AgentV1AgentStartedSpeaking",
         "description": "Receive agent started speaking message from Deepgram's Voice Agent API",
@@ -789,7 +813,7 @@
           "$ref": "#/components/schemas/AgentV1_AgentV1AgentStartedSpeaking"
         }
       },
-      "subpackage_agent/v1.agent.v1-server-12-AgentV1AgentAudioDone": {
+      "subpackage_agent/v1.agent.v1-server-13-AgentV1AgentAudioDone": {
         "name": "AgentV1AgentAudioDone",
         "title": "AgentV1AgentAudioDone",
         "description": "Receive agent audio done message from Deepgram's Voice Agent API",
@@ -797,7 +821,7 @@
           "$ref": "#/components/schemas/AgentV1_AgentV1AgentAudioDone"
         }
       },
-      "subpackage_agent/v1.agent.v1-server-13-AgentV1Error": {
+      "subpackage_agent/v1.agent.v1-server-14-AgentV1Error": {
         "name": "AgentV1Error",
         "title": "AgentV1Error",
         "description": "Receive error response from Deepgram's Voice Agent API",
@@ -805,7 +829,7 @@
           "$ref": "#/components/schemas/AgentV1_AgentV1Error"
         }
       },
-      "subpackage_agent/v1.agent.v1-server-14-AgentV1Warning": {
+      "subpackage_agent/v1.agent.v1-server-15-AgentV1Warning": {
         "name": "AgentV1Warning",
         "title": "AgentV1Warning",
         "description": "Receive warning messages from Deepgram's Voice Agent API",
@@ -813,7 +837,7 @@
           "$ref": "#/components/schemas/AgentV1_AgentV1Warning"
         }
       },
-      "subpackage_agent/v1.agent.v1-server-15-AgentV1History": {
+      "subpackage_agent/v1.agent.v1-server-16-AgentV1History": {
         "name": "AgentV1History",
         "title": "AgentV1History",
         "description": "Receive a conversation history message from Deepgram's Voice Agent API. Each message is either a conversation text (with role and content) or a function call record (with function_calls array).",
@@ -821,7 +845,7 @@
           "$ref": "#/components/schemas/AgentV1_AgentV1History"
         }
       },
-      "subpackage_agent/v1.agent.v1-server-16-AgentV1Audio": {
+      "subpackage_agent/v1.agent.v1-server-17-AgentV1Audio": {
         "name": "AgentV1Audio",
         "title": "AgentV1Audio",
         "description": "Receive raw binary audio data generated by Deepgram's Voice Agent API",
@@ -837,55 +861,15 @@
           "$ref": "#/components/schemas/AgentV1_AgentV1Settings"
         }
       },
-      "subpackage_agent/v1.agent.v1-client-1-AgentV1UpdateSpeak": {
-        "name": "AgentV1UpdateSpeak",
-        "title": "AgentV1UpdateSpeak",
-        "description": "Send update speak to Deepgram's Voice Agent API",
+      "subpackage_agent/v1.agent.v1-client-1-AgentV1UpdateListen": {
+        "name": "AgentV1UpdateListen",
+        "title": "AgentV1UpdateListen",
+        "description": "Send update listen to Deepgram's Voice Agent API",
         "payload": {
-          "$ref": "#/components/schemas/AgentV1_AgentV1UpdateSpeak"
+          "$ref": "#/components/schemas/AgentV1_AgentV1UpdateListen"
         }
       },
-      "subpackage_agent/v1.agent.v1-client-2-AgentV1InjectUserMessage": {
-        "name": "AgentV1InjectUserMessage",
-        "title": "AgentV1InjectUserMessage",
-        "description": "Send inject user message to Deepgram's Voice Agent API",
-        "payload": {
-          "$ref": "#/components/schemas/AgentV1_AgentV1InjectUserMessage"
-        }
-      },
-      "subpackage_agent/v1.agent.v1-client-3-AgentV1InjectAgentMessage": {
-        "name": "AgentV1InjectAgentMessage",
-        "title": "AgentV1InjectAgentMessage",
-        "description": "Send inject agent message to Deepgram's Voice Agent API",
-        "payload": {
-          "$ref": "#/components/schemas/AgentV1_AgentV1InjectAgentMessage"
-        }
-      },
-      "subpackage_agent/v1.agent.v1-client-4-AgentV1SendFunctionCallResponse": {
-        "name": "AgentV1SendFunctionCallResponse",
-        "title": "AgentV1SendFunctionCallResponse",
-        "description": "Send a function call response from the client to the server after\nexecuting a client-side function call. This is used when the server\nrequests execution of a function marked with `client_side: true`.\n",
-        "payload": {
-          "$ref": "#/components/schemas/AgentV1_AgentV1SendFunctionCallResponse"
-        }
-      },
-      "subpackage_agent/v1.agent.v1-client-5-AgentV1KeepAlive": {
-        "name": "AgentV1KeepAlive",
-        "title": "AgentV1KeepAlive",
-        "description": "Send keep alive to Deepgram's Voice Agent API",
-        "payload": {
-          "$ref": "#/components/schemas/AgentV1_AgentV1KeepAlive"
-        }
-      },
-      "subpackage_agent/v1.agent.v1-client-6-AgentV1UpdatePrompt": {
-        "name": "AgentV1UpdatePrompt",
-        "title": "AgentV1UpdatePrompt",
-        "description": "Send a prompt update to Deepgram's Voice Agent API",
-        "payload": {
-          "$ref": "#/components/schemas/AgentV1_AgentV1UpdatePrompt"
-        }
-      },
-      "subpackage_agent/v1.agent.v1-client-7-AgentV1UpdateThink": {
+      "subpackage_agent/v1.agent.v1-client-2-AgentV1UpdateThink": {
         "name": "AgentV1UpdateThink",
         "title": "AgentV1UpdateThink",
         "description": "Send update think to Deepgram's Voice Agent API",
@@ -893,7 +877,55 @@
           "$ref": "#/components/schemas/AgentV1_AgentV1UpdateThink"
         }
       },
-      "subpackage_agent/v1.agent.v1-client-8-AgentV1Media": {
+      "subpackage_agent/v1.agent.v1-client-3-AgentV1UpdateSpeak": {
+        "name": "AgentV1UpdateSpeak",
+        "title": "AgentV1UpdateSpeak",
+        "description": "Send update speak to Deepgram's Voice Agent API",
+        "payload": {
+          "$ref": "#/components/schemas/AgentV1_AgentV1UpdateSpeak"
+        }
+      },
+      "subpackage_agent/v1.agent.v1-client-4-AgentV1InjectUserMessage": {
+        "name": "AgentV1InjectUserMessage",
+        "title": "AgentV1InjectUserMessage",
+        "description": "Send inject user message to Deepgram's Voice Agent API",
+        "payload": {
+          "$ref": "#/components/schemas/AgentV1_AgentV1InjectUserMessage"
+        }
+      },
+      "subpackage_agent/v1.agent.v1-client-5-AgentV1InjectAgentMessage": {
+        "name": "AgentV1InjectAgentMessage",
+        "title": "AgentV1InjectAgentMessage",
+        "description": "Send inject agent message to Deepgram's Voice Agent API",
+        "payload": {
+          "$ref": "#/components/schemas/AgentV1_AgentV1InjectAgentMessage"
+        }
+      },
+      "subpackage_agent/v1.agent.v1-client-6-AgentV1SendFunctionCallResponse": {
+        "name": "AgentV1SendFunctionCallResponse",
+        "title": "AgentV1SendFunctionCallResponse",
+        "description": "Send a function call response from the client to the server after\nexecuting a client-side function call. This is used when the server\nrequests execution of a function marked with `client_side: true`.\n",
+        "payload": {
+          "$ref": "#/components/schemas/AgentV1_AgentV1SendFunctionCallResponse"
+        }
+      },
+      "subpackage_agent/v1.agent.v1-client-7-AgentV1KeepAlive": {
+        "name": "AgentV1KeepAlive",
+        "title": "AgentV1KeepAlive",
+        "description": "Send keep alive to Deepgram's Voice Agent API",
+        "payload": {
+          "$ref": "#/components/schemas/AgentV1_AgentV1KeepAlive"
+        }
+      },
+      "subpackage_agent/v1.agent.v1-client-8-AgentV1UpdatePrompt": {
+        "name": "AgentV1UpdatePrompt",
+        "title": "AgentV1UpdatePrompt",
+        "description": "Send a prompt update to Deepgram's Voice Agent API",
+        "payload": {
+          "$ref": "#/components/schemas/AgentV1_AgentV1UpdatePrompt"
+        }
+      },
+      "subpackage_agent/v1.agent.v1-client-9-AgentV1Media": {
         "name": "AgentV1Media",
         "title": "AgentV1Media",
         "description": "Send raw binary audio data to Deepgram's Voice Agent API for processing",
@@ -1103,6 +1135,38 @@
       }
     },
     "schemas": {
+      "AgentV1_AgentV1ListenUpdated": {
+        "type": "object",
+        "properties": {
+          "type": {
+            "type": "string",
+            "enum": [
+              "ListenUpdated"
+            ],
+            "description": "Message type identifier for listen update confirmation"
+          }
+        },
+        "required": [
+          "type"
+        ],
+        "title": "AgentV1_AgentV1ListenUpdated"
+      },
+      "AgentV1_AgentV1ThinkUpdated": {
+        "type": "object",
+        "properties": {
+          "type": {
+            "type": "string",
+            "enum": [
+              "ThinkUpdated"
+            ],
+            "description": "Message type identifier for think update confirmation"
+          }
+        },
+        "required": [
+          "type"
+        ],
+        "title": "AgentV1_AgentV1ThinkUpdated"
+      },
       "AgentV1_AgentV1ReceiveFunctionCallResponse": {
         "type": "object",
         "properties": {
@@ -1165,22 +1229,6 @@
           "type"
         ],
         "title": "AgentV1_AgentV1SpeakUpdated"
-      },
-      "AgentV1_AgentV1ThinkUpdated": {
-        "type": "object",
-        "properties": {
-          "type": {
-            "type": "string",
-            "enum": [
-              "ThinkUpdated"
-            ],
-            "description": "Message type identifier for think update confirmation"
-          }
-        },
-        "required": [
-          "type"
-        ],
-        "title": "AgentV1_AgentV1ThinkUpdated"
       },
       "AgentV1_AgentV1InjectionRefused": {
         "type": "object",
@@ -1918,6 +1966,20 @@
               "type": "string"
             },
             "description": "An array of one or more BCP-47 language codes to bias the model toward specific languages. Only supported when model is flux-general-multi. Without hints, the model auto-detects the spoken language. See the Language Prompting guide for details."
+          },
+          "eot_threshold": {
+            "type": "number",
+            "format": "double",
+            "description": "End-of-turn confidence required to finish a turn. Valid range: 0.5 - 0.9. Defaults to 0.7."
+          },
+          "eager_eot_threshold": {
+            "type": "number",
+            "format": "double",
+            "description": "End-of-turn confidence required to fire an eager end-of-turn event. When set, enables EagerEndOfTurn and TurnResumed events. Valid range: 0.3 - 0.9."
+          },
+          "eot_timeout_ms": {
+            "type": "integer",
+            "description": "A turn will be finished when this much time in milliseconds has passed after speech, regardless of EOT confidence. Defaults to 5000."
           },
           "keyterms": {
             "type": "array",
@@ -2945,6 +3007,78 @@
         ],
         "title": "AgentV1_AgentV1Settings"
       },
+      "ChannelsAgentV1MessagesAgentV1UpdateListenListen": {
+        "type": "object",
+        "properties": {
+          "provider": {
+            "$ref": "#/components/schemas/DeepgramListenProviderV2"
+          }
+        },
+        "required": [
+          "provider"
+        ],
+        "description": "Listen configuration to update. Contains a provider object with the same schema as Settings. The provider identity (type, version, model) is required and must match the current session.",
+        "title": "ChannelsAgentV1MessagesAgentV1UpdateListenListen"
+      },
+      "AgentV1_AgentV1UpdateListen": {
+        "type": "object",
+        "properties": {
+          "type": {
+            "type": "string",
+            "enum": [
+              "UpdateListen"
+            ],
+            "description": "Message type identifier for updating the listen configuration"
+          },
+          "listen": {
+            "$ref": "#/components/schemas/ChannelsAgentV1MessagesAgentV1UpdateListenListen",
+            "description": "Listen configuration to update. Contains a provider object with the same schema as Settings. The provider identity (type, version, model) is required and must match the current session."
+          }
+        },
+        "required": [
+          "type",
+          "listen"
+        ],
+        "title": "AgentV1_AgentV1UpdateListen"
+      },
+      "ChannelsAgentV1MessagesAgentV1UpdateThinkThink1": {
+        "type": "array",
+        "items": {
+          "$ref": "#/components/schemas/ThinkSettingsV1"
+        },
+        "title": "ChannelsAgentV1MessagesAgentV1UpdateThinkThink1"
+      },
+      "ChannelsAgentV1MessagesAgentV1UpdateThinkThink": {
+        "oneOf": [
+          {
+            "$ref": "#/components/schemas/ThinkSettingsV1"
+          },
+          {
+            "$ref": "#/components/schemas/ChannelsAgentV1MessagesAgentV1UpdateThinkThink1"
+          }
+        ],
+        "title": "ChannelsAgentV1MessagesAgentV1UpdateThinkThink"
+      },
+      "AgentV1_AgentV1UpdateThink": {
+        "type": "object",
+        "properties": {
+          "type": {
+            "type": "string",
+            "enum": [
+              "UpdateThink"
+            ],
+            "description": "Message type identifier for updating the think model"
+          },
+          "think": {
+            "$ref": "#/components/schemas/ChannelsAgentV1MessagesAgentV1UpdateThinkThink"
+          }
+        },
+        "required": [
+          "type",
+          "think"
+        ],
+        "title": "AgentV1_AgentV1UpdateThink"
+      },
       "ChannelsAgentV1MessagesAgentV1UpdateSpeakSpeak1": {
         "type": "array",
         "items": {
@@ -3113,44 +3247,6 @@
           "prompt"
         ],
         "title": "AgentV1_AgentV1UpdatePrompt"
-      },
-      "ChannelsAgentV1MessagesAgentV1UpdateThinkThink1": {
-        "type": "array",
-        "items": {
-          "$ref": "#/components/schemas/ThinkSettingsV1"
-        },
-        "title": "ChannelsAgentV1MessagesAgentV1UpdateThinkThink1"
-      },
-      "ChannelsAgentV1MessagesAgentV1UpdateThinkThink": {
-        "oneOf": [
-          {
-            "$ref": "#/components/schemas/ThinkSettingsV1"
-          },
-          {
-            "$ref": "#/components/schemas/ChannelsAgentV1MessagesAgentV1UpdateThinkThink1"
-          }
-        ],
-        "title": "ChannelsAgentV1MessagesAgentV1UpdateThinkThink"
-      },
-      "AgentV1_AgentV1UpdateThink": {
-        "type": "object",
-        "properties": {
-          "type": {
-            "type": "string",
-            "enum": [
-              "UpdateThink"
-            ],
-            "description": "Message type identifier for updating the think model"
-          },
-          "think": {
-            "$ref": "#/components/schemas/ChannelsAgentV1MessagesAgentV1UpdateThinkThink"
-          }
-        },
-        "required": [
-          "type",
-          "think"
-        ],
-        "title": "AgentV1_AgentV1UpdateThink"
       },
       "AgentV1_AgentV1Media": {
         "type": "string",
@@ -4615,6 +4711,30 @@
     }
   },
   "operations": {
+    "AgentV1ListenUpdated": {
+      "description": "Receive listen update from Deepgram's Voice Agent API",
+      "action": "receive",
+      "channel": {
+        "$ref": "#/channels/AgentV1"
+      },
+      "messages": [
+        {
+          "$ref": "#/channels/AgentV1/messages/AgentV1ListenUpdated"
+        }
+      ]
+    },
+    "AgentV1ThinkUpdated": {
+      "description": "Receive think update from Deepgram's Voice Agent API",
+      "action": "receive",
+      "channel": {
+        "$ref": "#/channels/AgentV1"
+      },
+      "messages": [
+        {
+          "$ref": "#/channels/AgentV1/messages/AgentV1ThinkUpdated"
+        }
+      ]
+    },
     "AgentV1ReceiveFunctionCallResponse": {
       "description": "Receive a function call response from the server after the server\nhas executed a server-side function call internally. This occurs\nwhen functions are marked with `client_side: false`.\n",
       "action": "receive",
@@ -4648,18 +4768,6 @@
       "messages": [
         {
           "$ref": "#/channels/AgentV1/messages/AgentV1SpeakUpdated"
-        }
-      ]
-    },
-    "AgentV1ThinkUpdated": {
-      "description": "Receive think update from Deepgram's Voice Agent API",
-      "action": "receive",
-      "channel": {
-        "$ref": "#/channels/AgentV1"
-      },
-      "messages": [
-        {
-          "$ref": "#/channels/AgentV1/messages/AgentV1ThinkUpdated"
         }
       ]
     },
@@ -4831,6 +4939,30 @@
         }
       ]
     },
+    "AgentV1UpdateListen": {
+      "description": "Send update listen to Deepgram's Voice Agent API",
+      "action": "send",
+      "channel": {
+        "$ref": "#/channels/AgentV1"
+      },
+      "messages": [
+        {
+          "$ref": "#/channels/AgentV1/messages/AgentV1UpdateListen"
+        }
+      ]
+    },
+    "AgentV1UpdateThink": {
+      "description": "Send update think to Deepgram's Voice Agent API",
+      "action": "send",
+      "channel": {
+        "$ref": "#/channels/AgentV1"
+      },
+      "messages": [
+        {
+          "$ref": "#/channels/AgentV1/messages/AgentV1UpdateThink"
+        }
+      ]
+    },
     "AgentV1UpdateSpeak": {
       "description": "Send update speak to Deepgram's Voice Agent API",
       "action": "send",
@@ -4900,18 +5032,6 @@
       "messages": [
         {
           "$ref": "#/channels/AgentV1/messages/AgentV1UpdatePrompt"
-        }
-      ]
-    },
-    "AgentV1UpdateThink": {
-      "description": "Send update think to Deepgram's Voice Agent API",
-      "action": "send",
-      "channel": {
-        "$ref": "#/channels/AgentV1"
-      },
-      "messages": [
-        {
-          "$ref": "#/channels/AgentV1/messages/AgentV1UpdateThink"
         }
       ]
     },
