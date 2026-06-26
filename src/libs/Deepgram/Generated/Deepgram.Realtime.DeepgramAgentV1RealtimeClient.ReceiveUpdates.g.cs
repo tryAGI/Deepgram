@@ -168,6 +168,24 @@ namespace Deepgram.Realtime
                     rawText,
                     json));
 
+            if (@event.AgentV1AgentV1ListenUpdated is { } __AgentV1ListenUpdatedReceived)
+            {
+                AgentV1ListenUpdatedReceived?.Invoke(
+                    this,
+                    new AutoSDKWebSocketMessageEventArgs<global::Deepgram.Realtime.AgentV1AgentV1ListenUpdated>(
+                        __AgentV1ListenUpdatedReceived,
+                        rawText,
+                        json));
+            }
+            if (@event.AgentV1AgentV1ThinkUpdated is { } __AgentV1ThinkUpdatedReceived)
+            {
+                AgentV1ThinkUpdatedReceived?.Invoke(
+                    this,
+                    new AutoSDKWebSocketMessageEventArgs<global::Deepgram.Realtime.AgentV1AgentV1ThinkUpdated>(
+                        __AgentV1ThinkUpdatedReceived,
+                        rawText,
+                        json));
+            }
             if (@event.AgentV1AgentV1ReceiveFunctionCallResponse is { } __AgentV1ReceiveFunctionCallResponseReceived)
             {
                 AgentV1ReceiveFunctionCallResponseReceived?.Invoke(
@@ -192,15 +210,6 @@ namespace Deepgram.Realtime
                     this,
                     new AutoSDKWebSocketMessageEventArgs<global::Deepgram.Realtime.AgentV1AgentV1SpeakUpdated>(
                         __AgentV1SpeakUpdatedReceived,
-                        rawText,
-                        json));
-            }
-            if (@event.AgentV1AgentV1ThinkUpdated is { } __AgentV1ThinkUpdatedReceived)
-            {
-                AgentV1ThinkUpdatedReceived?.Invoke(
-                    this,
-                    new AutoSDKWebSocketMessageEventArgs<global::Deepgram.Realtime.AgentV1AgentV1ThinkUpdated>(
-                        __AgentV1ThinkUpdatedReceived,
                         rawText,
                         json));
             }
