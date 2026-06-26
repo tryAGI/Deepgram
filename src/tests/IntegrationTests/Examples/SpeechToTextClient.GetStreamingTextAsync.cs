@@ -4,7 +4,7 @@ title: Speech To Text Client Get Streaming Text Async
 slug: speech-to-text-client-get-streaming-text-async
 
 Real-time streaming speech-to-text via the MEAI ISpeechToTextClient interface.
-Uses typed ConnectAsync internally for model and language selection.
+Uses the generated realtime client internally for model and language selection.
 */
 
 using Microsoft.Extensions.AI;
@@ -26,7 +26,7 @@ public partial class Tests
         using var audioStream = new MemoryStream(audioBytes);
 
         //// Stream audio through the MEAI ISpeechToTextClient interface.
-        //// This uses typed ConnectAsync internally with model and language params.
+        //// This uses the generated realtime client internally with model and language params.
         var updates = new List<SpeechToTextResponseUpdate>();
         await foreach (var update in speechClient.GetStreamingTextAsync(
             audioStream,

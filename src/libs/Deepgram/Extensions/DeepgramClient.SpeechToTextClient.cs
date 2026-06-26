@@ -1,6 +1,8 @@
 #nullable enable
 
+using System.Globalization;
 using System.Runtime.CompilerServices;
+using System.Text;
 using Microsoft.Extensions.AI;
 
 namespace Deepgram;
@@ -232,19 +234,6 @@ public partial class DeepgramClient : ISpeechToTextClient
         return false;
     }
 
-    private static Realtime.ListenV2LanguageHint? CreateListenV2LanguageHint(
-        string? speechLanguage,
-        Realtime.ListenV2Model model)
-    {
-        if (model != Realtime.ListenV2Model.FluxGeneralMulti ||
-            speechLanguage is not { Length: > 0 })
-        {
-            return null;
-        }
-
-        return new Realtime.ListenV2LanguageHint(speechLanguage);
-    }
-
     private static async IAsyncEnumerable<SpeechToTextResponseUpdate> GetStreamingTextV2Async(
         Stream audioSpeechStream,
         SpeechToTextOptions? options,
@@ -257,8 +246,7 @@ public partial class DeepgramClient : ISpeechToTextClient
         {
             realtimeClient.AuthorizeUsingToken(apiKey);
             await realtimeClient.ConnectAsync(
-                model: model,
-                languageHint: CreateListenV2LanguageHint(options?.SpeechLanguage, model),
+                uri: BuildListenV2StreamingUri(options, model),
                 cancellationToken: cancellationToken).ConfigureAwait(false);
 
             var sendTask = Task.Run(async () =>
@@ -332,6 +320,182 @@ public partial class DeepgramClient : ISpeechToTextClient
             };
 
             await sendTask.ConfigureAwait(false);
+        }
+    }
+
+    private static Uri BuildListenV2StreamingUri(
+        SpeechToTextOptions? options,
+        Realtime.ListenV2Model model)
+    {
+        var query = new List<KeyValuePair<string, string>>
+        {
+            new("model", Realtime.ListenV2ModelExtensions.ToValueString(model)),
+        };
+
+        AddOptionalValues(
+            query,
+            DeepgramSpeechToTextPropertyNames.LanguageHint,
+            model == Realtime.ListenV2Model.FluxGeneralMulti
+                ? GetListenV2LanguageHints(options)
+                : []);
+        AddOptionalValues(
+            query,
+            DeepgramSpeechToTextPropertyNames.Keyterm,
+            GetStringValues(options, DeepgramSpeechToTextPropertyNames.Keyterm));
+        AddOptionalValue(query, DeepgramSpeechToTextPropertyNames.Encoding, GetEncodingValue(options));
+        AddOptionalValue(query, DeepgramSpeechToTextPropertyNames.SampleRate, GetInvariantValue(options, DeepgramSpeechToTextPropertyNames.SampleRate));
+        AddOptionalValue(query, DeepgramSpeechToTextPropertyNames.EagerEotThreshold, GetInvariantValue(options, DeepgramSpeechToTextPropertyNames.EagerEotThreshold));
+        AddOptionalValue(query, DeepgramSpeechToTextPropertyNames.EotThreshold, GetInvariantValue(options, DeepgramSpeechToTextPropertyNames.EotThreshold));
+        AddOptionalValue(query, DeepgramSpeechToTextPropertyNames.EotTimeoutMs, GetInvariantValue(options, DeepgramSpeechToTextPropertyNames.EotTimeoutMs));
+        AddOptionalValue(query, DeepgramSpeechToTextPropertyNames.MipOptOut, GetInvariantValue(options, DeepgramSpeechToTextPropertyNames.MipOptOut));
+        AddOptionalValue(query, DeepgramSpeechToTextPropertyNames.ProfanityFilter, GetProfanityFilterValue(options));
+        AddOptionalValues(
+            query,
+            DeepgramSpeechToTextPropertyNames.Tag,
+            GetStringValues(options, DeepgramSpeechToTextPropertyNames.Tag));
+
+        var builder = new StringBuilder(Realtime.DeepgramListenV2RealtimeClient.DefaultBaseUrl);
+        var separator = '?';
+        foreach (var parameter in query)
+        {
+            builder
+                .Append(separator)
+                .Append(Uri.EscapeDataString(parameter.Key))
+                .Append('=')
+                .Append(Uri.EscapeDataString(parameter.Value));
+            separator = '&';
+        }
+
+        return new Uri(builder.ToString());
+    }
+
+    private static List<string> GetListenV2LanguageHints(SpeechToTextOptions? options)
+    {
+        var languageHints = GetStringValues(options, DeepgramSpeechToTextPropertyNames.LanguageHint)
+            .ToList();
+
+        if (languageHints.Count == 0 &&
+            options?.SpeechLanguage is { Length: > 0 } speechLanguage)
+        {
+            languageHints.Add(speechLanguage);
+        }
+
+        return languageHints;
+    }
+
+    private static IEnumerable<string> GetStringValues(
+        SpeechToTextOptions? options,
+        string propertyName)
+    {
+        if (options?.AdditionalProperties?.TryGetValue(propertyName, out var value) != true ||
+            value is null)
+        {
+            yield break;
+        }
+
+        if (value is string singleValue)
+        {
+            if (!string.IsNullOrWhiteSpace(singleValue))
+            {
+                yield return singleValue;
+            }
+
+            yield break;
+        }
+
+        if (value is IEnumerable<string> stringValues)
+        {
+            foreach (var stringValue in stringValues)
+            {
+                if (!string.IsNullOrWhiteSpace(stringValue))
+                {
+                    yield return stringValue;
+                }
+            }
+        }
+    }
+
+    private static string? GetEncodingValue(SpeechToTextOptions? options)
+    {
+        if (options?.AdditionalProperties?.TryGetValue(DeepgramSpeechToTextPropertyNames.Encoding, out var value) != true ||
+            value is null)
+        {
+            return null;
+        }
+
+        return value switch
+        {
+            string stringValue when !string.IsNullOrWhiteSpace(stringValue) => stringValue,
+            Realtime.ListenV2Encoding encoding => Realtime.ListenV2EncodingExtensions.ToValueString(encoding),
+            _ => null,
+        };
+    }
+
+    private static string? GetProfanityFilterValue(SpeechToTextOptions? options)
+    {
+        if (options?.AdditionalProperties?.TryGetValue(DeepgramSpeechToTextPropertyNames.ProfanityFilter, out var value) != true ||
+            value is null)
+        {
+            return null;
+        }
+
+        return value switch
+        {
+            bool boolValue => boolValue ? "true" : "false",
+            string stringValue when !string.IsNullOrWhiteSpace(stringValue) => stringValue,
+            Realtime.ListenV2ProfanityFilter profanityFilter => Realtime.ListenV2ProfanityFilterExtensions.ToValueString(profanityFilter),
+            _ => null,
+        };
+    }
+
+    private static string? GetInvariantValue(
+        SpeechToTextOptions? options,
+        string propertyName)
+    {
+        if (options?.AdditionalProperties?.TryGetValue(propertyName, out var value) != true ||
+            value is null)
+        {
+            return null;
+        }
+
+        return value switch
+        {
+            string stringValue when !string.IsNullOrWhiteSpace(stringValue) => stringValue,
+            bool boolValue => boolValue ? "true" : "false",
+            byte number => number.ToString(CultureInfo.InvariantCulture),
+            sbyte number => number.ToString(CultureInfo.InvariantCulture),
+            short number => number.ToString(CultureInfo.InvariantCulture),
+            ushort number => number.ToString(CultureInfo.InvariantCulture),
+            int number => number.ToString(CultureInfo.InvariantCulture),
+            uint number => number.ToString(CultureInfo.InvariantCulture),
+            long number => number.ToString(CultureInfo.InvariantCulture),
+            ulong number => number.ToString(CultureInfo.InvariantCulture),
+            float number => number.ToString(CultureInfo.InvariantCulture),
+            double number => number.ToString(CultureInfo.InvariantCulture),
+            decimal number => number.ToString(CultureInfo.InvariantCulture),
+            _ => null,
+        };
+    }
+
+    private static void AddOptionalValue(
+        ICollection<KeyValuePair<string, string>> query,
+        string name,
+        string? value)
+    {
+        if (!string.IsNullOrWhiteSpace(value))
+        {
+            query.Add(new KeyValuePair<string, string>(name, value));
+        }
+    }
+
+    private static void AddOptionalValues(
+        ICollection<KeyValuePair<string, string>> query,
+        string name,
+        IEnumerable<string> values)
+    {
+        foreach (var value in values)
+        {
+            AddOptionalValue(query, name, value);
         }
     }
 }
