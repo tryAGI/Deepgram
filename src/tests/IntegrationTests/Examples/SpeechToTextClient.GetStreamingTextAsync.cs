@@ -32,7 +32,7 @@ public partial class Tests
             audioStream,
             new SpeechToTextOptions
             {
-                ModelId = "nova-3",
+                ModelId = DeepgramClient.Nova3ModelId,
                 SpeechLanguage = "en",
             }))
         {

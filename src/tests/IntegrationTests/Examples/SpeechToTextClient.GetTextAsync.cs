@@ -21,7 +21,7 @@ public partial class Tests
         using var dummyStream = new MemoryStream();
         var response = await speechClient.GetTextAsync(dummyStream, new SpeechToTextOptions
         {
-            ModelId = "nova-3",
+            ModelId = DeepgramClient.Nova3ModelId,
             RawRepresentationFactory = _ => new ListenV1RequestUrl
             {
                 Url = "https://dpgr.am/spacewalk.wav",
