@@ -3,13 +3,75 @@
 !!! tip "Cross-SDK comparison"
     See the [centralized MEAI documentation](https://tryagi.github.io/docs/meai/) for feature matrices and comparisons across all tryAGI SDKs.
 
-The Deepgram SDK implements `ISpeechToTextClient` from [Microsoft.Extensions.AI](https://learn.microsoft.com/en-us/dotnet/ai/microsoft-extensions-ai).
+The Deepgram SDK implements `ITextToSpeechClient` and `ISpeechToTextClient` from [Microsoft.Extensions.AI](https://learn.microsoft.com/en-us/dotnet/ai/microsoft-extensions-ai).
 
 ## Supported Interfaces
 
 | Interface | Support Level |
 |-----------|--------------|
+| `ITextToSpeechClient` | Full (Aura-2 TTS, audio bytes, streamed response chunks) |
 | `ISpeechToTextClient` | Full (URL-based pre-recorded transcription, language/model selection) |
+
+## ITextToSpeechClient
+
+Generate speech through the standard MEAI interface:
+
+```csharp
+using Deepgram;
+using Microsoft.Extensions.AI;
+
+using var client = new DeepgramClient(apiKey);
+ITextToSpeechClient ttsClient = client;
+
+var response = await ttsClient.GetAudioAsync(
+    "Deepgram Aura-2 is available through Microsoft.Extensions.AI.",
+    new TextToSpeechOptions
+    {
+        ModelId = "aura-2-asteria-en",
+        AudioFormat = "mp3",
+        Speed = 1.05f,
+    });
+
+var audio = response.Contents.OfType<DataContent>().Single();
+File.WriteAllBytes("deepgram.mp3", audio.Data.ToArray());
+```
+
+`ModelId` selects the Deepgram Aura voice model. `VoiceId` is also accepted as a fallback for MEAI callers that model TTS providers around voices instead of model IDs.
+
+Provider-specific query parameters are available through `DeepgramTextToSpeechPropertyNames`:
+
+```csharp
+var response = await ttsClient.GetAudioAsync(
+    "Generate a WAV file with a fixed sample rate.",
+    new TextToSpeechOptions
+    {
+        ModelId = "aura-2-andromeda-en",
+        AudioFormat = "wav",
+        AdditionalProperties = new()
+        {
+            [DeepgramTextToSpeechPropertyNames.SampleRate] = 24000,
+            [DeepgramTextToSpeechPropertyNames.MipOptOut] = true,
+        },
+    });
+```
+
+Use `GetStreamingAudioAsync` when callers want chunks as they are read from the HTTP response:
+
+```csharp
+await foreach (var update in ttsClient.GetStreamingAudioAsync(
+    "Read Deepgram audio chunks through MEAI.",
+    new TextToSpeechOptions
+    {
+        ModelId = "aura-2-asteria-en",
+        AudioFormat = "mp3",
+    }))
+{
+    foreach (var chunk in update.Contents.OfType<DataContent>())
+    {
+        Console.WriteLine($"{update.Kind}: {chunk.Data.Length} bytes");
+    }
+}
+```
 
 ## ISpeechToTextClient
 
