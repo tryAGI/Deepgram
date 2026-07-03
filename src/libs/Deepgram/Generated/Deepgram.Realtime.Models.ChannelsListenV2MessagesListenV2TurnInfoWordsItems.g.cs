@@ -23,6 +23,18 @@ namespace Deepgram.Realtime
         public required double Confidence { get; set; }
 
         /// <summary>
+        /// The start time of the word
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("start")]
+        public double? Start { get; set; }
+
+        /// <summary>
+        /// The end time of the word
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("end")]
+        public double? End { get; set; }
+
+        /// <summary>
         /// Additional properties that are not explicitly defined in the schema
         /// </summary>
         [global::System.Text.Json.Serialization.JsonExtensionData]
@@ -37,15 +49,25 @@ namespace Deepgram.Realtime
         /// <param name="confidence">
         /// Confidence that this word was transcribed correctly
         /// </param>
+        /// <param name="start">
+        /// The start time of the word
+        /// </param>
+        /// <param name="end">
+        /// The end time of the word
+        /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public ChannelsListenV2MessagesListenV2TurnInfoWordsItems(
             string word,
-            double confidence)
+            double confidence,
+            double? start,
+            double? end)
         {
             this.Word = word ?? throw new global::System.ArgumentNullException(nameof(word));
             this.Confidence = confidence;
+            this.Start = start;
+            this.End = end;
         }
 
         /// <summary>
