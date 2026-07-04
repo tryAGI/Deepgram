@@ -10,29 +10,29 @@ internal static class ApiCommand
     {
         var command = new Command("api", "Generated endpoint commands.");
 
-                         command.Subcommands.Add(SubpackageAgentSubpackageAgentV1SubpackageAgentV1SettingsSubpackageAgentV1SettingsThinkSubpackageAgentV1SettingsThinkModelsApiGroupCommand.Create());
-                         command.Subcommands.Add(SubpackageAuthSubpackageAuthV1SubpackageAuthV1TokensApiGroupCommand.Create());
-                         command.Subcommands.Add(SubpackageListenSubpackageListenV1SubpackageListenV1MediaApiGroupCommand.Create());
-                         command.Subcommands.Add(SubpackageManageSubpackageManageV1SubpackageManageV1ModelsApiGroupCommand.Create());
-                         command.Subcommands.Add(SubpackageManageSubpackageManageV1SubpackageManageV1ProjectsApiGroupCommand.Create());
-                         command.Subcommands.Add(SubpackageManageSubpackageManageV1SubpackageManageV1ProjectsSubpackageManageV1ProjectsBillingSubpackageManageV1ProjectsBillingBalancesApiGroupCommand.Create());
-                         command.Subcommands.Add(SubpackageManageSubpackageManageV1SubpackageManageV1ProjectsSubpackageManageV1ProjectsBillingSubpackageManageV1ProjectsBillingBreakdownApiGroupCommand.Create());
-                         command.Subcommands.Add(SubpackageManageSubpackageManageV1SubpackageManageV1ProjectsSubpackageManageV1ProjectsBillingSubpackageManageV1ProjectsBillingFieldsApiGroupCommand.Create());
-                         command.Subcommands.Add(SubpackageManageSubpackageManageV1SubpackageManageV1ProjectsSubpackageManageV1ProjectsBillingSubpackageManageV1ProjectsBillingPurchasesApiGroupCommand.Create());
-                         command.Subcommands.Add(SubpackageManageSubpackageManageV1SubpackageManageV1ProjectsSubpackageManageV1ProjectsKeysApiGroupCommand.Create());
-                         command.Subcommands.Add(SubpackageManageSubpackageManageV1SubpackageManageV1ProjectsSubpackageManageV1ProjectsMembersApiGroupCommand.Create());
-                         command.Subcommands.Add(SubpackageManageSubpackageManageV1SubpackageManageV1ProjectsSubpackageManageV1ProjectsMembersSubpackageManageV1ProjectsMembersInvitesApiGroupCommand.Create());
-                         command.Subcommands.Add(SubpackageManageSubpackageManageV1SubpackageManageV1ProjectsSubpackageManageV1ProjectsMembersSubpackageManageV1ProjectsMembersScopesApiGroupCommand.Create());
-                         command.Subcommands.Add(SubpackageManageSubpackageManageV1SubpackageManageV1ProjectsSubpackageManageV1ProjectsModelsApiGroupCommand.Create());
-                         command.Subcommands.Add(SubpackageManageSubpackageManageV1SubpackageManageV1ProjectsSubpackageManageV1ProjectsRequestsApiGroupCommand.Create());
-                         command.Subcommands.Add(SubpackageManageSubpackageManageV1SubpackageManageV1ProjectsSubpackageManageV1ProjectsUsageApiGroupCommand.Create());
-                         command.Subcommands.Add(SubpackageManageSubpackageManageV1SubpackageManageV1ProjectsSubpackageManageV1ProjectsUsageSubpackageManageV1ProjectsUsageBreakdownApiGroupCommand.Create());
-                         command.Subcommands.Add(SubpackageManageSubpackageManageV1SubpackageManageV1ProjectsSubpackageManageV1ProjectsUsageSubpackageManageV1ProjectsUsageFieldsApiGroupCommand.Create());
-                         command.Subcommands.Add(SubpackageReadSubpackageReadV1SubpackageReadV1TextApiGroupCommand.Create());
-                         command.Subcommands.Add(SubpackageSelfHostedSubpackageSelfHostedV1SubpackageSelfHostedV1DistributionCredentialsApiGroupCommand.Create());
-                         command.Subcommands.Add(SubpackageSpeakSubpackageSpeakV1SubpackageSpeakV1AudioApiGroupCommand.Create());
-                         command.Subcommands.Add(SubpackageVoiceAgentSubpackageVoiceAgentConfigurationsApiGroupCommand.Create());
-                         command.Subcommands.Add(SubpackageVoiceAgentSubpackageVoiceAgentVariablesApiGroupCommand.Create());
+                         command.Subcommands.Add(AgentV1SettingsThinkModelsApiGroupCommand.Create());
+                         command.Subcommands.Add(AuthV1TokensApiGroupCommand.Create());
+                         command.Subcommands.Add(ListenV1MediaApiGroupCommand.Create());
+                         command.Subcommands.Add(ManageV1ModelsApiGroupCommand.Create());
+                         command.Subcommands.Add(ManageV1ProjectsApiGroupCommand.Create());
+                         command.Subcommands.Add(ManageV1ProjectsBillingBalancesApiGroupCommand.Create());
+                         command.Subcommands.Add(ManageV1ProjectsBillingBreakdownApiGroupCommand.Create());
+                         command.Subcommands.Add(ManageV1ProjectsBillingFieldsApiGroupCommand.Create());
+                         command.Subcommands.Add(ManageV1ProjectsBillingPurchasesApiGroupCommand.Create());
+                         command.Subcommands.Add(ManageV1ProjectsKeysApiGroupCommand.Create());
+                         command.Subcommands.Add(ManageV1ProjectsMembersApiGroupCommand.Create());
+                         command.Subcommands.Add(ManageV1ProjectsMembersInvitesApiGroupCommand.Create());
+                         command.Subcommands.Add(ManageV1ProjectsMembersScopesApiGroupCommand.Create());
+                         command.Subcommands.Add(ManageV1ProjectsModelsApiGroupCommand.Create());
+                         command.Subcommands.Add(ManageV1ProjectsRequestsApiGroupCommand.Create());
+                         command.Subcommands.Add(ManageV1ProjectsUsageApiGroupCommand.Create());
+                         command.Subcommands.Add(ManageV1ProjectsUsageBreakdownApiGroupCommand.Create());
+                         command.Subcommands.Add(ManageV1ProjectsUsageFieldsApiGroupCommand.Create());
+                         command.Subcommands.Add(ReadV1TextApiGroupCommand.Create());
+                         command.Subcommands.Add(SelfHostedV1DistributionCredentialsApiGroupCommand.Create());
+                         command.Subcommands.Add(SpeakV1AudioApiGroupCommand.Create());
+                         command.Subcommands.Add(VoiceAgentConfigurationsApiGroupCommand.Create());
+                         command.Subcommands.Add(VoiceAgentVariablesApiGroupCommand.Create());
         return command;
     }
 }

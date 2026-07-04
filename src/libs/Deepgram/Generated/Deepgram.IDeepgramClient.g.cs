@@ -68,117 +68,117 @@ namespace Deepgram
         /// <summary>
         /// 
         /// </summary>
-        public SubpackageAgentSubpackageAgentV1SubpackageAgentV1SettingsSubpackageAgentV1SettingsThinkSubpackageAgentV1SettingsThinkModelsClient SubpackageAgentSubpackageAgentV1SubpackageAgentV1SettingsSubpackageAgentV1SettingsThinkSubpackageAgentV1SettingsThinkModels { get; }
+        public AgentV1SettingsThinkModelsClient AgentV1SettingsThinkModels { get; }
 
         /// <summary>
         /// 
         /// </summary>
-        public SubpackageAuthSubpackageAuthV1SubpackageAuthV1TokensClient SubpackageAuthSubpackageAuthV1SubpackageAuthV1Tokens { get; }
+        public AuthV1TokensClient AuthV1Tokens { get; }
 
         /// <summary>
         /// 
         /// </summary>
-        public SubpackageListenSubpackageListenV1SubpackageListenV1MediaClient SubpackageListenSubpackageListenV1SubpackageListenV1Media { get; }
+        public ListenV1MediaClient ListenV1Media { get; }
 
         /// <summary>
         /// 
         /// </summary>
-        public SubpackageManageSubpackageManageV1SubpackageManageV1ModelsClient SubpackageManageSubpackageManageV1SubpackageManageV1Models { get; }
+        public ManageV1ModelsClient ManageV1Models { get; }
 
         /// <summary>
         /// 
         /// </summary>
-        public SubpackageManageSubpackageManageV1SubpackageManageV1ProjectsClient SubpackageManageSubpackageManageV1SubpackageManageV1Projects { get; }
+        public ManageV1ProjectsClient ManageV1Projects { get; }
 
         /// <summary>
         /// 
         /// </summary>
-        public SubpackageManageSubpackageManageV1SubpackageManageV1ProjectsSubpackageManageV1ProjectsBillingSubpackageManageV1ProjectsBillingBalancesClient SubpackageManageSubpackageManageV1SubpackageManageV1ProjectsSubpackageManageV1ProjectsBillingSubpackageManageV1ProjectsBillingBalances { get; }
+        public ManageV1ProjectsBillingBalancesClient ManageV1ProjectsBillingBalances { get; }
 
         /// <summary>
         /// 
         /// </summary>
-        public SubpackageManageSubpackageManageV1SubpackageManageV1ProjectsSubpackageManageV1ProjectsBillingSubpackageManageV1ProjectsBillingBreakdownClient SubpackageManageSubpackageManageV1SubpackageManageV1ProjectsSubpackageManageV1ProjectsBillingSubpackageManageV1ProjectsBillingBreakdown { get; }
+        public ManageV1ProjectsBillingBreakdownClient ManageV1ProjectsBillingBreakdown { get; }
 
         /// <summary>
         /// 
         /// </summary>
-        public SubpackageManageSubpackageManageV1SubpackageManageV1ProjectsSubpackageManageV1ProjectsBillingSubpackageManageV1ProjectsBillingFieldsClient SubpackageManageSubpackageManageV1SubpackageManageV1ProjectsSubpackageManageV1ProjectsBillingSubpackageManageV1ProjectsBillingFields { get; }
+        public ManageV1ProjectsBillingFieldsClient ManageV1ProjectsBillingFields { get; }
 
         /// <summary>
         /// 
         /// </summary>
-        public SubpackageManageSubpackageManageV1SubpackageManageV1ProjectsSubpackageManageV1ProjectsBillingSubpackageManageV1ProjectsBillingPurchasesClient SubpackageManageSubpackageManageV1SubpackageManageV1ProjectsSubpackageManageV1ProjectsBillingSubpackageManageV1ProjectsBillingPurchases { get; }
+        public ManageV1ProjectsBillingPurchasesClient ManageV1ProjectsBillingPurchases { get; }
 
         /// <summary>
         /// 
         /// </summary>
-        public SubpackageManageSubpackageManageV1SubpackageManageV1ProjectsSubpackageManageV1ProjectsKeysClient SubpackageManageSubpackageManageV1SubpackageManageV1ProjectsSubpackageManageV1ProjectsKeys { get; }
+        public ManageV1ProjectsKeysClient ManageV1ProjectsKeys { get; }
 
         /// <summary>
         /// 
         /// </summary>
-        public SubpackageManageSubpackageManageV1SubpackageManageV1ProjectsSubpackageManageV1ProjectsMembersClient SubpackageManageSubpackageManageV1SubpackageManageV1ProjectsSubpackageManageV1ProjectsMembers { get; }
+        public ManageV1ProjectsMembersClient ManageV1ProjectsMembers { get; }
 
         /// <summary>
         /// 
         /// </summary>
-        public SubpackageManageSubpackageManageV1SubpackageManageV1ProjectsSubpackageManageV1ProjectsMembersSubpackageManageV1ProjectsMembersInvitesClient SubpackageManageSubpackageManageV1SubpackageManageV1ProjectsSubpackageManageV1ProjectsMembersSubpackageManageV1ProjectsMembersInvites { get; }
+        public ManageV1ProjectsMembersInvitesClient ManageV1ProjectsMembersInvites { get; }
 
         /// <summary>
         /// 
         /// </summary>
-        public SubpackageManageSubpackageManageV1SubpackageManageV1ProjectsSubpackageManageV1ProjectsMembersSubpackageManageV1ProjectsMembersScopesClient SubpackageManageSubpackageManageV1SubpackageManageV1ProjectsSubpackageManageV1ProjectsMembersSubpackageManageV1ProjectsMembersScopes { get; }
+        public ManageV1ProjectsMembersScopesClient ManageV1ProjectsMembersScopes { get; }
 
         /// <summary>
         /// 
         /// </summary>
-        public SubpackageManageSubpackageManageV1SubpackageManageV1ProjectsSubpackageManageV1ProjectsModelsClient SubpackageManageSubpackageManageV1SubpackageManageV1ProjectsSubpackageManageV1ProjectsModels { get; }
+        public ManageV1ProjectsModelsClient ManageV1ProjectsModels { get; }
 
         /// <summary>
         /// 
         /// </summary>
-        public SubpackageManageSubpackageManageV1SubpackageManageV1ProjectsSubpackageManageV1ProjectsRequestsClient SubpackageManageSubpackageManageV1SubpackageManageV1ProjectsSubpackageManageV1ProjectsRequests { get; }
+        public ManageV1ProjectsRequestsClient ManageV1ProjectsRequests { get; }
 
         /// <summary>
         /// 
         /// </summary>
-        public SubpackageManageSubpackageManageV1SubpackageManageV1ProjectsSubpackageManageV1ProjectsUsageClient SubpackageManageSubpackageManageV1SubpackageManageV1ProjectsSubpackageManageV1ProjectsUsage { get; }
+        public ManageV1ProjectsUsageClient ManageV1ProjectsUsage { get; }
 
         /// <summary>
         /// 
         /// </summary>
-        public SubpackageManageSubpackageManageV1SubpackageManageV1ProjectsSubpackageManageV1ProjectsUsageSubpackageManageV1ProjectsUsageBreakdownClient SubpackageManageSubpackageManageV1SubpackageManageV1ProjectsSubpackageManageV1ProjectsUsageSubpackageManageV1ProjectsUsageBreakdown { get; }
+        public ManageV1ProjectsUsageBreakdownClient ManageV1ProjectsUsageBreakdown { get; }
 
         /// <summary>
         /// 
         /// </summary>
-        public SubpackageManageSubpackageManageV1SubpackageManageV1ProjectsSubpackageManageV1ProjectsUsageSubpackageManageV1ProjectsUsageFieldsClient SubpackageManageSubpackageManageV1SubpackageManageV1ProjectsSubpackageManageV1ProjectsUsageSubpackageManageV1ProjectsUsageFields { get; }
+        public ManageV1ProjectsUsageFieldsClient ManageV1ProjectsUsageFields { get; }
 
         /// <summary>
         /// 
         /// </summary>
-        public SubpackageReadSubpackageReadV1SubpackageReadV1TextClient SubpackageReadSubpackageReadV1SubpackageReadV1Text { get; }
+        public ReadV1TextClient ReadV1Text { get; }
 
         /// <summary>
         /// 
         /// </summary>
-        public SubpackageSelfHostedSubpackageSelfHostedV1SubpackageSelfHostedV1DistributionCredentialsClient SubpackageSelfHostedSubpackageSelfHostedV1SubpackageSelfHostedV1DistributionCredentials { get; }
+        public SelfHostedV1DistributionCredentialsClient SelfHostedV1DistributionCredentials { get; }
 
         /// <summary>
         /// 
         /// </summary>
-        public SubpackageSpeakSubpackageSpeakV1SubpackageSpeakV1AudioClient SubpackageSpeakSubpackageSpeakV1SubpackageSpeakV1Audio { get; }
+        public SpeakV1AudioClient SpeakV1Audio { get; }
 
         /// <summary>
         /// 
         /// </summary>
-        public SubpackageVoiceAgentSubpackageVoiceAgentConfigurationsClient SubpackageVoiceAgentSubpackageVoiceAgentConfigurations { get; }
+        public VoiceAgentConfigurationsClient VoiceAgentConfigurations { get; }
 
         /// <summary>
         /// 
         /// </summary>
-        public SubpackageVoiceAgentSubpackageVoiceAgentVariablesClient SubpackageVoiceAgentSubpackageVoiceAgentVariables { get; }
+        public VoiceAgentVariablesClient VoiceAgentVariables { get; }
 
     }
 }
