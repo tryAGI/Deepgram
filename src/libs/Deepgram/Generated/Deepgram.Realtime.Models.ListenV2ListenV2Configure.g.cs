@@ -23,8 +23,15 @@ namespace Deepgram.Realtime
         public global::Deepgram.Realtime.ChannelsListenV2MessagesListenV2ConfigureThresholds? Thresholds { get; set; }
 
         /// <summary>
-        /// Keyterm prompting can improve recognition of specialized terminology.<br/>
-        /// Pass multiple keyterm query parameters to boost multiple keyterms.
+        /// Keyterm prompting improves recognition of specialized terminology.<br/>
+        /// `keyterm` accepts plain terms only. Unlike the legacy `keywords` feature,<br/>
+        /// it does not support weights or intensifiers, so a value such as<br/>
+        /// `keyterm=term:0.15` is invalid.<br/>
+        /// To boost multiple separate keyterms, repeat the `keyterm` parameter<br/>
+        /// (for example, `keyterm=term1&amp;keyterm=term2`). To boost one multi-word<br/>
+        /// phrase as a single keyterm, join the words with `%20` or `+`<br/>
+        /// (for example, `keyterm=customer%20service`). Do not separate keyterms<br/>
+        /// with commas, semicolons, or line breaks.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("keyterms")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Deepgram.Realtime.JsonConverters.ListenV2KeytermJsonConverter))]
@@ -55,8 +62,15 @@ namespace Deepgram.Realtime
         /// is not supplied, the configuration continues using the currently configured value.
         /// </param>
         /// <param name="keyterms">
-        /// Keyterm prompting can improve recognition of specialized terminology.<br/>
-        /// Pass multiple keyterm query parameters to boost multiple keyterms.
+        /// Keyterm prompting improves recognition of specialized terminology.<br/>
+        /// `keyterm` accepts plain terms only. Unlike the legacy `keywords` feature,<br/>
+        /// it does not support weights or intensifiers, so a value such as<br/>
+        /// `keyterm=term:0.15` is invalid.<br/>
+        /// To boost multiple separate keyterms, repeat the `keyterm` parameter<br/>
+        /// (for example, `keyterm=term1&amp;keyterm=term2`). To boost one multi-word<br/>
+        /// phrase as a single keyterm, join the words with `%20` or `+`<br/>
+        /// (for example, `keyterm=customer%20service`). Do not separate keyterms<br/>
+        /// with commas, semicolons, or line breaks.
         /// </param>
         /// <param name="languageHints">
         /// Language hints to constrain and prioritize language detection.<br/>
