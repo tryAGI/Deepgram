@@ -3987,7 +3987,7 @@
             }
           }
         ],
-        "description": "Keyterm prompting can improve recognition of specialized terminology.\nPass multiple keyterm query parameters to boost multiple keyterms.\n",
+        "description": "Keyterm prompting improves recognition of specialized terminology.\n\n`keyterm` accepts plain terms only. Unlike the legacy `keywords` feature,\nit does not support weights or intensifiers, so a value such as\n`keyterm=term:0.15` is invalid.\n\nTo boost multiple separate keyterms, repeat the `keyterm` parameter\n(for example, `keyterm=term1&keyterm=term2`). To boost one multi-word\nphrase as a single keyterm, join the words with `%20` or `+`\n(for example, `keyterm=customer%20service`). Do not separate keyterms\nwith commas, semicolons, or line breaks.\n",
         "title": "ListenV2Keyterm"
       },
       "ListenV2LanguageHint": {

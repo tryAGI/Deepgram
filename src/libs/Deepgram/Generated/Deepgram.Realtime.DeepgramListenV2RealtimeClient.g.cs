@@ -525,7 +525,7 @@ namespace Deepgram.Realtime
         /// <param name="encoding">Encoding of the audio stream. Required if sending non-containerized/raw audio. If sending containerized audio, this parameter should be omitted.</param>
         /// <param name="eotThreshold">Any type</param>
         /// <param name="eotTimeoutMs">Any type</param>
-        /// <param name="keyterm">Keyterm prompting can improve recognition of specialized terminology. Pass multiple keyterm query parameters to boost multiple keyterms.</param>
+        /// <param name="keyterm">Keyterm prompting improves recognition of specialized terminology.  `keyterm` accepts plain terms only. Unlike the legacy `keywords` feature, it does not support weights or intensifiers, so a value such as `keyterm=term:0.15` is invalid.  To boost multiple separate keyterms, repeat the `keyterm` parameter (for example, `keyterm=term1&amp;keyterm=term2`). To boost one multi-word phrase as a single keyterm, join the words with `%20` or `+` (for example, `keyterm=customer%20service`). Do not separate keyterms with commas, semicolons, or line breaks.</param>
         /// <param name="languageHint">Language hints constrain and prioritize language detection for the flux-general-multi model. Pass multiple language_hint query parameters to specify multiple language codes. Empty values are rejected. Only valid when model is flux-general-multi.</param>
         /// <param name="mipOptOut">Any type</param>
         /// <param name="model">Defines the AI model used to process submitted audio.</param>

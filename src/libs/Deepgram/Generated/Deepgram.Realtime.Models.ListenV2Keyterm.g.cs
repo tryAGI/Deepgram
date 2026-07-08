@@ -5,8 +5,15 @@
 namespace Deepgram.Realtime
 {
     /// <summary>
-    /// Keyterm prompting can improve recognition of specialized terminology.<br/>
-    /// Pass multiple keyterm query parameters to boost multiple keyterms.
+    /// Keyterm prompting improves recognition of specialized terminology.<br/>
+    /// `keyterm` accepts plain terms only. Unlike the legacy `keywords` feature,<br/>
+    /// it does not support weights or intensifiers, so a value such as<br/>
+    /// `keyterm=term:0.15` is invalid.<br/>
+    /// To boost multiple separate keyterms, repeat the `keyterm` parameter<br/>
+    /// (for example, `keyterm=term1&amp;keyterm=term2`). To boost one multi-word<br/>
+    /// phrase as a single keyterm, join the words with `%20` or `+`<br/>
+    /// (for example, `keyterm=customer%20service`). Do not separate keyterms<br/>
+    /// with commas, semicolons, or line breaks.
     /// </summary>
     public readonly partial struct ListenV2Keyterm : global::System.IEquatable<ListenV2Keyterm>
     {
