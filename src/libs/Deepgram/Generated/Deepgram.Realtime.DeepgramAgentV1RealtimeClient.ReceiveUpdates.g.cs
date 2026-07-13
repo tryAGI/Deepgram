@@ -267,6 +267,15 @@ namespace Deepgram.Realtime
                         rawText,
                         json));
             }
+            if (@event.AgentV1AgentV1LatencyReport is { } __AgentV1LatencyReportReceived)
+            {
+                AgentV1LatencyReportReceived?.Invoke(
+                    this,
+                    new AutoSDKWebSocketMessageEventArgs<global::Deepgram.Realtime.AgentV1AgentV1LatencyReport>(
+                        __AgentV1LatencyReportReceived,
+                        rawText,
+                        json));
+            }
             if (@event.AgentV1AgentV1FunctionCallRequest is { } __AgentV1FunctionCallRequestReceived)
             {
                 AgentV1FunctionCallRequestReceived?.Invoke(
