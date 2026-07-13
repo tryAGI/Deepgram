@@ -426,6 +426,43 @@ namespace Deepgram.Realtime
         /// 
         /// </summary>
 #if NET6_0_OR_GREATER
+        public global::Deepgram.Realtime.AgentV1AgentV1LatencyReport? AgentV1AgentV1LatencyReport { get; init; }
+#else
+        public global::Deepgram.Realtime.AgentV1AgentV1LatencyReport? AgentV1AgentV1LatencyReport { get; }
+#endif
+
+        /// <summary>
+        /// 
+        /// </summary>
+#if NET6_0_OR_GREATER
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(AgentV1AgentV1LatencyReport))]
+#endif
+        public bool IsAgentV1AgentV1LatencyReport => AgentV1AgentV1LatencyReport != null;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickAgentV1AgentV1LatencyReport(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Deepgram.Realtime.AgentV1AgentV1LatencyReport? value)
+        {
+            value = AgentV1AgentV1LatencyReport;
+            return IsAgentV1AgentV1LatencyReport;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Deepgram.Realtime.AgentV1AgentV1LatencyReport PickAgentV1AgentV1LatencyReport() => IsAgentV1AgentV1LatencyReport
+            ? AgentV1AgentV1LatencyReport!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'AgentV1AgentV1LatencyReport' but the value was {ToString()}.");
+
+        /// <summary>
+        /// 
+        /// </summary>
+#if NET6_0_OR_GREATER
         public global::Deepgram.Realtime.AgentV1AgentV1FunctionCallRequest? AgentV1AgentV1FunctionCallRequest { get; init; }
 #else
         public global::Deepgram.Realtime.AgentV1AgentV1FunctionCallRequest? AgentV1AgentV1FunctionCallRequest { get; }
@@ -936,6 +973,29 @@ namespace Deepgram.Realtime
         /// <summary>
         /// 
         /// </summary>
+        public static implicit operator AgentV1ServerEvent(global::Deepgram.Realtime.AgentV1AgentV1LatencyReport value) => new AgentV1ServerEvent((global::Deepgram.Realtime.AgentV1AgentV1LatencyReport?)value);
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static implicit operator global::Deepgram.Realtime.AgentV1AgentV1LatencyReport?(AgentV1ServerEvent @this) => @this.AgentV1AgentV1LatencyReport;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public AgentV1ServerEvent(global::Deepgram.Realtime.AgentV1AgentV1LatencyReport? value)
+        {
+            AgentV1AgentV1LatencyReport = value;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static AgentV1ServerEvent FromAgentV1AgentV1LatencyReport(global::Deepgram.Realtime.AgentV1AgentV1LatencyReport? value) => new AgentV1ServerEvent(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator AgentV1ServerEvent(global::Deepgram.Realtime.AgentV1AgentV1FunctionCallRequest value) => new AgentV1ServerEvent((global::Deepgram.Realtime.AgentV1AgentV1FunctionCallRequest?)value);
 
         /// <summary>
@@ -1109,6 +1169,7 @@ namespace Deepgram.Realtime
             global::Deepgram.Realtime.AgentV1AgentV1ConversationText? agentV1AgentV1ConversationText,
             global::Deepgram.Realtime.AgentV1AgentV1UserStartedSpeaking? agentV1AgentV1UserStartedSpeaking,
             global::Deepgram.Realtime.AgentV1AgentV1AgentThinking? agentV1AgentV1AgentThinking,
+            global::Deepgram.Realtime.AgentV1AgentV1LatencyReport? agentV1AgentV1LatencyReport,
             global::Deepgram.Realtime.AgentV1AgentV1FunctionCallRequest? agentV1AgentV1FunctionCallRequest,
             global::Deepgram.Realtime.AgentV1AgentV1AgentStartedSpeaking? agentV1AgentV1AgentStartedSpeaking,
             global::Deepgram.Realtime.AgentV1AgentV1AgentAudioDone? agentV1AgentV1AgentAudioDone,
@@ -1129,6 +1190,7 @@ namespace Deepgram.Realtime
             AgentV1AgentV1ConversationText = agentV1AgentV1ConversationText;
             AgentV1AgentV1UserStartedSpeaking = agentV1AgentV1UserStartedSpeaking;
             AgentV1AgentV1AgentThinking = agentV1AgentV1AgentThinking;
+            AgentV1AgentV1LatencyReport = agentV1AgentV1LatencyReport;
             AgentV1AgentV1FunctionCallRequest = agentV1AgentV1FunctionCallRequest;
             AgentV1AgentV1AgentStartedSpeaking = agentV1AgentV1AgentStartedSpeaking;
             AgentV1AgentV1AgentAudioDone = agentV1AgentV1AgentAudioDone;
@@ -1149,6 +1211,7 @@ namespace Deepgram.Realtime
             AgentV1AgentV1AgentAudioDone as object ??
             AgentV1AgentV1AgentStartedSpeaking as object ??
             AgentV1AgentV1FunctionCallRequest as object ??
+            AgentV1AgentV1LatencyReport as object ??
             AgentV1AgentV1AgentThinking as object ??
             AgentV1AgentV1UserStartedSpeaking as object ??
             AgentV1AgentV1ConversationText as object ??
@@ -1177,6 +1240,7 @@ namespace Deepgram.Realtime
             AgentV1AgentV1ConversationText?.ToString() ??
             AgentV1AgentV1UserStartedSpeaking?.ToString() ??
             AgentV1AgentV1AgentThinking?.ToString() ??
+            AgentV1AgentV1LatencyReport?.ToString() ??
             AgentV1AgentV1FunctionCallRequest?.ToString() ??
             AgentV1AgentV1AgentStartedSpeaking?.ToString() ??
             AgentV1AgentV1AgentAudioDone?.ToString() ??
@@ -1191,7 +1255,7 @@ namespace Deepgram.Realtime
         /// </summary>
         public bool Validate()
         {
-            return IsAgentV1AgentV1ListenUpdated && !IsAgentV1AgentV1ThinkUpdated && !IsAgentV1AgentV1ReceiveFunctionCallResponse && !IsAgentV1AgentV1PromptUpdated && !IsAgentV1AgentV1SpeakUpdated && !IsAgentV1AgentV1InjectionRefused && !IsAgentV1AgentV1Welcome && !IsAgentV1AgentV1SettingsApplied && !IsAgentV1AgentV1ConversationText && !IsAgentV1AgentV1UserStartedSpeaking && !IsAgentV1AgentV1AgentThinking && !IsAgentV1AgentV1FunctionCallRequest && !IsAgentV1AgentV1AgentStartedSpeaking && !IsAgentV1AgentV1AgentAudioDone && !IsAgentV1AgentV1Error && !IsAgentV1AgentV1Warning && !IsAgentV1AgentV1History && !IsAgentV1AgentV1Audio || !IsAgentV1AgentV1ListenUpdated && IsAgentV1AgentV1ThinkUpdated && !IsAgentV1AgentV1ReceiveFunctionCallResponse && !IsAgentV1AgentV1PromptUpdated && !IsAgentV1AgentV1SpeakUpdated && !IsAgentV1AgentV1InjectionRefused && !IsAgentV1AgentV1Welcome && !IsAgentV1AgentV1SettingsApplied && !IsAgentV1AgentV1ConversationText && !IsAgentV1AgentV1UserStartedSpeaking && !IsAgentV1AgentV1AgentThinking && !IsAgentV1AgentV1FunctionCallRequest && !IsAgentV1AgentV1AgentStartedSpeaking && !IsAgentV1AgentV1AgentAudioDone && !IsAgentV1AgentV1Error && !IsAgentV1AgentV1Warning && !IsAgentV1AgentV1History && !IsAgentV1AgentV1Audio || !IsAgentV1AgentV1ListenUpdated && !IsAgentV1AgentV1ThinkUpdated && IsAgentV1AgentV1ReceiveFunctionCallResponse && !IsAgentV1AgentV1PromptUpdated && !IsAgentV1AgentV1SpeakUpdated && !IsAgentV1AgentV1InjectionRefused && !IsAgentV1AgentV1Welcome && !IsAgentV1AgentV1SettingsApplied && !IsAgentV1AgentV1ConversationText && !IsAgentV1AgentV1UserStartedSpeaking && !IsAgentV1AgentV1AgentThinking && !IsAgentV1AgentV1FunctionCallRequest && !IsAgentV1AgentV1AgentStartedSpeaking && !IsAgentV1AgentV1AgentAudioDone && !IsAgentV1AgentV1Error && !IsAgentV1AgentV1Warning && !IsAgentV1AgentV1History && !IsAgentV1AgentV1Audio || !IsAgentV1AgentV1ListenUpdated && !IsAgentV1AgentV1ThinkUpdated && !IsAgentV1AgentV1ReceiveFunctionCallResponse && IsAgentV1AgentV1PromptUpdated && !IsAgentV1AgentV1SpeakUpdated && !IsAgentV1AgentV1InjectionRefused && !IsAgentV1AgentV1Welcome && !IsAgentV1AgentV1SettingsApplied && !IsAgentV1AgentV1ConversationText && !IsAgentV1AgentV1UserStartedSpeaking && !IsAgentV1AgentV1AgentThinking && !IsAgentV1AgentV1FunctionCallRequest && !IsAgentV1AgentV1AgentStartedSpeaking && !IsAgentV1AgentV1AgentAudioDone && !IsAgentV1AgentV1Error && !IsAgentV1AgentV1Warning && !IsAgentV1AgentV1History && !IsAgentV1AgentV1Audio || !IsAgentV1AgentV1ListenUpdated && !IsAgentV1AgentV1ThinkUpdated && !IsAgentV1AgentV1ReceiveFunctionCallResponse && !IsAgentV1AgentV1PromptUpdated && IsAgentV1AgentV1SpeakUpdated && !IsAgentV1AgentV1InjectionRefused && !IsAgentV1AgentV1Welcome && !IsAgentV1AgentV1SettingsApplied && !IsAgentV1AgentV1ConversationText && !IsAgentV1AgentV1UserStartedSpeaking && !IsAgentV1AgentV1AgentThinking && !IsAgentV1AgentV1FunctionCallRequest && !IsAgentV1AgentV1AgentStartedSpeaking && !IsAgentV1AgentV1AgentAudioDone && !IsAgentV1AgentV1Error && !IsAgentV1AgentV1Warning && !IsAgentV1AgentV1History && !IsAgentV1AgentV1Audio || !IsAgentV1AgentV1ListenUpdated && !IsAgentV1AgentV1ThinkUpdated && !IsAgentV1AgentV1ReceiveFunctionCallResponse && !IsAgentV1AgentV1PromptUpdated && !IsAgentV1AgentV1SpeakUpdated && IsAgentV1AgentV1InjectionRefused && !IsAgentV1AgentV1Welcome && !IsAgentV1AgentV1SettingsApplied && !IsAgentV1AgentV1ConversationText && !IsAgentV1AgentV1UserStartedSpeaking && !IsAgentV1AgentV1AgentThinking && !IsAgentV1AgentV1FunctionCallRequest && !IsAgentV1AgentV1AgentStartedSpeaking && !IsAgentV1AgentV1AgentAudioDone && !IsAgentV1AgentV1Error && !IsAgentV1AgentV1Warning && !IsAgentV1AgentV1History && !IsAgentV1AgentV1Audio || !IsAgentV1AgentV1ListenUpdated && !IsAgentV1AgentV1ThinkUpdated && !IsAgentV1AgentV1ReceiveFunctionCallResponse && !IsAgentV1AgentV1PromptUpdated && !IsAgentV1AgentV1SpeakUpdated && !IsAgentV1AgentV1InjectionRefused && IsAgentV1AgentV1Welcome && !IsAgentV1AgentV1SettingsApplied && !IsAgentV1AgentV1ConversationText && !IsAgentV1AgentV1UserStartedSpeaking && !IsAgentV1AgentV1AgentThinking && !IsAgentV1AgentV1FunctionCallRequest && !IsAgentV1AgentV1AgentStartedSpeaking && !IsAgentV1AgentV1AgentAudioDone && !IsAgentV1AgentV1Error && !IsAgentV1AgentV1Warning && !IsAgentV1AgentV1History && !IsAgentV1AgentV1Audio || !IsAgentV1AgentV1ListenUpdated && !IsAgentV1AgentV1ThinkUpdated && !IsAgentV1AgentV1ReceiveFunctionCallResponse && !IsAgentV1AgentV1PromptUpdated && !IsAgentV1AgentV1SpeakUpdated && !IsAgentV1AgentV1InjectionRefused && !IsAgentV1AgentV1Welcome && IsAgentV1AgentV1SettingsApplied && !IsAgentV1AgentV1ConversationText && !IsAgentV1AgentV1UserStartedSpeaking && !IsAgentV1AgentV1AgentThinking && !IsAgentV1AgentV1FunctionCallRequest && !IsAgentV1AgentV1AgentStartedSpeaking && !IsAgentV1AgentV1AgentAudioDone && !IsAgentV1AgentV1Error && !IsAgentV1AgentV1Warning && !IsAgentV1AgentV1History && !IsAgentV1AgentV1Audio || !IsAgentV1AgentV1ListenUpdated && !IsAgentV1AgentV1ThinkUpdated && !IsAgentV1AgentV1ReceiveFunctionCallResponse && !IsAgentV1AgentV1PromptUpdated && !IsAgentV1AgentV1SpeakUpdated && !IsAgentV1AgentV1InjectionRefused && !IsAgentV1AgentV1Welcome && !IsAgentV1AgentV1SettingsApplied && IsAgentV1AgentV1ConversationText && !IsAgentV1AgentV1UserStartedSpeaking && !IsAgentV1AgentV1AgentThinking && !IsAgentV1AgentV1FunctionCallRequest && !IsAgentV1AgentV1AgentStartedSpeaking && !IsAgentV1AgentV1AgentAudioDone && !IsAgentV1AgentV1Error && !IsAgentV1AgentV1Warning && !IsAgentV1AgentV1History && !IsAgentV1AgentV1Audio || !IsAgentV1AgentV1ListenUpdated && !IsAgentV1AgentV1ThinkUpdated && !IsAgentV1AgentV1ReceiveFunctionCallResponse && !IsAgentV1AgentV1PromptUpdated && !IsAgentV1AgentV1SpeakUpdated && !IsAgentV1AgentV1InjectionRefused && !IsAgentV1AgentV1Welcome && !IsAgentV1AgentV1SettingsApplied && !IsAgentV1AgentV1ConversationText && IsAgentV1AgentV1UserStartedSpeaking && !IsAgentV1AgentV1AgentThinking && !IsAgentV1AgentV1FunctionCallRequest && !IsAgentV1AgentV1AgentStartedSpeaking && !IsAgentV1AgentV1AgentAudioDone && !IsAgentV1AgentV1Error && !IsAgentV1AgentV1Warning && !IsAgentV1AgentV1History && !IsAgentV1AgentV1Audio || !IsAgentV1AgentV1ListenUpdated && !IsAgentV1AgentV1ThinkUpdated && !IsAgentV1AgentV1ReceiveFunctionCallResponse && !IsAgentV1AgentV1PromptUpdated && !IsAgentV1AgentV1SpeakUpdated && !IsAgentV1AgentV1InjectionRefused && !IsAgentV1AgentV1Welcome && !IsAgentV1AgentV1SettingsApplied && !IsAgentV1AgentV1ConversationText && !IsAgentV1AgentV1UserStartedSpeaking && IsAgentV1AgentV1AgentThinking && !IsAgentV1AgentV1FunctionCallRequest && !IsAgentV1AgentV1AgentStartedSpeaking && !IsAgentV1AgentV1AgentAudioDone && !IsAgentV1AgentV1Error && !IsAgentV1AgentV1Warning && !IsAgentV1AgentV1History && !IsAgentV1AgentV1Audio || !IsAgentV1AgentV1ListenUpdated && !IsAgentV1AgentV1ThinkUpdated && !IsAgentV1AgentV1ReceiveFunctionCallResponse && !IsAgentV1AgentV1PromptUpdated && !IsAgentV1AgentV1SpeakUpdated && !IsAgentV1AgentV1InjectionRefused && !IsAgentV1AgentV1Welcome && !IsAgentV1AgentV1SettingsApplied && !IsAgentV1AgentV1ConversationText && !IsAgentV1AgentV1UserStartedSpeaking && !IsAgentV1AgentV1AgentThinking && IsAgentV1AgentV1FunctionCallRequest && !IsAgentV1AgentV1AgentStartedSpeaking && !IsAgentV1AgentV1AgentAudioDone && !IsAgentV1AgentV1Error && !IsAgentV1AgentV1Warning && !IsAgentV1AgentV1History && !IsAgentV1AgentV1Audio || !IsAgentV1AgentV1ListenUpdated && !IsAgentV1AgentV1ThinkUpdated && !IsAgentV1AgentV1ReceiveFunctionCallResponse && !IsAgentV1AgentV1PromptUpdated && !IsAgentV1AgentV1SpeakUpdated && !IsAgentV1AgentV1InjectionRefused && !IsAgentV1AgentV1Welcome && !IsAgentV1AgentV1SettingsApplied && !IsAgentV1AgentV1ConversationText && !IsAgentV1AgentV1UserStartedSpeaking && !IsAgentV1AgentV1AgentThinking && !IsAgentV1AgentV1FunctionCallRequest && IsAgentV1AgentV1AgentStartedSpeaking && !IsAgentV1AgentV1AgentAudioDone && !IsAgentV1AgentV1Error && !IsAgentV1AgentV1Warning && !IsAgentV1AgentV1History && !IsAgentV1AgentV1Audio || !IsAgentV1AgentV1ListenUpdated && !IsAgentV1AgentV1ThinkUpdated && !IsAgentV1AgentV1ReceiveFunctionCallResponse && !IsAgentV1AgentV1PromptUpdated && !IsAgentV1AgentV1SpeakUpdated && !IsAgentV1AgentV1InjectionRefused && !IsAgentV1AgentV1Welcome && !IsAgentV1AgentV1SettingsApplied && !IsAgentV1AgentV1ConversationText && !IsAgentV1AgentV1UserStartedSpeaking && !IsAgentV1AgentV1AgentThinking && !IsAgentV1AgentV1FunctionCallRequest && !IsAgentV1AgentV1AgentStartedSpeaking && IsAgentV1AgentV1AgentAudioDone && !IsAgentV1AgentV1Error && !IsAgentV1AgentV1Warning && !IsAgentV1AgentV1History && !IsAgentV1AgentV1Audio || !IsAgentV1AgentV1ListenUpdated && !IsAgentV1AgentV1ThinkUpdated && !IsAgentV1AgentV1ReceiveFunctionCallResponse && !IsAgentV1AgentV1PromptUpdated && !IsAgentV1AgentV1SpeakUpdated && !IsAgentV1AgentV1InjectionRefused && !IsAgentV1AgentV1Welcome && !IsAgentV1AgentV1SettingsApplied && !IsAgentV1AgentV1ConversationText && !IsAgentV1AgentV1UserStartedSpeaking && !IsAgentV1AgentV1AgentThinking && !IsAgentV1AgentV1FunctionCallRequest && !IsAgentV1AgentV1AgentStartedSpeaking && !IsAgentV1AgentV1AgentAudioDone && IsAgentV1AgentV1Error && !IsAgentV1AgentV1Warning && !IsAgentV1AgentV1History && !IsAgentV1AgentV1Audio || !IsAgentV1AgentV1ListenUpdated && !IsAgentV1AgentV1ThinkUpdated && !IsAgentV1AgentV1ReceiveFunctionCallResponse && !IsAgentV1AgentV1PromptUpdated && !IsAgentV1AgentV1SpeakUpdated && !IsAgentV1AgentV1InjectionRefused && !IsAgentV1AgentV1Welcome && !IsAgentV1AgentV1SettingsApplied && !IsAgentV1AgentV1ConversationText && !IsAgentV1AgentV1UserStartedSpeaking && !IsAgentV1AgentV1AgentThinking && !IsAgentV1AgentV1FunctionCallRequest && !IsAgentV1AgentV1AgentStartedSpeaking && !IsAgentV1AgentV1AgentAudioDone && !IsAgentV1AgentV1Error && IsAgentV1AgentV1Warning && !IsAgentV1AgentV1History && !IsAgentV1AgentV1Audio || !IsAgentV1AgentV1ListenUpdated && !IsAgentV1AgentV1ThinkUpdated && !IsAgentV1AgentV1ReceiveFunctionCallResponse && !IsAgentV1AgentV1PromptUpdated && !IsAgentV1AgentV1SpeakUpdated && !IsAgentV1AgentV1InjectionRefused && !IsAgentV1AgentV1Welcome && !IsAgentV1AgentV1SettingsApplied && !IsAgentV1AgentV1ConversationText && !IsAgentV1AgentV1UserStartedSpeaking && !IsAgentV1AgentV1AgentThinking && !IsAgentV1AgentV1FunctionCallRequest && !IsAgentV1AgentV1AgentStartedSpeaking && !IsAgentV1AgentV1AgentAudioDone && !IsAgentV1AgentV1Error && !IsAgentV1AgentV1Warning && IsAgentV1AgentV1History && !IsAgentV1AgentV1Audio || !IsAgentV1AgentV1ListenUpdated && !IsAgentV1AgentV1ThinkUpdated && !IsAgentV1AgentV1ReceiveFunctionCallResponse && !IsAgentV1AgentV1PromptUpdated && !IsAgentV1AgentV1SpeakUpdated && !IsAgentV1AgentV1InjectionRefused && !IsAgentV1AgentV1Welcome && !IsAgentV1AgentV1SettingsApplied && !IsAgentV1AgentV1ConversationText && !IsAgentV1AgentV1UserStartedSpeaking && !IsAgentV1AgentV1AgentThinking && !IsAgentV1AgentV1FunctionCallRequest && !IsAgentV1AgentV1AgentStartedSpeaking && !IsAgentV1AgentV1AgentAudioDone && !IsAgentV1AgentV1Error && !IsAgentV1AgentV1Warning && !IsAgentV1AgentV1History && IsAgentV1AgentV1Audio;
+            return IsAgentV1AgentV1ListenUpdated && !IsAgentV1AgentV1ThinkUpdated && !IsAgentV1AgentV1ReceiveFunctionCallResponse && !IsAgentV1AgentV1PromptUpdated && !IsAgentV1AgentV1SpeakUpdated && !IsAgentV1AgentV1InjectionRefused && !IsAgentV1AgentV1Welcome && !IsAgentV1AgentV1SettingsApplied && !IsAgentV1AgentV1ConversationText && !IsAgentV1AgentV1UserStartedSpeaking && !IsAgentV1AgentV1AgentThinking && !IsAgentV1AgentV1LatencyReport && !IsAgentV1AgentV1FunctionCallRequest && !IsAgentV1AgentV1AgentStartedSpeaking && !IsAgentV1AgentV1AgentAudioDone && !IsAgentV1AgentV1Error && !IsAgentV1AgentV1Warning && !IsAgentV1AgentV1History && !IsAgentV1AgentV1Audio || !IsAgentV1AgentV1ListenUpdated && IsAgentV1AgentV1ThinkUpdated && !IsAgentV1AgentV1ReceiveFunctionCallResponse && !IsAgentV1AgentV1PromptUpdated && !IsAgentV1AgentV1SpeakUpdated && !IsAgentV1AgentV1InjectionRefused && !IsAgentV1AgentV1Welcome && !IsAgentV1AgentV1SettingsApplied && !IsAgentV1AgentV1ConversationText && !IsAgentV1AgentV1UserStartedSpeaking && !IsAgentV1AgentV1AgentThinking && !IsAgentV1AgentV1LatencyReport && !IsAgentV1AgentV1FunctionCallRequest && !IsAgentV1AgentV1AgentStartedSpeaking && !IsAgentV1AgentV1AgentAudioDone && !IsAgentV1AgentV1Error && !IsAgentV1AgentV1Warning && !IsAgentV1AgentV1History && !IsAgentV1AgentV1Audio || !IsAgentV1AgentV1ListenUpdated && !IsAgentV1AgentV1ThinkUpdated && IsAgentV1AgentV1ReceiveFunctionCallResponse && !IsAgentV1AgentV1PromptUpdated && !IsAgentV1AgentV1SpeakUpdated && !IsAgentV1AgentV1InjectionRefused && !IsAgentV1AgentV1Welcome && !IsAgentV1AgentV1SettingsApplied && !IsAgentV1AgentV1ConversationText && !IsAgentV1AgentV1UserStartedSpeaking && !IsAgentV1AgentV1AgentThinking && !IsAgentV1AgentV1LatencyReport && !IsAgentV1AgentV1FunctionCallRequest && !IsAgentV1AgentV1AgentStartedSpeaking && !IsAgentV1AgentV1AgentAudioDone && !IsAgentV1AgentV1Error && !IsAgentV1AgentV1Warning && !IsAgentV1AgentV1History && !IsAgentV1AgentV1Audio || !IsAgentV1AgentV1ListenUpdated && !IsAgentV1AgentV1ThinkUpdated && !IsAgentV1AgentV1ReceiveFunctionCallResponse && IsAgentV1AgentV1PromptUpdated && !IsAgentV1AgentV1SpeakUpdated && !IsAgentV1AgentV1InjectionRefused && !IsAgentV1AgentV1Welcome && !IsAgentV1AgentV1SettingsApplied && !IsAgentV1AgentV1ConversationText && !IsAgentV1AgentV1UserStartedSpeaking && !IsAgentV1AgentV1AgentThinking && !IsAgentV1AgentV1LatencyReport && !IsAgentV1AgentV1FunctionCallRequest && !IsAgentV1AgentV1AgentStartedSpeaking && !IsAgentV1AgentV1AgentAudioDone && !IsAgentV1AgentV1Error && !IsAgentV1AgentV1Warning && !IsAgentV1AgentV1History && !IsAgentV1AgentV1Audio || !IsAgentV1AgentV1ListenUpdated && !IsAgentV1AgentV1ThinkUpdated && !IsAgentV1AgentV1ReceiveFunctionCallResponse && !IsAgentV1AgentV1PromptUpdated && IsAgentV1AgentV1SpeakUpdated && !IsAgentV1AgentV1InjectionRefused && !IsAgentV1AgentV1Welcome && !IsAgentV1AgentV1SettingsApplied && !IsAgentV1AgentV1ConversationText && !IsAgentV1AgentV1UserStartedSpeaking && !IsAgentV1AgentV1AgentThinking && !IsAgentV1AgentV1LatencyReport && !IsAgentV1AgentV1FunctionCallRequest && !IsAgentV1AgentV1AgentStartedSpeaking && !IsAgentV1AgentV1AgentAudioDone && !IsAgentV1AgentV1Error && !IsAgentV1AgentV1Warning && !IsAgentV1AgentV1History && !IsAgentV1AgentV1Audio || !IsAgentV1AgentV1ListenUpdated && !IsAgentV1AgentV1ThinkUpdated && !IsAgentV1AgentV1ReceiveFunctionCallResponse && !IsAgentV1AgentV1PromptUpdated && !IsAgentV1AgentV1SpeakUpdated && IsAgentV1AgentV1InjectionRefused && !IsAgentV1AgentV1Welcome && !IsAgentV1AgentV1SettingsApplied && !IsAgentV1AgentV1ConversationText && !IsAgentV1AgentV1UserStartedSpeaking && !IsAgentV1AgentV1AgentThinking && !IsAgentV1AgentV1LatencyReport && !IsAgentV1AgentV1FunctionCallRequest && !IsAgentV1AgentV1AgentStartedSpeaking && !IsAgentV1AgentV1AgentAudioDone && !IsAgentV1AgentV1Error && !IsAgentV1AgentV1Warning && !IsAgentV1AgentV1History && !IsAgentV1AgentV1Audio || !IsAgentV1AgentV1ListenUpdated && !IsAgentV1AgentV1ThinkUpdated && !IsAgentV1AgentV1ReceiveFunctionCallResponse && !IsAgentV1AgentV1PromptUpdated && !IsAgentV1AgentV1SpeakUpdated && !IsAgentV1AgentV1InjectionRefused && IsAgentV1AgentV1Welcome && !IsAgentV1AgentV1SettingsApplied && !IsAgentV1AgentV1ConversationText && !IsAgentV1AgentV1UserStartedSpeaking && !IsAgentV1AgentV1AgentThinking && !IsAgentV1AgentV1LatencyReport && !IsAgentV1AgentV1FunctionCallRequest && !IsAgentV1AgentV1AgentStartedSpeaking && !IsAgentV1AgentV1AgentAudioDone && !IsAgentV1AgentV1Error && !IsAgentV1AgentV1Warning && !IsAgentV1AgentV1History && !IsAgentV1AgentV1Audio || !IsAgentV1AgentV1ListenUpdated && !IsAgentV1AgentV1ThinkUpdated && !IsAgentV1AgentV1ReceiveFunctionCallResponse && !IsAgentV1AgentV1PromptUpdated && !IsAgentV1AgentV1SpeakUpdated && !IsAgentV1AgentV1InjectionRefused && !IsAgentV1AgentV1Welcome && IsAgentV1AgentV1SettingsApplied && !IsAgentV1AgentV1ConversationText && !IsAgentV1AgentV1UserStartedSpeaking && !IsAgentV1AgentV1AgentThinking && !IsAgentV1AgentV1LatencyReport && !IsAgentV1AgentV1FunctionCallRequest && !IsAgentV1AgentV1AgentStartedSpeaking && !IsAgentV1AgentV1AgentAudioDone && !IsAgentV1AgentV1Error && !IsAgentV1AgentV1Warning && !IsAgentV1AgentV1History && !IsAgentV1AgentV1Audio || !IsAgentV1AgentV1ListenUpdated && !IsAgentV1AgentV1ThinkUpdated && !IsAgentV1AgentV1ReceiveFunctionCallResponse && !IsAgentV1AgentV1PromptUpdated && !IsAgentV1AgentV1SpeakUpdated && !IsAgentV1AgentV1InjectionRefused && !IsAgentV1AgentV1Welcome && !IsAgentV1AgentV1SettingsApplied && IsAgentV1AgentV1ConversationText && !IsAgentV1AgentV1UserStartedSpeaking && !IsAgentV1AgentV1AgentThinking && !IsAgentV1AgentV1LatencyReport && !IsAgentV1AgentV1FunctionCallRequest && !IsAgentV1AgentV1AgentStartedSpeaking && !IsAgentV1AgentV1AgentAudioDone && !IsAgentV1AgentV1Error && !IsAgentV1AgentV1Warning && !IsAgentV1AgentV1History && !IsAgentV1AgentV1Audio || !IsAgentV1AgentV1ListenUpdated && !IsAgentV1AgentV1ThinkUpdated && !IsAgentV1AgentV1ReceiveFunctionCallResponse && !IsAgentV1AgentV1PromptUpdated && !IsAgentV1AgentV1SpeakUpdated && !IsAgentV1AgentV1InjectionRefused && !IsAgentV1AgentV1Welcome && !IsAgentV1AgentV1SettingsApplied && !IsAgentV1AgentV1ConversationText && IsAgentV1AgentV1UserStartedSpeaking && !IsAgentV1AgentV1AgentThinking && !IsAgentV1AgentV1LatencyReport && !IsAgentV1AgentV1FunctionCallRequest && !IsAgentV1AgentV1AgentStartedSpeaking && !IsAgentV1AgentV1AgentAudioDone && !IsAgentV1AgentV1Error && !IsAgentV1AgentV1Warning && !IsAgentV1AgentV1History && !IsAgentV1AgentV1Audio || !IsAgentV1AgentV1ListenUpdated && !IsAgentV1AgentV1ThinkUpdated && !IsAgentV1AgentV1ReceiveFunctionCallResponse && !IsAgentV1AgentV1PromptUpdated && !IsAgentV1AgentV1SpeakUpdated && !IsAgentV1AgentV1InjectionRefused && !IsAgentV1AgentV1Welcome && !IsAgentV1AgentV1SettingsApplied && !IsAgentV1AgentV1ConversationText && !IsAgentV1AgentV1UserStartedSpeaking && IsAgentV1AgentV1AgentThinking && !IsAgentV1AgentV1LatencyReport && !IsAgentV1AgentV1FunctionCallRequest && !IsAgentV1AgentV1AgentStartedSpeaking && !IsAgentV1AgentV1AgentAudioDone && !IsAgentV1AgentV1Error && !IsAgentV1AgentV1Warning && !IsAgentV1AgentV1History && !IsAgentV1AgentV1Audio || !IsAgentV1AgentV1ListenUpdated && !IsAgentV1AgentV1ThinkUpdated && !IsAgentV1AgentV1ReceiveFunctionCallResponse && !IsAgentV1AgentV1PromptUpdated && !IsAgentV1AgentV1SpeakUpdated && !IsAgentV1AgentV1InjectionRefused && !IsAgentV1AgentV1Welcome && !IsAgentV1AgentV1SettingsApplied && !IsAgentV1AgentV1ConversationText && !IsAgentV1AgentV1UserStartedSpeaking && !IsAgentV1AgentV1AgentThinking && IsAgentV1AgentV1LatencyReport && !IsAgentV1AgentV1FunctionCallRequest && !IsAgentV1AgentV1AgentStartedSpeaking && !IsAgentV1AgentV1AgentAudioDone && !IsAgentV1AgentV1Error && !IsAgentV1AgentV1Warning && !IsAgentV1AgentV1History && !IsAgentV1AgentV1Audio || !IsAgentV1AgentV1ListenUpdated && !IsAgentV1AgentV1ThinkUpdated && !IsAgentV1AgentV1ReceiveFunctionCallResponse && !IsAgentV1AgentV1PromptUpdated && !IsAgentV1AgentV1SpeakUpdated && !IsAgentV1AgentV1InjectionRefused && !IsAgentV1AgentV1Welcome && !IsAgentV1AgentV1SettingsApplied && !IsAgentV1AgentV1ConversationText && !IsAgentV1AgentV1UserStartedSpeaking && !IsAgentV1AgentV1AgentThinking && !IsAgentV1AgentV1LatencyReport && IsAgentV1AgentV1FunctionCallRequest && !IsAgentV1AgentV1AgentStartedSpeaking && !IsAgentV1AgentV1AgentAudioDone && !IsAgentV1AgentV1Error && !IsAgentV1AgentV1Warning && !IsAgentV1AgentV1History && !IsAgentV1AgentV1Audio || !IsAgentV1AgentV1ListenUpdated && !IsAgentV1AgentV1ThinkUpdated && !IsAgentV1AgentV1ReceiveFunctionCallResponse && !IsAgentV1AgentV1PromptUpdated && !IsAgentV1AgentV1SpeakUpdated && !IsAgentV1AgentV1InjectionRefused && !IsAgentV1AgentV1Welcome && !IsAgentV1AgentV1SettingsApplied && !IsAgentV1AgentV1ConversationText && !IsAgentV1AgentV1UserStartedSpeaking && !IsAgentV1AgentV1AgentThinking && !IsAgentV1AgentV1LatencyReport && !IsAgentV1AgentV1FunctionCallRequest && IsAgentV1AgentV1AgentStartedSpeaking && !IsAgentV1AgentV1AgentAudioDone && !IsAgentV1AgentV1Error && !IsAgentV1AgentV1Warning && !IsAgentV1AgentV1History && !IsAgentV1AgentV1Audio || !IsAgentV1AgentV1ListenUpdated && !IsAgentV1AgentV1ThinkUpdated && !IsAgentV1AgentV1ReceiveFunctionCallResponse && !IsAgentV1AgentV1PromptUpdated && !IsAgentV1AgentV1SpeakUpdated && !IsAgentV1AgentV1InjectionRefused && !IsAgentV1AgentV1Welcome && !IsAgentV1AgentV1SettingsApplied && !IsAgentV1AgentV1ConversationText && !IsAgentV1AgentV1UserStartedSpeaking && !IsAgentV1AgentV1AgentThinking && !IsAgentV1AgentV1LatencyReport && !IsAgentV1AgentV1FunctionCallRequest && !IsAgentV1AgentV1AgentStartedSpeaking && IsAgentV1AgentV1AgentAudioDone && !IsAgentV1AgentV1Error && !IsAgentV1AgentV1Warning && !IsAgentV1AgentV1History && !IsAgentV1AgentV1Audio || !IsAgentV1AgentV1ListenUpdated && !IsAgentV1AgentV1ThinkUpdated && !IsAgentV1AgentV1ReceiveFunctionCallResponse && !IsAgentV1AgentV1PromptUpdated && !IsAgentV1AgentV1SpeakUpdated && !IsAgentV1AgentV1InjectionRefused && !IsAgentV1AgentV1Welcome && !IsAgentV1AgentV1SettingsApplied && !IsAgentV1AgentV1ConversationText && !IsAgentV1AgentV1UserStartedSpeaking && !IsAgentV1AgentV1AgentThinking && !IsAgentV1AgentV1LatencyReport && !IsAgentV1AgentV1FunctionCallRequest && !IsAgentV1AgentV1AgentStartedSpeaking && !IsAgentV1AgentV1AgentAudioDone && IsAgentV1AgentV1Error && !IsAgentV1AgentV1Warning && !IsAgentV1AgentV1History && !IsAgentV1AgentV1Audio || !IsAgentV1AgentV1ListenUpdated && !IsAgentV1AgentV1ThinkUpdated && !IsAgentV1AgentV1ReceiveFunctionCallResponse && !IsAgentV1AgentV1PromptUpdated && !IsAgentV1AgentV1SpeakUpdated && !IsAgentV1AgentV1InjectionRefused && !IsAgentV1AgentV1Welcome && !IsAgentV1AgentV1SettingsApplied && !IsAgentV1AgentV1ConversationText && !IsAgentV1AgentV1UserStartedSpeaking && !IsAgentV1AgentV1AgentThinking && !IsAgentV1AgentV1LatencyReport && !IsAgentV1AgentV1FunctionCallRequest && !IsAgentV1AgentV1AgentStartedSpeaking && !IsAgentV1AgentV1AgentAudioDone && !IsAgentV1AgentV1Error && IsAgentV1AgentV1Warning && !IsAgentV1AgentV1History && !IsAgentV1AgentV1Audio || !IsAgentV1AgentV1ListenUpdated && !IsAgentV1AgentV1ThinkUpdated && !IsAgentV1AgentV1ReceiveFunctionCallResponse && !IsAgentV1AgentV1PromptUpdated && !IsAgentV1AgentV1SpeakUpdated && !IsAgentV1AgentV1InjectionRefused && !IsAgentV1AgentV1Welcome && !IsAgentV1AgentV1SettingsApplied && !IsAgentV1AgentV1ConversationText && !IsAgentV1AgentV1UserStartedSpeaking && !IsAgentV1AgentV1AgentThinking && !IsAgentV1AgentV1LatencyReport && !IsAgentV1AgentV1FunctionCallRequest && !IsAgentV1AgentV1AgentStartedSpeaking && !IsAgentV1AgentV1AgentAudioDone && !IsAgentV1AgentV1Error && !IsAgentV1AgentV1Warning && IsAgentV1AgentV1History && !IsAgentV1AgentV1Audio || !IsAgentV1AgentV1ListenUpdated && !IsAgentV1AgentV1ThinkUpdated && !IsAgentV1AgentV1ReceiveFunctionCallResponse && !IsAgentV1AgentV1PromptUpdated && !IsAgentV1AgentV1SpeakUpdated && !IsAgentV1AgentV1InjectionRefused && !IsAgentV1AgentV1Welcome && !IsAgentV1AgentV1SettingsApplied && !IsAgentV1AgentV1ConversationText && !IsAgentV1AgentV1UserStartedSpeaking && !IsAgentV1AgentV1AgentThinking && !IsAgentV1AgentV1LatencyReport && !IsAgentV1AgentV1FunctionCallRequest && !IsAgentV1AgentV1AgentStartedSpeaking && !IsAgentV1AgentV1AgentAudioDone && !IsAgentV1AgentV1Error && !IsAgentV1AgentV1Warning && !IsAgentV1AgentV1History && IsAgentV1AgentV1Audio;
         }
 
         /// <summary>
@@ -1209,6 +1273,7 @@ namespace Deepgram.Realtime
             global::System.Func<global::Deepgram.Realtime.AgentV1AgentV1ConversationText, TResult>? agentV1AgentV1ConversationText = null,
             global::System.Func<global::Deepgram.Realtime.AgentV1AgentV1UserStartedSpeaking, TResult>? agentV1AgentV1UserStartedSpeaking = null,
             global::System.Func<global::Deepgram.Realtime.AgentV1AgentV1AgentThinking, TResult>? agentV1AgentV1AgentThinking = null,
+            global::System.Func<global::Deepgram.Realtime.AgentV1AgentV1LatencyReport, TResult>? agentV1AgentV1LatencyReport = null,
             global::System.Func<global::Deepgram.Realtime.AgentV1AgentV1FunctionCallRequest, TResult>? agentV1AgentV1FunctionCallRequest = null,
             global::System.Func<global::Deepgram.Realtime.AgentV1AgentV1AgentStartedSpeaking, TResult>? agentV1AgentV1AgentStartedSpeaking = null,
             global::System.Func<global::Deepgram.Realtime.AgentV1AgentV1AgentAudioDone, TResult>? agentV1AgentV1AgentAudioDone = null,
@@ -1266,6 +1331,10 @@ namespace Deepgram.Realtime
             else if (IsAgentV1AgentV1AgentThinking && agentV1AgentV1AgentThinking != null)
             {
                 return agentV1AgentV1AgentThinking(AgentV1AgentV1AgentThinking!);
+            }
+            else if (IsAgentV1AgentV1LatencyReport && agentV1AgentV1LatencyReport != null)
+            {
+                return agentV1AgentV1LatencyReport(AgentV1AgentV1LatencyReport!);
             }
             else if (IsAgentV1AgentV1FunctionCallRequest && agentV1AgentV1FunctionCallRequest != null)
             {
@@ -1325,6 +1394,8 @@ namespace Deepgram.Realtime
 
             global::System.Action<global::Deepgram.Realtime.AgentV1AgentV1AgentThinking>? agentV1AgentV1AgentThinking = null,
 
+            global::System.Action<global::Deepgram.Realtime.AgentV1AgentV1LatencyReport>? agentV1AgentV1LatencyReport = null,
+
             global::System.Action<global::Deepgram.Realtime.AgentV1AgentV1FunctionCallRequest>? agentV1AgentV1FunctionCallRequest = null,
 
             global::System.Action<global::Deepgram.Realtime.AgentV1AgentV1AgentStartedSpeaking>? agentV1AgentV1AgentStartedSpeaking = null,
@@ -1388,6 +1459,10 @@ namespace Deepgram.Realtime
             else if (IsAgentV1AgentV1AgentThinking)
             {
                 agentV1AgentV1AgentThinking?.Invoke(AgentV1AgentV1AgentThinking!);
+            }
+            else if (IsAgentV1AgentV1LatencyReport)
+            {
+                agentV1AgentV1LatencyReport?.Invoke(AgentV1AgentV1LatencyReport!);
             }
             else if (IsAgentV1AgentV1FunctionCallRequest)
             {
@@ -1434,6 +1509,7 @@ namespace Deepgram.Realtime
             global::System.Action<global::Deepgram.Realtime.AgentV1AgentV1ConversationText>? agentV1AgentV1ConversationText = null,
             global::System.Action<global::Deepgram.Realtime.AgentV1AgentV1UserStartedSpeaking>? agentV1AgentV1UserStartedSpeaking = null,
             global::System.Action<global::Deepgram.Realtime.AgentV1AgentV1AgentThinking>? agentV1AgentV1AgentThinking = null,
+            global::System.Action<global::Deepgram.Realtime.AgentV1AgentV1LatencyReport>? agentV1AgentV1LatencyReport = null,
             global::System.Action<global::Deepgram.Realtime.AgentV1AgentV1FunctionCallRequest>? agentV1AgentV1FunctionCallRequest = null,
             global::System.Action<global::Deepgram.Realtime.AgentV1AgentV1AgentStartedSpeaking>? agentV1AgentV1AgentStartedSpeaking = null,
             global::System.Action<global::Deepgram.Realtime.AgentV1AgentV1AgentAudioDone>? agentV1AgentV1AgentAudioDone = null,
@@ -1491,6 +1567,10 @@ namespace Deepgram.Realtime
             else if (IsAgentV1AgentV1AgentThinking)
             {
                 agentV1AgentV1AgentThinking?.Invoke(AgentV1AgentV1AgentThinking!);
+            }
+            else if (IsAgentV1AgentV1LatencyReport)
+            {
+                agentV1AgentV1LatencyReport?.Invoke(AgentV1AgentV1LatencyReport!);
             }
             else if (IsAgentV1AgentV1FunctionCallRequest)
             {
@@ -1551,6 +1631,8 @@ namespace Deepgram.Realtime
                 typeof(global::Deepgram.Realtime.AgentV1AgentV1UserStartedSpeaking),
                 AgentV1AgentV1AgentThinking,
                 typeof(global::Deepgram.Realtime.AgentV1AgentV1AgentThinking),
+                AgentV1AgentV1LatencyReport,
+                typeof(global::Deepgram.Realtime.AgentV1AgentV1LatencyReport),
                 AgentV1AgentV1FunctionCallRequest,
                 typeof(global::Deepgram.Realtime.AgentV1AgentV1FunctionCallRequest),
                 AgentV1AgentV1AgentStartedSpeaking,
@@ -1592,6 +1674,7 @@ namespace Deepgram.Realtime
                 global::System.Collections.Generic.EqualityComparer<global::Deepgram.Realtime.AgentV1AgentV1ConversationText?>.Default.Equals(AgentV1AgentV1ConversationText, other.AgentV1AgentV1ConversationText) &&
                 global::System.Collections.Generic.EqualityComparer<global::Deepgram.Realtime.AgentV1AgentV1UserStartedSpeaking?>.Default.Equals(AgentV1AgentV1UserStartedSpeaking, other.AgentV1AgentV1UserStartedSpeaking) &&
                 global::System.Collections.Generic.EqualityComparer<global::Deepgram.Realtime.AgentV1AgentV1AgentThinking?>.Default.Equals(AgentV1AgentV1AgentThinking, other.AgentV1AgentV1AgentThinking) &&
+                global::System.Collections.Generic.EqualityComparer<global::Deepgram.Realtime.AgentV1AgentV1LatencyReport?>.Default.Equals(AgentV1AgentV1LatencyReport, other.AgentV1AgentV1LatencyReport) &&
                 global::System.Collections.Generic.EqualityComparer<global::Deepgram.Realtime.AgentV1AgentV1FunctionCallRequest?>.Default.Equals(AgentV1AgentV1FunctionCallRequest, other.AgentV1AgentV1FunctionCallRequest) &&
                 global::System.Collections.Generic.EqualityComparer<global::Deepgram.Realtime.AgentV1AgentV1AgentStartedSpeaking?>.Default.Equals(AgentV1AgentV1AgentStartedSpeaking, other.AgentV1AgentV1AgentStartedSpeaking) &&
                 global::System.Collections.Generic.EqualityComparer<global::Deepgram.Realtime.AgentV1AgentV1AgentAudioDone?>.Default.Equals(AgentV1AgentV1AgentAudioDone, other.AgentV1AgentV1AgentAudioDone) &&

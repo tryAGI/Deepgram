@@ -39,6 +39,10 @@ namespace Deepgram.Realtime
         /// <summary>
         /// 
         /// </summary>
+        LatencyReport,
+        /// <summary>
+        /// 
+        /// </summary>
         ListenUpdated,
         /// <summary>
         /// 
@@ -85,6 +89,7 @@ namespace Deepgram.Realtime
                 AgentV1ServerEventDiscriminatorMessageType.FunctionCallRequest => "FunctionCallRequest",
                 AgentV1ServerEventDiscriminatorMessageType.FunctionCallResponse => "FunctionCallResponse",
                 AgentV1ServerEventDiscriminatorMessageType.InjectionRefused => "InjectionRefused",
+                AgentV1ServerEventDiscriminatorMessageType.LatencyReport => "LatencyReport",
                 AgentV1ServerEventDiscriminatorMessageType.ListenUpdated => "ListenUpdated",
                 AgentV1ServerEventDiscriminatorMessageType.PromptUpdated => "PromptUpdated",
                 AgentV1ServerEventDiscriminatorMessageType.SettingsApplied => "SettingsApplied",
@@ -109,6 +114,7 @@ namespace Deepgram.Realtime
                 "FunctionCallRequest" => AgentV1ServerEventDiscriminatorMessageType.FunctionCallRequest,
                 "FunctionCallResponse" => AgentV1ServerEventDiscriminatorMessageType.FunctionCallResponse,
                 "InjectionRefused" => AgentV1ServerEventDiscriminatorMessageType.InjectionRefused,
+                "LatencyReport" => AgentV1ServerEventDiscriminatorMessageType.LatencyReport,
                 "ListenUpdated" => AgentV1ServerEventDiscriminatorMessageType.ListenUpdated,
                 "PromptUpdated" => AgentV1ServerEventDiscriminatorMessageType.PromptUpdated,
                 "SettingsApplied" => AgentV1ServerEventDiscriminatorMessageType.SettingsApplied,

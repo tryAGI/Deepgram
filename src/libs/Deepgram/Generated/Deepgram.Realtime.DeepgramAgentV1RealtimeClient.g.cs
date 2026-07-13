@@ -309,6 +309,10 @@ namespace Deepgram.Realtime
         /// </summary>
         public event global::System.EventHandler<AutoSDKWebSocketMessageEventArgs<global::Deepgram.Realtime.AgentV1AgentV1AgentThinking>>? AgentV1AgentThinkingReceived;
         /// <summary>
+        /// Raised after a AgentV1LatencyReport message is deserialized.
+        /// </summary>
+        public event global::System.EventHandler<AutoSDKWebSocketMessageEventArgs<global::Deepgram.Realtime.AgentV1AgentV1LatencyReport>>? AgentV1LatencyReportReceived;
+        /// <summary>
         /// Raised after a AgentV1FunctionCallRequest message is deserialized.
         /// </summary>
         public event global::System.EventHandler<AutoSDKWebSocketMessageEventArgs<global::Deepgram.Realtime.AgentV1AgentV1FunctionCallRequest>>? AgentV1FunctionCallRequestReceived;

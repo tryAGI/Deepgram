@@ -7,6 +7,7 @@ namespace Deepgram.Realtime
     /// Controls how the injection interacts with any in-progress user or agent turn.<br/>
     /// * `default` — The agent speaks only if neither the user nor the agent is mid-turn. If a turn is in progress, the server replies with `InjectionRefused`.<br/>
     /// * `queue` — The message is appended after any already-queued `ConversationText` without interrupting the current agent turn or think response. If nothing is queued, the message plays immediately.<br/>
+    /// * `interrupt` — The agent immediately speaks. If the agent was already speaking, it interrupts the current speech and replaces it with the new message. If the user is speaking, the agent interrupts with the new message, but the user's continued speech triggers `UserStartedSpeaking`, which quickly interrupts the agent.<br/>
     /// Default Value: default
     /// </summary>
     public enum ChannelsAgentV1MessagesAgentV1InjectAgentMessageBehavior
@@ -15,6 +16,10 @@ namespace Deepgram.Realtime
         /// 
         /// </summary>
         Default,
+        /// <summary>
+        /// 
+        /// </summary>
+        Interrupt,
         /// <summary>
         /// 
         /// </summary>
@@ -34,6 +39,7 @@ namespace Deepgram.Realtime
             return value switch
             {
                 ChannelsAgentV1MessagesAgentV1InjectAgentMessageBehavior.Default => "default",
+                ChannelsAgentV1MessagesAgentV1InjectAgentMessageBehavior.Interrupt => "interrupt",
                 ChannelsAgentV1MessagesAgentV1InjectAgentMessageBehavior.Queue => "queue",
                 _ => throw new global::System.ArgumentOutOfRangeException(nameof(value), value, null),
             };
@@ -46,6 +52,7 @@ namespace Deepgram.Realtime
             return value switch
             {
                 "default" => ChannelsAgentV1MessagesAgentV1InjectAgentMessageBehavior.Default,
+                "interrupt" => ChannelsAgentV1MessagesAgentV1InjectAgentMessageBehavior.Interrupt,
                 "queue" => ChannelsAgentV1MessagesAgentV1InjectAgentMessageBehavior.Queue,
                 _ => null,
             };
