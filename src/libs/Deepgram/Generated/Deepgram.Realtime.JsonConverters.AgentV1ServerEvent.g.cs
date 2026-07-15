@@ -60,7 +60,6 @@ namespace Deepgram.Realtime.JsonConverters
             if (__jsonProps.Contains("content")) __score10++;
             if (__jsonProps.Contains("type")) __score10++;
             var __score11 = 0;
-            if (__jsonProps.Contains("stt_latency")) __score11++;
             if (__jsonProps.Contains("total_latency")) __score11++;
             if (__jsonProps.Contains("tts_latency")) __score11++;
             if (__jsonProps.Contains("ttt_text_latency")) __score11++;
