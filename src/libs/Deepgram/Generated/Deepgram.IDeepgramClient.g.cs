@@ -173,6 +173,11 @@ namespace Deepgram
         /// <summary>
         /// 
         /// </summary>
+        public SpeakV2AudioClient SpeakV2Audio { get; }
+
+        /// <summary>
+        /// 
+        /// </summary>
         public VoiceAgentConfigurationsClient VoiceAgentConfigurations { get; }
 
         /// <summary>

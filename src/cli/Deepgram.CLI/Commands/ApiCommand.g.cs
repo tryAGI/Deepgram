@@ -31,6 +31,7 @@ internal static class ApiCommand
                          command.Subcommands.Add(ReadV1TextApiGroupCommand.Create());
                          command.Subcommands.Add(SelfHostedV1DistributionCredentialsApiGroupCommand.Create());
                          command.Subcommands.Add(SpeakV1AudioApiGroupCommand.Create());
+                         command.Subcommands.Add(SpeakV2AudioApiGroupCommand.Create());
                          command.Subcommands.Add(VoiceAgentConfigurationsApiGroupCommand.Create());
                          command.Subcommands.Add(VoiceAgentVariablesApiGroupCommand.Create());
         return command;
