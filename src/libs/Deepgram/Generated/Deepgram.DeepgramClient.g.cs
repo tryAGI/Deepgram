@@ -255,6 +255,16 @@ namespace Deepgram
         /// <summary>
         /// 
         /// </summary>
+        public SpeakV2AudioClient SpeakV2Audio => new SpeakV2AudioClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
+        {
+            ReadResponseAsString = ReadResponseAsString,
+            JsonSerializerContext = JsonSerializerContext,
+            AutoSDKServerConfiguration = AutoSDKServerConfiguration,
+        };
+
+        /// <summary>
+        /// 
+        /// </summary>
         public VoiceAgentConfigurationsClient VoiceAgentConfigurations => new VoiceAgentConfigurationsClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,

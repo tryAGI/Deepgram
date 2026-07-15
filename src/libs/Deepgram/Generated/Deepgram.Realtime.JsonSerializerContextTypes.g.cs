@@ -1104,35 +1104,151 @@ namespace Deepgram.Realtime
         /// <summary>
         /// 
         /// </summary>
-        public global::Deepgram.Realtime.AgentV1ServerEvent? Type269 { get; set; }
+        public global::Deepgram.Realtime.SpeakV2Encoding? Type269 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Deepgram.Realtime.AgentV1ServerEventDiscriminator? Type270 { get; set; }
+        public global::Deepgram.Realtime.SpeakV2SampleRate? Type270 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Deepgram.Realtime.AgentV1ServerEventDiscriminatorMessageType? Type271 { get; set; }
+        public global::Deepgram.Realtime.SpeakV2MipOptOut? Type271 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Deepgram.Realtime.ListenV1ServerEvent? Type272 { get; set; }
+        public global::Deepgram.Realtime.SpeakV2Tag? Type272 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Deepgram.Realtime.ListenV2ServerEvent? Type273 { get; set; }
+        public global::Deepgram.Realtime.SpeakV2SpeakV2Connected? Type273 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Deepgram.Realtime.ListenV2ServerEventDiscriminator? Type274 { get; set; }
+        public global::Deepgram.Realtime.SpeakV2SpeakV2ConnectedType? Type274 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Deepgram.Realtime.ListenV2ServerEventDiscriminatorMessageType? Type275 { get; set; }
+        public global::Deepgram.Realtime.SpeakV2SpeakV2SpeechStarted? Type275 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Deepgram.Realtime.SpeakV1ServerEvent? Type276 { get; set; }
+        public global::Deepgram.Realtime.SpeakV2SpeakV2SpeechStartedType? Type276 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Deepgram.Realtime.ChannelsSpeakV2MessagesSpeakV2SpeechMetadataControlsApplied? Type277 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Deepgram.Realtime.SpeakV2SpeakV2SpeechMetadata? Type278 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Deepgram.Realtime.SpeakV2SpeakV2SpeechMetadataType? Type279 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Deepgram.Realtime.SpeakV2SpeakV2Flushed? Type280 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Deepgram.Realtime.SpeakV2SpeakV2FlushedType? Type281 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Deepgram.Realtime.SpeakV2SpeakV2SessionMetadata? Type282 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Deepgram.Realtime.SpeakV2SpeakV2SessionMetadataType? Type283 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Deepgram.Realtime.SpeakV2SpeakV2Warning? Type284 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Deepgram.Realtime.SpeakV2SpeakV2WarningType? Type285 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Deepgram.Realtime.ChannelsSpeakV2MessagesSpeakV2ErrorCode? Type286 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Deepgram.Realtime.SpeakV2SpeakV2Error? Type287 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Deepgram.Realtime.SpeakV2SpeakV2ErrorType? Type288 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Deepgram.Realtime.SpeakV2SpeakV2Speak? Type289 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Deepgram.Realtime.SpeakV2SpeakV2SpeakType? Type290 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Deepgram.Realtime.SpeakV2SpeakV2Flush? Type291 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Deepgram.Realtime.SpeakV2SpeakV2FlushType? Type292 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Deepgram.Realtime.SpeakV2SpeakV2Close? Type293 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Deepgram.Realtime.SpeakV2SpeakV2CloseType? Type294 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Deepgram.Realtime.AgentV1ServerEvent? Type295 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Deepgram.Realtime.AgentV1ServerEventDiscriminator? Type296 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Deepgram.Realtime.AgentV1ServerEventDiscriminatorMessageType? Type297 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Deepgram.Realtime.ListenV1ServerEvent? Type298 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Deepgram.Realtime.ListenV2ServerEvent? Type299 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Deepgram.Realtime.ListenV2ServerEventDiscriminator? Type300 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Deepgram.Realtime.ListenV2ServerEventDiscriminatorMessageType? Type301 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Deepgram.Realtime.SpeakV1ServerEvent? Type302 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Deepgram.Realtime.VsServerEvent? Type303 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Deepgram.Realtime.VsServerEventDiscriminator? Type304 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Deepgram.Realtime.VsServerEventDiscriminatorMessageType? Type305 { get; set; }
 
         /// <summary>
         /// 

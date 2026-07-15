@@ -229,6 +229,82 @@ namespace Deepgram
 
             typeof(global::Deepgram.JsonConverters.V1ProjectsProjectIdSelfHostedDistributionCredentialsPostParametersProviderNullableJsonConverter),
 
+            typeof(global::Deepgram.JsonConverters.V2SpeakPostParametersCallbackMethodJsonConverter),
+
+            typeof(global::Deepgram.JsonConverters.V2SpeakPostParametersCallbackMethodNullableJsonConverter),
+
+            typeof(global::Deepgram.JsonConverters.V2SpeakPostParametersBitRate0JsonConverter),
+
+            typeof(global::Deepgram.JsonConverters.V2SpeakPostParametersBitRate0NullableJsonConverter),
+
+            typeof(global::Deepgram.JsonConverters.V2SpeakPostParametersContainer0JsonConverter),
+
+            typeof(global::Deepgram.JsonConverters.V2SpeakPostParametersContainer0NullableJsonConverter),
+
+            typeof(global::Deepgram.JsonConverters.V2SpeakPostParametersContainer1JsonConverter),
+
+            typeof(global::Deepgram.JsonConverters.V2SpeakPostParametersContainer1NullableJsonConverter),
+
+            typeof(global::Deepgram.JsonConverters.V2SpeakPostParametersContainer2JsonConverter),
+
+            typeof(global::Deepgram.JsonConverters.V2SpeakPostParametersContainer2NullableJsonConverter),
+
+            typeof(global::Deepgram.JsonConverters.V2SpeakPostParametersContainer3JsonConverter),
+
+            typeof(global::Deepgram.JsonConverters.V2SpeakPostParametersContainer3NullableJsonConverter),
+
+            typeof(global::Deepgram.JsonConverters.V2SpeakPostParametersContainer4JsonConverter),
+
+            typeof(global::Deepgram.JsonConverters.V2SpeakPostParametersContainer4NullableJsonConverter),
+
+            typeof(global::Deepgram.JsonConverters.V2SpeakPostParametersEncoding0JsonConverter),
+
+            typeof(global::Deepgram.JsonConverters.V2SpeakPostParametersEncoding0NullableJsonConverter),
+
+            typeof(global::Deepgram.JsonConverters.V2SpeakPostParametersEncoding1JsonConverter),
+
+            typeof(global::Deepgram.JsonConverters.V2SpeakPostParametersEncoding1NullableJsonConverter),
+
+            typeof(global::Deepgram.JsonConverters.V2SpeakPostParametersEncoding2JsonConverter),
+
+            typeof(global::Deepgram.JsonConverters.V2SpeakPostParametersEncoding2NullableJsonConverter),
+
+            typeof(global::Deepgram.JsonConverters.V2SpeakPostParametersEncoding3JsonConverter),
+
+            typeof(global::Deepgram.JsonConverters.V2SpeakPostParametersEncoding3NullableJsonConverter),
+
+            typeof(global::Deepgram.JsonConverters.V2SpeakPostParametersEncoding4JsonConverter),
+
+            typeof(global::Deepgram.JsonConverters.V2SpeakPostParametersEncoding4NullableJsonConverter),
+
+            typeof(global::Deepgram.JsonConverters.V2SpeakPostParametersEncoding5JsonConverter),
+
+            typeof(global::Deepgram.JsonConverters.V2SpeakPostParametersEncoding5NullableJsonConverter),
+
+            typeof(global::Deepgram.JsonConverters.V2SpeakPostParametersEncoding6JsonConverter),
+
+            typeof(global::Deepgram.JsonConverters.V2SpeakPostParametersEncoding6NullableJsonConverter),
+
+            typeof(global::Deepgram.JsonConverters.V2SpeakPostParametersSampleRate0JsonConverter),
+
+            typeof(global::Deepgram.JsonConverters.V2SpeakPostParametersSampleRate0NullableJsonConverter),
+
+            typeof(global::Deepgram.JsonConverters.V2SpeakPostParametersSampleRate1JsonConverter),
+
+            typeof(global::Deepgram.JsonConverters.V2SpeakPostParametersSampleRate1NullableJsonConverter),
+
+            typeof(global::Deepgram.JsonConverters.V2SpeakPostParametersSampleRate2JsonConverter),
+
+            typeof(global::Deepgram.JsonConverters.V2SpeakPostParametersSampleRate2NullableJsonConverter),
+
+            typeof(global::Deepgram.JsonConverters.V2SpeakPostParametersSampleRate3JsonConverter),
+
+            typeof(global::Deepgram.JsonConverters.V2SpeakPostParametersSampleRate3NullableJsonConverter),
+
+            typeof(global::Deepgram.JsonConverters.V2SpeakPostParametersPriorityJsonConverter),
+
+            typeof(global::Deepgram.JsonConverters.V2SpeakPostParametersPriorityNullableJsonConverter),
+
             typeof(global::Deepgram.JsonConverters.AgentThinkModelsV1ResponseModelsItemsJsonConverter),
 
             typeof(global::Deepgram.JsonConverters.ErrorResponseJsonConverter),
@@ -282,6 +358,16 @@ namespace Deepgram
             typeof(global::Deepgram.JsonConverters.GetModelV1ResponseJsonConverter),
 
             typeof(global::Deepgram.JsonConverters.CreateKeyV1RequestJsonConverter),
+
+            typeof(global::Deepgram.JsonConverters.V2SpeakPostParametersTagJsonConverter),
+
+            typeof(global::Deepgram.JsonConverters.V2SpeakPostParametersBitRateJsonConverter),
+
+            typeof(global::Deepgram.JsonConverters.V2SpeakPostParametersContainerJsonConverter),
+
+            typeof(global::Deepgram.JsonConverters.V2SpeakPostParametersEncodingJsonConverter),
+
+            typeof(global::Deepgram.JsonConverters.V2SpeakPostParametersSampleRateJsonConverter),
 
             typeof(global::Deepgram.JsonConverters.UnixTimestampJsonConverter),
         })]
@@ -556,6 +642,32 @@ namespace Deepgram
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Deepgram.GetProjectDistributionCredentialsV1Response))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Deepgram.GrantV1Request))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Deepgram.GrantV1Response))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Deepgram.V2SpeakPostParametersCallbackMethod), TypeInfoPropertyName = "V2SpeakPostParametersCallbackMethod2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Deepgram.V2SpeakPostParametersTag), TypeInfoPropertyName = "V2SpeakPostParametersTag2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Deepgram.V2SpeakPostParametersBitRate0), TypeInfoPropertyName = "V2SpeakPostParametersBitRate02")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Deepgram.V2SpeakPostParametersBitRate), TypeInfoPropertyName = "V2SpeakPostParametersBitRate2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Deepgram.V2SpeakPostParametersContainer0), TypeInfoPropertyName = "V2SpeakPostParametersContainer02")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Deepgram.V2SpeakPostParametersContainer1), TypeInfoPropertyName = "V2SpeakPostParametersContainer12")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Deepgram.V2SpeakPostParametersContainer2), TypeInfoPropertyName = "V2SpeakPostParametersContainer22")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Deepgram.V2SpeakPostParametersContainer3), TypeInfoPropertyName = "V2SpeakPostParametersContainer32")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Deepgram.V2SpeakPostParametersContainer4), TypeInfoPropertyName = "V2SpeakPostParametersContainer42")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Deepgram.V2SpeakPostParametersContainer), TypeInfoPropertyName = "V2SpeakPostParametersContainer2_3")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Deepgram.V2SpeakPostParametersEncoding0), TypeInfoPropertyName = "V2SpeakPostParametersEncoding02")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Deepgram.V2SpeakPostParametersEncoding1), TypeInfoPropertyName = "V2SpeakPostParametersEncoding12")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Deepgram.V2SpeakPostParametersEncoding2), TypeInfoPropertyName = "V2SpeakPostParametersEncoding22")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Deepgram.V2SpeakPostParametersEncoding3), TypeInfoPropertyName = "V2SpeakPostParametersEncoding32")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Deepgram.V2SpeakPostParametersEncoding4), TypeInfoPropertyName = "V2SpeakPostParametersEncoding42")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Deepgram.V2SpeakPostParametersEncoding5), TypeInfoPropertyName = "V2SpeakPostParametersEncoding52")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Deepgram.V2SpeakPostParametersEncoding6), TypeInfoPropertyName = "V2SpeakPostParametersEncoding62")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Deepgram.V2SpeakPostParametersEncoding), TypeInfoPropertyName = "V2SpeakPostParametersEncoding2_3")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Deepgram.V2SpeakPostParametersSampleRate0), TypeInfoPropertyName = "V2SpeakPostParametersSampleRate02")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Deepgram.V2SpeakPostParametersSampleRate1), TypeInfoPropertyName = "V2SpeakPostParametersSampleRate12")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Deepgram.V2SpeakPostParametersSampleRate2), TypeInfoPropertyName = "V2SpeakPostParametersSampleRate22")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Deepgram.V2SpeakPostParametersSampleRate3), TypeInfoPropertyName = "V2SpeakPostParametersSampleRate32")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Deepgram.V2SpeakPostParametersSampleRate), TypeInfoPropertyName = "V2SpeakPostParametersSampleRate2_3")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Deepgram.V2SpeakPostParametersPriority), TypeInfoPropertyName = "V2SpeakPostParametersPriority2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Deepgram.SpeakV2Request))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Deepgram.SpeakV2AcceptedResponse))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Deepgram.V1ProjectsProjectIdBillingBreakdownGetParametersGroupingSchemaItems>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Deepgram.V1ProjectsProjectIdSelfHostedDistributionCredentialsPostParametersScopesSchemaItems>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Deepgram.AgentThinkModelsV1ResponseModelsItems>))]
