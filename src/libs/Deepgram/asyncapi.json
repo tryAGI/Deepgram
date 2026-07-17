@@ -493,6 +493,10 @@
                 "$ref": "#/components/schemas/ListenV2ProfanityFilter",
                 "default": "false"
               },
+              "numerals": {
+                "$ref": "#/components/schemas/ListenV2Numerals",
+                "default": "false"
+              },
               "mip_opt_out": {
                 "$ref": "#/components/schemas/ListenV2MipOptOut"
               },
@@ -4298,6 +4302,16 @@
         "default": "false",
         "description": "Profanity Filter looks for recognized profanity and converts it to the nearest recognized non-profane word or removes it from the transcript completely.",
         "title": "ListenV2ProfanityFilter"
+      },
+      "ListenV2Numerals": {
+        "type": "string",
+        "enum": [
+          "true",
+          "false"
+        ],
+        "default": "false",
+        "description": "Numerals converts numbers from written format to numerical format",
+        "title": "ListenV2Numerals"
       },
       "ListenV2MipOptOut": {
         "description": "Any type",
