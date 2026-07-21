@@ -531,6 +531,7 @@ namespace Deepgram.Realtime
         /// <param name="model">Defines the AI model used to process submitted audio.</param>
         /// <param name="numerals">Numerals converts numbers from written format to numerical format</param>
         /// <param name="profanityFilter">Profanity Filter looks for recognized profanity and converts it to the nearest recognized non-profane word or removes it from the transcript completely.</param>
+        /// <param name="redact">Redaction removes sensitive information from your transcripts. On Flux, only `numbers` and `aggressive_numbers` are supported.</param>
         /// <param name="sampleRate">Any type</param>
         /// <param name="tag">Any type</param>
         /// <param name="uri">Optional WebSocket endpoint override.</param>
@@ -550,6 +551,7 @@ namespace Deepgram.Realtime
             global::Deepgram.Realtime.ListenV2Model? model = default,
             global::Deepgram.Realtime.ListenV2Numerals? numerals = default,
             global::Deepgram.Realtime.ListenV2ProfanityFilter? profanityFilter = default,
+            global::Deepgram.Realtime.ListenV2Redact? redact = default,
             global::Deepgram.Realtime.ListenV2SampleRate? sampleRate = default,
             global::Deepgram.Realtime.ListenV2Tag? tag = default,
             global::System.Uri? uri = null,
@@ -580,6 +582,7 @@ namespace Deepgram.Realtime
                 .AddOptionalParameter("model", model?.ToValueString())
                 .AddOptionalParameter("numerals", numerals?.ToValueString())
                 .AddOptionalParameter("profanity_filter", profanityFilter?.ToValueString())
+                .AddOptionalParameter("redact", redact?.ToValueString())
                 .AddOptionalParameter("sample_rate", sampleRate?.ToString())
                 .AddOptionalParameter("tag", tag?.ToString())
                 ;
