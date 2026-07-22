@@ -4,41 +4,40 @@
 namespace Deepgram.Realtime
 {
     /// <summary>
-    /// The Deepgram text-to-speech model family. Aura models use v1 (default). For Flux TTS, use v2. Defaults to v1 when omitted.<br/>
-    /// Default Value: v1
+    /// Provider type for text-to-speech
     /// </summary>
-    public enum DeepgramSpeakProviderVersion
+    public enum SpeakSettingsV1Provider1Type
     {
         /// <summary>
         /// 
         /// </summary>
-        V1,
+        Deepgram,
     }
 
     /// <summary>
     /// Enum extensions to do fast conversions without the reflection.
     /// </summary>
-    public static class DeepgramSpeakProviderVersionExtensions
+    public static class SpeakSettingsV1Provider1TypeExtensions
     {
         /// <summary>
         /// Converts an enum to a string.
         /// </summary>
-        public static string ToValueString(this DeepgramSpeakProviderVersion value)
+        public static string ToValueString(this SpeakSettingsV1Provider1Type value)
         {
             return value switch
             {
-                DeepgramSpeakProviderVersion.V1 => "v1",
+                SpeakSettingsV1Provider1Type.Deepgram => "deepgram",
                 _ => throw new global::System.ArgumentOutOfRangeException(nameof(value), value, null),
             };
         }
         /// <summary>
         /// Converts an string to a enum.
         /// </summary>
-        public static DeepgramSpeakProviderVersion? ToEnum(string value)
+        public static SpeakSettingsV1Provider1Type? ToEnum(string value)
         {
             return value switch
             {
-                "v1" => DeepgramSpeakProviderVersion.V1,
+                "deepgram" => SpeakSettingsV1Provider1Type.Deepgram,
                 _ => null,
             };
         }

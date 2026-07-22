@@ -4,7 +4,7 @@
 namespace Deepgram.Realtime
 {
     /// <summary>
-    /// 
+    /// Deepgram Aura text-to-speech provider (version v1). For Flux TTS, use version v2 and a flux-* model.
     /// </summary>
     public sealed partial class DeepgramSpeakProvider
     {
@@ -16,7 +16,8 @@ namespace Deepgram.Realtime
         public global::Deepgram.Realtime.DeepgramSpeakProviderType Type { get; set; }
 
         /// <summary>
-        /// The REST API version for the Deepgram text-to-speech API
+        /// The Deepgram text-to-speech model family. Aura models use v1 (default). For Flux TTS, use v2. Defaults to v1 when omitted.<br/>
+        /// Default Value: v1
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("version")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Deepgram.Realtime.JsonConverters.DeepgramSpeakProviderVersionJsonConverter))]
@@ -51,7 +52,8 @@ namespace Deepgram.Realtime
         /// </param>
         /// <param name="type"></param>
         /// <param name="version">
-        /// The REST API version for the Deepgram text-to-speech API
+        /// The Deepgram text-to-speech model family. Aura models use v1 (default). For Flux TTS, use v2. Defaults to v1 when omitted.<br/>
+        /// Default Value: v1
         /// </param>
         /// <param name="speed">
         /// Speaking rate multiplier that adjusts the pace of generated speech while preserving natural prosody and voice quality. Not yet supported in all languages.<br/>

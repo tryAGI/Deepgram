@@ -40,37 +40,41 @@ namespace Deepgram.Realtime.JsonConverters
             if (__jsonProps.Contains("type")) __score0++;
             if (__jsonProps.Contains("version")) __score0++;
             var __score1 = 0;
-            if (__jsonProps.Contains("language")) __score1++;
-            if (__jsonProps.Contains("language_code")) __score1++;
-            if (__jsonProps.Contains("model_id")) __score1++;
+            if (__jsonProps.Contains("model")) __score1++;
             if (__jsonProps.Contains("type")) __score1++;
             if (__jsonProps.Contains("version")) __score1++;
             var __score2 = 0;
             if (__jsonProps.Contains("language")) __score2++;
+            if (__jsonProps.Contains("language_code")) __score2++;
             if (__jsonProps.Contains("model_id")) __score2++;
             if (__jsonProps.Contains("type")) __score2++;
             if (__jsonProps.Contains("version")) __score2++;
-            if (__jsonProps.Contains("voice")) __score2++;
-            if (__jsonProps.Contains("voice.id")) __score2++;
-            if (__jsonProps.Contains("voice.mode")) __score2++;
-            if (__jsonProps.Contains("volume")) __score2++;
             var __score3 = 0;
-            if (__jsonProps.Contains("model")) __score3++;
+            if (__jsonProps.Contains("language")) __score3++;
+            if (__jsonProps.Contains("model_id")) __score3++;
             if (__jsonProps.Contains("type")) __score3++;
             if (__jsonProps.Contains("version")) __score3++;
             if (__jsonProps.Contains("voice")) __score3++;
+            if (__jsonProps.Contains("voice.id")) __score3++;
+            if (__jsonProps.Contains("voice.mode")) __score3++;
+            if (__jsonProps.Contains("volume")) __score3++;
             var __score4 = 0;
-            if (__jsonProps.Contains("credentials")) __score4++;
-            if (__jsonProps.Contains("credentials.access_key_id")) __score4++;
-            if (__jsonProps.Contains("credentials.region")) __score4++;
-            if (__jsonProps.Contains("credentials.secret_access_key")) __score4++;
-            if (__jsonProps.Contains("credentials.session_token")) __score4++;
-            if (__jsonProps.Contains("credentials.type")) __score4++;
-            if (__jsonProps.Contains("engine")) __score4++;
-            if (__jsonProps.Contains("language")) __score4++;
-            if (__jsonProps.Contains("language_code")) __score4++;
+            if (__jsonProps.Contains("model")) __score4++;
             if (__jsonProps.Contains("type")) __score4++;
+            if (__jsonProps.Contains("version")) __score4++;
             if (__jsonProps.Contains("voice")) __score4++;
+            var __score5 = 0;
+            if (__jsonProps.Contains("credentials")) __score5++;
+            if (__jsonProps.Contains("credentials.access_key_id")) __score5++;
+            if (__jsonProps.Contains("credentials.region")) __score5++;
+            if (__jsonProps.Contains("credentials.secret_access_key")) __score5++;
+            if (__jsonProps.Contains("credentials.session_token")) __score5++;
+            if (__jsonProps.Contains("credentials.type")) __score5++;
+            if (__jsonProps.Contains("engine")) __score5++;
+            if (__jsonProps.Contains("language")) __score5++;
+            if (__jsonProps.Contains("language_code")) __score5++;
+            if (__jsonProps.Contains("type")) __score5++;
+            if (__jsonProps.Contains("voice")) __score5++;
             var __bestScore = 0;
             var __bestIndex = -1;
             if (__score0 > __bestScore) { __bestScore = __score0; __bestIndex = 0; }
@@ -78,8 +82,10 @@ namespace Deepgram.Realtime.JsonConverters
             if (__score2 > __bestScore) { __bestScore = __score2; __bestIndex = 2; }
             if (__score3 > __bestScore) { __bestScore = __score3; __bestIndex = 3; }
             if (__score4 > __bestScore) { __bestScore = __score4; __bestIndex = 4; }
+            if (__score5 > __bestScore) { __bestScore = __score5; __bestIndex = 5; }
 
             global::Deepgram.Realtime.DeepgramSpeakProvider? deepgramSpeakProvider = default;
+            global::Deepgram.Realtime.SpeakSettingsV1Provider1? speakSettingsV1Provider1 = default;
             global::Deepgram.Realtime.ElevenLabsSpeakProvider? elevenLabsSpeakProvider = default;
             global::Deepgram.Realtime.CartesiaSpeakProvider? cartesiaSpeakProvider = default;
             global::Deepgram.Realtime.OpenAiSpeakProvider? openAiSpeakProvider = default;
@@ -105,6 +111,21 @@ namespace Deepgram.Realtime.JsonConverters
                 {
                     try
                     {
+                        var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Deepgram.Realtime.SpeakSettingsV1Provider1), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Deepgram.Realtime.SpeakSettingsV1Provider1> ??
+                                       throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Deepgram.Realtime.SpeakSettingsV1Provider1).Name}");
+                        speakSettingsV1Provider1 = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
+                    }
+                    catch (global::System.Text.Json.JsonException)
+                    {
+                    }
+                    catch (global::System.InvalidOperationException)
+                    {
+                    }
+                }
+                else if (__bestIndex == 2)
+                {
+                    try
+                    {
                         var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Deepgram.Realtime.ElevenLabsSpeakProvider), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Deepgram.Realtime.ElevenLabsSpeakProvider> ??
                                        throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Deepgram.Realtime.ElevenLabsSpeakProvider).Name}");
                         elevenLabsSpeakProvider = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
@@ -116,7 +137,7 @@ namespace Deepgram.Realtime.JsonConverters
                     {
                     }
                 }
-                else if (__bestIndex == 2)
+                else if (__bestIndex == 3)
                 {
                     try
                     {
@@ -131,7 +152,7 @@ namespace Deepgram.Realtime.JsonConverters
                     {
                     }
                 }
-                else if (__bestIndex == 3)
+                else if (__bestIndex == 4)
                 {
                     try
                     {
@@ -146,7 +167,7 @@ namespace Deepgram.Realtime.JsonConverters
                     {
                     }
                 }
-                else if (__bestIndex == 4)
+                else if (__bestIndex == 5)
                 {
                     try
                     {
@@ -163,7 +184,7 @@ namespace Deepgram.Realtime.JsonConverters
                 }
             }
 
-            if (deepgramSpeakProvider == null && elevenLabsSpeakProvider == null && cartesiaSpeakProvider == null && openAiSpeakProvider == null && awsPollySpeakProvider == null)
+            if (deepgramSpeakProvider == null && speakSettingsV1Provider1 == null && elevenLabsSpeakProvider == null && cartesiaSpeakProvider == null && openAiSpeakProvider == null && awsPollySpeakProvider == null)
             {
                 try
                 {
@@ -180,7 +201,24 @@ namespace Deepgram.Realtime.JsonConverters
                 }
             }
 
-            if (deepgramSpeakProvider == null && elevenLabsSpeakProvider == null && cartesiaSpeakProvider == null && openAiSpeakProvider == null && awsPollySpeakProvider == null)
+            if (deepgramSpeakProvider == null && speakSettingsV1Provider1 == null && elevenLabsSpeakProvider == null && cartesiaSpeakProvider == null && openAiSpeakProvider == null && awsPollySpeakProvider == null)
+            {
+                try
+                {
+
+                    var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Deepgram.Realtime.SpeakSettingsV1Provider1), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Deepgram.Realtime.SpeakSettingsV1Provider1> ??
+                                   throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Deepgram.Realtime.SpeakSettingsV1Provider1).Name}");
+                    speakSettingsV1Provider1 = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
+                }
+                catch (global::System.Text.Json.JsonException)
+                {
+                }
+                catch (global::System.InvalidOperationException)
+                {
+                }
+            }
+
+            if (deepgramSpeakProvider == null && speakSettingsV1Provider1 == null && elevenLabsSpeakProvider == null && cartesiaSpeakProvider == null && openAiSpeakProvider == null && awsPollySpeakProvider == null)
             {
                 try
                 {
@@ -197,7 +235,7 @@ namespace Deepgram.Realtime.JsonConverters
                 }
             }
 
-            if (deepgramSpeakProvider == null && elevenLabsSpeakProvider == null && cartesiaSpeakProvider == null && openAiSpeakProvider == null && awsPollySpeakProvider == null)
+            if (deepgramSpeakProvider == null && speakSettingsV1Provider1 == null && elevenLabsSpeakProvider == null && cartesiaSpeakProvider == null && openAiSpeakProvider == null && awsPollySpeakProvider == null)
             {
                 try
                 {
@@ -214,7 +252,7 @@ namespace Deepgram.Realtime.JsonConverters
                 }
             }
 
-            if (deepgramSpeakProvider == null && elevenLabsSpeakProvider == null && cartesiaSpeakProvider == null && openAiSpeakProvider == null && awsPollySpeakProvider == null)
+            if (deepgramSpeakProvider == null && speakSettingsV1Provider1 == null && elevenLabsSpeakProvider == null && cartesiaSpeakProvider == null && openAiSpeakProvider == null && awsPollySpeakProvider == null)
             {
                 try
                 {
@@ -231,7 +269,7 @@ namespace Deepgram.Realtime.JsonConverters
                 }
             }
 
-            if (deepgramSpeakProvider == null && elevenLabsSpeakProvider == null && cartesiaSpeakProvider == null && openAiSpeakProvider == null && awsPollySpeakProvider == null)
+            if (deepgramSpeakProvider == null && speakSettingsV1Provider1 == null && elevenLabsSpeakProvider == null && cartesiaSpeakProvider == null && openAiSpeakProvider == null && awsPollySpeakProvider == null)
             {
                 try
                 {
@@ -250,6 +288,8 @@ namespace Deepgram.Realtime.JsonConverters
 
             var __value = new global::Deepgram.Realtime.SpeakSettingsV1Provider(
                 deepgramSpeakProvider,
+
+                speakSettingsV1Provider1,
 
                 elevenLabsSpeakProvider,
 
@@ -277,6 +317,12 @@ namespace Deepgram.Realtime.JsonConverters
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Deepgram.Realtime.DeepgramSpeakProvider), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Deepgram.Realtime.DeepgramSpeakProvider?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Deepgram.Realtime.DeepgramSpeakProvider).Name}");
                 global::System.Text.Json.JsonSerializer.Serialize(writer, value.DeepgramSpeakProvider!, typeInfo);
+            }
+            else if (value.IsSpeakSettingsV1Provider1)
+            {
+                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Deepgram.Realtime.SpeakSettingsV1Provider1), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Deepgram.Realtime.SpeakSettingsV1Provider1?> ??
+                               throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Deepgram.Realtime.SpeakSettingsV1Provider1).Name}");
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.SpeakSettingsV1Provider1!, typeInfo);
             }
             else if (value.IsElevenLabsSpeakProvider)
             {
