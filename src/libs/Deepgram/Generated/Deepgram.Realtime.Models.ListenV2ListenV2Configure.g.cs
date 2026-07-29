@@ -25,8 +25,9 @@ namespace Deepgram.Realtime
         /// <summary>
         /// Keyterm prompting improves recognition of specialized terminology.<br/>
         /// `keyterm` accepts plain terms only. Unlike the legacy `keywords` feature,<br/>
-        /// it does not support weights or intensifiers, so a value such as<br/>
-        /// `keyterm=term:0.15` is invalid.<br/>
+        /// it does not support weights or intensifiers. Appending one<br/>
+        /// (for example, `keyterm=term:0.15`) is not rejected—the weight is<br/>
+        /// silently ignored and the entire value is treated as a literal keyterm.<br/>
         /// To boost multiple separate keyterms, repeat the `keyterm` parameter<br/>
         /// (for example, `keyterm=term1&amp;keyterm=term2`). To boost one multi-word<br/>
         /// phrase as a single keyterm, join the words with `%20` or `+`<br/>
@@ -64,8 +65,9 @@ namespace Deepgram.Realtime
         /// <param name="keyterms">
         /// Keyterm prompting improves recognition of specialized terminology.<br/>
         /// `keyterm` accepts plain terms only. Unlike the legacy `keywords` feature,<br/>
-        /// it does not support weights or intensifiers, so a value such as<br/>
-        /// `keyterm=term:0.15` is invalid.<br/>
+        /// it does not support weights or intensifiers. Appending one<br/>
+        /// (for example, `keyterm=term:0.15`) is not rejected—the weight is<br/>
+        /// silently ignored and the entire value is treated as a literal keyterm.<br/>
         /// To boost multiple separate keyterms, repeat the `keyterm` parameter<br/>
         /// (for example, `keyterm=term1&amp;keyterm=term2`). To boost one multi-word<br/>
         /// phrase as a single keyterm, join the words with `%20` or `+`<br/>
