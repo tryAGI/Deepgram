@@ -4,7 +4,7 @@
 namespace Deepgram.Realtime
 {
     /// <summary>
-    /// Deepgram Aura text-to-speech provider (version v1). For Flux TTS, use version v2 and a flux-* model.
+    /// Deepgram text-to-speech provider. Aura models use version v1 (default); Flux TTS uses version v2 and a flux-* model. Flux TTS is in Early Access — the Flux TTS-specific API surface and voice catalog may change before general availability.
     /// </summary>
     public sealed partial class DeepgramSpeakProvider
     {
@@ -16,15 +16,14 @@ namespace Deepgram.Realtime
         public global::Deepgram.Realtime.DeepgramSpeakProviderType Type { get; set; }
 
         /// <summary>
-        /// The Deepgram text-to-speech model family. Aura models use v1 (default). For Flux TTS, use v2. Defaults to v1 when omitted.<br/>
+        /// The Deepgram text-to-speech model family. Accepted values: `v1` (Aura, the default) and `v2` (Flux TTS, Early Access). Use `v1` with an aura-* model and `v2` with a flux-* model. Defaults to `v1` when omitted.<br/>
         /// Default Value: v1
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("version")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Deepgram.Realtime.JsonConverters.DeepgramSpeakProviderVersionJsonConverter))]
-        public global::Deepgram.Realtime.DeepgramSpeakProviderVersion? Version { get; set; }
+        public string? Version { get; set; }
 
         /// <summary>
-        /// Deepgram TTS model
+        /// Deepgram TTS model. Aura models (version v1) use the aura-* voices; Flux TTS (version v2, Early Access) uses the flux-{voice}-{language} voices (e.g. flux-alexis-en).
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("model")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Deepgram.Realtime.JsonConverters.DeepgramSpeakProviderModelJsonConverter))]
@@ -48,11 +47,11 @@ namespace Deepgram.Realtime
         /// Initializes a new instance of the <see cref="DeepgramSpeakProvider" /> class.
         /// </summary>
         /// <param name="model">
-        /// Deepgram TTS model
+        /// Deepgram TTS model. Aura models (version v1) use the aura-* voices; Flux TTS (version v2, Early Access) uses the flux-{voice}-{language} voices (e.g. flux-alexis-en).
         /// </param>
         /// <param name="type"></param>
         /// <param name="version">
-        /// The Deepgram text-to-speech model family. Aura models use v1 (default). For Flux TTS, use v2. Defaults to v1 when omitted.<br/>
+        /// The Deepgram text-to-speech model family. Accepted values: `v1` (Aura, the default) and `v2` (Flux TTS, Early Access). Use `v1` with an aura-* model and `v2` with a flux-* model. Defaults to `v1` when omitted.<br/>
         /// Default Value: v1
         /// </param>
         /// <param name="speed">
@@ -65,7 +64,7 @@ namespace Deepgram.Realtime
         public DeepgramSpeakProvider(
             global::Deepgram.Realtime.DeepgramSpeakProviderModel model,
             global::Deepgram.Realtime.DeepgramSpeakProviderType type,
-            global::Deepgram.Realtime.DeepgramSpeakProviderVersion? version,
+            string? version,
             double? speed)
         {
             this.Type = type;
