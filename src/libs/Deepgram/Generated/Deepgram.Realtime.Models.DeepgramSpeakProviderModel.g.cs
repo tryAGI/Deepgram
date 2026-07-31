@@ -4,7 +4,7 @@
 namespace Deepgram.Realtime
 {
     /// <summary>
-    /// Deepgram TTS model
+    /// Deepgram TTS model. Aura models (version v1) use the aura-* voices; Flux TTS (version v2, Early Access) uses the flux-{voice}-{language} voices (e.g. flux-alexis-en).
     /// </summary>
     public enum DeepgramSpeakProviderModel
     {
@@ -260,6 +260,54 @@ namespace Deepgram.Realtime
         /// 
         /// </summary>
         AuraZeusEn,
+        /// <summary>
+        /// 
+        /// </summary>
+        FluxAlexisEn,
+        /// <summary>
+        /// 
+        /// </summary>
+        FluxBruceEn,
+        /// <summary>
+        /// 
+        /// </summary>
+        FluxColeEn,
+        /// <summary>
+        /// 
+        /// </summary>
+        FluxDrewEn,
+        /// <summary>
+        /// 
+        /// </summary>
+        FluxHaleyEn,
+        /// <summary>
+        /// 
+        /// </summary>
+        FluxHeatherEn,
+        /// <summary>
+        /// 
+        /// </summary>
+        FluxJackEn,
+        /// <summary>
+        /// 
+        /// </summary>
+        FluxMarcusEn,
+        /// <summary>
+        /// 
+        /// </summary>
+        FluxPriyaEn,
+        /// <summary>
+        /// 
+        /// </summary>
+        FluxReneeEn,
+        /// <summary>
+        /// 
+        /// </summary>
+        FluxRufusEn,
+        /// <summary>
+        /// 
+        /// </summary>
+        FluxSharonEn,
     }
 
     /// <summary>
@@ -337,6 +385,18 @@ namespace Deepgram.Realtime
                 DeepgramSpeakProviderModel.AuraPerseusEn => "aura-perseus-en",
                 DeepgramSpeakProviderModel.AuraStellaEn => "aura-stella-en",
                 DeepgramSpeakProviderModel.AuraZeusEn => "aura-zeus-en",
+                DeepgramSpeakProviderModel.FluxAlexisEn => "flux-alexis-en",
+                DeepgramSpeakProviderModel.FluxBruceEn => "flux-bruce-en",
+                DeepgramSpeakProviderModel.FluxColeEn => "flux-cole-en",
+                DeepgramSpeakProviderModel.FluxDrewEn => "flux-drew-en",
+                DeepgramSpeakProviderModel.FluxHaleyEn => "flux-haley-en",
+                DeepgramSpeakProviderModel.FluxHeatherEn => "flux-heather-en",
+                DeepgramSpeakProviderModel.FluxJackEn => "flux-jack-en",
+                DeepgramSpeakProviderModel.FluxMarcusEn => "flux-marcus-en",
+                DeepgramSpeakProviderModel.FluxPriyaEn => "flux-priya-en",
+                DeepgramSpeakProviderModel.FluxReneeEn => "flux-renee-en",
+                DeepgramSpeakProviderModel.FluxRufusEn => "flux-rufus-en",
+                DeepgramSpeakProviderModel.FluxSharonEn => "flux-sharon-en",
                 _ => throw new global::System.ArgumentOutOfRangeException(nameof(value), value, null),
             };
         }
@@ -410,6 +470,18 @@ namespace Deepgram.Realtime
                 "aura-perseus-en" => DeepgramSpeakProviderModel.AuraPerseusEn,
                 "aura-stella-en" => DeepgramSpeakProviderModel.AuraStellaEn,
                 "aura-zeus-en" => DeepgramSpeakProviderModel.AuraZeusEn,
+                "flux-alexis-en" => DeepgramSpeakProviderModel.FluxAlexisEn,
+                "flux-bruce-en" => DeepgramSpeakProviderModel.FluxBruceEn,
+                "flux-cole-en" => DeepgramSpeakProviderModel.FluxColeEn,
+                "flux-drew-en" => DeepgramSpeakProviderModel.FluxDrewEn,
+                "flux-haley-en" => DeepgramSpeakProviderModel.FluxHaleyEn,
+                "flux-heather-en" => DeepgramSpeakProviderModel.FluxHeatherEn,
+                "flux-jack-en" => DeepgramSpeakProviderModel.FluxJackEn,
+                "flux-marcus-en" => DeepgramSpeakProviderModel.FluxMarcusEn,
+                "flux-priya-en" => DeepgramSpeakProviderModel.FluxPriyaEn,
+                "flux-renee-en" => DeepgramSpeakProviderModel.FluxReneeEn,
+                "flux-rufus-en" => DeepgramSpeakProviderModel.FluxRufusEn,
+                "flux-sharon-en" => DeepgramSpeakProviderModel.FluxSharonEn,
                 _ => null,
             };
         }

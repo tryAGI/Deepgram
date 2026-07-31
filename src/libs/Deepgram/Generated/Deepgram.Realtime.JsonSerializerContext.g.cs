@@ -209,10 +209,6 @@ namespace Deepgram.Realtime
 
             typeof(global::Deepgram.Realtime.JsonConverters.ThinkSettingsV1ContextLength0NullableJsonConverter),
 
-            typeof(global::Deepgram.Realtime.JsonConverters.DeepgramSpeakProviderVersionJsonConverter),
-
-            typeof(global::Deepgram.Realtime.JsonConverters.DeepgramSpeakProviderVersionNullableJsonConverter),
-
             typeof(global::Deepgram.Realtime.JsonConverters.DeepgramSpeakProviderModelJsonConverter),
 
             typeof(global::Deepgram.Realtime.JsonConverters.DeepgramSpeakProviderModelNullableJsonConverter),
@@ -220,18 +216,6 @@ namespace Deepgram.Realtime
             typeof(global::Deepgram.Realtime.JsonConverters.DeepgramSpeakProviderTypeJsonConverter),
 
             typeof(global::Deepgram.Realtime.JsonConverters.DeepgramSpeakProviderTypeNullableJsonConverter),
-
-            typeof(global::Deepgram.Realtime.JsonConverters.SpeakSettingsV1ProviderOneOf1ModelJsonConverter),
-
-            typeof(global::Deepgram.Realtime.JsonConverters.SpeakSettingsV1ProviderOneOf1ModelNullableJsonConverter),
-
-            typeof(global::Deepgram.Realtime.JsonConverters.SpeakSettingsV1Provider1TypeJsonConverter),
-
-            typeof(global::Deepgram.Realtime.JsonConverters.SpeakSettingsV1Provider1TypeNullableJsonConverter),
-
-            typeof(global::Deepgram.Realtime.JsonConverters.SpeakSettingsV1Provider1VersionJsonConverter),
-
-            typeof(global::Deepgram.Realtime.JsonConverters.SpeakSettingsV1Provider1VersionNullableJsonConverter),
 
             typeof(global::Deepgram.Realtime.JsonConverters.ElevenLabsSpeakProviderVersionJsonConverter),
 
@@ -725,14 +709,9 @@ namespace Deepgram.Realtime
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Deepgram.Realtime.ThinkSettingsV1FunctionsItems>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Deepgram.Realtime.ThinkSettingsV1>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Deepgram.Realtime.ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0Think), TypeInfoPropertyName = "ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0Think2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Deepgram.Realtime.DeepgramSpeakProviderVersion), TypeInfoPropertyName = "DeepgramSpeakProviderVersion2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Deepgram.Realtime.DeepgramSpeakProviderModel), TypeInfoPropertyName = "DeepgramSpeakProviderModel2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Deepgram.Realtime.DeepgramSpeakProvider))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Deepgram.Realtime.DeepgramSpeakProviderType), TypeInfoPropertyName = "DeepgramSpeakProviderType2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Deepgram.Realtime.SpeakSettingsV1ProviderOneOf1Model), TypeInfoPropertyName = "SpeakSettingsV1ProviderOneOf1Model2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Deepgram.Realtime.SpeakSettingsV1Provider1))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Deepgram.Realtime.SpeakSettingsV1Provider1Type), TypeInfoPropertyName = "SpeakSettingsV1Provider1Type2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Deepgram.Realtime.SpeakSettingsV1Provider1Version), TypeInfoPropertyName = "SpeakSettingsV1Provider1Version2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Deepgram.Realtime.ElevenLabsSpeakProviderVersion), TypeInfoPropertyName = "ElevenLabsSpeakProviderVersion2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Deepgram.Realtime.ElevenLabsSpeakProviderModelId), TypeInfoPropertyName = "ElevenLabsSpeakProviderModelId2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Deepgram.Realtime.ElevenLabsSpeakProvider))]
