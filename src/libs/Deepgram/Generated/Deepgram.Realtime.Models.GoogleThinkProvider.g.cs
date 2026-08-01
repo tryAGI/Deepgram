@@ -16,7 +16,7 @@ namespace Deepgram.Realtime
         public global::Deepgram.Realtime.GoogleThinkProviderType Type { get; set; }
 
         /// <summary>
-        /// The REST API version for the Google generative language API
+        /// The Google API used for the request: ai-studio-v1beta for the AI Studio API, or gemini-enterprise-agent-v1 for the Gemini Enterprise Agent (GEA) API. v1beta is accepted as an alias for ai-studio-v1beta. Defaults based on the Deepgram Voice Agent endpoint you connect to.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("version")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Deepgram.Realtime.JsonConverters.GoogleThinkProviderVersionJsonConverter))]
@@ -50,7 +50,7 @@ namespace Deepgram.Realtime
         /// </param>
         /// <param name="type"></param>
         /// <param name="version">
-        /// The REST API version for the Google generative language API
+        /// The Google API used for the request: ai-studio-v1beta for the AI Studio API, or gemini-enterprise-agent-v1 for the Gemini Enterprise Agent (GEA) API. v1beta is accepted as an alias for ai-studio-v1beta. Defaults based on the Deepgram Voice Agent endpoint you connect to.
         /// </param>
         /// <param name="temperature">
         /// Google temperature (0-2)
