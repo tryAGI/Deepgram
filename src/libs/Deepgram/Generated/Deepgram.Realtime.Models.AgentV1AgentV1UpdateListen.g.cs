@@ -16,7 +16,7 @@ namespace Deepgram.Realtime
         public global::Deepgram.Realtime.AgentV1AgentV1UpdateListenType Type { get; set; }
 
         /// <summary>
-        /// Listen configuration to update. Contains a provider object with the same schema as Settings. The provider identity (type, version, model) is required and must match the current session.
+        /// Listen configuration to update. Contains a provider object with the same schema as Settings. The model and language can be changed mid-session. Keyterms can only be updated mid-session for Flux models.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("listen")]
         [global::System.Text.Json.Serialization.JsonRequired]
@@ -32,7 +32,7 @@ namespace Deepgram.Realtime
         /// Initializes a new instance of the <see cref="AgentV1AgentV1UpdateListen" /> class.
         /// </summary>
         /// <param name="listen">
-        /// Listen configuration to update. Contains a provider object with the same schema as Settings. The provider identity (type, version, model) is required and must match the current session.
+        /// Listen configuration to update. Contains a provider object with the same schema as Settings. The model and language can be changed mid-session. Keyterms can only be updated mid-session for Flux models.
         /// </param>
         /// <param name="type">
         /// Message type identifier for updating the listen configuration

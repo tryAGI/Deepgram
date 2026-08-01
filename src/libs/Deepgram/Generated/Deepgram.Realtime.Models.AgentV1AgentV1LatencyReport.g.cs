@@ -16,6 +16,12 @@ namespace Deepgram.Realtime
         public global::Deepgram.Realtime.AgentV1AgentV1LatencyReportType Type { get; set; }
 
         /// <summary>
+        /// Speech-to-text: time from audio received to transcript produced, in seconds
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("stt_latency")]
+        public double? SttLatency { get; set; }
+
+        /// <summary>
         /// Time to first token of any type (text, tool call, or thinking), in seconds
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("ttt_token_latency")]
@@ -63,6 +69,9 @@ namespace Deepgram.Realtime
         /// <param name="type">
         /// Message type identifier for the latency report
         /// </param>
+        /// <param name="sttLatency">
+        /// Speech-to-text: time from audio received to transcript produced, in seconds
+        /// </param>
         /// <param name="tttTokenLatency">
         /// Time to first token of any type (text, tool call, or thinking), in seconds
         /// </param>
@@ -86,6 +95,7 @@ namespace Deepgram.Realtime
 #endif
         public AgentV1AgentV1LatencyReport(
             global::Deepgram.Realtime.AgentV1AgentV1LatencyReportType type,
+            double? sttLatency,
             double? tttTokenLatency,
             double? tttTextLatency,
             double? tttToolLatency,
@@ -94,6 +104,7 @@ namespace Deepgram.Realtime
             double? totalLatency)
         {
             this.Type = type;
+            this.SttLatency = sttLatency;
             this.TttTokenLatency = tttTokenLatency;
             this.TttTextLatency = tttTextLatency;
             this.TttToolLatency = tttToolLatency;

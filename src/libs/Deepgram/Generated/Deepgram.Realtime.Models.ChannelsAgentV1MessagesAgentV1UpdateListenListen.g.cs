@@ -4,7 +4,7 @@
 namespace Deepgram.Realtime
 {
     /// <summary>
-    /// Listen configuration to update. Contains a provider object with the same schema as Settings. The provider identity (type, version, model) is required and must match the current session.
+    /// Listen configuration to update. Contains a provider object with the same schema as Settings. The model and language can be changed mid-session. Keyterms can only be updated mid-session for Flux models.
     /// </summary>
     public sealed partial class ChannelsAgentV1MessagesAgentV1UpdateListenListen
     {
@@ -12,8 +12,9 @@ namespace Deepgram.Realtime
         /// 
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("provider")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Deepgram.Realtime.JsonConverters.ChannelsAgentV1MessagesAgentV1UpdateListenListenProviderJsonConverter))]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Deepgram.Realtime.DeepgramListenProviderV2 Provider { get; set; }
+        public required global::Deepgram.Realtime.ChannelsAgentV1MessagesAgentV1UpdateListenListenProvider Provider { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -29,9 +30,9 @@ namespace Deepgram.Realtime
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public ChannelsAgentV1MessagesAgentV1UpdateListenListen(
-            global::Deepgram.Realtime.DeepgramListenProviderV2 provider)
+            global::Deepgram.Realtime.ChannelsAgentV1MessagesAgentV1UpdateListenListenProvider provider)
         {
-            this.Provider = provider ?? throw new global::System.ArgumentNullException(nameof(provider));
+            this.Provider = provider;
         }
 
         /// <summary>
