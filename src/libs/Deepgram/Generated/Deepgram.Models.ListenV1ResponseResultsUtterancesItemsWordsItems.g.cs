@@ -18,19 +18,19 @@ namespace Deepgram
         /// 
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("start")]
-        public double? Start { get; set; }
+        public string? Start { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("end")]
-        public double? End { get; set; }
+        public string? End { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("confidence")]
-        public double? Confidence { get; set; }
+        public string? Confidence { get; set; }
 
         /// <summary>
         /// 
@@ -42,7 +42,7 @@ namespace Deepgram
         /// 
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("speaker_confidence")]
-        public double? SpeakerConfidence { get; set; }
+        public string? SpeakerConfidence { get; set; }
 
         /// <summary>
         /// 
@@ -71,11 +71,11 @@ namespace Deepgram
 #endif
         public ListenV1ResponseResultsUtterancesItemsWordsItems(
             string? word,
-            double? start,
-            double? end,
-            double? confidence,
+            string? start,
+            string? end,
+            string? confidence,
             int? speaker,
-            double? speakerConfidence,
+            string? speakerConfidence,
             string? punctuatedWord)
         {
             this.Word = word;

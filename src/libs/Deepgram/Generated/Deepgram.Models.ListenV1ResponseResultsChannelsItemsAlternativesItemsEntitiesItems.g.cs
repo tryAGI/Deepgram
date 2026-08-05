@@ -30,19 +30,19 @@ namespace Deepgram
         /// 
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("confidence")]
-        public double? Confidence { get; set; }
+        public string? Confidence { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("start_word")]
-        public double? StartWord { get; set; }
+        public string? StartWord { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("end_word")]
-        public double? EndWord { get; set; }
+        public string? EndWord { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -66,9 +66,9 @@ namespace Deepgram
             string? label,
             string? value,
             string? rawValue,
-            double? confidence,
-            double? startWord,
-            double? endWord)
+            string? confidence,
+            string? startWord,
+            string? endWord)
         {
             this.Label = label;
             this.Value = value;

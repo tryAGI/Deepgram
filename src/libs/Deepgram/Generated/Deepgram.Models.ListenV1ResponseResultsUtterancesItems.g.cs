@@ -12,19 +12,19 @@ namespace Deepgram
         /// 
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("start")]
-        public double? Start { get; set; }
+        public string? Start { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("end")]
-        public double? End { get; set; }
+        public string? End { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("confidence")]
-        public double? Confidence { get; set; }
+        public string? Confidence { get; set; }
 
         /// <summary>
         /// 
@@ -77,9 +77,9 @@ namespace Deepgram
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public ListenV1ResponseResultsUtterancesItems(
-            double? start,
-            double? end,
-            double? confidence,
+            string? start,
+            string? end,
+            string? confidence,
             int? channel,
             string? transcript,
             global::System.Collections.Generic.IList<global::Deepgram.ListenV1ResponseResultsUtterancesItemsWordsItems>? words,

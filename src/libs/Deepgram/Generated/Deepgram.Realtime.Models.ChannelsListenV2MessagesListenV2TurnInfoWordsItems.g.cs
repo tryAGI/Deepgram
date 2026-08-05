@@ -20,7 +20,7 @@ namespace Deepgram.Realtime
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("confidence")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required double Confidence { get; set; }
+        public required string Confidence { get; set; }
 
         /// <summary>
         /// The start time of the word
@@ -60,12 +60,12 @@ namespace Deepgram.Realtime
 #endif
         public ChannelsListenV2MessagesListenV2TurnInfoWordsItems(
             string word,
-            double confidence,
+            string confidence,
             double? start,
             double? end)
         {
             this.Word = word ?? throw new global::System.ArgumentNullException(nameof(word));
-            this.Confidence = confidence;
+            this.Confidence = confidence ?? throw new global::System.ArgumentNullException(nameof(confidence));
             this.Start = start;
             this.End = end;
         }
