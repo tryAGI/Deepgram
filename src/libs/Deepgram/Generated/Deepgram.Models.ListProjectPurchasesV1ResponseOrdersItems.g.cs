@@ -30,7 +30,7 @@ namespace Deepgram
         /// 
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("amount")]
-        public double? Amount { get; set; }
+        public string? Amount { get; set; }
 
         /// <summary>
         /// 
@@ -66,7 +66,7 @@ namespace Deepgram
             global::System.Guid? orderId,
             global::System.DateTime? expiration,
             global::System.DateTime? created,
-            double? amount,
+            string? amount,
             string? units,
             string? orderType)
         {

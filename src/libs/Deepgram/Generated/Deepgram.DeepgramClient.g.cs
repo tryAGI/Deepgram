@@ -45,7 +45,7 @@ namespace Deepgram
         /// <summary>
         /// 
         /// </summary>
-        public AgentV1SettingsThinkModelsClient AgentV1SettingsThinkModels => new AgentV1SettingsThinkModelsClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
+        public AudioClient Audio => new AudioClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -55,7 +55,7 @@ namespace Deepgram
         /// <summary>
         /// 
         /// </summary>
-        public AuthV1TokensClient AuthV1Tokens => new AuthV1TokensClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
+        public BalancesClient Balances => new BalancesClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -65,7 +65,7 @@ namespace Deepgram
         /// <summary>
         /// 
         /// </summary>
-        public ListenV1MediaClient ListenV1Media => new ListenV1MediaClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
+        public BreakdownClient Breakdown => new BreakdownClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -75,7 +75,7 @@ namespace Deepgram
         /// <summary>
         /// 
         /// </summary>
-        public ManageV1ModelsClient ManageV1Models => new ManageV1ModelsClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
+        public ConfigurationsClient Configurations => new ConfigurationsClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -85,7 +85,7 @@ namespace Deepgram
         /// <summary>
         /// 
         /// </summary>
-        public ManageV1ProjectsClient ManageV1Projects => new ManageV1ProjectsClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
+        public DistributionCredentialsClient DistributionCredentials => new DistributionCredentialsClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -95,7 +95,7 @@ namespace Deepgram
         /// <summary>
         /// 
         /// </summary>
-        public ManageV1ProjectsBillingBalancesClient ManageV1ProjectsBillingBalances => new ManageV1ProjectsBillingBalancesClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
+        public FieldsClient Fields => new FieldsClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -105,7 +105,7 @@ namespace Deepgram
         /// <summary>
         /// 
         /// </summary>
-        public ManageV1ProjectsBillingBreakdownClient ManageV1ProjectsBillingBreakdown => new ManageV1ProjectsBillingBreakdownClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
+        public InvitesClient Invites => new InvitesClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -115,7 +115,7 @@ namespace Deepgram
         /// <summary>
         /// 
         /// </summary>
-        public ManageV1ProjectsBillingFieldsClient ManageV1ProjectsBillingFields => new ManageV1ProjectsBillingFieldsClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
+        public KeysClient Keys => new KeysClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -125,7 +125,7 @@ namespace Deepgram
         /// <summary>
         /// 
         /// </summary>
-        public ManageV1ProjectsBillingPurchasesClient ManageV1ProjectsBillingPurchases => new ManageV1ProjectsBillingPurchasesClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
+        public MediaClient Media => new MediaClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -135,7 +135,7 @@ namespace Deepgram
         /// <summary>
         /// 
         /// </summary>
-        public ManageV1ProjectsKeysClient ManageV1ProjectsKeys => new ManageV1ProjectsKeysClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
+        public MembersClient Members => new MembersClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -145,7 +145,7 @@ namespace Deepgram
         /// <summary>
         /// 
         /// </summary>
-        public ManageV1ProjectsMembersClient ManageV1ProjectsMembers => new ManageV1ProjectsMembersClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
+        public ModelsClient Models => new ModelsClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -155,7 +155,7 @@ namespace Deepgram
         /// <summary>
         /// 
         /// </summary>
-        public ManageV1ProjectsMembersInvitesClient ManageV1ProjectsMembersInvites => new ManageV1ProjectsMembersInvitesClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
+        public ProjectsClient Projects => new ProjectsClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -165,7 +165,7 @@ namespace Deepgram
         /// <summary>
         /// 
         /// </summary>
-        public ManageV1ProjectsMembersScopesClient ManageV1ProjectsMembersScopes => new ManageV1ProjectsMembersScopesClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
+        public PurchasesClient Purchases => new PurchasesClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -175,7 +175,7 @@ namespace Deepgram
         /// <summary>
         /// 
         /// </summary>
-        public ManageV1ProjectsModelsClient ManageV1ProjectsModels => new ManageV1ProjectsModelsClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
+        public RequestsClient Requests => new RequestsClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -185,7 +185,7 @@ namespace Deepgram
         /// <summary>
         /// 
         /// </summary>
-        public ManageV1ProjectsRequestsClient ManageV1ProjectsRequests => new ManageV1ProjectsRequestsClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
+        public ScopesClient Scopes => new ScopesClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -195,7 +195,7 @@ namespace Deepgram
         /// <summary>
         /// 
         /// </summary>
-        public ManageV1ProjectsUsageClient ManageV1ProjectsUsage => new ManageV1ProjectsUsageClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
+        public TextClient Text => new TextClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -205,7 +205,7 @@ namespace Deepgram
         /// <summary>
         /// 
         /// </summary>
-        public ManageV1ProjectsUsageBreakdownClient ManageV1ProjectsUsageBreakdown => new ManageV1ProjectsUsageBreakdownClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
+        public TokensClient Tokens => new TokensClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -215,7 +215,7 @@ namespace Deepgram
         /// <summary>
         /// 
         /// </summary>
-        public ManageV1ProjectsUsageFieldsClient ManageV1ProjectsUsageFields => new ManageV1ProjectsUsageFieldsClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
+        public UsageClient Usage => new UsageClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -225,57 +225,7 @@ namespace Deepgram
         /// <summary>
         /// 
         /// </summary>
-        public ReadV1TextClient ReadV1Text => new ReadV1TextClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
-        {
-            ReadResponseAsString = ReadResponseAsString,
-            JsonSerializerContext = JsonSerializerContext,
-            AutoSDKServerConfiguration = AutoSDKServerConfiguration,
-        };
-
-        /// <summary>
-        /// 
-        /// </summary>
-        public SelfHostedV1DistributionCredentialsClient SelfHostedV1DistributionCredentials => new SelfHostedV1DistributionCredentialsClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
-        {
-            ReadResponseAsString = ReadResponseAsString,
-            JsonSerializerContext = JsonSerializerContext,
-            AutoSDKServerConfiguration = AutoSDKServerConfiguration,
-        };
-
-        /// <summary>
-        /// 
-        /// </summary>
-        public SpeakV1AudioClient SpeakV1Audio => new SpeakV1AudioClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
-        {
-            ReadResponseAsString = ReadResponseAsString,
-            JsonSerializerContext = JsonSerializerContext,
-            AutoSDKServerConfiguration = AutoSDKServerConfiguration,
-        };
-
-        /// <summary>
-        /// 
-        /// </summary>
-        public SpeakV2AudioClient SpeakV2Audio => new SpeakV2AudioClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
-        {
-            ReadResponseAsString = ReadResponseAsString,
-            JsonSerializerContext = JsonSerializerContext,
-            AutoSDKServerConfiguration = AutoSDKServerConfiguration,
-        };
-
-        /// <summary>
-        /// 
-        /// </summary>
-        public VoiceAgentConfigurationsClient VoiceAgentConfigurations => new VoiceAgentConfigurationsClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
-        {
-            ReadResponseAsString = ReadResponseAsString,
-            JsonSerializerContext = JsonSerializerContext,
-            AutoSDKServerConfiguration = AutoSDKServerConfiguration,
-        };
-
-        /// <summary>
-        /// 
-        /// </summary>
-        public VoiceAgentVariablesClient VoiceAgentVariables => new VoiceAgentVariablesClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
+        public VariablesClient Variables => new VariablesClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,

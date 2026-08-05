@@ -18,7 +18,7 @@ namespace Deepgram
         /// 
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("confidence_score")]
-        public double? ConfidenceScore { get; set; }
+        public string? ConfidenceScore { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -36,7 +36,7 @@ namespace Deepgram
 #endif
         public SharedTopicsResultsTopicsSegmentsItemsTopicsItems(
             string? topic,
-            double? confidenceScore)
+            string? confidenceScore)
         {
             this.Topic = topic;
             this.ConfidenceScore = confidenceScore;
