@@ -68,97 +68,122 @@ namespace Deepgram
         /// <summary>
         /// 
         /// </summary>
-        public AudioClient Audio { get; }
+        public AgentV1SettingsThinkModelsClient AgentV1SettingsThinkModels { get; }
 
         /// <summary>
         /// 
         /// </summary>
-        public BalancesClient Balances { get; }
+        public AuthV1TokensClient AuthV1Tokens { get; }
 
         /// <summary>
         /// 
         /// </summary>
-        public BreakdownClient Breakdown { get; }
+        public ListenV1MediaClient ListenV1Media { get; }
 
         /// <summary>
         /// 
         /// </summary>
-        public ConfigurationsClient Configurations { get; }
+        public ManageV1ModelsClient ManageV1Models { get; }
 
         /// <summary>
         /// 
         /// </summary>
-        public DistributionCredentialsClient DistributionCredentials { get; }
+        public ManageV1ProjectsClient ManageV1Projects { get; }
 
         /// <summary>
         /// 
         /// </summary>
-        public FieldsClient Fields { get; }
+        public ManageV1ProjectsBillingBalancesClient ManageV1ProjectsBillingBalances { get; }
 
         /// <summary>
         /// 
         /// </summary>
-        public InvitesClient Invites { get; }
+        public ManageV1ProjectsBillingBreakdownClient ManageV1ProjectsBillingBreakdown { get; }
 
         /// <summary>
         /// 
         /// </summary>
-        public KeysClient Keys { get; }
+        public ManageV1ProjectsBillingFieldsClient ManageV1ProjectsBillingFields { get; }
 
         /// <summary>
         /// 
         /// </summary>
-        public MediaClient Media { get; }
+        public ManageV1ProjectsBillingPurchasesClient ManageV1ProjectsBillingPurchases { get; }
 
         /// <summary>
         /// 
         /// </summary>
-        public MembersClient Members { get; }
+        public ManageV1ProjectsKeysClient ManageV1ProjectsKeys { get; }
 
         /// <summary>
         /// 
         /// </summary>
-        public ModelsClient Models { get; }
+        public ManageV1ProjectsMembersClient ManageV1ProjectsMembers { get; }
 
         /// <summary>
         /// 
         /// </summary>
-        public ProjectsClient Projects { get; }
+        public ManageV1ProjectsMembersInvitesClient ManageV1ProjectsMembersInvites { get; }
 
         /// <summary>
         /// 
         /// </summary>
-        public PurchasesClient Purchases { get; }
+        public ManageV1ProjectsMembersScopesClient ManageV1ProjectsMembersScopes { get; }
 
         /// <summary>
         /// 
         /// </summary>
-        public RequestsClient Requests { get; }
+        public ManageV1ProjectsModelsClient ManageV1ProjectsModels { get; }
 
         /// <summary>
         /// 
         /// </summary>
-        public ScopesClient Scopes { get; }
+        public ManageV1ProjectsRequestsClient ManageV1ProjectsRequests { get; }
 
         /// <summary>
         /// 
         /// </summary>
-        public TextClient Text { get; }
+        public ManageV1ProjectsUsageClient ManageV1ProjectsUsage { get; }
 
         /// <summary>
         /// 
         /// </summary>
-        public TokensClient Tokens { get; }
+        public ManageV1ProjectsUsageBreakdownClient ManageV1ProjectsUsageBreakdown { get; }
 
         /// <summary>
         /// 
         /// </summary>
-        public UsageClient Usage { get; }
+        public ManageV1ProjectsUsageFieldsClient ManageV1ProjectsUsageFields { get; }
 
         /// <summary>
         /// 
         /// </summary>
-        public VariablesClient Variables { get; }
+        public ReadV1TextClient ReadV1Text { get; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public SelfHostedV1DistributionCredentialsClient SelfHostedV1DistributionCredentials { get; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public SpeakV1AudioClient SpeakV1Audio { get; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public SpeakV2AudioClient SpeakV2Audio { get; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public VoiceAgentConfigurationsClient VoiceAgentConfigurations { get; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public VoiceAgentVariablesClient VoiceAgentVariables { get; }
 
     }
 }

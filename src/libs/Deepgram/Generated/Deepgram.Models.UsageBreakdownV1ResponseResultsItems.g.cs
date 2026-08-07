@@ -13,21 +13,21 @@ namespace Deepgram
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("hours")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string Hours { get; set; }
+        public required double Hours { get; set; }
 
         /// <summary>
         /// Total hours including all processing
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("total_hours")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string TotalHours { get; set; }
+        public required double TotalHours { get; set; }
 
         /// <summary>
         /// Agent hours used
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("agent_hours")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string AgentHours { get; set; }
+        public required double AgentHours { get; set; }
 
         /// <summary>
         /// Number of input tokens
@@ -99,18 +99,18 @@ namespace Deepgram
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UsageBreakdownV1ResponseResultsItems(
-            string hours,
-            string totalHours,
-            string agentHours,
+            double hours,
+            double totalHours,
+            double agentHours,
             double tokensIn,
             double tokensOut,
             double ttsCharacters,
             double requests,
             global::Deepgram.UsageBreakdownV1ResponseResultsItemsGrouping grouping)
         {
-            this.Hours = hours ?? throw new global::System.ArgumentNullException(nameof(hours));
-            this.TotalHours = totalHours ?? throw new global::System.ArgumentNullException(nameof(totalHours));
-            this.AgentHours = agentHours ?? throw new global::System.ArgumentNullException(nameof(agentHours));
+            this.Hours = hours;
+            this.TotalHours = totalHours;
+            this.AgentHours = agentHours;
             this.TokensIn = tokensIn;
             this.TokensOut = tokensOut;
             this.TtsCharacters = ttsCharacters;

@@ -54,14 +54,14 @@ namespace Deepgram.Realtime
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("audio_window_start")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string AudioWindowStart { get; set; }
+        public required double AudioWindowStart { get; set; }
 
         /// <summary>
         /// End time in seconds of the audio range that was transcribed
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("audio_window_end")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string AudioWindowEnd { get; set; }
+        public required double AudioWindowEnd { get; set; }
 
         /// <summary>
         /// Text that was said over the course of the current turn
@@ -82,7 +82,7 @@ namespace Deepgram.Realtime
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("end_of_turn_confidence")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string EndOfTurnConfidence { get; set; }
+        public required double EndOfTurnConfidence { get; set; }
 
         /// <summary>
         /// Detected languages sorted by descending frequency in the<br/>
@@ -158,11 +158,11 @@ namespace Deepgram.Realtime
             int sequenceId,
             global::Deepgram.Realtime.ChannelsListenV2MessagesListenV2TurnInfoEvent @event,
             int turnIndex,
-            string audioWindowStart,
-            string audioWindowEnd,
+            double audioWindowStart,
+            double audioWindowEnd,
             string transcript,
             global::System.Collections.Generic.IList<global::Deepgram.Realtime.ChannelsListenV2MessagesListenV2TurnInfoWordsItems> words,
-            string endOfTurnConfidence,
+            double endOfTurnConfidence,
             global::Deepgram.Realtime.ListenV2ListenV2TurnInfoType type,
             global::System.Collections.Generic.IList<string>? languages,
             global::System.Collections.Generic.IList<string>? languagesHinted)
@@ -172,11 +172,11 @@ namespace Deepgram.Realtime
             this.SequenceId = sequenceId;
             this.Event = @event;
             this.TurnIndex = turnIndex;
-            this.AudioWindowStart = audioWindowStart ?? throw new global::System.ArgumentNullException(nameof(audioWindowStart));
-            this.AudioWindowEnd = audioWindowEnd ?? throw new global::System.ArgumentNullException(nameof(audioWindowEnd));
+            this.AudioWindowStart = audioWindowStart;
+            this.AudioWindowEnd = audioWindowEnd;
             this.Transcript = transcript ?? throw new global::System.ArgumentNullException(nameof(transcript));
             this.Words = words ?? throw new global::System.ArgumentNullException(nameof(words));
-            this.EndOfTurnConfidence = endOfTurnConfidence ?? throw new global::System.ArgumentNullException(nameof(endOfTurnConfidence));
+            this.EndOfTurnConfidence = endOfTurnConfidence;
             this.Languages = languages;
             this.LanguagesHinted = languagesHinted;
         }
