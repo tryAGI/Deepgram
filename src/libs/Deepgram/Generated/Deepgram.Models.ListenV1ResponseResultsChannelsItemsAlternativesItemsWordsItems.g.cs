@@ -18,19 +18,19 @@ namespace Deepgram
         /// 
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("start")]
-        public string? Start { get; set; }
+        public double? Start { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("end")]
-        public string? End { get; set; }
+        public double? End { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("confidence")]
-        public string? Confidence { get; set; }
+        public double? Confidence { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -50,9 +50,9 @@ namespace Deepgram
 #endif
         public ListenV1ResponseResultsChannelsItemsAlternativesItemsWordsItems(
             string? word,
-            string? start,
-            string? end,
-            string? confidence)
+            double? start,
+            double? end,
+            double? confidence)
         {
             this.Word = word;
             this.Start = start;

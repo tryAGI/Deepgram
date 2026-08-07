@@ -18,7 +18,7 @@ namespace Deepgram
         /// 
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("confidence")]
-        public string? Confidence { get; set; }
+        public double? Confidence { get; set; }
 
         /// <summary>
         /// 
@@ -71,7 +71,7 @@ namespace Deepgram
 #endif
         public ListenV1ResponseResultsChannelsItemsAlternativesItems(
             string? transcript,
-            string? confidence,
+            double? confidence,
             global::System.Collections.Generic.IList<global::Deepgram.ListenV1ResponseResultsChannelsItemsAlternativesItemsWordsItems>? words,
             global::Deepgram.ListenV1ResponseResultsChannelsItemsAlternativesItemsParagraphs? paragraphs,
             global::System.Collections.Generic.IList<global::Deepgram.ListenV1ResponseResultsChannelsItemsAlternativesItemsEntitiesItems>? entities,
