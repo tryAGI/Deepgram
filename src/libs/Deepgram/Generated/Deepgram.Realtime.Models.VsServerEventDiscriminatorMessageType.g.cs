@@ -11,6 +11,14 @@ namespace Deepgram.Realtime
         /// <summary>
         /// 
         /// </summary>
+        ConfigureFailure,
+        /// <summary>
+        /// 
+        /// </summary>
+        ConfigureSuccess,
+        /// <summary>
+        /// 
+        /// </summary>
         Connected,
         /// <summary>
         /// 
@@ -24,6 +32,10 @@ namespace Deepgram.Realtime
         /// 
         /// </summary>
         SessionMetadata,
+        /// <summary>
+        /// 
+        /// </summary>
+        SpeechInterrupted,
         /// <summary>
         /// 
         /// </summary>
@@ -50,10 +62,13 @@ namespace Deepgram.Realtime
         {
             return value switch
             {
+                VsServerEventDiscriminatorMessageType.ConfigureFailure => "ConfigureFailure",
+                VsServerEventDiscriminatorMessageType.ConfigureSuccess => "ConfigureSuccess",
                 VsServerEventDiscriminatorMessageType.Connected => "Connected",
                 VsServerEventDiscriminatorMessageType.Error => "Error",
                 VsServerEventDiscriminatorMessageType.Flushed => "Flushed",
                 VsServerEventDiscriminatorMessageType.SessionMetadata => "SessionMetadata",
+                VsServerEventDiscriminatorMessageType.SpeechInterrupted => "SpeechInterrupted",
                 VsServerEventDiscriminatorMessageType.SpeechMetadata => "SpeechMetadata",
                 VsServerEventDiscriminatorMessageType.SpeechStarted => "SpeechStarted",
                 VsServerEventDiscriminatorMessageType.Warning => "Warning",
@@ -67,10 +82,13 @@ namespace Deepgram.Realtime
         {
             return value switch
             {
+                "ConfigureFailure" => VsServerEventDiscriminatorMessageType.ConfigureFailure,
+                "ConfigureSuccess" => VsServerEventDiscriminatorMessageType.ConfigureSuccess,
                 "Connected" => VsServerEventDiscriminatorMessageType.Connected,
                 "Error" => VsServerEventDiscriminatorMessageType.Error,
                 "Flushed" => VsServerEventDiscriminatorMessageType.Flushed,
                 "SessionMetadata" => VsServerEventDiscriminatorMessageType.SessionMetadata,
+                "SpeechInterrupted" => VsServerEventDiscriminatorMessageType.SpeechInterrupted,
                 "SpeechMetadata" => VsServerEventDiscriminatorMessageType.SpeechMetadata,
                 "SpeechStarted" => VsServerEventDiscriminatorMessageType.SpeechStarted,
                 "Warning" => VsServerEventDiscriminatorMessageType.Warning,

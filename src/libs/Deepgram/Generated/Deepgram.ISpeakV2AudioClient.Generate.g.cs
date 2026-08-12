@@ -25,9 +25,15 @@ namespace Deepgram
         /// <param name="encoding">
         /// Default Value: mp3
         /// </param>
+        /// <param name="expressivity">
+        /// Default Value: 0
+        /// </param>
         /// <param name="model"></param>
         /// <param name="sampleRate">
         /// Default Value: 24000
+        /// </param>
+        /// <param name="speed">
+        /// Default Value: 1
         /// </param>
         /// <param name="priority"></param>
         /// <param name="request"></param>
@@ -45,7 +51,9 @@ namespace Deepgram
             global::Deepgram.V2SpeakPostParametersBitRate? bitRate = default,
             global::Deepgram.V2SpeakPostParametersContainer? container = default,
             global::Deepgram.V2SpeakPostParametersEncoding? encoding = default,
+            global::Deepgram.V2SpeakPostParametersExpressivity? expressivity = default,
             global::Deepgram.V2SpeakPostParametersSampleRate? sampleRate = default,
+            global::Deepgram.V2SpeakPostParametersSpeed? speed = default,
             global::Deepgram.V2SpeakPostParametersPriority? priority = default,
             global::Deepgram.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
@@ -70,9 +78,15 @@ namespace Deepgram
         /// <param name="encoding">
         /// Default Value: mp3
         /// </param>
+        /// <param name="expressivity">
+        /// Default Value: 0
+        /// </param>
         /// <param name="model"></param>
         /// <param name="sampleRate">
         /// Default Value: 24000
+        /// </param>
+        /// <param name="speed">
+        /// Default Value: 1
         /// </param>
         /// <param name="priority"></param>
         /// <param name="request"></param>
@@ -90,7 +104,9 @@ namespace Deepgram
             global::Deepgram.V2SpeakPostParametersBitRate? bitRate = default,
             global::Deepgram.V2SpeakPostParametersContainer? container = default,
             global::Deepgram.V2SpeakPostParametersEncoding? encoding = default,
+            global::Deepgram.V2SpeakPostParametersExpressivity? expressivity = default,
             global::Deepgram.V2SpeakPostParametersSampleRate? sampleRate = default,
+            global::Deepgram.V2SpeakPostParametersSpeed? speed = default,
             global::Deepgram.V2SpeakPostParametersPriority? priority = default,
             global::Deepgram.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
@@ -115,13 +131,19 @@ namespace Deepgram
         /// <param name="encoding">
         /// Default Value: mp3
         /// </param>
+        /// <param name="expressivity">
+        /// Default Value: 0
+        /// </param>
         /// <param name="model"></param>
         /// <param name="sampleRate">
         /// Default Value: 24000
         /// </param>
+        /// <param name="speed">
+        /// Default Value: 1
+        /// </param>
         /// <param name="priority"></param>
         /// <param name="text">
-        /// The text content to be converted to speech. The server normalizes and preprocesses the text (e.g. stripping inline controls) before synthesis.
+        /// The text content to be converted to speech. The server normalizes and preprocesses the text before synthesis. Inline pause and pronunciation controls are not yet applied; they are stripped from the text before synthesis.
         /// </param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
@@ -136,7 +158,9 @@ namespace Deepgram
             global::Deepgram.V2SpeakPostParametersBitRate? bitRate = default,
             global::Deepgram.V2SpeakPostParametersContainer? container = default,
             global::Deepgram.V2SpeakPostParametersEncoding? encoding = default,
+            global::Deepgram.V2SpeakPostParametersExpressivity? expressivity = default,
             global::Deepgram.V2SpeakPostParametersSampleRate? sampleRate = default,
+            global::Deepgram.V2SpeakPostParametersSpeed? speed = default,
             global::Deepgram.V2SpeakPostParametersPriority? priority = default,
             global::Deepgram.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);

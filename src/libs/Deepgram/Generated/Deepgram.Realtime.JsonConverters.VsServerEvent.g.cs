@@ -48,27 +48,49 @@ namespace Deepgram.Realtime.JsonConverters
             if (__jsonProps.Contains("audio_duration_ms")) __score3++;
             if (__jsonProps.Contains("billable_character_count")) __score3++;
             if (__jsonProps.Contains("controls_applied")) __score3++;
+            if (__jsonProps.Contains("controls_applied.breaks_applied")) __score3++;
             if (__jsonProps.Contains("controls_applied.pronunciation_warnings")) __score3++;
             if (__jsonProps.Contains("controls_applied.pronunciations_applied")) __score3++;
             if (__jsonProps.Contains("input_character_count")) __score3++;
             if (__jsonProps.Contains("speech_id")) __score3++;
             if (__jsonProps.Contains("type")) __score3++;
             var __score4 = 0;
-            if (__jsonProps.Contains("speech_id")) __score4++;
+            if (__jsonProps.Contains("audio_played_ms")) __score4++;
+            if (__jsonProps.Contains("metadata")) __score4++;
+            if (__jsonProps.Contains("metadata.audio_duration_ms")) __score4++;
+            if (__jsonProps.Contains("metadata.billable_character_count")) __score4++;
+            if (__jsonProps.Contains("metadata.controls_applied")) __score4++;
+            if (__jsonProps.Contains("metadata.input_character_count")) __score4++;
+            if (__jsonProps.Contains("metadata.speech_id")) __score4++;
+            if (__jsonProps.Contains("text_remaining")) __score4++;
+            if (__jsonProps.Contains("text_spoken")) __score4++;
             if (__jsonProps.Contains("type")) __score4++;
             var __score5 = 0;
-            if (__jsonProps.Contains("total_audio_duration_ms")) __score5++;
-            if (__jsonProps.Contains("total_billable_character_count")) __score5++;
-            if (__jsonProps.Contains("total_input_character_count")) __score5++;
+            if (__jsonProps.Contains("speech_id")) __score5++;
             if (__jsonProps.Contains("type")) __score5++;
             var __score6 = 0;
-            if (__jsonProps.Contains("code")) __score6++;
-            if (__jsonProps.Contains("description")) __score6++;
+            if (__jsonProps.Contains("total_audio_duration_ms")) __score6++;
+            if (__jsonProps.Contains("total_billable_character_count")) __score6++;
+            if (__jsonProps.Contains("total_input_character_count")) __score6++;
             if (__jsonProps.Contains("type")) __score6++;
             var __score7 = 0;
-            if (__jsonProps.Contains("code")) __score7++;
-            if (__jsonProps.Contains("description")) __score7++;
+            if (__jsonProps.Contains("applied")) __score7++;
+            if (__jsonProps.Contains("applied.speed")) __score7++;
             if (__jsonProps.Contains("type")) __score7++;
+            var __score8 = 0;
+            if (__jsonProps.Contains("code")) __score8++;
+            if (__jsonProps.Contains("description")) __score8++;
+            if (__jsonProps.Contains("field")) __score8++;
+            if (__jsonProps.Contains("type")) __score8++;
+            if (__jsonProps.Contains("value")) __score8++;
+            var __score9 = 0;
+            if (__jsonProps.Contains("code")) __score9++;
+            if (__jsonProps.Contains("description")) __score9++;
+            if (__jsonProps.Contains("type")) __score9++;
+            var __score10 = 0;
+            if (__jsonProps.Contains("code")) __score10++;
+            if (__jsonProps.Contains("description")) __score10++;
+            if (__jsonProps.Contains("type")) __score10++;
             var __bestScore = 0;
             var __bestIndex = -1;
             if (__score0 > __bestScore) { __bestScore = __score0; __bestIndex = 0; }
@@ -79,13 +101,19 @@ namespace Deepgram.Realtime.JsonConverters
             if (__score5 > __bestScore) { __bestScore = __score5; __bestIndex = 5; }
             if (__score6 > __bestScore) { __bestScore = __score6; __bestIndex = 6; }
             if (__score7 > __bestScore) { __bestScore = __score7; __bestIndex = 7; }
+            if (__score8 > __bestScore) { __bestScore = __score8; __bestIndex = 8; }
+            if (__score9 > __bestScore) { __bestScore = __score9; __bestIndex = 9; }
+            if (__score10 > __bestScore) { __bestScore = __score10; __bestIndex = 10; }
 
             byte[]? speakV2SpeakV2Audio = default;
             global::Deepgram.Realtime.SpeakV2SpeakV2Connected? speakV2SpeakV2Connected = default;
             global::Deepgram.Realtime.SpeakV2SpeakV2SpeechStarted? speakV2SpeakV2SpeechStarted = default;
             global::Deepgram.Realtime.SpeakV2SpeakV2SpeechMetadata? speakV2SpeakV2SpeechMetadata = default;
+            global::Deepgram.Realtime.SpeakV2SpeakV2SpeechInterrupted? speakV2SpeakV2SpeechInterrupted = default;
             global::Deepgram.Realtime.SpeakV2SpeakV2Flushed? speakV2SpeakV2Flushed = default;
             global::Deepgram.Realtime.SpeakV2SpeakV2SessionMetadata? speakV2SpeakV2SessionMetadata = default;
+            global::Deepgram.Realtime.SpeakV2SpeakV2ConfigureSuccess? speakV2SpeakV2ConfigureSuccess = default;
+            global::Deepgram.Realtime.SpeakV2SpeakV2ConfigureFailure? speakV2SpeakV2ConfigureFailure = default;
             global::Deepgram.Realtime.SpeakV2SpeakV2Warning? speakV2SpeakV2Warning = default;
             global::Deepgram.Realtime.SpeakV2SpeakV2Error? speakV2SpeakV2Error = default;
             if (__bestIndex >= 0)
@@ -154,6 +182,21 @@ namespace Deepgram.Realtime.JsonConverters
                 {
                     try
                     {
+                        var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Deepgram.Realtime.SpeakV2SpeakV2SpeechInterrupted), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Deepgram.Realtime.SpeakV2SpeakV2SpeechInterrupted> ??
+                                       throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Deepgram.Realtime.SpeakV2SpeakV2SpeechInterrupted).Name}");
+                        speakV2SpeakV2SpeechInterrupted = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
+                    }
+                    catch (global::System.Text.Json.JsonException)
+                    {
+                    }
+                    catch (global::System.InvalidOperationException)
+                    {
+                    }
+                }
+                else if (__bestIndex == 5)
+                {
+                    try
+                    {
                         var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Deepgram.Realtime.SpeakV2SpeakV2Flushed), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Deepgram.Realtime.SpeakV2SpeakV2Flushed> ??
                                        throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Deepgram.Realtime.SpeakV2SpeakV2Flushed).Name}");
                         speakV2SpeakV2Flushed = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
@@ -165,7 +208,7 @@ namespace Deepgram.Realtime.JsonConverters
                     {
                     }
                 }
-                else if (__bestIndex == 5)
+                else if (__bestIndex == 6)
                 {
                     try
                     {
@@ -180,7 +223,37 @@ namespace Deepgram.Realtime.JsonConverters
                     {
                     }
                 }
-                else if (__bestIndex == 6)
+                else if (__bestIndex == 7)
+                {
+                    try
+                    {
+                        var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Deepgram.Realtime.SpeakV2SpeakV2ConfigureSuccess), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Deepgram.Realtime.SpeakV2SpeakV2ConfigureSuccess> ??
+                                       throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Deepgram.Realtime.SpeakV2SpeakV2ConfigureSuccess).Name}");
+                        speakV2SpeakV2ConfigureSuccess = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
+                    }
+                    catch (global::System.Text.Json.JsonException)
+                    {
+                    }
+                    catch (global::System.InvalidOperationException)
+                    {
+                    }
+                }
+                else if (__bestIndex == 8)
+                {
+                    try
+                    {
+                        var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Deepgram.Realtime.SpeakV2SpeakV2ConfigureFailure), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Deepgram.Realtime.SpeakV2SpeakV2ConfigureFailure> ??
+                                       throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Deepgram.Realtime.SpeakV2SpeakV2ConfigureFailure).Name}");
+                        speakV2SpeakV2ConfigureFailure = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
+                    }
+                    catch (global::System.Text.Json.JsonException)
+                    {
+                    }
+                    catch (global::System.InvalidOperationException)
+                    {
+                    }
+                }
+                else if (__bestIndex == 9)
                 {
                     try
                     {
@@ -195,7 +268,7 @@ namespace Deepgram.Realtime.JsonConverters
                     {
                     }
                 }
-                else if (__bestIndex == 7)
+                else if (__bestIndex == 10)
                 {
                     try
                     {
@@ -212,7 +285,7 @@ namespace Deepgram.Realtime.JsonConverters
                 }
             }
 
-            if (speakV2SpeakV2Audio == null && speakV2SpeakV2Connected == null && speakV2SpeakV2SpeechStarted == null && speakV2SpeakV2SpeechMetadata == null && speakV2SpeakV2Flushed == null && speakV2SpeakV2SessionMetadata == null && speakV2SpeakV2Warning == null && speakV2SpeakV2Error == null)
+            if (speakV2SpeakV2Audio == null && speakV2SpeakV2Connected == null && speakV2SpeakV2SpeechStarted == null && speakV2SpeakV2SpeechMetadata == null && speakV2SpeakV2SpeechInterrupted == null && speakV2SpeakV2Flushed == null && speakV2SpeakV2SessionMetadata == null && speakV2SpeakV2ConfigureSuccess == null && speakV2SpeakV2ConfigureFailure == null && speakV2SpeakV2Warning == null && speakV2SpeakV2Error == null)
             {
                 try
                 {
@@ -229,7 +302,7 @@ namespace Deepgram.Realtime.JsonConverters
                 }
             }
 
-            if (speakV2SpeakV2Audio == null && speakV2SpeakV2Connected == null && speakV2SpeakV2SpeechStarted == null && speakV2SpeakV2SpeechMetadata == null && speakV2SpeakV2Flushed == null && speakV2SpeakV2SessionMetadata == null && speakV2SpeakV2Warning == null && speakV2SpeakV2Error == null)
+            if (speakV2SpeakV2Audio == null && speakV2SpeakV2Connected == null && speakV2SpeakV2SpeechStarted == null && speakV2SpeakV2SpeechMetadata == null && speakV2SpeakV2SpeechInterrupted == null && speakV2SpeakV2Flushed == null && speakV2SpeakV2SessionMetadata == null && speakV2SpeakV2ConfigureSuccess == null && speakV2SpeakV2ConfigureFailure == null && speakV2SpeakV2Warning == null && speakV2SpeakV2Error == null)
             {
                 try
                 {
@@ -246,7 +319,7 @@ namespace Deepgram.Realtime.JsonConverters
                 }
             }
 
-            if (speakV2SpeakV2Audio == null && speakV2SpeakV2Connected == null && speakV2SpeakV2SpeechStarted == null && speakV2SpeakV2SpeechMetadata == null && speakV2SpeakV2Flushed == null && speakV2SpeakV2SessionMetadata == null && speakV2SpeakV2Warning == null && speakV2SpeakV2Error == null)
+            if (speakV2SpeakV2Audio == null && speakV2SpeakV2Connected == null && speakV2SpeakV2SpeechStarted == null && speakV2SpeakV2SpeechMetadata == null && speakV2SpeakV2SpeechInterrupted == null && speakV2SpeakV2Flushed == null && speakV2SpeakV2SessionMetadata == null && speakV2SpeakV2ConfigureSuccess == null && speakV2SpeakV2ConfigureFailure == null && speakV2SpeakV2Warning == null && speakV2SpeakV2Error == null)
             {
                 try
                 {
@@ -263,7 +336,7 @@ namespace Deepgram.Realtime.JsonConverters
                 }
             }
 
-            if (speakV2SpeakV2Audio == null && speakV2SpeakV2Connected == null && speakV2SpeakV2SpeechStarted == null && speakV2SpeakV2SpeechMetadata == null && speakV2SpeakV2Flushed == null && speakV2SpeakV2SessionMetadata == null && speakV2SpeakV2Warning == null && speakV2SpeakV2Error == null)
+            if (speakV2SpeakV2Audio == null && speakV2SpeakV2Connected == null && speakV2SpeakV2SpeechStarted == null && speakV2SpeakV2SpeechMetadata == null && speakV2SpeakV2SpeechInterrupted == null && speakV2SpeakV2Flushed == null && speakV2SpeakV2SessionMetadata == null && speakV2SpeakV2ConfigureSuccess == null && speakV2SpeakV2ConfigureFailure == null && speakV2SpeakV2Warning == null && speakV2SpeakV2Error == null)
             {
                 try
                 {
@@ -280,7 +353,24 @@ namespace Deepgram.Realtime.JsonConverters
                 }
             }
 
-            if (speakV2SpeakV2Audio == null && speakV2SpeakV2Connected == null && speakV2SpeakV2SpeechStarted == null && speakV2SpeakV2SpeechMetadata == null && speakV2SpeakV2Flushed == null && speakV2SpeakV2SessionMetadata == null && speakV2SpeakV2Warning == null && speakV2SpeakV2Error == null)
+            if (speakV2SpeakV2Audio == null && speakV2SpeakV2Connected == null && speakV2SpeakV2SpeechStarted == null && speakV2SpeakV2SpeechMetadata == null && speakV2SpeakV2SpeechInterrupted == null && speakV2SpeakV2Flushed == null && speakV2SpeakV2SessionMetadata == null && speakV2SpeakV2ConfigureSuccess == null && speakV2SpeakV2ConfigureFailure == null && speakV2SpeakV2Warning == null && speakV2SpeakV2Error == null)
+            {
+                try
+                {
+
+                    var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Deepgram.Realtime.SpeakV2SpeakV2SpeechInterrupted), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Deepgram.Realtime.SpeakV2SpeakV2SpeechInterrupted> ??
+                                   throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Deepgram.Realtime.SpeakV2SpeakV2SpeechInterrupted).Name}");
+                    speakV2SpeakV2SpeechInterrupted = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
+                }
+                catch (global::System.Text.Json.JsonException)
+                {
+                }
+                catch (global::System.InvalidOperationException)
+                {
+                }
+            }
+
+            if (speakV2SpeakV2Audio == null && speakV2SpeakV2Connected == null && speakV2SpeakV2SpeechStarted == null && speakV2SpeakV2SpeechMetadata == null && speakV2SpeakV2SpeechInterrupted == null && speakV2SpeakV2Flushed == null && speakV2SpeakV2SessionMetadata == null && speakV2SpeakV2ConfigureSuccess == null && speakV2SpeakV2ConfigureFailure == null && speakV2SpeakV2Warning == null && speakV2SpeakV2Error == null)
             {
                 try
                 {
@@ -297,7 +387,7 @@ namespace Deepgram.Realtime.JsonConverters
                 }
             }
 
-            if (speakV2SpeakV2Audio == null && speakV2SpeakV2Connected == null && speakV2SpeakV2SpeechStarted == null && speakV2SpeakV2SpeechMetadata == null && speakV2SpeakV2Flushed == null && speakV2SpeakV2SessionMetadata == null && speakV2SpeakV2Warning == null && speakV2SpeakV2Error == null)
+            if (speakV2SpeakV2Audio == null && speakV2SpeakV2Connected == null && speakV2SpeakV2SpeechStarted == null && speakV2SpeakV2SpeechMetadata == null && speakV2SpeakV2SpeechInterrupted == null && speakV2SpeakV2Flushed == null && speakV2SpeakV2SessionMetadata == null && speakV2SpeakV2ConfigureSuccess == null && speakV2SpeakV2ConfigureFailure == null && speakV2SpeakV2Warning == null && speakV2SpeakV2Error == null)
             {
                 try
                 {
@@ -314,7 +404,41 @@ namespace Deepgram.Realtime.JsonConverters
                 }
             }
 
-            if (speakV2SpeakV2Audio == null && speakV2SpeakV2Connected == null && speakV2SpeakV2SpeechStarted == null && speakV2SpeakV2SpeechMetadata == null && speakV2SpeakV2Flushed == null && speakV2SpeakV2SessionMetadata == null && speakV2SpeakV2Warning == null && speakV2SpeakV2Error == null)
+            if (speakV2SpeakV2Audio == null && speakV2SpeakV2Connected == null && speakV2SpeakV2SpeechStarted == null && speakV2SpeakV2SpeechMetadata == null && speakV2SpeakV2SpeechInterrupted == null && speakV2SpeakV2Flushed == null && speakV2SpeakV2SessionMetadata == null && speakV2SpeakV2ConfigureSuccess == null && speakV2SpeakV2ConfigureFailure == null && speakV2SpeakV2Warning == null && speakV2SpeakV2Error == null)
+            {
+                try
+                {
+
+                    var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Deepgram.Realtime.SpeakV2SpeakV2ConfigureSuccess), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Deepgram.Realtime.SpeakV2SpeakV2ConfigureSuccess> ??
+                                   throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Deepgram.Realtime.SpeakV2SpeakV2ConfigureSuccess).Name}");
+                    speakV2SpeakV2ConfigureSuccess = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
+                }
+                catch (global::System.Text.Json.JsonException)
+                {
+                }
+                catch (global::System.InvalidOperationException)
+                {
+                }
+            }
+
+            if (speakV2SpeakV2Audio == null && speakV2SpeakV2Connected == null && speakV2SpeakV2SpeechStarted == null && speakV2SpeakV2SpeechMetadata == null && speakV2SpeakV2SpeechInterrupted == null && speakV2SpeakV2Flushed == null && speakV2SpeakV2SessionMetadata == null && speakV2SpeakV2ConfigureSuccess == null && speakV2SpeakV2ConfigureFailure == null && speakV2SpeakV2Warning == null && speakV2SpeakV2Error == null)
+            {
+                try
+                {
+
+                    var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Deepgram.Realtime.SpeakV2SpeakV2ConfigureFailure), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Deepgram.Realtime.SpeakV2SpeakV2ConfigureFailure> ??
+                                   throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Deepgram.Realtime.SpeakV2SpeakV2ConfigureFailure).Name}");
+                    speakV2SpeakV2ConfigureFailure = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
+                }
+                catch (global::System.Text.Json.JsonException)
+                {
+                }
+                catch (global::System.InvalidOperationException)
+                {
+                }
+            }
+
+            if (speakV2SpeakV2Audio == null && speakV2SpeakV2Connected == null && speakV2SpeakV2SpeechStarted == null && speakV2SpeakV2SpeechMetadata == null && speakV2SpeakV2SpeechInterrupted == null && speakV2SpeakV2Flushed == null && speakV2SpeakV2SessionMetadata == null && speakV2SpeakV2ConfigureSuccess == null && speakV2SpeakV2ConfigureFailure == null && speakV2SpeakV2Warning == null && speakV2SpeakV2Error == null)
             {
                 try
                 {
@@ -331,7 +455,7 @@ namespace Deepgram.Realtime.JsonConverters
                 }
             }
 
-            if (speakV2SpeakV2Audio == null && speakV2SpeakV2Connected == null && speakV2SpeakV2SpeechStarted == null && speakV2SpeakV2SpeechMetadata == null && speakV2SpeakV2Flushed == null && speakV2SpeakV2SessionMetadata == null && speakV2SpeakV2Warning == null && speakV2SpeakV2Error == null)
+            if (speakV2SpeakV2Audio == null && speakV2SpeakV2Connected == null && speakV2SpeakV2SpeechStarted == null && speakV2SpeakV2SpeechMetadata == null && speakV2SpeakV2SpeechInterrupted == null && speakV2SpeakV2Flushed == null && speakV2SpeakV2SessionMetadata == null && speakV2SpeakV2ConfigureSuccess == null && speakV2SpeakV2ConfigureFailure == null && speakV2SpeakV2Warning == null && speakV2SpeakV2Error == null)
             {
                 try
                 {
@@ -357,9 +481,15 @@ namespace Deepgram.Realtime.JsonConverters
 
                 speakV2SpeakV2SpeechMetadata,
 
+                speakV2SpeakV2SpeechInterrupted,
+
                 speakV2SpeakV2Flushed,
 
                 speakV2SpeakV2SessionMetadata,
+
+                speakV2SpeakV2ConfigureSuccess,
+
+                speakV2SpeakV2ConfigureFailure,
 
                 speakV2SpeakV2Warning,
 
@@ -402,6 +532,12 @@ namespace Deepgram.Realtime.JsonConverters
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Deepgram.Realtime.SpeakV2SpeakV2SpeechMetadata).Name}");
                 global::System.Text.Json.JsonSerializer.Serialize(writer, value.SpeakV2SpeakV2SpeechMetadata!, typeInfo);
             }
+            else if (value.IsSpeakV2SpeakV2SpeechInterrupted)
+            {
+                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Deepgram.Realtime.SpeakV2SpeakV2SpeechInterrupted), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Deepgram.Realtime.SpeakV2SpeakV2SpeechInterrupted?> ??
+                               throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Deepgram.Realtime.SpeakV2SpeakV2SpeechInterrupted).Name}");
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.SpeakV2SpeakV2SpeechInterrupted!, typeInfo);
+            }
             else if (value.IsSpeakV2SpeakV2Flushed)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Deepgram.Realtime.SpeakV2SpeakV2Flushed), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Deepgram.Realtime.SpeakV2SpeakV2Flushed?> ??
@@ -413,6 +549,18 @@ namespace Deepgram.Realtime.JsonConverters
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Deepgram.Realtime.SpeakV2SpeakV2SessionMetadata), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Deepgram.Realtime.SpeakV2SpeakV2SessionMetadata?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Deepgram.Realtime.SpeakV2SpeakV2SessionMetadata).Name}");
                 global::System.Text.Json.JsonSerializer.Serialize(writer, value.SpeakV2SpeakV2SessionMetadata!, typeInfo);
+            }
+            else if (value.IsSpeakV2SpeakV2ConfigureSuccess)
+            {
+                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Deepgram.Realtime.SpeakV2SpeakV2ConfigureSuccess), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Deepgram.Realtime.SpeakV2SpeakV2ConfigureSuccess?> ??
+                               throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Deepgram.Realtime.SpeakV2SpeakV2ConfigureSuccess).Name}");
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.SpeakV2SpeakV2ConfigureSuccess!, typeInfo);
+            }
+            else if (value.IsSpeakV2SpeakV2ConfigureFailure)
+            {
+                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Deepgram.Realtime.SpeakV2SpeakV2ConfigureFailure), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Deepgram.Realtime.SpeakV2SpeakV2ConfigureFailure?> ??
+                               throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Deepgram.Realtime.SpeakV2SpeakV2ConfigureFailure).Name}");
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.SpeakV2SpeakV2ConfigureFailure!, typeInfo);
             }
             else if (value.IsSpeakV2SpeakV2Warning)
             {

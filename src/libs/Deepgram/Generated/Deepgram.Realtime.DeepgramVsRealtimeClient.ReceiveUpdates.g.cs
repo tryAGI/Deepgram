@@ -204,6 +204,15 @@ namespace Deepgram.Realtime
                         rawText,
                         json));
             }
+            if (@event.SpeakV2SpeakV2SpeechInterrupted is { } __SpeakV2SpeechInterruptedReceived)
+            {
+                SpeakV2SpeechInterruptedReceived?.Invoke(
+                    this,
+                    new AutoSDKWebSocketMessageEventArgs<global::Deepgram.Realtime.SpeakV2SpeakV2SpeechInterrupted>(
+                        __SpeakV2SpeechInterruptedReceived,
+                        rawText,
+                        json));
+            }
             if (@event.SpeakV2SpeakV2Flushed is { } __SpeakV2FlushedReceived)
             {
                 SpeakV2FlushedReceived?.Invoke(
@@ -219,6 +228,24 @@ namespace Deepgram.Realtime
                     this,
                     new AutoSDKWebSocketMessageEventArgs<global::Deepgram.Realtime.SpeakV2SpeakV2SessionMetadata>(
                         __SpeakV2SessionMetadataReceived,
+                        rawText,
+                        json));
+            }
+            if (@event.SpeakV2SpeakV2ConfigureSuccess is { } __SpeakV2ConfigureSuccessReceived)
+            {
+                SpeakV2ConfigureSuccessReceived?.Invoke(
+                    this,
+                    new AutoSDKWebSocketMessageEventArgs<global::Deepgram.Realtime.SpeakV2SpeakV2ConfigureSuccess>(
+                        __SpeakV2ConfigureSuccessReceived,
+                        rawText,
+                        json));
+            }
+            if (@event.SpeakV2SpeakV2ConfigureFailure is { } __SpeakV2ConfigureFailureReceived)
+            {
+                SpeakV2ConfigureFailureReceived?.Invoke(
+                    this,
+                    new AutoSDKWebSocketMessageEventArgs<global::Deepgram.Realtime.SpeakV2SpeakV2ConfigureFailure>(
+                        __SpeakV2ConfigureFailureReceived,
                         rawText,
                         json));
             }

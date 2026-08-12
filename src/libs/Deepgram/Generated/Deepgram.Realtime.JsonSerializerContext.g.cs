@@ -505,6 +505,14 @@ namespace Deepgram.Realtime
 
             typeof(global::Deepgram.Realtime.JsonConverters.SpeakV2SampleRateNullableJsonConverter),
 
+            typeof(global::Deepgram.Realtime.JsonConverters.SpeakV2SpeedJsonConverter),
+
+            typeof(global::Deepgram.Realtime.JsonConverters.SpeakV2SpeedNullableJsonConverter),
+
+            typeof(global::Deepgram.Realtime.JsonConverters.SpeakV2ExpressivityJsonConverter),
+
+            typeof(global::Deepgram.Realtime.JsonConverters.SpeakV2ExpressivityNullableJsonConverter),
+
             typeof(global::Deepgram.Realtime.JsonConverters.SpeakV2SpeakV2ConnectedTypeJsonConverter),
 
             typeof(global::Deepgram.Realtime.JsonConverters.SpeakV2SpeakV2ConnectedTypeNullableJsonConverter),
@@ -517,6 +525,10 @@ namespace Deepgram.Realtime
 
             typeof(global::Deepgram.Realtime.JsonConverters.SpeakV2SpeakV2SpeechMetadataTypeNullableJsonConverter),
 
+            typeof(global::Deepgram.Realtime.JsonConverters.SpeakV2SpeakV2SpeechInterruptedTypeJsonConverter),
+
+            typeof(global::Deepgram.Realtime.JsonConverters.SpeakV2SpeakV2SpeechInterruptedTypeNullableJsonConverter),
+
             typeof(global::Deepgram.Realtime.JsonConverters.SpeakV2SpeakV2FlushedTypeJsonConverter),
 
             typeof(global::Deepgram.Realtime.JsonConverters.SpeakV2SpeakV2FlushedTypeNullableJsonConverter),
@@ -524,6 +536,22 @@ namespace Deepgram.Realtime
             typeof(global::Deepgram.Realtime.JsonConverters.SpeakV2SpeakV2SessionMetadataTypeJsonConverter),
 
             typeof(global::Deepgram.Realtime.JsonConverters.SpeakV2SpeakV2SessionMetadataTypeNullableJsonConverter),
+
+            typeof(global::Deepgram.Realtime.JsonConverters.SpeakV2SpeakV2ConfigureSuccessTypeJsonConverter),
+
+            typeof(global::Deepgram.Realtime.JsonConverters.SpeakV2SpeakV2ConfigureSuccessTypeNullableJsonConverter),
+
+            typeof(global::Deepgram.Realtime.JsonConverters.ChannelsSpeakV2MessagesSpeakV2ConfigureFailureCodeJsonConverter),
+
+            typeof(global::Deepgram.Realtime.JsonConverters.ChannelsSpeakV2MessagesSpeakV2ConfigureFailureCodeNullableJsonConverter),
+
+            typeof(global::Deepgram.Realtime.JsonConverters.ChannelsSpeakV2MessagesSpeakV2ConfigureFailureFieldJsonConverter),
+
+            typeof(global::Deepgram.Realtime.JsonConverters.ChannelsSpeakV2MessagesSpeakV2ConfigureFailureFieldNullableJsonConverter),
+
+            typeof(global::Deepgram.Realtime.JsonConverters.SpeakV2SpeakV2ConfigureFailureTypeJsonConverter),
+
+            typeof(global::Deepgram.Realtime.JsonConverters.SpeakV2SpeakV2ConfigureFailureTypeNullableJsonConverter),
 
             typeof(global::Deepgram.Realtime.JsonConverters.SpeakV2SpeakV2WarningTypeJsonConverter),
 
@@ -544,6 +572,18 @@ namespace Deepgram.Realtime
             typeof(global::Deepgram.Realtime.JsonConverters.SpeakV2SpeakV2FlushTypeJsonConverter),
 
             typeof(global::Deepgram.Realtime.JsonConverters.SpeakV2SpeakV2FlushTypeNullableJsonConverter),
+
+            typeof(global::Deepgram.Realtime.JsonConverters.ChannelsSpeakV2MessagesSpeakV2InterruptPlaybackOffsetTypeJsonConverter),
+
+            typeof(global::Deepgram.Realtime.JsonConverters.ChannelsSpeakV2MessagesSpeakV2InterruptPlaybackOffsetTypeNullableJsonConverter),
+
+            typeof(global::Deepgram.Realtime.JsonConverters.SpeakV2SpeakV2InterruptTypeJsonConverter),
+
+            typeof(global::Deepgram.Realtime.JsonConverters.SpeakV2SpeakV2InterruptTypeNullableJsonConverter),
+
+            typeof(global::Deepgram.Realtime.JsonConverters.SpeakV2SpeakV2ConfigureTypeJsonConverter),
+
+            typeof(global::Deepgram.Realtime.JsonConverters.SpeakV2SpeakV2ConfigureTypeNullableJsonConverter),
 
             typeof(global::Deepgram.Realtime.JsonConverters.SpeakV2SpeakV2CloseTypeJsonConverter),
 
@@ -873,6 +913,8 @@ namespace Deepgram.Realtime
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Deepgram.Realtime.SpeakV1SpeakV1Close))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Deepgram.Realtime.SpeakV2Encoding), TypeInfoPropertyName = "SpeakV2Encoding2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Deepgram.Realtime.SpeakV2SampleRate), TypeInfoPropertyName = "SpeakV2SampleRate2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Deepgram.Realtime.SpeakV2Speed), TypeInfoPropertyName = "SpeakV2Speed2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Deepgram.Realtime.SpeakV2Expressivity), TypeInfoPropertyName = "SpeakV2Expressivity2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Deepgram.Realtime.SpeakV2MipOptOut))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Deepgram.Realtime.SpeakV2Tag))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Deepgram.Realtime.SpeakV2SpeakV2Connected))]
@@ -882,10 +924,21 @@ namespace Deepgram.Realtime
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Deepgram.Realtime.ChannelsSpeakV2MessagesSpeakV2SpeechMetadataControlsApplied))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Deepgram.Realtime.SpeakV2SpeakV2SpeechMetadata))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Deepgram.Realtime.SpeakV2SpeakV2SpeechMetadataType), TypeInfoPropertyName = "SpeakV2SpeakV2SpeechMetadataType2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Deepgram.Realtime.ChannelsSpeakV2MessagesSpeakV2SpeechInterruptedMetadataControlsApplied))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Deepgram.Realtime.ChannelsSpeakV2MessagesSpeakV2SpeechInterruptedMetadata))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Deepgram.Realtime.SpeakV2SpeakV2SpeechInterrupted))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Deepgram.Realtime.SpeakV2SpeakV2SpeechInterruptedType), TypeInfoPropertyName = "SpeakV2SpeakV2SpeechInterruptedType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Deepgram.Realtime.SpeakV2SpeakV2Flushed))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Deepgram.Realtime.SpeakV2SpeakV2FlushedType), TypeInfoPropertyName = "SpeakV2SpeakV2FlushedType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Deepgram.Realtime.SpeakV2SpeakV2SessionMetadata))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Deepgram.Realtime.SpeakV2SpeakV2SessionMetadataType), TypeInfoPropertyName = "SpeakV2SpeakV2SessionMetadataType2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Deepgram.Realtime.ChannelsSpeakV2MessagesSpeakV2ConfigureSuccessApplied))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Deepgram.Realtime.SpeakV2SpeakV2ConfigureSuccess))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Deepgram.Realtime.SpeakV2SpeakV2ConfigureSuccessType), TypeInfoPropertyName = "SpeakV2SpeakV2ConfigureSuccessType2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Deepgram.Realtime.ChannelsSpeakV2MessagesSpeakV2ConfigureFailureCode), TypeInfoPropertyName = "ChannelsSpeakV2MessagesSpeakV2ConfigureFailureCode2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Deepgram.Realtime.ChannelsSpeakV2MessagesSpeakV2ConfigureFailureField), TypeInfoPropertyName = "ChannelsSpeakV2MessagesSpeakV2ConfigureFailureField2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Deepgram.Realtime.SpeakV2SpeakV2ConfigureFailure))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Deepgram.Realtime.SpeakV2SpeakV2ConfigureFailureType), TypeInfoPropertyName = "SpeakV2SpeakV2ConfigureFailureType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Deepgram.Realtime.SpeakV2SpeakV2Warning))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Deepgram.Realtime.SpeakV2SpeakV2WarningType), TypeInfoPropertyName = "SpeakV2SpeakV2WarningType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Deepgram.Realtime.ChannelsSpeakV2MessagesSpeakV2ErrorCode), TypeInfoPropertyName = "ChannelsSpeakV2MessagesSpeakV2ErrorCode2")]
@@ -895,6 +948,12 @@ namespace Deepgram.Realtime
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Deepgram.Realtime.SpeakV2SpeakV2SpeakType), TypeInfoPropertyName = "SpeakV2SpeakV2SpeakType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Deepgram.Realtime.SpeakV2SpeakV2Flush))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Deepgram.Realtime.SpeakV2SpeakV2FlushType), TypeInfoPropertyName = "SpeakV2SpeakV2FlushType2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Deepgram.Realtime.ChannelsSpeakV2MessagesSpeakV2InterruptPlaybackOffset))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Deepgram.Realtime.ChannelsSpeakV2MessagesSpeakV2InterruptPlaybackOffsetType), TypeInfoPropertyName = "ChannelsSpeakV2MessagesSpeakV2InterruptPlaybackOffsetType2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Deepgram.Realtime.SpeakV2SpeakV2Interrupt))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Deepgram.Realtime.SpeakV2SpeakV2InterruptType), TypeInfoPropertyName = "SpeakV2SpeakV2InterruptType2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Deepgram.Realtime.SpeakV2SpeakV2Configure))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Deepgram.Realtime.SpeakV2SpeakV2ConfigureType), TypeInfoPropertyName = "SpeakV2SpeakV2ConfigureType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Deepgram.Realtime.SpeakV2SpeakV2Close))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Deepgram.Realtime.SpeakV2SpeakV2CloseType), TypeInfoPropertyName = "SpeakV2SpeakV2CloseType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Deepgram.Realtime.AgentV1ServerEvent), TypeInfoPropertyName = "AgentV1ServerEvent2")]

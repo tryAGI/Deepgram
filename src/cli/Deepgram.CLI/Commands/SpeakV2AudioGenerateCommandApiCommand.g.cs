@@ -47,6 +47,12 @@ internal static partial class SpeakV2AudioGenerateCommandApiCommand
         Description = @"Encoding allows you to specify the expected encoding of your audio output",
     };
 
+    private static Option<global::Deepgram.V2SpeakPostParametersExpressivity?> Expressivity { get; } = new(
+        name: @"--expressivity")
+    {
+        Description = @"Expressive range of the generated speech, on a calm-to-animated axis. Accepted values: `-2`, `-1`, `0`, `1`, `2`. `0` (the default) is the voice's tuned delivery and the production-validated setting; negative values are calmer and more measured, positive values more animated. Supported on all Flux voices; applies to the whole request. Beta: behavior may change in future model versions, and non-default values increase the risk of hallucinations and pronunciation errors; audition before shipping. An invalid value is rejected with a `400` — `EXPRESSIVITY_OUT_OF_RANGE` for a value outside the range, `EXPRESSIVITY_INCREMENT_INVALID` for a fractional value. See [Expressivity](/docs/tts-expressivity).",
+    };
+
     private static Option<string> Model { get; } = new(
         name: @"--model")
     {
@@ -60,6 +66,12 @@ internal static partial class SpeakV2AudioGenerateCommandApiCommand
         Description = @"Sample Rate specifies the sample rate for the output audio. Based on the encoding, different sample rates are supported. For some encodings, the sample rate is not configurable",
     };
 
+    private static Option<global::Deepgram.V2SpeakPostParametersSpeed?> Speed { get; } = new(
+        name: @"--speed")
+    {
+        Description = @"Speaking rate multiplier that adjusts the pace of generated speech while preserving natural prosody and voice quality. Accepted values run `0.85` to `1.15` in `0.05` increments. Not yet supported in all languages.",
+    };
+
     private static Option<global::Deepgram.V2SpeakPostParametersPriority?> Priority { get; } = new(
         name: @"--priority")
     {
@@ -69,7 +81,7 @@ internal static partial class SpeakV2AudioGenerateCommandApiCommand
     private static Option<string> Text { get; } = new(
         name: @"--text")
     {
-        Description = @"The text content to be converted to speech. The server normalizes and preprocesses the text (e.g. stripping inline controls) before synthesis.",
+        Description = @"The text content to be converted to speech. The server normalizes and preprocesses the text before synthesis. Inline pause and pronunciation controls are not yet applied; they are stripped from the text before synthesis.",
         Required = true,
     };
 
@@ -104,8 +116,10 @@ Synthesize a complete block of text into a single audio response using Deepgram'
                         command.Options.Add(BitRate);
                         command.Options.Add(Container);
                         command.Options.Add(Encoding);
+                        command.Options.Add(Expressivity);
                         command.Options.Add(Model);
                         command.Options.Add(SampleRate);
+                        command.Options.Add(Speed);
                         command.Options.Add(Priority);
                         command.Options.Add(Text);
 
@@ -120,8 +134,10 @@ Synthesize a complete block of text into a single audio response using Deepgram'
                         var bitRate = parseResult.GetValue(BitRate);
                         var container = parseResult.GetValue(Container);
                         var encoding = parseResult.GetValue(Encoding);
+                        var expressivity = parseResult.GetValue(Expressivity);
                         var model = parseResult.GetRequiredValue(Model);
                         var sampleRate = parseResult.GetValue(SampleRate);
+                        var speed = parseResult.GetValue(Speed);
                         var priority = parseResult.GetValue(Priority);
                         var text = parseResult.GetRequiredValue(Text);
                 using var client = await CliRuntime.CreateClientAsync(parseResult, cancellationToken).ConfigureAwait(false);
@@ -135,8 +151,10 @@ Synthesize a complete block of text into a single audio response using Deepgram'
                                     bitRate: bitRate,
                                     container: container,
                                     encoding: encoding,
+                                    expressivity: expressivity,
                                     model: model,
                                     sampleRate: sampleRate,
+                                    speed: speed,
                                     priority: priority,
                                     text: text,
                                     cancellationToken: cancellationToken).ConfigureAwait(false);

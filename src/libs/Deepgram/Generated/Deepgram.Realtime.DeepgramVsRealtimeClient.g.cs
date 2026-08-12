@@ -283,6 +283,10 @@ namespace Deepgram.Realtime
         /// </summary>
         public event global::System.EventHandler<AutoSDKWebSocketMessageEventArgs<global::Deepgram.Realtime.SpeakV2SpeakV2SpeechMetadata>>? SpeakV2SpeechMetadataReceived;
         /// <summary>
+        /// Raised after a SpeakV2SpeechInterrupted message is deserialized.
+        /// </summary>
+        public event global::System.EventHandler<AutoSDKWebSocketMessageEventArgs<global::Deepgram.Realtime.SpeakV2SpeakV2SpeechInterrupted>>? SpeakV2SpeechInterruptedReceived;
+        /// <summary>
         /// Raised after a SpeakV2Flushed message is deserialized.
         /// </summary>
         public event global::System.EventHandler<AutoSDKWebSocketMessageEventArgs<global::Deepgram.Realtime.SpeakV2SpeakV2Flushed>>? SpeakV2FlushedReceived;
@@ -290,6 +294,14 @@ namespace Deepgram.Realtime
         /// Raised after a SpeakV2SessionMetadata message is deserialized.
         /// </summary>
         public event global::System.EventHandler<AutoSDKWebSocketMessageEventArgs<global::Deepgram.Realtime.SpeakV2SpeakV2SessionMetadata>>? SpeakV2SessionMetadataReceived;
+        /// <summary>
+        /// Raised after a SpeakV2ConfigureSuccess message is deserialized.
+        /// </summary>
+        public event global::System.EventHandler<AutoSDKWebSocketMessageEventArgs<global::Deepgram.Realtime.SpeakV2SpeakV2ConfigureSuccess>>? SpeakV2ConfigureSuccessReceived;
+        /// <summary>
+        /// Raised after a SpeakV2ConfigureFailure message is deserialized.
+        /// </summary>
+        public event global::System.EventHandler<AutoSDKWebSocketMessageEventArgs<global::Deepgram.Realtime.SpeakV2SpeakV2ConfigureFailure>>? SpeakV2ConfigureFailureReceived;
         /// <summary>
         /// Raised after a SpeakV2Warning message is deserialized.
         /// </summary>
@@ -535,9 +547,11 @@ namespace Deepgram.Realtime
         /// Connects to the WebSocket server with typed connection parameters.
         /// </summary>
         /// <param name="encoding">Encoding of the raw output audio. The streaming WebSocket emits raw (non-containerized) audio, so only streaming-compatible encodings are supported. Compressed and containerized encodings (`mp3`, `opus`, `flac`, `aac`) are available on the batch REST transport only.</param>
+        /// <param name="expressivity">Expressive range of the generated speech, on a calm-to-animated axis. Accepted values: `-2`, `-1`, `0`, `1`, `2`. `0` (the default) is the voice's tuned delivery and the production-validated setting; negative values are calmer and more measured, positive values more animated. Supported on all Flux voices. Fixed for the connection — not settable via `Configure`. Beta: behavior may change in future model versions, and non-default values increase the risk of hallucinations and pronunciation errors; audition before shipping. An invalid value fails the connection with a `400` — `EXPRESSIVITY_OUT_OF_RANGE` for a value outside the range, `EXPRESSIVITY_INCREMENT_INVALID` for a fractional value. See [Expressivity](/docs/tts-expressivity).</param>
         /// <param name="mipOptOut">Any type</param>
         /// <param name="model">The Flux TTS model used to synthesize speech. Required on every connection. Model strings follow the format `flux-{voice}-{language}` (e.g. `flux-alexis-en`). An Aura model string is rejected on `/v2/speak`; use `/v1/speak` for Aura voices.</param>
         /// <param name="sampleRate">Output sample rate in Hz. With `linear16`, valid values are `8000`, `16000`, `24000`, `32000`, `44100`, and `48000`. With `mulaw` or `alaw`, valid values are `8000` and `16000`. Defaults to the model's native sample rate.</param>
+        /// <param name="speed">Speech-rate multiplier. `1.00` is the model's nominal rate; lower is slower. Accepted values: `0.85`, `0.90`, `0.95`, `1.00`, `1.05`, `1.10`, `1.15`. A value outside that range is rejected with `SPEED_OUT_OF_RANGE`; a value inside it but off the `0.05` increment with `SPEED_INCREMENT_INVALID`. Models and languages without runtime speed control reject any value with `SPEED_NOT_SUPPORTED`.</param>
         /// <param name="tag">Any type</param>
         /// <param name="uri">Optional WebSocket endpoint override.</param>
         /// <param name="additionalHeaders">Additional headers applied before connecting.</param>
@@ -547,9 +561,11 @@ namespace Deepgram.Realtime
         /// <param name="cancellationToken">A cancellation token.</param>
         public async global::System.Threading.Tasks.Task ConnectAsync(
             global::Deepgram.Realtime.SpeakV2Encoding? encoding = default,
+            global::Deepgram.Realtime.SpeakV2Expressivity? expressivity = default,
             global::Deepgram.Realtime.SpeakV2MipOptOut? mipOptOut = default,
             string? model = default,
             global::Deepgram.Realtime.SpeakV2SampleRate? sampleRate = default,
+            global::Deepgram.Realtime.SpeakV2Speed? speed = default,
             global::Deepgram.Realtime.SpeakV2Tag? tag = default,
             global::System.Uri? uri = null,
             global::System.Collections.Generic.IDictionary<string, string>? additionalHeaders = null,
@@ -570,9 +586,11 @@ namespace Deepgram.Realtime
                     path: __baseUrl);
                 __pathBuilder
                 .AddOptionalParameter("encoding", encoding?.ToValueString())
+                .AddOptionalParameter("expressivity", expressivity?.ToValueString())
                 .AddOptionalParameter("mip_opt_out", mipOptOut?.ToString())
                 .AddOptionalParameter("model", model)
                 .AddOptionalParameter("sample_rate", sampleRate?.ToValueString())
+                .AddOptionalParameter("speed", speed?.ToValueString())
                 .AddOptionalParameter("tag", tag?.ToString())
                 ;
 
