@@ -285,6 +285,10 @@ namespace Deepgram
 
             typeof(global::Deepgram.JsonConverters.V2SpeakPostParametersEncoding6NullableJsonConverter),
 
+            typeof(global::Deepgram.JsonConverters.V2SpeakPostParametersExpressivityJsonConverter),
+
+            typeof(global::Deepgram.JsonConverters.V2SpeakPostParametersExpressivityNullableJsonConverter),
+
             typeof(global::Deepgram.JsonConverters.V2SpeakPostParametersSampleRate0JsonConverter),
 
             typeof(global::Deepgram.JsonConverters.V2SpeakPostParametersSampleRate0NullableJsonConverter),
@@ -300,6 +304,10 @@ namespace Deepgram
             typeof(global::Deepgram.JsonConverters.V2SpeakPostParametersSampleRate3JsonConverter),
 
             typeof(global::Deepgram.JsonConverters.V2SpeakPostParametersSampleRate3NullableJsonConverter),
+
+            typeof(global::Deepgram.JsonConverters.V2SpeakPostParametersSpeedJsonConverter),
+
+            typeof(global::Deepgram.JsonConverters.V2SpeakPostParametersSpeedNullableJsonConverter),
 
             typeof(global::Deepgram.JsonConverters.V2SpeakPostParametersPriorityJsonConverter),
 
@@ -660,11 +668,13 @@ namespace Deepgram
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Deepgram.V2SpeakPostParametersEncoding5), TypeInfoPropertyName = "V2SpeakPostParametersEncoding52")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Deepgram.V2SpeakPostParametersEncoding6), TypeInfoPropertyName = "V2SpeakPostParametersEncoding62")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Deepgram.V2SpeakPostParametersEncoding), TypeInfoPropertyName = "V2SpeakPostParametersEncoding2_3")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Deepgram.V2SpeakPostParametersExpressivity), TypeInfoPropertyName = "V2SpeakPostParametersExpressivity2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Deepgram.V2SpeakPostParametersSampleRate0), TypeInfoPropertyName = "V2SpeakPostParametersSampleRate02")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Deepgram.V2SpeakPostParametersSampleRate1), TypeInfoPropertyName = "V2SpeakPostParametersSampleRate12")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Deepgram.V2SpeakPostParametersSampleRate2), TypeInfoPropertyName = "V2SpeakPostParametersSampleRate22")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Deepgram.V2SpeakPostParametersSampleRate3), TypeInfoPropertyName = "V2SpeakPostParametersSampleRate32")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Deepgram.V2SpeakPostParametersSampleRate), TypeInfoPropertyName = "V2SpeakPostParametersSampleRate2_3")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Deepgram.V2SpeakPostParametersSpeed), TypeInfoPropertyName = "V2SpeakPostParametersSpeed2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Deepgram.V2SpeakPostParametersPriority), TypeInfoPropertyName = "V2SpeakPostParametersPriority2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Deepgram.SpeakV2Request))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Deepgram.SpeakV2AcceptedResponse))]

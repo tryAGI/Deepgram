@@ -10,7 +10,7 @@ namespace Deepgram.Realtime
     public readonly partial struct SpeakSettingsV1Provider : global::System.IEquatable<SpeakSettingsV1Provider>
     {
         /// <summary>
-        /// Deepgram text-to-speech provider. Aura models use version v1 (default); Flux TTS uses version v2 and a flux-* model. Flux TTS is in Early Access — the Flux TTS-specific API surface and voice catalog may change before general availability.
+        /// Deepgram text-to-speech provider. Aura models use version v1 (default); Flux TTS uses version v2 and a flux-* model. Flux TTS is the default when agent.speak is omitted, using the flux-kit-en voice.
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Deepgram.Realtime.DeepgramSpeakProvider? DeepgramSpeakProvider { get; init; }

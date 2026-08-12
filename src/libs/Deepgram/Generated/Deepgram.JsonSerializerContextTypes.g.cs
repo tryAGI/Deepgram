@@ -1180,43 +1180,51 @@ namespace Deepgram
         /// <summary>
         /// 
         /// </summary>
-        public global::Deepgram.V2SpeakPostParametersSampleRate0? Type288 { get; set; }
+        public global::Deepgram.V2SpeakPostParametersExpressivity? Type288 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Deepgram.V2SpeakPostParametersSampleRate1? Type289 { get; set; }
+        public global::Deepgram.V2SpeakPostParametersSampleRate0? Type289 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Deepgram.V2SpeakPostParametersSampleRate2? Type290 { get; set; }
+        public global::Deepgram.V2SpeakPostParametersSampleRate1? Type290 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Deepgram.V2SpeakPostParametersSampleRate3? Type291 { get; set; }
+        public global::Deepgram.V2SpeakPostParametersSampleRate2? Type291 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Deepgram.V2SpeakPostParametersSampleRate? Type292 { get; set; }
+        public global::Deepgram.V2SpeakPostParametersSampleRate3? Type292 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Deepgram.V2SpeakPostParametersPriority? Type293 { get; set; }
+        public global::Deepgram.V2SpeakPostParametersSampleRate? Type293 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Deepgram.SpeakV2Request? Type294 { get; set; }
+        public global::Deepgram.V2SpeakPostParametersSpeed? Type294 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Deepgram.SpeakV2AcceptedResponse? Type295 { get; set; }
+        public global::Deepgram.V2SpeakPostParametersPriority? Type295 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Deepgram.V1ProjectsProjectIdBillingBreakdownGetParametersGroupingSchemaItems>? Type296 { get; set; }
+        public global::Deepgram.SpeakV2Request? Type296 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Deepgram.V1ProjectsProjectIdSelfHostedDistributionCredentialsPostParametersScopesSchemaItems>? Type297 { get; set; }
+        public global::Deepgram.SpeakV2AcceptedResponse? Type297 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::System.Collections.Generic.IList<global::Deepgram.V1ProjectsProjectIdBillingBreakdownGetParametersGroupingSchemaItems>? Type298 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::System.Collections.Generic.IList<global::Deepgram.V1ProjectsProjectIdSelfHostedDistributionCredentialsPostParametersScopesSchemaItems>? Type299 { get; set; }
 
         /// <summary>
         /// 

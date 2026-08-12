@@ -4,19 +4,26 @@
 namespace Deepgram.Realtime
 {
     /// <summary>
-    /// Controls applied during the turn. Inline pronunciation and pause controls are not available during Early Access, so every count is currently `0`.
+    /// Counts of the inline controls the server acted on during the turn. Inline pause and pronunciation controls are not applied at launch — support is coming soon — so every count is currently `0`.
     /// </summary>
     public sealed partial class ChannelsSpeakV2MessagesSpeakV2SpeechMetadataControlsApplied
     {
         /// <summary>
-        /// Pronunciation overrides successfully applied. Mirrors the Aura-2 `dg-pronunciations-applied` REST header. Always `0` during Early Access.
+        /// Pronunciation overrides successfully applied. Mirrors the Aura-2 `dg-pronunciations-applied` REST header. Currently always `0`.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("pronunciations_applied")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required int PronunciationsApplied { get; set; }
 
         /// <summary>
-        /// Pronunciation entries that triggered a warning (invalid IPA, word too long). Mirrors the Aura-2 `dg-pronunciation-warnings` REST header. Always `0` during Early Access.
+        /// Pause (break) controls successfully applied. Mirrors the Aura-2 `dg-breaks-applied` REST header. Currently always `0`.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("breaks_applied")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required int BreaksApplied { get; set; }
+
+        /// <summary>
+        /// Pronunciation entries that triggered a warning (invalid IPA, word too long). Mirrors the Aura-2 `dg-pronunciation-warnings` REST header. Currently always `0`.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("pronunciation_warnings")]
         [global::System.Text.Json.Serialization.JsonRequired]
@@ -32,19 +39,24 @@ namespace Deepgram.Realtime
         /// Initializes a new instance of the <see cref="ChannelsSpeakV2MessagesSpeakV2SpeechMetadataControlsApplied" /> class.
         /// </summary>
         /// <param name="pronunciationsApplied">
-        /// Pronunciation overrides successfully applied. Mirrors the Aura-2 `dg-pronunciations-applied` REST header. Always `0` during Early Access.
+        /// Pronunciation overrides successfully applied. Mirrors the Aura-2 `dg-pronunciations-applied` REST header. Currently always `0`.
+        /// </param>
+        /// <param name="breaksApplied">
+        /// Pause (break) controls successfully applied. Mirrors the Aura-2 `dg-breaks-applied` REST header. Currently always `0`.
         /// </param>
         /// <param name="pronunciationWarnings">
-        /// Pronunciation entries that triggered a warning (invalid IPA, word too long). Mirrors the Aura-2 `dg-pronunciation-warnings` REST header. Always `0` during Early Access.
+        /// Pronunciation entries that triggered a warning (invalid IPA, word too long). Mirrors the Aura-2 `dg-pronunciation-warnings` REST header. Currently always `0`.
         /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public ChannelsSpeakV2MessagesSpeakV2SpeechMetadataControlsApplied(
             int pronunciationsApplied,
+            int breaksApplied,
             int pronunciationWarnings)
         {
             this.PronunciationsApplied = pronunciationsApplied;
+            this.BreaksApplied = breaksApplied;
             this.PronunciationWarnings = pronunciationWarnings;
         }
 

@@ -16,7 +16,7 @@ namespace Deepgram.Realtime
         public global::Deepgram.Realtime.SpeakV2SpeakV2SpeakType Type { get; set; }
 
         /// <summary>
-        /// The input text to synthesize
+        /// The input text to synthesize. Inline pause and pronunciation controls are not yet applied; they are stripped from the text before synthesis.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("text")]
         [global::System.Text.Json.Serialization.JsonRequired]
@@ -32,7 +32,7 @@ namespace Deepgram.Realtime
         /// Initializes a new instance of the <see cref="SpeakV2SpeakV2Speak" /> class.
         /// </summary>
         /// <param name="text">
-        /// The input text to synthesize
+        /// The input text to synthesize. Inline pause and pronunciation controls are not yet applied; they are stripped from the text before synthesis.
         /// </param>
         /// <param name="type">
         /// Message type identifier

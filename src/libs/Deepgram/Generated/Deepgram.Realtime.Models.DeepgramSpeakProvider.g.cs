@@ -4,7 +4,7 @@
 namespace Deepgram.Realtime
 {
     /// <summary>
-    /// Deepgram text-to-speech provider. Aura models use version v1 (default); Flux TTS uses version v2 and a flux-* model. Flux TTS is in Early Access — the Flux TTS-specific API surface and voice catalog may change before general availability.
+    /// Deepgram text-to-speech provider. Aura models use version v1 (default); Flux TTS uses version v2 and a flux-* model. Flux TTS is the default when agent.speak is omitted, using the flux-kit-en voice.
     /// </summary>
     public sealed partial class DeepgramSpeakProvider
     {
@@ -16,14 +16,14 @@ namespace Deepgram.Realtime
         public global::Deepgram.Realtime.DeepgramSpeakProviderType Type { get; set; }
 
         /// <summary>
-        /// The Deepgram text-to-speech model family. Accepted values: `v1` (Aura, the default) and `v2` (Flux TTS, Early Access). Use `v1` with an aura-* model and `v2` with a flux-* model. Defaults to `v1` when omitted.<br/>
+        /// The Deepgram text-to-speech model family. Accepted values: `v1` (Aura, the default) and `v2` (Flux TTS). Use `v1` with an aura-* model and `v2` with a flux-* model. Defaults to `v1` when omitted.<br/>
         /// Default Value: v1
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("version")]
         public string? Version { get; set; }
 
         /// <summary>
-        /// Deepgram TTS model. Aura models (version v1) use the aura-* voices; Flux TTS (version v2, Early Access) uses the flux-{voice}-{language} voices (e.g. flux-alexis-en).
+        /// Deepgram TTS model. Aura models (version v1) use the aura-* voices; Flux TTS (version v2) uses the flux-{voice}-{language} voices (e.g. flux-alexis-en). Defaults to flux-kit-en when agent.speak is omitted.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("model")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Deepgram.Realtime.JsonConverters.DeepgramSpeakProviderModelJsonConverter))]
@@ -31,7 +31,7 @@ namespace Deepgram.Realtime
         public required global::Deepgram.Realtime.DeepgramSpeakProviderModel Model { get; set; }
 
         /// <summary>
-        /// Speaking rate multiplier that adjusts the pace of generated speech while preserving natural prosody and voice quality. Not yet supported in all languages.<br/>
+        /// Speaking rate multiplier that adjusts the pace of generated speech while preserving natural prosody and voice quality. Aura (version v1) accepts any value from 0.7 to 1.5. Flux TTS (version v2) accepts only 0.85, 0.9, 0.95, 1.0, 1.05, 1.1 and 1.15; another value ends the session with FAILED_TO_SPEAK. Not yet supported in all languages.<br/>
         /// Default Value: 1
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("speed")]
@@ -47,15 +47,15 @@ namespace Deepgram.Realtime
         /// Initializes a new instance of the <see cref="DeepgramSpeakProvider" /> class.
         /// </summary>
         /// <param name="model">
-        /// Deepgram TTS model. Aura models (version v1) use the aura-* voices; Flux TTS (version v2, Early Access) uses the flux-{voice}-{language} voices (e.g. flux-alexis-en).
+        /// Deepgram TTS model. Aura models (version v1) use the aura-* voices; Flux TTS (version v2) uses the flux-{voice}-{language} voices (e.g. flux-alexis-en). Defaults to flux-kit-en when agent.speak is omitted.
         /// </param>
         /// <param name="type"></param>
         /// <param name="version">
-        /// The Deepgram text-to-speech model family. Accepted values: `v1` (Aura, the default) and `v2` (Flux TTS, Early Access). Use `v1` with an aura-* model and `v2` with a flux-* model. Defaults to `v1` when omitted.<br/>
+        /// The Deepgram text-to-speech model family. Accepted values: `v1` (Aura, the default) and `v2` (Flux TTS). Use `v1` with an aura-* model and `v2` with a flux-* model. Defaults to `v1` when omitted.<br/>
         /// Default Value: v1
         /// </param>
         /// <param name="speed">
-        /// Speaking rate multiplier that adjusts the pace of generated speech while preserving natural prosody and voice quality. Not yet supported in all languages.<br/>
+        /// Speaking rate multiplier that adjusts the pace of generated speech while preserving natural prosody and voice quality. Aura (version v1) accepts any value from 0.7 to 1.5. Flux TTS (version v2) accepts only 0.85, 0.9, 0.95, 1.0, 1.05, 1.1 and 1.15; another value ends the session with FAILED_TO_SPEAK. Not yet supported in all languages.<br/>
         /// Default Value: 1
         /// </param>
 #if NET7_0_OR_GREATER

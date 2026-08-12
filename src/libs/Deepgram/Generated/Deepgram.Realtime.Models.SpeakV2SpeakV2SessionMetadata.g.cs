@@ -16,7 +16,7 @@ namespace Deepgram.Realtime
         public global::Deepgram.Realtime.SpeakV2SpeakV2SessionMetadataType Type { get; set; }
 
         /// <summary>
-        /// Cumulative audio duration produced across the session, in milliseconds
+        /// Cumulative audio duration produced across the session, in milliseconds. An `Interrupt` rebases this onto the audio the client actually played.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("total_audio_duration_ms")]
         [global::System.Text.Json.Serialization.JsonRequired]
@@ -46,7 +46,7 @@ namespace Deepgram.Realtime
         /// Initializes a new instance of the <see cref="SpeakV2SpeakV2SessionMetadata" /> class.
         /// </summary>
         /// <param name="totalAudioDurationMs">
-        /// Cumulative audio duration produced across the session, in milliseconds
+        /// Cumulative audio duration produced across the session, in milliseconds. An `Interrupt` rebases this onto the audio the client actually played.
         /// </param>
         /// <param name="totalInputCharacterCount">
         /// Cumulative raw input character count across the session

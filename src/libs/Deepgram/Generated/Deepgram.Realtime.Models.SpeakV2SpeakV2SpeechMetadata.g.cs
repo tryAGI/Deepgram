@@ -44,7 +44,7 @@ namespace Deepgram.Realtime
         public required int BillableCharacterCount { get; set; }
 
         /// <summary>
-        /// Controls applied during the turn. Inline pronunciation and pause controls are not available during Early Access, so every count is currently `0`.
+        /// Counts of the inline controls the server acted on during the turn. Inline pause and pronunciation controls are not applied at launch — support is coming soon — so every count is currently `0`.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("controls_applied")]
         [global::System.Text.Json.Serialization.JsonRequired]
@@ -72,7 +72,7 @@ namespace Deepgram.Realtime
         /// Billable character count for this turn — the input character count with stripped control characters removed. Always less than or equal to `input_character_count`.
         /// </param>
         /// <param name="controlsApplied">
-        /// Controls applied during the turn. Inline pronunciation and pause controls are not available during Early Access, so every count is currently `0`.
+        /// Counts of the inline controls the server acted on during the turn. Inline pause and pronunciation controls are not applied at launch — support is coming soon — so every count is currently `0`.
         /// </param>
         /// <param name="type">
         /// Message type identifier

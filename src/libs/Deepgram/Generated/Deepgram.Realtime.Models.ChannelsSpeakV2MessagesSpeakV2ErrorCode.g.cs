@@ -19,6 +19,10 @@ namespace Deepgram.Realtime
         /// <summary>
         /// 
         /// </summary>
+        Data0002,
+        /// <summary>
+        /// 
+        /// </summary>
         Message0000,
         /// <summary>
         /// 
@@ -56,6 +60,7 @@ namespace Deepgram.Realtime
             {
                 ChannelsSpeakV2MessagesSpeakV2ErrorCode.Big0000 => "BIG-0000",
                 ChannelsSpeakV2MessagesSpeakV2ErrorCode.Data0000 => "DATA-0000",
+                ChannelsSpeakV2MessagesSpeakV2ErrorCode.Data0002 => "DATA-0002",
                 ChannelsSpeakV2MessagesSpeakV2ErrorCode.Message0000 => "MESSAGE-0000",
                 ChannelsSpeakV2MessagesSpeakV2ErrorCode.Net0000 => "NET-0000",
                 ChannelsSpeakV2MessagesSpeakV2ErrorCode.Net0001 => "NET-0001",
@@ -74,6 +79,7 @@ namespace Deepgram.Realtime
             {
                 "BIG-0000" => ChannelsSpeakV2MessagesSpeakV2ErrorCode.Big0000,
                 "DATA-0000" => ChannelsSpeakV2MessagesSpeakV2ErrorCode.Data0000,
+                "DATA-0002" => ChannelsSpeakV2MessagesSpeakV2ErrorCode.Data0002,
                 "MESSAGE-0000" => ChannelsSpeakV2MessagesSpeakV2ErrorCode.Message0000,
                 "NET-0000" => ChannelsSpeakV2MessagesSpeakV2ErrorCode.Net0000,
                 "NET-0001" => ChannelsSpeakV2MessagesSpeakV2ErrorCode.Net0001,
