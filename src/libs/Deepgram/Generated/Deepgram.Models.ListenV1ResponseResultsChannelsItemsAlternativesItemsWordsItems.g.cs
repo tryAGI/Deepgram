@@ -33,6 +33,18 @@ namespace Deepgram
         public double? Confidence { get; set; }
 
         /// <summary>
+        /// The speaker of the word, present when diarization is enabled
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("speaker")]
+        public int? Speaker { get; set; }
+
+        /// <summary>
+        /// Confidence in the speaker assignment. Returned only for pre-recorded diarization; not available for streaming
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("speaker_confidence")]
+        public double? SpeakerConfidence { get; set; }
+
+        /// <summary>
         /// Additional properties that are not explicitly defined in the schema
         /// </summary>
         [global::System.Text.Json.Serialization.JsonExtensionData]
@@ -45,6 +57,12 @@ namespace Deepgram
         /// <param name="start"></param>
         /// <param name="end"></param>
         /// <param name="confidence"></param>
+        /// <param name="speaker">
+        /// The speaker of the word, present when diarization is enabled
+        /// </param>
+        /// <param name="speakerConfidence">
+        /// Confidence in the speaker assignment. Returned only for pre-recorded diarization; not available for streaming
+        /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -52,12 +70,16 @@ namespace Deepgram
             string? word,
             double? start,
             double? end,
-            double? confidence)
+            double? confidence,
+            int? speaker,
+            double? speakerConfidence)
         {
             this.Word = word;
             this.Start = start;
             this.End = end;
             this.Confidence = confidence;
+            this.Speaker = speaker;
+            this.SpeakerConfidence = speakerConfidence;
         }
 
         /// <summary>
