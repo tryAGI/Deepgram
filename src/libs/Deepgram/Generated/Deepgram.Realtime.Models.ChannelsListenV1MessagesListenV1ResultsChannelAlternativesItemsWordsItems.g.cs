@@ -49,7 +49,7 @@ namespace Deepgram.Realtime
         public string? PunctuatedWord { get; set; }
 
         /// <summary>
-        /// The speaker of the word
+        /// The speaker of the word, present when diarization is enabled
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("speaker")]
         public int? Speaker { get; set; }
@@ -82,7 +82,7 @@ namespace Deepgram.Realtime
         /// The punctuated word of the word
         /// </param>
         /// <param name="speaker">
-        /// The speaker of the word
+        /// The speaker of the word, present when diarization is enabled
         /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
