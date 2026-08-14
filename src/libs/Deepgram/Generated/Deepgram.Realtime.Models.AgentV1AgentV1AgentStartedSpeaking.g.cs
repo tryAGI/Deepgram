@@ -20,21 +20,21 @@ namespace Deepgram.Realtime
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("total_latency")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required double TotalLatency { get; set; }
+        public required string TotalLatency { get; set; }
 
         /// <summary>
         /// The portion of total latency attributable to text-to-speech
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("tts_latency")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required double TtsLatency { get; set; }
+        public required string TtsLatency { get; set; }
 
         /// <summary>
         /// The portion of total latency attributable to text-to-text (usually an LLM)
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("ttt_latency")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required double TttLatency { get; set; }
+        public required string TttLatency { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -61,15 +61,15 @@ namespace Deepgram.Realtime
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public AgentV1AgentV1AgentStartedSpeaking(
-            double totalLatency,
-            double ttsLatency,
-            double tttLatency,
+            string totalLatency,
+            string ttsLatency,
+            string tttLatency,
             global::Deepgram.Realtime.AgentV1AgentV1AgentStartedSpeakingType type)
         {
             this.Type = type;
-            this.TotalLatency = totalLatency;
-            this.TtsLatency = ttsLatency;
-            this.TttLatency = tttLatency;
+            this.TotalLatency = totalLatency ?? throw new global::System.ArgumentNullException(nameof(totalLatency));
+            this.TtsLatency = ttsLatency ?? throw new global::System.ArgumentNullException(nameof(ttsLatency));
+            this.TttLatency = tttLatency ?? throw new global::System.ArgumentNullException(nameof(tttLatency));
         }
 
         /// <summary>

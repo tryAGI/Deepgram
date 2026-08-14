@@ -30,13 +30,13 @@ namespace Deepgram
         /// 
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("start")]
-        public double? Start { get; set; }
+        public string? Start { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("end")]
-        public double? End { get; set; }
+        public string? End { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -59,8 +59,8 @@ namespace Deepgram
             global::System.Collections.Generic.IList<global::Deepgram.ListenV1ResponseResultsChannelsItemsAlternativesItemsParagraphsParagraphsItemsSentencesItems>? sentences,
             int? speaker,
             int? numWords,
-            double? start,
-            double? end)
+            string? start,
+            string? end)
         {
             this.Sentences = sentences;
             this.Speaker = speaker;
