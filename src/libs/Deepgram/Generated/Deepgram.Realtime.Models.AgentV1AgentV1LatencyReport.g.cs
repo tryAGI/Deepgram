@@ -19,43 +19,43 @@ namespace Deepgram.Realtime
         /// Speech-to-text: time from audio received to transcript produced, in seconds
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("stt_latency")]
-        public double? SttLatency { get; set; }
+        public string? SttLatency { get; set; }
 
         /// <summary>
         /// Time to first token of any type (text, tool call, or thinking), in seconds
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("ttt_token_latency")]
-        public double? TttTokenLatency { get; set; }
+        public string? TttTokenLatency { get; set; }
 
         /// <summary>
         /// Time to first text token from the LLM, in seconds
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("ttt_text_latency")]
-        public double? TttTextLatency { get; set; }
+        public string? TttTextLatency { get; set; }
 
         /// <summary>
         /// Time to first tool-call token from the LLM, in seconds
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("ttt_tool_latency")]
-        public double? TttToolLatency { get; set; }
+        public string? TttToolLatency { get; set; }
 
         /// <summary>
         /// Time to first thinking token from the LLM, in seconds
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("ttt_thinking_latency")]
-        public double? TttThinkingLatency { get; set; }
+        public string? TttThinkingLatency { get; set; }
 
         /// <summary>
         /// Text-to-speech: time from first text token to first audio byte, in seconds
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("tts_latency")]
-        public double? TtsLatency { get; set; }
+        public string? TtsLatency { get; set; }
 
         /// <summary>
         /// End-to-end: time from user utterance end to first audio byte, in seconds
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("total_latency")]
-        public double? TotalLatency { get; set; }
+        public string? TotalLatency { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -95,13 +95,13 @@ namespace Deepgram.Realtime
 #endif
         public AgentV1AgentV1LatencyReport(
             global::Deepgram.Realtime.AgentV1AgentV1LatencyReportType type,
-            double? sttLatency,
-            double? tttTokenLatency,
-            double? tttTextLatency,
-            double? tttToolLatency,
-            double? tttThinkingLatency,
-            double? ttsLatency,
-            double? totalLatency)
+            string? sttLatency,
+            string? tttTokenLatency,
+            string? tttTextLatency,
+            string? tttToolLatency,
+            string? tttThinkingLatency,
+            string? ttsLatency,
+            string? totalLatency)
         {
             this.Type = type;
             this.SttLatency = sttLatency;
