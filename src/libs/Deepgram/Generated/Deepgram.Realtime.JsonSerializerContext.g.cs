@@ -213,6 +213,10 @@ namespace Deepgram.Realtime
 
             typeof(global::Deepgram.Realtime.JsonConverters.DeepgramSpeakProviderModelNullableJsonConverter),
 
+            typeof(global::Deepgram.Realtime.JsonConverters.DeepgramSpeakProviderExpressivityJsonConverter),
+
+            typeof(global::Deepgram.Realtime.JsonConverters.DeepgramSpeakProviderExpressivityNullableJsonConverter),
+
             typeof(global::Deepgram.Realtime.JsonConverters.DeepgramSpeakProviderTypeJsonConverter),
 
             typeof(global::Deepgram.Realtime.JsonConverters.DeepgramSpeakProviderTypeNullableJsonConverter),
@@ -752,6 +756,7 @@ namespace Deepgram.Realtime
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Deepgram.Realtime.ThinkSettingsV1>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Deepgram.Realtime.ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0Think), TypeInfoPropertyName = "ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0Think2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Deepgram.Realtime.DeepgramSpeakProviderModel), TypeInfoPropertyName = "DeepgramSpeakProviderModel2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Deepgram.Realtime.DeepgramSpeakProviderExpressivity), TypeInfoPropertyName = "DeepgramSpeakProviderExpressivity2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Deepgram.Realtime.DeepgramSpeakProvider))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Deepgram.Realtime.DeepgramSpeakProviderType), TypeInfoPropertyName = "DeepgramSpeakProviderType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Deepgram.Realtime.ElevenLabsSpeakProviderVersion), TypeInfoPropertyName = "ElevenLabsSpeakProviderVersion2")]
