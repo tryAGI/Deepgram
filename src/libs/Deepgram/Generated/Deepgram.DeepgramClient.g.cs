@@ -222,16 +222,6 @@ namespace Deepgram
         /// <summary>
         /// 
         /// </summary>
-        public UsageClient Usage => new UsageClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
-        {
-            ReadResponseAsString = ReadResponseAsString,
-            JsonSerializerContextProvider = JsonSerializerContextProvider,
-            AutoSDKServerConfiguration = AutoSDKServerConfiguration,
-        };
-
-        /// <summary>
-        /// 
-        /// </summary>
         public VariablesClient Variables => new VariablesClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,

@@ -1,4 +1,6 @@
 
+#pragma warning disable CS0618 // Type or member is obsolete
+
 #nullable enable
 
 namespace Deepgram
@@ -12,6 +14,7 @@ namespace Deepgram
         /// Default Value: deprecated
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("transaction_key")]
+        [global::System.Obsolete("This property marked as deprecated.")]
         public string? TransactionKey { get; set; }
 
         /// <summary>
@@ -109,9 +112,6 @@ namespace Deepgram
         /// <param name="channels"></param>
         /// <param name="models"></param>
         /// <param name="modelInfo"></param>
-        /// <param name="transactionKey">
-        /// Default Value: deprecated
-        /// </param>
         /// <param name="summaryInfo"></param>
         /// <param name="sentimentInfo"></param>
         /// <param name="topicsInfo"></param>
@@ -128,14 +128,12 @@ namespace Deepgram
             int channels,
             global::System.Collections.Generic.IList<string> models,
             global::Deepgram.ListenV1ResponseMetadataModelInfo modelInfo,
-            string? transactionKey,
             global::Deepgram.ListenV1ResponseMetadataSummaryInfo? summaryInfo,
             global::Deepgram.ListenV1ResponseMetadataSentimentInfo? sentimentInfo,
             global::Deepgram.ListenV1ResponseMetadataTopicsInfo? topicsInfo,
             global::Deepgram.ListenV1ResponseMetadataIntentsInfo? intentsInfo,
             global::System.Collections.Generic.IList<string>? tags)
         {
-            this.TransactionKey = transactionKey;
             this.RequestId = requestId;
             this.Sha256 = sha256 ?? throw new global::System.ArgumentNullException(nameof(sha256));
             this.Created = created;
