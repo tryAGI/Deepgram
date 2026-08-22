@@ -153,11 +153,6 @@ namespace Deepgram
         /// <summary>
         /// 
         /// </summary>
-        public UsageClient Usage { get; }
-
-        /// <summary>
-        /// 
-        /// </summary>
         public VariablesClient Variables { get; }
 
     }

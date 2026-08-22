@@ -1,4 +1,6 @@
 
+#pragma warning disable CS0618 // Type or member is obsolete
+
 #nullable enable
 
 namespace Deepgram.Realtime
@@ -34,6 +36,7 @@ namespace Deepgram.Realtime
         /// Use the `language` field instead.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("language_code")]
+        [global::System.Obsolete("This property marked as deprecated.")]
         public string? LanguageCode { get; set; }
 
         /// <summary>
@@ -69,9 +72,6 @@ namespace Deepgram.Realtime
         /// <param name="engine"></param>
         /// <param name="credentials"></param>
         /// <param name="type"></param>
-        /// <param name="languageCode">
-        /// Use the `language` field instead.
-        /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -80,13 +80,11 @@ namespace Deepgram.Realtime
             string language,
             global::Deepgram.Realtime.AwsPollySpeakProviderEngine engine,
             global::Deepgram.Realtime.AwsPollySpeakProviderCredentials credentials,
-            global::Deepgram.Realtime.AwsPollySpeakProviderType type,
-            string? languageCode)
+            global::Deepgram.Realtime.AwsPollySpeakProviderType type)
         {
             this.Type = type;
             this.Voice = voice;
             this.Language = language ?? throw new global::System.ArgumentNullException(nameof(language));
-            this.LanguageCode = languageCode;
             this.Engine = engine;
             this.Credentials = credentials ?? throw new global::System.ArgumentNullException(nameof(credentials));
         }

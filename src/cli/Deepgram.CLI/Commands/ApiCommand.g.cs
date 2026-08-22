@@ -27,7 +27,6 @@ internal static class ApiCommand
                          command.Subcommands.Add(ScopesApiGroupCommand.Create());
                          command.Subcommands.Add(TextApiGroupCommand.Create());
                          command.Subcommands.Add(TokensApiGroupCommand.Create());
-                         command.Subcommands.Add(UsageApiGroupCommand.Create());
                          command.Subcommands.Add(VariablesApiGroupCommand.Create());
         return command;
     }
