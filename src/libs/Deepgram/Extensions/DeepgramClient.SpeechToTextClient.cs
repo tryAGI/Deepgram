@@ -63,7 +63,7 @@ public partial class DeepgramClient : ISpeechToTextClient
             model = new V1ListenPostParametersModel(modelId);
         }
 
-        var result = await SubpackageListenSubpackageListenV1SubpackageListenV1Media.TranscribeAsync(
+        var result = await Media.TranscribeAsync(
             request: request,
             language: language,
             model: model,
@@ -296,8 +296,12 @@ public partial class DeepgramClient : ISpeechToTextClient
                     {
                         Kind = kind,
                         ResponseId = responseId,
-                        StartTime = TimeSpan.FromSeconds(turnInfo.AudioWindowStart),
-                        EndTime = TimeSpan.FromSeconds(turnInfo.AudioWindowEnd),
+                        StartTime = TimeSpan.FromSeconds(double.Parse(
+                            turnInfo.AudioWindowStart,
+                            System.Globalization.CultureInfo.InvariantCulture)),
+                        EndTime = TimeSpan.FromSeconds(double.Parse(
+                            turnInfo.AudioWindowEnd,
+                            System.Globalization.CultureInfo.InvariantCulture)),
                         RawRepresentation = turnInfo,
                     };
                 }
