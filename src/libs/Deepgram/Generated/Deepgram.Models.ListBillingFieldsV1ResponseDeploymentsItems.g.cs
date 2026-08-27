@@ -4,24 +4,24 @@
 namespace Deepgram
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum ListBillingFieldsV1ResponseDeploymentsItems
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Beta,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Dedicated,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Hosted,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         SelfHosted,
     }

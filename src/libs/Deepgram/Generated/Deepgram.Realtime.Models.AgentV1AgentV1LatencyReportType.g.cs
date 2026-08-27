@@ -9,7 +9,7 @@ namespace Deepgram.Realtime
     public enum AgentV1AgentV1LatencyReportType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         LatencyReport,
     }

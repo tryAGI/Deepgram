@@ -4,7 +4,7 @@
 namespace Deepgram
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class UsageBreakdownV1ResponseResultsItems
     {
@@ -58,7 +58,7 @@ namespace Deepgram
         public required double Requests { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("grouping")]
         [global::System.Text.Json.Serialization.JsonRequired]

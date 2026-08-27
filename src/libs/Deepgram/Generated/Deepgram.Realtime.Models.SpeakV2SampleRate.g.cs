@@ -9,27 +9,27 @@ namespace Deepgram.Realtime
     public enum SpeakV2SampleRate
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         x16000,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         x24000,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         x32000,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         x44100,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         x48000,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         x8000,
     }

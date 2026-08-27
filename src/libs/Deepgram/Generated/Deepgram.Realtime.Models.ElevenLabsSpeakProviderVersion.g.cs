@@ -9,7 +9,7 @@ namespace Deepgram.Realtime
     public enum ElevenLabsSpeakProviderVersion
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         V1,
     }

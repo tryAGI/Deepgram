@@ -9,7 +9,7 @@ namespace Deepgram.Realtime
     public enum ChannelsAgentV1MessagesAgentV1KeepAliveType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         KeepAlive,
     }

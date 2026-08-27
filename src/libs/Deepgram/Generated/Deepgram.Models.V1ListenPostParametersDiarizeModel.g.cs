@@ -4,20 +4,20 @@
 namespace Deepgram
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum V1ListenPostParametersDiarizeModel
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Latest,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         V1,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         V2,
     }

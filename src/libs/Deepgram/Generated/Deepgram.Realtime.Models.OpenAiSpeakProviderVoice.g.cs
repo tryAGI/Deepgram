@@ -9,27 +9,27 @@ namespace Deepgram.Realtime
     public enum OpenAiSpeakProviderVoice
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Alloy,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Echo,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Fable,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Nova,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Onyx,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Shimmer,
     }

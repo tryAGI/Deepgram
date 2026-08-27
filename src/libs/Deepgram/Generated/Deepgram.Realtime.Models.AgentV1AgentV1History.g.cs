@@ -19,7 +19,7 @@ namespace Deepgram.Realtime
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(AgentV1AgentV1History0))]
@@ -27,7 +27,7 @@ namespace Deepgram.Realtime
         public bool IsAgentV1AgentV1History0 => AgentV1AgentV1History0 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickAgentV1AgentV1History0(
 #if NET6_0_OR_GREATER
@@ -40,7 +40,7 @@ namespace Deepgram.Realtime
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Deepgram.Realtime.AgentV1AgentV1History0 PickAgentV1AgentV1History0() => IsAgentV1AgentV1History0
             ? AgentV1AgentV1History0!
@@ -56,7 +56,7 @@ namespace Deepgram.Realtime
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(AgentV1AgentV1History1))]
@@ -64,7 +64,7 @@ namespace Deepgram.Realtime
         public bool IsAgentV1AgentV1History1 => AgentV1AgentV1History1 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickAgentV1AgentV1History1(
 #if NET6_0_OR_GREATER
@@ -77,23 +77,23 @@ namespace Deepgram.Realtime
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Deepgram.Realtime.AgentV1AgentV1History1 PickAgentV1AgentV1History1() => IsAgentV1AgentV1History1
             ? AgentV1AgentV1History1!
             : throw new global::System.InvalidOperationException($"Expected union variant 'AgentV1AgentV1History1' but the value was {ToString()}.");
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator AgentV1AgentV1History(global::Deepgram.Realtime.AgentV1AgentV1History0 value) => new AgentV1AgentV1History((global::Deepgram.Realtime.AgentV1AgentV1History0?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Deepgram.Realtime.AgentV1AgentV1History0?(AgentV1AgentV1History @this) => @this.AgentV1AgentV1History0;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public AgentV1AgentV1History(global::Deepgram.Realtime.AgentV1AgentV1History0? value)
         {
@@ -101,22 +101,22 @@ namespace Deepgram.Realtime
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static AgentV1AgentV1History FromAgentV1AgentV1History0(global::Deepgram.Realtime.AgentV1AgentV1History0? value) => new AgentV1AgentV1History(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator AgentV1AgentV1History(global::Deepgram.Realtime.AgentV1AgentV1History1 value) => new AgentV1AgentV1History((global::Deepgram.Realtime.AgentV1AgentV1History1?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Deepgram.Realtime.AgentV1AgentV1History1?(AgentV1AgentV1History @this) => @this.AgentV1AgentV1History1;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public AgentV1AgentV1History(global::Deepgram.Realtime.AgentV1AgentV1History1? value)
         {
@@ -124,12 +124,12 @@ namespace Deepgram.Realtime
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static AgentV1AgentV1History FromAgentV1AgentV1History1(global::Deepgram.Realtime.AgentV1AgentV1History1? value) => new AgentV1AgentV1History(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public AgentV1AgentV1History(
             global::Deepgram.Realtime.AgentV1AgentV1History0? agentV1AgentV1History0,
@@ -141,23 +141,23 @@ namespace Deepgram.Realtime
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public object? Object =>
             AgentV1AgentV1History1 as object ??
-            AgentV1AgentV1History0 as object 
+            AgentV1AgentV1History0 as object
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override string? ToString() =>
             AgentV1AgentV1History0?.ToString() ??
-            AgentV1AgentV1History1?.ToString() 
+            AgentV1AgentV1History1?.ToString()
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Validate()
         {
@@ -165,7 +165,7 @@ namespace Deepgram.Realtime
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public TResult? Match<TResult>(
             global::System.Func<global::Deepgram.Realtime.AgentV1AgentV1History0, TResult>? agentV1AgentV1History0 = null,
@@ -190,7 +190,7 @@ namespace Deepgram.Realtime
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Match(
             global::System.Action<global::Deepgram.Realtime.AgentV1AgentV1History0>? agentV1AgentV1History0 = null,
@@ -214,7 +214,7 @@ namespace Deepgram.Realtime
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Switch(
             global::System.Action<global::Deepgram.Realtime.AgentV1AgentV1History0>? agentV1AgentV1History0 = null,
@@ -237,7 +237,7 @@ namespace Deepgram.Realtime
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override int GetHashCode()
         {
@@ -258,18 +258,18 @@ namespace Deepgram.Realtime
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Equals(AgentV1AgentV1History other)
         {
             return
                 global::System.Collections.Generic.EqualityComparer<global::Deepgram.Realtime.AgentV1AgentV1History0?>.Default.Equals(AgentV1AgentV1History0, other.AgentV1AgentV1History0) &&
-                global::System.Collections.Generic.EqualityComparer<global::Deepgram.Realtime.AgentV1AgentV1History1?>.Default.Equals(AgentV1AgentV1History1, other.AgentV1AgentV1History1) 
+                global::System.Collections.Generic.EqualityComparer<global::Deepgram.Realtime.AgentV1AgentV1History1?>.Default.Equals(AgentV1AgentV1History1, other.AgentV1AgentV1History1)
                 ;
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator ==(AgentV1AgentV1History obj1, AgentV1AgentV1History obj2)
         {
@@ -277,7 +277,7 @@ namespace Deepgram.Realtime
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator !=(AgentV1AgentV1History obj1, AgentV1AgentV1History obj2)
         {
@@ -285,7 +285,7 @@ namespace Deepgram.Realtime
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override bool Equals(object? obj)
         {

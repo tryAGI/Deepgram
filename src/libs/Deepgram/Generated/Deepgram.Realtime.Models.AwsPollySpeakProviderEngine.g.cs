@@ -4,24 +4,24 @@
 namespace Deepgram.Realtime
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum AwsPollySpeakProviderEngine
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Generative,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         LongForm,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Neural,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Standard,
     }

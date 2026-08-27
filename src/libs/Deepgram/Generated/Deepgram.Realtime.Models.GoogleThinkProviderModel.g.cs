@@ -9,15 +9,15 @@ namespace Deepgram.Realtime
     public enum GoogleThinkProviderModel
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Gemini20Flash,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Gemini20FlashLite,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Gemini25Flash,
     }

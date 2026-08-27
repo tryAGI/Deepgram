@@ -4,40 +4,40 @@
 namespace Deepgram
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum V1ProjectsProjectIdSelfHostedDistributionCredentialsPostParametersScopesSchemaItems
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         SelfHosted_product_api,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         SelfHosted_product_billing,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         SelfHosted_product_dgtools,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         SelfHosted_product_engine,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         SelfHosted_product_hotpepper,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         SelfHosted_product_licenseProxy,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         SelfHosted_product_metricsServer,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         SelfHosted_products,
     }

@@ -9,7 +9,7 @@ namespace Deepgram.Realtime
     public enum ChannelsSpeakV2MessagesSpeakV2InterruptPlaybackOffsetType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         TimeMs,
     }

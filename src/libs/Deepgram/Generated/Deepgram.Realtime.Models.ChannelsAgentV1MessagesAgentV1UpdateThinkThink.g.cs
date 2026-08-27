@@ -5,12 +5,12 @@
 namespace Deepgram.Realtime
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public readonly partial struct ChannelsAgentV1MessagesAgentV1UpdateThinkThink : global::System.IEquatable<ChannelsAgentV1MessagesAgentV1UpdateThinkThink>
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Deepgram.Realtime.ThinkSettingsV1? ThinkSettingsV1 { get; init; }
@@ -19,7 +19,7 @@ namespace Deepgram.Realtime
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(ThinkSettingsV1))]
@@ -27,7 +27,7 @@ namespace Deepgram.Realtime
         public bool IsThinkSettingsV1 => ThinkSettingsV1 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickThinkSettingsV1(
 #if NET6_0_OR_GREATER
@@ -40,14 +40,14 @@ namespace Deepgram.Realtime
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Deepgram.Realtime.ThinkSettingsV1 PickThinkSettingsV1() => IsThinkSettingsV1
             ? ThinkSettingsV1!
             : throw new global::System.InvalidOperationException($"Expected union variant 'ThinkSettingsV1' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::System.Collections.Generic.IList<global::Deepgram.Realtime.ThinkSettingsV1>? ChannelsAgentV1MessagesAgentV1UpdateThinkThink1 { get; init; }
@@ -56,7 +56,7 @@ namespace Deepgram.Realtime
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(ChannelsAgentV1MessagesAgentV1UpdateThinkThink1))]
@@ -64,7 +64,7 @@ namespace Deepgram.Realtime
         public bool IsChannelsAgentV1MessagesAgentV1UpdateThinkThink1 => ChannelsAgentV1MessagesAgentV1UpdateThinkThink1 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickChannelsAgentV1MessagesAgentV1UpdateThinkThink1(
 #if NET6_0_OR_GREATER
@@ -77,23 +77,23 @@ namespace Deepgram.Realtime
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::System.Collections.Generic.IList<global::Deepgram.Realtime.ThinkSettingsV1> PickChannelsAgentV1MessagesAgentV1UpdateThinkThink1() => IsChannelsAgentV1MessagesAgentV1UpdateThinkThink1
             ? ChannelsAgentV1MessagesAgentV1UpdateThinkThink1!
             : throw new global::System.InvalidOperationException($"Expected union variant 'ChannelsAgentV1MessagesAgentV1UpdateThinkThink1' but the value was {ToString()}.");
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator ChannelsAgentV1MessagesAgentV1UpdateThinkThink(global::Deepgram.Realtime.ThinkSettingsV1 value) => new ChannelsAgentV1MessagesAgentV1UpdateThinkThink((global::Deepgram.Realtime.ThinkSettingsV1?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Deepgram.Realtime.ThinkSettingsV1?(ChannelsAgentV1MessagesAgentV1UpdateThinkThink @this) => @this.ThinkSettingsV1;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public ChannelsAgentV1MessagesAgentV1UpdateThinkThink(global::Deepgram.Realtime.ThinkSettingsV1? value)
         {
@@ -101,12 +101,12 @@ namespace Deepgram.Realtime
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static ChannelsAgentV1MessagesAgentV1UpdateThinkThink FromThinkSettingsV1(global::Deepgram.Realtime.ThinkSettingsV1? value) => new ChannelsAgentV1MessagesAgentV1UpdateThinkThink(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public ChannelsAgentV1MessagesAgentV1UpdateThinkThink(
             global::Deepgram.Realtime.ThinkSettingsV1? thinkSettingsV1,
@@ -118,23 +118,23 @@ namespace Deepgram.Realtime
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public object? Object =>
             ChannelsAgentV1MessagesAgentV1UpdateThinkThink1 as object ??
-            ThinkSettingsV1 as object 
+            ThinkSettingsV1 as object
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override string? ToString() =>
             ThinkSettingsV1?.ToString() ??
-            ChannelsAgentV1MessagesAgentV1UpdateThinkThink1?.ToString() 
+            ChannelsAgentV1MessagesAgentV1UpdateThinkThink1?.ToString()
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Validate()
         {
@@ -142,7 +142,7 @@ namespace Deepgram.Realtime
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public TResult? Match<TResult>(
             global::System.Func<global::Deepgram.Realtime.ThinkSettingsV1, TResult>? thinkSettingsV1 = null,
@@ -167,7 +167,7 @@ namespace Deepgram.Realtime
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Match(
             global::System.Action<global::Deepgram.Realtime.ThinkSettingsV1>? thinkSettingsV1 = null,
@@ -191,7 +191,7 @@ namespace Deepgram.Realtime
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Switch(
             global::System.Action<global::Deepgram.Realtime.ThinkSettingsV1>? thinkSettingsV1 = null,
@@ -214,7 +214,7 @@ namespace Deepgram.Realtime
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override int GetHashCode()
         {
@@ -235,18 +235,18 @@ namespace Deepgram.Realtime
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Equals(ChannelsAgentV1MessagesAgentV1UpdateThinkThink other)
         {
             return
                 global::System.Collections.Generic.EqualityComparer<global::Deepgram.Realtime.ThinkSettingsV1?>.Default.Equals(ThinkSettingsV1, other.ThinkSettingsV1) &&
-                global::System.Collections.Generic.EqualityComparer<global::System.Collections.Generic.IList<global::Deepgram.Realtime.ThinkSettingsV1>?>.Default.Equals(ChannelsAgentV1MessagesAgentV1UpdateThinkThink1, other.ChannelsAgentV1MessagesAgentV1UpdateThinkThink1) 
+                global::System.Collections.Generic.EqualityComparer<global::System.Collections.Generic.IList<global::Deepgram.Realtime.ThinkSettingsV1>?>.Default.Equals(ChannelsAgentV1MessagesAgentV1UpdateThinkThink1, other.ChannelsAgentV1MessagesAgentV1UpdateThinkThink1)
                 ;
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator ==(ChannelsAgentV1MessagesAgentV1UpdateThinkThink obj1, ChannelsAgentV1MessagesAgentV1UpdateThinkThink obj2)
         {
@@ -254,7 +254,7 @@ namespace Deepgram.Realtime
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator !=(ChannelsAgentV1MessagesAgentV1UpdateThinkThink obj1, ChannelsAgentV1MessagesAgentV1UpdateThinkThink obj2)
         {
@@ -262,7 +262,7 @@ namespace Deepgram.Realtime
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override bool Equals(object? obj)
         {

@@ -10,27 +10,27 @@ namespace Deepgram.Realtime
     public enum ListenV1Redact
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AggressiveNumbers,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         False,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Numbers,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Pci,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Ssn,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         True,
     }

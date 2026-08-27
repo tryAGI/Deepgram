@@ -9,7 +9,7 @@ namespace Deepgram.Realtime
     public enum ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ContextMessagesItems0Type
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         History,
     }

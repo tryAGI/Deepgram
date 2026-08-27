@@ -4,18 +4,18 @@
 namespace Deepgram
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class ListModelsV1Response
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("stt")]
         public global::System.Collections.Generic.IList<global::Deepgram.ListModelsV1ResponseSttModels>? Stt { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("tts")]
         public global::System.Collections.Generic.IList<global::Deepgram.ListModelsV1ResponseTtsModels>? Tts { get; set; }

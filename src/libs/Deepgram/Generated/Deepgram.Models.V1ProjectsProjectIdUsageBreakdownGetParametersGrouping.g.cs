@@ -4,36 +4,36 @@
 namespace Deepgram
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum V1ProjectsProjectIdUsageBreakdownGetParametersGrouping
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Accessor,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Deployment,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Endpoint,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         FeatureSet,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Method,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Models,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Tags,
     }

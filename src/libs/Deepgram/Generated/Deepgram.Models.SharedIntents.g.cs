@@ -9,7 +9,7 @@ namespace Deepgram
     public sealed partial class SharedIntents
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("results")]
         public global::Deepgram.SharedIntentsResults? Results { get; set; }

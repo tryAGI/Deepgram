@@ -9,11 +9,11 @@ namespace Deepgram.Realtime
     public enum ListenV2Redact
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AggressiveNumbers,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Numbers,
     }

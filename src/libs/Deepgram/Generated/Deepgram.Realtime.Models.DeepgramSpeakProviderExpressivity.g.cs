@@ -9,7 +9,7 @@ namespace Deepgram.Realtime
     public enum DeepgramSpeakProviderExpressivity
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Minus1,
         /// <summary>
@@ -21,7 +21,7 @@ namespace Deepgram.Realtime
         /// </summary>
         x0,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         x1,
         /// <summary>

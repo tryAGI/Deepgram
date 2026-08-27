@@ -4,12 +4,12 @@
 namespace Deepgram.Realtime
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum AwsPollySpeakProviderType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AwsPolly,
     }

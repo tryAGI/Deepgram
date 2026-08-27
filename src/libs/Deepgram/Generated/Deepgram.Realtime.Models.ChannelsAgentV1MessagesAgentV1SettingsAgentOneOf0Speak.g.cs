@@ -5,12 +5,12 @@
 namespace Deepgram.Realtime
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public readonly partial struct ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0Speak : global::System.IEquatable<ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0Speak>
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Deepgram.Realtime.SpeakSettingsV1? SpeakSettingsV1 { get; init; }
@@ -19,7 +19,7 @@ namespace Deepgram.Realtime
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(SpeakSettingsV1))]
@@ -27,7 +27,7 @@ namespace Deepgram.Realtime
         public bool IsSpeakSettingsV1 => SpeakSettingsV1 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickSpeakSettingsV1(
 #if NET6_0_OR_GREATER
@@ -40,14 +40,14 @@ namespace Deepgram.Realtime
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Deepgram.Realtime.SpeakSettingsV1 PickSpeakSettingsV1() => IsSpeakSettingsV1
             ? SpeakSettingsV1!
             : throw new global::System.InvalidOperationException($"Expected union variant 'SpeakSettingsV1' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::System.Collections.Generic.IList<global::Deepgram.Realtime.SpeakSettingsV1>? ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0Speak1 { get; init; }
@@ -56,7 +56,7 @@ namespace Deepgram.Realtime
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0Speak1))]
@@ -64,7 +64,7 @@ namespace Deepgram.Realtime
         public bool IsChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0Speak1 => ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0Speak1 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0Speak1(
 #if NET6_0_OR_GREATER
@@ -77,23 +77,23 @@ namespace Deepgram.Realtime
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::System.Collections.Generic.IList<global::Deepgram.Realtime.SpeakSettingsV1> PickChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0Speak1() => IsChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0Speak1
             ? ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0Speak1!
             : throw new global::System.InvalidOperationException($"Expected union variant 'ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0Speak1' but the value was {ToString()}.");
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0Speak(global::Deepgram.Realtime.SpeakSettingsV1 value) => new ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0Speak((global::Deepgram.Realtime.SpeakSettingsV1?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Deepgram.Realtime.SpeakSettingsV1?(ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0Speak @this) => @this.SpeakSettingsV1;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0Speak(global::Deepgram.Realtime.SpeakSettingsV1? value)
         {
@@ -101,12 +101,12 @@ namespace Deepgram.Realtime
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0Speak FromSpeakSettingsV1(global::Deepgram.Realtime.SpeakSettingsV1? value) => new ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0Speak(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0Speak(
             global::Deepgram.Realtime.SpeakSettingsV1? speakSettingsV1,
@@ -118,23 +118,23 @@ namespace Deepgram.Realtime
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public object? Object =>
             ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0Speak1 as object ??
-            SpeakSettingsV1 as object 
+            SpeakSettingsV1 as object
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override string? ToString() =>
             SpeakSettingsV1?.ToString() ??
-            ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0Speak1?.ToString() 
+            ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0Speak1?.ToString()
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Validate()
         {
@@ -142,7 +142,7 @@ namespace Deepgram.Realtime
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public TResult? Match<TResult>(
             global::System.Func<global::Deepgram.Realtime.SpeakSettingsV1, TResult>? speakSettingsV1 = null,
@@ -167,7 +167,7 @@ namespace Deepgram.Realtime
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Match(
             global::System.Action<global::Deepgram.Realtime.SpeakSettingsV1>? speakSettingsV1 = null,
@@ -191,7 +191,7 @@ namespace Deepgram.Realtime
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Switch(
             global::System.Action<global::Deepgram.Realtime.SpeakSettingsV1>? speakSettingsV1 = null,
@@ -214,7 +214,7 @@ namespace Deepgram.Realtime
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override int GetHashCode()
         {
@@ -235,18 +235,18 @@ namespace Deepgram.Realtime
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Equals(ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0Speak other)
         {
             return
                 global::System.Collections.Generic.EqualityComparer<global::Deepgram.Realtime.SpeakSettingsV1?>.Default.Equals(SpeakSettingsV1, other.SpeakSettingsV1) &&
-                global::System.Collections.Generic.EqualityComparer<global::System.Collections.Generic.IList<global::Deepgram.Realtime.SpeakSettingsV1>?>.Default.Equals(ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0Speak1, other.ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0Speak1) 
+                global::System.Collections.Generic.EqualityComparer<global::System.Collections.Generic.IList<global::Deepgram.Realtime.SpeakSettingsV1>?>.Default.Equals(ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0Speak1, other.ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0Speak1)
                 ;
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator ==(ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0Speak obj1, ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0Speak obj2)
         {
@@ -254,7 +254,7 @@ namespace Deepgram.Realtime
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator !=(ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0Speak obj1, ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0Speak obj2)
         {
@@ -262,7 +262,7 @@ namespace Deepgram.Realtime
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override bool Equals(object? obj)
         {

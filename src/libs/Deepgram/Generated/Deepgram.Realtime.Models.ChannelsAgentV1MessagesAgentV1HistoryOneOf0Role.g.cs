@@ -9,11 +9,11 @@ namespace Deepgram.Realtime
     public enum ChannelsAgentV1MessagesAgentV1HistoryOneOf0Role
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Assistant,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         User,
     }

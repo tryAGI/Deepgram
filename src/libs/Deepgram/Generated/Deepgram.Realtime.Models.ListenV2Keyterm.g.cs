@@ -19,7 +19,7 @@ namespace Deepgram.Realtime
     public readonly partial struct ListenV2Keyterm : global::System.IEquatable<ListenV2Keyterm>
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public string? ListenV2KeytermVariant1 { get; init; }
@@ -28,7 +28,7 @@ namespace Deepgram.Realtime
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(ListenV2KeytermVariant1))]
@@ -36,7 +36,7 @@ namespace Deepgram.Realtime
         public bool IsListenV2KeytermVariant1 => ListenV2KeytermVariant1 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickListenV2KeytermVariant1(
 #if NET6_0_OR_GREATER
@@ -49,14 +49,14 @@ namespace Deepgram.Realtime
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public string PickListenV2KeytermVariant1() => IsListenV2KeytermVariant1
             ? ListenV2KeytermVariant1!
             : throw new global::System.InvalidOperationException($"Expected union variant 'ListenV2KeytermVariant1' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::System.Collections.Generic.IList<string>? ListenV2KeytermVariant2 { get; init; }
@@ -65,7 +65,7 @@ namespace Deepgram.Realtime
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(ListenV2KeytermVariant2))]
@@ -73,7 +73,7 @@ namespace Deepgram.Realtime
         public bool IsListenV2KeytermVariant2 => ListenV2KeytermVariant2 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickListenV2KeytermVariant2(
 #if NET6_0_OR_GREATER
@@ -86,23 +86,23 @@ namespace Deepgram.Realtime
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::System.Collections.Generic.IList<string> PickListenV2KeytermVariant2() => IsListenV2KeytermVariant2
             ? ListenV2KeytermVariant2!
             : throw new global::System.InvalidOperationException($"Expected union variant 'ListenV2KeytermVariant2' but the value was {ToString()}.");
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator ListenV2Keyterm(string value) => new ListenV2Keyterm((string?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator string?(ListenV2Keyterm @this) => @this.ListenV2KeytermVariant1;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public ListenV2Keyterm(string? value)
         {
@@ -110,12 +110,12 @@ namespace Deepgram.Realtime
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static ListenV2Keyterm FromListenV2KeytermVariant1(string? value) => new ListenV2Keyterm(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public ListenV2Keyterm(
             string? listenV2KeytermVariant1,
@@ -127,23 +127,23 @@ namespace Deepgram.Realtime
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public object? Object =>
             ListenV2KeytermVariant2 as object ??
-            ListenV2KeytermVariant1 as object 
+            ListenV2KeytermVariant1 as object
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override string? ToString() =>
             ListenV2KeytermVariant1?.ToString() ??
-            ListenV2KeytermVariant2?.ToString() 
+            ListenV2KeytermVariant2?.ToString()
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Validate()
         {
@@ -151,7 +151,7 @@ namespace Deepgram.Realtime
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public TResult? Match<TResult>(
             global::System.Func<string, TResult>? listenV2KeytermVariant1 = null,
@@ -176,7 +176,7 @@ namespace Deepgram.Realtime
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Match(
             global::System.Action<string>? listenV2KeytermVariant1 = null,
@@ -200,7 +200,7 @@ namespace Deepgram.Realtime
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Switch(
             global::System.Action<string>? listenV2KeytermVariant1 = null,
@@ -223,7 +223,7 @@ namespace Deepgram.Realtime
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override int GetHashCode()
         {
@@ -244,18 +244,18 @@ namespace Deepgram.Realtime
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Equals(ListenV2Keyterm other)
         {
             return
                 global::System.Collections.Generic.EqualityComparer<string?>.Default.Equals(ListenV2KeytermVariant1, other.ListenV2KeytermVariant1) &&
-                global::System.Collections.Generic.EqualityComparer<global::System.Collections.Generic.IList<string>?>.Default.Equals(ListenV2KeytermVariant2, other.ListenV2KeytermVariant2) 
+                global::System.Collections.Generic.EqualityComparer<global::System.Collections.Generic.IList<string>?>.Default.Equals(ListenV2KeytermVariant2, other.ListenV2KeytermVariant2)
                 ;
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator ==(ListenV2Keyterm obj1, ListenV2Keyterm obj2)
         {
@@ -263,7 +263,7 @@ namespace Deepgram.Realtime
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator !=(ListenV2Keyterm obj1, ListenV2Keyterm obj2)
         {
@@ -271,7 +271,7 @@ namespace Deepgram.Realtime
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override bool Equals(object? obj)
         {

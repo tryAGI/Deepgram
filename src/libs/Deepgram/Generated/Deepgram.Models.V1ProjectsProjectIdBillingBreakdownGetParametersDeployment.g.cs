@@ -9,15 +9,15 @@ namespace Deepgram
     public enum V1ProjectsProjectIdBillingBreakdownGetParametersDeployment
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Beta,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Hosted,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         SelfHosted,
     }

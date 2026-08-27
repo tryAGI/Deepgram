@@ -9,15 +9,15 @@ namespace Deepgram
     public enum V1ProjectsProjectIdUsageGetParametersDeployment
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Beta,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Hosted,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         SelfHosted,
     }

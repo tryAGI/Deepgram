@@ -4,24 +4,24 @@
 namespace Deepgram
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum V1ProjectsProjectIdBillingBreakdownGetParametersGroupingSchemaItems
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Accessor,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Deployment,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         LineItem,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Tags,
     }

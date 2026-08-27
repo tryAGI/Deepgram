@@ -9,39 +9,39 @@ namespace Deepgram.Realtime
     public enum ChannelsSpeakV2MessagesSpeakV2ErrorCode
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Big0000,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Data0000,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Data0002,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Message0000,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Net0000,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Net0001,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Net0002,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Net0003,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Net0004,
     }

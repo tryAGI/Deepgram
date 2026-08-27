@@ -4,20 +4,20 @@
 namespace Deepgram
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum V1ListenPostParametersRedactSchemaOneOf1Items
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Numbers,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Pci,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Pii,
     }

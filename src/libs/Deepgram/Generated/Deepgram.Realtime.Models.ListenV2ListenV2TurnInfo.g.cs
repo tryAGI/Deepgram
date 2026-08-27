@@ -9,7 +9,7 @@ namespace Deepgram.Realtime
     public sealed partial class ListenV2ListenV2TurnInfo
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("type")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Deepgram.Realtime.JsonConverters.ListenV2ListenV2TurnInfoTypeJsonConverter))]

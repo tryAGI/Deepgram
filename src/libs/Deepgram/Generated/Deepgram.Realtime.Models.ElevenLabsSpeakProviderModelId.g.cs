@@ -9,15 +9,15 @@ namespace Deepgram.Realtime
     public enum ElevenLabsSpeakProviderModelId
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ElevenMonolingualV1,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ElevenMultilingualV2,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ElevenTurboV25,
     }

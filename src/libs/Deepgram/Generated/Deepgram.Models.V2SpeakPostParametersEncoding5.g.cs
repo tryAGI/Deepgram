@@ -9,7 +9,7 @@ namespace Deepgram
     public enum V2SpeakPostParametersEncoding5
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Opus,
     }

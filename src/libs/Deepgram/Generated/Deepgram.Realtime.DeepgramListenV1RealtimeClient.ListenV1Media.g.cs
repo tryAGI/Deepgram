@@ -6,7 +6,7 @@ namespace Deepgram.Realtime
     public sealed partial class DeepgramListenV1RealtimeClient
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         /// <param name="message">The message to send.</param>
         /// <param name="cancellationToken">A cancellation token.</param>

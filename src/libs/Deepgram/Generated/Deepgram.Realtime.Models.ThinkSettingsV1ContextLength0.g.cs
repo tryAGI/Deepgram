@@ -9,7 +9,7 @@ namespace Deepgram.Realtime
     public enum ThinkSettingsV1ContextLength0
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Max,
     }

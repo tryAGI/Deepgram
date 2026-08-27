@@ -10,11 +10,11 @@ namespace Deepgram.Realtime
     public enum ListenV2ProfanityFilter
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         False,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         True,
     }

@@ -5,12 +5,12 @@
 namespace Deepgram.Realtime
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public readonly partial struct VsServerEvent : global::System.IEquatable<VsServerEvent>
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public byte[]? SpeakV2SpeakV2Audio { get; init; }
@@ -19,7 +19,7 @@ namespace Deepgram.Realtime
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(SpeakV2SpeakV2Audio))]
@@ -27,7 +27,7 @@ namespace Deepgram.Realtime
         public bool IsSpeakV2SpeakV2Audio => SpeakV2SpeakV2Audio != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickSpeakV2SpeakV2Audio(
 #if NET6_0_OR_GREATER
@@ -40,14 +40,14 @@ namespace Deepgram.Realtime
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public byte[] PickSpeakV2SpeakV2Audio() => IsSpeakV2SpeakV2Audio
             ? SpeakV2SpeakV2Audio!
             : throw new global::System.InvalidOperationException($"Expected union variant 'SpeakV2SpeakV2Audio' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Deepgram.Realtime.SpeakV2SpeakV2Connected? SpeakV2SpeakV2Connected { get; init; }
@@ -56,7 +56,7 @@ namespace Deepgram.Realtime
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(SpeakV2SpeakV2Connected))]
@@ -64,7 +64,7 @@ namespace Deepgram.Realtime
         public bool IsSpeakV2SpeakV2Connected => SpeakV2SpeakV2Connected != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickSpeakV2SpeakV2Connected(
 #if NET6_0_OR_GREATER
@@ -77,14 +77,14 @@ namespace Deepgram.Realtime
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Deepgram.Realtime.SpeakV2SpeakV2Connected PickSpeakV2SpeakV2Connected() => IsSpeakV2SpeakV2Connected
             ? SpeakV2SpeakV2Connected!
             : throw new global::System.InvalidOperationException($"Expected union variant 'SpeakV2SpeakV2Connected' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Deepgram.Realtime.SpeakV2SpeakV2SpeechStarted? SpeakV2SpeakV2SpeechStarted { get; init; }
@@ -93,7 +93,7 @@ namespace Deepgram.Realtime
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(SpeakV2SpeakV2SpeechStarted))]
@@ -101,7 +101,7 @@ namespace Deepgram.Realtime
         public bool IsSpeakV2SpeakV2SpeechStarted => SpeakV2SpeakV2SpeechStarted != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickSpeakV2SpeakV2SpeechStarted(
 #if NET6_0_OR_GREATER
@@ -114,14 +114,14 @@ namespace Deepgram.Realtime
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Deepgram.Realtime.SpeakV2SpeakV2SpeechStarted PickSpeakV2SpeakV2SpeechStarted() => IsSpeakV2SpeakV2SpeechStarted
             ? SpeakV2SpeakV2SpeechStarted!
             : throw new global::System.InvalidOperationException($"Expected union variant 'SpeakV2SpeakV2SpeechStarted' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Deepgram.Realtime.SpeakV2SpeakV2SpeechMetadata? SpeakV2SpeakV2SpeechMetadata { get; init; }
@@ -130,7 +130,7 @@ namespace Deepgram.Realtime
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(SpeakV2SpeakV2SpeechMetadata))]
@@ -138,7 +138,7 @@ namespace Deepgram.Realtime
         public bool IsSpeakV2SpeakV2SpeechMetadata => SpeakV2SpeakV2SpeechMetadata != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickSpeakV2SpeakV2SpeechMetadata(
 #if NET6_0_OR_GREATER
@@ -151,14 +151,14 @@ namespace Deepgram.Realtime
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Deepgram.Realtime.SpeakV2SpeakV2SpeechMetadata PickSpeakV2SpeakV2SpeechMetadata() => IsSpeakV2SpeakV2SpeechMetadata
             ? SpeakV2SpeakV2SpeechMetadata!
             : throw new global::System.InvalidOperationException($"Expected union variant 'SpeakV2SpeakV2SpeechMetadata' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Deepgram.Realtime.SpeakV2SpeakV2SpeechInterrupted? SpeakV2SpeakV2SpeechInterrupted { get; init; }
@@ -167,7 +167,7 @@ namespace Deepgram.Realtime
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(SpeakV2SpeakV2SpeechInterrupted))]
@@ -175,7 +175,7 @@ namespace Deepgram.Realtime
         public bool IsSpeakV2SpeakV2SpeechInterrupted => SpeakV2SpeakV2SpeechInterrupted != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickSpeakV2SpeakV2SpeechInterrupted(
 #if NET6_0_OR_GREATER
@@ -188,14 +188,14 @@ namespace Deepgram.Realtime
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Deepgram.Realtime.SpeakV2SpeakV2SpeechInterrupted PickSpeakV2SpeakV2SpeechInterrupted() => IsSpeakV2SpeakV2SpeechInterrupted
             ? SpeakV2SpeakV2SpeechInterrupted!
             : throw new global::System.InvalidOperationException($"Expected union variant 'SpeakV2SpeakV2SpeechInterrupted' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Deepgram.Realtime.SpeakV2SpeakV2Flushed? SpeakV2SpeakV2Flushed { get; init; }
@@ -204,7 +204,7 @@ namespace Deepgram.Realtime
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(SpeakV2SpeakV2Flushed))]
@@ -212,7 +212,7 @@ namespace Deepgram.Realtime
         public bool IsSpeakV2SpeakV2Flushed => SpeakV2SpeakV2Flushed != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickSpeakV2SpeakV2Flushed(
 #if NET6_0_OR_GREATER
@@ -225,14 +225,14 @@ namespace Deepgram.Realtime
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Deepgram.Realtime.SpeakV2SpeakV2Flushed PickSpeakV2SpeakV2Flushed() => IsSpeakV2SpeakV2Flushed
             ? SpeakV2SpeakV2Flushed!
             : throw new global::System.InvalidOperationException($"Expected union variant 'SpeakV2SpeakV2Flushed' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Deepgram.Realtime.SpeakV2SpeakV2SessionMetadata? SpeakV2SpeakV2SessionMetadata { get; init; }
@@ -241,7 +241,7 @@ namespace Deepgram.Realtime
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(SpeakV2SpeakV2SessionMetadata))]
@@ -249,7 +249,7 @@ namespace Deepgram.Realtime
         public bool IsSpeakV2SpeakV2SessionMetadata => SpeakV2SpeakV2SessionMetadata != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickSpeakV2SpeakV2SessionMetadata(
 #if NET6_0_OR_GREATER
@@ -262,14 +262,14 @@ namespace Deepgram.Realtime
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Deepgram.Realtime.SpeakV2SpeakV2SessionMetadata PickSpeakV2SpeakV2SessionMetadata() => IsSpeakV2SpeakV2SessionMetadata
             ? SpeakV2SpeakV2SessionMetadata!
             : throw new global::System.InvalidOperationException($"Expected union variant 'SpeakV2SpeakV2SessionMetadata' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Deepgram.Realtime.SpeakV2SpeakV2ConfigureSuccess? SpeakV2SpeakV2ConfigureSuccess { get; init; }
@@ -278,7 +278,7 @@ namespace Deepgram.Realtime
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(SpeakV2SpeakV2ConfigureSuccess))]
@@ -286,7 +286,7 @@ namespace Deepgram.Realtime
         public bool IsSpeakV2SpeakV2ConfigureSuccess => SpeakV2SpeakV2ConfigureSuccess != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickSpeakV2SpeakV2ConfigureSuccess(
 #if NET6_0_OR_GREATER
@@ -299,14 +299,14 @@ namespace Deepgram.Realtime
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Deepgram.Realtime.SpeakV2SpeakV2ConfigureSuccess PickSpeakV2SpeakV2ConfigureSuccess() => IsSpeakV2SpeakV2ConfigureSuccess
             ? SpeakV2SpeakV2ConfigureSuccess!
             : throw new global::System.InvalidOperationException($"Expected union variant 'SpeakV2SpeakV2ConfigureSuccess' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Deepgram.Realtime.SpeakV2SpeakV2ConfigureFailure? SpeakV2SpeakV2ConfigureFailure { get; init; }
@@ -315,7 +315,7 @@ namespace Deepgram.Realtime
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(SpeakV2SpeakV2ConfigureFailure))]
@@ -323,7 +323,7 @@ namespace Deepgram.Realtime
         public bool IsSpeakV2SpeakV2ConfigureFailure => SpeakV2SpeakV2ConfigureFailure != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickSpeakV2SpeakV2ConfigureFailure(
 #if NET6_0_OR_GREATER
@@ -336,14 +336,14 @@ namespace Deepgram.Realtime
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Deepgram.Realtime.SpeakV2SpeakV2ConfigureFailure PickSpeakV2SpeakV2ConfigureFailure() => IsSpeakV2SpeakV2ConfigureFailure
             ? SpeakV2SpeakV2ConfigureFailure!
             : throw new global::System.InvalidOperationException($"Expected union variant 'SpeakV2SpeakV2ConfigureFailure' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Deepgram.Realtime.SpeakV2SpeakV2Warning? SpeakV2SpeakV2Warning { get; init; }
@@ -352,7 +352,7 @@ namespace Deepgram.Realtime
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(SpeakV2SpeakV2Warning))]
@@ -360,7 +360,7 @@ namespace Deepgram.Realtime
         public bool IsSpeakV2SpeakV2Warning => SpeakV2SpeakV2Warning != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickSpeakV2SpeakV2Warning(
 #if NET6_0_OR_GREATER
@@ -373,14 +373,14 @@ namespace Deepgram.Realtime
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Deepgram.Realtime.SpeakV2SpeakV2Warning PickSpeakV2SpeakV2Warning() => IsSpeakV2SpeakV2Warning
             ? SpeakV2SpeakV2Warning!
             : throw new global::System.InvalidOperationException($"Expected union variant 'SpeakV2SpeakV2Warning' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Deepgram.Realtime.SpeakV2SpeakV2Error? SpeakV2SpeakV2Error { get; init; }
@@ -389,7 +389,7 @@ namespace Deepgram.Realtime
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(SpeakV2SpeakV2Error))]
@@ -397,7 +397,7 @@ namespace Deepgram.Realtime
         public bool IsSpeakV2SpeakV2Error => SpeakV2SpeakV2Error != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickSpeakV2SpeakV2Error(
 #if NET6_0_OR_GREATER
@@ -410,23 +410,23 @@ namespace Deepgram.Realtime
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Deepgram.Realtime.SpeakV2SpeakV2Error PickSpeakV2SpeakV2Error() => IsSpeakV2SpeakV2Error
             ? SpeakV2SpeakV2Error!
             : throw new global::System.InvalidOperationException($"Expected union variant 'SpeakV2SpeakV2Error' but the value was {ToString()}.");
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator VsServerEvent(byte[] value) => new VsServerEvent((byte[]?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator byte[]?(VsServerEvent @this) => @this.SpeakV2SpeakV2Audio;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public VsServerEvent(byte[]? value)
         {
@@ -434,22 +434,22 @@ namespace Deepgram.Realtime
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static VsServerEvent FromSpeakV2SpeakV2Audio(byte[]? value) => new VsServerEvent(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator VsServerEvent(global::Deepgram.Realtime.SpeakV2SpeakV2Connected value) => new VsServerEvent((global::Deepgram.Realtime.SpeakV2SpeakV2Connected?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Deepgram.Realtime.SpeakV2SpeakV2Connected?(VsServerEvent @this) => @this.SpeakV2SpeakV2Connected;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public VsServerEvent(global::Deepgram.Realtime.SpeakV2SpeakV2Connected? value)
         {
@@ -457,22 +457,22 @@ namespace Deepgram.Realtime
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static VsServerEvent FromSpeakV2SpeakV2Connected(global::Deepgram.Realtime.SpeakV2SpeakV2Connected? value) => new VsServerEvent(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator VsServerEvent(global::Deepgram.Realtime.SpeakV2SpeakV2SpeechStarted value) => new VsServerEvent((global::Deepgram.Realtime.SpeakV2SpeakV2SpeechStarted?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Deepgram.Realtime.SpeakV2SpeakV2SpeechStarted?(VsServerEvent @this) => @this.SpeakV2SpeakV2SpeechStarted;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public VsServerEvent(global::Deepgram.Realtime.SpeakV2SpeakV2SpeechStarted? value)
         {
@@ -480,22 +480,22 @@ namespace Deepgram.Realtime
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static VsServerEvent FromSpeakV2SpeakV2SpeechStarted(global::Deepgram.Realtime.SpeakV2SpeakV2SpeechStarted? value) => new VsServerEvent(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator VsServerEvent(global::Deepgram.Realtime.SpeakV2SpeakV2SpeechMetadata value) => new VsServerEvent((global::Deepgram.Realtime.SpeakV2SpeakV2SpeechMetadata?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Deepgram.Realtime.SpeakV2SpeakV2SpeechMetadata?(VsServerEvent @this) => @this.SpeakV2SpeakV2SpeechMetadata;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public VsServerEvent(global::Deepgram.Realtime.SpeakV2SpeakV2SpeechMetadata? value)
         {
@@ -503,22 +503,22 @@ namespace Deepgram.Realtime
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static VsServerEvent FromSpeakV2SpeakV2SpeechMetadata(global::Deepgram.Realtime.SpeakV2SpeakV2SpeechMetadata? value) => new VsServerEvent(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator VsServerEvent(global::Deepgram.Realtime.SpeakV2SpeakV2SpeechInterrupted value) => new VsServerEvent((global::Deepgram.Realtime.SpeakV2SpeakV2SpeechInterrupted?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Deepgram.Realtime.SpeakV2SpeakV2SpeechInterrupted?(VsServerEvent @this) => @this.SpeakV2SpeakV2SpeechInterrupted;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public VsServerEvent(global::Deepgram.Realtime.SpeakV2SpeakV2SpeechInterrupted? value)
         {
@@ -526,22 +526,22 @@ namespace Deepgram.Realtime
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static VsServerEvent FromSpeakV2SpeakV2SpeechInterrupted(global::Deepgram.Realtime.SpeakV2SpeakV2SpeechInterrupted? value) => new VsServerEvent(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator VsServerEvent(global::Deepgram.Realtime.SpeakV2SpeakV2Flushed value) => new VsServerEvent((global::Deepgram.Realtime.SpeakV2SpeakV2Flushed?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Deepgram.Realtime.SpeakV2SpeakV2Flushed?(VsServerEvent @this) => @this.SpeakV2SpeakV2Flushed;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public VsServerEvent(global::Deepgram.Realtime.SpeakV2SpeakV2Flushed? value)
         {
@@ -549,22 +549,22 @@ namespace Deepgram.Realtime
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static VsServerEvent FromSpeakV2SpeakV2Flushed(global::Deepgram.Realtime.SpeakV2SpeakV2Flushed? value) => new VsServerEvent(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator VsServerEvent(global::Deepgram.Realtime.SpeakV2SpeakV2SessionMetadata value) => new VsServerEvent((global::Deepgram.Realtime.SpeakV2SpeakV2SessionMetadata?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Deepgram.Realtime.SpeakV2SpeakV2SessionMetadata?(VsServerEvent @this) => @this.SpeakV2SpeakV2SessionMetadata;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public VsServerEvent(global::Deepgram.Realtime.SpeakV2SpeakV2SessionMetadata? value)
         {
@@ -572,22 +572,22 @@ namespace Deepgram.Realtime
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static VsServerEvent FromSpeakV2SpeakV2SessionMetadata(global::Deepgram.Realtime.SpeakV2SpeakV2SessionMetadata? value) => new VsServerEvent(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator VsServerEvent(global::Deepgram.Realtime.SpeakV2SpeakV2ConfigureSuccess value) => new VsServerEvent((global::Deepgram.Realtime.SpeakV2SpeakV2ConfigureSuccess?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Deepgram.Realtime.SpeakV2SpeakV2ConfigureSuccess?(VsServerEvent @this) => @this.SpeakV2SpeakV2ConfigureSuccess;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public VsServerEvent(global::Deepgram.Realtime.SpeakV2SpeakV2ConfigureSuccess? value)
         {
@@ -595,22 +595,22 @@ namespace Deepgram.Realtime
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static VsServerEvent FromSpeakV2SpeakV2ConfigureSuccess(global::Deepgram.Realtime.SpeakV2SpeakV2ConfigureSuccess? value) => new VsServerEvent(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator VsServerEvent(global::Deepgram.Realtime.SpeakV2SpeakV2ConfigureFailure value) => new VsServerEvent((global::Deepgram.Realtime.SpeakV2SpeakV2ConfigureFailure?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Deepgram.Realtime.SpeakV2SpeakV2ConfigureFailure?(VsServerEvent @this) => @this.SpeakV2SpeakV2ConfigureFailure;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public VsServerEvent(global::Deepgram.Realtime.SpeakV2SpeakV2ConfigureFailure? value)
         {
@@ -618,22 +618,22 @@ namespace Deepgram.Realtime
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static VsServerEvent FromSpeakV2SpeakV2ConfigureFailure(global::Deepgram.Realtime.SpeakV2SpeakV2ConfigureFailure? value) => new VsServerEvent(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator VsServerEvent(global::Deepgram.Realtime.SpeakV2SpeakV2Warning value) => new VsServerEvent((global::Deepgram.Realtime.SpeakV2SpeakV2Warning?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Deepgram.Realtime.SpeakV2SpeakV2Warning?(VsServerEvent @this) => @this.SpeakV2SpeakV2Warning;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public VsServerEvent(global::Deepgram.Realtime.SpeakV2SpeakV2Warning? value)
         {
@@ -641,22 +641,22 @@ namespace Deepgram.Realtime
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static VsServerEvent FromSpeakV2SpeakV2Warning(global::Deepgram.Realtime.SpeakV2SpeakV2Warning? value) => new VsServerEvent(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator VsServerEvent(global::Deepgram.Realtime.SpeakV2SpeakV2Error value) => new VsServerEvent((global::Deepgram.Realtime.SpeakV2SpeakV2Error?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Deepgram.Realtime.SpeakV2SpeakV2Error?(VsServerEvent @this) => @this.SpeakV2SpeakV2Error;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public VsServerEvent(global::Deepgram.Realtime.SpeakV2SpeakV2Error? value)
         {
@@ -664,12 +664,12 @@ namespace Deepgram.Realtime
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static VsServerEvent FromSpeakV2SpeakV2Error(global::Deepgram.Realtime.SpeakV2SpeakV2Error? value) => new VsServerEvent(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public VsServerEvent(
             byte[]? speakV2SpeakV2Audio,
@@ -699,7 +699,7 @@ namespace Deepgram.Realtime
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public object? Object =>
             SpeakV2SpeakV2Error as object ??
@@ -712,11 +712,11 @@ namespace Deepgram.Realtime
             SpeakV2SpeakV2SpeechMetadata as object ??
             SpeakV2SpeakV2SpeechStarted as object ??
             SpeakV2SpeakV2Connected as object ??
-            SpeakV2SpeakV2Audio as object 
+            SpeakV2SpeakV2Audio as object
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override string? ToString() =>
             SpeakV2SpeakV2Audio?.ToString() ??
@@ -729,11 +729,11 @@ namespace Deepgram.Realtime
             SpeakV2SpeakV2ConfigureSuccess?.ToString() ??
             SpeakV2SpeakV2ConfigureFailure?.ToString() ??
             SpeakV2SpeakV2Warning?.ToString() ??
-            SpeakV2SpeakV2Error?.ToString() 
+            SpeakV2SpeakV2Error?.ToString()
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Validate()
         {
@@ -741,7 +741,7 @@ namespace Deepgram.Realtime
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public TResult? Match<TResult>(
             global::System.Func<byte[], TResult>? speakV2SpeakV2Audio = null,
@@ -811,7 +811,7 @@ namespace Deepgram.Realtime
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Match(
             global::System.Action<byte[]>? speakV2SpeakV2Audio = null,
@@ -889,7 +889,7 @@ namespace Deepgram.Realtime
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Switch(
             global::System.Action<byte[]>? speakV2SpeakV2Audio = null,
@@ -957,7 +957,7 @@ namespace Deepgram.Realtime
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override int GetHashCode()
         {
@@ -996,7 +996,7 @@ namespace Deepgram.Realtime
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Equals(VsServerEvent other)
         {
@@ -1011,12 +1011,12 @@ namespace Deepgram.Realtime
                 global::System.Collections.Generic.EqualityComparer<global::Deepgram.Realtime.SpeakV2SpeakV2ConfigureSuccess?>.Default.Equals(SpeakV2SpeakV2ConfigureSuccess, other.SpeakV2SpeakV2ConfigureSuccess) &&
                 global::System.Collections.Generic.EqualityComparer<global::Deepgram.Realtime.SpeakV2SpeakV2ConfigureFailure?>.Default.Equals(SpeakV2SpeakV2ConfigureFailure, other.SpeakV2SpeakV2ConfigureFailure) &&
                 global::System.Collections.Generic.EqualityComparer<global::Deepgram.Realtime.SpeakV2SpeakV2Warning?>.Default.Equals(SpeakV2SpeakV2Warning, other.SpeakV2SpeakV2Warning) &&
-                global::System.Collections.Generic.EqualityComparer<global::Deepgram.Realtime.SpeakV2SpeakV2Error?>.Default.Equals(SpeakV2SpeakV2Error, other.SpeakV2SpeakV2Error) 
+                global::System.Collections.Generic.EqualityComparer<global::Deepgram.Realtime.SpeakV2SpeakV2Error?>.Default.Equals(SpeakV2SpeakV2Error, other.SpeakV2SpeakV2Error)
                 ;
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator ==(VsServerEvent obj1, VsServerEvent obj2)
         {
@@ -1024,7 +1024,7 @@ namespace Deepgram.Realtime
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator !=(VsServerEvent obj1, VsServerEvent obj2)
         {
@@ -1032,7 +1032,7 @@ namespace Deepgram.Realtime
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override bool Equals(object? obj)
         {

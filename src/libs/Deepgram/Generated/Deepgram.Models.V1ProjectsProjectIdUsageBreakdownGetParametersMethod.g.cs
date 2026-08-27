@@ -9,15 +9,15 @@ namespace Deepgram
     public enum V1ProjectsProjectIdUsageBreakdownGetParametersMethod
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Async,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Streaming,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Sync,
     }

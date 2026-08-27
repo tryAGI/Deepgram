@@ -5,7 +5,7 @@
 namespace Deepgram
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public readonly partial struct CreateKeyV1Request : global::System.IEquatable<CreateKeyV1Request>
     {
@@ -19,7 +19,7 @@ namespace Deepgram
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(CreateKeyV1RequestVariant1))]
@@ -27,7 +27,7 @@ namespace Deepgram
         public bool IsCreateKeyV1RequestVariant1 => CreateKeyV1RequestVariant1 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickCreateKeyV1RequestVariant1(
 #if NET6_0_OR_GREATER
@@ -40,7 +40,7 @@ namespace Deepgram
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public object PickCreateKeyV1RequestVariant1() => IsCreateKeyV1RequestVariant1
             ? CreateKeyV1RequestVariant1!
@@ -56,7 +56,7 @@ namespace Deepgram
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(CreateKeyV1RequestVariant2))]
@@ -64,7 +64,7 @@ namespace Deepgram
         public bool IsCreateKeyV1RequestVariant2 => CreateKeyV1RequestVariant2 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickCreateKeyV1RequestVariant2(
 #if NET6_0_OR_GREATER
@@ -77,14 +77,14 @@ namespace Deepgram
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public object PickCreateKeyV1RequestVariant2() => IsCreateKeyV1RequestVariant2
             ? CreateKeyV1RequestVariant2!
             : throw new global::System.InvalidOperationException($"Expected union variant 'CreateKeyV1RequestVariant2' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public CreateKeyV1Request(
             object? createKeyV1RequestVariant1,
@@ -96,23 +96,23 @@ namespace Deepgram
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public object? Object =>
             CreateKeyV1RequestVariant2 as object ??
-            CreateKeyV1RequestVariant1 as object 
+            CreateKeyV1RequestVariant1 as object
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override string? ToString() =>
             CreateKeyV1RequestVariant1?.ToString() ??
-            CreateKeyV1RequestVariant2?.ToString() 
+            CreateKeyV1RequestVariant2?.ToString()
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Validate()
         {
@@ -120,7 +120,7 @@ namespace Deepgram
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public TResult? Match<TResult>(
             global::System.Func<object, TResult>? createKeyV1RequestVariant1 = null,
@@ -145,7 +145,7 @@ namespace Deepgram
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Match(
             global::System.Action<object>? createKeyV1RequestVariant1 = null,
@@ -169,7 +169,7 @@ namespace Deepgram
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Switch(
             global::System.Action<object>? createKeyV1RequestVariant1 = null,
@@ -192,7 +192,7 @@ namespace Deepgram
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override int GetHashCode()
         {
@@ -213,18 +213,18 @@ namespace Deepgram
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Equals(CreateKeyV1Request other)
         {
             return
                 global::System.Collections.Generic.EqualityComparer<object?>.Default.Equals(CreateKeyV1RequestVariant1, other.CreateKeyV1RequestVariant1) &&
-                global::System.Collections.Generic.EqualityComparer<object?>.Default.Equals(CreateKeyV1RequestVariant2, other.CreateKeyV1RequestVariant2) 
+                global::System.Collections.Generic.EqualityComparer<object?>.Default.Equals(CreateKeyV1RequestVariant2, other.CreateKeyV1RequestVariant2)
                 ;
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator ==(CreateKeyV1Request obj1, CreateKeyV1Request obj2)
         {
@@ -232,7 +232,7 @@ namespace Deepgram
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator !=(CreateKeyV1Request obj1, CreateKeyV1Request obj2)
         {
@@ -240,7 +240,7 @@ namespace Deepgram
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override bool Equals(object? obj)
         {

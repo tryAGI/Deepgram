@@ -342,7 +342,7 @@ namespace Deepgram.Realtime
         public event global::System.EventHandler<AutoSDKWebSocketMessageEventArgs<byte[]>>? AgentV1AudioReceived;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 
         public global::System.Text.Json.Serialization.JsonSerializerContext JsonSerializerContext { get; set; } = global::Deepgram.Realtime.RealtimeSourceGenerationContext.Default;

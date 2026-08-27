@@ -9,7 +9,7 @@ namespace Deepgram
     public enum V1SpeakPostParametersSampleRate4
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         x48000,
     }

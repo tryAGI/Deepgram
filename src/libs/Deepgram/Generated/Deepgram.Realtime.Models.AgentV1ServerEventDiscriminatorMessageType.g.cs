@@ -4,68 +4,68 @@
 namespace Deepgram.Realtime
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum AgentV1ServerEventDiscriminatorMessageType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AgentAudioDone,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AgentStartedSpeaking,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AgentThinking,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ConversationText,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         FunctionCallRequest,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         FunctionCallResponse,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         InjectionRefused,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         LatencyReport,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ListenUpdated,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         PromptUpdated,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         SettingsApplied,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         SpeakUpdated,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ThinkUpdated,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         UserStartedSpeaking,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Welcome,
     }

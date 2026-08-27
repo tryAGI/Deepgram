@@ -10,7 +10,7 @@ namespace Deepgram
     public sealed partial class InvitesClient : global::Deepgram.IInvitesClient, global::System.IDisposable
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public const string DefaultBaseUrl = "https://api.deepgram.com/";
 
@@ -40,7 +40,7 @@ namespace Deepgram
         internal global::System.Lazy<global::System.Text.Json.Serialization.JsonSerializerContext> JsonSerializerContextProvider { get; set; } = new(() => global::Deepgram.SourceGenerationContext.Default);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::System.Text.Json.Serialization.JsonSerializerContext JsonSerializerContext
         {

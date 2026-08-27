@@ -4,12 +4,12 @@
 namespace Deepgram
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class ListProjectBalancesV1Response
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("balances")]
         public global::System.Collections.Generic.IList<global::Deepgram.ListProjectBalancesV1ResponseBalancesItems>? Balances { get; set; }

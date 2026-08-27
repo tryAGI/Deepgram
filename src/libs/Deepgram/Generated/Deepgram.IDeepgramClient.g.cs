@@ -60,98 +60,98 @@ namespace Deepgram
 
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         global::System.Text.Json.Serialization.JsonSerializerContext JsonSerializerContext { get; set; }
 
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public AudioClient Audio { get; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public BalancesClient Balances { get; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public BreakdownClient Breakdown { get; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public ConfigurationsClient Configurations { get; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public DistributionCredentialsClient DistributionCredentials { get; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public FieldsClient Fields { get; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public InvitesClient Invites { get; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public KeysClient Keys { get; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public MediaClient Media { get; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public MembersClient Members { get; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public ModelsClient Models { get; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public ProjectsClient Projects { get; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public PurchasesClient Purchases { get; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public RequestsClient Requests { get; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public ScopesClient Scopes { get; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public TextClient Text { get; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public TokensClient Tokens { get; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public VariablesClient Variables { get; }
 

@@ -9,7 +9,7 @@ namespace Deepgram
     public enum V2SpeakPostParametersContainer4
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Ogg,
     }

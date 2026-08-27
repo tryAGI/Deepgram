@@ -9,11 +9,11 @@ namespace Deepgram.Realtime
     public enum ListenV2Model
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         FluxGeneralEn,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         FluxGeneralMulti,
     }

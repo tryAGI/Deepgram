@@ -5,7 +5,7 @@
 namespace Deepgram.Realtime
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public readonly partial struct SpeakSettingsV1Provider : global::System.IEquatable<SpeakSettingsV1Provider>
     {
@@ -19,7 +19,7 @@ namespace Deepgram.Realtime
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(DeepgramSpeakProvider))]
@@ -27,7 +27,7 @@ namespace Deepgram.Realtime
         public bool IsDeepgramSpeakProvider => DeepgramSpeakProvider != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickDeepgramSpeakProvider(
 #if NET6_0_OR_GREATER
@@ -40,14 +40,14 @@ namespace Deepgram.Realtime
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Deepgram.Realtime.DeepgramSpeakProvider PickDeepgramSpeakProvider() => IsDeepgramSpeakProvider
             ? DeepgramSpeakProvider!
             : throw new global::System.InvalidOperationException($"Expected union variant 'DeepgramSpeakProvider' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Deepgram.Realtime.ElevenLabsSpeakProvider? ElevenLabsSpeakProvider { get; init; }
@@ -56,7 +56,7 @@ namespace Deepgram.Realtime
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(ElevenLabsSpeakProvider))]
@@ -64,7 +64,7 @@ namespace Deepgram.Realtime
         public bool IsElevenLabsSpeakProvider => ElevenLabsSpeakProvider != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickElevenLabsSpeakProvider(
 #if NET6_0_OR_GREATER
@@ -77,14 +77,14 @@ namespace Deepgram.Realtime
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Deepgram.Realtime.ElevenLabsSpeakProvider PickElevenLabsSpeakProvider() => IsElevenLabsSpeakProvider
             ? ElevenLabsSpeakProvider!
             : throw new global::System.InvalidOperationException($"Expected union variant 'ElevenLabsSpeakProvider' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Deepgram.Realtime.CartesiaSpeakProvider? CartesiaSpeakProvider { get; init; }
@@ -93,7 +93,7 @@ namespace Deepgram.Realtime
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(CartesiaSpeakProvider))]
@@ -101,7 +101,7 @@ namespace Deepgram.Realtime
         public bool IsCartesiaSpeakProvider => CartesiaSpeakProvider != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickCartesiaSpeakProvider(
 #if NET6_0_OR_GREATER
@@ -114,14 +114,14 @@ namespace Deepgram.Realtime
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Deepgram.Realtime.CartesiaSpeakProvider PickCartesiaSpeakProvider() => IsCartesiaSpeakProvider
             ? CartesiaSpeakProvider!
             : throw new global::System.InvalidOperationException($"Expected union variant 'CartesiaSpeakProvider' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Deepgram.Realtime.OpenAiSpeakProvider? OpenAiSpeakProvider { get; init; }
@@ -130,7 +130,7 @@ namespace Deepgram.Realtime
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(OpenAiSpeakProvider))]
@@ -138,7 +138,7 @@ namespace Deepgram.Realtime
         public bool IsOpenAiSpeakProvider => OpenAiSpeakProvider != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickOpenAiSpeakProvider(
 #if NET6_0_OR_GREATER
@@ -151,14 +151,14 @@ namespace Deepgram.Realtime
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Deepgram.Realtime.OpenAiSpeakProvider PickOpenAiSpeakProvider() => IsOpenAiSpeakProvider
             ? OpenAiSpeakProvider!
             : throw new global::System.InvalidOperationException($"Expected union variant 'OpenAiSpeakProvider' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Deepgram.Realtime.AwsPollySpeakProvider? AwsPollySpeakProvider { get; init; }
@@ -167,7 +167,7 @@ namespace Deepgram.Realtime
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(AwsPollySpeakProvider))]
@@ -175,7 +175,7 @@ namespace Deepgram.Realtime
         public bool IsAwsPollySpeakProvider => AwsPollySpeakProvider != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickAwsPollySpeakProvider(
 #if NET6_0_OR_GREATER
@@ -188,23 +188,23 @@ namespace Deepgram.Realtime
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Deepgram.Realtime.AwsPollySpeakProvider PickAwsPollySpeakProvider() => IsAwsPollySpeakProvider
             ? AwsPollySpeakProvider!
             : throw new global::System.InvalidOperationException($"Expected union variant 'AwsPollySpeakProvider' but the value was {ToString()}.");
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator SpeakSettingsV1Provider(global::Deepgram.Realtime.DeepgramSpeakProvider value) => new SpeakSettingsV1Provider((global::Deepgram.Realtime.DeepgramSpeakProvider?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Deepgram.Realtime.DeepgramSpeakProvider?(SpeakSettingsV1Provider @this) => @this.DeepgramSpeakProvider;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public SpeakSettingsV1Provider(global::Deepgram.Realtime.DeepgramSpeakProvider? value)
         {
@@ -212,22 +212,22 @@ namespace Deepgram.Realtime
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static SpeakSettingsV1Provider FromDeepgramSpeakProvider(global::Deepgram.Realtime.DeepgramSpeakProvider? value) => new SpeakSettingsV1Provider(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator SpeakSettingsV1Provider(global::Deepgram.Realtime.ElevenLabsSpeakProvider value) => new SpeakSettingsV1Provider((global::Deepgram.Realtime.ElevenLabsSpeakProvider?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Deepgram.Realtime.ElevenLabsSpeakProvider?(SpeakSettingsV1Provider @this) => @this.ElevenLabsSpeakProvider;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public SpeakSettingsV1Provider(global::Deepgram.Realtime.ElevenLabsSpeakProvider? value)
         {
@@ -235,22 +235,22 @@ namespace Deepgram.Realtime
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static SpeakSettingsV1Provider FromElevenLabsSpeakProvider(global::Deepgram.Realtime.ElevenLabsSpeakProvider? value) => new SpeakSettingsV1Provider(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator SpeakSettingsV1Provider(global::Deepgram.Realtime.CartesiaSpeakProvider value) => new SpeakSettingsV1Provider((global::Deepgram.Realtime.CartesiaSpeakProvider?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Deepgram.Realtime.CartesiaSpeakProvider?(SpeakSettingsV1Provider @this) => @this.CartesiaSpeakProvider;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public SpeakSettingsV1Provider(global::Deepgram.Realtime.CartesiaSpeakProvider? value)
         {
@@ -258,22 +258,22 @@ namespace Deepgram.Realtime
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static SpeakSettingsV1Provider FromCartesiaSpeakProvider(global::Deepgram.Realtime.CartesiaSpeakProvider? value) => new SpeakSettingsV1Provider(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator SpeakSettingsV1Provider(global::Deepgram.Realtime.OpenAiSpeakProvider value) => new SpeakSettingsV1Provider((global::Deepgram.Realtime.OpenAiSpeakProvider?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Deepgram.Realtime.OpenAiSpeakProvider?(SpeakSettingsV1Provider @this) => @this.OpenAiSpeakProvider;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public SpeakSettingsV1Provider(global::Deepgram.Realtime.OpenAiSpeakProvider? value)
         {
@@ -281,22 +281,22 @@ namespace Deepgram.Realtime
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static SpeakSettingsV1Provider FromOpenAiSpeakProvider(global::Deepgram.Realtime.OpenAiSpeakProvider? value) => new SpeakSettingsV1Provider(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator SpeakSettingsV1Provider(global::Deepgram.Realtime.AwsPollySpeakProvider value) => new SpeakSettingsV1Provider((global::Deepgram.Realtime.AwsPollySpeakProvider?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Deepgram.Realtime.AwsPollySpeakProvider?(SpeakSettingsV1Provider @this) => @this.AwsPollySpeakProvider;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public SpeakSettingsV1Provider(global::Deepgram.Realtime.AwsPollySpeakProvider? value)
         {
@@ -304,12 +304,12 @@ namespace Deepgram.Realtime
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static SpeakSettingsV1Provider FromAwsPollySpeakProvider(global::Deepgram.Realtime.AwsPollySpeakProvider? value) => new SpeakSettingsV1Provider(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public SpeakSettingsV1Provider(
             global::Deepgram.Realtime.DeepgramSpeakProvider? deepgramSpeakProvider,
@@ -327,29 +327,29 @@ namespace Deepgram.Realtime
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public object? Object =>
             AwsPollySpeakProvider as object ??
             OpenAiSpeakProvider as object ??
             CartesiaSpeakProvider as object ??
             ElevenLabsSpeakProvider as object ??
-            DeepgramSpeakProvider as object 
+            DeepgramSpeakProvider as object
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override string? ToString() =>
             DeepgramSpeakProvider?.ToString() ??
             ElevenLabsSpeakProvider?.ToString() ??
             CartesiaSpeakProvider?.ToString() ??
             OpenAiSpeakProvider?.ToString() ??
-            AwsPollySpeakProvider?.ToString() 
+            AwsPollySpeakProvider?.ToString()
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Validate()
         {
@@ -357,7 +357,7 @@ namespace Deepgram.Realtime
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public TResult? Match<TResult>(
             global::System.Func<global::Deepgram.Realtime.DeepgramSpeakProvider, TResult>? deepgramSpeakProvider = null,
@@ -397,7 +397,7 @@ namespace Deepgram.Realtime
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Match(
             global::System.Action<global::Deepgram.Realtime.DeepgramSpeakProvider>? deepgramSpeakProvider = null,
@@ -439,7 +439,7 @@ namespace Deepgram.Realtime
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Switch(
             global::System.Action<global::Deepgram.Realtime.DeepgramSpeakProvider>? deepgramSpeakProvider = null,
@@ -477,7 +477,7 @@ namespace Deepgram.Realtime
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override int GetHashCode()
         {
@@ -504,7 +504,7 @@ namespace Deepgram.Realtime
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Equals(SpeakSettingsV1Provider other)
         {
@@ -513,12 +513,12 @@ namespace Deepgram.Realtime
                 global::System.Collections.Generic.EqualityComparer<global::Deepgram.Realtime.ElevenLabsSpeakProvider?>.Default.Equals(ElevenLabsSpeakProvider, other.ElevenLabsSpeakProvider) &&
                 global::System.Collections.Generic.EqualityComparer<global::Deepgram.Realtime.CartesiaSpeakProvider?>.Default.Equals(CartesiaSpeakProvider, other.CartesiaSpeakProvider) &&
                 global::System.Collections.Generic.EqualityComparer<global::Deepgram.Realtime.OpenAiSpeakProvider?>.Default.Equals(OpenAiSpeakProvider, other.OpenAiSpeakProvider) &&
-                global::System.Collections.Generic.EqualityComparer<global::Deepgram.Realtime.AwsPollySpeakProvider?>.Default.Equals(AwsPollySpeakProvider, other.AwsPollySpeakProvider) 
+                global::System.Collections.Generic.EqualityComparer<global::Deepgram.Realtime.AwsPollySpeakProvider?>.Default.Equals(AwsPollySpeakProvider, other.AwsPollySpeakProvider)
                 ;
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator ==(SpeakSettingsV1Provider obj1, SpeakSettingsV1Provider obj2)
         {
@@ -526,7 +526,7 @@ namespace Deepgram.Realtime
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator !=(SpeakSettingsV1Provider obj1, SpeakSettingsV1Provider obj2)
         {
@@ -534,7 +534,7 @@ namespace Deepgram.Realtime
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override bool Equals(object? obj)
         {

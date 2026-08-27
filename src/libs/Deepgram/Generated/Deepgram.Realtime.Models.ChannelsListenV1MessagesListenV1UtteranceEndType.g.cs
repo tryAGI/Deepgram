@@ -9,7 +9,7 @@ namespace Deepgram.Realtime
     public enum ChannelsListenV1MessagesListenV1UtteranceEndType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         UtteranceEnd,
     }

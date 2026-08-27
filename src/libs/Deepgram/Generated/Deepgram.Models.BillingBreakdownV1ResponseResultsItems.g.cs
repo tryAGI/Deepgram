@@ -4,7 +4,7 @@
 namespace Deepgram
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class BillingBreakdownV1ResponseResultsItems
     {
@@ -16,7 +16,7 @@ namespace Deepgram
         public required string Dollars { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("grouping")]
         [global::System.Text.Json.Serialization.JsonRequired]

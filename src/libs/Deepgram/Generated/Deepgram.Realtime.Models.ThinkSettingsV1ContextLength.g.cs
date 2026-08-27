@@ -19,7 +19,7 @@ namespace Deepgram.Realtime
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(ThinkSettingsV1ContextLength0))]
@@ -27,7 +27,7 @@ namespace Deepgram.Realtime
         public bool IsThinkSettingsV1ContextLength0 => ThinkSettingsV1ContextLength0 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickThinkSettingsV1ContextLength0(
 #if NET6_0_OR_GREATER
@@ -40,14 +40,14 @@ namespace Deepgram.Realtime
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Deepgram.Realtime.ThinkSettingsV1ContextLength0 PickThinkSettingsV1ContextLength0() => IsThinkSettingsV1ContextLength0
             ? ThinkSettingsV1ContextLength0!.Value
             : throw new global::System.InvalidOperationException($"Expected union variant 'ThinkSettingsV1ContextLength0' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public double? ThinkSettingsV1ContextLengthVariant2 { get; init; }
@@ -56,7 +56,7 @@ namespace Deepgram.Realtime
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(ThinkSettingsV1ContextLengthVariant2))]
@@ -64,7 +64,7 @@ namespace Deepgram.Realtime
         public bool IsThinkSettingsV1ContextLengthVariant2 => ThinkSettingsV1ContextLengthVariant2 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickThinkSettingsV1ContextLengthVariant2(
 #if NET6_0_OR_GREATER
@@ -77,23 +77,23 @@ namespace Deepgram.Realtime
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public double PickThinkSettingsV1ContextLengthVariant2() => IsThinkSettingsV1ContextLengthVariant2
             ? ThinkSettingsV1ContextLengthVariant2!.Value
             : throw new global::System.InvalidOperationException($"Expected union variant 'ThinkSettingsV1ContextLengthVariant2' but the value was {ToString()}.");
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator ThinkSettingsV1ContextLength(global::Deepgram.Realtime.ThinkSettingsV1ContextLength0 value) => new ThinkSettingsV1ContextLength((global::Deepgram.Realtime.ThinkSettingsV1ContextLength0?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Deepgram.Realtime.ThinkSettingsV1ContextLength0?(ThinkSettingsV1ContextLength @this) => @this.ThinkSettingsV1ContextLength0;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public ThinkSettingsV1ContextLength(global::Deepgram.Realtime.ThinkSettingsV1ContextLength0? value)
         {
@@ -101,22 +101,22 @@ namespace Deepgram.Realtime
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static ThinkSettingsV1ContextLength FromThinkSettingsV1ContextLength0(global::Deepgram.Realtime.ThinkSettingsV1ContextLength0? value) => new ThinkSettingsV1ContextLength(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator ThinkSettingsV1ContextLength(double value) => new ThinkSettingsV1ContextLength((double?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator double?(ThinkSettingsV1ContextLength @this) => @this.ThinkSettingsV1ContextLengthVariant2;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public ThinkSettingsV1ContextLength(double? value)
         {
@@ -124,12 +124,12 @@ namespace Deepgram.Realtime
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static ThinkSettingsV1ContextLength FromThinkSettingsV1ContextLengthVariant2(double? value) => new ThinkSettingsV1ContextLength(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public ThinkSettingsV1ContextLength(
             global::Deepgram.Realtime.ThinkSettingsV1ContextLength0? thinkSettingsV1ContextLength0,
@@ -141,23 +141,23 @@ namespace Deepgram.Realtime
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public object? Object =>
             ThinkSettingsV1ContextLengthVariant2 as object ??
-            ThinkSettingsV1ContextLength0 as object 
+            ThinkSettingsV1ContextLength0 as object
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override string? ToString() =>
             ThinkSettingsV1ContextLength0?.ToValueString() ??
-            ThinkSettingsV1ContextLengthVariant2?.ToString() 
+            ThinkSettingsV1ContextLengthVariant2?.ToString()
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Validate()
         {
@@ -165,7 +165,7 @@ namespace Deepgram.Realtime
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public TResult? Match<TResult>(
             global::System.Func<global::Deepgram.Realtime.ThinkSettingsV1ContextLength0?, TResult>? thinkSettingsV1ContextLength0 = null,
@@ -190,7 +190,7 @@ namespace Deepgram.Realtime
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Match(
             global::System.Action<global::Deepgram.Realtime.ThinkSettingsV1ContextLength0?>? thinkSettingsV1ContextLength0 = null,
@@ -214,7 +214,7 @@ namespace Deepgram.Realtime
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Switch(
             global::System.Action<global::Deepgram.Realtime.ThinkSettingsV1ContextLength0?>? thinkSettingsV1ContextLength0 = null,
@@ -237,7 +237,7 @@ namespace Deepgram.Realtime
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override int GetHashCode()
         {
@@ -258,18 +258,18 @@ namespace Deepgram.Realtime
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Equals(ThinkSettingsV1ContextLength other)
         {
             return
                 global::System.Collections.Generic.EqualityComparer<global::Deepgram.Realtime.ThinkSettingsV1ContextLength0?>.Default.Equals(ThinkSettingsV1ContextLength0, other.ThinkSettingsV1ContextLength0) &&
-                global::System.Collections.Generic.EqualityComparer<double?>.Default.Equals(ThinkSettingsV1ContextLengthVariant2, other.ThinkSettingsV1ContextLengthVariant2) 
+                global::System.Collections.Generic.EqualityComparer<double?>.Default.Equals(ThinkSettingsV1ContextLengthVariant2, other.ThinkSettingsV1ContextLengthVariant2)
                 ;
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator ==(ThinkSettingsV1ContextLength obj1, ThinkSettingsV1ContextLength obj2)
         {
@@ -277,7 +277,7 @@ namespace Deepgram.Realtime
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator !=(ThinkSettingsV1ContextLength obj1, ThinkSettingsV1ContextLength obj2)
         {
@@ -285,7 +285,7 @@ namespace Deepgram.Realtime
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override bool Equals(object? obj)
         {

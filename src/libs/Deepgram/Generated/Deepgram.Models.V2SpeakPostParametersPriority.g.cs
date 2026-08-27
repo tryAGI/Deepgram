@@ -4,12 +4,12 @@
 namespace Deepgram
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum V2SpeakPostParametersPriority
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Low,
     }

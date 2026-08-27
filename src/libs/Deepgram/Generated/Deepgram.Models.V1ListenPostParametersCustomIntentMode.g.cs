@@ -9,11 +9,11 @@ namespace Deepgram
     public enum V1ListenPostParametersCustomIntentMode
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Extended,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Strict,
     }

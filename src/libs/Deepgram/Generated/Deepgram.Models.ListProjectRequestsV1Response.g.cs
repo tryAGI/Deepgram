@@ -4,7 +4,7 @@
 namespace Deepgram
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class ListProjectRequestsV1Response
     {
@@ -21,7 +21,7 @@ namespace Deepgram
         public double? Limit { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("requests")]
         public global::System.Collections.Generic.IList<global::Deepgram.ProjectRequestResponse>? Requests { get; set; }

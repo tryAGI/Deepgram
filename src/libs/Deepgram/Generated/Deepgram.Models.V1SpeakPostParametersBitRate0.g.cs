@@ -9,11 +9,11 @@ namespace Deepgram
     public enum V1SpeakPostParametersBitRate0
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         x32000,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         x48000,
     }

@@ -9,7 +9,7 @@ namespace Deepgram
     public sealed partial class ReadV1ResponseResultsSummary
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("results")]
         public global::Deepgram.ReadV1ResponseResultsSummaryResults? Results { get; set; }

@@ -5,7 +5,7 @@
 namespace Deepgram
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public readonly partial struct V2SpeakPostParametersSampleRate : global::System.IEquatable<V2SpeakPostParametersSampleRate>
     {
@@ -19,7 +19,7 @@ namespace Deepgram
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(V2SpeakPostParametersSampleRate0))]
@@ -27,7 +27,7 @@ namespace Deepgram
         public bool IsV2SpeakPostParametersSampleRate0 => V2SpeakPostParametersSampleRate0 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickV2SpeakPostParametersSampleRate0(
 #if NET6_0_OR_GREATER
@@ -40,7 +40,7 @@ namespace Deepgram
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Deepgram.V2SpeakPostParametersSampleRate0 PickV2SpeakPostParametersSampleRate0() => IsV2SpeakPostParametersSampleRate0
             ? V2SpeakPostParametersSampleRate0!.Value
@@ -56,7 +56,7 @@ namespace Deepgram
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(V2SpeakPostParametersSampleRate1))]
@@ -64,7 +64,7 @@ namespace Deepgram
         public bool IsV2SpeakPostParametersSampleRate1 => V2SpeakPostParametersSampleRate1 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickV2SpeakPostParametersSampleRate1(
 #if NET6_0_OR_GREATER
@@ -77,7 +77,7 @@ namespace Deepgram
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Deepgram.V2SpeakPostParametersSampleRate1 PickV2SpeakPostParametersSampleRate1() => IsV2SpeakPostParametersSampleRate1
             ? V2SpeakPostParametersSampleRate1!.Value
@@ -93,7 +93,7 @@ namespace Deepgram
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(V2SpeakPostParametersSampleRate2))]
@@ -101,7 +101,7 @@ namespace Deepgram
         public bool IsV2SpeakPostParametersSampleRate2 => V2SpeakPostParametersSampleRate2 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickV2SpeakPostParametersSampleRate2(
 #if NET6_0_OR_GREATER
@@ -114,7 +114,7 @@ namespace Deepgram
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Deepgram.V2SpeakPostParametersSampleRate2 PickV2SpeakPostParametersSampleRate2() => IsV2SpeakPostParametersSampleRate2
             ? V2SpeakPostParametersSampleRate2!.Value
@@ -130,7 +130,7 @@ namespace Deepgram
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(V2SpeakPostParametersSampleRate3))]
@@ -138,7 +138,7 @@ namespace Deepgram
         public bool IsV2SpeakPostParametersSampleRate3 => V2SpeakPostParametersSampleRate3 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickV2SpeakPostParametersSampleRate3(
 #if NET6_0_OR_GREATER
@@ -151,23 +151,23 @@ namespace Deepgram
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Deepgram.V2SpeakPostParametersSampleRate3 PickV2SpeakPostParametersSampleRate3() => IsV2SpeakPostParametersSampleRate3
             ? V2SpeakPostParametersSampleRate3!.Value
             : throw new global::System.InvalidOperationException($"Expected union variant 'V2SpeakPostParametersSampleRate3' but the value was {ToString()}.");
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator V2SpeakPostParametersSampleRate(global::Deepgram.V2SpeakPostParametersSampleRate0 value) => new V2SpeakPostParametersSampleRate((global::Deepgram.V2SpeakPostParametersSampleRate0?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Deepgram.V2SpeakPostParametersSampleRate0?(V2SpeakPostParametersSampleRate @this) => @this.V2SpeakPostParametersSampleRate0;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public V2SpeakPostParametersSampleRate(global::Deepgram.V2SpeakPostParametersSampleRate0? value)
         {
@@ -175,22 +175,22 @@ namespace Deepgram
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static V2SpeakPostParametersSampleRate FromV2SpeakPostParametersSampleRate0(global::Deepgram.V2SpeakPostParametersSampleRate0? value) => new V2SpeakPostParametersSampleRate(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator V2SpeakPostParametersSampleRate(global::Deepgram.V2SpeakPostParametersSampleRate1 value) => new V2SpeakPostParametersSampleRate((global::Deepgram.V2SpeakPostParametersSampleRate1?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Deepgram.V2SpeakPostParametersSampleRate1?(V2SpeakPostParametersSampleRate @this) => @this.V2SpeakPostParametersSampleRate1;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public V2SpeakPostParametersSampleRate(global::Deepgram.V2SpeakPostParametersSampleRate1? value)
         {
@@ -198,22 +198,22 @@ namespace Deepgram
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static V2SpeakPostParametersSampleRate FromV2SpeakPostParametersSampleRate1(global::Deepgram.V2SpeakPostParametersSampleRate1? value) => new V2SpeakPostParametersSampleRate(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator V2SpeakPostParametersSampleRate(global::Deepgram.V2SpeakPostParametersSampleRate2 value) => new V2SpeakPostParametersSampleRate((global::Deepgram.V2SpeakPostParametersSampleRate2?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Deepgram.V2SpeakPostParametersSampleRate2?(V2SpeakPostParametersSampleRate @this) => @this.V2SpeakPostParametersSampleRate2;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public V2SpeakPostParametersSampleRate(global::Deepgram.V2SpeakPostParametersSampleRate2? value)
         {
@@ -221,22 +221,22 @@ namespace Deepgram
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static V2SpeakPostParametersSampleRate FromV2SpeakPostParametersSampleRate2(global::Deepgram.V2SpeakPostParametersSampleRate2? value) => new V2SpeakPostParametersSampleRate(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator V2SpeakPostParametersSampleRate(global::Deepgram.V2SpeakPostParametersSampleRate3 value) => new V2SpeakPostParametersSampleRate((global::Deepgram.V2SpeakPostParametersSampleRate3?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Deepgram.V2SpeakPostParametersSampleRate3?(V2SpeakPostParametersSampleRate @this) => @this.V2SpeakPostParametersSampleRate3;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public V2SpeakPostParametersSampleRate(global::Deepgram.V2SpeakPostParametersSampleRate3? value)
         {
@@ -244,12 +244,12 @@ namespace Deepgram
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static V2SpeakPostParametersSampleRate FromV2SpeakPostParametersSampleRate3(global::Deepgram.V2SpeakPostParametersSampleRate3? value) => new V2SpeakPostParametersSampleRate(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public V2SpeakPostParametersSampleRate(
             global::Deepgram.V2SpeakPostParametersSampleRate0? v2SpeakPostParametersSampleRate0,
@@ -265,27 +265,27 @@ namespace Deepgram
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public object? Object =>
             V2SpeakPostParametersSampleRate3 as object ??
             V2SpeakPostParametersSampleRate2 as object ??
             V2SpeakPostParametersSampleRate1 as object ??
-            V2SpeakPostParametersSampleRate0 as object 
+            V2SpeakPostParametersSampleRate0 as object
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override string? ToString() =>
             V2SpeakPostParametersSampleRate0?.ToValueString() ??
             V2SpeakPostParametersSampleRate1?.ToValueString() ??
             V2SpeakPostParametersSampleRate2?.ToValueString() ??
-            V2SpeakPostParametersSampleRate3?.ToValueString() 
+            V2SpeakPostParametersSampleRate3?.ToValueString()
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Validate()
         {
@@ -293,7 +293,7 @@ namespace Deepgram
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public TResult? Match<TResult>(
             global::System.Func<global::Deepgram.V2SpeakPostParametersSampleRate0?, TResult>? v2SpeakPostParametersSampleRate0 = null,
@@ -328,7 +328,7 @@ namespace Deepgram
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Match(
             global::System.Action<global::Deepgram.V2SpeakPostParametersSampleRate0?>? v2SpeakPostParametersSampleRate0 = null,
@@ -364,7 +364,7 @@ namespace Deepgram
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Switch(
             global::System.Action<global::Deepgram.V2SpeakPostParametersSampleRate0?>? v2SpeakPostParametersSampleRate0 = null,
@@ -397,7 +397,7 @@ namespace Deepgram
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override int GetHashCode()
         {
@@ -422,7 +422,7 @@ namespace Deepgram
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Equals(V2SpeakPostParametersSampleRate other)
         {
@@ -430,12 +430,12 @@ namespace Deepgram
                 global::System.Collections.Generic.EqualityComparer<global::Deepgram.V2SpeakPostParametersSampleRate0?>.Default.Equals(V2SpeakPostParametersSampleRate0, other.V2SpeakPostParametersSampleRate0) &&
                 global::System.Collections.Generic.EqualityComparer<global::Deepgram.V2SpeakPostParametersSampleRate1?>.Default.Equals(V2SpeakPostParametersSampleRate1, other.V2SpeakPostParametersSampleRate1) &&
                 global::System.Collections.Generic.EqualityComparer<global::Deepgram.V2SpeakPostParametersSampleRate2?>.Default.Equals(V2SpeakPostParametersSampleRate2, other.V2SpeakPostParametersSampleRate2) &&
-                global::System.Collections.Generic.EqualityComparer<global::Deepgram.V2SpeakPostParametersSampleRate3?>.Default.Equals(V2SpeakPostParametersSampleRate3, other.V2SpeakPostParametersSampleRate3) 
+                global::System.Collections.Generic.EqualityComparer<global::Deepgram.V2SpeakPostParametersSampleRate3?>.Default.Equals(V2SpeakPostParametersSampleRate3, other.V2SpeakPostParametersSampleRate3)
                 ;
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator ==(V2SpeakPostParametersSampleRate obj1, V2SpeakPostParametersSampleRate obj2)
         {
@@ -443,7 +443,7 @@ namespace Deepgram
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator !=(V2SpeakPostParametersSampleRate obj1, V2SpeakPostParametersSampleRate obj2)
         {
@@ -451,7 +451,7 @@ namespace Deepgram
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override bool Equals(object? obj)
         {

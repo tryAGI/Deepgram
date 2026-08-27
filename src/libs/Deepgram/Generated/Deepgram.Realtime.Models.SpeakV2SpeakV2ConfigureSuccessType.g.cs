@@ -9,7 +9,7 @@ namespace Deepgram.Realtime
     public enum SpeakV2SpeakV2ConfigureSuccessType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ConfigureSuccess,
     }

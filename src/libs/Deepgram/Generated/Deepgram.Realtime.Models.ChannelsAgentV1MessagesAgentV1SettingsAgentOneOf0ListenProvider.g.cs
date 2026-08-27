@@ -5,12 +5,12 @@
 namespace Deepgram.Realtime
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public readonly partial struct ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ListenProvider : global::System.IEquatable<ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ListenProvider>
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Deepgram.Realtime.DeepgramListenProviderV1? DeepgramListenProviderV1 { get; init; }
@@ -19,7 +19,7 @@ namespace Deepgram.Realtime
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(DeepgramListenProviderV1))]
@@ -27,7 +27,7 @@ namespace Deepgram.Realtime
         public bool IsDeepgramListenProviderV1 => DeepgramListenProviderV1 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickDeepgramListenProviderV1(
 #if NET6_0_OR_GREATER
@@ -40,14 +40,14 @@ namespace Deepgram.Realtime
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Deepgram.Realtime.DeepgramListenProviderV1 PickDeepgramListenProviderV1() => IsDeepgramListenProviderV1
             ? DeepgramListenProviderV1!
             : throw new global::System.InvalidOperationException($"Expected union variant 'DeepgramListenProviderV1' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Deepgram.Realtime.DeepgramListenProviderV2? DeepgramListenProviderV2 { get; init; }
@@ -56,7 +56,7 @@ namespace Deepgram.Realtime
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(DeepgramListenProviderV2))]
@@ -64,7 +64,7 @@ namespace Deepgram.Realtime
         public bool IsDeepgramListenProviderV2 => DeepgramListenProviderV2 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickDeepgramListenProviderV2(
 #if NET6_0_OR_GREATER
@@ -77,23 +77,23 @@ namespace Deepgram.Realtime
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Deepgram.Realtime.DeepgramListenProviderV2 PickDeepgramListenProviderV2() => IsDeepgramListenProviderV2
             ? DeepgramListenProviderV2!
             : throw new global::System.InvalidOperationException($"Expected union variant 'DeepgramListenProviderV2' but the value was {ToString()}.");
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ListenProvider(global::Deepgram.Realtime.DeepgramListenProviderV1 value) => new ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ListenProvider((global::Deepgram.Realtime.DeepgramListenProviderV1?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Deepgram.Realtime.DeepgramListenProviderV1?(ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ListenProvider @this) => @this.DeepgramListenProviderV1;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ListenProvider(global::Deepgram.Realtime.DeepgramListenProviderV1? value)
         {
@@ -101,22 +101,22 @@ namespace Deepgram.Realtime
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ListenProvider FromDeepgramListenProviderV1(global::Deepgram.Realtime.DeepgramListenProviderV1? value) => new ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ListenProvider(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ListenProvider(global::Deepgram.Realtime.DeepgramListenProviderV2 value) => new ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ListenProvider((global::Deepgram.Realtime.DeepgramListenProviderV2?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Deepgram.Realtime.DeepgramListenProviderV2?(ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ListenProvider @this) => @this.DeepgramListenProviderV2;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ListenProvider(global::Deepgram.Realtime.DeepgramListenProviderV2? value)
         {
@@ -124,12 +124,12 @@ namespace Deepgram.Realtime
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ListenProvider FromDeepgramListenProviderV2(global::Deepgram.Realtime.DeepgramListenProviderV2? value) => new ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ListenProvider(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ListenProvider(
             global::Deepgram.Realtime.DeepgramListenProviderV1? deepgramListenProviderV1,
@@ -141,23 +141,23 @@ namespace Deepgram.Realtime
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public object? Object =>
             DeepgramListenProviderV2 as object ??
-            DeepgramListenProviderV1 as object 
+            DeepgramListenProviderV1 as object
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override string? ToString() =>
             DeepgramListenProviderV1?.ToString() ??
-            DeepgramListenProviderV2?.ToString() 
+            DeepgramListenProviderV2?.ToString()
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Validate()
         {
@@ -165,7 +165,7 @@ namespace Deepgram.Realtime
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public TResult? Match<TResult>(
             global::System.Func<global::Deepgram.Realtime.DeepgramListenProviderV1, TResult>? deepgramListenProviderV1 = null,
@@ -190,7 +190,7 @@ namespace Deepgram.Realtime
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Match(
             global::System.Action<global::Deepgram.Realtime.DeepgramListenProviderV1>? deepgramListenProviderV1 = null,
@@ -214,7 +214,7 @@ namespace Deepgram.Realtime
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Switch(
             global::System.Action<global::Deepgram.Realtime.DeepgramListenProviderV1>? deepgramListenProviderV1 = null,
@@ -237,7 +237,7 @@ namespace Deepgram.Realtime
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override int GetHashCode()
         {
@@ -258,18 +258,18 @@ namespace Deepgram.Realtime
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Equals(ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ListenProvider other)
         {
             return
                 global::System.Collections.Generic.EqualityComparer<global::Deepgram.Realtime.DeepgramListenProviderV1?>.Default.Equals(DeepgramListenProviderV1, other.DeepgramListenProviderV1) &&
-                global::System.Collections.Generic.EqualityComparer<global::Deepgram.Realtime.DeepgramListenProviderV2?>.Default.Equals(DeepgramListenProviderV2, other.DeepgramListenProviderV2) 
+                global::System.Collections.Generic.EqualityComparer<global::Deepgram.Realtime.DeepgramListenProviderV2?>.Default.Equals(DeepgramListenProviderV2, other.DeepgramListenProviderV2)
                 ;
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator ==(ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ListenProvider obj1, ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ListenProvider obj2)
         {
@@ -277,7 +277,7 @@ namespace Deepgram.Realtime
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator !=(ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ListenProvider obj1, ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ListenProvider obj2)
         {
@@ -285,7 +285,7 @@ namespace Deepgram.Realtime
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override bool Equals(object? obj)
         {

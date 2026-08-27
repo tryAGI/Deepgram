@@ -9,7 +9,7 @@ namespace Deepgram
     public enum V1SpeakPostParametersEncoding6
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Aac,
     }

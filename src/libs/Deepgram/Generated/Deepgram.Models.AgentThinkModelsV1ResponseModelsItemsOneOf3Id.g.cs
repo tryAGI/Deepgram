@@ -9,7 +9,7 @@ namespace Deepgram
     public enum AgentThinkModelsV1ResponseModelsItemsOneOf3Id
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         OpenaiGptOss20b,
     }

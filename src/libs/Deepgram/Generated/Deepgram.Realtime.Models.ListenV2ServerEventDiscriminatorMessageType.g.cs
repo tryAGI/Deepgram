@@ -4,20 +4,20 @@
 namespace Deepgram.Realtime
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum ListenV2ServerEventDiscriminatorMessageType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ConfigureFailure,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ConfigureSuccess,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         TurnInfo,
     }

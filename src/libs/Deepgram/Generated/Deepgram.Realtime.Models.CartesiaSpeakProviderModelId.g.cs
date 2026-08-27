@@ -9,11 +9,11 @@ namespace Deepgram.Realtime
     public enum CartesiaSpeakProviderModelId
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Sonic2,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         SonicMultilingual,
     }

@@ -10,11 +10,11 @@ namespace Deepgram.Realtime
     public enum ListenV2Numerals
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         False,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         True,
     }

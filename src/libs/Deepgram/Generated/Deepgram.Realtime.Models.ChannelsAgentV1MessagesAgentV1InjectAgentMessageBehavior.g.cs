@@ -13,15 +13,15 @@ namespace Deepgram.Realtime
     public enum ChannelsAgentV1MessagesAgentV1InjectAgentMessageBehavior
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Default,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Interrupt,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Queue,
     }

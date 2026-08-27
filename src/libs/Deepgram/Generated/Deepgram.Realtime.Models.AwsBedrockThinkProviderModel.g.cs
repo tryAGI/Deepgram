@@ -9,11 +9,11 @@ namespace Deepgram.Realtime
     public enum AwsBedrockThinkProviderModel
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AnthropicClaude35Haiku20240307V1_0,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AnthropicClaude35Sonnet20240620V1_0,
     }

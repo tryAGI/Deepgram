@@ -4,7 +4,7 @@
 namespace Deepgram.Realtime
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class ChannelsAgentV1MessagesAgentV1FunctionCallRequestFunctionsItems
     {

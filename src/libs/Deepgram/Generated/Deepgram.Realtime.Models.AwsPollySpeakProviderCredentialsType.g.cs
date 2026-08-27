@@ -4,16 +4,16 @@
 namespace Deepgram.Realtime
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum AwsPollySpeakProviderCredentialsType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Iam,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Sts,
     }

@@ -9,13 +9,13 @@ namespace Deepgram
     public sealed partial class SharedSentiments
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("segments")]
         public global::System.Collections.Generic.IList<global::Deepgram.SharedSentimentsSegmentsItems>? Segments { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("average")]
         public global::Deepgram.SharedSentimentsAverage? Average { get; set; }

@@ -9,7 +9,7 @@ namespace Deepgram.Realtime
     public enum DeepgramListenProviderV2Version
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         V2,
     }

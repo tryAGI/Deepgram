@@ -4,7 +4,7 @@
 namespace Deepgram.Realtime
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class ChannelsListenV1MessagesListenV1ResultsMetadata
     {
@@ -16,7 +16,7 @@ namespace Deepgram.Realtime
         public required string RequestId { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("model_info")]
         [global::System.Text.Json.Serialization.JsonRequired]

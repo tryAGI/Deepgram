@@ -9,11 +9,11 @@ namespace Deepgram
     public enum V2SpeakPostParametersSampleRate2
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         x16000,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         x8000,
     }

@@ -9,7 +9,7 @@ namespace Deepgram.Realtime
     public enum GroqThinkProviderVersion
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         V1,
     }

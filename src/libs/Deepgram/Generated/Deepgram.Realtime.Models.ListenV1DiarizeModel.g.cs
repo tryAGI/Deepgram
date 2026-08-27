@@ -4,16 +4,16 @@
 namespace Deepgram.Realtime
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum ListenV1DiarizeModel
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Latest,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         V1,
     }

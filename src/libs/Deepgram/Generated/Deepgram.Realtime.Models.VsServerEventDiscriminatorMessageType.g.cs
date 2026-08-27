@@ -4,48 +4,48 @@
 namespace Deepgram.Realtime
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum VsServerEventDiscriminatorMessageType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ConfigureFailure,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ConfigureSuccess,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Connected,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Error,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Flushed,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         SessionMetadata,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         SpeechInterrupted,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         SpeechMetadata,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         SpeechStarted,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Warning,
     }

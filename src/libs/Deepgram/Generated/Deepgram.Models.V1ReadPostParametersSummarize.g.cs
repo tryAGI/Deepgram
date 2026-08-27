@@ -5,12 +5,12 @@
 namespace Deepgram
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public readonly partial struct V1ReadPostParametersSummarize : global::System.IEquatable<V1ReadPostParametersSummarize>
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Deepgram.V1ReadPostParametersSummarize0? V1ReadPostParametersSummarize0 { get; init; }
@@ -19,7 +19,7 @@ namespace Deepgram
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(V1ReadPostParametersSummarize0))]
@@ -27,7 +27,7 @@ namespace Deepgram
         public bool IsV1ReadPostParametersSummarize0 => V1ReadPostParametersSummarize0 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickV1ReadPostParametersSummarize0(
 #if NET6_0_OR_GREATER
@@ -40,7 +40,7 @@ namespace Deepgram
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Deepgram.V1ReadPostParametersSummarize0 PickV1ReadPostParametersSummarize0() => IsV1ReadPostParametersSummarize0
             ? V1ReadPostParametersSummarize0!.Value
@@ -56,7 +56,7 @@ namespace Deepgram
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(V1ReadPostParametersSummarizeVariant2))]
@@ -64,7 +64,7 @@ namespace Deepgram
         public bool IsV1ReadPostParametersSummarizeVariant2 => V1ReadPostParametersSummarizeVariant2 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickV1ReadPostParametersSummarizeVariant2(
 #if NET6_0_OR_GREATER
@@ -77,23 +77,23 @@ namespace Deepgram
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool PickV1ReadPostParametersSummarizeVariant2() => IsV1ReadPostParametersSummarizeVariant2
             ? V1ReadPostParametersSummarizeVariant2!.Value
             : throw new global::System.InvalidOperationException($"Expected union variant 'V1ReadPostParametersSummarizeVariant2' but the value was {ToString()}.");
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator V1ReadPostParametersSummarize(global::Deepgram.V1ReadPostParametersSummarize0 value) => new V1ReadPostParametersSummarize((global::Deepgram.V1ReadPostParametersSummarize0?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Deepgram.V1ReadPostParametersSummarize0?(V1ReadPostParametersSummarize @this) => @this.V1ReadPostParametersSummarize0;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public V1ReadPostParametersSummarize(global::Deepgram.V1ReadPostParametersSummarize0? value)
         {
@@ -101,22 +101,22 @@ namespace Deepgram
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static V1ReadPostParametersSummarize FromV1ReadPostParametersSummarize0(global::Deepgram.V1ReadPostParametersSummarize0? value) => new V1ReadPostParametersSummarize(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator V1ReadPostParametersSummarize(bool value) => new V1ReadPostParametersSummarize((bool?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator bool?(V1ReadPostParametersSummarize @this) => @this.V1ReadPostParametersSummarizeVariant2;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public V1ReadPostParametersSummarize(bool? value)
         {
@@ -124,12 +124,12 @@ namespace Deepgram
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static V1ReadPostParametersSummarize FromV1ReadPostParametersSummarizeVariant2(bool? value) => new V1ReadPostParametersSummarize(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public V1ReadPostParametersSummarize(
             global::Deepgram.V1ReadPostParametersSummarize0? v1ReadPostParametersSummarize0,
@@ -141,23 +141,23 @@ namespace Deepgram
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public object? Object =>
             V1ReadPostParametersSummarizeVariant2 as object ??
-            V1ReadPostParametersSummarize0 as object 
+            V1ReadPostParametersSummarize0 as object
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override string? ToString() =>
             V1ReadPostParametersSummarize0?.ToValueString() ??
-            V1ReadPostParametersSummarizeVariant2?.ToString().ToLowerInvariant() 
+            V1ReadPostParametersSummarizeVariant2?.ToString().ToLowerInvariant()
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Validate()
         {
@@ -165,7 +165,7 @@ namespace Deepgram
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public TResult? Match<TResult>(
             global::System.Func<global::Deepgram.V1ReadPostParametersSummarize0?, TResult>? v1ReadPostParametersSummarize0 = null,
@@ -190,7 +190,7 @@ namespace Deepgram
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Match(
             global::System.Action<global::Deepgram.V1ReadPostParametersSummarize0?>? v1ReadPostParametersSummarize0 = null,
@@ -214,7 +214,7 @@ namespace Deepgram
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Switch(
             global::System.Action<global::Deepgram.V1ReadPostParametersSummarize0?>? v1ReadPostParametersSummarize0 = null,
@@ -237,7 +237,7 @@ namespace Deepgram
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override int GetHashCode()
         {
@@ -258,18 +258,18 @@ namespace Deepgram
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Equals(V1ReadPostParametersSummarize other)
         {
             return
                 global::System.Collections.Generic.EqualityComparer<global::Deepgram.V1ReadPostParametersSummarize0?>.Default.Equals(V1ReadPostParametersSummarize0, other.V1ReadPostParametersSummarize0) &&
-                global::System.Collections.Generic.EqualityComparer<bool?>.Default.Equals(V1ReadPostParametersSummarizeVariant2, other.V1ReadPostParametersSummarizeVariant2) 
+                global::System.Collections.Generic.EqualityComparer<bool?>.Default.Equals(V1ReadPostParametersSummarizeVariant2, other.V1ReadPostParametersSummarizeVariant2)
                 ;
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator ==(V1ReadPostParametersSummarize obj1, V1ReadPostParametersSummarize obj2)
         {
@@ -277,7 +277,7 @@ namespace Deepgram
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator !=(V1ReadPostParametersSummarize obj1, V1ReadPostParametersSummarize obj2)
         {
@@ -285,7 +285,7 @@ namespace Deepgram
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override bool Equals(object? obj)
         {

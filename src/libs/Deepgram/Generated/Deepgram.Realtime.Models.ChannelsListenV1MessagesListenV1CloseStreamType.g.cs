@@ -9,15 +9,15 @@ namespace Deepgram.Realtime
     public enum ChannelsListenV1MessagesListenV1CloseStreamType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         CloseStream,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Finalize,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         KeepAlive,
     }

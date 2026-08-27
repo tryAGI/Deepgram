@@ -9,119 +9,119 @@ namespace Deepgram
     public enum V1ListenPostParametersModel0
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Base,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Conversationalai,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Enhanced,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         EnhancedFinance,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         EnhancedGeneral,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         EnhancedMeeting,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         EnhancedPhonecall,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Finance,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Meeting,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Nova,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Nova2,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Nova2Automotive,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Nova2Conversationalai,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Nova2Drivethru,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Nova2Finance,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Nova2General,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Nova2Medical,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Nova2Meeting,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Nova2Video,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Nova2Voicemail,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Nova3,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Nova3General,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Nova3Medical,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         NovaGeneral,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         NovaMedical,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         NovaPhonecall,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Phonecall,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Video,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Voicemail,
     }

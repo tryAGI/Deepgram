@@ -9,7 +9,7 @@ namespace Deepgram.Realtime
     public enum OpenAiSpeakProviderVersion
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         V1,
     }

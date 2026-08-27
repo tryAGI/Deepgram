@@ -4,12 +4,12 @@
 namespace Deepgram.Realtime
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum AwsBedrockThinkProviderType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AwsBedrock,
     }

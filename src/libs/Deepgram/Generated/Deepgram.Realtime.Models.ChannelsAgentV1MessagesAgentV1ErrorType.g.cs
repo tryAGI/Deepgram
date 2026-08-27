@@ -9,7 +9,7 @@ namespace Deepgram.Realtime
     public enum ChannelsAgentV1MessagesAgentV1ErrorType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Error,
     }

@@ -9,7 +9,7 @@ namespace Deepgram.Realtime
     public enum ChannelsSpeakV1MessagesSpeakV1WarningType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Warning,
     }
