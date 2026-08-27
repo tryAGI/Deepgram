@@ -9,7 +9,7 @@ namespace Deepgram
     public enum V2SpeakPostParametersEncoding2
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Mulaw,
     }

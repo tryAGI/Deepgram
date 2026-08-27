@@ -9,7 +9,7 @@ namespace Deepgram.Realtime
     public enum ChannelsListenV1MessagesListenV1MetadataType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Metadata,
     }

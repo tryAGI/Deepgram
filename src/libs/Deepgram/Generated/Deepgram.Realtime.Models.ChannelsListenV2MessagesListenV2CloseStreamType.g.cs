@@ -9,7 +9,7 @@ namespace Deepgram.Realtime
     public enum ChannelsListenV2MessagesListenV2CloseStreamType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         CloseStream,
     }

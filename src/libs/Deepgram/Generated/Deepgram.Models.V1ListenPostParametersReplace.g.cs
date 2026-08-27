@@ -5,12 +5,12 @@
 namespace Deepgram
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public readonly partial struct V1ListenPostParametersReplace : global::System.IEquatable<V1ListenPostParametersReplace>
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public string? V1ListenPostParametersReplaceVariant1 { get; init; }
@@ -19,7 +19,7 @@ namespace Deepgram
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(V1ListenPostParametersReplaceVariant1))]
@@ -27,7 +27,7 @@ namespace Deepgram
         public bool IsV1ListenPostParametersReplaceVariant1 => V1ListenPostParametersReplaceVariant1 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickV1ListenPostParametersReplaceVariant1(
 #if NET6_0_OR_GREATER
@@ -40,14 +40,14 @@ namespace Deepgram
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public string PickV1ListenPostParametersReplaceVariant1() => IsV1ListenPostParametersReplaceVariant1
             ? V1ListenPostParametersReplaceVariant1!
             : throw new global::System.InvalidOperationException($"Expected union variant 'V1ListenPostParametersReplaceVariant1' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::System.Collections.Generic.IList<string>? V1ListenPostParametersReplaceVariant2 { get; init; }
@@ -56,7 +56,7 @@ namespace Deepgram
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(V1ListenPostParametersReplaceVariant2))]
@@ -64,7 +64,7 @@ namespace Deepgram
         public bool IsV1ListenPostParametersReplaceVariant2 => V1ListenPostParametersReplaceVariant2 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickV1ListenPostParametersReplaceVariant2(
 #if NET6_0_OR_GREATER
@@ -77,23 +77,23 @@ namespace Deepgram
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::System.Collections.Generic.IList<string> PickV1ListenPostParametersReplaceVariant2() => IsV1ListenPostParametersReplaceVariant2
             ? V1ListenPostParametersReplaceVariant2!
             : throw new global::System.InvalidOperationException($"Expected union variant 'V1ListenPostParametersReplaceVariant2' but the value was {ToString()}.");
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator V1ListenPostParametersReplace(string value) => new V1ListenPostParametersReplace((string?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator string?(V1ListenPostParametersReplace @this) => @this.V1ListenPostParametersReplaceVariant1;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public V1ListenPostParametersReplace(string? value)
         {
@@ -101,12 +101,12 @@ namespace Deepgram
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static V1ListenPostParametersReplace FromV1ListenPostParametersReplaceVariant1(string? value) => new V1ListenPostParametersReplace(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public V1ListenPostParametersReplace(
             string? v1ListenPostParametersReplaceVariant1,
@@ -118,23 +118,23 @@ namespace Deepgram
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public object? Object =>
             V1ListenPostParametersReplaceVariant2 as object ??
-            V1ListenPostParametersReplaceVariant1 as object 
+            V1ListenPostParametersReplaceVariant1 as object
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override string? ToString() =>
             V1ListenPostParametersReplaceVariant1?.ToString() ??
-            V1ListenPostParametersReplaceVariant2?.ToString() 
+            V1ListenPostParametersReplaceVariant2?.ToString()
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Validate()
         {
@@ -142,7 +142,7 @@ namespace Deepgram
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public TResult? Match<TResult>(
             global::System.Func<string, TResult>? v1ListenPostParametersReplaceVariant1 = null,
@@ -167,7 +167,7 @@ namespace Deepgram
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Match(
             global::System.Action<string>? v1ListenPostParametersReplaceVariant1 = null,
@@ -191,7 +191,7 @@ namespace Deepgram
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Switch(
             global::System.Action<string>? v1ListenPostParametersReplaceVariant1 = null,
@@ -214,7 +214,7 @@ namespace Deepgram
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override int GetHashCode()
         {
@@ -235,18 +235,18 @@ namespace Deepgram
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Equals(V1ListenPostParametersReplace other)
         {
             return
                 global::System.Collections.Generic.EqualityComparer<string?>.Default.Equals(V1ListenPostParametersReplaceVariant1, other.V1ListenPostParametersReplaceVariant1) &&
-                global::System.Collections.Generic.EqualityComparer<global::System.Collections.Generic.IList<string>?>.Default.Equals(V1ListenPostParametersReplaceVariant2, other.V1ListenPostParametersReplaceVariant2) 
+                global::System.Collections.Generic.EqualityComparer<global::System.Collections.Generic.IList<string>?>.Default.Equals(V1ListenPostParametersReplaceVariant2, other.V1ListenPostParametersReplaceVariant2)
                 ;
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator ==(V1ListenPostParametersReplace obj1, V1ListenPostParametersReplace obj2)
         {
@@ -254,7 +254,7 @@ namespace Deepgram
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator !=(V1ListenPostParametersReplace obj1, V1ListenPostParametersReplace obj2)
         {
@@ -262,7 +262,7 @@ namespace Deepgram
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override bool Equals(object? obj)
         {

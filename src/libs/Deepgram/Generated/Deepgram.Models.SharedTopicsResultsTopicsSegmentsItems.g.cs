@@ -4,30 +4,30 @@
 namespace Deepgram
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class SharedTopicsResultsTopicsSegmentsItems
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("text")]
         public string? Text { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("start_word")]
         public double? StartWord { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("end_word")]
         public double? EndWord { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("topics")]
         public global::System.Collections.Generic.IList<global::Deepgram.SharedTopicsResultsTopicsSegmentsItemsTopicsItems>? Topics { get; set; }

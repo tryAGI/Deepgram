@@ -4,48 +4,48 @@
 namespace Deepgram
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class ReadV1ResponseMetadataMetadata
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("request_id")]
         public global::System.Guid? RequestId { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("created")]
         public global::System.DateTime? Created { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("language")]
         public string? Language { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("summary_info")]
         public global::Deepgram.ReadV1ResponseMetadataMetadataSummaryInfo? SummaryInfo { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("sentiment_info")]
         public global::Deepgram.ReadV1ResponseMetadataMetadataSentimentInfo? SentimentInfo { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("topics_info")]
         public global::Deepgram.ReadV1ResponseMetadataMetadataTopicsInfo? TopicsInfo { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("intents_info")]
         public global::Deepgram.ReadV1ResponseMetadataMetadataIntentsInfo? IntentsInfo { get; set; }

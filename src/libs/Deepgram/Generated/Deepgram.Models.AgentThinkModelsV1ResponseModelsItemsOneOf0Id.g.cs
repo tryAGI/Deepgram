@@ -9,35 +9,35 @@ namespace Deepgram
     public enum AgentThinkModelsV1ResponseModelsItemsOneOf0Id
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Gpt41,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Gpt41Mini,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Gpt41Nano,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Gpt4o,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Gpt4oMini,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Gpt5,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Gpt5Mini,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Gpt5Nano,
     }

@@ -9,7 +9,7 @@ namespace Deepgram
     public enum V1SpeakPostParametersEncoding0
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Linear16,
     }

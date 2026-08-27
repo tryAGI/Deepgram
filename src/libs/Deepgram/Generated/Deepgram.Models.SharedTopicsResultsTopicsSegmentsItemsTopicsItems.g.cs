@@ -4,18 +4,18 @@
 namespace Deepgram
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class SharedTopicsResultsTopicsSegmentsItemsTopicsItems
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("topic")]
         public string? Topic { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("confidence_score")]
         public string? ConfidenceScore { get; set; }

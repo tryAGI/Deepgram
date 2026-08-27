@@ -9,7 +9,7 @@ namespace Deepgram
     public enum V1ProjectsProjectIdSelfHostedDistributionCredentialsPostParametersProvider
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Quay,
     }

@@ -9,7 +9,7 @@ namespace Deepgram
     public enum V2SpeakPostParametersContainer3
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Wav,
     }

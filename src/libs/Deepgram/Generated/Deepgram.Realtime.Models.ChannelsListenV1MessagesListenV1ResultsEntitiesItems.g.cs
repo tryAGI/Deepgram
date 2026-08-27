@@ -4,7 +4,7 @@
 namespace Deepgram.Realtime
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class ChannelsListenV1MessagesListenV1ResultsEntitiesItems
     {

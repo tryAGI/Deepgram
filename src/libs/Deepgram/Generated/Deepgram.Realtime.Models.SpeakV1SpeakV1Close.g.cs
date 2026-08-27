@@ -4,7 +4,7 @@
 namespace Deepgram.Realtime
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class SpeakV1SpeakV1Close
     {

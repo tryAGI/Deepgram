@@ -20,7 +20,7 @@ namespace Deepgram.Realtime.JsonConverters
                     {
                         return global::Deepgram.Realtime.ChannelsListenV1MessagesListenV1MetadataTypeExtensions.ToEnum(stringValue) ?? default;
                     }
-                    
+
                     break;
                 }
                 case global::System.Text.Json.JsonTokenType.Number:

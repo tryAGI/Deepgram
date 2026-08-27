@@ -14,23 +14,23 @@ namespace Deepgram.Realtime
     public enum ChannelsListenV2MessagesListenV2TurnInfoEvent
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         EagerEndOfTurn,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         EndOfTurn,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         StartOfTurn,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         TurnResumed,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Update,
     }

@@ -9,7 +9,7 @@ namespace Deepgram.Realtime
     public enum ChannelsSpeakV1MessagesSpeakV1MetadataType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Metadata,
     }

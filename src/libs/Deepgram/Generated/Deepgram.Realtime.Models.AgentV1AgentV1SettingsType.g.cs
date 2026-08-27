@@ -4,12 +4,12 @@
 namespace Deepgram.Realtime
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum AgentV1AgentV1SettingsType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Settings,
     }

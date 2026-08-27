@@ -10,15 +10,15 @@ namespace Deepgram.Realtime
     public enum SpeakV1Encoding
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Alaw,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Linear16,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Mulaw,
     }

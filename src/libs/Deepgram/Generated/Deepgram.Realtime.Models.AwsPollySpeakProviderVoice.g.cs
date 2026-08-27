@@ -9,35 +9,35 @@ namespace Deepgram.Realtime
     public enum AwsPollySpeakProviderVoice
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Amy,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Aria,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Arthur,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Ayanda,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Brian,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Emma,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Joanna,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Matthew,
     }

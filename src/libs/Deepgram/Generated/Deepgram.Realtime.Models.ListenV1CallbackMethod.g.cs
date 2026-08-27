@@ -10,19 +10,19 @@ namespace Deepgram.Realtime
     public enum ListenV1CallbackMethod
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Delete,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Get,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Post,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Put,
     }

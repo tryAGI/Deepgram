@@ -4,24 +4,24 @@
 namespace Deepgram
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class ListenV1ResponseResultsChannelsItems
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("search")]
         public global::System.Collections.Generic.IList<global::Deepgram.ListenV1ResponseResultsChannelsItemsSearchItems>? Search { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("alternatives")]
         public global::System.Collections.Generic.IList<global::Deepgram.ListenV1ResponseResultsChannelsItemsAlternativesItems>? Alternatives { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("detected_language")]
         public string? DetectedLanguage { get; set; }

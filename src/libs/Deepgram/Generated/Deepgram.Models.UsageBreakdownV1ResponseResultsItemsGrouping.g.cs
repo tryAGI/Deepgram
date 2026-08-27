@@ -4,7 +4,7 @@
 namespace Deepgram
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class UsageBreakdownV1ResponseResultsItemsGrouping
     {
@@ -39,7 +39,7 @@ namespace Deepgram
         public string? FeatureSet { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("models")]
         public global::System.Collections.Generic.IList<string>? Models { get; set; }

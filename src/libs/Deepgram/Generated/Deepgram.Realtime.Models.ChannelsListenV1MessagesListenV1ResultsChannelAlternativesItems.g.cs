@@ -4,7 +4,7 @@
 namespace Deepgram.Realtime
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class ChannelsListenV1MessagesListenV1ResultsChannelAlternativesItems
     {
@@ -23,13 +23,13 @@ namespace Deepgram.Realtime
         public required double Confidence { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("languages")]
         public global::System.Collections.Generic.IList<string>? Languages { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("words")]
         [global::System.Text.Json.Serialization.JsonRequired]

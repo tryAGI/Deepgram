@@ -9,7 +9,7 @@ namespace Deepgram.Realtime
     public enum CartesiaSpeakProviderVersion
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         x20250317,
     }

@@ -4,12 +4,12 @@
 namespace Deepgram
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum V1ReadPostParametersSummarize0
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         V2,
     }

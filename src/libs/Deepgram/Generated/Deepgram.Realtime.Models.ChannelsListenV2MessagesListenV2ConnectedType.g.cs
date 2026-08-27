@@ -9,7 +9,7 @@ namespace Deepgram.Realtime
     public enum ChannelsListenV2MessagesListenV2ConnectedType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Connected,
     }

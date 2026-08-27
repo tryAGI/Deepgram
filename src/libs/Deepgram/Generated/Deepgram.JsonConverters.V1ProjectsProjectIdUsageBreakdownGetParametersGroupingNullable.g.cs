@@ -20,7 +20,7 @@ namespace Deepgram.JsonConverters
                     {
                         return global::Deepgram.V1ProjectsProjectIdUsageBreakdownGetParametersGroupingExtensions.ToEnum(stringValue);
                     }
-                    
+
                     break;
                 }
                 case global::System.Text.Json.JsonTokenType.Number:

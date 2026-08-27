@@ -5,7 +5,7 @@
 namespace Deepgram
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public readonly partial struct V2SpeakPostParametersContainer : global::System.IEquatable<V2SpeakPostParametersContainer>
     {
@@ -19,7 +19,7 @@ namespace Deepgram
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(V2SpeakPostParametersContainer0))]
@@ -27,7 +27,7 @@ namespace Deepgram
         public bool IsV2SpeakPostParametersContainer0 => V2SpeakPostParametersContainer0 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickV2SpeakPostParametersContainer0(
 #if NET6_0_OR_GREATER
@@ -40,7 +40,7 @@ namespace Deepgram
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Deepgram.V2SpeakPostParametersContainer0 PickV2SpeakPostParametersContainer0() => IsV2SpeakPostParametersContainer0
             ? V2SpeakPostParametersContainer0!.Value
@@ -56,7 +56,7 @@ namespace Deepgram
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(V2SpeakPostParametersContainer1))]
@@ -64,7 +64,7 @@ namespace Deepgram
         public bool IsV2SpeakPostParametersContainer1 => V2SpeakPostParametersContainer1 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickV2SpeakPostParametersContainer1(
 #if NET6_0_OR_GREATER
@@ -77,7 +77,7 @@ namespace Deepgram
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Deepgram.V2SpeakPostParametersContainer1 PickV2SpeakPostParametersContainer1() => IsV2SpeakPostParametersContainer1
             ? V2SpeakPostParametersContainer1!.Value
@@ -93,7 +93,7 @@ namespace Deepgram
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(V2SpeakPostParametersContainer2))]
@@ -101,7 +101,7 @@ namespace Deepgram
         public bool IsV2SpeakPostParametersContainer2 => V2SpeakPostParametersContainer2 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickV2SpeakPostParametersContainer2(
 #if NET6_0_OR_GREATER
@@ -114,7 +114,7 @@ namespace Deepgram
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Deepgram.V2SpeakPostParametersContainer2 PickV2SpeakPostParametersContainer2() => IsV2SpeakPostParametersContainer2
             ? V2SpeakPostParametersContainer2!.Value
@@ -130,7 +130,7 @@ namespace Deepgram
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(V2SpeakPostParametersContainer3))]
@@ -138,7 +138,7 @@ namespace Deepgram
         public bool IsV2SpeakPostParametersContainer3 => V2SpeakPostParametersContainer3 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickV2SpeakPostParametersContainer3(
 #if NET6_0_OR_GREATER
@@ -151,7 +151,7 @@ namespace Deepgram
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Deepgram.V2SpeakPostParametersContainer3 PickV2SpeakPostParametersContainer3() => IsV2SpeakPostParametersContainer3
             ? V2SpeakPostParametersContainer3!.Value
@@ -167,7 +167,7 @@ namespace Deepgram
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(V2SpeakPostParametersContainer4))]
@@ -175,7 +175,7 @@ namespace Deepgram
         public bool IsV2SpeakPostParametersContainer4 => V2SpeakPostParametersContainer4 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickV2SpeakPostParametersContainer4(
 #if NET6_0_OR_GREATER
@@ -188,23 +188,23 @@ namespace Deepgram
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Deepgram.V2SpeakPostParametersContainer4 PickV2SpeakPostParametersContainer4() => IsV2SpeakPostParametersContainer4
             ? V2SpeakPostParametersContainer4!.Value
             : throw new global::System.InvalidOperationException($"Expected union variant 'V2SpeakPostParametersContainer4' but the value was {ToString()}.");
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator V2SpeakPostParametersContainer(global::Deepgram.V2SpeakPostParametersContainer0 value) => new V2SpeakPostParametersContainer((global::Deepgram.V2SpeakPostParametersContainer0?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Deepgram.V2SpeakPostParametersContainer0?(V2SpeakPostParametersContainer @this) => @this.V2SpeakPostParametersContainer0;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public V2SpeakPostParametersContainer(global::Deepgram.V2SpeakPostParametersContainer0? value)
         {
@@ -212,22 +212,22 @@ namespace Deepgram
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static V2SpeakPostParametersContainer FromV2SpeakPostParametersContainer0(global::Deepgram.V2SpeakPostParametersContainer0? value) => new V2SpeakPostParametersContainer(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator V2SpeakPostParametersContainer(global::Deepgram.V2SpeakPostParametersContainer1 value) => new V2SpeakPostParametersContainer((global::Deepgram.V2SpeakPostParametersContainer1?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Deepgram.V2SpeakPostParametersContainer1?(V2SpeakPostParametersContainer @this) => @this.V2SpeakPostParametersContainer1;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public V2SpeakPostParametersContainer(global::Deepgram.V2SpeakPostParametersContainer1? value)
         {
@@ -235,22 +235,22 @@ namespace Deepgram
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static V2SpeakPostParametersContainer FromV2SpeakPostParametersContainer1(global::Deepgram.V2SpeakPostParametersContainer1? value) => new V2SpeakPostParametersContainer(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator V2SpeakPostParametersContainer(global::Deepgram.V2SpeakPostParametersContainer2 value) => new V2SpeakPostParametersContainer((global::Deepgram.V2SpeakPostParametersContainer2?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Deepgram.V2SpeakPostParametersContainer2?(V2SpeakPostParametersContainer @this) => @this.V2SpeakPostParametersContainer2;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public V2SpeakPostParametersContainer(global::Deepgram.V2SpeakPostParametersContainer2? value)
         {
@@ -258,22 +258,22 @@ namespace Deepgram
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static V2SpeakPostParametersContainer FromV2SpeakPostParametersContainer2(global::Deepgram.V2SpeakPostParametersContainer2? value) => new V2SpeakPostParametersContainer(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator V2SpeakPostParametersContainer(global::Deepgram.V2SpeakPostParametersContainer3 value) => new V2SpeakPostParametersContainer((global::Deepgram.V2SpeakPostParametersContainer3?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Deepgram.V2SpeakPostParametersContainer3?(V2SpeakPostParametersContainer @this) => @this.V2SpeakPostParametersContainer3;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public V2SpeakPostParametersContainer(global::Deepgram.V2SpeakPostParametersContainer3? value)
         {
@@ -281,22 +281,22 @@ namespace Deepgram
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static V2SpeakPostParametersContainer FromV2SpeakPostParametersContainer3(global::Deepgram.V2SpeakPostParametersContainer3? value) => new V2SpeakPostParametersContainer(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator V2SpeakPostParametersContainer(global::Deepgram.V2SpeakPostParametersContainer4 value) => new V2SpeakPostParametersContainer((global::Deepgram.V2SpeakPostParametersContainer4?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Deepgram.V2SpeakPostParametersContainer4?(V2SpeakPostParametersContainer @this) => @this.V2SpeakPostParametersContainer4;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public V2SpeakPostParametersContainer(global::Deepgram.V2SpeakPostParametersContainer4? value)
         {
@@ -304,12 +304,12 @@ namespace Deepgram
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static V2SpeakPostParametersContainer FromV2SpeakPostParametersContainer4(global::Deepgram.V2SpeakPostParametersContainer4? value) => new V2SpeakPostParametersContainer(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public V2SpeakPostParametersContainer(
             global::Deepgram.V2SpeakPostParametersContainer0? v2SpeakPostParametersContainer0,
@@ -327,29 +327,29 @@ namespace Deepgram
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public object? Object =>
             V2SpeakPostParametersContainer4 as object ??
             V2SpeakPostParametersContainer3 as object ??
             V2SpeakPostParametersContainer2 as object ??
             V2SpeakPostParametersContainer1 as object ??
-            V2SpeakPostParametersContainer0 as object 
+            V2SpeakPostParametersContainer0 as object
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override string? ToString() =>
             V2SpeakPostParametersContainer0?.ToValueString() ??
             V2SpeakPostParametersContainer1?.ToValueString() ??
             V2SpeakPostParametersContainer2?.ToValueString() ??
             V2SpeakPostParametersContainer3?.ToValueString() ??
-            V2SpeakPostParametersContainer4?.ToValueString() 
+            V2SpeakPostParametersContainer4?.ToValueString()
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Validate()
         {
@@ -357,7 +357,7 @@ namespace Deepgram
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public TResult? Match<TResult>(
             global::System.Func<global::Deepgram.V2SpeakPostParametersContainer0?, TResult>? v2SpeakPostParametersContainer0 = null,
@@ -397,7 +397,7 @@ namespace Deepgram
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Match(
             global::System.Action<global::Deepgram.V2SpeakPostParametersContainer0?>? v2SpeakPostParametersContainer0 = null,
@@ -439,7 +439,7 @@ namespace Deepgram
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Switch(
             global::System.Action<global::Deepgram.V2SpeakPostParametersContainer0?>? v2SpeakPostParametersContainer0 = null,
@@ -477,7 +477,7 @@ namespace Deepgram
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override int GetHashCode()
         {
@@ -504,7 +504,7 @@ namespace Deepgram
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Equals(V2SpeakPostParametersContainer other)
         {
@@ -513,12 +513,12 @@ namespace Deepgram
                 global::System.Collections.Generic.EqualityComparer<global::Deepgram.V2SpeakPostParametersContainer1?>.Default.Equals(V2SpeakPostParametersContainer1, other.V2SpeakPostParametersContainer1) &&
                 global::System.Collections.Generic.EqualityComparer<global::Deepgram.V2SpeakPostParametersContainer2?>.Default.Equals(V2SpeakPostParametersContainer2, other.V2SpeakPostParametersContainer2) &&
                 global::System.Collections.Generic.EqualityComparer<global::Deepgram.V2SpeakPostParametersContainer3?>.Default.Equals(V2SpeakPostParametersContainer3, other.V2SpeakPostParametersContainer3) &&
-                global::System.Collections.Generic.EqualityComparer<global::Deepgram.V2SpeakPostParametersContainer4?>.Default.Equals(V2SpeakPostParametersContainer4, other.V2SpeakPostParametersContainer4) 
+                global::System.Collections.Generic.EqualityComparer<global::Deepgram.V2SpeakPostParametersContainer4?>.Default.Equals(V2SpeakPostParametersContainer4, other.V2SpeakPostParametersContainer4)
                 ;
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator ==(V2SpeakPostParametersContainer obj1, V2SpeakPostParametersContainer obj2)
         {
@@ -526,7 +526,7 @@ namespace Deepgram
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator !=(V2SpeakPostParametersContainer obj1, V2SpeakPostParametersContainer obj2)
         {
@@ -534,7 +534,7 @@ namespace Deepgram
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override bool Equals(object? obj)
         {

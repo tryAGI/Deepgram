@@ -9,11 +9,11 @@ namespace Deepgram
     public enum V1ListenPostParametersCustomTopicMode
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Extended,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Strict,
     }

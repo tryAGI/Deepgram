@@ -9,7 +9,7 @@ namespace Deepgram.Realtime
     public enum ListenV2ListenV2ConfigureFailureType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ConfigureFailure,
     }

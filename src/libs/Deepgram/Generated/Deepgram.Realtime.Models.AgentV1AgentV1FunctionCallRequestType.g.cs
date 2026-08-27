@@ -9,7 +9,7 @@ namespace Deepgram.Realtime
     public enum AgentV1AgentV1FunctionCallRequestType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         FunctionCallRequest,
     }

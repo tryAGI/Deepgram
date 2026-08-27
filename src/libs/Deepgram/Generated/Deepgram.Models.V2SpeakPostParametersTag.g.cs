@@ -5,12 +5,12 @@
 namespace Deepgram
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public readonly partial struct V2SpeakPostParametersTag : global::System.IEquatable<V2SpeakPostParametersTag>
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public string? V2SpeakPostParametersTagVariant1 { get; init; }
@@ -19,7 +19,7 @@ namespace Deepgram
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(V2SpeakPostParametersTagVariant1))]
@@ -27,7 +27,7 @@ namespace Deepgram
         public bool IsV2SpeakPostParametersTagVariant1 => V2SpeakPostParametersTagVariant1 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickV2SpeakPostParametersTagVariant1(
 #if NET6_0_OR_GREATER
@@ -40,14 +40,14 @@ namespace Deepgram
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public string PickV2SpeakPostParametersTagVariant1() => IsV2SpeakPostParametersTagVariant1
             ? V2SpeakPostParametersTagVariant1!
             : throw new global::System.InvalidOperationException($"Expected union variant 'V2SpeakPostParametersTagVariant1' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::System.Collections.Generic.IList<string>? V2SpeakPostParametersTagVariant2 { get; init; }
@@ -56,7 +56,7 @@ namespace Deepgram
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(V2SpeakPostParametersTagVariant2))]
@@ -64,7 +64,7 @@ namespace Deepgram
         public bool IsV2SpeakPostParametersTagVariant2 => V2SpeakPostParametersTagVariant2 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickV2SpeakPostParametersTagVariant2(
 #if NET6_0_OR_GREATER
@@ -77,23 +77,23 @@ namespace Deepgram
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::System.Collections.Generic.IList<string> PickV2SpeakPostParametersTagVariant2() => IsV2SpeakPostParametersTagVariant2
             ? V2SpeakPostParametersTagVariant2!
             : throw new global::System.InvalidOperationException($"Expected union variant 'V2SpeakPostParametersTagVariant2' but the value was {ToString()}.");
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator V2SpeakPostParametersTag(string value) => new V2SpeakPostParametersTag((string?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator string?(V2SpeakPostParametersTag @this) => @this.V2SpeakPostParametersTagVariant1;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public V2SpeakPostParametersTag(string? value)
         {
@@ -101,12 +101,12 @@ namespace Deepgram
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static V2SpeakPostParametersTag FromV2SpeakPostParametersTagVariant1(string? value) => new V2SpeakPostParametersTag(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public V2SpeakPostParametersTag(
             string? v2SpeakPostParametersTagVariant1,
@@ -118,23 +118,23 @@ namespace Deepgram
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public object? Object =>
             V2SpeakPostParametersTagVariant2 as object ??
-            V2SpeakPostParametersTagVariant1 as object 
+            V2SpeakPostParametersTagVariant1 as object
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override string? ToString() =>
             V2SpeakPostParametersTagVariant1?.ToString() ??
-            V2SpeakPostParametersTagVariant2?.ToString() 
+            V2SpeakPostParametersTagVariant2?.ToString()
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Validate()
         {
@@ -142,7 +142,7 @@ namespace Deepgram
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public TResult? Match<TResult>(
             global::System.Func<string, TResult>? v2SpeakPostParametersTagVariant1 = null,
@@ -167,7 +167,7 @@ namespace Deepgram
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Match(
             global::System.Action<string>? v2SpeakPostParametersTagVariant1 = null,
@@ -191,7 +191,7 @@ namespace Deepgram
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Switch(
             global::System.Action<string>? v2SpeakPostParametersTagVariant1 = null,
@@ -214,7 +214,7 @@ namespace Deepgram
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override int GetHashCode()
         {
@@ -235,18 +235,18 @@ namespace Deepgram
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Equals(V2SpeakPostParametersTag other)
         {
             return
                 global::System.Collections.Generic.EqualityComparer<string?>.Default.Equals(V2SpeakPostParametersTagVariant1, other.V2SpeakPostParametersTagVariant1) &&
-                global::System.Collections.Generic.EqualityComparer<global::System.Collections.Generic.IList<string>?>.Default.Equals(V2SpeakPostParametersTagVariant2, other.V2SpeakPostParametersTagVariant2) 
+                global::System.Collections.Generic.EqualityComparer<global::System.Collections.Generic.IList<string>?>.Default.Equals(V2SpeakPostParametersTagVariant2, other.V2SpeakPostParametersTagVariant2)
                 ;
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator ==(V2SpeakPostParametersTag obj1, V2SpeakPostParametersTag obj2)
         {
@@ -254,7 +254,7 @@ namespace Deepgram
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator !=(V2SpeakPostParametersTag obj1, V2SpeakPostParametersTag obj2)
         {
@@ -262,7 +262,7 @@ namespace Deepgram
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override bool Equals(object? obj)
         {

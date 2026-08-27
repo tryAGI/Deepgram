@@ -9,47 +9,47 @@ namespace Deepgram.Realtime
     public enum ListenV1Encoding
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Alaw,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AmrNb,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AmrWb,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Flac,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         G729,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Linear16,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Linear32,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Mulaw,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         OggOpus,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Opus,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Speex,
     }

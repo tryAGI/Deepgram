@@ -9,15 +9,15 @@ namespace Deepgram
     public enum AgentThinkModelsV1ResponseModelsItemsOneOf2Id
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Gemini20Flash,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Gemini20FlashLite,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Gemini25Flash,
     }

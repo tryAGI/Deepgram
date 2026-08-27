@@ -9,11 +9,11 @@ namespace Deepgram.Realtime
     public enum OpenAiSpeakProviderModel
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Tts1,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Tts1Hd,
     }

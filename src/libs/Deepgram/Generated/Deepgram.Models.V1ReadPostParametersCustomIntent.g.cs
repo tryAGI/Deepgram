@@ -5,12 +5,12 @@
 namespace Deepgram
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public readonly partial struct V1ReadPostParametersCustomIntent : global::System.IEquatable<V1ReadPostParametersCustomIntent>
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public string? V1ReadPostParametersCustomIntentVariant1 { get; init; }
@@ -19,7 +19,7 @@ namespace Deepgram
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(V1ReadPostParametersCustomIntentVariant1))]
@@ -27,7 +27,7 @@ namespace Deepgram
         public bool IsV1ReadPostParametersCustomIntentVariant1 => V1ReadPostParametersCustomIntentVariant1 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickV1ReadPostParametersCustomIntentVariant1(
 #if NET6_0_OR_GREATER
@@ -40,14 +40,14 @@ namespace Deepgram
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public string PickV1ReadPostParametersCustomIntentVariant1() => IsV1ReadPostParametersCustomIntentVariant1
             ? V1ReadPostParametersCustomIntentVariant1!
             : throw new global::System.InvalidOperationException($"Expected union variant 'V1ReadPostParametersCustomIntentVariant1' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::System.Collections.Generic.IList<string>? V1ReadPostParametersCustomIntentVariant2 { get; init; }
@@ -56,7 +56,7 @@ namespace Deepgram
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(V1ReadPostParametersCustomIntentVariant2))]
@@ -64,7 +64,7 @@ namespace Deepgram
         public bool IsV1ReadPostParametersCustomIntentVariant2 => V1ReadPostParametersCustomIntentVariant2 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickV1ReadPostParametersCustomIntentVariant2(
 #if NET6_0_OR_GREATER
@@ -77,23 +77,23 @@ namespace Deepgram
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::System.Collections.Generic.IList<string> PickV1ReadPostParametersCustomIntentVariant2() => IsV1ReadPostParametersCustomIntentVariant2
             ? V1ReadPostParametersCustomIntentVariant2!
             : throw new global::System.InvalidOperationException($"Expected union variant 'V1ReadPostParametersCustomIntentVariant2' but the value was {ToString()}.");
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator V1ReadPostParametersCustomIntent(string value) => new V1ReadPostParametersCustomIntent((string?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator string?(V1ReadPostParametersCustomIntent @this) => @this.V1ReadPostParametersCustomIntentVariant1;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public V1ReadPostParametersCustomIntent(string? value)
         {
@@ -101,12 +101,12 @@ namespace Deepgram
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static V1ReadPostParametersCustomIntent FromV1ReadPostParametersCustomIntentVariant1(string? value) => new V1ReadPostParametersCustomIntent(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public V1ReadPostParametersCustomIntent(
             string? v1ReadPostParametersCustomIntentVariant1,
@@ -118,23 +118,23 @@ namespace Deepgram
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public object? Object =>
             V1ReadPostParametersCustomIntentVariant2 as object ??
-            V1ReadPostParametersCustomIntentVariant1 as object 
+            V1ReadPostParametersCustomIntentVariant1 as object
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override string? ToString() =>
             V1ReadPostParametersCustomIntentVariant1?.ToString() ??
-            V1ReadPostParametersCustomIntentVariant2?.ToString() 
+            V1ReadPostParametersCustomIntentVariant2?.ToString()
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Validate()
         {
@@ -142,7 +142,7 @@ namespace Deepgram
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public TResult? Match<TResult>(
             global::System.Func<string, TResult>? v1ReadPostParametersCustomIntentVariant1 = null,
@@ -167,7 +167,7 @@ namespace Deepgram
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Match(
             global::System.Action<string>? v1ReadPostParametersCustomIntentVariant1 = null,
@@ -191,7 +191,7 @@ namespace Deepgram
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Switch(
             global::System.Action<string>? v1ReadPostParametersCustomIntentVariant1 = null,
@@ -214,7 +214,7 @@ namespace Deepgram
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override int GetHashCode()
         {
@@ -235,18 +235,18 @@ namespace Deepgram
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Equals(V1ReadPostParametersCustomIntent other)
         {
             return
                 global::System.Collections.Generic.EqualityComparer<string?>.Default.Equals(V1ReadPostParametersCustomIntentVariant1, other.V1ReadPostParametersCustomIntentVariant1) &&
-                global::System.Collections.Generic.EqualityComparer<global::System.Collections.Generic.IList<string>?>.Default.Equals(V1ReadPostParametersCustomIntentVariant2, other.V1ReadPostParametersCustomIntentVariant2) 
+                global::System.Collections.Generic.EqualityComparer<global::System.Collections.Generic.IList<string>?>.Default.Equals(V1ReadPostParametersCustomIntentVariant2, other.V1ReadPostParametersCustomIntentVariant2)
                 ;
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator ==(V1ReadPostParametersCustomIntent obj1, V1ReadPostParametersCustomIntent obj2)
         {
@@ -254,7 +254,7 @@ namespace Deepgram
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator !=(V1ReadPostParametersCustomIntent obj1, V1ReadPostParametersCustomIntent obj2)
         {
@@ -262,7 +262,7 @@ namespace Deepgram
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override bool Equals(object? obj)
         {

@@ -4,13 +4,13 @@
 namespace Deepgram.Realtime
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public static partial class AutoSdkPolyfills
     {
 #if !NET6_0_OR_GREATER
         /// <summary>
-        /// 
+        ///
         /// </summary>
         /// <param name="content"></param>
         /// <param name="cancellationToken"></param>
@@ -23,7 +23,7 @@ namespace Deepgram.Realtime
             return content.ReadAsStringAsync();
         }
         /// <summary>
-        /// 
+        ///
         /// </summary>
         /// <param name="content"></param>
         /// <param name="cancellationToken"></param>
@@ -36,7 +36,7 @@ namespace Deepgram.Realtime
             return content.ReadAsStreamAsync();
         }
         /// <summary>
-        /// 
+        ///
         /// </summary>
         /// <param name="content"></param>
         /// <param name="cancellationToken"></param>

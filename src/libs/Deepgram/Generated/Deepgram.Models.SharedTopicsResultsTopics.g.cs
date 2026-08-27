@@ -4,12 +4,12 @@
 namespace Deepgram
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class SharedTopicsResultsTopics
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("segments")]
         public global::System.Collections.Generic.IList<global::Deepgram.SharedTopicsResultsTopicsSegmentsItems>? Segments { get; set; }

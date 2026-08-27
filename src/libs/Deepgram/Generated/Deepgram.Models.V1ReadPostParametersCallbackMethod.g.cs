@@ -9,11 +9,11 @@ namespace Deepgram
     public enum V1ReadPostParametersCallbackMethod
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Post,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Put,
     }

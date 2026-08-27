@@ -4,7 +4,7 @@
 namespace Deepgram
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class ListProjectsV1ResponseProjectsItems
     {

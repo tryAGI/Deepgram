@@ -13,7 +13,7 @@ namespace Deepgram.Realtime
     public readonly partial struct ListenV2LanguageHint : global::System.IEquatable<ListenV2LanguageHint>
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public string? ListenV2LanguageHintVariant1 { get; init; }
@@ -22,7 +22,7 @@ namespace Deepgram.Realtime
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(ListenV2LanguageHintVariant1))]
@@ -30,7 +30,7 @@ namespace Deepgram.Realtime
         public bool IsListenV2LanguageHintVariant1 => ListenV2LanguageHintVariant1 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickListenV2LanguageHintVariant1(
 #if NET6_0_OR_GREATER
@@ -43,14 +43,14 @@ namespace Deepgram.Realtime
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public string PickListenV2LanguageHintVariant1() => IsListenV2LanguageHintVariant1
             ? ListenV2LanguageHintVariant1!
             : throw new global::System.InvalidOperationException($"Expected union variant 'ListenV2LanguageHintVariant1' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::System.Collections.Generic.IList<string>? ListenV2LanguageHintVariant2 { get; init; }
@@ -59,7 +59,7 @@ namespace Deepgram.Realtime
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(ListenV2LanguageHintVariant2))]
@@ -67,7 +67,7 @@ namespace Deepgram.Realtime
         public bool IsListenV2LanguageHintVariant2 => ListenV2LanguageHintVariant2 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickListenV2LanguageHintVariant2(
 #if NET6_0_OR_GREATER
@@ -80,23 +80,23 @@ namespace Deepgram.Realtime
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::System.Collections.Generic.IList<string> PickListenV2LanguageHintVariant2() => IsListenV2LanguageHintVariant2
             ? ListenV2LanguageHintVariant2!
             : throw new global::System.InvalidOperationException($"Expected union variant 'ListenV2LanguageHintVariant2' but the value was {ToString()}.");
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator ListenV2LanguageHint(string value) => new ListenV2LanguageHint((string?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator string?(ListenV2LanguageHint @this) => @this.ListenV2LanguageHintVariant1;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public ListenV2LanguageHint(string? value)
         {
@@ -104,12 +104,12 @@ namespace Deepgram.Realtime
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static ListenV2LanguageHint FromListenV2LanguageHintVariant1(string? value) => new ListenV2LanguageHint(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public ListenV2LanguageHint(
             string? listenV2LanguageHintVariant1,
@@ -121,23 +121,23 @@ namespace Deepgram.Realtime
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public object? Object =>
             ListenV2LanguageHintVariant2 as object ??
-            ListenV2LanguageHintVariant1 as object 
+            ListenV2LanguageHintVariant1 as object
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override string? ToString() =>
             ListenV2LanguageHintVariant1?.ToString() ??
-            ListenV2LanguageHintVariant2?.ToString() 
+            ListenV2LanguageHintVariant2?.ToString()
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Validate()
         {
@@ -145,7 +145,7 @@ namespace Deepgram.Realtime
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public TResult? Match<TResult>(
             global::System.Func<string, TResult>? listenV2LanguageHintVariant1 = null,
@@ -170,7 +170,7 @@ namespace Deepgram.Realtime
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Match(
             global::System.Action<string>? listenV2LanguageHintVariant1 = null,
@@ -194,7 +194,7 @@ namespace Deepgram.Realtime
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Switch(
             global::System.Action<string>? listenV2LanguageHintVariant1 = null,
@@ -217,7 +217,7 @@ namespace Deepgram.Realtime
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override int GetHashCode()
         {
@@ -238,18 +238,18 @@ namespace Deepgram.Realtime
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Equals(ListenV2LanguageHint other)
         {
             return
                 global::System.Collections.Generic.EqualityComparer<string?>.Default.Equals(ListenV2LanguageHintVariant1, other.ListenV2LanguageHintVariant1) &&
-                global::System.Collections.Generic.EqualityComparer<global::System.Collections.Generic.IList<string>?>.Default.Equals(ListenV2LanguageHintVariant2, other.ListenV2LanguageHintVariant2) 
+                global::System.Collections.Generic.EqualityComparer<global::System.Collections.Generic.IList<string>?>.Default.Equals(ListenV2LanguageHintVariant2, other.ListenV2LanguageHintVariant2)
                 ;
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator ==(ListenV2LanguageHint obj1, ListenV2LanguageHint obj2)
         {
@@ -257,7 +257,7 @@ namespace Deepgram.Realtime
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator !=(ListenV2LanguageHint obj1, ListenV2LanguageHint obj2)
         {
@@ -265,7 +265,7 @@ namespace Deepgram.Realtime
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override bool Equals(object? obj)
         {

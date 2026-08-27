@@ -5,12 +5,12 @@
 namespace Deepgram
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public readonly partial struct V1ListenPostParametersTag : global::System.IEquatable<V1ListenPostParametersTag>
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public string? V1ListenPostParametersTagVariant1 { get; init; }
@@ -19,7 +19,7 @@ namespace Deepgram
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(V1ListenPostParametersTagVariant1))]
@@ -27,7 +27,7 @@ namespace Deepgram
         public bool IsV1ListenPostParametersTagVariant1 => V1ListenPostParametersTagVariant1 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickV1ListenPostParametersTagVariant1(
 #if NET6_0_OR_GREATER
@@ -40,14 +40,14 @@ namespace Deepgram
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public string PickV1ListenPostParametersTagVariant1() => IsV1ListenPostParametersTagVariant1
             ? V1ListenPostParametersTagVariant1!
             : throw new global::System.InvalidOperationException($"Expected union variant 'V1ListenPostParametersTagVariant1' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::System.Collections.Generic.IList<string>? V1ListenPostParametersTagVariant2 { get; init; }
@@ -56,7 +56,7 @@ namespace Deepgram
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(V1ListenPostParametersTagVariant2))]
@@ -64,7 +64,7 @@ namespace Deepgram
         public bool IsV1ListenPostParametersTagVariant2 => V1ListenPostParametersTagVariant2 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickV1ListenPostParametersTagVariant2(
 #if NET6_0_OR_GREATER
@@ -77,23 +77,23 @@ namespace Deepgram
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::System.Collections.Generic.IList<string> PickV1ListenPostParametersTagVariant2() => IsV1ListenPostParametersTagVariant2
             ? V1ListenPostParametersTagVariant2!
             : throw new global::System.InvalidOperationException($"Expected union variant 'V1ListenPostParametersTagVariant2' but the value was {ToString()}.");
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator V1ListenPostParametersTag(string value) => new V1ListenPostParametersTag((string?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator string?(V1ListenPostParametersTag @this) => @this.V1ListenPostParametersTagVariant1;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public V1ListenPostParametersTag(string? value)
         {
@@ -101,12 +101,12 @@ namespace Deepgram
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static V1ListenPostParametersTag FromV1ListenPostParametersTagVariant1(string? value) => new V1ListenPostParametersTag(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public V1ListenPostParametersTag(
             string? v1ListenPostParametersTagVariant1,
@@ -118,23 +118,23 @@ namespace Deepgram
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public object? Object =>
             V1ListenPostParametersTagVariant2 as object ??
-            V1ListenPostParametersTagVariant1 as object 
+            V1ListenPostParametersTagVariant1 as object
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override string? ToString() =>
             V1ListenPostParametersTagVariant1?.ToString() ??
-            V1ListenPostParametersTagVariant2?.ToString() 
+            V1ListenPostParametersTagVariant2?.ToString()
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Validate()
         {
@@ -142,7 +142,7 @@ namespace Deepgram
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public TResult? Match<TResult>(
             global::System.Func<string, TResult>? v1ListenPostParametersTagVariant1 = null,
@@ -167,7 +167,7 @@ namespace Deepgram
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Match(
             global::System.Action<string>? v1ListenPostParametersTagVariant1 = null,
@@ -191,7 +191,7 @@ namespace Deepgram
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Switch(
             global::System.Action<string>? v1ListenPostParametersTagVariant1 = null,
@@ -214,7 +214,7 @@ namespace Deepgram
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override int GetHashCode()
         {
@@ -235,18 +235,18 @@ namespace Deepgram
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Equals(V1ListenPostParametersTag other)
         {
             return
                 global::System.Collections.Generic.EqualityComparer<string?>.Default.Equals(V1ListenPostParametersTagVariant1, other.V1ListenPostParametersTagVariant1) &&
-                global::System.Collections.Generic.EqualityComparer<global::System.Collections.Generic.IList<string>?>.Default.Equals(V1ListenPostParametersTagVariant2, other.V1ListenPostParametersTagVariant2) 
+                global::System.Collections.Generic.EqualityComparer<global::System.Collections.Generic.IList<string>?>.Default.Equals(V1ListenPostParametersTagVariant2, other.V1ListenPostParametersTagVariant2)
                 ;
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator ==(V1ListenPostParametersTag obj1, V1ListenPostParametersTag obj2)
         {
@@ -254,7 +254,7 @@ namespace Deepgram
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator !=(V1ListenPostParametersTag obj1, V1ListenPostParametersTag obj2)
         {
@@ -262,7 +262,7 @@ namespace Deepgram
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override bool Equals(object? obj)
         {

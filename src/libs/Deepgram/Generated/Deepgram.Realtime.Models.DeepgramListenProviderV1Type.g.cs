@@ -9,7 +9,7 @@ namespace Deepgram.Realtime
     public enum DeepgramListenProviderV1Type
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Deepgram,
     }

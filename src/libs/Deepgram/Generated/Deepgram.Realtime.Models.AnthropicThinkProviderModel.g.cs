@@ -9,11 +9,11 @@ namespace Deepgram.Realtime
     public enum AnthropicThinkProviderModel
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Claude35HaikuLatest,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ClaudeSonnet420250514,
     }

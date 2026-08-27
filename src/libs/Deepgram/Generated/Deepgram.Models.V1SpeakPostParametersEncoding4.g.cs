@@ -9,7 +9,7 @@ namespace Deepgram
     public enum V1SpeakPostParametersEncoding4
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Mp3,
     }

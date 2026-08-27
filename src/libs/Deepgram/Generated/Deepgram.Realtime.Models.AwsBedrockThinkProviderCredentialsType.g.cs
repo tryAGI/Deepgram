@@ -9,11 +9,11 @@ namespace Deepgram.Realtime
     public enum AwsBedrockThinkProviderCredentialsType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Iam,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Sts,
     }

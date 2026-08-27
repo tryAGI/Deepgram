@@ -4,7 +4,7 @@
 namespace Deepgram.Realtime
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class ListenV1ListenV1Results
     {
@@ -49,14 +49,14 @@ namespace Deepgram.Realtime
         public bool? SpeechFinal { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("channel")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required global::Deepgram.Realtime.ChannelsListenV1MessagesListenV1ResultsChannel Channel { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("metadata")]
         [global::System.Text.Json.Serialization.JsonRequired]

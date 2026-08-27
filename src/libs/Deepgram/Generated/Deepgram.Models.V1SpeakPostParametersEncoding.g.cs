@@ -5,7 +5,7 @@
 namespace Deepgram
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public readonly partial struct V1SpeakPostParametersEncoding : global::System.IEquatable<V1SpeakPostParametersEncoding>
     {
@@ -19,7 +19,7 @@ namespace Deepgram
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(V1SpeakPostParametersEncoding0))]
@@ -27,7 +27,7 @@ namespace Deepgram
         public bool IsV1SpeakPostParametersEncoding0 => V1SpeakPostParametersEncoding0 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickV1SpeakPostParametersEncoding0(
 #if NET6_0_OR_GREATER
@@ -40,7 +40,7 @@ namespace Deepgram
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Deepgram.V1SpeakPostParametersEncoding0 PickV1SpeakPostParametersEncoding0() => IsV1SpeakPostParametersEncoding0
             ? V1SpeakPostParametersEncoding0!.Value
@@ -56,7 +56,7 @@ namespace Deepgram
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(V1SpeakPostParametersEncoding1))]
@@ -64,7 +64,7 @@ namespace Deepgram
         public bool IsV1SpeakPostParametersEncoding1 => V1SpeakPostParametersEncoding1 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickV1SpeakPostParametersEncoding1(
 #if NET6_0_OR_GREATER
@@ -77,7 +77,7 @@ namespace Deepgram
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Deepgram.V1SpeakPostParametersEncoding1 PickV1SpeakPostParametersEncoding1() => IsV1SpeakPostParametersEncoding1
             ? V1SpeakPostParametersEncoding1!.Value
@@ -93,7 +93,7 @@ namespace Deepgram
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(V1SpeakPostParametersEncoding2))]
@@ -101,7 +101,7 @@ namespace Deepgram
         public bool IsV1SpeakPostParametersEncoding2 => V1SpeakPostParametersEncoding2 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickV1SpeakPostParametersEncoding2(
 #if NET6_0_OR_GREATER
@@ -114,7 +114,7 @@ namespace Deepgram
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Deepgram.V1SpeakPostParametersEncoding2 PickV1SpeakPostParametersEncoding2() => IsV1SpeakPostParametersEncoding2
             ? V1SpeakPostParametersEncoding2!.Value
@@ -130,7 +130,7 @@ namespace Deepgram
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(V1SpeakPostParametersEncoding3))]
@@ -138,7 +138,7 @@ namespace Deepgram
         public bool IsV1SpeakPostParametersEncoding3 => V1SpeakPostParametersEncoding3 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickV1SpeakPostParametersEncoding3(
 #if NET6_0_OR_GREATER
@@ -151,7 +151,7 @@ namespace Deepgram
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Deepgram.V1SpeakPostParametersEncoding3 PickV1SpeakPostParametersEncoding3() => IsV1SpeakPostParametersEncoding3
             ? V1SpeakPostParametersEncoding3!.Value
@@ -167,7 +167,7 @@ namespace Deepgram
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(V1SpeakPostParametersEncoding4))]
@@ -175,7 +175,7 @@ namespace Deepgram
         public bool IsV1SpeakPostParametersEncoding4 => V1SpeakPostParametersEncoding4 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickV1SpeakPostParametersEncoding4(
 #if NET6_0_OR_GREATER
@@ -188,7 +188,7 @@ namespace Deepgram
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Deepgram.V1SpeakPostParametersEncoding4 PickV1SpeakPostParametersEncoding4() => IsV1SpeakPostParametersEncoding4
             ? V1SpeakPostParametersEncoding4!.Value
@@ -204,7 +204,7 @@ namespace Deepgram
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(V1SpeakPostParametersEncoding5))]
@@ -212,7 +212,7 @@ namespace Deepgram
         public bool IsV1SpeakPostParametersEncoding5 => V1SpeakPostParametersEncoding5 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickV1SpeakPostParametersEncoding5(
 #if NET6_0_OR_GREATER
@@ -225,7 +225,7 @@ namespace Deepgram
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Deepgram.V1SpeakPostParametersEncoding5 PickV1SpeakPostParametersEncoding5() => IsV1SpeakPostParametersEncoding5
             ? V1SpeakPostParametersEncoding5!.Value
@@ -241,7 +241,7 @@ namespace Deepgram
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(V1SpeakPostParametersEncoding6))]
@@ -249,7 +249,7 @@ namespace Deepgram
         public bool IsV1SpeakPostParametersEncoding6 => V1SpeakPostParametersEncoding6 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickV1SpeakPostParametersEncoding6(
 #if NET6_0_OR_GREATER
@@ -262,23 +262,23 @@ namespace Deepgram
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Deepgram.V1SpeakPostParametersEncoding6 PickV1SpeakPostParametersEncoding6() => IsV1SpeakPostParametersEncoding6
             ? V1SpeakPostParametersEncoding6!.Value
             : throw new global::System.InvalidOperationException($"Expected union variant 'V1SpeakPostParametersEncoding6' but the value was {ToString()}.");
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator V1SpeakPostParametersEncoding(global::Deepgram.V1SpeakPostParametersEncoding0 value) => new V1SpeakPostParametersEncoding((global::Deepgram.V1SpeakPostParametersEncoding0?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Deepgram.V1SpeakPostParametersEncoding0?(V1SpeakPostParametersEncoding @this) => @this.V1SpeakPostParametersEncoding0;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public V1SpeakPostParametersEncoding(global::Deepgram.V1SpeakPostParametersEncoding0? value)
         {
@@ -286,22 +286,22 @@ namespace Deepgram
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static V1SpeakPostParametersEncoding FromV1SpeakPostParametersEncoding0(global::Deepgram.V1SpeakPostParametersEncoding0? value) => new V1SpeakPostParametersEncoding(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator V1SpeakPostParametersEncoding(global::Deepgram.V1SpeakPostParametersEncoding1 value) => new V1SpeakPostParametersEncoding((global::Deepgram.V1SpeakPostParametersEncoding1?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Deepgram.V1SpeakPostParametersEncoding1?(V1SpeakPostParametersEncoding @this) => @this.V1SpeakPostParametersEncoding1;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public V1SpeakPostParametersEncoding(global::Deepgram.V1SpeakPostParametersEncoding1? value)
         {
@@ -309,22 +309,22 @@ namespace Deepgram
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static V1SpeakPostParametersEncoding FromV1SpeakPostParametersEncoding1(global::Deepgram.V1SpeakPostParametersEncoding1? value) => new V1SpeakPostParametersEncoding(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator V1SpeakPostParametersEncoding(global::Deepgram.V1SpeakPostParametersEncoding2 value) => new V1SpeakPostParametersEncoding((global::Deepgram.V1SpeakPostParametersEncoding2?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Deepgram.V1SpeakPostParametersEncoding2?(V1SpeakPostParametersEncoding @this) => @this.V1SpeakPostParametersEncoding2;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public V1SpeakPostParametersEncoding(global::Deepgram.V1SpeakPostParametersEncoding2? value)
         {
@@ -332,22 +332,22 @@ namespace Deepgram
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static V1SpeakPostParametersEncoding FromV1SpeakPostParametersEncoding2(global::Deepgram.V1SpeakPostParametersEncoding2? value) => new V1SpeakPostParametersEncoding(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator V1SpeakPostParametersEncoding(global::Deepgram.V1SpeakPostParametersEncoding3 value) => new V1SpeakPostParametersEncoding((global::Deepgram.V1SpeakPostParametersEncoding3?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Deepgram.V1SpeakPostParametersEncoding3?(V1SpeakPostParametersEncoding @this) => @this.V1SpeakPostParametersEncoding3;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public V1SpeakPostParametersEncoding(global::Deepgram.V1SpeakPostParametersEncoding3? value)
         {
@@ -355,22 +355,22 @@ namespace Deepgram
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static V1SpeakPostParametersEncoding FromV1SpeakPostParametersEncoding3(global::Deepgram.V1SpeakPostParametersEncoding3? value) => new V1SpeakPostParametersEncoding(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator V1SpeakPostParametersEncoding(global::Deepgram.V1SpeakPostParametersEncoding4 value) => new V1SpeakPostParametersEncoding((global::Deepgram.V1SpeakPostParametersEncoding4?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Deepgram.V1SpeakPostParametersEncoding4?(V1SpeakPostParametersEncoding @this) => @this.V1SpeakPostParametersEncoding4;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public V1SpeakPostParametersEncoding(global::Deepgram.V1SpeakPostParametersEncoding4? value)
         {
@@ -378,22 +378,22 @@ namespace Deepgram
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static V1SpeakPostParametersEncoding FromV1SpeakPostParametersEncoding4(global::Deepgram.V1SpeakPostParametersEncoding4? value) => new V1SpeakPostParametersEncoding(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator V1SpeakPostParametersEncoding(global::Deepgram.V1SpeakPostParametersEncoding5 value) => new V1SpeakPostParametersEncoding((global::Deepgram.V1SpeakPostParametersEncoding5?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Deepgram.V1SpeakPostParametersEncoding5?(V1SpeakPostParametersEncoding @this) => @this.V1SpeakPostParametersEncoding5;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public V1SpeakPostParametersEncoding(global::Deepgram.V1SpeakPostParametersEncoding5? value)
         {
@@ -401,22 +401,22 @@ namespace Deepgram
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static V1SpeakPostParametersEncoding FromV1SpeakPostParametersEncoding5(global::Deepgram.V1SpeakPostParametersEncoding5? value) => new V1SpeakPostParametersEncoding(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator V1SpeakPostParametersEncoding(global::Deepgram.V1SpeakPostParametersEncoding6 value) => new V1SpeakPostParametersEncoding((global::Deepgram.V1SpeakPostParametersEncoding6?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Deepgram.V1SpeakPostParametersEncoding6?(V1SpeakPostParametersEncoding @this) => @this.V1SpeakPostParametersEncoding6;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public V1SpeakPostParametersEncoding(global::Deepgram.V1SpeakPostParametersEncoding6? value)
         {
@@ -424,12 +424,12 @@ namespace Deepgram
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static V1SpeakPostParametersEncoding FromV1SpeakPostParametersEncoding6(global::Deepgram.V1SpeakPostParametersEncoding6? value) => new V1SpeakPostParametersEncoding(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public V1SpeakPostParametersEncoding(
             global::Deepgram.V1SpeakPostParametersEncoding0? v1SpeakPostParametersEncoding0,
@@ -451,7 +451,7 @@ namespace Deepgram
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public object? Object =>
             V1SpeakPostParametersEncoding6 as object ??
@@ -460,11 +460,11 @@ namespace Deepgram
             V1SpeakPostParametersEncoding3 as object ??
             V1SpeakPostParametersEncoding2 as object ??
             V1SpeakPostParametersEncoding1 as object ??
-            V1SpeakPostParametersEncoding0 as object 
+            V1SpeakPostParametersEncoding0 as object
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override string? ToString() =>
             V1SpeakPostParametersEncoding0?.ToValueString() ??
@@ -473,11 +473,11 @@ namespace Deepgram
             V1SpeakPostParametersEncoding3?.ToValueString() ??
             V1SpeakPostParametersEncoding4?.ToValueString() ??
             V1SpeakPostParametersEncoding5?.ToValueString() ??
-            V1SpeakPostParametersEncoding6?.ToValueString() 
+            V1SpeakPostParametersEncoding6?.ToValueString()
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Validate()
         {
@@ -485,7 +485,7 @@ namespace Deepgram
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public TResult? Match<TResult>(
             global::System.Func<global::Deepgram.V1SpeakPostParametersEncoding0?, TResult>? v1SpeakPostParametersEncoding0 = null,
@@ -535,7 +535,7 @@ namespace Deepgram
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Match(
             global::System.Action<global::Deepgram.V1SpeakPostParametersEncoding0?>? v1SpeakPostParametersEncoding0 = null,
@@ -589,7 +589,7 @@ namespace Deepgram
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Switch(
             global::System.Action<global::Deepgram.V1SpeakPostParametersEncoding0?>? v1SpeakPostParametersEncoding0 = null,
@@ -637,7 +637,7 @@ namespace Deepgram
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override int GetHashCode()
         {
@@ -668,7 +668,7 @@ namespace Deepgram
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Equals(V1SpeakPostParametersEncoding other)
         {
@@ -679,12 +679,12 @@ namespace Deepgram
                 global::System.Collections.Generic.EqualityComparer<global::Deepgram.V1SpeakPostParametersEncoding3?>.Default.Equals(V1SpeakPostParametersEncoding3, other.V1SpeakPostParametersEncoding3) &&
                 global::System.Collections.Generic.EqualityComparer<global::Deepgram.V1SpeakPostParametersEncoding4?>.Default.Equals(V1SpeakPostParametersEncoding4, other.V1SpeakPostParametersEncoding4) &&
                 global::System.Collections.Generic.EqualityComparer<global::Deepgram.V1SpeakPostParametersEncoding5?>.Default.Equals(V1SpeakPostParametersEncoding5, other.V1SpeakPostParametersEncoding5) &&
-                global::System.Collections.Generic.EqualityComparer<global::Deepgram.V1SpeakPostParametersEncoding6?>.Default.Equals(V1SpeakPostParametersEncoding6, other.V1SpeakPostParametersEncoding6) 
+                global::System.Collections.Generic.EqualityComparer<global::Deepgram.V1SpeakPostParametersEncoding6?>.Default.Equals(V1SpeakPostParametersEncoding6, other.V1SpeakPostParametersEncoding6)
                 ;
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator ==(V1SpeakPostParametersEncoding obj1, V1SpeakPostParametersEncoding obj2)
         {
@@ -692,7 +692,7 @@ namespace Deepgram
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator !=(V1SpeakPostParametersEncoding obj1, V1SpeakPostParametersEncoding obj2)
         {
@@ -700,7 +700,7 @@ namespace Deepgram
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override bool Equals(object? obj)
         {

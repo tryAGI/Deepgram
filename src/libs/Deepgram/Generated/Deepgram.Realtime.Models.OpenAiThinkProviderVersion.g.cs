@@ -9,7 +9,7 @@ namespace Deepgram.Realtime
     public enum OpenAiThinkProviderVersion
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         V1,
     }

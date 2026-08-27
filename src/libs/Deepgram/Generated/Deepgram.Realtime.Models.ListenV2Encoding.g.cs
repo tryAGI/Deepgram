@@ -9,27 +9,27 @@ namespace Deepgram.Realtime
     public enum ListenV2Encoding
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Alaw,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Linear16,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Linear32,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Mulaw,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         OggOpus,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Opus,
     }

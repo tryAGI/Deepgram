@@ -5,7 +5,7 @@
 namespace Deepgram
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public readonly partial struct V1SpeakPostParametersBitRate : global::System.IEquatable<V1SpeakPostParametersBitRate>
     {
@@ -19,7 +19,7 @@ namespace Deepgram
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(V1SpeakPostParametersBitRate0))]
@@ -27,7 +27,7 @@ namespace Deepgram
         public bool IsV1SpeakPostParametersBitRate0 => V1SpeakPostParametersBitRate0 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickV1SpeakPostParametersBitRate0(
 #if NET6_0_OR_GREATER
@@ -40,14 +40,14 @@ namespace Deepgram
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Deepgram.V1SpeakPostParametersBitRate0 PickV1SpeakPostParametersBitRate0() => IsV1SpeakPostParametersBitRate0
             ? V1SpeakPostParametersBitRate0!.Value
             : throw new global::System.InvalidOperationException($"Expected union variant 'V1SpeakPostParametersBitRate0' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public double? V1SpeakPostParametersBitRateVariant2 { get; init; }
@@ -56,7 +56,7 @@ namespace Deepgram
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(V1SpeakPostParametersBitRateVariant2))]
@@ -64,7 +64,7 @@ namespace Deepgram
         public bool IsV1SpeakPostParametersBitRateVariant2 => V1SpeakPostParametersBitRateVariant2 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickV1SpeakPostParametersBitRateVariant2(
 #if NET6_0_OR_GREATER
@@ -77,14 +77,14 @@ namespace Deepgram
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public double PickV1SpeakPostParametersBitRateVariant2() => IsV1SpeakPostParametersBitRateVariant2
             ? V1SpeakPostParametersBitRateVariant2!.Value
             : throw new global::System.InvalidOperationException($"Expected union variant 'V1SpeakPostParametersBitRateVariant2' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public double? V1SpeakPostParametersBitRateVariant3 { get; init; }
@@ -93,7 +93,7 @@ namespace Deepgram
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(V1SpeakPostParametersBitRateVariant3))]
@@ -101,7 +101,7 @@ namespace Deepgram
         public bool IsV1SpeakPostParametersBitRateVariant3 => V1SpeakPostParametersBitRateVariant3 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickV1SpeakPostParametersBitRateVariant3(
 #if NET6_0_OR_GREATER
@@ -114,23 +114,23 @@ namespace Deepgram
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public double PickV1SpeakPostParametersBitRateVariant3() => IsV1SpeakPostParametersBitRateVariant3
             ? V1SpeakPostParametersBitRateVariant3!.Value
             : throw new global::System.InvalidOperationException($"Expected union variant 'V1SpeakPostParametersBitRateVariant3' but the value was {ToString()}.");
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator V1SpeakPostParametersBitRate(global::Deepgram.V1SpeakPostParametersBitRate0 value) => new V1SpeakPostParametersBitRate((global::Deepgram.V1SpeakPostParametersBitRate0?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Deepgram.V1SpeakPostParametersBitRate0?(V1SpeakPostParametersBitRate @this) => @this.V1SpeakPostParametersBitRate0;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public V1SpeakPostParametersBitRate(global::Deepgram.V1SpeakPostParametersBitRate0? value)
         {
@@ -138,22 +138,22 @@ namespace Deepgram
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static V1SpeakPostParametersBitRate FromV1SpeakPostParametersBitRate0(global::Deepgram.V1SpeakPostParametersBitRate0? value) => new V1SpeakPostParametersBitRate(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator V1SpeakPostParametersBitRate(double value) => new V1SpeakPostParametersBitRate((double?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator double?(V1SpeakPostParametersBitRate @this) => @this.V1SpeakPostParametersBitRateVariant2;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public V1SpeakPostParametersBitRate(double? value)
         {
@@ -161,12 +161,12 @@ namespace Deepgram
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static V1SpeakPostParametersBitRate FromV1SpeakPostParametersBitRateVariant2(double? value) => new V1SpeakPostParametersBitRate(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public V1SpeakPostParametersBitRate(
             global::Deepgram.V1SpeakPostParametersBitRate0? v1SpeakPostParametersBitRate0,
@@ -180,25 +180,25 @@ namespace Deepgram
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public object? Object =>
             V1SpeakPostParametersBitRateVariant3 as object ??
             V1SpeakPostParametersBitRateVariant2 as object ??
-            V1SpeakPostParametersBitRate0 as object 
+            V1SpeakPostParametersBitRate0 as object
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override string? ToString() =>
             V1SpeakPostParametersBitRate0?.ToValueString() ??
             V1SpeakPostParametersBitRateVariant2?.ToString() ??
-            V1SpeakPostParametersBitRateVariant3?.ToString() 
+            V1SpeakPostParametersBitRateVariant3?.ToString()
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Validate()
         {
@@ -206,7 +206,7 @@ namespace Deepgram
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public TResult? Match<TResult>(
             global::System.Func<global::Deepgram.V1SpeakPostParametersBitRate0?, TResult>? v1SpeakPostParametersBitRate0 = null,
@@ -236,7 +236,7 @@ namespace Deepgram
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Match(
             global::System.Action<global::Deepgram.V1SpeakPostParametersBitRate0?>? v1SpeakPostParametersBitRate0 = null,
@@ -266,7 +266,7 @@ namespace Deepgram
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Switch(
             global::System.Action<global::Deepgram.V1SpeakPostParametersBitRate0?>? v1SpeakPostParametersBitRate0 = null,
@@ -294,7 +294,7 @@ namespace Deepgram
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override int GetHashCode()
         {
@@ -317,19 +317,19 @@ namespace Deepgram
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Equals(V1SpeakPostParametersBitRate other)
         {
             return
                 global::System.Collections.Generic.EqualityComparer<global::Deepgram.V1SpeakPostParametersBitRate0?>.Default.Equals(V1SpeakPostParametersBitRate0, other.V1SpeakPostParametersBitRate0) &&
                 global::System.Collections.Generic.EqualityComparer<double?>.Default.Equals(V1SpeakPostParametersBitRateVariant2, other.V1SpeakPostParametersBitRateVariant2) &&
-                global::System.Collections.Generic.EqualityComparer<double?>.Default.Equals(V1SpeakPostParametersBitRateVariant3, other.V1SpeakPostParametersBitRateVariant3) 
+                global::System.Collections.Generic.EqualityComparer<double?>.Default.Equals(V1SpeakPostParametersBitRateVariant3, other.V1SpeakPostParametersBitRateVariant3)
                 ;
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator ==(V1SpeakPostParametersBitRate obj1, V1SpeakPostParametersBitRate obj2)
         {
@@ -337,7 +337,7 @@ namespace Deepgram
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator !=(V1SpeakPostParametersBitRate obj1, V1SpeakPostParametersBitRate obj2)
         {
@@ -345,7 +345,7 @@ namespace Deepgram
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override bool Equals(object? obj)
         {

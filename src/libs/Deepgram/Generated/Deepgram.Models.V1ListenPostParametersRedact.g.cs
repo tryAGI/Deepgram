@@ -5,12 +5,12 @@
 namespace Deepgram
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public readonly partial struct V1ListenPostParametersRedact : global::System.IEquatable<V1ListenPostParametersRedact>
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public string? V1ListenPostParametersRedactVariant1 { get; init; }
@@ -19,7 +19,7 @@ namespace Deepgram
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(V1ListenPostParametersRedactVariant1))]
@@ -27,7 +27,7 @@ namespace Deepgram
         public bool IsV1ListenPostParametersRedactVariant1 => V1ListenPostParametersRedactVariant1 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickV1ListenPostParametersRedactVariant1(
 #if NET6_0_OR_GREATER
@@ -40,14 +40,14 @@ namespace Deepgram
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public string PickV1ListenPostParametersRedactVariant1() => IsV1ListenPostParametersRedactVariant1
             ? V1ListenPostParametersRedactVariant1!
             : throw new global::System.InvalidOperationException($"Expected union variant 'V1ListenPostParametersRedactVariant1' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::System.Collections.Generic.IList<global::Deepgram.V1ListenPostParametersRedactSchemaOneOf1Items>? V1ListenPostParametersRedact1 { get; init; }
@@ -56,7 +56,7 @@ namespace Deepgram
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(V1ListenPostParametersRedact1))]
@@ -64,7 +64,7 @@ namespace Deepgram
         public bool IsV1ListenPostParametersRedact1 => V1ListenPostParametersRedact1 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickV1ListenPostParametersRedact1(
 #if NET6_0_OR_GREATER
@@ -77,23 +77,23 @@ namespace Deepgram
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::System.Collections.Generic.IList<global::Deepgram.V1ListenPostParametersRedactSchemaOneOf1Items> PickV1ListenPostParametersRedact1() => IsV1ListenPostParametersRedact1
             ? V1ListenPostParametersRedact1!
             : throw new global::System.InvalidOperationException($"Expected union variant 'V1ListenPostParametersRedact1' but the value was {ToString()}.");
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator V1ListenPostParametersRedact(string value) => new V1ListenPostParametersRedact((string?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator string?(V1ListenPostParametersRedact @this) => @this.V1ListenPostParametersRedactVariant1;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public V1ListenPostParametersRedact(string? value)
         {
@@ -101,12 +101,12 @@ namespace Deepgram
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static V1ListenPostParametersRedact FromV1ListenPostParametersRedactVariant1(string? value) => new V1ListenPostParametersRedact(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public V1ListenPostParametersRedact(
             string? v1ListenPostParametersRedactVariant1,
@@ -118,23 +118,23 @@ namespace Deepgram
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public object? Object =>
             V1ListenPostParametersRedact1 as object ??
-            V1ListenPostParametersRedactVariant1 as object 
+            V1ListenPostParametersRedactVariant1 as object
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override string? ToString() =>
             V1ListenPostParametersRedactVariant1?.ToString() ??
-            V1ListenPostParametersRedact1?.ToString() 
+            V1ListenPostParametersRedact1?.ToString()
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Validate()
         {
@@ -142,7 +142,7 @@ namespace Deepgram
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public TResult? Match<TResult>(
             global::System.Func<string, TResult>? v1ListenPostParametersRedactVariant1 = null,
@@ -167,7 +167,7 @@ namespace Deepgram
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Match(
             global::System.Action<string>? v1ListenPostParametersRedactVariant1 = null,
@@ -191,7 +191,7 @@ namespace Deepgram
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Switch(
             global::System.Action<string>? v1ListenPostParametersRedactVariant1 = null,
@@ -214,7 +214,7 @@ namespace Deepgram
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override int GetHashCode()
         {
@@ -235,18 +235,18 @@ namespace Deepgram
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Equals(V1ListenPostParametersRedact other)
         {
             return
                 global::System.Collections.Generic.EqualityComparer<string?>.Default.Equals(V1ListenPostParametersRedactVariant1, other.V1ListenPostParametersRedactVariant1) &&
-                global::System.Collections.Generic.EqualityComparer<global::System.Collections.Generic.IList<global::Deepgram.V1ListenPostParametersRedactSchemaOneOf1Items>?>.Default.Equals(V1ListenPostParametersRedact1, other.V1ListenPostParametersRedact1) 
+                global::System.Collections.Generic.EqualityComparer<global::System.Collections.Generic.IList<global::Deepgram.V1ListenPostParametersRedactSchemaOneOf1Items>?>.Default.Equals(V1ListenPostParametersRedact1, other.V1ListenPostParametersRedact1)
                 ;
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator ==(V1ListenPostParametersRedact obj1, V1ListenPostParametersRedact obj2)
         {
@@ -254,7 +254,7 @@ namespace Deepgram
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator !=(V1ListenPostParametersRedact obj1, V1ListenPostParametersRedact obj2)
         {
@@ -262,7 +262,7 @@ namespace Deepgram
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override bool Equals(object? obj)
         {

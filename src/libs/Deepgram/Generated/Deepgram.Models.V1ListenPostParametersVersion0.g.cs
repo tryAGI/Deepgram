@@ -9,7 +9,7 @@ namespace Deepgram
     public enum V1ListenPostParametersVersion0
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Latest,
     }

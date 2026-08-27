@@ -4,12 +4,12 @@
 namespace Deepgram
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class ListProjectPurchasesV1Response
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("orders")]
         public global::System.Collections.Generic.IList<global::Deepgram.ListProjectPurchasesV1ResponseOrdersItems>? Orders { get; set; }

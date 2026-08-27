@@ -5,7 +5,7 @@
 namespace Deepgram
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public readonly partial struct AgentThinkModelsV1ResponseModelsItems : global::System.IEquatable<AgentThinkModelsV1ResponseModelsItems>
     {
@@ -19,7 +19,7 @@ namespace Deepgram
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(AgentThinkModelsV1ResponseModelsItems0))]
@@ -27,7 +27,7 @@ namespace Deepgram
         public bool IsAgentThinkModelsV1ResponseModelsItems0 => AgentThinkModelsV1ResponseModelsItems0 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickAgentThinkModelsV1ResponseModelsItems0(
 #if NET6_0_OR_GREATER
@@ -40,7 +40,7 @@ namespace Deepgram
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Deepgram.AgentThinkModelsV1ResponseModelsItems0 PickAgentThinkModelsV1ResponseModelsItems0() => IsAgentThinkModelsV1ResponseModelsItems0
             ? AgentThinkModelsV1ResponseModelsItems0!
@@ -56,7 +56,7 @@ namespace Deepgram
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(AgentThinkModelsV1ResponseModelsItems1))]
@@ -64,7 +64,7 @@ namespace Deepgram
         public bool IsAgentThinkModelsV1ResponseModelsItems1 => AgentThinkModelsV1ResponseModelsItems1 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickAgentThinkModelsV1ResponseModelsItems1(
 #if NET6_0_OR_GREATER
@@ -77,7 +77,7 @@ namespace Deepgram
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Deepgram.AgentThinkModelsV1ResponseModelsItems1 PickAgentThinkModelsV1ResponseModelsItems1() => IsAgentThinkModelsV1ResponseModelsItems1
             ? AgentThinkModelsV1ResponseModelsItems1!
@@ -93,7 +93,7 @@ namespace Deepgram
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(AgentThinkModelsV1ResponseModelsItems2))]
@@ -101,7 +101,7 @@ namespace Deepgram
         public bool IsAgentThinkModelsV1ResponseModelsItems2 => AgentThinkModelsV1ResponseModelsItems2 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickAgentThinkModelsV1ResponseModelsItems2(
 #if NET6_0_OR_GREATER
@@ -114,7 +114,7 @@ namespace Deepgram
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Deepgram.AgentThinkModelsV1ResponseModelsItems2 PickAgentThinkModelsV1ResponseModelsItems2() => IsAgentThinkModelsV1ResponseModelsItems2
             ? AgentThinkModelsV1ResponseModelsItems2!
@@ -130,7 +130,7 @@ namespace Deepgram
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(AgentThinkModelsV1ResponseModelsItems3))]
@@ -138,7 +138,7 @@ namespace Deepgram
         public bool IsAgentThinkModelsV1ResponseModelsItems3 => AgentThinkModelsV1ResponseModelsItems3 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickAgentThinkModelsV1ResponseModelsItems3(
 #if NET6_0_OR_GREATER
@@ -151,7 +151,7 @@ namespace Deepgram
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Deepgram.AgentThinkModelsV1ResponseModelsItems3 PickAgentThinkModelsV1ResponseModelsItems3() => IsAgentThinkModelsV1ResponseModelsItems3
             ? AgentThinkModelsV1ResponseModelsItems3!
@@ -167,7 +167,7 @@ namespace Deepgram
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(AgentThinkModelsV1ResponseModelsItems4))]
@@ -175,7 +175,7 @@ namespace Deepgram
         public bool IsAgentThinkModelsV1ResponseModelsItems4 => AgentThinkModelsV1ResponseModelsItems4 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickAgentThinkModelsV1ResponseModelsItems4(
 #if NET6_0_OR_GREATER
@@ -188,23 +188,23 @@ namespace Deepgram
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Deepgram.AgentThinkModelsV1ResponseModelsItems4 PickAgentThinkModelsV1ResponseModelsItems4() => IsAgentThinkModelsV1ResponseModelsItems4
             ? AgentThinkModelsV1ResponseModelsItems4!
             : throw new global::System.InvalidOperationException($"Expected union variant 'AgentThinkModelsV1ResponseModelsItems4' but the value was {ToString()}.");
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator AgentThinkModelsV1ResponseModelsItems(global::Deepgram.AgentThinkModelsV1ResponseModelsItems0 value) => new AgentThinkModelsV1ResponseModelsItems((global::Deepgram.AgentThinkModelsV1ResponseModelsItems0?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Deepgram.AgentThinkModelsV1ResponseModelsItems0?(AgentThinkModelsV1ResponseModelsItems @this) => @this.AgentThinkModelsV1ResponseModelsItems0;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public AgentThinkModelsV1ResponseModelsItems(global::Deepgram.AgentThinkModelsV1ResponseModelsItems0? value)
         {
@@ -212,22 +212,22 @@ namespace Deepgram
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static AgentThinkModelsV1ResponseModelsItems FromAgentThinkModelsV1ResponseModelsItems0(global::Deepgram.AgentThinkModelsV1ResponseModelsItems0? value) => new AgentThinkModelsV1ResponseModelsItems(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator AgentThinkModelsV1ResponseModelsItems(global::Deepgram.AgentThinkModelsV1ResponseModelsItems1 value) => new AgentThinkModelsV1ResponseModelsItems((global::Deepgram.AgentThinkModelsV1ResponseModelsItems1?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Deepgram.AgentThinkModelsV1ResponseModelsItems1?(AgentThinkModelsV1ResponseModelsItems @this) => @this.AgentThinkModelsV1ResponseModelsItems1;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public AgentThinkModelsV1ResponseModelsItems(global::Deepgram.AgentThinkModelsV1ResponseModelsItems1? value)
         {
@@ -235,22 +235,22 @@ namespace Deepgram
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static AgentThinkModelsV1ResponseModelsItems FromAgentThinkModelsV1ResponseModelsItems1(global::Deepgram.AgentThinkModelsV1ResponseModelsItems1? value) => new AgentThinkModelsV1ResponseModelsItems(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator AgentThinkModelsV1ResponseModelsItems(global::Deepgram.AgentThinkModelsV1ResponseModelsItems2 value) => new AgentThinkModelsV1ResponseModelsItems((global::Deepgram.AgentThinkModelsV1ResponseModelsItems2?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Deepgram.AgentThinkModelsV1ResponseModelsItems2?(AgentThinkModelsV1ResponseModelsItems @this) => @this.AgentThinkModelsV1ResponseModelsItems2;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public AgentThinkModelsV1ResponseModelsItems(global::Deepgram.AgentThinkModelsV1ResponseModelsItems2? value)
         {
@@ -258,22 +258,22 @@ namespace Deepgram
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static AgentThinkModelsV1ResponseModelsItems FromAgentThinkModelsV1ResponseModelsItems2(global::Deepgram.AgentThinkModelsV1ResponseModelsItems2? value) => new AgentThinkModelsV1ResponseModelsItems(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator AgentThinkModelsV1ResponseModelsItems(global::Deepgram.AgentThinkModelsV1ResponseModelsItems3 value) => new AgentThinkModelsV1ResponseModelsItems((global::Deepgram.AgentThinkModelsV1ResponseModelsItems3?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Deepgram.AgentThinkModelsV1ResponseModelsItems3?(AgentThinkModelsV1ResponseModelsItems @this) => @this.AgentThinkModelsV1ResponseModelsItems3;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public AgentThinkModelsV1ResponseModelsItems(global::Deepgram.AgentThinkModelsV1ResponseModelsItems3? value)
         {
@@ -281,22 +281,22 @@ namespace Deepgram
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static AgentThinkModelsV1ResponseModelsItems FromAgentThinkModelsV1ResponseModelsItems3(global::Deepgram.AgentThinkModelsV1ResponseModelsItems3? value) => new AgentThinkModelsV1ResponseModelsItems(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator AgentThinkModelsV1ResponseModelsItems(global::Deepgram.AgentThinkModelsV1ResponseModelsItems4 value) => new AgentThinkModelsV1ResponseModelsItems((global::Deepgram.AgentThinkModelsV1ResponseModelsItems4?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Deepgram.AgentThinkModelsV1ResponseModelsItems4?(AgentThinkModelsV1ResponseModelsItems @this) => @this.AgentThinkModelsV1ResponseModelsItems4;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public AgentThinkModelsV1ResponseModelsItems(global::Deepgram.AgentThinkModelsV1ResponseModelsItems4? value)
         {
@@ -304,12 +304,12 @@ namespace Deepgram
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static AgentThinkModelsV1ResponseModelsItems FromAgentThinkModelsV1ResponseModelsItems4(global::Deepgram.AgentThinkModelsV1ResponseModelsItems4? value) => new AgentThinkModelsV1ResponseModelsItems(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public AgentThinkModelsV1ResponseModelsItems(
             global::Deepgram.AgentThinkModelsV1ResponseModelsItems0? agentThinkModelsV1ResponseModelsItems0,
@@ -327,29 +327,29 @@ namespace Deepgram
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public object? Object =>
             AgentThinkModelsV1ResponseModelsItems4 as object ??
             AgentThinkModelsV1ResponseModelsItems3 as object ??
             AgentThinkModelsV1ResponseModelsItems2 as object ??
             AgentThinkModelsV1ResponseModelsItems1 as object ??
-            AgentThinkModelsV1ResponseModelsItems0 as object 
+            AgentThinkModelsV1ResponseModelsItems0 as object
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override string? ToString() =>
             AgentThinkModelsV1ResponseModelsItems0?.ToString() ??
             AgentThinkModelsV1ResponseModelsItems1?.ToString() ??
             AgentThinkModelsV1ResponseModelsItems2?.ToString() ??
             AgentThinkModelsV1ResponseModelsItems3?.ToString() ??
-            AgentThinkModelsV1ResponseModelsItems4?.ToString() 
+            AgentThinkModelsV1ResponseModelsItems4?.ToString()
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Validate()
         {
@@ -357,7 +357,7 @@ namespace Deepgram
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public TResult? Match<TResult>(
             global::System.Func<global::Deepgram.AgentThinkModelsV1ResponseModelsItems0, TResult>? agentThinkModelsV1ResponseModelsItems0 = null,
@@ -397,7 +397,7 @@ namespace Deepgram
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Match(
             global::System.Action<global::Deepgram.AgentThinkModelsV1ResponseModelsItems0>? agentThinkModelsV1ResponseModelsItems0 = null,
@@ -439,7 +439,7 @@ namespace Deepgram
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Switch(
             global::System.Action<global::Deepgram.AgentThinkModelsV1ResponseModelsItems0>? agentThinkModelsV1ResponseModelsItems0 = null,
@@ -477,7 +477,7 @@ namespace Deepgram
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override int GetHashCode()
         {
@@ -504,7 +504,7 @@ namespace Deepgram
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Equals(AgentThinkModelsV1ResponseModelsItems other)
         {
@@ -513,12 +513,12 @@ namespace Deepgram
                 global::System.Collections.Generic.EqualityComparer<global::Deepgram.AgentThinkModelsV1ResponseModelsItems1?>.Default.Equals(AgentThinkModelsV1ResponseModelsItems1, other.AgentThinkModelsV1ResponseModelsItems1) &&
                 global::System.Collections.Generic.EqualityComparer<global::Deepgram.AgentThinkModelsV1ResponseModelsItems2?>.Default.Equals(AgentThinkModelsV1ResponseModelsItems2, other.AgentThinkModelsV1ResponseModelsItems2) &&
                 global::System.Collections.Generic.EqualityComparer<global::Deepgram.AgentThinkModelsV1ResponseModelsItems3?>.Default.Equals(AgentThinkModelsV1ResponseModelsItems3, other.AgentThinkModelsV1ResponseModelsItems3) &&
-                global::System.Collections.Generic.EqualityComparer<global::Deepgram.AgentThinkModelsV1ResponseModelsItems4?>.Default.Equals(AgentThinkModelsV1ResponseModelsItems4, other.AgentThinkModelsV1ResponseModelsItems4) 
+                global::System.Collections.Generic.EqualityComparer<global::Deepgram.AgentThinkModelsV1ResponseModelsItems4?>.Default.Equals(AgentThinkModelsV1ResponseModelsItems4, other.AgentThinkModelsV1ResponseModelsItems4)
                 ;
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator ==(AgentThinkModelsV1ResponseModelsItems obj1, AgentThinkModelsV1ResponseModelsItems obj2)
         {
@@ -526,7 +526,7 @@ namespace Deepgram
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator !=(AgentThinkModelsV1ResponseModelsItems obj1, AgentThinkModelsV1ResponseModelsItems obj2)
         {
@@ -534,7 +534,7 @@ namespace Deepgram
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override bool Equals(object? obj)
         {

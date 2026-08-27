@@ -10,15 +10,15 @@ namespace Deepgram.Realtime
     public enum ChannelsAgentV1MessagesAgentV1SettingsAudioOutputContainer
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         None,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Ogg,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Wav,
     }

@@ -10,7 +10,7 @@ namespace Deepgram
     public sealed partial class DeepgramClient : global::Deepgram.IDeepgramClient, global::System.IDisposable
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public const string DefaultBaseUrl = "https://api.deepgram.com/";
 
@@ -40,7 +40,7 @@ namespace Deepgram
         internal global::System.Lazy<global::System.Text.Json.Serialization.JsonSerializerContext> JsonSerializerContextProvider { get; set; } = new(() => global::Deepgram.SourceGenerationContext.Default);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::System.Text.Json.Serialization.JsonSerializerContext JsonSerializerContext
         {
@@ -50,7 +50,7 @@ namespace Deepgram
 
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public AudioClient Audio => new AudioClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
@@ -60,7 +60,7 @@ namespace Deepgram
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public BalancesClient Balances => new BalancesClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
@@ -70,7 +70,7 @@ namespace Deepgram
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public BreakdownClient Breakdown => new BreakdownClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
@@ -80,7 +80,7 @@ namespace Deepgram
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public ConfigurationsClient Configurations => new ConfigurationsClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
@@ -90,7 +90,7 @@ namespace Deepgram
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public DistributionCredentialsClient DistributionCredentials => new DistributionCredentialsClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
@@ -100,7 +100,7 @@ namespace Deepgram
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public FieldsClient Fields => new FieldsClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
@@ -110,7 +110,7 @@ namespace Deepgram
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public InvitesClient Invites => new InvitesClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
@@ -120,7 +120,7 @@ namespace Deepgram
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public KeysClient Keys => new KeysClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
@@ -130,7 +130,7 @@ namespace Deepgram
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public MediaClient Media => new MediaClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
@@ -140,7 +140,7 @@ namespace Deepgram
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public MembersClient Members => new MembersClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
@@ -150,7 +150,7 @@ namespace Deepgram
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public ModelsClient Models => new ModelsClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
@@ -160,7 +160,7 @@ namespace Deepgram
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public ProjectsClient Projects => new ProjectsClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
@@ -170,7 +170,7 @@ namespace Deepgram
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public PurchasesClient Purchases => new PurchasesClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
@@ -180,7 +180,7 @@ namespace Deepgram
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public RequestsClient Requests => new RequestsClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
@@ -190,7 +190,7 @@ namespace Deepgram
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public ScopesClient Scopes => new ScopesClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
@@ -200,7 +200,7 @@ namespace Deepgram
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public TextClient Text => new TextClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
@@ -210,7 +210,7 @@ namespace Deepgram
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public TokensClient Tokens => new TokensClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
@@ -220,7 +220,7 @@ namespace Deepgram
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public VariablesClient Variables => new VariablesClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {

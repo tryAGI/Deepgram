@@ -9,7 +9,7 @@ namespace Deepgram.Realtime
     public enum SpeakV2SpeakV2ConfigureType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Configure,
     }

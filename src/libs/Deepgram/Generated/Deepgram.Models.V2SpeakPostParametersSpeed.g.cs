@@ -4,36 +4,36 @@
 namespace Deepgram
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum V2SpeakPostParametersSpeed
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         x085,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         x09,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         x095,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         x1,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         x105,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         x11,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         x115,
     }

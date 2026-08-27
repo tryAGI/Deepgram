@@ -4,12 +4,12 @@
 namespace Deepgram.Realtime
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum ListenV2ListenV2TurnInfoType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         TurnInfo,
     }

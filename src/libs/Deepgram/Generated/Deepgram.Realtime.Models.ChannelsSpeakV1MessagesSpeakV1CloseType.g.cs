@@ -9,15 +9,15 @@ namespace Deepgram.Realtime
     public enum ChannelsSpeakV1MessagesSpeakV1CloseType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Clear,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Close,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Flush,
     }

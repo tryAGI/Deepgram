@@ -9,7 +9,7 @@ namespace Deepgram.Realtime
     public enum AgentV1AgentV1WelcomeType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Welcome,
     }

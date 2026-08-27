@@ -9,7 +9,7 @@ namespace Deepgram.Realtime
     public enum ChannelsListenV2MessagesListenV2FatalErrorType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Error,
     }

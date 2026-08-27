@@ -9,11 +9,11 @@ namespace Deepgram.Realtime
     public enum ChannelsSpeakV1MessagesSpeakV1ClearedType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Cleared,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Flushed,
     }

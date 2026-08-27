@@ -10,415 +10,415 @@ namespace Deepgram.Realtime
     public enum SpeakV1Model
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Aura2AgatheFr,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Aura2AgustinaEs,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Aura2AlvaroEs,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Aura2AmaJa,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Aura2AmaltheaEn,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Aura2AndromedaEn,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Aura2AntoniaEs,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Aura2ApolloEn,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Aura2AquilaEs,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Aura2ArcasEn,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Aura2AriesEn,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Aura2AsteriaEn,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Aura2AthenaEn,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Aura2AtlasEn,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Aura2AureliaDe,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Aura2AuroraEn,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Aura2BeatrixNl,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Aura2CallistaEn,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Aura2CarinaEs,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Aura2CelesteEs,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Aura2CesareIt,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Aura2CinziaIt,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Aura2CoraEn,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Aura2CordeliaEn,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Aura2CorneliaNl,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Aura2DaphneNl,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Aura2DeliaEn,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Aura2DemetraIt,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Aura2DianaEs,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Aura2DionisioIt,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Aura2DracoEn,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Aura2EbisuJa,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Aura2ElaraDe,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Aura2ElectraEn,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Aura2ElioIt,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Aura2EstrellaEs,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Aura2FabianDe,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Aura2FlavioIt,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Aura2FujinJa,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Aura2GloriaEs,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Aura2HarmoniaEn,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Aura2HectorFr,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Aura2HelenaEn,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Aura2HeraEn,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Aura2HermesEn,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Aura2HestiaNl,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Aura2HyperionEn,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Aura2IrisEn,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Aura2IzanamiJa,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Aura2JanusEn,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Aura2JavierEs,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Aura2JuliusDe,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Aura2JunoEn,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Aura2JupiterEn,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Aura2KaraDe,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Aura2LaraDe,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Aura2LarsNl,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Aura2LedaNl,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Aura2LiviaIt,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Aura2LucianoEs,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Aura2LunaEn,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Aura2MaiaIt,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Aura2MarsEn,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Aura2MeliaIt,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Aura2MinervaEn,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Aura2NeptuneEn,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Aura2NestorEs,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Aura2OdysseusEn,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Aura2OliviaEs,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Aura2OpheliaEn,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Aura2OrionEn,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Aura2OrpheusEn,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Aura2PandoraEn,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Aura2PerseoIt,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Aura2PhoebeEn,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Aura2PlutoEn,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Aura2RheaNl,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Aura2RomanNl,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Aura2SanderNl,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Aura2SaturnEn,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Aura2SelenaEs,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Aura2SeleneEn,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Aura2SilviaEs,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Aura2SirioEs,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Aura2ThaliaEn,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Aura2TheiaEn,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Aura2UzumeJa,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Aura2ValerioEs,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Aura2VestaEn,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Aura2ViktoriaDe,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Aura2ZeusEn,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AuraAngusEn,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AuraArcasEn,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AuraAsteriaEn,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AuraAthenaEn,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AuraHeliosEn,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AuraHeraEn,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AuraLunaEn,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AuraOrionEn,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AuraOrpheusEn,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AuraPerseusEn,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AuraStellaEn,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AuraZeusEn,
     }

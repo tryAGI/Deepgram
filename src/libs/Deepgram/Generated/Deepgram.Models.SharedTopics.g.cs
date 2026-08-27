@@ -9,7 +9,7 @@ namespace Deepgram
     public sealed partial class SharedTopics
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("results")]
         public global::Deepgram.SharedTopicsResults? Results { get; set; }

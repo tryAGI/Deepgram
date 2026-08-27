@@ -4,12 +4,12 @@
 namespace Deepgram.Realtime
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ContextMessagesItems1Type
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         History,
     }

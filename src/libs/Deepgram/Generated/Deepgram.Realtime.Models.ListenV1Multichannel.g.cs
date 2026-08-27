@@ -10,11 +10,11 @@ namespace Deepgram.Realtime
     public enum ListenV1Multichannel
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         False,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         True,
     }

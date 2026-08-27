@@ -5,7 +5,7 @@
 namespace Deepgram
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public readonly partial struct V1ListenPostParametersDetectLanguage : global::System.IEquatable<V1ListenPostParametersDetectLanguage>
     {
@@ -19,7 +19,7 @@ namespace Deepgram
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(V1ListenPostParametersDetectLanguageVariant1))]
@@ -27,7 +27,7 @@ namespace Deepgram
         public bool IsV1ListenPostParametersDetectLanguageVariant1 => V1ListenPostParametersDetectLanguageVariant1 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickV1ListenPostParametersDetectLanguageVariant1(
 #if NET6_0_OR_GREATER
@@ -40,14 +40,14 @@ namespace Deepgram
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool PickV1ListenPostParametersDetectLanguageVariant1() => IsV1ListenPostParametersDetectLanguageVariant1
             ? V1ListenPostParametersDetectLanguageVariant1!.Value
             : throw new global::System.InvalidOperationException($"Expected union variant 'V1ListenPostParametersDetectLanguageVariant1' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::System.Collections.Generic.IList<string>? V1ListenPostParametersDetectLanguageVariant2 { get; init; }
@@ -56,7 +56,7 @@ namespace Deepgram
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(V1ListenPostParametersDetectLanguageVariant2))]
@@ -64,7 +64,7 @@ namespace Deepgram
         public bool IsV1ListenPostParametersDetectLanguageVariant2 => V1ListenPostParametersDetectLanguageVariant2 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickV1ListenPostParametersDetectLanguageVariant2(
 #if NET6_0_OR_GREATER
@@ -77,23 +77,23 @@ namespace Deepgram
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::System.Collections.Generic.IList<string> PickV1ListenPostParametersDetectLanguageVariant2() => IsV1ListenPostParametersDetectLanguageVariant2
             ? V1ListenPostParametersDetectLanguageVariant2!
             : throw new global::System.InvalidOperationException($"Expected union variant 'V1ListenPostParametersDetectLanguageVariant2' but the value was {ToString()}.");
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator V1ListenPostParametersDetectLanguage(bool value) => new V1ListenPostParametersDetectLanguage((bool?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator bool?(V1ListenPostParametersDetectLanguage @this) => @this.V1ListenPostParametersDetectLanguageVariant1;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public V1ListenPostParametersDetectLanguage(bool? value)
         {
@@ -101,12 +101,12 @@ namespace Deepgram
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static V1ListenPostParametersDetectLanguage FromV1ListenPostParametersDetectLanguageVariant1(bool? value) => new V1ListenPostParametersDetectLanguage(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public V1ListenPostParametersDetectLanguage(
             bool? v1ListenPostParametersDetectLanguageVariant1,
@@ -118,23 +118,23 @@ namespace Deepgram
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public object? Object =>
             V1ListenPostParametersDetectLanguageVariant2 as object ??
-            V1ListenPostParametersDetectLanguageVariant1 as object 
+            V1ListenPostParametersDetectLanguageVariant1 as object
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override string? ToString() =>
             V1ListenPostParametersDetectLanguageVariant1?.ToString().ToLowerInvariant() ??
-            V1ListenPostParametersDetectLanguageVariant2?.ToString() 
+            V1ListenPostParametersDetectLanguageVariant2?.ToString()
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Validate()
         {
@@ -142,7 +142,7 @@ namespace Deepgram
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public TResult? Match<TResult>(
             global::System.Func<bool?, TResult>? v1ListenPostParametersDetectLanguageVariant1 = null,
@@ -167,7 +167,7 @@ namespace Deepgram
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Match(
             global::System.Action<bool?>? v1ListenPostParametersDetectLanguageVariant1 = null,
@@ -191,7 +191,7 @@ namespace Deepgram
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Switch(
             global::System.Action<bool?>? v1ListenPostParametersDetectLanguageVariant1 = null,
@@ -214,7 +214,7 @@ namespace Deepgram
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override int GetHashCode()
         {
@@ -235,18 +235,18 @@ namespace Deepgram
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Equals(V1ListenPostParametersDetectLanguage other)
         {
             return
                 global::System.Collections.Generic.EqualityComparer<bool?>.Default.Equals(V1ListenPostParametersDetectLanguageVariant1, other.V1ListenPostParametersDetectLanguageVariant1) &&
-                global::System.Collections.Generic.EqualityComparer<global::System.Collections.Generic.IList<string>?>.Default.Equals(V1ListenPostParametersDetectLanguageVariant2, other.V1ListenPostParametersDetectLanguageVariant2) 
+                global::System.Collections.Generic.EqualityComparer<global::System.Collections.Generic.IList<string>?>.Default.Equals(V1ListenPostParametersDetectLanguageVariant2, other.V1ListenPostParametersDetectLanguageVariant2)
                 ;
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator ==(V1ListenPostParametersDetectLanguage obj1, V1ListenPostParametersDetectLanguage obj2)
         {
@@ -254,7 +254,7 @@ namespace Deepgram
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator !=(V1ListenPostParametersDetectLanguage obj1, V1ListenPostParametersDetectLanguage obj2)
         {
@@ -262,7 +262,7 @@ namespace Deepgram
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override bool Equals(object? obj)
         {

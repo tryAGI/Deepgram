@@ -9,11 +9,11 @@ namespace Deepgram
     public enum AgentThinkModelsV1ResponseModelsItemsOneOf1Id
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Claude35HaikuLatest,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ClaudeSonnet420250514,
     }

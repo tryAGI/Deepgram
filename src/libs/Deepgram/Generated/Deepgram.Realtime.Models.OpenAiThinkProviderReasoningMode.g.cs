@@ -9,23 +9,23 @@ namespace Deepgram.Realtime
     public enum OpenAiThinkProviderReasoningMode
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         High,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Low,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Medium,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Minimal,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         None,
     }

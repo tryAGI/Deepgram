@@ -4,12 +4,12 @@
 namespace Deepgram.Realtime
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class AwsPollySpeakProviderCredentials
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("type")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Deepgram.Realtime.JsonConverters.AwsPollySpeakProviderCredentialsTypeJsonConverter))]
@@ -17,21 +17,21 @@ namespace Deepgram.Realtime
         public required global::Deepgram.Realtime.AwsPollySpeakProviderCredentialsType Type { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("region")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string Region { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("access_key_id")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string AccessKeyId { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("secret_access_key")]
         [global::System.Text.Json.Serialization.JsonRequired]

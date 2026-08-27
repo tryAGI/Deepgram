@@ -6,7 +6,7 @@
 namespace Deepgram
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class ListenV1ResponseMetadata
     {
@@ -18,80 +18,80 @@ namespace Deepgram
         public string? TransactionKey { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("request_id")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required global::System.Guid RequestId { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("sha256")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string Sha256 { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("created")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required global::System.DateTime Created { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("duration")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required double Duration { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("channels")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required int Channels { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("models")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required global::System.Collections.Generic.IList<string> Models { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("model_info")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required global::Deepgram.ListenV1ResponseMetadataModelInfo ModelInfo { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("summary_info")]
         public global::Deepgram.ListenV1ResponseMetadataSummaryInfo? SummaryInfo { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("sentiment_info")]
         public global::Deepgram.ListenV1ResponseMetadataSentimentInfo? SentimentInfo { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("topics_info")]
         public global::Deepgram.ListenV1ResponseMetadataTopicsInfo? TopicsInfo { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("intents_info")]
         public global::Deepgram.ListenV1ResponseMetadataIntentsInfo? IntentsInfo { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("tags")]
         public global::System.Collections.Generic.IList<string>? Tags { get; set; }

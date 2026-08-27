@@ -5,7 +5,7 @@
 namespace Deepgram
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public readonly partial struct ListenV1MediaTranscribeResponse200 : global::System.IEquatable<ListenV1MediaTranscribeResponse200>
     {
@@ -19,7 +19,7 @@ namespace Deepgram
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(ListenV1Response))]
@@ -27,7 +27,7 @@ namespace Deepgram
         public bool IsListenV1Response => ListenV1Response != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickListenV1Response(
 #if NET6_0_OR_GREATER
@@ -40,7 +40,7 @@ namespace Deepgram
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Deepgram.ListenV1Response PickListenV1Response() => IsListenV1Response
             ? ListenV1Response!
@@ -56,7 +56,7 @@ namespace Deepgram
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(ListenV1AcceptedResponse))]
@@ -64,7 +64,7 @@ namespace Deepgram
         public bool IsListenV1AcceptedResponse => ListenV1AcceptedResponse != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickListenV1AcceptedResponse(
 #if NET6_0_OR_GREATER
@@ -77,23 +77,23 @@ namespace Deepgram
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Deepgram.ListenV1AcceptedResponse PickListenV1AcceptedResponse() => IsListenV1AcceptedResponse
             ? ListenV1AcceptedResponse!
             : throw new global::System.InvalidOperationException($"Expected union variant 'ListenV1AcceptedResponse' but the value was {ToString()}.");
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator ListenV1MediaTranscribeResponse200(global::Deepgram.ListenV1Response value) => new ListenV1MediaTranscribeResponse200((global::Deepgram.ListenV1Response?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Deepgram.ListenV1Response?(ListenV1MediaTranscribeResponse200 @this) => @this.ListenV1Response;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public ListenV1MediaTranscribeResponse200(global::Deepgram.ListenV1Response? value)
         {
@@ -101,22 +101,22 @@ namespace Deepgram
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static ListenV1MediaTranscribeResponse200 FromListenV1Response(global::Deepgram.ListenV1Response? value) => new ListenV1MediaTranscribeResponse200(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator ListenV1MediaTranscribeResponse200(global::Deepgram.ListenV1AcceptedResponse value) => new ListenV1MediaTranscribeResponse200((global::Deepgram.ListenV1AcceptedResponse?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Deepgram.ListenV1AcceptedResponse?(ListenV1MediaTranscribeResponse200 @this) => @this.ListenV1AcceptedResponse;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public ListenV1MediaTranscribeResponse200(global::Deepgram.ListenV1AcceptedResponse? value)
         {
@@ -124,12 +124,12 @@ namespace Deepgram
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static ListenV1MediaTranscribeResponse200 FromListenV1AcceptedResponse(global::Deepgram.ListenV1AcceptedResponse? value) => new ListenV1MediaTranscribeResponse200(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public ListenV1MediaTranscribeResponse200(
             global::Deepgram.ListenV1Response? listenV1Response,
@@ -141,23 +141,23 @@ namespace Deepgram
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public object? Object =>
             ListenV1AcceptedResponse as object ??
-            ListenV1Response as object 
+            ListenV1Response as object
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override string? ToString() =>
             ListenV1Response?.ToString() ??
-            ListenV1AcceptedResponse?.ToString() 
+            ListenV1AcceptedResponse?.ToString()
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Validate()
         {
@@ -165,7 +165,7 @@ namespace Deepgram
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public TResult? Match<TResult>(
             global::System.Func<global::Deepgram.ListenV1Response, TResult>? listenV1Response = null,
@@ -190,7 +190,7 @@ namespace Deepgram
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Match(
             global::System.Action<global::Deepgram.ListenV1Response>? listenV1Response = null,
@@ -214,7 +214,7 @@ namespace Deepgram
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Switch(
             global::System.Action<global::Deepgram.ListenV1Response>? listenV1Response = null,
@@ -237,7 +237,7 @@ namespace Deepgram
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override int GetHashCode()
         {
@@ -258,18 +258,18 @@ namespace Deepgram
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Equals(ListenV1MediaTranscribeResponse200 other)
         {
             return
                 global::System.Collections.Generic.EqualityComparer<global::Deepgram.ListenV1Response?>.Default.Equals(ListenV1Response, other.ListenV1Response) &&
-                global::System.Collections.Generic.EqualityComparer<global::Deepgram.ListenV1AcceptedResponse?>.Default.Equals(ListenV1AcceptedResponse, other.ListenV1AcceptedResponse) 
+                global::System.Collections.Generic.EqualityComparer<global::Deepgram.ListenV1AcceptedResponse?>.Default.Equals(ListenV1AcceptedResponse, other.ListenV1AcceptedResponse)
                 ;
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator ==(ListenV1MediaTranscribeResponse200 obj1, ListenV1MediaTranscribeResponse200 obj2)
         {
@@ -277,7 +277,7 @@ namespace Deepgram
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator !=(ListenV1MediaTranscribeResponse200 obj1, ListenV1MediaTranscribeResponse200 obj2)
         {
@@ -285,7 +285,7 @@ namespace Deepgram
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override bool Equals(object? obj)
         {

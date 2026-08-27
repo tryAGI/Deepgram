@@ -9,7 +9,7 @@ namespace Deepgram.Realtime
     public enum AnthropicThinkProviderVersion
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         V1,
     }

@@ -9,7 +9,7 @@ namespace Deepgram.Realtime
     public sealed partial class ChannelsAgentV1MessagesAgentV1UpdateListenListen
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("provider")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Deepgram.Realtime.JsonConverters.ChannelsAgentV1MessagesAgentV1UpdateListenListenProviderJsonConverter))]

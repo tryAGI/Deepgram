@@ -4,18 +4,18 @@
 namespace Deepgram
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class ListProjectKeysV1ResponseApiKeysItems
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("member")]
         public global::Deepgram.ListProjectKeysV1ResponseApiKeysItemsMember? Member { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("api_key")]
         public global::Deepgram.ListProjectKeysV1ResponseApiKeysItemsApiKey? ApiKey { get; set; }

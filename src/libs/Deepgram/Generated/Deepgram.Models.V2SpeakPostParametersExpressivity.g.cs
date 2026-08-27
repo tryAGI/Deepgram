@@ -4,28 +4,28 @@
 namespace Deepgram
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum V2SpeakPostParametersExpressivity
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Minus1,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Minus2,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         x0,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         x1,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         x2,
     }

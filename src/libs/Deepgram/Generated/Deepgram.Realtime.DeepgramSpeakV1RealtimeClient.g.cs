@@ -286,7 +286,7 @@ namespace Deepgram.Realtime
         public event global::System.EventHandler<AutoSDKWebSocketMessageEventArgs<global::Deepgram.Realtime.SpeakV1SpeakV1Warning>>? SpeakV1WarningReceived;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 
         public global::System.Text.Json.Serialization.JsonSerializerContext JsonSerializerContext { get; set; } = global::Deepgram.Realtime.RealtimeSourceGenerationContext.Default;

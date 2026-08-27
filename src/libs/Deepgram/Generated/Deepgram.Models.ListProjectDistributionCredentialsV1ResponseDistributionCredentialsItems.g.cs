@@ -4,19 +4,19 @@
 namespace Deepgram
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class ListProjectDistributionCredentialsV1ResponseDistributionCredentialsItems
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("member")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required global::Deepgram.ListProjectDistributionCredentialsV1ResponseDistributionCredentialsItemsMember Member { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("distribution_credentials")]
         [global::System.Text.Json.Serialization.JsonRequired]

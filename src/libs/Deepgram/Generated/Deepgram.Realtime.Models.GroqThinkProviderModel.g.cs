@@ -9,7 +9,7 @@ namespace Deepgram.Realtime
     public enum GroqThinkProviderModel
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         OpenaiGptOss20b,
     }

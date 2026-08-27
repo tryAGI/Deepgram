@@ -19,7 +19,7 @@ namespace Deepgram.Realtime
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ContextMessagesItems0))]
@@ -27,7 +27,7 @@ namespace Deepgram.Realtime
         public bool IsChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ContextMessagesItems0 => ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ContextMessagesItems0 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ContextMessagesItems0(
 #if NET6_0_OR_GREATER
@@ -40,7 +40,7 @@ namespace Deepgram.Realtime
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Deepgram.Realtime.ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ContextMessagesItems0 PickChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ContextMessagesItems0() => IsChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ContextMessagesItems0
             ? ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ContextMessagesItems0!
@@ -56,7 +56,7 @@ namespace Deepgram.Realtime
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ContextMessagesItems1))]
@@ -64,7 +64,7 @@ namespace Deepgram.Realtime
         public bool IsChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ContextMessagesItems1 => ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ContextMessagesItems1 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ContextMessagesItems1(
 #if NET6_0_OR_GREATER
@@ -77,23 +77,23 @@ namespace Deepgram.Realtime
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Deepgram.Realtime.ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ContextMessagesItems1 PickChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ContextMessagesItems1() => IsChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ContextMessagesItems1
             ? ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ContextMessagesItems1!
             : throw new global::System.InvalidOperationException($"Expected union variant 'ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ContextMessagesItems1' but the value was {ToString()}.");
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ContextMessagesItems(global::Deepgram.Realtime.ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ContextMessagesItems0 value) => new ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ContextMessagesItems((global::Deepgram.Realtime.ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ContextMessagesItems0?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Deepgram.Realtime.ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ContextMessagesItems0?(ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ContextMessagesItems @this) => @this.ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ContextMessagesItems0;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ContextMessagesItems(global::Deepgram.Realtime.ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ContextMessagesItems0? value)
         {
@@ -101,22 +101,22 @@ namespace Deepgram.Realtime
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ContextMessagesItems FromChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ContextMessagesItems0(global::Deepgram.Realtime.ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ContextMessagesItems0? value) => new ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ContextMessagesItems(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ContextMessagesItems(global::Deepgram.Realtime.ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ContextMessagesItems1 value) => new ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ContextMessagesItems((global::Deepgram.Realtime.ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ContextMessagesItems1?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Deepgram.Realtime.ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ContextMessagesItems1?(ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ContextMessagesItems @this) => @this.ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ContextMessagesItems1;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ContextMessagesItems(global::Deepgram.Realtime.ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ContextMessagesItems1? value)
         {
@@ -124,12 +124,12 @@ namespace Deepgram.Realtime
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ContextMessagesItems FromChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ContextMessagesItems1(global::Deepgram.Realtime.ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ContextMessagesItems1? value) => new ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ContextMessagesItems(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ContextMessagesItems(
             global::Deepgram.Realtime.ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ContextMessagesItems0? channelsAgentV1MessagesAgentV1SettingsAgentOneOf0ContextMessagesItems0,
@@ -141,23 +141,23 @@ namespace Deepgram.Realtime
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public object? Object =>
             ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ContextMessagesItems1 as object ??
-            ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ContextMessagesItems0 as object 
+            ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ContextMessagesItems0 as object
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override string? ToString() =>
             ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ContextMessagesItems0?.ToString() ??
-            ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ContextMessagesItems1?.ToString() 
+            ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ContextMessagesItems1?.ToString()
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Validate()
         {
@@ -165,7 +165,7 @@ namespace Deepgram.Realtime
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public TResult? Match<TResult>(
             global::System.Func<global::Deepgram.Realtime.ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ContextMessagesItems0, TResult>? channelsAgentV1MessagesAgentV1SettingsAgentOneOf0ContextMessagesItems0 = null,
@@ -190,7 +190,7 @@ namespace Deepgram.Realtime
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Match(
             global::System.Action<global::Deepgram.Realtime.ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ContextMessagesItems0>? channelsAgentV1MessagesAgentV1SettingsAgentOneOf0ContextMessagesItems0 = null,
@@ -214,7 +214,7 @@ namespace Deepgram.Realtime
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Switch(
             global::System.Action<global::Deepgram.Realtime.ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ContextMessagesItems0>? channelsAgentV1MessagesAgentV1SettingsAgentOneOf0ContextMessagesItems0 = null,
@@ -237,7 +237,7 @@ namespace Deepgram.Realtime
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override int GetHashCode()
         {
@@ -258,18 +258,18 @@ namespace Deepgram.Realtime
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Equals(ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ContextMessagesItems other)
         {
             return
                 global::System.Collections.Generic.EqualityComparer<global::Deepgram.Realtime.ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ContextMessagesItems0?>.Default.Equals(ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ContextMessagesItems0, other.ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ContextMessagesItems0) &&
-                global::System.Collections.Generic.EqualityComparer<global::Deepgram.Realtime.ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ContextMessagesItems1?>.Default.Equals(ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ContextMessagesItems1, other.ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ContextMessagesItems1) 
+                global::System.Collections.Generic.EqualityComparer<global::Deepgram.Realtime.ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ContextMessagesItems1?>.Default.Equals(ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ContextMessagesItems1, other.ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ContextMessagesItems1)
                 ;
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator ==(ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ContextMessagesItems obj1, ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ContextMessagesItems obj2)
         {
@@ -277,7 +277,7 @@ namespace Deepgram.Realtime
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator !=(ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ContextMessagesItems obj1, ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ContextMessagesItems obj2)
         {
@@ -285,7 +285,7 @@ namespace Deepgram.Realtime
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override bool Equals(object? obj)
         {
