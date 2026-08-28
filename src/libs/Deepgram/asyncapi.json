@@ -4082,6 +4082,25 @@
         ],
         "title": "ChannelsListenV1MessagesListenV1ResultsMetadataModelInfo"
       },
+      "ChannelsListenV1MessagesListenV1ResultsMetadataDiarizeInfo": {
+        "type": "object",
+        "properties": {
+          "model_uuid": {
+            "type": "string",
+            "description": "The diarizer model UUID"
+          },
+          "arch": {
+            "type": "string",
+            "description": "The diarizer arch, such as `v1` or `v2`"
+          }
+        },
+        "required": [
+          "model_uuid",
+          "arch"
+        ],
+        "description": "The diarizer that produced the speaker labels. Present only when a diarizer ran.",
+        "title": "ChannelsListenV1MessagesListenV1ResultsMetadataDiarizeInfo"
+      },
       "ChannelsListenV1MessagesListenV1ResultsMetadata": {
         "type": "object",
         "properties": {
@@ -4095,6 +4114,10 @@
           "model_uuid": {
             "type": "string",
             "description": "The model UUID"
+          },
+          "diarize_info": {
+            "$ref": "#/components/schemas/ChannelsListenV1MessagesListenV1ResultsMetadataDiarizeInfo",
+            "description": "The diarizer that produced the speaker labels. Present only when a diarizer ran."
           }
         },
         "required": [

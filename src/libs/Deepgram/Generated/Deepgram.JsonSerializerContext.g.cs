@@ -442,6 +442,7 @@ namespace Deepgram
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Deepgram.V1ListenPostParametersVersion), TypeInfoPropertyName = "V1ListenPostParametersVersion2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Deepgram.ListenV1RequestUrl))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Deepgram.ListenV1ResponseMetadataModelInfo))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Deepgram.ListenV1ResponseMetadataDiarizeInfo))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Deepgram.ListenV1ResponseMetadataSummaryInfo))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Deepgram.ListenV1ResponseMetadataSentimentInfo))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Deepgram.ListenV1ResponseMetadataTopicsInfo))]

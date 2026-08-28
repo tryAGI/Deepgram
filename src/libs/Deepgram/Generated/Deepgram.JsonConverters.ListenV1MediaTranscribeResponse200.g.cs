@@ -38,6 +38,7 @@ namespace Deepgram.JsonConverters
             if (__jsonProps.Contains("metadata")) __score0++;
             if (__jsonProps.Contains("metadata.channels")) __score0++;
             if (__jsonProps.Contains("metadata.created")) __score0++;
+            if (__jsonProps.Contains("metadata.diarize_info")) __score0++;
             if (__jsonProps.Contains("metadata.duration")) __score0++;
             if (__jsonProps.Contains("metadata.intents_info")) __score0++;
             if (__jsonProps.Contains("metadata.model_info")) __score0++;

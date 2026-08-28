@@ -67,6 +67,12 @@ namespace Deepgram
         public required global::Deepgram.ListenV1ResponseMetadataModelInfo ModelInfo { get; set; }
 
         /// <summary>
+        /// The diarizer that produced the speaker labels. Present only when a diarizer ran.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("diarize_info")]
+        public global::Deepgram.ListenV1ResponseMetadataDiarizeInfo? DiarizeInfo { get; set; }
+
+        /// <summary>
         ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("summary_info")]
@@ -112,6 +118,9 @@ namespace Deepgram
         /// <param name="channels"></param>
         /// <param name="models"></param>
         /// <param name="modelInfo"></param>
+        /// <param name="diarizeInfo">
+        /// The diarizer that produced the speaker labels. Present only when a diarizer ran.
+        /// </param>
         /// <param name="summaryInfo"></param>
         /// <param name="sentimentInfo"></param>
         /// <param name="topicsInfo"></param>
@@ -128,6 +137,7 @@ namespace Deepgram
             int channels,
             global::System.Collections.Generic.IList<string> models,
             global::Deepgram.ListenV1ResponseMetadataModelInfo modelInfo,
+            global::Deepgram.ListenV1ResponseMetadataDiarizeInfo? diarizeInfo,
             global::Deepgram.ListenV1ResponseMetadataSummaryInfo? summaryInfo,
             global::Deepgram.ListenV1ResponseMetadataSentimentInfo? sentimentInfo,
             global::Deepgram.ListenV1ResponseMetadataTopicsInfo? topicsInfo,
@@ -141,6 +151,7 @@ namespace Deepgram
             this.Channels = channels;
             this.Models = models ?? throw new global::System.ArgumentNullException(nameof(models));
             this.ModelInfo = modelInfo ?? throw new global::System.ArgumentNullException(nameof(modelInfo));
+            this.DiarizeInfo = diarizeInfo;
             this.SummaryInfo = summaryInfo;
             this.SentimentInfo = sentimentInfo;
             this.TopicsInfo = topicsInfo;
