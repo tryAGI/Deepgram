@@ -43,6 +43,7 @@ namespace Deepgram.Realtime.JsonConverters
             if (__jsonProps.Contains("from_finalize")) __score0++;
             if (__jsonProps.Contains("is_final")) __score0++;
             if (__jsonProps.Contains("metadata")) __score0++;
+            if (__jsonProps.Contains("metadata.diarize_info")) __score0++;
             if (__jsonProps.Contains("metadata.model_info")) __score0++;
             if (__jsonProps.Contains("metadata.model_uuid")) __score0++;
             if (__jsonProps.Contains("metadata.request_id")) __score0++;
