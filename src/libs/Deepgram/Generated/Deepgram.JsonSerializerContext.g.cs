@@ -380,6 +380,7 @@ namespace Deepgram
             typeof(global::Deepgram.JsonConverters.UnixTimestampJsonConverter),
         })]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Deepgram.JsonSerializerContextTypes))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<object>), TypeInfoPropertyName = "SystemCollectionsGeneric_ObjectList")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Deepgram.AgentThinkModelsV1ResponseModelsItemsOneOf0Id), TypeInfoPropertyName = "AgentThinkModelsV1ResponseModelsItemsOneOf0Id2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Deepgram.AgentThinkModelsV1ResponseModelsItems0))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(string))]
