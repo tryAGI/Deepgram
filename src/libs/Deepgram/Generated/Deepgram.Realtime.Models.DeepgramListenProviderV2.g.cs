@@ -36,7 +36,7 @@ namespace Deepgram.Realtime
         public global::System.Collections.Generic.IList<string>? LanguageHints { get; set; }
 
         /// <summary>
-        /// End-of-turn confidence required to finish a turn. Valid range: 0.5 - 0.9. Defaults to 0.7.
+        /// End-of-turn confidence required to finish a turn. Valid range: 0.5 - 1.0. Defaults to 0.7. Set to 1.0 to fully suppress natural end-of-turn detection and end turns with the ForceEndTurn message.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("eot_threshold")]
         public double? EotThreshold { get; set; }
@@ -81,7 +81,7 @@ namespace Deepgram.Realtime
         /// An array of one or more BCP-47 language codes to bias the model toward specific languages. Only supported when model is flux-general-multi. Without hints, the model auto-detects the spoken language. See the Language Prompting guide for details.
         /// </param>
         /// <param name="eotThreshold">
-        /// End-of-turn confidence required to finish a turn. Valid range: 0.5 - 0.9. Defaults to 0.7.
+        /// End-of-turn confidence required to finish a turn. Valid range: 0.5 - 1.0. Defaults to 0.7. Set to 1.0 to fully suppress natural end-of-turn detection and end turns with the ForceEndTurn message.
         /// </param>
         /// <param name="eagerEotThreshold">
         /// End-of-turn confidence required to fire an eager end-of-turn event. When set, enables EagerEndOfTurn and TurnResumed events. Valid range: 0.3 - 0.9.

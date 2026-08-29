@@ -85,6 +85,16 @@ namespace Deepgram.Realtime
         public required string EndOfTurnConfidence { get; set; }
 
         /// <summary>
+        /// The cause of the turn ending. Present on every `EndOfTurn` event and only there.<br/>
+        /// - **model** - the turn ended by Flux's native end-of-turn detection<br/>
+        /// - **manual** - the turn ended because a `ForceEndTurn` message was sent<br/>
+        /// - **timeout** - the turn ended because `eot_timeout_ms` elapsed<br/>
+        /// This is an open enum. New values may be added over time, so clients must tolerate values they do not recognize.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("trigger")]
+        public string? Trigger { get; set; }
+
+        /// <summary>
         /// Detected languages sorted by descending frequency in the<br/>
         /// transcript. Only present when the flux-general-multi model<br/>
         /// detects languages in the audio.
@@ -141,6 +151,13 @@ namespace Deepgram.Realtime
         /// Confidence that no more speech is coming in this turn
         /// </param>
         /// <param name="type"></param>
+        /// <param name="trigger">
+        /// The cause of the turn ending. Present on every `EndOfTurn` event and only there.<br/>
+        /// - **model** - the turn ended by Flux's native end-of-turn detection<br/>
+        /// - **manual** - the turn ended because a `ForceEndTurn` message was sent<br/>
+        /// - **timeout** - the turn ended because `eot_timeout_ms` elapsed<br/>
+        /// This is an open enum. New values may be added over time, so clients must tolerate values they do not recognize.
+        /// </param>
         /// <param name="languages">
         /// Detected languages sorted by descending frequency in the<br/>
         /// transcript. Only present when the flux-general-multi model<br/>
@@ -164,6 +181,7 @@ namespace Deepgram.Realtime
             global::System.Collections.Generic.IList<global::Deepgram.Realtime.ChannelsListenV2MessagesListenV2TurnInfoWordsItems> words,
             string endOfTurnConfidence,
             global::Deepgram.Realtime.ListenV2ListenV2TurnInfoType type,
+            string? trigger,
             global::System.Collections.Generic.IList<string>? languages,
             global::System.Collections.Generic.IList<string>? languagesHinted)
         {
@@ -177,6 +195,7 @@ namespace Deepgram.Realtime
             this.Transcript = transcript ?? throw new global::System.ArgumentNullException(nameof(transcript));
             this.Words = words ?? throw new global::System.ArgumentNullException(nameof(words));
             this.EndOfTurnConfidence = endOfTurnConfidence ?? throw new global::System.ArgumentNullException(nameof(endOfTurnConfidence));
+            this.Trigger = trigger;
             this.Languages = languages;
             this.LanguagesHinted = languagesHinted;
         }

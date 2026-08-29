@@ -48,6 +48,7 @@ namespace Deepgram.Realtime.JsonConverters
             if (__jsonProps.Contains("request_id")) __score1++;
             if (__jsonProps.Contains("sequence_id")) __score1++;
             if (__jsonProps.Contains("transcript")) __score1++;
+            if (__jsonProps.Contains("trigger")) __score1++;
             if (__jsonProps.Contains("turn_index")) __score1++;
             if (__jsonProps.Contains("type")) __score1++;
             if (__jsonProps.Contains("words")) __score1++;
