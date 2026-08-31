@@ -27,10 +27,10 @@ namespace Deepgram
                 {                    new global::Deepgram.EndPointAuthorizationRequirement
                     {
                         Type = "Http",
-                        SchemeId = "HttpBearer",
+                        SchemeId = "HttpToken",
                         Location = "Header",
-                        Name = "Bearer",
-                        FriendlyName = "Bearer",
+                        Name = "Token",
+                        FriendlyName = "Token",
                     },
                 },
             };

@@ -19,34 +19,15 @@ Token auth with Deepgram API key (uses `Token` scheme, not `Bearer`):
 var client = new DeepgramClient(apiKey); // DEEPGRAM_API_KEY env var
 ```
 
-**Important:** Deepgram uses `Authorization: Token <key>`, not `Authorization: Bearer <key>`. The `Authorized` partial hook in `DeepgramClient.Auth.cs` rewrites the scheme:
-
-```csharp
-// In Extensions/DeepgramClient.Auth.cs
-partial void Authorized(HttpClient client)
-{
-    for (int i = 0; i < Authorizations.Count; i++)
-    {
-        var auth = Authorizations[i];
-        if (auth is { Type: "Http", Name: "Bearer" })
-            Authorizations[i] = new EndPointAuthorization
-            { Type = auth.Type, Location = auth.Location, Name = "Token", Value = auth.Value };
-    }
-}
-```
-
-The WebSocket clients (`DeepgramRealtimeClient.Auth.cs`) apply the same Token scheme conversion.
-
-> **Note:** `--security-scheme Http:Header:Bearer` is used for code generation, but the `Authorized` hook remains necessary to rewrite `Bearer` → `Token` at runtime since Deepgram's custom scheme name is not expressible via `--security-scheme`.
+**Important:** Deepgram uses `Authorization: Token <key>`, not `Authorization: Bearer <key>`. The REST client is generated with `--security-scheme Http:Header:Token`, so its constructor and operation security requirements use the same scheme end to end. The AsyncAPI generator does not currently emit WebSocket authentication methods, so `DeepgramRealtimeClient.Auth.cs` applies the Token header to all four WebSocket clients.
 
 ## Key Files
 
 - `src/libs/Deepgram/generate.sh` — Regeneration script (OpenAPI + upstream AsyncAPI)
 - `src/libs/Deepgram/Generated/` — **Never edit** — auto-generated code
-- `src/libs/Deepgram/Extensions/DeepgramClient.Auth.cs` — REST auth fix: Bearer → Token
-- `src/libs/Deepgram/Extensions/DeepgramRealtimeClient.Auth.cs` — WebSocket auth fix: Token scheme (all 4 channels)
+- `src/libs/Deepgram/Extensions/DeepgramRealtimeClient.Auth.cs` — WebSocket Token auth for all 4 channels
 - `src/libs/Deepgram/Extensions/DeepgramClient.SpeechToTextClient.cs` — MEAI `ISpeechToTextClient` implementation
-- `src/tests/IntegrationTests/Tests.cs` — Test helper with bearer auth
+- `src/tests/IntegrationTests/Tests.cs` — Test helper with Token auth
 - `src/tests/IntegrationTests/Examples/` — Example tests (also generate docs)
 
 ## Multi-Spec Architecture (4 Channels)
@@ -126,7 +107,8 @@ Voice agent channel (uses `agent.deepgram.com`):
 The `generate.sh` applies fixes via `yq` (pre-generation), `--security-scheme` + `--base-url` (CLI flags), and `sed` (post-generation):
 
 **CLI flags:**
-- `--security-scheme Http:Header:Bearer` — Overrides REST and AsyncAPI auth schemes
+- `--security-scheme Http:Header:Token` — Overrides REST auth with Deepgram's required scheme
+- `--security-scheme Http:Header:Bearer` — Normalizes the AsyncAPI security definitions; the WebSocket partial applies Deepgram's Token header
 - `--base-url https://api.deepgram.com` — Injects missing server URL
 
 **Pre-generation (`yq`):**

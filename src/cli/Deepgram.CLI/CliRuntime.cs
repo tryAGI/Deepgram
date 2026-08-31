@@ -26,9 +26,9 @@ internal static class CliRuntime
             {
         CreateAuthorization(
             type: "Http",
-            schemeId: "HttpBearer",
+            schemeId: "HttpToken",
             location: "Header",
-            name: "Bearer",
+            name: "Token",
             value: apiKey),
             };
         var baseUri = ResolveBaseUri(parseResult);

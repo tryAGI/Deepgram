@@ -53,7 +53,7 @@ yq -i '
   }
 ' openapi.yaml
 
-# Auth: --security-scheme overrides the spec's apiKey auth with HTTP bearer.
+# Auth: Deepgram requires the custom HTTP Token scheme for API keys.
 # --base-url injects server URL (spec has no servers section).
 autosdk generate openapi.yaml \
   --namespace Deepgram \
@@ -65,7 +65,7 @@ autosdk generate openapi.yaml \
   --generate-retry-handler \
   --generate-pageable-helpers \
   --generate-multipart-upload-helpers \
-  --security-scheme Http:Header:Bearer \
+  --security-scheme Http:Header:Token \
   --base-url https://api.deepgram.com
 
 rm -rf ../../cli/Deepgram.CLI
@@ -84,7 +84,7 @@ autosdk cli-project openapi.yaml \
   --cli-credential-file \
   --cli-keep-api-group \
   --exclude-deprecated-operations \
-  --security-scheme Http:Header:Bearer \
+  --security-scheme Http:Header:Token \
   --base-url https://api.deepgram.com
 
 # Generate WebSocket clients from upstream AsyncAPI spec (4 channels:
