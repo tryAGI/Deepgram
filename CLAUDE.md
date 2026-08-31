@@ -113,9 +113,10 @@ The `generate.sh` applies fixes via `yq` (pre-generation), `--security-scheme` +
 
 **Pre-generation (`yq`):**
 1. **ErrorResponseTextError fix:** Converts `type: string` schema to object with `value` property (avoids C# reserved keyword `string` as property name)
+2. **Float-title normalization:** Converts response properties declared as `type: string`, `title: float` into OpenAPI `number`/`double` fields so timestamps, confidence, usage, and billing values remain numeric
 
 **Post-generation (`sed`):**
-2. **CS1573 pragma suppression:** Injects `#pragma warning disable CS1573` in AsyncAPI-generated WebSocket client files (missing XML param doc comments from inherited parameters)
+3. **CS1573 pragma suppression:** Injects `#pragma warning disable CS1573` in AsyncAPI-generated WebSocket client files (missing XML param doc comments from inherited parameters)
 
 **Spec sources:**
 - OpenAPI: `https://raw.githubusercontent.com/deepgram/deepgram-api-specs/main/openapi.yml` (3.1.0)

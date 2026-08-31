@@ -18,19 +18,19 @@ namespace Deepgram
         ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("start")]
-        public string? Start { get; set; }
+        public double? Start { get; set; }
 
         /// <summary>
         ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("end")]
-        public string? End { get; set; }
+        public double? End { get; set; }
 
         /// <summary>
         ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("confidence")]
-        public string? Confidence { get; set; }
+        public double? Confidence { get; set; }
 
         /// <summary>
         /// The speaker of the word, present when diarization is enabled
@@ -42,7 +42,7 @@ namespace Deepgram
         /// Confidence in the speaker assignment. Returned only for pre-recorded diarization; not available for streaming
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("speaker_confidence")]
-        public string? SpeakerConfidence { get; set; }
+        public double? SpeakerConfidence { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -68,11 +68,11 @@ namespace Deepgram
 #endif
         public ListenV1ResponseResultsChannelsItemsAlternativesItemsWordsItems(
             string? word,
-            string? start,
-            string? end,
-            string? confidence,
+            double? start,
+            double? end,
+            double? confidence,
             int? speaker,
-            string? speakerConfidence)
+            double? speakerConfidence)
         {
             this.Word = word;
             this.Start = start;

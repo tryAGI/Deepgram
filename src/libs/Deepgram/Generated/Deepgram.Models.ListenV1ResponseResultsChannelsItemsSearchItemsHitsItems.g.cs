@@ -12,19 +12,19 @@ namespace Deepgram
         ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("confidence")]
-        public string? Confidence { get; set; }
+        public double? Confidence { get; set; }
 
         /// <summary>
         ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("start")]
-        public string? Start { get; set; }
+        public double? Start { get; set; }
 
         /// <summary>
         ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("end")]
-        public string? End { get; set; }
+        public double? End { get; set; }
 
         /// <summary>
         ///
@@ -49,9 +49,9 @@ namespace Deepgram
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public ListenV1ResponseResultsChannelsItemsSearchItemsHitsItems(
-            string? confidence,
-            string? start,
-            string? end,
+            double? confidence,
+            double? start,
+            double? end,
             string? snippet)
         {
             this.Confidence = confidence;

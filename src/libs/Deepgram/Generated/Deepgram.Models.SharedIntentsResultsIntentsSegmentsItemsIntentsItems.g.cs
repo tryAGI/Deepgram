@@ -18,7 +18,7 @@ namespace Deepgram
         ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("confidence_score")]
-        public string? ConfidenceScore { get; set; }
+        public double? ConfidenceScore { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -36,7 +36,7 @@ namespace Deepgram
 #endif
         public SharedIntentsResultsIntentsSegmentsItemsIntentsItems(
             string? intent,
-            string? confidenceScore)
+            double? confidenceScore)
         {
             this.Intent = intent;
             this.ConfidenceScore = confidenceScore;

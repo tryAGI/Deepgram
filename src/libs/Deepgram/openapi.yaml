@@ -3782,14 +3782,14 @@ components:
       type: object
       properties:
         confidence:
-          type: string
-          title: float
+          type: number
+          format: double
         start:
-          type: string
-          title: float
+          type: number
+          format: double
         end:
-          type: string
-          title: float
+          type: number
+          format: double
         snippet:
           type: string
       title: ListenV1ResponseResultsChannelsItemsSearchItemsHitsItems
@@ -3809,22 +3809,22 @@ components:
         word:
           type: string
         start:
-          type: string
-          title: float
+          type: number
+          format: double
         end:
-          type: string
-          title: float
+          type: number
+          format: double
         confidence:
-          type: string
-          title: float
+          type: number
+          format: double
         speaker:
           type: integer
           description: The speaker of the word, present when diarization is enabled
         speaker_confidence:
-          type: string
-          title: float
+          type: number
           description: >-
             Confidence in the speaker assignment. Returned only for pre-recorded diarization; not available for streaming
+          format: double
       title: ListenV1ResponseResultsChannelsItemsAlternativesItemsWordsItems
     ListenV1ResponseResultsChannelsItemsAlternativesItemsParagraphsParagraphsItemsSentencesItems:
       type: object
@@ -3832,11 +3832,11 @@ components:
         text:
           type: string
         start:
-          type: string
-          title: float
+          type: number
+          format: double
         end:
-          type: string
-          title: float
+          type: number
+          format: double
       title: ListenV1ResponseResultsChannelsItemsAlternativesItemsParagraphsParagraphsItemsSentencesItems
     ListenV1ResponseResultsChannelsItemsAlternativesItemsParagraphsParagraphsItems:
       type: object
@@ -3851,11 +3851,11 @@ components:
         num_words:
           type: integer
         start:
-          type: string
-          title: float
+          type: number
+          format: double
         end:
-          type: string
-          title: float
+          type: number
+          format: double
       title: ListenV1ResponseResultsChannelsItemsAlternativesItemsParagraphsParagraphsItems
     ListenV1ResponseResultsChannelsItemsAlternativesItemsParagraphs:
       type: object
@@ -3877,14 +3877,14 @@ components:
         raw_value:
           type: string
         confidence:
-          type: string
-          title: float
+          type: number
+          format: double
         start_word:
-          type: string
-          title: float
+          type: number
+          format: double
         end_word:
-          type: string
-          title: float
+          type: number
+          format: double
       title: ListenV1ResponseResultsChannelsItemsAlternativesItemsEntitiesItems
     ListenV1ResponseResultsChannelsItemsAlternativesItemsSummariesItems:
       type: object
@@ -3892,11 +3892,11 @@ components:
         summary:
           type: string
         start_word:
-          type: string
-          title: float
+          type: number
+          format: double
         end_word:
-          type: string
-          title: float
+          type: number
+          format: double
       title: ListenV1ResponseResultsChannelsItemsAlternativesItemsSummariesItems
     ListenV1ResponseResultsChannelsItemsAlternativesItemsTopicsItems:
       type: object
@@ -3904,11 +3904,11 @@ components:
         text:
           type: string
         start_word:
-          type: string
-          title: float
+          type: number
+          format: double
         end_word:
-          type: string
-          title: float
+          type: number
+          format: double
         topics:
           type: array
           items:
@@ -3920,8 +3920,8 @@ components:
         transcript:
           type: string
         confidence:
-          type: string
-          title: float
+          type: number
+          format: double
         words:
           type: array
           items:
@@ -3966,19 +3966,19 @@ components:
         word:
           type: string
         start:
-          type: string
-          title: float
+          type: number
+          format: double
         end:
-          type: string
-          title: float
+          type: number
+          format: double
         confidence:
-          type: string
-          title: float
+          type: number
+          format: double
         speaker:
           type: integer
         speaker_confidence:
-          type: string
-          title: float
+          type: number
+          format: double
         punctuated_word:
           type: string
       title: ListenV1ResponseResultsUtterancesItemsWordsItems
@@ -3986,14 +3986,14 @@ components:
       type: object
       properties:
         start:
-          type: string
-          title: float
+          type: number
+          format: double
         end:
-          type: string
-          title: float
+          type: number
+          format: double
         confidence:
-          type: string
-          title: float
+          type: number
+          format: double
         channel:
           type: integer
         transcript:
@@ -4027,8 +4027,8 @@ components:
         topic:
           type: string
         confidence_score:
-          type: string
-          title: float
+          type: number
+          format: double
       title: SharedTopicsResultsTopicsSegmentsItemsTopicsItems
     SharedTopicsResultsTopicsSegmentsItems:
       type: object
@@ -4073,8 +4073,8 @@ components:
         intent:
           type: string
         confidence_score:
-          type: string
-          title: float
+          type: number
+          format: double
       title: SharedIntentsResultsIntentsSegmentsItemsIntentsItems
     SharedIntentsResultsIntentsSegmentsItems:
       type: object
@@ -5404,17 +5404,17 @@ components:
       type: object
       properties:
         hours:
-          type: string
-          title: float
+          type: number
           description: Audio hours processed
+          format: double
         total_hours:
-          type: string
-          title: float
+          type: number
           description: Total hours including all processing
+          format: double
         agent_hours:
-          type: string
-          title: float
+          type: number
           description: Agent hours used
+          format: double
         tokens_in:
           type: number
           format: double
@@ -5578,9 +5578,9 @@ components:
       type: object
       properties:
         dollars:
-          type: string
-          title: float
+          type: number
           description: USD cost of the billing for this grouping
+          format: double
         grouping:
           $ref: '#/components/schemas/BillingBreakdownV1ResponseResultsItemsGrouping'
       required:
@@ -5656,8 +5656,8 @@ components:
           type: string
           format: date-time
         amount:
-          type: string
-          title: float
+          type: number
+          format: double
         units:
           type: string
         order_type:

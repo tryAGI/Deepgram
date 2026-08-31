@@ -21,6 +21,20 @@ public sealed class AuthenticationTests
         handler.Authorization.Should().Be(new AuthenticationHeaderValue("Token", "test-api-key"));
     }
 
+    [TestMethod]
+    public void FloatTitledSpecFields_AreGeneratedAsNumericProperties()
+    {
+        typeof(UsageBreakdownV1ResponseResultsItems)
+            .GetProperty(nameof(UsageBreakdownV1ResponseResultsItems.Hours))!
+            .PropertyType.Should().Be(typeof(double));
+        typeof(BillingBreakdownV1ResponseResultsItems)
+            .GetProperty(nameof(BillingBreakdownV1ResponseResultsItems.Dollars))!
+            .PropertyType.Should().Be(typeof(double));
+        typeof(ListenV1ResponseResultsChannelsItemsAlternativesItemsWordsItems)
+            .GetProperty(nameof(ListenV1ResponseResultsChannelsItemsAlternativesItemsWordsItems.Start))!
+            .PropertyType.Should().Be(typeof(double?));
+    }
+
     private sealed class RecordingHandler : HttpMessageHandler
     {
         public Uri? RequestUri { get; private set; }

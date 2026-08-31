@@ -13,7 +13,7 @@ namespace Deepgram
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("dollars")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string Dollars { get; set; }
+        public required double Dollars { get; set; }
 
         /// <summary>
         ///
@@ -39,10 +39,10 @@ namespace Deepgram
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public BillingBreakdownV1ResponseResultsItems(
-            string dollars,
+            double dollars,
             global::Deepgram.BillingBreakdownV1ResponseResultsItemsGrouping grouping)
         {
-            this.Dollars = dollars ?? throw new global::System.ArgumentNullException(nameof(dollars));
+            this.Dollars = dollars;
             this.Grouping = grouping ?? throw new global::System.ArgumentNullException(nameof(grouping));
         }
 

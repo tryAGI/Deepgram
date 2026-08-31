@@ -53,6 +53,17 @@ yq -i '
   }
 ' openapi.yaml
 
+# Fix 2: Upstream describes numeric response fields as `type: string` with
+#         `title: float`. Preserve the declared float semantics so timestamps,
+#         confidence, usage, and billing values generate as doubles.
+yq -i '
+  (.components.schemas[] |
+    select(has("properties")) |
+    .properties[] |
+    select(.type == "string" and .title == "float")) |=
+      (.type = "number" | .format = "double" | del(.title))
+' openapi.yaml
+
 # Auth: Deepgram requires the custom HTTP Token scheme for API keys.
 # --base-url injects server URL (spec has no servers section).
 autosdk generate openapi.yaml \
@@ -102,7 +113,7 @@ fi
 # Convert YAML to JSON for reliable parsing
 yq -o json asyncapi.yaml > asyncapi.json
 
-# Fix 2: Upstream currently publishes an AsyncAPI 2.6 document with
+# Fix 3: Upstream currently publishes an AsyncAPI 2.6 document with
 #         channel-level publish/subscribe operations. AutoSDK's WebSocket
 #         generator consumes AsyncAPI 3-style top-level operations, so normalize
 #         the channel blocks before generation.
@@ -167,7 +178,7 @@ jq '
     )
 ' asyncapi.json > asyncapi.tmp.json && mv asyncapi.tmp.json asyncapi.json
 
-# Fix 3: AsyncAPI spec has two security schemes (ApiKeyAuth + JwtAuth) that both
+# Fix 4: AsyncAPI spec has two security schemes (ApiKeyAuth + JwtAuth) that both
 #         map to HTTP bearer after --security-scheme override, producing duplicate
 #         AuthorizeUsingBearer methods. Remove JwtAuth to keep only one.
 jq 'del(.components.securitySchemes.JwtAuth)' asyncapi.json > asyncapi.tmp.json && mv asyncapi.tmp.json asyncapi.json
