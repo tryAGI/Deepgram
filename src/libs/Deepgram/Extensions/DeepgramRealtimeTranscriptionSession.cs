@@ -469,13 +469,13 @@ internal sealed class DeepgramListenV1TranscriptionSession(
             }
             if (frame.TryPickListenV1ListenV1Results(out var results) && results is not null)
             {
-                return JsonSerializer.Serialize(results);
+                return results.ToJson(RealtimeSourceGenerationContext.Default);
             }
             if (frame.TryPickListenV1ListenV1UtteranceEnd(out var utteranceEnd) && utteranceEnd is not null)
             {
-                return JsonSerializer.Serialize(utteranceEnd);
+                return utteranceEnd.ToJson(RealtimeSourceGenerationContext.Default);
             }
-            return JsonSerializer.Serialize(frame);
+            return frame.ToJson(RealtimeSourceGenerationContext.Default);
         }
         catch (JsonException)
         {
@@ -572,17 +572,17 @@ internal sealed class DeepgramListenV2TranscriptionSession(
         {
             if (serverEvent.TryPickListenV2ListenV2TurnInfo(out var turnInfo) && turnInfo is not null)
             {
-                return JsonSerializer.Serialize(turnInfo);
+                return turnInfo.ToJson(RealtimeSourceGenerationContext.Default);
             }
             if (serverEvent.TryPickListenV2ListenV2FatalError(out var fatalError) && fatalError is not null)
             {
-                return JsonSerializer.Serialize(fatalError);
+                return fatalError.ToJson(RealtimeSourceGenerationContext.Default);
             }
             if (serverEvent.TryPickListenV2ListenV2ConfigureFailure(out var failure) && failure is not null)
             {
-                return JsonSerializer.Serialize(failure);
+                return failure.ToJson(RealtimeSourceGenerationContext.Default);
             }
-            return JsonSerializer.Serialize(serverEvent);
+            return serverEvent.ToJson(RealtimeSourceGenerationContext.Default);
         }
         catch (JsonException)
         {
