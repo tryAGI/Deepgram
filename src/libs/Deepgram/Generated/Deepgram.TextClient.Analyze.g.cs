@@ -254,12 +254,21 @@ namespace Deepgram
                                 .AddOptionalParameter("callback_method", callbackMethod?.ToValueString())
                                 .AddOptionalParameter("sentiment", sentiment?.ToString().ToLowerInvariant())
                                 .AddOptionalParameter("summarize", summarize?.ToString())
-                                .AddOptionalParameter("tag", tag?.ToString())
+                                .AddOptionalParameter("tag", tag?.Match(
+                static x => (global::System.Collections.Generic.IEnumerable<string?>)new string?[] { x },
+                static x => (global::System.Collections.Generic.IEnumerable<string?>)global::System.Linq.Enumerable.Select(x, static item => item),
+                validate: false), delimiter: ",", explode: true)
                                 .AddOptionalParameter("topics", topics?.ToString().ToLowerInvariant())
-                                .AddOptionalParameter("custom_topic", customTopic?.ToString())
+                                .AddOptionalParameter("custom_topic", customTopic?.Match(
+                static x => (global::System.Collections.Generic.IEnumerable<string?>)new string?[] { x },
+                static x => (global::System.Collections.Generic.IEnumerable<string?>)global::System.Linq.Enumerable.Select(x, static item => item),
+                validate: false), delimiter: ",", explode: true)
                                 .AddOptionalParameter("custom_topic_mode", customTopicMode?.ToValueString())
                                 .AddOptionalParameter("intents", intents?.ToString().ToLowerInvariant())
-                                .AddOptionalParameter("custom_intent", customIntent?.ToString())
+                                .AddOptionalParameter("custom_intent", customIntent?.Match(
+                static x => (global::System.Collections.Generic.IEnumerable<string?>)new string?[] { x },
+                static x => (global::System.Collections.Generic.IEnumerable<string?>)global::System.Linq.Enumerable.Select(x, static item => item),
+                validate: false), delimiter: ",", explode: true)
                                 .AddOptionalParameter("custom_intent_mode", customIntentMode?.ToValueString())
                                 .AddOptionalParameter("language", language)
                                 ;

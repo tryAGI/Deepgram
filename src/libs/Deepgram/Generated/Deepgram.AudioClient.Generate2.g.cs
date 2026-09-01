@@ -259,7 +259,10 @@ namespace Deepgram
                                 .AddOptionalParameter("callback", callback)
                                 .AddOptionalParameter("callback_method", callbackMethod?.ToValueString())
                                 .AddOptionalParameter("mip_opt_out", mipOptOut?.ToString().ToLowerInvariant())
-                                .AddOptionalParameter("tag", tag?.ToString())
+                                .AddOptionalParameter("tag", tag?.Match(
+                static x => (global::System.Collections.Generic.IEnumerable<string?>)new string?[] { x },
+                static x => (global::System.Collections.Generic.IEnumerable<string?>)global::System.Linq.Enumerable.Select(x, static item => item),
+                validate: false), delimiter: ",", explode: true)
                                 .AddOptionalParameter("bit_rate", bitRate?.ToString())
                                 .AddOptionalParameter("container", container?.ToString())
                                 .AddOptionalParameter("encoding", encoding?.ToString())

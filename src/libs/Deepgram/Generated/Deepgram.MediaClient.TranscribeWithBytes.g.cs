@@ -522,25 +522,43 @@ namespace Deepgram
                             __pathBuilder
                                 .AddOptionalParameter("callback", callback)
                                 .AddOptionalParameter("callback_method", callbackMethod?.ToValueString())
-                                .AddOptionalParameter("extra", extra?.ToString())
+                                .AddOptionalParameter("extra", extra?.Match(
+                static x => (global::System.Collections.Generic.IEnumerable<string?>)new string?[] { x },
+                static x => (global::System.Collections.Generic.IEnumerable<string?>)global::System.Linq.Enumerable.Select(x, static item => item),
+                validate: false), delimiter: ",", explode: true)
                                 .AddOptionalParameter("sentiment", sentiment?.ToString().ToLowerInvariant())
                                 .AddOptionalParameter("summarize", summarize?.ToString())
-                                .AddOptionalParameter("tag", tag?.ToString())
+                                .AddOptionalParameter("tag", tag?.Match(
+                static x => (global::System.Collections.Generic.IEnumerable<string?>)new string?[] { x },
+                static x => (global::System.Collections.Generic.IEnumerable<string?>)global::System.Linq.Enumerable.Select(x, static item => item),
+                validate: false), delimiter: ",", explode: true)
                                 .AddOptionalParameter("topics", topics?.ToString().ToLowerInvariant())
-                                .AddOptionalParameter("custom_topic", customTopic?.ToString())
+                                .AddOptionalParameter("custom_topic", customTopic?.Match(
+                static x => (global::System.Collections.Generic.IEnumerable<string?>)new string?[] { x },
+                static x => (global::System.Collections.Generic.IEnumerable<string?>)global::System.Linq.Enumerable.Select(x, static item => item),
+                validate: false), delimiter: ",", explode: true)
                                 .AddOptionalParameter("custom_topic_mode", customTopicMode?.ToValueString())
                                 .AddOptionalParameter("intents", intents?.ToString().ToLowerInvariant())
-                                .AddOptionalParameter("custom_intent", customIntent?.ToString())
+                                .AddOptionalParameter("custom_intent", customIntent?.Match(
+                static x => (global::System.Collections.Generic.IEnumerable<string?>)new string?[] { x },
+                static x => (global::System.Collections.Generic.IEnumerable<string?>)global::System.Linq.Enumerable.Select(x, static item => item),
+                validate: false), delimiter: ",", explode: true)
                                 .AddOptionalParameter("custom_intent_mode", customIntentMode?.ToValueString())
                                 .AddOptionalParameter("detect_entities", detectEntities?.ToString().ToLowerInvariant())
-                                .AddOptionalParameter("detect_language", detectLanguage?.ToString())
+                                .AddOptionalParameter("detect_language", detectLanguage?.Match(
+                static x => (global::System.Collections.Generic.IEnumerable<string?>)new string?[] { x?.ToString().ToLowerInvariant() },
+                static x => (global::System.Collections.Generic.IEnumerable<string?>)global::System.Linq.Enumerable.Select(x, static item => item),
+                validate: false), delimiter: ",", explode: true)
                                 .AddOptionalParameter("diarize", diarize?.ToString().ToLowerInvariant())
                                 .AddOptionalParameter("diarize_model", diarizeModel?.ToValueString())
                                 .AddOptionalParameter("dictation", dictation?.ToString().ToLowerInvariant())
                                 .AddOptionalParameter("encoding", encoding?.ToValueString())
                                 .AddOptionalParameter("filler_words", fillerWords?.ToString().ToLowerInvariant())
                                 .AddOptionalParameter("keyterm", keyterm, delimiter: ",", explode: true)
-                                .AddOptionalParameter("keywords", keywords?.ToString())
+                                .AddOptionalParameter("keywords", keywords?.Match(
+                static x => (global::System.Collections.Generic.IEnumerable<string?>)new string?[] { x },
+                static x => (global::System.Collections.Generic.IEnumerable<string?>)global::System.Linq.Enumerable.Select(x, static item => item),
+                validate: false), delimiter: ",", explode: true)
                                 .AddOptionalParameter("language", language)
                                 .AddOptionalParameter("measurements", measurements?.ToString().ToLowerInvariant())
                                 .AddOptionalParameter("model", model?.ToString())
@@ -549,9 +567,18 @@ namespace Deepgram
                                 .AddOptionalParameter("paragraphs", paragraphs?.ToString().ToLowerInvariant())
                                 .AddOptionalParameter("profanity_filter", profanityFilter?.ToString().ToLowerInvariant())
                                 .AddOptionalParameter("punctuate", punctuate?.ToString().ToLowerInvariant())
-                                .AddOptionalParameter("redact", redact?.ToString())
-                                .AddOptionalParameter("replace", replace?.ToString())
-                                .AddOptionalParameter("search", search?.ToString())
+                                .AddOptionalParameter("redact", redact?.Match(
+                static x => (global::System.Collections.Generic.IEnumerable<string?>)new string?[] { x },
+                static x => (global::System.Collections.Generic.IEnumerable<string?>)global::System.Linq.Enumerable.Select(x, static item => item.ToValueString()),
+                validate: false), delimiter: ",", explode: true)
+                                .AddOptionalParameter("replace", replace?.Match(
+                static x => (global::System.Collections.Generic.IEnumerable<string?>)new string?[] { x },
+                static x => (global::System.Collections.Generic.IEnumerable<string?>)global::System.Linq.Enumerable.Select(x, static item => item),
+                validate: false), delimiter: ",", explode: true)
+                                .AddOptionalParameter("search", search?.Match(
+                static x => (global::System.Collections.Generic.IEnumerable<string?>)new string?[] { x },
+                static x => (global::System.Collections.Generic.IEnumerable<string?>)global::System.Linq.Enumerable.Select(x, static item => item),
+                validate: false), delimiter: ",", explode: true)
                                 .AddOptionalParameter("smart_format", smartFormat?.ToString().ToLowerInvariant())
                                 .AddOptionalParameter("utterances", utterances?.ToString().ToLowerInvariant())
                                 .AddOptionalParameter("utt_split", uttSplit?.ToString())

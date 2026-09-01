@@ -107,10 +107,6 @@ Voice agent channel (uses `agent.deepgram.com`):
 - **`GetStreamingTextAsync`:** True WebSocket streaming via `DeepgramListenV1RealtimeClient`. Sends audio as binary frames, yields `SpeechToTextResponseUpdate` with interim (`TextUpdating`) and final (`TextUpdated`) results
 - **Features:** Pre-recorded transcription, real-time streaming STT, timestamps, language/model selection, interim results
 
-## Known Issues
-
-- **Bool query params:** Generated code serializes `bool` as `True`/`False` (C# default) in query strings, but Deepgram expects `true`/`false`. Avoid passing bool params like `punctuate`/`smartFormat` until AutoSDK fixes this.
-
 ## Spec Notes
 
 The `generate.sh` applies fixes via `yq` (pre-generation), `--security-scheme` + `--base-url` (CLI flags), and `sed` (post-generation):
@@ -123,9 +119,13 @@ The `generate.sh` applies fixes via `yq` (pre-generation), `--security-scheme` +
 **Pre-generation (`yq`):**
 1. **ErrorResponseTextError fix:** Converts `type: string` schema to object with `value` property (avoids C# reserved keyword `string` as property name)
 2. **Float-title normalization:** Converts response properties declared as `type: string`, `title: float` into OpenAPI `number`/`double` fields so timestamps, confidence, usage, and billing values remain numeric
+3. **Uploaded media request:** Adds the binary `application/octet-stream` request contract for `/v1/listen`, allowing generated stream/byte overloads
+4. **Synthesized audio response:** Corrects `/v1/speak` to return binary `application/octet-stream`, allowing generated streaming TTS responses
+
+AutoSDK serializes query booleans in lower case and exploded union-array parameters as repeated keys. Deepgram-specific request rewriting should not be added in extensions when the OpenAPI contract can express the behavior.
 
 **Post-generation (`sed`):**
-3. **CS1573 pragma suppression:** Injects `#pragma warning disable CS1573` in AsyncAPI-generated WebSocket client files (missing XML param doc comments from inherited parameters)
+5. **CS1573 pragma suppression:** Injects `#pragma warning disable CS1573` in AsyncAPI-generated WebSocket client files (missing XML param doc comments from inherited parameters)
 
 **Spec sources:**
 - OpenAPI: `https://raw.githubusercontent.com/deepgram/deepgram-api-specs/main/openapi.yml` (3.1.0)

@@ -833,9 +833,10 @@ paths:
         '200':
           description: Successful text-to-speech transformation
           content:
-            application/json:
+            application/octet-stream:
               schema:
-                $ref: '#/components/schemas/speak_v1_audio_generate_Response_200'
+                type: string
+                format: binary
         '400':
           description: Invalid Request
           content:

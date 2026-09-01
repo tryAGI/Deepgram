@@ -576,8 +576,14 @@ namespace Deepgram.Realtime
                 .AddOptionalParameter("encoding", encoding?.ToValueString())
                 .AddOptionalParameter("eot_threshold", eotThreshold?.ToString())
                 .AddOptionalParameter("eot_timeout_ms", eotTimeoutMs?.ToString())
-                .AddOptionalParameter("keyterm", keyterm?.ToString())
-                .AddOptionalParameter("language_hint", languageHint?.ToString())
+                .AddOptionalParameter("keyterm", keyterm?.Match(
+static x => (global::System.Collections.Generic.IEnumerable<string?>)new string?[] { x },
+static x => (global::System.Collections.Generic.IEnumerable<string?>)global::System.Linq.Enumerable.Select(x, static item => item),
+validate: false), delimiter: ",", explode: true)
+                .AddOptionalParameter("language_hint", languageHint?.Match(
+static x => (global::System.Collections.Generic.IEnumerable<string?>)new string?[] { x },
+static x => (global::System.Collections.Generic.IEnumerable<string?>)global::System.Linq.Enumerable.Select(x, static item => item),
+validate: false), delimiter: ",", explode: true)
                 .AddOptionalParameter("mip_opt_out", mipOptOut?.ToString())
                 .AddOptionalParameter("model", model?.ToValueString())
                 .AddOptionalParameter("numerals", numerals?.ToValueString())
