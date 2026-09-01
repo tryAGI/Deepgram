@@ -26,6 +26,7 @@ var client = new DeepgramClient(apiKey); // DEEPGRAM_API_KEY env var
 - `src/libs/Deepgram/generate.sh` — Regeneration script (OpenAPI + upstream AsyncAPI)
 - `src/libs/Deepgram/Generated/` — **Never edit** — auto-generated code
 - `src/libs/Deepgram/Extensions/DeepgramRealtimeClient.Auth.cs` — WebSocket Token auth for all 4 channels
+- `src/libs/Deepgram/Extensions/DeepgramRealtimeTranscriptionSession.cs` — protocol-neutral Listen V1/V2 sessions, URI options, transcript assembly, and raw-frame diagnostics
 - `src/libs/Deepgram/Extensions/DeepgramClient.SpeechToTextClient.cs` — MEAI `ISpeechToTextClient` implementation
 - `src/tests/IntegrationTests/Tests.cs` — Test helper with Token auth
 - `src/tests/IntegrationTests/Examples/` — Example tests (also generate docs)
@@ -79,6 +80,14 @@ Flux conversational STT with contextual turn detection:
   - `IsListenV2TurnInfoEvent` → transcript, words, event, turn_index, end_of_turn_confidence
   - `IsListenV2ConfigureSuccessEvent` / `IsListenV2ConfigureFailureEvent`
   - `IsListenV2FatalErrorEvent`
+
+### Protocol-neutral transcription session
+
+`DeepgramRealtimeTranscription.ConnectAsync()` selects Listen V2 for Flux models and Listen V1
+for other models. It owns provider query construction, lower-case wire booleans, repeated language
+hints/keyterms, control-message shutdown, V1 finalized-chunk assembly, stream-end flushing, and
+compact raw-frame diagnostics. Consumers receive the same `DeepgramRealtimeTranscriptUpdate`
+shape across both protocols instead of duplicating Deepgram-specific mapping code.
 
 ### AgentV1 Client (`DeepgramAgentV1RealtimeClient`)
 
