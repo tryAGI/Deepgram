@@ -99,6 +99,54 @@ public sealed class RealtimeTranscriptionSessionTests
         assembler.PendingChunkCount.Should().Be(0);
     }
 
+    [TestMethod]
+    public void MapListenV2ServerEvent_NormalizesPartialFinalAndFatalEvents()
+    {
+        var requestId = Guid.NewGuid();
+        var partial = DeepgramRealtimeTranscription.MapListenV2ServerEvent(
+            new ListenV2ServerEvent(new ListenV2ListenV2TurnInfo
+            {
+                RequestId = requestId,
+                SequenceId = 1,
+                Event = ChannelsListenV2MessagesListenV2TurnInfoEvent.Update,
+                TurnIndex = 0,
+                AudioWindowStart = "0",
+                AudioWindowEnd = "0.6",
+                Transcript = "hello",
+                Words = [],
+                EndOfTurnConfidence = "0.2",
+            }));
+        var final = DeepgramRealtimeTranscription.MapListenV2ServerEvent(
+            new ListenV2ServerEvent(new ListenV2ListenV2TurnInfo
+            {
+                RequestId = requestId,
+                SequenceId = 2,
+                Event = ChannelsListenV2MessagesListenV2TurnInfoEvent.EndOfTurn,
+                TurnIndex = 0,
+                AudioWindowStart = "0",
+                AudioWindowEnd = "1.2",
+                Transcript = "hello world",
+                Words = [],
+                EndOfTurnConfidence = "0.95",
+            }));
+        var fatal = DeepgramRealtimeTranscription.MapListenV2ServerEvent(
+            new ListenV2ServerEvent(new ListenV2ListenV2FatalError
+            {
+                SequenceId = 3,
+                Code = "INVALID_REQUEST",
+                Description = "bad model",
+            }));
+
+        partial.Should().NotBeNull();
+        partial!.Text.Should().Be("hello");
+        partial.IsFinal.Should().BeFalse();
+        partial.ProviderSegmentId.Should().Be($"turn:{requestId}:0:1");
+        final.Should().NotBeNull();
+        final!.IsFinal.Should().BeTrue();
+        fatal.Should().NotBeNull();
+        fatal!.Error.Should().Be("INVALID_REQUEST: bad model");
+    }
+
     private static ListenV1ServerEvent CreateResult(string transcript, bool isFinal, bool speechFinal) =>
         new ListenV1ListenV1Results
         {

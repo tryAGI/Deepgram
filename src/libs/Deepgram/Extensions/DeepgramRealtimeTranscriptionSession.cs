@@ -227,6 +227,31 @@ public static class DeepgramRealtimeTranscription
             ?? "multi";
     }
 
+    /// <summary>Maps one Listen V2 server event to the protocol-neutral transcript shape.</summary>
+    public static DeepgramRealtimeTranscriptUpdate? MapListenV2ServerEvent(ListenV2ServerEvent serverEvent)
+    {
+        if (serverEvent.TryPickListenV2ListenV2TurnInfo(out var turnInfo) && turnInfo is not null)
+        {
+            return new(
+                turnInfo.Transcript?.Trim(),
+                turnInfo.Event == ChannelsListenV2MessagesListenV2TurnInfoEvent.EndOfTurn,
+                $"turn:{turnInfo.RequestId}:{turnInfo.TurnIndex}:{turnInfo.SequenceId}",
+                null,
+                turnInfo.Event.ToString());
+        }
+        if (serverEvent.TryPickListenV2ListenV2FatalError(out var fatalError) && fatalError is not null)
+        {
+            return new(null, false, $"fatal:{fatalError.SequenceId}",
+                $"{fatalError.Code}: {fatalError.Description}", "FatalError");
+        }
+        if (serverEvent.TryPickListenV2ListenV2ConfigureFailure(out var failure) && failure is not null)
+        {
+            return new(null, false, $"configure:{failure.RequestId}:{failure.SequenceId}",
+                "Deepgram realtime configuration failed.", "ConfigureFailure");
+        }
+        return null;
+    }
+
     private static Uri BuildUri(string baseUrl, IEnumerable<KeyValuePair<string, string>> parameters)
     {
         var query = string.Join(
@@ -509,37 +534,13 @@ internal sealed class DeepgramListenV2TranscriptionSession(
     {
         await foreach (var serverEvent in client.ReceiveUpdatesAsync(cancellationToken).ConfigureAwait(false))
         {
-            var mapped = MapServerEvent(serverEvent);
+            var mapped = DeepgramRealtimeTranscription.MapListenV2ServerEvent(serverEvent);
             RaiseRawFrame(serverEvent, mapped);
             if (mapped is not null)
             {
                 yield return mapped;
             }
         }
-    }
-
-    private static DeepgramRealtimeTranscriptUpdate? MapServerEvent(ListenV2ServerEvent serverEvent)
-    {
-        if (serverEvent.TryPickListenV2ListenV2TurnInfo(out var turnInfo) && turnInfo is not null)
-        {
-            return new(
-                turnInfo.Transcript?.Trim(),
-                turnInfo.Event == ChannelsListenV2MessagesListenV2TurnInfoEvent.EndOfTurn,
-                $"turn:{turnInfo.RequestId}:{turnInfo.TurnIndex}:{turnInfo.SequenceId}",
-                null,
-                turnInfo.Event.ToString());
-        }
-        if (serverEvent.TryPickListenV2ListenV2FatalError(out var fatalError) && fatalError is not null)
-        {
-            return new(null, false, $"fatal:{fatalError.SequenceId}",
-                $"{fatalError.Code}: {fatalError.Description}", "FatalError");
-        }
-        if (serverEvent.TryPickListenV2ListenV2ConfigureFailure(out var failure) && failure is not null)
-        {
-            return new(null, false, $"configure:{failure.RequestId}:{failure.SequenceId}",
-                "Deepgram realtime configuration failed.", "ConfigureFailure");
-        }
-        return null;
     }
 
     private void RaiseRawFrame(
