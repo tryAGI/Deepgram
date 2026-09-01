@@ -733,6 +733,10 @@ paths:
           application/json:
             schema:
               $ref: '#/components/schemas/ListenV1RequestUrl'
+          application/octet-stream:
+            schema:
+              type: string
+              format: binary
   /v1/speak:
     post:
       operationId: generate

@@ -680,6 +680,7 @@ namespace Deepgram
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Deepgram.V2SpeakPostParametersPriority), TypeInfoPropertyName = "V2SpeakPostParametersPriority2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Deepgram.SpeakV2Request))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Deepgram.SpeakV2AcceptedResponse))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(byte[]))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Deepgram.V1ProjectsProjectIdBillingBreakdownGetParametersGroupingSchemaItems>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Deepgram.V1ProjectsProjectIdSelfHostedDistributionCredentialsPostParametersScopesSchemaItems>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Deepgram.AgentThinkModelsV1ResponseModelsItems>))]

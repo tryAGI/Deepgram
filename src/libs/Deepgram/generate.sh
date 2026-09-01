@@ -64,6 +64,19 @@ yq -i '
       (.type = "number" | .format = "double" | del(.title))
 ' openapi.yaml
 
+# Fix 3: Deepgram's prerecorded Listen endpoint accepts uploaded media bytes,
+#         but the upstream OpenAPI currently documents only the URL-based JSON
+#         request. Preserve the binary request contract so AutoSDK emits a
+#         stream overload instead of forcing every consumer to hand-roll the
+#         /v1/listen request, Token auth, query serialization, and response
+#         handling.
+yq -i '
+  .paths."/v1/listen".post.requestBody.content."application/octet-stream".schema = {
+    "type": "string",
+    "format": "binary"
+  }
+' openapi.yaml
+
 # Auth: Deepgram requires the custom HTTP Token scheme for API keys.
 # --base-url injects server URL (spec has no servers section).
 autosdk generate openapi.yaml \
@@ -113,7 +126,7 @@ fi
 # Convert YAML to JSON for reliable parsing
 yq -o json asyncapi.yaml > asyncapi.json
 
-# Fix 3: Upstream currently publishes an AsyncAPI 2.6 document with
+# Fix 4: Upstream currently publishes an AsyncAPI 2.6 document with
 #         channel-level publish/subscribe operations. AutoSDK's WebSocket
 #         generator consumes AsyncAPI 3-style top-level operations, so normalize
 #         the channel blocks before generation.
@@ -178,7 +191,7 @@ jq '
     )
 ' asyncapi.json > asyncapi.tmp.json && mv asyncapi.tmp.json asyncapi.json
 
-# Fix 4: AsyncAPI spec has two security schemes (ApiKeyAuth + JwtAuth) that both
+# Fix 5: AsyncAPI spec has two security schemes (ApiKeyAuth + JwtAuth) that both
 #         map to HTTP bearer after --security-scheme override, producing duplicate
 #         AuthorizeUsingBearer methods. Remove JwtAuth to keep only one.
 jq 'del(.components.securitySchemes.JwtAuth)' asyncapi.json > asyncapi.tmp.json && mv asyncapi.tmp.json asyncapi.json

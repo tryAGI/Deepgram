@@ -10,6 +10,7 @@ internal static class MediaApiGroupCommand
     {
         var command = new Command(@"media", @"media endpoint commands.");
                          command.Subcommands.Add(MediaTranscribeCommandApiCommand.Create());
+                         command.Subcommands.Add(MediaTranscribeWithBytesCommandApiCommand.Create());
         return command;
     }
 }
