@@ -303,10 +303,6 @@ namespace Deepgram
         /// <summary>
         ///
         /// </summary>
-        Aura2PerseoIt,
-        /// <summary>
-        ///
-        /// </summary>
         Aura2PhoebeEn,
         /// <summary>
         ///
@@ -507,7 +503,6 @@ namespace Deepgram
                 V1SpeakPostParametersModel.Aura2OrionEn => "aura-2-orion-en",
                 V1SpeakPostParametersModel.Aura2OrpheusEn => "aura-2-orpheus-en",
                 V1SpeakPostParametersModel.Aura2PandoraEn => "aura-2-pandora-en",
-                V1SpeakPostParametersModel.Aura2PerseoIt => "aura-2-perseo-it",
                 V1SpeakPostParametersModel.Aura2PhoebeEn => "aura-2-phoebe-en",
                 V1SpeakPostParametersModel.Aura2PlutoEn => "aura-2-pluto-en",
                 V1SpeakPostParametersModel.Aura2RheaNl => "aura-2-rhea-nl",
@@ -620,7 +615,6 @@ namespace Deepgram
                 "aura-2-orion-en" => V1SpeakPostParametersModel.Aura2OrionEn,
                 "aura-2-orpheus-en" => V1SpeakPostParametersModel.Aura2OrpheusEn,
                 "aura-2-pandora-en" => V1SpeakPostParametersModel.Aura2PandoraEn,
-                "aura-2-perseo-it" => V1SpeakPostParametersModel.Aura2PerseoIt,
                 "aura-2-phoebe-en" => V1SpeakPostParametersModel.Aura2PhoebeEn,
                 "aura-2-pluto-en" => V1SpeakPostParametersModel.Aura2PlutoEn,
                 "aura-2-rhea-nl" => V1SpeakPostParametersModel.Aura2RheaNl,
