@@ -304,10 +304,6 @@ namespace Deepgram.Realtime
         /// <summary>
         ///
         /// </summary>
-        Aura2PerseoIt,
-        /// <summary>
-        ///
-        /// </summary>
         Aura2PhoebeEn,
         /// <summary>
         ///
@@ -508,7 +504,6 @@ namespace Deepgram.Realtime
                 SpeakV1Model.Aura2OrionEn => "aura-2-orion-en",
                 SpeakV1Model.Aura2OrpheusEn => "aura-2-orpheus-en",
                 SpeakV1Model.Aura2PandoraEn => "aura-2-pandora-en",
-                SpeakV1Model.Aura2PerseoIt => "aura-2-perseo-it",
                 SpeakV1Model.Aura2PhoebeEn => "aura-2-phoebe-en",
                 SpeakV1Model.Aura2PlutoEn => "aura-2-pluto-en",
                 SpeakV1Model.Aura2RheaNl => "aura-2-rhea-nl",
@@ -621,7 +616,6 @@ namespace Deepgram.Realtime
                 "aura-2-orion-en" => SpeakV1Model.Aura2OrionEn,
                 "aura-2-orpheus-en" => SpeakV1Model.Aura2OrpheusEn,
                 "aura-2-pandora-en" => SpeakV1Model.Aura2PandoraEn,
-                "aura-2-perseo-it" => SpeakV1Model.Aura2PerseoIt,
                 "aura-2-phoebe-en" => SpeakV1Model.Aura2PhoebeEn,
                 "aura-2-pluto-en" => SpeakV1Model.Aura2PlutoEn,
                 "aura-2-rhea-nl" => SpeakV1Model.Aura2RheaNl,
