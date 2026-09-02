@@ -31,7 +31,7 @@ namespace Deepgram.Realtime
         public required global::Deepgram.Realtime.DeepgramSpeakProviderModel Model { get; set; }
 
         /// <summary>
-        /// Speaking rate multiplier that adjusts the pace of generated speech while preserving natural prosody and voice quality. Aura (version v1) accepts any value from 0.7 to 1.5. Flux TTS (version v2) accepts only 0.85, 0.9, 0.95, 1.0, 1.05, 1.1 and 1.15; another value ends the session with FAILED_TO_SPEAK. Not yet supported in all languages.<br/>
+        /// Speaking rate multiplier that adjusts the pace of generated speech while preserving natural prosody and voice quality. Aura (version v1) accepts any value from 0.7 to 1.5. Flux TTS (version v2) accepts values from 0.5 to 1.5 in 0.05 increments; a value the family does not accept ends the session with FAILED_TO_SPEAK. Not yet supported in all languages.<br/>
         /// Default Value: 1
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("speed")]
@@ -63,7 +63,7 @@ namespace Deepgram.Realtime
         /// Default Value: v1
         /// </param>
         /// <param name="speed">
-        /// Speaking rate multiplier that adjusts the pace of generated speech while preserving natural prosody and voice quality. Aura (version v1) accepts any value from 0.7 to 1.5. Flux TTS (version v2) accepts only 0.85, 0.9, 0.95, 1.0, 1.05, 1.1 and 1.15; another value ends the session with FAILED_TO_SPEAK. Not yet supported in all languages.<br/>
+        /// Speaking rate multiplier that adjusts the pace of generated speech while preserving natural prosody and voice quality. Aura (version v1) accepts any value from 0.7 to 1.5. Flux TTS (version v2) accepts values from 0.5 to 1.5 in 0.05 increments; a value the family does not accept ends the session with FAILED_TO_SPEAK. Not yet supported in all languages.<br/>
         /// Default Value: 1
         /// </param>
         /// <param name="expressivity">

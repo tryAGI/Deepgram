@@ -551,7 +551,7 @@ namespace Deepgram.Realtime
         /// <param name="mipOptOut">Any type</param>
         /// <param name="model">The Flux TTS model used to synthesize speech. Required on every connection. Model strings follow the format `flux-{voice}-{language}` (e.g. `flux-alexis-en`). An Aura model string is rejected on `/v2/speak`; use `/v1/speak` for Aura voices.</param>
         /// <param name="sampleRate">Output sample rate in Hz. With `linear16`, valid values are `8000`, `16000`, `24000`, `32000`, `44100`, and `48000`. With `mulaw` or `alaw`, valid values are `8000` and `16000`. Defaults to the model's native sample rate.</param>
-        /// <param name="speed">Speech-rate multiplier. `1.00` is the model's nominal rate; lower is slower. Accepted values: `0.85`, `0.90`, `0.95`, `1.00`, `1.05`, `1.10`, `1.15`. A value outside that range is rejected with `SPEED_OUT_OF_RANGE`; a value inside it but off the `0.05` increment with `SPEED_INCREMENT_INVALID`. Models and languages without runtime speed control reject any value with `SPEED_NOT_SUPPORTED`.</param>
+        /// <param name="speed">Speech-rate multiplier. `1.0` is the model's nominal rate; lower is slower. Accepted values run `0.5` to `1.5` in `0.05` increments. A value outside that range is rejected with `SPEED_OUT_OF_RANGE`; a value inside it but off the `0.05` increment with `SPEED_INCREMENT_INVALID`. Models and languages without runtime speed control reject any value with `SPEED_NOT_SUPPORTED`.</param>
         /// <param name="tag">Any type</param>
         /// <param name="uri">Optional WebSocket endpoint override.</param>
         /// <param name="additionalHeaders">Additional headers applied before connecting.</param>
@@ -565,7 +565,7 @@ namespace Deepgram.Realtime
             global::Deepgram.Realtime.SpeakV2MipOptOut? mipOptOut = default,
             string? model = default,
             global::Deepgram.Realtime.SpeakV2SampleRate? sampleRate = default,
-            global::Deepgram.Realtime.SpeakV2Speed? speed = default,
+            double? speed = default,
             global::Deepgram.Realtime.SpeakV2Tag? tag = default,
             global::System.Uri? uri = null,
             global::System.Collections.Generic.IDictionary<string, string>? additionalHeaders = null,
@@ -590,7 +590,7 @@ namespace Deepgram.Realtime
                 .AddOptionalParameter("mip_opt_out", mipOptOut?.ToString())
                 .AddOptionalParameter("model", model)
                 .AddOptionalParameter("sample_rate", sampleRate?.ToValueString())
-                .AddOptionalParameter("speed", speed?.ToValueString())
+                .AddOptionalParameter("speed", speed?.ToString())
                 .AddOptionalParameter("tag", tag?.ToString())
                 ;
 

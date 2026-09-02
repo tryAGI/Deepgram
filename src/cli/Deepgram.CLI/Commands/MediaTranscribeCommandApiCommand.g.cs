@@ -127,7 +127,7 @@ To boost multiple separate keyterms, repeat the `keyterm` parameter (for example
     private static Option<global::Deepgram.V1ListenPostParametersKeywords?> Keywords { get; } = new(
         name: @"--keywords")
     {
-        Description = @"Keywords can boost or suppress specialized terminology and brands",
+        Description = @"Keywords can boost or suppress specialized terminology and brands. `keywords` is not supported with Nova-3 models; use `keyterm` instead.",
     };
 
     private static Option<string?> Language { get; } = new(

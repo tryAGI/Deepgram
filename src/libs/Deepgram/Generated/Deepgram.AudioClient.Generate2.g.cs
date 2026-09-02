@@ -50,7 +50,7 @@ namespace Deepgram
             ref global::Deepgram.V2SpeakPostParametersExpressivity? expressivity,
             ref string model,
             ref global::Deepgram.V2SpeakPostParametersSampleRate? sampleRate,
-            ref global::Deepgram.V2SpeakPostParametersSpeed? speed,
+            ref double? speed,
             ref global::Deepgram.V2SpeakPostParametersPriority? priority,
             global::Deepgram.SpeakV2Request request);
         partial void PrepareGenerate2Request(
@@ -66,7 +66,7 @@ namespace Deepgram
             global::Deepgram.V2SpeakPostParametersExpressivity? expressivity,
             string model,
             global::Deepgram.V2SpeakPostParametersSampleRate? sampleRate,
-            global::Deepgram.V2SpeakPostParametersSpeed? speed,
+            double? speed,
             global::Deepgram.V2SpeakPostParametersPriority? priority,
             global::Deepgram.SpeakV2Request request);
         partial void ProcessGenerate2Response(
@@ -127,7 +127,7 @@ namespace Deepgram
             global::Deepgram.V2SpeakPostParametersEncoding? encoding = default,
             global::Deepgram.V2SpeakPostParametersExpressivity? expressivity = default,
             global::Deepgram.V2SpeakPostParametersSampleRate? sampleRate = default,
-            global::Deepgram.V2SpeakPostParametersSpeed? speed = default,
+            double? speed = default,
             global::Deepgram.V2SpeakPostParametersPriority? priority = default,
             global::Deepgram.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default)
@@ -202,7 +202,7 @@ namespace Deepgram
             global::Deepgram.V2SpeakPostParametersEncoding? encoding = default,
             global::Deepgram.V2SpeakPostParametersExpressivity? expressivity = default,
             global::Deepgram.V2SpeakPostParametersSampleRate? sampleRate = default,
-            global::Deepgram.V2SpeakPostParametersSpeed? speed = default,
+            double? speed = default,
             global::Deepgram.V2SpeakPostParametersPriority? priority = default,
             global::Deepgram.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default)
@@ -269,7 +269,7 @@ namespace Deepgram
                                 .AddOptionalParameter("expressivity", expressivity?.ToValueString())
                                 .AddRequiredParameter("model", model)
                                 .AddOptionalParameter("sample_rate", sampleRate?.ToString())
-                                .AddOptionalParameter("speed", speed?.ToValueString())
+                                .AddOptionalParameter("speed", speed?.ToString())
                                 .AddOptionalParameter("priority", priority?.ToValueString())
                                 ;
                             var __path = __pathBuilder.ToString();
@@ -692,7 +692,7 @@ namespace Deepgram
             global::Deepgram.V2SpeakPostParametersEncoding? encoding = default,
             global::Deepgram.V2SpeakPostParametersExpressivity? expressivity = default,
             global::Deepgram.V2SpeakPostParametersSampleRate? sampleRate = default,
-            global::Deepgram.V2SpeakPostParametersSpeed? speed = default,
+            double? speed = default,
             global::Deepgram.V2SpeakPostParametersPriority? priority = default,
             global::Deepgram.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default)

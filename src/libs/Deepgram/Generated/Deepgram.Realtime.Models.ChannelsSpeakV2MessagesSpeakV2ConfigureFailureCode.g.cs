@@ -4,24 +4,24 @@
 namespace Deepgram.Realtime
 {
     /// <summary>
-    /// Failure code, in `SCREAMING_SNAKE_CASE`. `SPEED_OUT_OF_RANGE`: outside the multipliers the model publishes. `SPEED_INCREMENT_INVALID`: inside the published range but not one of the multipliers. `SPEED_NOT_SUPPORTED`: this model or language has no runtime speed control at all. `INTERNAL_ERROR`: the configuration was acceptable but the server could not apply it — unlike the others, a server-side failure rather than a statement about the request.
+    /// Failure code, in `SCREAMING_SNAKE_CASE`. `SPEED_OUT_OF_RANGE`: outside the range the model publishes. `SPEED_INCREMENT_INVALID`: inside the published range but off the `0.05` increment. `SPEED_NOT_SUPPORTED`: this model or language has no runtime speed control at all. `INTERNAL_ERROR`: the configuration was acceptable but the server could not apply it — unlike the others, a server-side failure rather than a statement about the request.
     /// </summary>
     public enum ChannelsSpeakV2MessagesSpeakV2ConfigureFailureCode
     {
         /// <summary>
-        /// outside the multipliers the model publishes. `SPEED_INCREMENT_INVALID`: inside the published range but not one of the multipliers. `SPEED_NOT_SUPPORTED`: this model or language has no runtime speed control at all. `INTERNAL_ERROR`: the configuration was acceptable but the server could not apply it — unlike the others, a server-side failure rather than a statement about the request.
+        /// outside the range the model publishes. `SPEED_INCREMENT_INVALID`: inside the published range but off the `0.05` increment. `SPEED_NOT_SUPPORTED`: this model or language has no runtime speed control at all. `INTERNAL_ERROR`: the configuration was acceptable but the server could not apply it — unlike the others, a server-side failure rather than a statement about the request.
         /// </summary>
         InternalError,
         /// <summary>
-        /// outside the multipliers the model publishes. `SPEED_INCREMENT_INVALID`: inside the published range but not one of the multipliers. `SPEED_NOT_SUPPORTED`: this model or language has no runtime speed control at all. `INTERNAL_ERROR`: the configuration was acceptable but the server could not apply it — unlike the others, a server-side failure rather than a statement about the request.
+        /// outside the range the model publishes. `SPEED_INCREMENT_INVALID`: inside the published range but off the `0.05` increment. `SPEED_NOT_SUPPORTED`: this model or language has no runtime speed control at all. `INTERNAL_ERROR`: the configuration was acceptable but the server could not apply it — unlike the others, a server-side failure rather than a statement about the request.
         /// </summary>
         SpeedIncrementInvalid,
         /// <summary>
-        /// outside the multipliers the model publishes. `SPEED_INCREMENT_INVALID`: inside the published range but not one of the multipliers. `SPEED_NOT_SUPPORTED`: this model or language has no runtime speed control at all. `INTERNAL_ERROR`: the configuration was acceptable but the server could not apply it — unlike the others, a server-side failure rather than a statement about the request.
+        /// outside the range the model publishes. `SPEED_INCREMENT_INVALID`: inside the published range but off the `0.05` increment. `SPEED_NOT_SUPPORTED`: this model or language has no runtime speed control at all. `INTERNAL_ERROR`: the configuration was acceptable but the server could not apply it — unlike the others, a server-side failure rather than a statement about the request.
         /// </summary>
         SpeedNotSupported,
         /// <summary>
-        /// outside the multipliers the model publishes. `SPEED_INCREMENT_INVALID`: inside the published range but not one of the multipliers. `SPEED_NOT_SUPPORTED`: this model or language has no runtime speed control at all. `INTERNAL_ERROR`: the configuration was acceptable but the server could not apply it — unlike the others, a server-side failure rather than a statement about the request.
+        /// outside the range the model publishes. `SPEED_INCREMENT_INVALID`: inside the published range but off the `0.05` increment. `SPEED_NOT_SUPPORTED`: this model or language has no runtime speed control at all. `INTERNAL_ERROR`: the configuration was acceptable but the server could not apply it — unlike the others, a server-side failure rather than a statement about the request.
         /// </summary>
         SpeedOutOfRange,
     }

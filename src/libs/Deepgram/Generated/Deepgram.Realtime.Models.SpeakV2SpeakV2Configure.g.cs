@@ -16,7 +16,7 @@ namespace Deepgram.Realtime
         public global::Deepgram.Realtime.SpeakV2SpeakV2ConfigureType Type { get; set; }
 
         /// <summary>
-        /// Speech-rate multiplier. `1.0` is the model's nominal rate; lower is slower. Accepted values run `0.85` to `1.15` in `0.05` increments. A value outside that range is rejected with `SPEED_OUT_OF_RANGE`; a value inside it but off the `0.05` increment with `SPEED_INCREMENT_INVALID`. Models and languages without runtime speed control reject any value with `SPEED_NOT_SUPPORTED`.<br/>
+        /// Speech-rate multiplier. `1.0` is the model's nominal rate; lower is slower. Accepted values run `0.5` to `1.5` in `0.05` increments. A value outside that range is rejected with `SPEED_OUT_OF_RANGE`; a value inside it but off the `0.05` increment with `SPEED_INCREMENT_INVALID`. Models and languages without runtime speed control reject any value with `SPEED_NOT_SUPPORTED`.<br/>
         /// Default Value: 1
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("speed")]
@@ -35,7 +35,7 @@ namespace Deepgram.Realtime
         /// Message type identifier
         /// </param>
         /// <param name="speed">
-        /// Speech-rate multiplier. `1.0` is the model's nominal rate; lower is slower. Accepted values run `0.85` to `1.15` in `0.05` increments. A value outside that range is rejected with `SPEED_OUT_OF_RANGE`; a value inside it but off the `0.05` increment with `SPEED_INCREMENT_INVALID`. Models and languages without runtime speed control reject any value with `SPEED_NOT_SUPPORTED`.<br/>
+        /// Speech-rate multiplier. `1.0` is the model's nominal rate; lower is slower. Accepted values run `0.5` to `1.5` in `0.05` increments. A value outside that range is rejected with `SPEED_OUT_OF_RANGE`; a value inside it but off the `0.05` increment with `SPEED_INCREMENT_INVALID`. Models and languages without runtime speed control reject any value with `SPEED_NOT_SUPPORTED`.<br/>
         /// Default Value: 1
         /// </param>
 #if NET7_0_OR_GREATER
