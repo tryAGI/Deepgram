@@ -1213,31 +1213,27 @@ namespace Deepgram
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.V2SpeakPostParametersSpeed? Type295 { get; set; }
+        public global::Deepgram.V2SpeakPostParametersPriority? Type295 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.V2SpeakPostParametersPriority? Type296 { get; set; }
+        public global::Deepgram.SpeakV2Request? Type296 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.SpeakV2Request? Type297 { get; set; }
+        public global::Deepgram.SpeakV2AcceptedResponse? Type297 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.SpeakV2AcceptedResponse? Type298 { get; set; }
+        public byte[]? Type298 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public byte[]? Type299 { get; set; }
+        public global::System.Collections.Generic.IList<global::Deepgram.V1ProjectsProjectIdBillingBreakdownGetParametersGroupingSchemaItems>? Type299 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Deepgram.V1ProjectsProjectIdBillingBreakdownGetParametersGroupingSchemaItems>? Type300 { get; set; }
-        /// <summary>
-        ///
-        /// </summary>
-        public global::System.Collections.Generic.IList<global::Deepgram.V1ProjectsProjectIdSelfHostedDistributionCredentialsPostParametersScopesSchemaItems>? Type301 { get; set; }
+        public global::System.Collections.Generic.IList<global::Deepgram.V1ProjectsProjectIdSelfHostedDistributionCredentialsPostParametersScopesSchemaItems>? Type300 { get; set; }
 
         /// <summary>
         ///

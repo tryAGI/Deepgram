@@ -517,10 +517,6 @@ namespace Deepgram.Realtime
 
             typeof(global::Deepgram.Realtime.JsonConverters.SpeakV2SampleRateNullableJsonConverter),
 
-            typeof(global::Deepgram.Realtime.JsonConverters.SpeakV2SpeedJsonConverter),
-
-            typeof(global::Deepgram.Realtime.JsonConverters.SpeakV2SpeedNullableJsonConverter),
-
             typeof(global::Deepgram.Realtime.JsonConverters.SpeakV2ExpressivityJsonConverter),
 
             typeof(global::Deepgram.Realtime.JsonConverters.SpeakV2ExpressivityNullableJsonConverter),
@@ -932,7 +928,6 @@ namespace Deepgram.Realtime
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Deepgram.Realtime.SpeakV1SpeakV1Close))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Deepgram.Realtime.SpeakV2Encoding), TypeInfoPropertyName = "SpeakV2Encoding2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Deepgram.Realtime.SpeakV2SampleRate), TypeInfoPropertyName = "SpeakV2SampleRate2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Deepgram.Realtime.SpeakV2Speed), TypeInfoPropertyName = "SpeakV2Speed2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Deepgram.Realtime.SpeakV2Expressivity), TypeInfoPropertyName = "SpeakV2Expressivity2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Deepgram.Realtime.SpeakV2MipOptOut))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Deepgram.Realtime.SpeakV2Tag))]
