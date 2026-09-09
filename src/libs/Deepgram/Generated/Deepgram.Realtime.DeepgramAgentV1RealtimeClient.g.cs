@@ -317,6 +317,10 @@ namespace Deepgram.Realtime
         /// </summary>
         public event global::System.EventHandler<AutoSDKWebSocketMessageEventArgs<global::Deepgram.Realtime.AgentV1AgentV1FunctionCallRequest>>? AgentV1FunctionCallRequestReceived;
         /// <summary>
+        /// Raised after a AgentV1FunctionCallCancelled message is deserialized.
+        /// </summary>
+        public event global::System.EventHandler<AutoSDKWebSocketMessageEventArgs<global::Deepgram.Realtime.AgentV1AgentV1FunctionCallCancelled>>? AgentV1FunctionCallCancelledReceived;
+        /// <summary>
         /// Raised after a AgentV1AgentStartedSpeaking message is deserialized.
         /// </summary>
         public event global::System.EventHandler<AutoSDKWebSocketMessageEventArgs<global::Deepgram.Realtime.AgentV1AgentV1AgentStartedSpeaking>>? AgentV1AgentStartedSpeakingReceived;

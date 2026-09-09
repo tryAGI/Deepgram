@@ -285,6 +285,15 @@ namespace Deepgram.Realtime
                         rawText,
                         json));
             }
+            if (@event.AgentV1AgentV1FunctionCallCancelled is { } __AgentV1FunctionCallCancelledReceived)
+            {
+                AgentV1FunctionCallCancelledReceived?.Invoke(
+                    this,
+                    new AutoSDKWebSocketMessageEventArgs<global::Deepgram.Realtime.AgentV1AgentV1FunctionCallCancelled>(
+                        __AgentV1FunctionCallCancelledReceived,
+                        rawText,
+                        json));
+            }
             if (@event.AgentV1AgentV1AgentStartedSpeaking is { } __AgentV1AgentStartedSpeakingReceived)
             {
                 AgentV1AgentStartedSpeakingReceived?.Invoke(

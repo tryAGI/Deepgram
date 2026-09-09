@@ -27,6 +27,13 @@ namespace Deepgram.Realtime
         public global::Deepgram.Realtime.ThinkSettingsV1FunctionsItemsParameters? Parameters { get; set; }
 
         /// <summary>
+        /// Hold this function call until the user's turn is confirmed instead of dispatching it speculatively. Set it to true for actions that cannot be undone. If the turn resumes, a deferred call is discarded before it runs. Defaults to false<br/>
+        /// Default Value: false
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("defer_until_eot")]
+        public bool? DeferUntilEot { get; set; }
+
+        /// <summary>
         /// The Function endpoint to call. if not passed, function is called client-side
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("endpoint")]
@@ -50,6 +57,10 @@ namespace Deepgram.Realtime
         /// <param name="parameters">
         /// Function parameters
         /// </param>
+        /// <param name="deferUntilEot">
+        /// Hold this function call until the user's turn is confirmed instead of dispatching it speculatively. Set it to true for actions that cannot be undone. If the turn resumes, a deferred call is discarded before it runs. Defaults to false<br/>
+        /// Default Value: false
+        /// </param>
         /// <param name="endpoint">
         /// The Function endpoint to call. if not passed, function is called client-side
         /// </param>
@@ -60,11 +71,13 @@ namespace Deepgram.Realtime
             string? name,
             string? description,
             global::Deepgram.Realtime.ThinkSettingsV1FunctionsItemsParameters? parameters,
+            bool? deferUntilEot,
             global::Deepgram.Realtime.ThinkSettingsV1FunctionsItemsEndpoint? endpoint)
         {
             this.Name = name;
             this.Description = description;
             this.Parameters = parameters;
+            this.DeferUntilEot = deferUntilEot;
             this.Endpoint = endpoint;
         }
 
