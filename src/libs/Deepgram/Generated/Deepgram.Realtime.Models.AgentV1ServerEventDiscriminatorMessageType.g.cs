@@ -27,6 +27,10 @@ namespace Deepgram.Realtime
         /// <summary>
         ///
         /// </summary>
+        FunctionCallCancelled,
+        /// <summary>
+        ///
+        /// </summary>
         FunctionCallRequest,
         /// <summary>
         ///
@@ -86,6 +90,7 @@ namespace Deepgram.Realtime
                 AgentV1ServerEventDiscriminatorMessageType.AgentStartedSpeaking => "AgentStartedSpeaking",
                 AgentV1ServerEventDiscriminatorMessageType.AgentThinking => "AgentThinking",
                 AgentV1ServerEventDiscriminatorMessageType.ConversationText => "ConversationText",
+                AgentV1ServerEventDiscriminatorMessageType.FunctionCallCancelled => "FunctionCallCancelled",
                 AgentV1ServerEventDiscriminatorMessageType.FunctionCallRequest => "FunctionCallRequest",
                 AgentV1ServerEventDiscriminatorMessageType.FunctionCallResponse => "FunctionCallResponse",
                 AgentV1ServerEventDiscriminatorMessageType.InjectionRefused => "InjectionRefused",
@@ -111,6 +116,7 @@ namespace Deepgram.Realtime
                 "AgentStartedSpeaking" => AgentV1ServerEventDiscriminatorMessageType.AgentStartedSpeaking,
                 "AgentThinking" => AgentV1ServerEventDiscriminatorMessageType.AgentThinking,
                 "ConversationText" => AgentV1ServerEventDiscriminatorMessageType.ConversationText,
+                "FunctionCallCancelled" => AgentV1ServerEventDiscriminatorMessageType.FunctionCallCancelled,
                 "FunctionCallRequest" => AgentV1ServerEventDiscriminatorMessageType.FunctionCallRequest,
                 "FunctionCallResponse" => AgentV1ServerEventDiscriminatorMessageType.FunctionCallResponse,
                 "InjectionRefused" => AgentV1ServerEventDiscriminatorMessageType.InjectionRefused,
