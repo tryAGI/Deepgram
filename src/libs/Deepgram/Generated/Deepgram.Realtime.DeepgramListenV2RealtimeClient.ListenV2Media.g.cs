@@ -16,9 +16,11 @@ namespace Deepgram.Realtime
         {
             message = message ?? throw new global::System.ArgumentNullException(nameof(message));
 
-            var json = global::System.Text.Json.JsonSerializer.Serialize(message, typeof(byte[]), JsonSerializerContext);
-
-            await SendAsync(json, cancellationToken).ConfigureAwait(false);
+            await SendAsync(
+                new global::System.ArraySegment<byte>(message),
+                global::System.Net.WebSockets.WebSocketMessageType.Binary,
+                endOfMessage: true,
+                cancellationToken).ConfigureAwait(false);
         }
     }
 }
