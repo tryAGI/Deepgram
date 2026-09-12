@@ -116,6 +116,7 @@ autosdk cli-project openapi.yaml \
   --targetFramework net10.0 \
   --namespace Deepgram \
   --clientClassName DeepgramClient \
+  --strip-redundant-operation-id-tag-prefixes \
   --package-id Deepgram.CLI \
   --tool-command-name deepgram \
   --user-secrets-id Deepgram.CLI \
