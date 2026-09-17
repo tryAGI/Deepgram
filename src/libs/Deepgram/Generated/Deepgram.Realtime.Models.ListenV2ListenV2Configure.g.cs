@@ -47,6 +47,13 @@ namespace Deepgram.Realtime
         public global::System.Collections.Generic.IList<string>? LanguageHints { get; set; }
 
         /// <summary>
+        /// Numerals converts numbers from written format to numerical format. Applies to turns transcribed after the update.<br/>
+        /// Default Value: false
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("numerals")]
+        public bool? Numerals { get; set; }
+
+        /// <summary>
         /// Additional properties that are not explicitly defined in the schema
         /// </summary>
         [global::System.Text.Json.Serialization.JsonExtensionData]
@@ -79,6 +86,10 @@ namespace Deepgram.Realtime
         /// Only valid when the model is flux-general-multi. If this field is not supplied,<br/>
         /// the session will continue to use the currently configured value.
         /// </param>
+        /// <param name="numerals">
+        /// Numerals converts numbers from written format to numerical format. Applies to turns transcribed after the update.<br/>
+        /// Default Value: false
+        /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -86,12 +97,14 @@ namespace Deepgram.Realtime
             global::Deepgram.Realtime.ListenV2ListenV2ConfigureType type,
             global::Deepgram.Realtime.ChannelsListenV2MessagesListenV2ConfigureThresholds? thresholds,
             global::Deepgram.Realtime.ListenV2Keyterm? keyterms,
-            global::System.Collections.Generic.IList<string>? languageHints)
+            global::System.Collections.Generic.IList<string>? languageHints,
+            bool? numerals)
         {
             this.Type = type;
             this.Thresholds = thresholds;
             this.Keyterms = keyterms;
             this.LanguageHints = languageHints;
+            this.Numerals = numerals;
         }
 
         /// <summary>
