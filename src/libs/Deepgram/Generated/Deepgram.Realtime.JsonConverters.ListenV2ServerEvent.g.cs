@@ -55,6 +55,7 @@ namespace Deepgram.Realtime.JsonConverters
             var __score2 = 0;
             if (__jsonProps.Contains("keyterms")) __score2++;
             if (__jsonProps.Contains("language_hints")) __score2++;
+            if (__jsonProps.Contains("numerals")) __score2++;
             if (__jsonProps.Contains("request_id")) __score2++;
             if (__jsonProps.Contains("sequence_id")) __score2++;
             if (__jsonProps.Contains("thresholds")) __score2++;

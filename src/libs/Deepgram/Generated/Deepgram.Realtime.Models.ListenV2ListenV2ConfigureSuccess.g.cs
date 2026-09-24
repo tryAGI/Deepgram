@@ -54,6 +54,13 @@ namespace Deepgram.Realtime
         public global::System.Collections.Generic.IList<string>? LanguageHints { get; set; }
 
         /// <summary>
+        /// Whether numeral formatting is enabled for transcripts Flux STT sends after it processes the update.<br/>
+        /// Default Value: false
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("numerals")]
+        public bool? Numerals { get; set; }
+
+        /// <summary>
         /// Starts at `0` and increments for each message the server sends<br/>
         /// to the client.  This includes messages of other types, like<br/>
         /// `TurnInfo` messages.
@@ -101,6 +108,10 @@ namespace Deepgram.Realtime
         /// <param name="languageHints">
         /// The currently active language hints. Only applicable to the flux-general-multi model.
         /// </param>
+        /// <param name="numerals">
+        /// Whether numeral formatting is enabled for transcripts Flux STT sends after it processes the update.<br/>
+        /// Default Value: false
+        /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -110,13 +121,15 @@ namespace Deepgram.Realtime
             global::Deepgram.Realtime.ListenV2Keyterm keyterms,
             int sequenceId,
             global::Deepgram.Realtime.ListenV2ListenV2ConfigureSuccessType type,
-            global::System.Collections.Generic.IList<string>? languageHints)
+            global::System.Collections.Generic.IList<string>? languageHints,
+            bool? numerals)
         {
             this.Type = type;
             this.RequestId = requestId;
             this.Thresholds = thresholds ?? throw new global::System.ArgumentNullException(nameof(thresholds));
             this.Keyterms = keyterms;
             this.LanguageHints = languageHints;
+            this.Numerals = numerals;
             this.SequenceId = sequenceId;
         }
 
