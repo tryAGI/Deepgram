@@ -47,7 +47,7 @@ namespace Deepgram.Realtime
         public global::System.Collections.Generic.IList<string>? LanguageHints { get; set; }
 
         /// <summary>
-        /// Numerals converts numbers from written format to numerical format. Applies to turns transcribed after the update.<br/>
+        /// Numerals converts numbers from written format to numerical format. Applies to transcripts Flux STT sends after it processes the update.<br/>
         /// Default Value: false
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("numerals")]
@@ -87,7 +87,7 @@ namespace Deepgram.Realtime
         /// the session will continue to use the currently configured value.
         /// </param>
         /// <param name="numerals">
-        /// Numerals converts numbers from written format to numerical format. Applies to turns transcribed after the update.<br/>
+        /// Numerals converts numbers from written format to numerical format. Applies to transcripts Flux STT sends after it processes the update.<br/>
         /// Default Value: false
         /// </param>
 #if NET7_0_OR_GREATER
