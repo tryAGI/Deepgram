@@ -42,8 +42,8 @@ namespace Deepgram.Realtime
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.AgentV1AgentV1History0 PickAgentV1AgentV1History0() => IsAgentV1AgentV1History0
-            ? AgentV1AgentV1History0!
+        public global::Deepgram.Realtime.AgentV1AgentV1History0 PickAgentV1AgentV1History0() => AgentV1AgentV1History0 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'AgentV1AgentV1History0' but the value was {ToString()}.");
 
         /// <summary>
@@ -79,8 +79,8 @@ namespace Deepgram.Realtime
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.AgentV1AgentV1History1 PickAgentV1AgentV1History1() => IsAgentV1AgentV1History1
-            ? AgentV1AgentV1History1!
+        public global::Deepgram.Realtime.AgentV1AgentV1History1 PickAgentV1AgentV1History1() => AgentV1AgentV1History1 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'AgentV1AgentV1History1' but the value was {ToString()}.");
         /// <summary>
         ///
@@ -177,13 +177,13 @@ namespace Deepgram.Realtime
                 Validate();
             }
 
-            if (IsAgentV1AgentV1History0 && agentV1AgentV1History0 != null)
+            if (AgentV1AgentV1History0 is { } __value0 && agentV1AgentV1History0 != null)
             {
-                return agentV1AgentV1History0(AgentV1AgentV1History0!);
+                return agentV1AgentV1History0(__value0);
             }
-            else if (IsAgentV1AgentV1History1 && agentV1AgentV1History1 != null)
+            else if (AgentV1AgentV1History1 is { } __value1 && agentV1AgentV1History1 != null)
             {
-                return agentV1AgentV1History1(AgentV1AgentV1History1!);
+                return agentV1AgentV1History1(__value1);
             }
 
             return default(TResult);
@@ -203,13 +203,13 @@ namespace Deepgram.Realtime
                 Validate();
             }
 
-            if (IsAgentV1AgentV1History0)
+            if (AgentV1AgentV1History0 is { } __value0)
             {
-                agentV1AgentV1History0?.Invoke(AgentV1AgentV1History0!);
+                agentV1AgentV1History0?.Invoke(__value0);
             }
-            else if (IsAgentV1AgentV1History1)
+            else if (AgentV1AgentV1History1 is { } __value1)
             {
-                agentV1AgentV1History1?.Invoke(AgentV1AgentV1History1!);
+                agentV1AgentV1History1?.Invoke(__value1);
             }
         }
 
@@ -226,13 +226,13 @@ namespace Deepgram.Realtime
                 Validate();
             }
 
-            if (IsAgentV1AgentV1History0)
+            if (AgentV1AgentV1History0 is { } __value0)
             {
-                agentV1AgentV1History0?.Invoke(AgentV1AgentV1History0!);
+                agentV1AgentV1History0?.Invoke(__value0);
             }
-            else if (IsAgentV1AgentV1History1)
+            else if (AgentV1AgentV1History1 is { } __value1)
             {
-                agentV1AgentV1History1?.Invoke(AgentV1AgentV1History1!);
+                agentV1AgentV1History1?.Invoke(__value1);
             }
         }
 

@@ -42,8 +42,8 @@ namespace Deepgram
         /// <summary>
         ///
         /// </summary>
-        public string PickV1ListenPostParametersCustomIntentVariant1() => IsV1ListenPostParametersCustomIntentVariant1
-            ? V1ListenPostParametersCustomIntentVariant1!
+        public string PickV1ListenPostParametersCustomIntentVariant1() => V1ListenPostParametersCustomIntentVariant1 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'V1ListenPostParametersCustomIntentVariant1' but the value was {ToString()}.");
 
         /// <summary>
@@ -79,8 +79,8 @@ namespace Deepgram
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<string> PickV1ListenPostParametersCustomIntentVariant2() => IsV1ListenPostParametersCustomIntentVariant2
-            ? V1ListenPostParametersCustomIntentVariant2!
+        public global::System.Collections.Generic.IList<string> PickV1ListenPostParametersCustomIntentVariant2() => V1ListenPostParametersCustomIntentVariant2 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'V1ListenPostParametersCustomIntentVariant2' but the value was {ToString()}.");
         /// <summary>
         ///
@@ -154,13 +154,13 @@ namespace Deepgram
                 Validate();
             }
 
-            if (IsV1ListenPostParametersCustomIntentVariant1 && v1ListenPostParametersCustomIntentVariant1 != null)
+            if (V1ListenPostParametersCustomIntentVariant1 is { } __value0 && v1ListenPostParametersCustomIntentVariant1 != null)
             {
-                return v1ListenPostParametersCustomIntentVariant1(V1ListenPostParametersCustomIntentVariant1!);
+                return v1ListenPostParametersCustomIntentVariant1(__value0);
             }
-            else if (IsV1ListenPostParametersCustomIntentVariant2 && v1ListenPostParametersCustomIntentVariant2 != null)
+            else if (V1ListenPostParametersCustomIntentVariant2 is { } __value1 && v1ListenPostParametersCustomIntentVariant2 != null)
             {
-                return v1ListenPostParametersCustomIntentVariant2(V1ListenPostParametersCustomIntentVariant2!);
+                return v1ListenPostParametersCustomIntentVariant2(__value1);
             }
 
             return default(TResult);
@@ -180,13 +180,13 @@ namespace Deepgram
                 Validate();
             }
 
-            if (IsV1ListenPostParametersCustomIntentVariant1)
+            if (V1ListenPostParametersCustomIntentVariant1 is { } __value0)
             {
-                v1ListenPostParametersCustomIntentVariant1?.Invoke(V1ListenPostParametersCustomIntentVariant1!);
+                v1ListenPostParametersCustomIntentVariant1?.Invoke(__value0);
             }
-            else if (IsV1ListenPostParametersCustomIntentVariant2)
+            else if (V1ListenPostParametersCustomIntentVariant2 is { } __value1)
             {
-                v1ListenPostParametersCustomIntentVariant2?.Invoke(V1ListenPostParametersCustomIntentVariant2!);
+                v1ListenPostParametersCustomIntentVariant2?.Invoke(__value1);
             }
         }
 
@@ -203,13 +203,13 @@ namespace Deepgram
                 Validate();
             }
 
-            if (IsV1ListenPostParametersCustomIntentVariant1)
+            if (V1ListenPostParametersCustomIntentVariant1 is { } __value0)
             {
-                v1ListenPostParametersCustomIntentVariant1?.Invoke(V1ListenPostParametersCustomIntentVariant1!);
+                v1ListenPostParametersCustomIntentVariant1?.Invoke(__value0);
             }
-            else if (IsV1ListenPostParametersCustomIntentVariant2)
+            else if (V1ListenPostParametersCustomIntentVariant2 is { } __value1)
             {
-                v1ListenPostParametersCustomIntentVariant2?.Invoke(V1ListenPostParametersCustomIntentVariant2!);
+                v1ListenPostParametersCustomIntentVariant2?.Invoke(__value1);
             }
         }
 

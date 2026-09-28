@@ -250,31 +250,31 @@ namespace Deepgram.Realtime.JsonConverters
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(byte[]), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<byte[]?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(byte[]).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.SpeakV1SpeakV1Audio!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickSpeakV1SpeakV1Audio(), typeInfo);
             }
             else if (value.IsSpeakV1SpeakV1Metadata)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Deepgram.Realtime.SpeakV1SpeakV1Metadata), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Deepgram.Realtime.SpeakV1SpeakV1Metadata?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Deepgram.Realtime.SpeakV1SpeakV1Metadata).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.SpeakV1SpeakV1Metadata!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickSpeakV1SpeakV1Metadata(), typeInfo);
             }
             else if (value.IsSpeakV1SpeakV1Flushed)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Deepgram.Realtime.SpeakV1SpeakV1Flushed), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Deepgram.Realtime.SpeakV1SpeakV1Flushed?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Deepgram.Realtime.SpeakV1SpeakV1Flushed).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.SpeakV1SpeakV1Flushed!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickSpeakV1SpeakV1Flushed(), typeInfo);
             }
             else if (value.IsSpeakV1SpeakV1Cleared)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Deepgram.Realtime.SpeakV1SpeakV1Cleared), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Deepgram.Realtime.SpeakV1SpeakV1Cleared?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Deepgram.Realtime.SpeakV1SpeakV1Cleared).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.SpeakV1SpeakV1Cleared!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickSpeakV1SpeakV1Cleared(), typeInfo);
             }
             else if (value.IsSpeakV1SpeakV1Warning)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Deepgram.Realtime.SpeakV1SpeakV1Warning), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Deepgram.Realtime.SpeakV1SpeakV1Warning?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Deepgram.Realtime.SpeakV1SpeakV1Warning).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.SpeakV1SpeakV1Warning!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickSpeakV1SpeakV1Warning(), typeInfo);
             }
         }
     }

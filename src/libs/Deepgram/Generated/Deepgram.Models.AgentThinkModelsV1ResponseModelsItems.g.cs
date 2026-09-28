@@ -42,8 +42,8 @@ namespace Deepgram
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.AgentThinkModelsV1ResponseModelsItems0 PickAgentThinkModelsV1ResponseModelsItems0() => IsAgentThinkModelsV1ResponseModelsItems0
-            ? AgentThinkModelsV1ResponseModelsItems0!
+        public global::Deepgram.AgentThinkModelsV1ResponseModelsItems0 PickAgentThinkModelsV1ResponseModelsItems0() => AgentThinkModelsV1ResponseModelsItems0 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'AgentThinkModelsV1ResponseModelsItems0' but the value was {ToString()}.");
 
         /// <summary>
@@ -79,8 +79,8 @@ namespace Deepgram
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.AgentThinkModelsV1ResponseModelsItems1 PickAgentThinkModelsV1ResponseModelsItems1() => IsAgentThinkModelsV1ResponseModelsItems1
-            ? AgentThinkModelsV1ResponseModelsItems1!
+        public global::Deepgram.AgentThinkModelsV1ResponseModelsItems1 PickAgentThinkModelsV1ResponseModelsItems1() => AgentThinkModelsV1ResponseModelsItems1 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'AgentThinkModelsV1ResponseModelsItems1' but the value was {ToString()}.");
 
         /// <summary>
@@ -116,8 +116,8 @@ namespace Deepgram
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.AgentThinkModelsV1ResponseModelsItems2 PickAgentThinkModelsV1ResponseModelsItems2() => IsAgentThinkModelsV1ResponseModelsItems2
-            ? AgentThinkModelsV1ResponseModelsItems2!
+        public global::Deepgram.AgentThinkModelsV1ResponseModelsItems2 PickAgentThinkModelsV1ResponseModelsItems2() => AgentThinkModelsV1ResponseModelsItems2 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'AgentThinkModelsV1ResponseModelsItems2' but the value was {ToString()}.");
 
         /// <summary>
@@ -153,8 +153,8 @@ namespace Deepgram
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.AgentThinkModelsV1ResponseModelsItems3 PickAgentThinkModelsV1ResponseModelsItems3() => IsAgentThinkModelsV1ResponseModelsItems3
-            ? AgentThinkModelsV1ResponseModelsItems3!
+        public global::Deepgram.AgentThinkModelsV1ResponseModelsItems3 PickAgentThinkModelsV1ResponseModelsItems3() => AgentThinkModelsV1ResponseModelsItems3 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'AgentThinkModelsV1ResponseModelsItems3' but the value was {ToString()}.");
 
         /// <summary>
@@ -190,8 +190,8 @@ namespace Deepgram
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.AgentThinkModelsV1ResponseModelsItems4 PickAgentThinkModelsV1ResponseModelsItems4() => IsAgentThinkModelsV1ResponseModelsItems4
-            ? AgentThinkModelsV1ResponseModelsItems4!
+        public global::Deepgram.AgentThinkModelsV1ResponseModelsItems4 PickAgentThinkModelsV1ResponseModelsItems4() => AgentThinkModelsV1ResponseModelsItems4 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'AgentThinkModelsV1ResponseModelsItems4' but the value was {ToString()}.");
         /// <summary>
         ///
@@ -372,25 +372,25 @@ namespace Deepgram
                 Validate();
             }
 
-            if (IsAgentThinkModelsV1ResponseModelsItems0 && agentThinkModelsV1ResponseModelsItems0 != null)
+            if (AgentThinkModelsV1ResponseModelsItems0 is { } __value0 && agentThinkModelsV1ResponseModelsItems0 != null)
             {
-                return agentThinkModelsV1ResponseModelsItems0(AgentThinkModelsV1ResponseModelsItems0!);
+                return agentThinkModelsV1ResponseModelsItems0(__value0);
             }
-            else if (IsAgentThinkModelsV1ResponseModelsItems1 && agentThinkModelsV1ResponseModelsItems1 != null)
+            else if (AgentThinkModelsV1ResponseModelsItems1 is { } __value1 && agentThinkModelsV1ResponseModelsItems1 != null)
             {
-                return agentThinkModelsV1ResponseModelsItems1(AgentThinkModelsV1ResponseModelsItems1!);
+                return agentThinkModelsV1ResponseModelsItems1(__value1);
             }
-            else if (IsAgentThinkModelsV1ResponseModelsItems2 && agentThinkModelsV1ResponseModelsItems2 != null)
+            else if (AgentThinkModelsV1ResponseModelsItems2 is { } __value2 && agentThinkModelsV1ResponseModelsItems2 != null)
             {
-                return agentThinkModelsV1ResponseModelsItems2(AgentThinkModelsV1ResponseModelsItems2!);
+                return agentThinkModelsV1ResponseModelsItems2(__value2);
             }
-            else if (IsAgentThinkModelsV1ResponseModelsItems3 && agentThinkModelsV1ResponseModelsItems3 != null)
+            else if (AgentThinkModelsV1ResponseModelsItems3 is { } __value3 && agentThinkModelsV1ResponseModelsItems3 != null)
             {
-                return agentThinkModelsV1ResponseModelsItems3(AgentThinkModelsV1ResponseModelsItems3!);
+                return agentThinkModelsV1ResponseModelsItems3(__value3);
             }
-            else if (IsAgentThinkModelsV1ResponseModelsItems4 && agentThinkModelsV1ResponseModelsItems4 != null)
+            else if (AgentThinkModelsV1ResponseModelsItems4 is { } __value4 && agentThinkModelsV1ResponseModelsItems4 != null)
             {
-                return agentThinkModelsV1ResponseModelsItems4(AgentThinkModelsV1ResponseModelsItems4!);
+                return agentThinkModelsV1ResponseModelsItems4(__value4);
             }
 
             return default(TResult);
@@ -416,25 +416,25 @@ namespace Deepgram
                 Validate();
             }
 
-            if (IsAgentThinkModelsV1ResponseModelsItems0)
+            if (AgentThinkModelsV1ResponseModelsItems0 is { } __value0)
             {
-                agentThinkModelsV1ResponseModelsItems0?.Invoke(AgentThinkModelsV1ResponseModelsItems0!);
+                agentThinkModelsV1ResponseModelsItems0?.Invoke(__value0);
             }
-            else if (IsAgentThinkModelsV1ResponseModelsItems1)
+            else if (AgentThinkModelsV1ResponseModelsItems1 is { } __value1)
             {
-                agentThinkModelsV1ResponseModelsItems1?.Invoke(AgentThinkModelsV1ResponseModelsItems1!);
+                agentThinkModelsV1ResponseModelsItems1?.Invoke(__value1);
             }
-            else if (IsAgentThinkModelsV1ResponseModelsItems2)
+            else if (AgentThinkModelsV1ResponseModelsItems2 is { } __value2)
             {
-                agentThinkModelsV1ResponseModelsItems2?.Invoke(AgentThinkModelsV1ResponseModelsItems2!);
+                agentThinkModelsV1ResponseModelsItems2?.Invoke(__value2);
             }
-            else if (IsAgentThinkModelsV1ResponseModelsItems3)
+            else if (AgentThinkModelsV1ResponseModelsItems3 is { } __value3)
             {
-                agentThinkModelsV1ResponseModelsItems3?.Invoke(AgentThinkModelsV1ResponseModelsItems3!);
+                agentThinkModelsV1ResponseModelsItems3?.Invoke(__value3);
             }
-            else if (IsAgentThinkModelsV1ResponseModelsItems4)
+            else if (AgentThinkModelsV1ResponseModelsItems4 is { } __value4)
             {
-                agentThinkModelsV1ResponseModelsItems4?.Invoke(AgentThinkModelsV1ResponseModelsItems4!);
+                agentThinkModelsV1ResponseModelsItems4?.Invoke(__value4);
             }
         }
 
@@ -454,25 +454,25 @@ namespace Deepgram
                 Validate();
             }
 
-            if (IsAgentThinkModelsV1ResponseModelsItems0)
+            if (AgentThinkModelsV1ResponseModelsItems0 is { } __value0)
             {
-                agentThinkModelsV1ResponseModelsItems0?.Invoke(AgentThinkModelsV1ResponseModelsItems0!);
+                agentThinkModelsV1ResponseModelsItems0?.Invoke(__value0);
             }
-            else if (IsAgentThinkModelsV1ResponseModelsItems1)
+            else if (AgentThinkModelsV1ResponseModelsItems1 is { } __value1)
             {
-                agentThinkModelsV1ResponseModelsItems1?.Invoke(AgentThinkModelsV1ResponseModelsItems1!);
+                agentThinkModelsV1ResponseModelsItems1?.Invoke(__value1);
             }
-            else if (IsAgentThinkModelsV1ResponseModelsItems2)
+            else if (AgentThinkModelsV1ResponseModelsItems2 is { } __value2)
             {
-                agentThinkModelsV1ResponseModelsItems2?.Invoke(AgentThinkModelsV1ResponseModelsItems2!);
+                agentThinkModelsV1ResponseModelsItems2?.Invoke(__value2);
             }
-            else if (IsAgentThinkModelsV1ResponseModelsItems3)
+            else if (AgentThinkModelsV1ResponseModelsItems3 is { } __value3)
             {
-                agentThinkModelsV1ResponseModelsItems3?.Invoke(AgentThinkModelsV1ResponseModelsItems3!);
+                agentThinkModelsV1ResponseModelsItems3?.Invoke(__value3);
             }
-            else if (IsAgentThinkModelsV1ResponseModelsItems4)
+            else if (AgentThinkModelsV1ResponseModelsItems4 is { } __value4)
             {
-                agentThinkModelsV1ResponseModelsItems4?.Invoke(AgentThinkModelsV1ResponseModelsItems4!);
+                agentThinkModelsV1ResponseModelsItems4?.Invoke(__value4);
             }
         }
 

@@ -42,8 +42,8 @@ namespace Deepgram
         /// <summary>
         ///
         /// </summary>
-        public string PickV1ListenPostParametersCustomTopicVariant1() => IsV1ListenPostParametersCustomTopicVariant1
-            ? V1ListenPostParametersCustomTopicVariant1!
+        public string PickV1ListenPostParametersCustomTopicVariant1() => V1ListenPostParametersCustomTopicVariant1 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'V1ListenPostParametersCustomTopicVariant1' but the value was {ToString()}.");
 
         /// <summary>
@@ -79,8 +79,8 @@ namespace Deepgram
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<string> PickV1ListenPostParametersCustomTopicVariant2() => IsV1ListenPostParametersCustomTopicVariant2
-            ? V1ListenPostParametersCustomTopicVariant2!
+        public global::System.Collections.Generic.IList<string> PickV1ListenPostParametersCustomTopicVariant2() => V1ListenPostParametersCustomTopicVariant2 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'V1ListenPostParametersCustomTopicVariant2' but the value was {ToString()}.");
         /// <summary>
         ///
@@ -154,13 +154,13 @@ namespace Deepgram
                 Validate();
             }
 
-            if (IsV1ListenPostParametersCustomTopicVariant1 && v1ListenPostParametersCustomTopicVariant1 != null)
+            if (V1ListenPostParametersCustomTopicVariant1 is { } __value0 && v1ListenPostParametersCustomTopicVariant1 != null)
             {
-                return v1ListenPostParametersCustomTopicVariant1(V1ListenPostParametersCustomTopicVariant1!);
+                return v1ListenPostParametersCustomTopicVariant1(__value0);
             }
-            else if (IsV1ListenPostParametersCustomTopicVariant2 && v1ListenPostParametersCustomTopicVariant2 != null)
+            else if (V1ListenPostParametersCustomTopicVariant2 is { } __value1 && v1ListenPostParametersCustomTopicVariant2 != null)
             {
-                return v1ListenPostParametersCustomTopicVariant2(V1ListenPostParametersCustomTopicVariant2!);
+                return v1ListenPostParametersCustomTopicVariant2(__value1);
             }
 
             return default(TResult);
@@ -180,13 +180,13 @@ namespace Deepgram
                 Validate();
             }
 
-            if (IsV1ListenPostParametersCustomTopicVariant1)
+            if (V1ListenPostParametersCustomTopicVariant1 is { } __value0)
             {
-                v1ListenPostParametersCustomTopicVariant1?.Invoke(V1ListenPostParametersCustomTopicVariant1!);
+                v1ListenPostParametersCustomTopicVariant1?.Invoke(__value0);
             }
-            else if (IsV1ListenPostParametersCustomTopicVariant2)
+            else if (V1ListenPostParametersCustomTopicVariant2 is { } __value1)
             {
-                v1ListenPostParametersCustomTopicVariant2?.Invoke(V1ListenPostParametersCustomTopicVariant2!);
+                v1ListenPostParametersCustomTopicVariant2?.Invoke(__value1);
             }
         }
 
@@ -203,13 +203,13 @@ namespace Deepgram
                 Validate();
             }
 
-            if (IsV1ListenPostParametersCustomTopicVariant1)
+            if (V1ListenPostParametersCustomTopicVariant1 is { } __value0)
             {
-                v1ListenPostParametersCustomTopicVariant1?.Invoke(V1ListenPostParametersCustomTopicVariant1!);
+                v1ListenPostParametersCustomTopicVariant1?.Invoke(__value0);
             }
-            else if (IsV1ListenPostParametersCustomTopicVariant2)
+            else if (V1ListenPostParametersCustomTopicVariant2 is { } __value1)
             {
-                v1ListenPostParametersCustomTopicVariant2?.Invoke(V1ListenPostParametersCustomTopicVariant2!);
+                v1ListenPostParametersCustomTopicVariant2?.Invoke(__value1);
             }
         }
 

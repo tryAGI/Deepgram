@@ -42,8 +42,8 @@ namespace Deepgram.Realtime
         /// <summary>
         ///
         /// </summary>
-        public byte[] PickSpeakV1SpeakV1Audio() => IsSpeakV1SpeakV1Audio
-            ? SpeakV1SpeakV1Audio!
+        public byte[] PickSpeakV1SpeakV1Audio() => SpeakV1SpeakV1Audio is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'SpeakV1SpeakV1Audio' but the value was {ToString()}.");
 
         /// <summary>
@@ -79,8 +79,8 @@ namespace Deepgram.Realtime
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.SpeakV1SpeakV1Metadata PickSpeakV1SpeakV1Metadata() => IsSpeakV1SpeakV1Metadata
-            ? SpeakV1SpeakV1Metadata!
+        public global::Deepgram.Realtime.SpeakV1SpeakV1Metadata PickSpeakV1SpeakV1Metadata() => SpeakV1SpeakV1Metadata is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'SpeakV1SpeakV1Metadata' but the value was {ToString()}.");
 
         /// <summary>
@@ -116,8 +116,8 @@ namespace Deepgram.Realtime
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.SpeakV1SpeakV1Flushed PickSpeakV1SpeakV1Flushed() => IsSpeakV1SpeakV1Flushed
-            ? SpeakV1SpeakV1Flushed!
+        public global::Deepgram.Realtime.SpeakV1SpeakV1Flushed PickSpeakV1SpeakV1Flushed() => SpeakV1SpeakV1Flushed is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'SpeakV1SpeakV1Flushed' but the value was {ToString()}.");
 
         /// <summary>
@@ -153,8 +153,8 @@ namespace Deepgram.Realtime
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.SpeakV1SpeakV1Cleared PickSpeakV1SpeakV1Cleared() => IsSpeakV1SpeakV1Cleared
-            ? SpeakV1SpeakV1Cleared!
+        public global::Deepgram.Realtime.SpeakV1SpeakV1Cleared PickSpeakV1SpeakV1Cleared() => SpeakV1SpeakV1Cleared is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'SpeakV1SpeakV1Cleared' but the value was {ToString()}.");
 
         /// <summary>
@@ -190,8 +190,8 @@ namespace Deepgram.Realtime
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.SpeakV1SpeakV1Warning PickSpeakV1SpeakV1Warning() => IsSpeakV1SpeakV1Warning
-            ? SpeakV1SpeakV1Warning!
+        public global::Deepgram.Realtime.SpeakV1SpeakV1Warning PickSpeakV1SpeakV1Warning() => SpeakV1SpeakV1Warning is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'SpeakV1SpeakV1Warning' but the value was {ToString()}.");
         /// <summary>
         ///
@@ -372,25 +372,25 @@ namespace Deepgram.Realtime
                 Validate();
             }
 
-            if (IsSpeakV1SpeakV1Audio && speakV1SpeakV1Audio != null)
+            if (SpeakV1SpeakV1Audio is { } __value0 && speakV1SpeakV1Audio != null)
             {
-                return speakV1SpeakV1Audio(SpeakV1SpeakV1Audio!);
+                return speakV1SpeakV1Audio(__value0);
             }
-            else if (IsSpeakV1SpeakV1Metadata && speakV1SpeakV1Metadata != null)
+            else if (SpeakV1SpeakV1Metadata is { } __value1 && speakV1SpeakV1Metadata != null)
             {
-                return speakV1SpeakV1Metadata(SpeakV1SpeakV1Metadata!);
+                return speakV1SpeakV1Metadata(__value1);
             }
-            else if (IsSpeakV1SpeakV1Flushed && speakV1SpeakV1Flushed != null)
+            else if (SpeakV1SpeakV1Flushed is { } __value2 && speakV1SpeakV1Flushed != null)
             {
-                return speakV1SpeakV1Flushed(SpeakV1SpeakV1Flushed!);
+                return speakV1SpeakV1Flushed(__value2);
             }
-            else if (IsSpeakV1SpeakV1Cleared && speakV1SpeakV1Cleared != null)
+            else if (SpeakV1SpeakV1Cleared is { } __value3 && speakV1SpeakV1Cleared != null)
             {
-                return speakV1SpeakV1Cleared(SpeakV1SpeakV1Cleared!);
+                return speakV1SpeakV1Cleared(__value3);
             }
-            else if (IsSpeakV1SpeakV1Warning && speakV1SpeakV1Warning != null)
+            else if (SpeakV1SpeakV1Warning is { } __value4 && speakV1SpeakV1Warning != null)
             {
-                return speakV1SpeakV1Warning(SpeakV1SpeakV1Warning!);
+                return speakV1SpeakV1Warning(__value4);
             }
 
             return default(TResult);
@@ -416,25 +416,25 @@ namespace Deepgram.Realtime
                 Validate();
             }
 
-            if (IsSpeakV1SpeakV1Audio)
+            if (SpeakV1SpeakV1Audio is { } __value0)
             {
-                speakV1SpeakV1Audio?.Invoke(SpeakV1SpeakV1Audio!);
+                speakV1SpeakV1Audio?.Invoke(__value0);
             }
-            else if (IsSpeakV1SpeakV1Metadata)
+            else if (SpeakV1SpeakV1Metadata is { } __value1)
             {
-                speakV1SpeakV1Metadata?.Invoke(SpeakV1SpeakV1Metadata!);
+                speakV1SpeakV1Metadata?.Invoke(__value1);
             }
-            else if (IsSpeakV1SpeakV1Flushed)
+            else if (SpeakV1SpeakV1Flushed is { } __value2)
             {
-                speakV1SpeakV1Flushed?.Invoke(SpeakV1SpeakV1Flushed!);
+                speakV1SpeakV1Flushed?.Invoke(__value2);
             }
-            else if (IsSpeakV1SpeakV1Cleared)
+            else if (SpeakV1SpeakV1Cleared is { } __value3)
             {
-                speakV1SpeakV1Cleared?.Invoke(SpeakV1SpeakV1Cleared!);
+                speakV1SpeakV1Cleared?.Invoke(__value3);
             }
-            else if (IsSpeakV1SpeakV1Warning)
+            else if (SpeakV1SpeakV1Warning is { } __value4)
             {
-                speakV1SpeakV1Warning?.Invoke(SpeakV1SpeakV1Warning!);
+                speakV1SpeakV1Warning?.Invoke(__value4);
             }
         }
 
@@ -454,25 +454,25 @@ namespace Deepgram.Realtime
                 Validate();
             }
 
-            if (IsSpeakV1SpeakV1Audio)
+            if (SpeakV1SpeakV1Audio is { } __value0)
             {
-                speakV1SpeakV1Audio?.Invoke(SpeakV1SpeakV1Audio!);
+                speakV1SpeakV1Audio?.Invoke(__value0);
             }
-            else if (IsSpeakV1SpeakV1Metadata)
+            else if (SpeakV1SpeakV1Metadata is { } __value1)
             {
-                speakV1SpeakV1Metadata?.Invoke(SpeakV1SpeakV1Metadata!);
+                speakV1SpeakV1Metadata?.Invoke(__value1);
             }
-            else if (IsSpeakV1SpeakV1Flushed)
+            else if (SpeakV1SpeakV1Flushed is { } __value2)
             {
-                speakV1SpeakV1Flushed?.Invoke(SpeakV1SpeakV1Flushed!);
+                speakV1SpeakV1Flushed?.Invoke(__value2);
             }
-            else if (IsSpeakV1SpeakV1Cleared)
+            else if (SpeakV1SpeakV1Cleared is { } __value3)
             {
-                speakV1SpeakV1Cleared?.Invoke(SpeakV1SpeakV1Cleared!);
+                speakV1SpeakV1Cleared?.Invoke(__value3);
             }
-            else if (IsSpeakV1SpeakV1Warning)
+            else if (SpeakV1SpeakV1Warning is { } __value4)
             {
-                speakV1SpeakV1Warning?.Invoke(SpeakV1SpeakV1Warning!);
+                speakV1SpeakV1Warning?.Invoke(__value4);
             }
         }
 

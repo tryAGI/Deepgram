@@ -140,13 +140,13 @@ namespace Deepgram.Realtime.JsonConverters
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Deepgram.Realtime.ThinkSettingsV1), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Deepgram.Realtime.ThinkSettingsV1?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Deepgram.Realtime.ThinkSettingsV1).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.ThinkSettingsV1!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickThinkSettingsV1(), typeInfo);
             }
             else if (value.IsChannelsAgentV1MessagesAgentV1UpdateThinkThink1)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::System.Collections.Generic.IList<global::Deepgram.Realtime.ThinkSettingsV1>), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::System.Collections.Generic.IList<global::Deepgram.Realtime.ThinkSettingsV1>?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::System.Collections.Generic.IList<global::Deepgram.Realtime.ThinkSettingsV1>).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.ChannelsAgentV1MessagesAgentV1UpdateThinkThink1!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickChannelsAgentV1MessagesAgentV1UpdateThinkThink1(), typeInfo);
             }
         }
     }

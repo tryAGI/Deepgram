@@ -42,8 +42,8 @@ namespace Deepgram
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.GetModelV1Response0 PickGetModelV1Response0() => IsGetModelV1Response0
-            ? GetModelV1Response0!
+        public global::Deepgram.GetModelV1Response0 PickGetModelV1Response0() => GetModelV1Response0 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'GetModelV1Response0' but the value was {ToString()}.");
 
         /// <summary>
@@ -79,8 +79,8 @@ namespace Deepgram
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.GetModelV1Response1 PickGetModelV1Response1() => IsGetModelV1Response1
-            ? GetModelV1Response1!
+        public global::Deepgram.GetModelV1Response1 PickGetModelV1Response1() => GetModelV1Response1 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'GetModelV1Response1' but the value was {ToString()}.");
         /// <summary>
         ///
@@ -177,13 +177,13 @@ namespace Deepgram
                 Validate();
             }
 
-            if (IsGetModelV1Response0 && getModelV1Response0 != null)
+            if (GetModelV1Response0 is { } __value0 && getModelV1Response0 != null)
             {
-                return getModelV1Response0(GetModelV1Response0!);
+                return getModelV1Response0(__value0);
             }
-            else if (IsGetModelV1Response1 && getModelV1Response1 != null)
+            else if (GetModelV1Response1 is { } __value1 && getModelV1Response1 != null)
             {
-                return getModelV1Response1(GetModelV1Response1!);
+                return getModelV1Response1(__value1);
             }
 
             return default(TResult);
@@ -203,13 +203,13 @@ namespace Deepgram
                 Validate();
             }
 
-            if (IsGetModelV1Response0)
+            if (GetModelV1Response0 is { } __value0)
             {
-                getModelV1Response0?.Invoke(GetModelV1Response0!);
+                getModelV1Response0?.Invoke(__value0);
             }
-            else if (IsGetModelV1Response1)
+            else if (GetModelV1Response1 is { } __value1)
             {
-                getModelV1Response1?.Invoke(GetModelV1Response1!);
+                getModelV1Response1?.Invoke(__value1);
             }
         }
 
@@ -226,13 +226,13 @@ namespace Deepgram
                 Validate();
             }
 
-            if (IsGetModelV1Response0)
+            if (GetModelV1Response0 is { } __value0)
             {
-                getModelV1Response0?.Invoke(GetModelV1Response0!);
+                getModelV1Response0?.Invoke(__value0);
             }
-            else if (IsGetModelV1Response1)
+            else if (GetModelV1Response1 is { } __value1)
             {
-                getModelV1Response1?.Invoke(GetModelV1Response1!);
+                getModelV1Response1?.Invoke(__value1);
             }
         }
 

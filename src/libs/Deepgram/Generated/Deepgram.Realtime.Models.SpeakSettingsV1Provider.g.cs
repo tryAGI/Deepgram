@@ -42,8 +42,8 @@ namespace Deepgram.Realtime
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.DeepgramSpeakProvider PickDeepgramSpeakProvider() => IsDeepgramSpeakProvider
-            ? DeepgramSpeakProvider!
+        public global::Deepgram.Realtime.DeepgramSpeakProvider PickDeepgramSpeakProvider() => DeepgramSpeakProvider is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'DeepgramSpeakProvider' but the value was {ToString()}.");
 
         /// <summary>
@@ -79,8 +79,8 @@ namespace Deepgram.Realtime
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.ElevenLabsSpeakProvider PickElevenLabsSpeakProvider() => IsElevenLabsSpeakProvider
-            ? ElevenLabsSpeakProvider!
+        public global::Deepgram.Realtime.ElevenLabsSpeakProvider PickElevenLabsSpeakProvider() => ElevenLabsSpeakProvider is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'ElevenLabsSpeakProvider' but the value was {ToString()}.");
 
         /// <summary>
@@ -116,8 +116,8 @@ namespace Deepgram.Realtime
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.CartesiaSpeakProvider PickCartesiaSpeakProvider() => IsCartesiaSpeakProvider
-            ? CartesiaSpeakProvider!
+        public global::Deepgram.Realtime.CartesiaSpeakProvider PickCartesiaSpeakProvider() => CartesiaSpeakProvider is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'CartesiaSpeakProvider' but the value was {ToString()}.");
 
         /// <summary>
@@ -153,8 +153,8 @@ namespace Deepgram.Realtime
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.OpenAiSpeakProvider PickOpenAiSpeakProvider() => IsOpenAiSpeakProvider
-            ? OpenAiSpeakProvider!
+        public global::Deepgram.Realtime.OpenAiSpeakProvider PickOpenAiSpeakProvider() => OpenAiSpeakProvider is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'OpenAiSpeakProvider' but the value was {ToString()}.");
 
         /// <summary>
@@ -190,8 +190,8 @@ namespace Deepgram.Realtime
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.AwsPollySpeakProvider PickAwsPollySpeakProvider() => IsAwsPollySpeakProvider
-            ? AwsPollySpeakProvider!
+        public global::Deepgram.Realtime.AwsPollySpeakProvider PickAwsPollySpeakProvider() => AwsPollySpeakProvider is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'AwsPollySpeakProvider' but the value was {ToString()}.");
         /// <summary>
         ///
@@ -372,25 +372,25 @@ namespace Deepgram.Realtime
                 Validate();
             }
 
-            if (IsDeepgramSpeakProvider && deepgramSpeakProvider != null)
+            if (DeepgramSpeakProvider is { } __value0 && deepgramSpeakProvider != null)
             {
-                return deepgramSpeakProvider(DeepgramSpeakProvider!);
+                return deepgramSpeakProvider(__value0);
             }
-            else if (IsElevenLabsSpeakProvider && elevenLabsSpeakProvider != null)
+            else if (ElevenLabsSpeakProvider is { } __value1 && elevenLabsSpeakProvider != null)
             {
-                return elevenLabsSpeakProvider(ElevenLabsSpeakProvider!);
+                return elevenLabsSpeakProvider(__value1);
             }
-            else if (IsCartesiaSpeakProvider && cartesiaSpeakProvider != null)
+            else if (CartesiaSpeakProvider is { } __value2 && cartesiaSpeakProvider != null)
             {
-                return cartesiaSpeakProvider(CartesiaSpeakProvider!);
+                return cartesiaSpeakProvider(__value2);
             }
-            else if (IsOpenAiSpeakProvider && openAiSpeakProvider != null)
+            else if (OpenAiSpeakProvider is { } __value3 && openAiSpeakProvider != null)
             {
-                return openAiSpeakProvider(OpenAiSpeakProvider!);
+                return openAiSpeakProvider(__value3);
             }
-            else if (IsAwsPollySpeakProvider && awsPollySpeakProvider != null)
+            else if (AwsPollySpeakProvider is { } __value4 && awsPollySpeakProvider != null)
             {
-                return awsPollySpeakProvider(AwsPollySpeakProvider!);
+                return awsPollySpeakProvider(__value4);
             }
 
             return default(TResult);
@@ -416,25 +416,25 @@ namespace Deepgram.Realtime
                 Validate();
             }
 
-            if (IsDeepgramSpeakProvider)
+            if (DeepgramSpeakProvider is { } __value0)
             {
-                deepgramSpeakProvider?.Invoke(DeepgramSpeakProvider!);
+                deepgramSpeakProvider?.Invoke(__value0);
             }
-            else if (IsElevenLabsSpeakProvider)
+            else if (ElevenLabsSpeakProvider is { } __value1)
             {
-                elevenLabsSpeakProvider?.Invoke(ElevenLabsSpeakProvider!);
+                elevenLabsSpeakProvider?.Invoke(__value1);
             }
-            else if (IsCartesiaSpeakProvider)
+            else if (CartesiaSpeakProvider is { } __value2)
             {
-                cartesiaSpeakProvider?.Invoke(CartesiaSpeakProvider!);
+                cartesiaSpeakProvider?.Invoke(__value2);
             }
-            else if (IsOpenAiSpeakProvider)
+            else if (OpenAiSpeakProvider is { } __value3)
             {
-                openAiSpeakProvider?.Invoke(OpenAiSpeakProvider!);
+                openAiSpeakProvider?.Invoke(__value3);
             }
-            else if (IsAwsPollySpeakProvider)
+            else if (AwsPollySpeakProvider is { } __value4)
             {
-                awsPollySpeakProvider?.Invoke(AwsPollySpeakProvider!);
+                awsPollySpeakProvider?.Invoke(__value4);
             }
         }
 
@@ -454,25 +454,25 @@ namespace Deepgram.Realtime
                 Validate();
             }
 
-            if (IsDeepgramSpeakProvider)
+            if (DeepgramSpeakProvider is { } __value0)
             {
-                deepgramSpeakProvider?.Invoke(DeepgramSpeakProvider!);
+                deepgramSpeakProvider?.Invoke(__value0);
             }
-            else if (IsElevenLabsSpeakProvider)
+            else if (ElevenLabsSpeakProvider is { } __value1)
             {
-                elevenLabsSpeakProvider?.Invoke(ElevenLabsSpeakProvider!);
+                elevenLabsSpeakProvider?.Invoke(__value1);
             }
-            else if (IsCartesiaSpeakProvider)
+            else if (CartesiaSpeakProvider is { } __value2)
             {
-                cartesiaSpeakProvider?.Invoke(CartesiaSpeakProvider!);
+                cartesiaSpeakProvider?.Invoke(__value2);
             }
-            else if (IsOpenAiSpeakProvider)
+            else if (OpenAiSpeakProvider is { } __value3)
             {
-                openAiSpeakProvider?.Invoke(OpenAiSpeakProvider!);
+                openAiSpeakProvider?.Invoke(__value3);
             }
-            else if (IsAwsPollySpeakProvider)
+            else if (AwsPollySpeakProvider is { } __value4)
             {
-                awsPollySpeakProvider?.Invoke(AwsPollySpeakProvider!);
+                awsPollySpeakProvider?.Invoke(__value4);
             }
         }
 

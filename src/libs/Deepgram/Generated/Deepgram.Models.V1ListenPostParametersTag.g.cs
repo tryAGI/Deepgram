@@ -42,8 +42,8 @@ namespace Deepgram
         /// <summary>
         ///
         /// </summary>
-        public string PickV1ListenPostParametersTagVariant1() => IsV1ListenPostParametersTagVariant1
-            ? V1ListenPostParametersTagVariant1!
+        public string PickV1ListenPostParametersTagVariant1() => V1ListenPostParametersTagVariant1 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'V1ListenPostParametersTagVariant1' but the value was {ToString()}.");
 
         /// <summary>
@@ -79,8 +79,8 @@ namespace Deepgram
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<string> PickV1ListenPostParametersTagVariant2() => IsV1ListenPostParametersTagVariant2
-            ? V1ListenPostParametersTagVariant2!
+        public global::System.Collections.Generic.IList<string> PickV1ListenPostParametersTagVariant2() => V1ListenPostParametersTagVariant2 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'V1ListenPostParametersTagVariant2' but the value was {ToString()}.");
         /// <summary>
         ///
@@ -154,13 +154,13 @@ namespace Deepgram
                 Validate();
             }
 
-            if (IsV1ListenPostParametersTagVariant1 && v1ListenPostParametersTagVariant1 != null)
+            if (V1ListenPostParametersTagVariant1 is { } __value0 && v1ListenPostParametersTagVariant1 != null)
             {
-                return v1ListenPostParametersTagVariant1(V1ListenPostParametersTagVariant1!);
+                return v1ListenPostParametersTagVariant1(__value0);
             }
-            else if (IsV1ListenPostParametersTagVariant2 && v1ListenPostParametersTagVariant2 != null)
+            else if (V1ListenPostParametersTagVariant2 is { } __value1 && v1ListenPostParametersTagVariant2 != null)
             {
-                return v1ListenPostParametersTagVariant2(V1ListenPostParametersTagVariant2!);
+                return v1ListenPostParametersTagVariant2(__value1);
             }
 
             return default(TResult);
@@ -180,13 +180,13 @@ namespace Deepgram
                 Validate();
             }
 
-            if (IsV1ListenPostParametersTagVariant1)
+            if (V1ListenPostParametersTagVariant1 is { } __value0)
             {
-                v1ListenPostParametersTagVariant1?.Invoke(V1ListenPostParametersTagVariant1!);
+                v1ListenPostParametersTagVariant1?.Invoke(__value0);
             }
-            else if (IsV1ListenPostParametersTagVariant2)
+            else if (V1ListenPostParametersTagVariant2 is { } __value1)
             {
-                v1ListenPostParametersTagVariant2?.Invoke(V1ListenPostParametersTagVariant2!);
+                v1ListenPostParametersTagVariant2?.Invoke(__value1);
             }
         }
 
@@ -203,13 +203,13 @@ namespace Deepgram
                 Validate();
             }
 
-            if (IsV1ListenPostParametersTagVariant1)
+            if (V1ListenPostParametersTagVariant1 is { } __value0)
             {
-                v1ListenPostParametersTagVariant1?.Invoke(V1ListenPostParametersTagVariant1!);
+                v1ListenPostParametersTagVariant1?.Invoke(__value0);
             }
-            else if (IsV1ListenPostParametersTagVariant2)
+            else if (V1ListenPostParametersTagVariant2 is { } __value1)
             {
-                v1ListenPostParametersTagVariant2?.Invoke(V1ListenPostParametersTagVariant2!);
+                v1ListenPostParametersTagVariant2?.Invoke(__value1);
             }
         }
 

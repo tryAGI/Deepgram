@@ -271,31 +271,31 @@ namespace Deepgram.Realtime.JsonConverters
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Deepgram.Realtime.OpenAiThinkProvider), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Deepgram.Realtime.OpenAiThinkProvider?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Deepgram.Realtime.OpenAiThinkProvider).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.OpenAiThinkProvider!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickOpenAiThinkProvider(), typeInfo);
             }
             else if (value.IsAwsBedrockThinkProvider)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Deepgram.Realtime.AwsBedrockThinkProvider), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Deepgram.Realtime.AwsBedrockThinkProvider?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Deepgram.Realtime.AwsBedrockThinkProvider).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.AwsBedrockThinkProvider!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickAwsBedrockThinkProvider(), typeInfo);
             }
             else if (value.IsAnthropicThinkProvider)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Deepgram.Realtime.AnthropicThinkProvider), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Deepgram.Realtime.AnthropicThinkProvider?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Deepgram.Realtime.AnthropicThinkProvider).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.AnthropicThinkProvider!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickAnthropicThinkProvider(), typeInfo);
             }
             else if (value.IsGoogleThinkProvider)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Deepgram.Realtime.GoogleThinkProvider), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Deepgram.Realtime.GoogleThinkProvider?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Deepgram.Realtime.GoogleThinkProvider).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.GoogleThinkProvider!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickGoogleThinkProvider(), typeInfo);
             }
             else if (value.IsGroqThinkProvider)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Deepgram.Realtime.GroqThinkProvider), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Deepgram.Realtime.GroqThinkProvider?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Deepgram.Realtime.GroqThinkProvider).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.GroqThinkProvider!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickGroqThinkProvider(), typeInfo);
             }
         }
     }

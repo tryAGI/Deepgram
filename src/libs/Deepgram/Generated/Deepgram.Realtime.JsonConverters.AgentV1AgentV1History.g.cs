@@ -131,13 +131,13 @@ namespace Deepgram.Realtime.JsonConverters
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Deepgram.Realtime.AgentV1AgentV1History0), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Deepgram.Realtime.AgentV1AgentV1History0?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Deepgram.Realtime.AgentV1AgentV1History0).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.AgentV1AgentV1History0!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickAgentV1AgentV1History0(), typeInfo);
             }
             else if (value.IsAgentV1AgentV1History1)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Deepgram.Realtime.AgentV1AgentV1History1), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Deepgram.Realtime.AgentV1AgentV1History1?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Deepgram.Realtime.AgentV1AgentV1History1).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.AgentV1AgentV1History1!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickAgentV1AgentV1History1(), typeInfo);
             }
         }
     }

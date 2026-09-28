@@ -42,8 +42,8 @@ namespace Deepgram
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.V1SpeakPostParametersContainer0 PickV1SpeakPostParametersContainer0() => IsV1SpeakPostParametersContainer0
-            ? V1SpeakPostParametersContainer0!.Value
+        public global::Deepgram.V1SpeakPostParametersContainer0 PickV1SpeakPostParametersContainer0() => V1SpeakPostParametersContainer0 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'V1SpeakPostParametersContainer0' but the value was {ToString()}.");
 
         /// <summary>
@@ -79,8 +79,8 @@ namespace Deepgram
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.V1SpeakPostParametersContainer1 PickV1SpeakPostParametersContainer1() => IsV1SpeakPostParametersContainer1
-            ? V1SpeakPostParametersContainer1!.Value
+        public global::Deepgram.V1SpeakPostParametersContainer1 PickV1SpeakPostParametersContainer1() => V1SpeakPostParametersContainer1 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'V1SpeakPostParametersContainer1' but the value was {ToString()}.");
 
         /// <summary>
@@ -116,8 +116,8 @@ namespace Deepgram
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.V1SpeakPostParametersContainer2 PickV1SpeakPostParametersContainer2() => IsV1SpeakPostParametersContainer2
-            ? V1SpeakPostParametersContainer2!.Value
+        public global::Deepgram.V1SpeakPostParametersContainer2 PickV1SpeakPostParametersContainer2() => V1SpeakPostParametersContainer2 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'V1SpeakPostParametersContainer2' but the value was {ToString()}.");
 
         /// <summary>
@@ -153,8 +153,8 @@ namespace Deepgram
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.V1SpeakPostParametersContainer3 PickV1SpeakPostParametersContainer3() => IsV1SpeakPostParametersContainer3
-            ? V1SpeakPostParametersContainer3!.Value
+        public global::Deepgram.V1SpeakPostParametersContainer3 PickV1SpeakPostParametersContainer3() => V1SpeakPostParametersContainer3 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'V1SpeakPostParametersContainer3' but the value was {ToString()}.");
 
         /// <summary>
@@ -190,8 +190,8 @@ namespace Deepgram
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.V1SpeakPostParametersContainer4 PickV1SpeakPostParametersContainer4() => IsV1SpeakPostParametersContainer4
-            ? V1SpeakPostParametersContainer4!.Value
+        public global::Deepgram.V1SpeakPostParametersContainer4 PickV1SpeakPostParametersContainer4() => V1SpeakPostParametersContainer4 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'V1SpeakPostParametersContainer4' but the value was {ToString()}.");
         /// <summary>
         ///
@@ -372,25 +372,25 @@ namespace Deepgram
                 Validate();
             }
 
-            if (IsV1SpeakPostParametersContainer0 && v1SpeakPostParametersContainer0 != null)
+            if (V1SpeakPostParametersContainer0 is { } __value0 && v1SpeakPostParametersContainer0 != null)
             {
-                return v1SpeakPostParametersContainer0(V1SpeakPostParametersContainer0!);
+                return v1SpeakPostParametersContainer0(__value0);
             }
-            else if (IsV1SpeakPostParametersContainer1 && v1SpeakPostParametersContainer1 != null)
+            else if (V1SpeakPostParametersContainer1 is { } __value1 && v1SpeakPostParametersContainer1 != null)
             {
-                return v1SpeakPostParametersContainer1(V1SpeakPostParametersContainer1!);
+                return v1SpeakPostParametersContainer1(__value1);
             }
-            else if (IsV1SpeakPostParametersContainer2 && v1SpeakPostParametersContainer2 != null)
+            else if (V1SpeakPostParametersContainer2 is { } __value2 && v1SpeakPostParametersContainer2 != null)
             {
-                return v1SpeakPostParametersContainer2(V1SpeakPostParametersContainer2!);
+                return v1SpeakPostParametersContainer2(__value2);
             }
-            else if (IsV1SpeakPostParametersContainer3 && v1SpeakPostParametersContainer3 != null)
+            else if (V1SpeakPostParametersContainer3 is { } __value3 && v1SpeakPostParametersContainer3 != null)
             {
-                return v1SpeakPostParametersContainer3(V1SpeakPostParametersContainer3!);
+                return v1SpeakPostParametersContainer3(__value3);
             }
-            else if (IsV1SpeakPostParametersContainer4 && v1SpeakPostParametersContainer4 != null)
+            else if (V1SpeakPostParametersContainer4 is { } __value4 && v1SpeakPostParametersContainer4 != null)
             {
-                return v1SpeakPostParametersContainer4(V1SpeakPostParametersContainer4!);
+                return v1SpeakPostParametersContainer4(__value4);
             }
 
             return default(TResult);
@@ -416,25 +416,25 @@ namespace Deepgram
                 Validate();
             }
 
-            if (IsV1SpeakPostParametersContainer0)
+            if (V1SpeakPostParametersContainer0 is { } __value0)
             {
-                v1SpeakPostParametersContainer0?.Invoke(V1SpeakPostParametersContainer0!);
+                v1SpeakPostParametersContainer0?.Invoke(__value0);
             }
-            else if (IsV1SpeakPostParametersContainer1)
+            else if (V1SpeakPostParametersContainer1 is { } __value1)
             {
-                v1SpeakPostParametersContainer1?.Invoke(V1SpeakPostParametersContainer1!);
+                v1SpeakPostParametersContainer1?.Invoke(__value1);
             }
-            else if (IsV1SpeakPostParametersContainer2)
+            else if (V1SpeakPostParametersContainer2 is { } __value2)
             {
-                v1SpeakPostParametersContainer2?.Invoke(V1SpeakPostParametersContainer2!);
+                v1SpeakPostParametersContainer2?.Invoke(__value2);
             }
-            else if (IsV1SpeakPostParametersContainer3)
+            else if (V1SpeakPostParametersContainer3 is { } __value3)
             {
-                v1SpeakPostParametersContainer3?.Invoke(V1SpeakPostParametersContainer3!);
+                v1SpeakPostParametersContainer3?.Invoke(__value3);
             }
-            else if (IsV1SpeakPostParametersContainer4)
+            else if (V1SpeakPostParametersContainer4 is { } __value4)
             {
-                v1SpeakPostParametersContainer4?.Invoke(V1SpeakPostParametersContainer4!);
+                v1SpeakPostParametersContainer4?.Invoke(__value4);
             }
         }
 
@@ -454,25 +454,25 @@ namespace Deepgram
                 Validate();
             }
 
-            if (IsV1SpeakPostParametersContainer0)
+            if (V1SpeakPostParametersContainer0 is { } __value0)
             {
-                v1SpeakPostParametersContainer0?.Invoke(V1SpeakPostParametersContainer0!);
+                v1SpeakPostParametersContainer0?.Invoke(__value0);
             }
-            else if (IsV1SpeakPostParametersContainer1)
+            else if (V1SpeakPostParametersContainer1 is { } __value1)
             {
-                v1SpeakPostParametersContainer1?.Invoke(V1SpeakPostParametersContainer1!);
+                v1SpeakPostParametersContainer1?.Invoke(__value1);
             }
-            else if (IsV1SpeakPostParametersContainer2)
+            else if (V1SpeakPostParametersContainer2 is { } __value2)
             {
-                v1SpeakPostParametersContainer2?.Invoke(V1SpeakPostParametersContainer2!);
+                v1SpeakPostParametersContainer2?.Invoke(__value2);
             }
-            else if (IsV1SpeakPostParametersContainer3)
+            else if (V1SpeakPostParametersContainer3 is { } __value3)
             {
-                v1SpeakPostParametersContainer3?.Invoke(V1SpeakPostParametersContainer3!);
+                v1SpeakPostParametersContainer3?.Invoke(__value3);
             }
-            else if (IsV1SpeakPostParametersContainer4)
+            else if (V1SpeakPostParametersContainer4 is { } __value4)
             {
-                v1SpeakPostParametersContainer4?.Invoke(V1SpeakPostParametersContainer4!);
+                v1SpeakPostParametersContainer4?.Invoke(__value4);
             }
         }
 

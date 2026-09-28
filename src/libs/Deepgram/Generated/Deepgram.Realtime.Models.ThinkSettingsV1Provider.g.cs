@@ -42,8 +42,8 @@ namespace Deepgram.Realtime
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.OpenAiThinkProvider PickOpenAiThinkProvider() => IsOpenAiThinkProvider
-            ? OpenAiThinkProvider!
+        public global::Deepgram.Realtime.OpenAiThinkProvider PickOpenAiThinkProvider() => OpenAiThinkProvider is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'OpenAiThinkProvider' but the value was {ToString()}.");
 
         /// <summary>
@@ -79,8 +79,8 @@ namespace Deepgram.Realtime
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.AwsBedrockThinkProvider PickAwsBedrockThinkProvider() => IsAwsBedrockThinkProvider
-            ? AwsBedrockThinkProvider!
+        public global::Deepgram.Realtime.AwsBedrockThinkProvider PickAwsBedrockThinkProvider() => AwsBedrockThinkProvider is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'AwsBedrockThinkProvider' but the value was {ToString()}.");
 
         /// <summary>
@@ -116,8 +116,8 @@ namespace Deepgram.Realtime
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.AnthropicThinkProvider PickAnthropicThinkProvider() => IsAnthropicThinkProvider
-            ? AnthropicThinkProvider!
+        public global::Deepgram.Realtime.AnthropicThinkProvider PickAnthropicThinkProvider() => AnthropicThinkProvider is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'AnthropicThinkProvider' but the value was {ToString()}.");
 
         /// <summary>
@@ -153,8 +153,8 @@ namespace Deepgram.Realtime
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.GoogleThinkProvider PickGoogleThinkProvider() => IsGoogleThinkProvider
-            ? GoogleThinkProvider!
+        public global::Deepgram.Realtime.GoogleThinkProvider PickGoogleThinkProvider() => GoogleThinkProvider is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'GoogleThinkProvider' but the value was {ToString()}.");
 
         /// <summary>
@@ -190,8 +190,8 @@ namespace Deepgram.Realtime
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.GroqThinkProvider PickGroqThinkProvider() => IsGroqThinkProvider
-            ? GroqThinkProvider!
+        public global::Deepgram.Realtime.GroqThinkProvider PickGroqThinkProvider() => GroqThinkProvider is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'GroqThinkProvider' but the value was {ToString()}.");
         /// <summary>
         ///
@@ -372,25 +372,25 @@ namespace Deepgram.Realtime
                 Validate();
             }
 
-            if (IsOpenAiThinkProvider && openAiThinkProvider != null)
+            if (OpenAiThinkProvider is { } __value0 && openAiThinkProvider != null)
             {
-                return openAiThinkProvider(OpenAiThinkProvider!);
+                return openAiThinkProvider(__value0);
             }
-            else if (IsAwsBedrockThinkProvider && awsBedrockThinkProvider != null)
+            else if (AwsBedrockThinkProvider is { } __value1 && awsBedrockThinkProvider != null)
             {
-                return awsBedrockThinkProvider(AwsBedrockThinkProvider!);
+                return awsBedrockThinkProvider(__value1);
             }
-            else if (IsAnthropicThinkProvider && anthropicThinkProvider != null)
+            else if (AnthropicThinkProvider is { } __value2 && anthropicThinkProvider != null)
             {
-                return anthropicThinkProvider(AnthropicThinkProvider!);
+                return anthropicThinkProvider(__value2);
             }
-            else if (IsGoogleThinkProvider && googleThinkProvider != null)
+            else if (GoogleThinkProvider is { } __value3 && googleThinkProvider != null)
             {
-                return googleThinkProvider(GoogleThinkProvider!);
+                return googleThinkProvider(__value3);
             }
-            else if (IsGroqThinkProvider && groqThinkProvider != null)
+            else if (GroqThinkProvider is { } __value4 && groqThinkProvider != null)
             {
-                return groqThinkProvider(GroqThinkProvider!);
+                return groqThinkProvider(__value4);
             }
 
             return default(TResult);
@@ -416,25 +416,25 @@ namespace Deepgram.Realtime
                 Validate();
             }
 
-            if (IsOpenAiThinkProvider)
+            if (OpenAiThinkProvider is { } __value0)
             {
-                openAiThinkProvider?.Invoke(OpenAiThinkProvider!);
+                openAiThinkProvider?.Invoke(__value0);
             }
-            else if (IsAwsBedrockThinkProvider)
+            else if (AwsBedrockThinkProvider is { } __value1)
             {
-                awsBedrockThinkProvider?.Invoke(AwsBedrockThinkProvider!);
+                awsBedrockThinkProvider?.Invoke(__value1);
             }
-            else if (IsAnthropicThinkProvider)
+            else if (AnthropicThinkProvider is { } __value2)
             {
-                anthropicThinkProvider?.Invoke(AnthropicThinkProvider!);
+                anthropicThinkProvider?.Invoke(__value2);
             }
-            else if (IsGoogleThinkProvider)
+            else if (GoogleThinkProvider is { } __value3)
             {
-                googleThinkProvider?.Invoke(GoogleThinkProvider!);
+                googleThinkProvider?.Invoke(__value3);
             }
-            else if (IsGroqThinkProvider)
+            else if (GroqThinkProvider is { } __value4)
             {
-                groqThinkProvider?.Invoke(GroqThinkProvider!);
+                groqThinkProvider?.Invoke(__value4);
             }
         }
 
@@ -454,25 +454,25 @@ namespace Deepgram.Realtime
                 Validate();
             }
 
-            if (IsOpenAiThinkProvider)
+            if (OpenAiThinkProvider is { } __value0)
             {
-                openAiThinkProvider?.Invoke(OpenAiThinkProvider!);
+                openAiThinkProvider?.Invoke(__value0);
             }
-            else if (IsAwsBedrockThinkProvider)
+            else if (AwsBedrockThinkProvider is { } __value1)
             {
-                awsBedrockThinkProvider?.Invoke(AwsBedrockThinkProvider!);
+                awsBedrockThinkProvider?.Invoke(__value1);
             }
-            else if (IsAnthropicThinkProvider)
+            else if (AnthropicThinkProvider is { } __value2)
             {
-                anthropicThinkProvider?.Invoke(AnthropicThinkProvider!);
+                anthropicThinkProvider?.Invoke(__value2);
             }
-            else if (IsGoogleThinkProvider)
+            else if (GoogleThinkProvider is { } __value3)
             {
-                googleThinkProvider?.Invoke(GoogleThinkProvider!);
+                googleThinkProvider?.Invoke(__value3);
             }
-            else if (IsGroqThinkProvider)
+            else if (GroqThinkProvider is { } __value4)
             {
-                groqThinkProvider?.Invoke(GroqThinkProvider!);
+                groqThinkProvider?.Invoke(__value4);
             }
         }
 

@@ -42,8 +42,8 @@ namespace Deepgram.Realtime
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.DeepgramListenProviderV1 PickDeepgramListenProviderV1() => IsDeepgramListenProviderV1
-            ? DeepgramListenProviderV1!
+        public global::Deepgram.Realtime.DeepgramListenProviderV1 PickDeepgramListenProviderV1() => DeepgramListenProviderV1 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'DeepgramListenProviderV1' but the value was {ToString()}.");
 
         /// <summary>
@@ -79,8 +79,8 @@ namespace Deepgram.Realtime
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.DeepgramListenProviderV2 PickDeepgramListenProviderV2() => IsDeepgramListenProviderV2
-            ? DeepgramListenProviderV2!
+        public global::Deepgram.Realtime.DeepgramListenProviderV2 PickDeepgramListenProviderV2() => DeepgramListenProviderV2 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'DeepgramListenProviderV2' but the value was {ToString()}.");
         /// <summary>
         ///
@@ -177,13 +177,13 @@ namespace Deepgram.Realtime
                 Validate();
             }
 
-            if (IsDeepgramListenProviderV1 && deepgramListenProviderV1 != null)
+            if (DeepgramListenProviderV1 is { } __value0 && deepgramListenProviderV1 != null)
             {
-                return deepgramListenProviderV1(DeepgramListenProviderV1!);
+                return deepgramListenProviderV1(__value0);
             }
-            else if (IsDeepgramListenProviderV2 && deepgramListenProviderV2 != null)
+            else if (DeepgramListenProviderV2 is { } __value1 && deepgramListenProviderV2 != null)
             {
-                return deepgramListenProviderV2(DeepgramListenProviderV2!);
+                return deepgramListenProviderV2(__value1);
             }
 
             return default(TResult);
@@ -203,13 +203,13 @@ namespace Deepgram.Realtime
                 Validate();
             }
 
-            if (IsDeepgramListenProviderV1)
+            if (DeepgramListenProviderV1 is { } __value0)
             {
-                deepgramListenProviderV1?.Invoke(DeepgramListenProviderV1!);
+                deepgramListenProviderV1?.Invoke(__value0);
             }
-            else if (IsDeepgramListenProviderV2)
+            else if (DeepgramListenProviderV2 is { } __value1)
             {
-                deepgramListenProviderV2?.Invoke(DeepgramListenProviderV2!);
+                deepgramListenProviderV2?.Invoke(__value1);
             }
         }
 
@@ -226,13 +226,13 @@ namespace Deepgram.Realtime
                 Validate();
             }
 
-            if (IsDeepgramListenProviderV1)
+            if (DeepgramListenProviderV1 is { } __value0)
             {
-                deepgramListenProviderV1?.Invoke(DeepgramListenProviderV1!);
+                deepgramListenProviderV1?.Invoke(__value0);
             }
-            else if (IsDeepgramListenProviderV2)
+            else if (DeepgramListenProviderV2 is { } __value1)
             {
-                deepgramListenProviderV2?.Invoke(DeepgramListenProviderV2!);
+                deepgramListenProviderV2?.Invoke(__value1);
             }
         }
 

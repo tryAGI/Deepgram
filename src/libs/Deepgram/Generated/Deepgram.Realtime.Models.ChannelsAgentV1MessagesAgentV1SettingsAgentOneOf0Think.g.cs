@@ -42,8 +42,8 @@ namespace Deepgram.Realtime
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.ThinkSettingsV1 PickThinkSettingsV1() => IsThinkSettingsV1
-            ? ThinkSettingsV1!
+        public global::Deepgram.Realtime.ThinkSettingsV1 PickThinkSettingsV1() => ThinkSettingsV1 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'ThinkSettingsV1' but the value was {ToString()}.");
 
         /// <summary>
@@ -79,8 +79,8 @@ namespace Deepgram.Realtime
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Deepgram.Realtime.ThinkSettingsV1> PickChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0Think1() => IsChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0Think1
-            ? ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0Think1!
+        public global::System.Collections.Generic.IList<global::Deepgram.Realtime.ThinkSettingsV1> PickChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0Think1() => ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0Think1 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0Think1' but the value was {ToString()}.");
         /// <summary>
         ///
@@ -154,13 +154,13 @@ namespace Deepgram.Realtime
                 Validate();
             }
 
-            if (IsThinkSettingsV1 && thinkSettingsV1 != null)
+            if (ThinkSettingsV1 is { } __value0 && thinkSettingsV1 != null)
             {
-                return thinkSettingsV1(ThinkSettingsV1!);
+                return thinkSettingsV1(__value0);
             }
-            else if (IsChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0Think1 && channelsAgentV1MessagesAgentV1SettingsAgentOneOf0Think1 != null)
+            else if (ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0Think1 is { } __value1 && channelsAgentV1MessagesAgentV1SettingsAgentOneOf0Think1 != null)
             {
-                return channelsAgentV1MessagesAgentV1SettingsAgentOneOf0Think1(ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0Think1!);
+                return channelsAgentV1MessagesAgentV1SettingsAgentOneOf0Think1(__value1);
             }
 
             return default(TResult);
@@ -180,13 +180,13 @@ namespace Deepgram.Realtime
                 Validate();
             }
 
-            if (IsThinkSettingsV1)
+            if (ThinkSettingsV1 is { } __value0)
             {
-                thinkSettingsV1?.Invoke(ThinkSettingsV1!);
+                thinkSettingsV1?.Invoke(__value0);
             }
-            else if (IsChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0Think1)
+            else if (ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0Think1 is { } __value1)
             {
-                channelsAgentV1MessagesAgentV1SettingsAgentOneOf0Think1?.Invoke(ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0Think1!);
+                channelsAgentV1MessagesAgentV1SettingsAgentOneOf0Think1?.Invoke(__value1);
             }
         }
 
@@ -203,13 +203,13 @@ namespace Deepgram.Realtime
                 Validate();
             }
 
-            if (IsThinkSettingsV1)
+            if (ThinkSettingsV1 is { } __value0)
             {
-                thinkSettingsV1?.Invoke(ThinkSettingsV1!);
+                thinkSettingsV1?.Invoke(__value0);
             }
-            else if (IsChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0Think1)
+            else if (ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0Think1 is { } __value1)
             {
-                channelsAgentV1MessagesAgentV1SettingsAgentOneOf0Think1?.Invoke(ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0Think1!);
+                channelsAgentV1MessagesAgentV1SettingsAgentOneOf0Think1?.Invoke(__value1);
             }
         }
 

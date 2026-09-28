@@ -45,8 +45,8 @@ namespace Deepgram.Realtime
         /// <summary>
         ///
         /// </summary>
-        public string PickListenV2LanguageHintVariant1() => IsListenV2LanguageHintVariant1
-            ? ListenV2LanguageHintVariant1!
+        public string PickListenV2LanguageHintVariant1() => ListenV2LanguageHintVariant1 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'ListenV2LanguageHintVariant1' but the value was {ToString()}.");
 
         /// <summary>
@@ -82,8 +82,8 @@ namespace Deepgram.Realtime
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<string> PickListenV2LanguageHintVariant2() => IsListenV2LanguageHintVariant2
-            ? ListenV2LanguageHintVariant2!
+        public global::System.Collections.Generic.IList<string> PickListenV2LanguageHintVariant2() => ListenV2LanguageHintVariant2 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'ListenV2LanguageHintVariant2' but the value was {ToString()}.");
         /// <summary>
         ///
@@ -157,13 +157,13 @@ namespace Deepgram.Realtime
                 Validate();
             }
 
-            if (IsListenV2LanguageHintVariant1 && listenV2LanguageHintVariant1 != null)
+            if (ListenV2LanguageHintVariant1 is { } __value0 && listenV2LanguageHintVariant1 != null)
             {
-                return listenV2LanguageHintVariant1(ListenV2LanguageHintVariant1!);
+                return listenV2LanguageHintVariant1(__value0);
             }
-            else if (IsListenV2LanguageHintVariant2 && listenV2LanguageHintVariant2 != null)
+            else if (ListenV2LanguageHintVariant2 is { } __value1 && listenV2LanguageHintVariant2 != null)
             {
-                return listenV2LanguageHintVariant2(ListenV2LanguageHintVariant2!);
+                return listenV2LanguageHintVariant2(__value1);
             }
 
             return default(TResult);
@@ -183,13 +183,13 @@ namespace Deepgram.Realtime
                 Validate();
             }
 
-            if (IsListenV2LanguageHintVariant1)
+            if (ListenV2LanguageHintVariant1 is { } __value0)
             {
-                listenV2LanguageHintVariant1?.Invoke(ListenV2LanguageHintVariant1!);
+                listenV2LanguageHintVariant1?.Invoke(__value0);
             }
-            else if (IsListenV2LanguageHintVariant2)
+            else if (ListenV2LanguageHintVariant2 is { } __value1)
             {
-                listenV2LanguageHintVariant2?.Invoke(ListenV2LanguageHintVariant2!);
+                listenV2LanguageHintVariant2?.Invoke(__value1);
             }
         }
 
@@ -206,13 +206,13 @@ namespace Deepgram.Realtime
                 Validate();
             }
 
-            if (IsListenV2LanguageHintVariant1)
+            if (ListenV2LanguageHintVariant1 is { } __value0)
             {
-                listenV2LanguageHintVariant1?.Invoke(ListenV2LanguageHintVariant1!);
+                listenV2LanguageHintVariant1?.Invoke(__value0);
             }
-            else if (IsListenV2LanguageHintVariant2)
+            else if (ListenV2LanguageHintVariant2 is { } __value1)
             {
-                listenV2LanguageHintVariant2?.Invoke(ListenV2LanguageHintVariant2!);
+                listenV2LanguageHintVariant2?.Invoke(__value1);
             }
         }
 

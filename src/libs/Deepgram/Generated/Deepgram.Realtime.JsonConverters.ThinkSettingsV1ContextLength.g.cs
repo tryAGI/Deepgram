@@ -149,13 +149,13 @@ namespace Deepgram.Realtime.JsonConverters
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Deepgram.Realtime.ThinkSettingsV1ContextLength0), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Deepgram.Realtime.ThinkSettingsV1ContextLength0> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Deepgram.Realtime.ThinkSettingsV1ContextLength0).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.ThinkSettingsV1ContextLength0!.Value, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickThinkSettingsV1ContextLength0(), typeInfo);
             }
             else if (value.IsThinkSettingsV1ContextLengthVariant2)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(double), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<double> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(double).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.ThinkSettingsV1ContextLengthVariant2!.Value, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickThinkSettingsV1ContextLengthVariant2(), typeInfo);
             }
         }
     }

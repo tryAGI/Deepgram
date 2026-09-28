@@ -42,8 +42,8 @@ namespace Deepgram
         /// <summary>
         ///
         /// </summary>
-        public object PickCreateKeyV1RequestVariant1() => IsCreateKeyV1RequestVariant1
-            ? CreateKeyV1RequestVariant1!
+        public object PickCreateKeyV1RequestVariant1() => CreateKeyV1RequestVariant1 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'CreateKeyV1RequestVariant1' but the value was {ToString()}.");
 
         /// <summary>
@@ -79,8 +79,8 @@ namespace Deepgram
         /// <summary>
         ///
         /// </summary>
-        public object PickCreateKeyV1RequestVariant2() => IsCreateKeyV1RequestVariant2
-            ? CreateKeyV1RequestVariant2!
+        public object PickCreateKeyV1RequestVariant2() => CreateKeyV1RequestVariant2 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'CreateKeyV1RequestVariant2' but the value was {ToString()}.");
 
         /// <summary>
@@ -132,13 +132,13 @@ namespace Deepgram
                 Validate();
             }
 
-            if (IsCreateKeyV1RequestVariant1 && createKeyV1RequestVariant1 != null)
+            if (CreateKeyV1RequestVariant1 is { } __value0 && createKeyV1RequestVariant1 != null)
             {
-                return createKeyV1RequestVariant1(CreateKeyV1RequestVariant1!);
+                return createKeyV1RequestVariant1(__value0);
             }
-            else if (IsCreateKeyV1RequestVariant2 && createKeyV1RequestVariant2 != null)
+            else if (CreateKeyV1RequestVariant2 is { } __value1 && createKeyV1RequestVariant2 != null)
             {
-                return createKeyV1RequestVariant2(CreateKeyV1RequestVariant2!);
+                return createKeyV1RequestVariant2(__value1);
             }
 
             return default(TResult);
@@ -158,13 +158,13 @@ namespace Deepgram
                 Validate();
             }
 
-            if (IsCreateKeyV1RequestVariant1)
+            if (CreateKeyV1RequestVariant1 is { } __value0)
             {
-                createKeyV1RequestVariant1?.Invoke(CreateKeyV1RequestVariant1!);
+                createKeyV1RequestVariant1?.Invoke(__value0);
             }
-            else if (IsCreateKeyV1RequestVariant2)
+            else if (CreateKeyV1RequestVariant2 is { } __value1)
             {
-                createKeyV1RequestVariant2?.Invoke(CreateKeyV1RequestVariant2!);
+                createKeyV1RequestVariant2?.Invoke(__value1);
             }
         }
 
@@ -181,13 +181,13 @@ namespace Deepgram
                 Validate();
             }
 
-            if (IsCreateKeyV1RequestVariant1)
+            if (CreateKeyV1RequestVariant1 is { } __value0)
             {
-                createKeyV1RequestVariant1?.Invoke(CreateKeyV1RequestVariant1!);
+                createKeyV1RequestVariant1?.Invoke(__value0);
             }
-            else if (IsCreateKeyV1RequestVariant2)
+            else if (CreateKeyV1RequestVariant2 is { } __value1)
             {
-                createKeyV1RequestVariant2?.Invoke(CreateKeyV1RequestVariant2!);
+                createKeyV1RequestVariant2?.Invoke(__value1);
             }
         }
 

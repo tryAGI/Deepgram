@@ -42,8 +42,8 @@ namespace Deepgram
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.V2SpeakPostParametersBitRate0 PickV2SpeakPostParametersBitRate0() => IsV2SpeakPostParametersBitRate0
-            ? V2SpeakPostParametersBitRate0!.Value
+        public global::Deepgram.V2SpeakPostParametersBitRate0 PickV2SpeakPostParametersBitRate0() => V2SpeakPostParametersBitRate0 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'V2SpeakPostParametersBitRate0' but the value was {ToString()}.");
 
         /// <summary>
@@ -79,8 +79,8 @@ namespace Deepgram
         /// <summary>
         ///
         /// </summary>
-        public int PickV2SpeakPostParametersBitRateVariant2() => IsV2SpeakPostParametersBitRateVariant2
-            ? V2SpeakPostParametersBitRateVariant2!.Value
+        public int PickV2SpeakPostParametersBitRateVariant2() => V2SpeakPostParametersBitRateVariant2 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'V2SpeakPostParametersBitRateVariant2' but the value was {ToString()}.");
 
         /// <summary>
@@ -116,8 +116,8 @@ namespace Deepgram
         /// <summary>
         ///
         /// </summary>
-        public int PickV2SpeakPostParametersBitRateVariant3() => IsV2SpeakPostParametersBitRateVariant3
-            ? V2SpeakPostParametersBitRateVariant3!.Value
+        public int PickV2SpeakPostParametersBitRateVariant3() => V2SpeakPostParametersBitRateVariant3 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'V2SpeakPostParametersBitRateVariant3' but the value was {ToString()}.");
         /// <summary>
         ///
@@ -219,17 +219,17 @@ namespace Deepgram
                 Validate();
             }
 
-            if (IsV2SpeakPostParametersBitRate0 && v2SpeakPostParametersBitRate0 != null)
+            if (V2SpeakPostParametersBitRate0 is { } __value0 && v2SpeakPostParametersBitRate0 != null)
             {
-                return v2SpeakPostParametersBitRate0(V2SpeakPostParametersBitRate0!);
+                return v2SpeakPostParametersBitRate0(__value0);
             }
-            else if (IsV2SpeakPostParametersBitRateVariant2 && v2SpeakPostParametersBitRateVariant2 != null)
+            else if (V2SpeakPostParametersBitRateVariant2 is { } __value1 && v2SpeakPostParametersBitRateVariant2 != null)
             {
-                return v2SpeakPostParametersBitRateVariant2(V2SpeakPostParametersBitRateVariant2!);
+                return v2SpeakPostParametersBitRateVariant2(__value1);
             }
-            else if (IsV2SpeakPostParametersBitRateVariant3 && v2SpeakPostParametersBitRateVariant3 != null)
+            else if (V2SpeakPostParametersBitRateVariant3 is { } __value2 && v2SpeakPostParametersBitRateVariant3 != null)
             {
-                return v2SpeakPostParametersBitRateVariant3(V2SpeakPostParametersBitRateVariant3!);
+                return v2SpeakPostParametersBitRateVariant3(__value2);
             }
 
             return default(TResult);
@@ -251,17 +251,17 @@ namespace Deepgram
                 Validate();
             }
 
-            if (IsV2SpeakPostParametersBitRate0)
+            if (V2SpeakPostParametersBitRate0 is { } __value0)
             {
-                v2SpeakPostParametersBitRate0?.Invoke(V2SpeakPostParametersBitRate0!);
+                v2SpeakPostParametersBitRate0?.Invoke(__value0);
             }
-            else if (IsV2SpeakPostParametersBitRateVariant2)
+            else if (V2SpeakPostParametersBitRateVariant2 is { } __value1)
             {
-                v2SpeakPostParametersBitRateVariant2?.Invoke(V2SpeakPostParametersBitRateVariant2!);
+                v2SpeakPostParametersBitRateVariant2?.Invoke(__value1);
             }
-            else if (IsV2SpeakPostParametersBitRateVariant3)
+            else if (V2SpeakPostParametersBitRateVariant3 is { } __value2)
             {
-                v2SpeakPostParametersBitRateVariant3?.Invoke(V2SpeakPostParametersBitRateVariant3!);
+                v2SpeakPostParametersBitRateVariant3?.Invoke(__value2);
             }
         }
 
@@ -279,17 +279,17 @@ namespace Deepgram
                 Validate();
             }
 
-            if (IsV2SpeakPostParametersBitRate0)
+            if (V2SpeakPostParametersBitRate0 is { } __value0)
             {
-                v2SpeakPostParametersBitRate0?.Invoke(V2SpeakPostParametersBitRate0!);
+                v2SpeakPostParametersBitRate0?.Invoke(__value0);
             }
-            else if (IsV2SpeakPostParametersBitRateVariant2)
+            else if (V2SpeakPostParametersBitRateVariant2 is { } __value1)
             {
-                v2SpeakPostParametersBitRateVariant2?.Invoke(V2SpeakPostParametersBitRateVariant2!);
+                v2SpeakPostParametersBitRateVariant2?.Invoke(__value1);
             }
-            else if (IsV2SpeakPostParametersBitRateVariant3)
+            else if (V2SpeakPostParametersBitRateVariant3 is { } __value2)
             {
-                v2SpeakPostParametersBitRateVariant3?.Invoke(V2SpeakPostParametersBitRateVariant3!);
+                v2SpeakPostParametersBitRateVariant3?.Invoke(__value2);
             }
         }
 

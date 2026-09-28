@@ -277,31 +277,31 @@ namespace Deepgram.Realtime.JsonConverters
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Deepgram.Realtime.ListenV2ListenV2Connected), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Deepgram.Realtime.ListenV2ListenV2Connected?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Deepgram.Realtime.ListenV2ListenV2Connected).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.ListenV2ListenV2Connected!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickListenV2ListenV2Connected(), typeInfo);
             }
             else if (value.IsListenV2ListenV2TurnInfo)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Deepgram.Realtime.ListenV2ListenV2TurnInfo), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Deepgram.Realtime.ListenV2ListenV2TurnInfo?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Deepgram.Realtime.ListenV2ListenV2TurnInfo).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.ListenV2ListenV2TurnInfo!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickListenV2ListenV2TurnInfo(), typeInfo);
             }
             else if (value.IsListenV2ListenV2ConfigureSuccess)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Deepgram.Realtime.ListenV2ListenV2ConfigureSuccess), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Deepgram.Realtime.ListenV2ListenV2ConfigureSuccess?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Deepgram.Realtime.ListenV2ListenV2ConfigureSuccess).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.ListenV2ListenV2ConfigureSuccess!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickListenV2ListenV2ConfigureSuccess(), typeInfo);
             }
             else if (value.IsListenV2ListenV2ConfigureFailure)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Deepgram.Realtime.ListenV2ListenV2ConfigureFailure), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Deepgram.Realtime.ListenV2ListenV2ConfigureFailure?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Deepgram.Realtime.ListenV2ListenV2ConfigureFailure).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.ListenV2ListenV2ConfigureFailure!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickListenV2ListenV2ConfigureFailure(), typeInfo);
             }
             else if (value.IsListenV2ListenV2FatalError)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Deepgram.Realtime.ListenV2ListenV2FatalError), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Deepgram.Realtime.ListenV2ListenV2FatalError?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Deepgram.Realtime.ListenV2ListenV2FatalError).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.ListenV2ListenV2FatalError!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickListenV2ListenV2FatalError(), typeInfo);
             }
         }
     }
