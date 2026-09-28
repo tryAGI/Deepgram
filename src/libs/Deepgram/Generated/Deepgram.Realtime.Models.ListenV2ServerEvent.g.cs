@@ -161,6 +161,43 @@ namespace Deepgram.Realtime
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
+        public global::Deepgram.Realtime.ListenV2ListenV2Warning? ListenV2ListenV2Warning { get; init; }
+#else
+        public global::Deepgram.Realtime.ListenV2ListenV2Warning? ListenV2ListenV2Warning { get; }
+#endif
+
+        /// <summary>
+        ///
+        /// </summary>
+#if NET6_0_OR_GREATER
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(ListenV2ListenV2Warning))]
+#endif
+        public bool IsListenV2ListenV2Warning => ListenV2ListenV2Warning != null;
+
+        /// <summary>
+        ///
+        /// </summary>
+        public bool TryPickListenV2ListenV2Warning(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Deepgram.Realtime.ListenV2ListenV2Warning? value)
+        {
+            value = ListenV2ListenV2Warning;
+            return IsListenV2ListenV2Warning;
+        }
+
+        /// <summary>
+        ///
+        /// </summary>
+        public global::Deepgram.Realtime.ListenV2ListenV2Warning PickListenV2ListenV2Warning() => ListenV2ListenV2Warning is { } value
+            ? value
+            : throw new global::System.InvalidOperationException($"Expected union variant 'ListenV2ListenV2Warning' but the value was {ToString()}.");
+
+        /// <summary>
+        ///
+        /// </summary>
+#if NET6_0_OR_GREATER
         public global::Deepgram.Realtime.ListenV2ListenV2FatalError? ListenV2ListenV2FatalError { get; init; }
 #else
         public global::Deepgram.Realtime.ListenV2ListenV2FatalError? ListenV2ListenV2FatalError { get; }
@@ -288,6 +325,29 @@ namespace Deepgram.Realtime
         /// <summary>
         ///
         /// </summary>
+        public static implicit operator ListenV2ServerEvent(global::Deepgram.Realtime.ListenV2ListenV2Warning value) => new ListenV2ServerEvent((global::Deepgram.Realtime.ListenV2ListenV2Warning?)value);
+
+        /// <summary>
+        ///
+        /// </summary>
+        public static implicit operator global::Deepgram.Realtime.ListenV2ListenV2Warning?(ListenV2ServerEvent @this) => @this.ListenV2ListenV2Warning;
+
+        /// <summary>
+        ///
+        /// </summary>
+        public ListenV2ServerEvent(global::Deepgram.Realtime.ListenV2ListenV2Warning? value)
+        {
+            ListenV2ListenV2Warning = value;
+        }
+
+        /// <summary>
+        ///
+        /// </summary>
+        public static ListenV2ServerEvent FromListenV2ListenV2Warning(global::Deepgram.Realtime.ListenV2ListenV2Warning? value) => new ListenV2ServerEvent(value);
+
+        /// <summary>
+        ///
+        /// </summary>
         public static implicit operator ListenV2ServerEvent(global::Deepgram.Realtime.ListenV2ListenV2FatalError value) => new ListenV2ServerEvent((global::Deepgram.Realtime.ListenV2ListenV2FatalError?)value);
 
         /// <summary>
@@ -316,6 +376,7 @@ namespace Deepgram.Realtime
             global::Deepgram.Realtime.ListenV2ListenV2TurnInfo? listenV2ListenV2TurnInfo,
             global::Deepgram.Realtime.ListenV2ListenV2ConfigureSuccess? listenV2ListenV2ConfigureSuccess,
             global::Deepgram.Realtime.ListenV2ListenV2ConfigureFailure? listenV2ListenV2ConfigureFailure,
+            global::Deepgram.Realtime.ListenV2ListenV2Warning? listenV2ListenV2Warning,
             global::Deepgram.Realtime.ListenV2ListenV2FatalError? listenV2ListenV2FatalError
             )
         {
@@ -323,6 +384,7 @@ namespace Deepgram.Realtime
             ListenV2ListenV2TurnInfo = listenV2ListenV2TurnInfo;
             ListenV2ListenV2ConfigureSuccess = listenV2ListenV2ConfigureSuccess;
             ListenV2ListenV2ConfigureFailure = listenV2ListenV2ConfigureFailure;
+            ListenV2ListenV2Warning = listenV2ListenV2Warning;
             ListenV2ListenV2FatalError = listenV2ListenV2FatalError;
         }
 
@@ -331,6 +393,7 @@ namespace Deepgram.Realtime
         /// </summary>
         public object? Object =>
             ListenV2ListenV2FatalError as object ??
+            ListenV2ListenV2Warning as object ??
             ListenV2ListenV2ConfigureFailure as object ??
             ListenV2ListenV2ConfigureSuccess as object ??
             ListenV2ListenV2TurnInfo as object ??
@@ -345,6 +408,7 @@ namespace Deepgram.Realtime
             ListenV2ListenV2TurnInfo?.ToString() ??
             ListenV2ListenV2ConfigureSuccess?.ToString() ??
             ListenV2ListenV2ConfigureFailure?.ToString() ??
+            ListenV2ListenV2Warning?.ToString() ??
             ListenV2ListenV2FatalError?.ToString()
             ;
 
@@ -353,7 +417,7 @@ namespace Deepgram.Realtime
         /// </summary>
         public bool Validate()
         {
-            return IsListenV2ListenV2Connected && !IsListenV2ListenV2TurnInfo && !IsListenV2ListenV2ConfigureSuccess && !IsListenV2ListenV2ConfigureFailure && !IsListenV2ListenV2FatalError || !IsListenV2ListenV2Connected && IsListenV2ListenV2TurnInfo && !IsListenV2ListenV2ConfigureSuccess && !IsListenV2ListenV2ConfigureFailure && !IsListenV2ListenV2FatalError || !IsListenV2ListenV2Connected && !IsListenV2ListenV2TurnInfo && IsListenV2ListenV2ConfigureSuccess && !IsListenV2ListenV2ConfigureFailure && !IsListenV2ListenV2FatalError || !IsListenV2ListenV2Connected && !IsListenV2ListenV2TurnInfo && !IsListenV2ListenV2ConfigureSuccess && IsListenV2ListenV2ConfigureFailure && !IsListenV2ListenV2FatalError || !IsListenV2ListenV2Connected && !IsListenV2ListenV2TurnInfo && !IsListenV2ListenV2ConfigureSuccess && !IsListenV2ListenV2ConfigureFailure && IsListenV2ListenV2FatalError;
+            return IsListenV2ListenV2Connected && !IsListenV2ListenV2TurnInfo && !IsListenV2ListenV2ConfigureSuccess && !IsListenV2ListenV2ConfigureFailure && !IsListenV2ListenV2Warning && !IsListenV2ListenV2FatalError || !IsListenV2ListenV2Connected && IsListenV2ListenV2TurnInfo && !IsListenV2ListenV2ConfigureSuccess && !IsListenV2ListenV2ConfigureFailure && !IsListenV2ListenV2Warning && !IsListenV2ListenV2FatalError || !IsListenV2ListenV2Connected && !IsListenV2ListenV2TurnInfo && IsListenV2ListenV2ConfigureSuccess && !IsListenV2ListenV2ConfigureFailure && !IsListenV2ListenV2Warning && !IsListenV2ListenV2FatalError || !IsListenV2ListenV2Connected && !IsListenV2ListenV2TurnInfo && !IsListenV2ListenV2ConfigureSuccess && IsListenV2ListenV2ConfigureFailure && !IsListenV2ListenV2Warning && !IsListenV2ListenV2FatalError || !IsListenV2ListenV2Connected && !IsListenV2ListenV2TurnInfo && !IsListenV2ListenV2ConfigureSuccess && !IsListenV2ListenV2ConfigureFailure && IsListenV2ListenV2Warning && !IsListenV2ListenV2FatalError || !IsListenV2ListenV2Connected && !IsListenV2ListenV2TurnInfo && !IsListenV2ListenV2ConfigureSuccess && !IsListenV2ListenV2ConfigureFailure && !IsListenV2ListenV2Warning && IsListenV2ListenV2FatalError;
         }
 
         /// <summary>
@@ -364,6 +428,7 @@ namespace Deepgram.Realtime
             global::System.Func<global::Deepgram.Realtime.ListenV2ListenV2TurnInfo, TResult>? listenV2ListenV2TurnInfo = null,
             global::System.Func<global::Deepgram.Realtime.ListenV2ListenV2ConfigureSuccess, TResult>? listenV2ListenV2ConfigureSuccess = null,
             global::System.Func<global::Deepgram.Realtime.ListenV2ListenV2ConfigureFailure, TResult>? listenV2ListenV2ConfigureFailure = null,
+            global::System.Func<global::Deepgram.Realtime.ListenV2ListenV2Warning, TResult>? listenV2ListenV2Warning = null,
             global::System.Func<global::Deepgram.Realtime.ListenV2ListenV2FatalError, TResult>? listenV2ListenV2FatalError = null,
             bool validate = true)
         {
@@ -388,9 +453,13 @@ namespace Deepgram.Realtime
             {
                 return listenV2ListenV2ConfigureFailure(__value3);
             }
-            else if (ListenV2ListenV2FatalError is { } __value4 && listenV2ListenV2FatalError != null)
+            else if (ListenV2ListenV2Warning is { } __value4 && listenV2ListenV2Warning != null)
             {
-                return listenV2ListenV2FatalError(__value4);
+                return listenV2ListenV2Warning(__value4);
+            }
+            else if (ListenV2ListenV2FatalError is { } __value5 && listenV2ListenV2FatalError != null)
+            {
+                return listenV2ListenV2FatalError(__value5);
             }
 
             return default(TResult);
@@ -408,6 +477,8 @@ namespace Deepgram.Realtime
 
             global::System.Action<global::Deepgram.Realtime.ListenV2ListenV2ConfigureFailure>? listenV2ListenV2ConfigureFailure = null,
 
+            global::System.Action<global::Deepgram.Realtime.ListenV2ListenV2Warning>? listenV2ListenV2Warning = null,
+
             global::System.Action<global::Deepgram.Realtime.ListenV2ListenV2FatalError>? listenV2ListenV2FatalError = null,
             bool validate = true)
         {
@@ -432,9 +503,13 @@ namespace Deepgram.Realtime
             {
                 listenV2ListenV2ConfigureFailure?.Invoke(__value3);
             }
-            else if (ListenV2ListenV2FatalError is { } __value4)
+            else if (ListenV2ListenV2Warning is { } __value4)
             {
-                listenV2ListenV2FatalError?.Invoke(__value4);
+                listenV2ListenV2Warning?.Invoke(__value4);
+            }
+            else if (ListenV2ListenV2FatalError is { } __value5)
+            {
+                listenV2ListenV2FatalError?.Invoke(__value5);
             }
         }
 
@@ -446,6 +521,7 @@ namespace Deepgram.Realtime
             global::System.Action<global::Deepgram.Realtime.ListenV2ListenV2TurnInfo>? listenV2ListenV2TurnInfo = null,
             global::System.Action<global::Deepgram.Realtime.ListenV2ListenV2ConfigureSuccess>? listenV2ListenV2ConfigureSuccess = null,
             global::System.Action<global::Deepgram.Realtime.ListenV2ListenV2ConfigureFailure>? listenV2ListenV2ConfigureFailure = null,
+            global::System.Action<global::Deepgram.Realtime.ListenV2ListenV2Warning>? listenV2ListenV2Warning = null,
             global::System.Action<global::Deepgram.Realtime.ListenV2ListenV2FatalError>? listenV2ListenV2FatalError = null,
             bool validate = true)
         {
@@ -470,9 +546,13 @@ namespace Deepgram.Realtime
             {
                 listenV2ListenV2ConfigureFailure?.Invoke(__value3);
             }
-            else if (ListenV2ListenV2FatalError is { } __value4)
+            else if (ListenV2ListenV2Warning is { } __value4)
             {
-                listenV2ListenV2FatalError?.Invoke(__value4);
+                listenV2ListenV2Warning?.Invoke(__value4);
+            }
+            else if (ListenV2ListenV2FatalError is { } __value5)
+            {
+                listenV2ListenV2FatalError?.Invoke(__value5);
             }
         }
 
@@ -491,6 +571,8 @@ namespace Deepgram.Realtime
                 typeof(global::Deepgram.Realtime.ListenV2ListenV2ConfigureSuccess),
                 ListenV2ListenV2ConfigureFailure,
                 typeof(global::Deepgram.Realtime.ListenV2ListenV2ConfigureFailure),
+                ListenV2ListenV2Warning,
+                typeof(global::Deepgram.Realtime.ListenV2ListenV2Warning),
                 ListenV2ListenV2FatalError,
                 typeof(global::Deepgram.Realtime.ListenV2ListenV2FatalError),
             };
@@ -513,6 +595,7 @@ namespace Deepgram.Realtime
                 global::System.Collections.Generic.EqualityComparer<global::Deepgram.Realtime.ListenV2ListenV2TurnInfo?>.Default.Equals(ListenV2ListenV2TurnInfo, other.ListenV2ListenV2TurnInfo) &&
                 global::System.Collections.Generic.EqualityComparer<global::Deepgram.Realtime.ListenV2ListenV2ConfigureSuccess?>.Default.Equals(ListenV2ListenV2ConfigureSuccess, other.ListenV2ListenV2ConfigureSuccess) &&
                 global::System.Collections.Generic.EqualityComparer<global::Deepgram.Realtime.ListenV2ListenV2ConfigureFailure?>.Default.Equals(ListenV2ListenV2ConfigureFailure, other.ListenV2ListenV2ConfigureFailure) &&
+                global::System.Collections.Generic.EqualityComparer<global::Deepgram.Realtime.ListenV2ListenV2Warning?>.Default.Equals(ListenV2ListenV2Warning, other.ListenV2ListenV2Warning) &&
                 global::System.Collections.Generic.EqualityComparer<global::Deepgram.Realtime.ListenV2ListenV2FatalError?>.Default.Equals(ListenV2ListenV2FatalError, other.ListenV2ListenV2FatalError)
                 ;
         }

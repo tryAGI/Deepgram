@@ -70,8 +70,14 @@ namespace Deepgram.Realtime.JsonConverters
             var __score4 = 0;
             if (__jsonProps.Contains("code")) __score4++;
             if (__jsonProps.Contains("description")) __score4++;
+            if (__jsonProps.Contains("request_id")) __score4++;
             if (__jsonProps.Contains("sequence_id")) __score4++;
             if (__jsonProps.Contains("type")) __score4++;
+            var __score5 = 0;
+            if (__jsonProps.Contains("code")) __score5++;
+            if (__jsonProps.Contains("description")) __score5++;
+            if (__jsonProps.Contains("sequence_id")) __score5++;
+            if (__jsonProps.Contains("type")) __score5++;
             var __bestScore = 0;
             var __bestIndex = -1;
             if (__score0 > __bestScore) { __bestScore = __score0; __bestIndex = 0; }
@@ -79,11 +85,13 @@ namespace Deepgram.Realtime.JsonConverters
             if (__score2 > __bestScore) { __bestScore = __score2; __bestIndex = 2; }
             if (__score3 > __bestScore) { __bestScore = __score3; __bestIndex = 3; }
             if (__score4 > __bestScore) { __bestScore = __score4; __bestIndex = 4; }
+            if (__score5 > __bestScore) { __bestScore = __score5; __bestIndex = 5; }
 
             global::Deepgram.Realtime.ListenV2ListenV2Connected? listenV2ListenV2Connected = default;
             global::Deepgram.Realtime.ListenV2ListenV2TurnInfo? listenV2ListenV2TurnInfo = default;
             global::Deepgram.Realtime.ListenV2ListenV2ConfigureSuccess? listenV2ListenV2ConfigureSuccess = default;
             global::Deepgram.Realtime.ListenV2ListenV2ConfigureFailure? listenV2ListenV2ConfigureFailure = default;
+            global::Deepgram.Realtime.ListenV2ListenV2Warning? listenV2ListenV2Warning = default;
             global::Deepgram.Realtime.ListenV2ListenV2FatalError? listenV2ListenV2FatalError = default;
             if (__bestIndex >= 0)
             {
@@ -151,6 +159,21 @@ namespace Deepgram.Realtime.JsonConverters
                 {
                     try
                     {
+                        var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Deepgram.Realtime.ListenV2ListenV2Warning), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Deepgram.Realtime.ListenV2ListenV2Warning> ??
+                                       throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Deepgram.Realtime.ListenV2ListenV2Warning).Name}");
+                        listenV2ListenV2Warning = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
+                    }
+                    catch (global::System.Text.Json.JsonException)
+                    {
+                    }
+                    catch (global::System.InvalidOperationException)
+                    {
+                    }
+                }
+                else if (__bestIndex == 5)
+                {
+                    try
+                    {
                         var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Deepgram.Realtime.ListenV2ListenV2FatalError), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Deepgram.Realtime.ListenV2ListenV2FatalError> ??
                                        throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Deepgram.Realtime.ListenV2ListenV2FatalError).Name}");
                         listenV2ListenV2FatalError = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
@@ -164,7 +187,7 @@ namespace Deepgram.Realtime.JsonConverters
                 }
             }
 
-            if (listenV2ListenV2Connected == null && listenV2ListenV2TurnInfo == null && listenV2ListenV2ConfigureSuccess == null && listenV2ListenV2ConfigureFailure == null && listenV2ListenV2FatalError == null)
+            if (listenV2ListenV2Connected == null && listenV2ListenV2TurnInfo == null && listenV2ListenV2ConfigureSuccess == null && listenV2ListenV2ConfigureFailure == null && listenV2ListenV2Warning == null && listenV2ListenV2FatalError == null)
             {
                 try
                 {
@@ -181,7 +204,7 @@ namespace Deepgram.Realtime.JsonConverters
                 }
             }
 
-            if (listenV2ListenV2Connected == null && listenV2ListenV2TurnInfo == null && listenV2ListenV2ConfigureSuccess == null && listenV2ListenV2ConfigureFailure == null && listenV2ListenV2FatalError == null)
+            if (listenV2ListenV2Connected == null && listenV2ListenV2TurnInfo == null && listenV2ListenV2ConfigureSuccess == null && listenV2ListenV2ConfigureFailure == null && listenV2ListenV2Warning == null && listenV2ListenV2FatalError == null)
             {
                 try
                 {
@@ -198,7 +221,7 @@ namespace Deepgram.Realtime.JsonConverters
                 }
             }
 
-            if (listenV2ListenV2Connected == null && listenV2ListenV2TurnInfo == null && listenV2ListenV2ConfigureSuccess == null && listenV2ListenV2ConfigureFailure == null && listenV2ListenV2FatalError == null)
+            if (listenV2ListenV2Connected == null && listenV2ListenV2TurnInfo == null && listenV2ListenV2ConfigureSuccess == null && listenV2ListenV2ConfigureFailure == null && listenV2ListenV2Warning == null && listenV2ListenV2FatalError == null)
             {
                 try
                 {
@@ -215,7 +238,7 @@ namespace Deepgram.Realtime.JsonConverters
                 }
             }
 
-            if (listenV2ListenV2Connected == null && listenV2ListenV2TurnInfo == null && listenV2ListenV2ConfigureSuccess == null && listenV2ListenV2ConfigureFailure == null && listenV2ListenV2FatalError == null)
+            if (listenV2ListenV2Connected == null && listenV2ListenV2TurnInfo == null && listenV2ListenV2ConfigureSuccess == null && listenV2ListenV2ConfigureFailure == null && listenV2ListenV2Warning == null && listenV2ListenV2FatalError == null)
             {
                 try
                 {
@@ -232,7 +255,24 @@ namespace Deepgram.Realtime.JsonConverters
                 }
             }
 
-            if (listenV2ListenV2Connected == null && listenV2ListenV2TurnInfo == null && listenV2ListenV2ConfigureSuccess == null && listenV2ListenV2ConfigureFailure == null && listenV2ListenV2FatalError == null)
+            if (listenV2ListenV2Connected == null && listenV2ListenV2TurnInfo == null && listenV2ListenV2ConfigureSuccess == null && listenV2ListenV2ConfigureFailure == null && listenV2ListenV2Warning == null && listenV2ListenV2FatalError == null)
+            {
+                try
+                {
+
+                    var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Deepgram.Realtime.ListenV2ListenV2Warning), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Deepgram.Realtime.ListenV2ListenV2Warning> ??
+                                   throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Deepgram.Realtime.ListenV2ListenV2Warning).Name}");
+                    listenV2ListenV2Warning = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
+                }
+                catch (global::System.Text.Json.JsonException)
+                {
+                }
+                catch (global::System.InvalidOperationException)
+                {
+                }
+            }
+
+            if (listenV2ListenV2Connected == null && listenV2ListenV2TurnInfo == null && listenV2ListenV2ConfigureSuccess == null && listenV2ListenV2ConfigureFailure == null && listenV2ListenV2Warning == null && listenV2ListenV2FatalError == null)
             {
                 try
                 {
@@ -257,6 +297,8 @@ namespace Deepgram.Realtime.JsonConverters
                 listenV2ListenV2ConfigureSuccess,
 
                 listenV2ListenV2ConfigureFailure,
+
+                listenV2ListenV2Warning,
 
                 listenV2ListenV2FatalError
                 );
@@ -296,6 +338,12 @@ namespace Deepgram.Realtime.JsonConverters
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Deepgram.Realtime.ListenV2ListenV2ConfigureFailure), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Deepgram.Realtime.ListenV2ListenV2ConfigureFailure?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Deepgram.Realtime.ListenV2ListenV2ConfigureFailure).Name}");
                 global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickListenV2ListenV2ConfigureFailure(), typeInfo);
+            }
+            else if (value.IsListenV2ListenV2Warning)
+            {
+                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Deepgram.Realtime.ListenV2ListenV2Warning), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Deepgram.Realtime.ListenV2ListenV2Warning?> ??
+                               throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Deepgram.Realtime.ListenV2ListenV2Warning).Name}");
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickListenV2ListenV2Warning(), typeInfo);
             }
             else if (value.IsListenV2ListenV2FatalError)
             {
