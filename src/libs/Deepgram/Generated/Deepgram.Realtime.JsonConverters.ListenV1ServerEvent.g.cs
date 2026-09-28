@@ -235,25 +235,25 @@ namespace Deepgram.Realtime.JsonConverters
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Deepgram.Realtime.ListenV1ListenV1Results), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Deepgram.Realtime.ListenV1ListenV1Results?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Deepgram.Realtime.ListenV1ListenV1Results).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.ListenV1ListenV1Results!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickListenV1ListenV1Results(), typeInfo);
             }
             else if (value.IsListenV1ListenV1Metadata)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Deepgram.Realtime.ListenV1ListenV1Metadata), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Deepgram.Realtime.ListenV1ListenV1Metadata?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Deepgram.Realtime.ListenV1ListenV1Metadata).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.ListenV1ListenV1Metadata!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickListenV1ListenV1Metadata(), typeInfo);
             }
             else if (value.IsListenV1ListenV1UtteranceEnd)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Deepgram.Realtime.ListenV1ListenV1UtteranceEnd), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Deepgram.Realtime.ListenV1ListenV1UtteranceEnd?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Deepgram.Realtime.ListenV1ListenV1UtteranceEnd).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.ListenV1ListenV1UtteranceEnd!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickListenV1ListenV1UtteranceEnd(), typeInfo);
             }
             else if (value.IsListenV1ListenV1SpeechStarted)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Deepgram.Realtime.ListenV1ListenV1SpeechStarted), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Deepgram.Realtime.ListenV1ListenV1SpeechStarted?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Deepgram.Realtime.ListenV1ListenV1SpeechStarted).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.ListenV1ListenV1SpeechStarted!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickListenV1ListenV1SpeechStarted(), typeInfo);
             }
         }
     }

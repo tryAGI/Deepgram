@@ -42,8 +42,8 @@ namespace Deepgram.Realtime
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.ThinkSettingsV1ContextLength0 PickThinkSettingsV1ContextLength0() => IsThinkSettingsV1ContextLength0
-            ? ThinkSettingsV1ContextLength0!.Value
+        public global::Deepgram.Realtime.ThinkSettingsV1ContextLength0 PickThinkSettingsV1ContextLength0() => ThinkSettingsV1ContextLength0 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'ThinkSettingsV1ContextLength0' but the value was {ToString()}.");
 
         /// <summary>
@@ -79,8 +79,8 @@ namespace Deepgram.Realtime
         /// <summary>
         ///
         /// </summary>
-        public double PickThinkSettingsV1ContextLengthVariant2() => IsThinkSettingsV1ContextLengthVariant2
-            ? ThinkSettingsV1ContextLengthVariant2!.Value
+        public double PickThinkSettingsV1ContextLengthVariant2() => ThinkSettingsV1ContextLengthVariant2 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'ThinkSettingsV1ContextLengthVariant2' but the value was {ToString()}.");
         /// <summary>
         ///
@@ -177,13 +177,13 @@ namespace Deepgram.Realtime
                 Validate();
             }
 
-            if (IsThinkSettingsV1ContextLength0 && thinkSettingsV1ContextLength0 != null)
+            if (ThinkSettingsV1ContextLength0 is { } __value0 && thinkSettingsV1ContextLength0 != null)
             {
-                return thinkSettingsV1ContextLength0(ThinkSettingsV1ContextLength0!);
+                return thinkSettingsV1ContextLength0(__value0);
             }
-            else if (IsThinkSettingsV1ContextLengthVariant2 && thinkSettingsV1ContextLengthVariant2 != null)
+            else if (ThinkSettingsV1ContextLengthVariant2 is { } __value1 && thinkSettingsV1ContextLengthVariant2 != null)
             {
-                return thinkSettingsV1ContextLengthVariant2(ThinkSettingsV1ContextLengthVariant2!);
+                return thinkSettingsV1ContextLengthVariant2(__value1);
             }
 
             return default(TResult);
@@ -203,13 +203,13 @@ namespace Deepgram.Realtime
                 Validate();
             }
 
-            if (IsThinkSettingsV1ContextLength0)
+            if (ThinkSettingsV1ContextLength0 is { } __value0)
             {
-                thinkSettingsV1ContextLength0?.Invoke(ThinkSettingsV1ContextLength0!);
+                thinkSettingsV1ContextLength0?.Invoke(__value0);
             }
-            else if (IsThinkSettingsV1ContextLengthVariant2)
+            else if (ThinkSettingsV1ContextLengthVariant2 is { } __value1)
             {
-                thinkSettingsV1ContextLengthVariant2?.Invoke(ThinkSettingsV1ContextLengthVariant2!);
+                thinkSettingsV1ContextLengthVariant2?.Invoke(__value1);
             }
         }
 
@@ -226,13 +226,13 @@ namespace Deepgram.Realtime
                 Validate();
             }
 
-            if (IsThinkSettingsV1ContextLength0)
+            if (ThinkSettingsV1ContextLength0 is { } __value0)
             {
-                thinkSettingsV1ContextLength0?.Invoke(ThinkSettingsV1ContextLength0!);
+                thinkSettingsV1ContextLength0?.Invoke(__value0);
             }
-            else if (IsThinkSettingsV1ContextLengthVariant2)
+            else if (ThinkSettingsV1ContextLengthVariant2 is { } __value1)
             {
-                thinkSettingsV1ContextLengthVariant2?.Invoke(ThinkSettingsV1ContextLengthVariant2!);
+                thinkSettingsV1ContextLengthVariant2?.Invoke(__value1);
             }
         }
 

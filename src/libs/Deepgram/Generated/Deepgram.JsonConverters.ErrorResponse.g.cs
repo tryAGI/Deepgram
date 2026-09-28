@@ -171,19 +171,19 @@ namespace Deepgram.JsonConverters
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Deepgram.ErrorResponseTextError), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Deepgram.ErrorResponseTextError?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Deepgram.ErrorResponseTextError).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.Text!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickText(), typeInfo);
             }
             else if (value.IsErrorResponseLegacyError)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Deepgram.ErrorResponseLegacyError), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Deepgram.ErrorResponseLegacyError?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Deepgram.ErrorResponseLegacyError).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.ErrorResponseLegacyError!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickErrorResponseLegacyError(), typeInfo);
             }
             else if (value.IsErrorResponseModernError)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Deepgram.ErrorResponseModernError), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Deepgram.ErrorResponseModernError?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Deepgram.ErrorResponseModernError).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.ErrorResponseModernError!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickErrorResponseModernError(), typeInfo);
             }
         }
     }

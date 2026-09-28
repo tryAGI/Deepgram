@@ -42,8 +42,8 @@ namespace Deepgram
         /// <summary>
         ///
         /// </summary>
-        public string PickV2SpeakPostParametersTagVariant1() => IsV2SpeakPostParametersTagVariant1
-            ? V2SpeakPostParametersTagVariant1!
+        public string PickV2SpeakPostParametersTagVariant1() => V2SpeakPostParametersTagVariant1 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'V2SpeakPostParametersTagVariant1' but the value was {ToString()}.");
 
         /// <summary>
@@ -79,8 +79,8 @@ namespace Deepgram
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<string> PickV2SpeakPostParametersTagVariant2() => IsV2SpeakPostParametersTagVariant2
-            ? V2SpeakPostParametersTagVariant2!
+        public global::System.Collections.Generic.IList<string> PickV2SpeakPostParametersTagVariant2() => V2SpeakPostParametersTagVariant2 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'V2SpeakPostParametersTagVariant2' but the value was {ToString()}.");
         /// <summary>
         ///
@@ -154,13 +154,13 @@ namespace Deepgram
                 Validate();
             }
 
-            if (IsV2SpeakPostParametersTagVariant1 && v2SpeakPostParametersTagVariant1 != null)
+            if (V2SpeakPostParametersTagVariant1 is { } __value0 && v2SpeakPostParametersTagVariant1 != null)
             {
-                return v2SpeakPostParametersTagVariant1(V2SpeakPostParametersTagVariant1!);
+                return v2SpeakPostParametersTagVariant1(__value0);
             }
-            else if (IsV2SpeakPostParametersTagVariant2 && v2SpeakPostParametersTagVariant2 != null)
+            else if (V2SpeakPostParametersTagVariant2 is { } __value1 && v2SpeakPostParametersTagVariant2 != null)
             {
-                return v2SpeakPostParametersTagVariant2(V2SpeakPostParametersTagVariant2!);
+                return v2SpeakPostParametersTagVariant2(__value1);
             }
 
             return default(TResult);
@@ -180,13 +180,13 @@ namespace Deepgram
                 Validate();
             }
 
-            if (IsV2SpeakPostParametersTagVariant1)
+            if (V2SpeakPostParametersTagVariant1 is { } __value0)
             {
-                v2SpeakPostParametersTagVariant1?.Invoke(V2SpeakPostParametersTagVariant1!);
+                v2SpeakPostParametersTagVariant1?.Invoke(__value0);
             }
-            else if (IsV2SpeakPostParametersTagVariant2)
+            else if (V2SpeakPostParametersTagVariant2 is { } __value1)
             {
-                v2SpeakPostParametersTagVariant2?.Invoke(V2SpeakPostParametersTagVariant2!);
+                v2SpeakPostParametersTagVariant2?.Invoke(__value1);
             }
         }
 
@@ -203,13 +203,13 @@ namespace Deepgram
                 Validate();
             }
 
-            if (IsV2SpeakPostParametersTagVariant1)
+            if (V2SpeakPostParametersTagVariant1 is { } __value0)
             {
-                v2SpeakPostParametersTagVariant1?.Invoke(V2SpeakPostParametersTagVariant1!);
+                v2SpeakPostParametersTagVariant1?.Invoke(__value0);
             }
-            else if (IsV2SpeakPostParametersTagVariant2)
+            else if (V2SpeakPostParametersTagVariant2 is { } __value1)
             {
-                v2SpeakPostParametersTagVariant2?.Invoke(V2SpeakPostParametersTagVariant2!);
+                v2SpeakPostParametersTagVariant2?.Invoke(__value1);
             }
         }
 

@@ -42,8 +42,8 @@ namespace Deepgram
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.ErrorResponseTextError PickText() => IsText
-            ? Text!
+        public global::Deepgram.ErrorResponseTextError PickText() => Text is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'Text' but the value was {ToString()}.");
 
         /// <summary>
@@ -79,8 +79,8 @@ namespace Deepgram
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.ErrorResponseLegacyError PickErrorResponseLegacyError() => IsErrorResponseLegacyError
-            ? ErrorResponseLegacyError!
+        public global::Deepgram.ErrorResponseLegacyError PickErrorResponseLegacyError() => ErrorResponseLegacyError is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'ErrorResponseLegacyError' but the value was {ToString()}.");
 
         /// <summary>
@@ -116,8 +116,8 @@ namespace Deepgram
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.ErrorResponseModernError PickErrorResponseModernError() => IsErrorResponseModernError
-            ? ErrorResponseModernError!
+        public global::Deepgram.ErrorResponseModernError PickErrorResponseModernError() => ErrorResponseModernError is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'ErrorResponseModernError' but the value was {ToString()}.");
         /// <summary>
         ///
@@ -242,17 +242,17 @@ namespace Deepgram
                 Validate();
             }
 
-            if (IsText && text != null)
+            if (Text is { } __value0 && text != null)
             {
-                return text(Text!);
+                return text(__value0);
             }
-            else if (IsErrorResponseLegacyError && errorResponseLegacyError != null)
+            else if (ErrorResponseLegacyError is { } __value1 && errorResponseLegacyError != null)
             {
-                return errorResponseLegacyError(ErrorResponseLegacyError!);
+                return errorResponseLegacyError(__value1);
             }
-            else if (IsErrorResponseModernError && errorResponseModernError != null)
+            else if (ErrorResponseModernError is { } __value2 && errorResponseModernError != null)
             {
-                return errorResponseModernError(ErrorResponseModernError!);
+                return errorResponseModernError(__value2);
             }
 
             return default(TResult);
@@ -274,17 +274,17 @@ namespace Deepgram
                 Validate();
             }
 
-            if (IsText)
+            if (Text is { } __value0)
             {
-                text?.Invoke(Text!);
+                text?.Invoke(__value0);
             }
-            else if (IsErrorResponseLegacyError)
+            else if (ErrorResponseLegacyError is { } __value1)
             {
-                errorResponseLegacyError?.Invoke(ErrorResponseLegacyError!);
+                errorResponseLegacyError?.Invoke(__value1);
             }
-            else if (IsErrorResponseModernError)
+            else if (ErrorResponseModernError is { } __value2)
             {
-                errorResponseModernError?.Invoke(ErrorResponseModernError!);
+                errorResponseModernError?.Invoke(__value2);
             }
         }
 
@@ -302,17 +302,17 @@ namespace Deepgram
                 Validate();
             }
 
-            if (IsText)
+            if (Text is { } __value0)
             {
-                text?.Invoke(Text!);
+                text?.Invoke(__value0);
             }
-            else if (IsErrorResponseLegacyError)
+            else if (ErrorResponseLegacyError is { } __value1)
             {
-                errorResponseLegacyError?.Invoke(ErrorResponseLegacyError!);
+                errorResponseLegacyError?.Invoke(__value1);
             }
-            else if (IsErrorResponseModernError)
+            else if (ErrorResponseModernError is { } __value2)
             {
-                errorResponseModernError?.Invoke(ErrorResponseModernError!);
+                errorResponseModernError?.Invoke(__value2);
             }
         }
 

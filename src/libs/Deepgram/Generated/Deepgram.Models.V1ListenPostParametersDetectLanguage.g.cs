@@ -42,8 +42,8 @@ namespace Deepgram
         /// <summary>
         ///
         /// </summary>
-        public bool PickV1ListenPostParametersDetectLanguageVariant1() => IsV1ListenPostParametersDetectLanguageVariant1
-            ? V1ListenPostParametersDetectLanguageVariant1!.Value
+        public bool PickV1ListenPostParametersDetectLanguageVariant1() => V1ListenPostParametersDetectLanguageVariant1 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'V1ListenPostParametersDetectLanguageVariant1' but the value was {ToString()}.");
 
         /// <summary>
@@ -79,8 +79,8 @@ namespace Deepgram
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<string> PickV1ListenPostParametersDetectLanguageVariant2() => IsV1ListenPostParametersDetectLanguageVariant2
-            ? V1ListenPostParametersDetectLanguageVariant2!
+        public global::System.Collections.Generic.IList<string> PickV1ListenPostParametersDetectLanguageVariant2() => V1ListenPostParametersDetectLanguageVariant2 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'V1ListenPostParametersDetectLanguageVariant2' but the value was {ToString()}.");
         /// <summary>
         ///
@@ -154,13 +154,13 @@ namespace Deepgram
                 Validate();
             }
 
-            if (IsV1ListenPostParametersDetectLanguageVariant1 && v1ListenPostParametersDetectLanguageVariant1 != null)
+            if (V1ListenPostParametersDetectLanguageVariant1 is { } __value0 && v1ListenPostParametersDetectLanguageVariant1 != null)
             {
-                return v1ListenPostParametersDetectLanguageVariant1(V1ListenPostParametersDetectLanguageVariant1!);
+                return v1ListenPostParametersDetectLanguageVariant1(__value0);
             }
-            else if (IsV1ListenPostParametersDetectLanguageVariant2 && v1ListenPostParametersDetectLanguageVariant2 != null)
+            else if (V1ListenPostParametersDetectLanguageVariant2 is { } __value1 && v1ListenPostParametersDetectLanguageVariant2 != null)
             {
-                return v1ListenPostParametersDetectLanguageVariant2(V1ListenPostParametersDetectLanguageVariant2!);
+                return v1ListenPostParametersDetectLanguageVariant2(__value1);
             }
 
             return default(TResult);
@@ -180,13 +180,13 @@ namespace Deepgram
                 Validate();
             }
 
-            if (IsV1ListenPostParametersDetectLanguageVariant1)
+            if (V1ListenPostParametersDetectLanguageVariant1 is { } __value0)
             {
-                v1ListenPostParametersDetectLanguageVariant1?.Invoke(V1ListenPostParametersDetectLanguageVariant1!);
+                v1ListenPostParametersDetectLanguageVariant1?.Invoke(__value0);
             }
-            else if (IsV1ListenPostParametersDetectLanguageVariant2)
+            else if (V1ListenPostParametersDetectLanguageVariant2 is { } __value1)
             {
-                v1ListenPostParametersDetectLanguageVariant2?.Invoke(V1ListenPostParametersDetectLanguageVariant2!);
+                v1ListenPostParametersDetectLanguageVariant2?.Invoke(__value1);
             }
         }
 
@@ -203,13 +203,13 @@ namespace Deepgram
                 Validate();
             }
 
-            if (IsV1ListenPostParametersDetectLanguageVariant1)
+            if (V1ListenPostParametersDetectLanguageVariant1 is { } __value0)
             {
-                v1ListenPostParametersDetectLanguageVariant1?.Invoke(V1ListenPostParametersDetectLanguageVariant1!);
+                v1ListenPostParametersDetectLanguageVariant1?.Invoke(__value0);
             }
-            else if (IsV1ListenPostParametersDetectLanguageVariant2)
+            else if (V1ListenPostParametersDetectLanguageVariant2 is { } __value1)
             {
-                v1ListenPostParametersDetectLanguageVariant2?.Invoke(V1ListenPostParametersDetectLanguageVariant2!);
+                v1ListenPostParametersDetectLanguageVariant2?.Invoke(__value1);
             }
         }
 

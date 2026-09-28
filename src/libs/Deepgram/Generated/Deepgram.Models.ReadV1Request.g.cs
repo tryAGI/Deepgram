@@ -42,8 +42,8 @@ namespace Deepgram
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.ReadV1RequestUrl PickReadV1RequestUrl() => IsReadV1RequestUrl
-            ? ReadV1RequestUrl!
+        public global::Deepgram.ReadV1RequestUrl PickReadV1RequestUrl() => ReadV1RequestUrl is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'ReadV1RequestUrl' but the value was {ToString()}.");
 
         /// <summary>
@@ -79,8 +79,8 @@ namespace Deepgram
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.ReadV1RequestText PickReadV1RequestText() => IsReadV1RequestText
-            ? ReadV1RequestText!
+        public global::Deepgram.ReadV1RequestText PickReadV1RequestText() => ReadV1RequestText is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'ReadV1RequestText' but the value was {ToString()}.");
         /// <summary>
         ///
@@ -177,13 +177,13 @@ namespace Deepgram
                 Validate();
             }
 
-            if (IsReadV1RequestUrl && readV1RequestUrl != null)
+            if (ReadV1RequestUrl is { } __value0 && readV1RequestUrl != null)
             {
-                return readV1RequestUrl(ReadV1RequestUrl!);
+                return readV1RequestUrl(__value0);
             }
-            else if (IsReadV1RequestText && readV1RequestText != null)
+            else if (ReadV1RequestText is { } __value1 && readV1RequestText != null)
             {
-                return readV1RequestText(ReadV1RequestText!);
+                return readV1RequestText(__value1);
             }
 
             return default(TResult);
@@ -203,13 +203,13 @@ namespace Deepgram
                 Validate();
             }
 
-            if (IsReadV1RequestUrl)
+            if (ReadV1RequestUrl is { } __value0)
             {
-                readV1RequestUrl?.Invoke(ReadV1RequestUrl!);
+                readV1RequestUrl?.Invoke(__value0);
             }
-            else if (IsReadV1RequestText)
+            else if (ReadV1RequestText is { } __value1)
             {
-                readV1RequestText?.Invoke(ReadV1RequestText!);
+                readV1RequestText?.Invoke(__value1);
             }
         }
 
@@ -226,13 +226,13 @@ namespace Deepgram
                 Validate();
             }
 
-            if (IsReadV1RequestUrl)
+            if (ReadV1RequestUrl is { } __value0)
             {
-                readV1RequestUrl?.Invoke(ReadV1RequestUrl!);
+                readV1RequestUrl?.Invoke(__value0);
             }
-            else if (IsReadV1RequestText)
+            else if (ReadV1RequestText is { } __value1)
             {
-                readV1RequestText?.Invoke(ReadV1RequestText!);
+                readV1RequestText?.Invoke(__value1);
             }
         }
 

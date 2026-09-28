@@ -128,13 +128,13 @@ namespace Deepgram.JsonConverters
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Deepgram.ReadV1RequestUrl), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Deepgram.ReadV1RequestUrl?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Deepgram.ReadV1RequestUrl).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.ReadV1RequestUrl!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickReadV1RequestUrl(), typeInfo);
             }
             else if (value.IsReadV1RequestText)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Deepgram.ReadV1RequestText), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Deepgram.ReadV1RequestText?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Deepgram.ReadV1RequestText).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.ReadV1RequestText!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickReadV1RequestText(), typeInfo);
             }
         }
     }

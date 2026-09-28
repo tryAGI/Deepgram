@@ -42,8 +42,8 @@ namespace Deepgram.Realtime
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.ListenV2ListenV2Connected PickListenV2ListenV2Connected() => IsListenV2ListenV2Connected
-            ? ListenV2ListenV2Connected!
+        public global::Deepgram.Realtime.ListenV2ListenV2Connected PickListenV2ListenV2Connected() => ListenV2ListenV2Connected is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'ListenV2ListenV2Connected' but the value was {ToString()}.");
 
         /// <summary>
@@ -79,8 +79,8 @@ namespace Deepgram.Realtime
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.ListenV2ListenV2TurnInfo PickListenV2ListenV2TurnInfo() => IsListenV2ListenV2TurnInfo
-            ? ListenV2ListenV2TurnInfo!
+        public global::Deepgram.Realtime.ListenV2ListenV2TurnInfo PickListenV2ListenV2TurnInfo() => ListenV2ListenV2TurnInfo is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'ListenV2ListenV2TurnInfo' but the value was {ToString()}.");
 
         /// <summary>
@@ -116,8 +116,8 @@ namespace Deepgram.Realtime
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.ListenV2ListenV2ConfigureSuccess PickListenV2ListenV2ConfigureSuccess() => IsListenV2ListenV2ConfigureSuccess
-            ? ListenV2ListenV2ConfigureSuccess!
+        public global::Deepgram.Realtime.ListenV2ListenV2ConfigureSuccess PickListenV2ListenV2ConfigureSuccess() => ListenV2ListenV2ConfigureSuccess is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'ListenV2ListenV2ConfigureSuccess' but the value was {ToString()}.");
 
         /// <summary>
@@ -153,8 +153,8 @@ namespace Deepgram.Realtime
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.ListenV2ListenV2ConfigureFailure PickListenV2ListenV2ConfigureFailure() => IsListenV2ListenV2ConfigureFailure
-            ? ListenV2ListenV2ConfigureFailure!
+        public global::Deepgram.Realtime.ListenV2ListenV2ConfigureFailure PickListenV2ListenV2ConfigureFailure() => ListenV2ListenV2ConfigureFailure is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'ListenV2ListenV2ConfigureFailure' but the value was {ToString()}.");
 
         /// <summary>
@@ -190,8 +190,8 @@ namespace Deepgram.Realtime
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.ListenV2ListenV2FatalError PickListenV2ListenV2FatalError() => IsListenV2ListenV2FatalError
-            ? ListenV2ListenV2FatalError!
+        public global::Deepgram.Realtime.ListenV2ListenV2FatalError PickListenV2ListenV2FatalError() => ListenV2ListenV2FatalError is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'ListenV2ListenV2FatalError' but the value was {ToString()}.");
         /// <summary>
         ///
@@ -372,25 +372,25 @@ namespace Deepgram.Realtime
                 Validate();
             }
 
-            if (IsListenV2ListenV2Connected && listenV2ListenV2Connected != null)
+            if (ListenV2ListenV2Connected is { } __value0 && listenV2ListenV2Connected != null)
             {
-                return listenV2ListenV2Connected(ListenV2ListenV2Connected!);
+                return listenV2ListenV2Connected(__value0);
             }
-            else if (IsListenV2ListenV2TurnInfo && listenV2ListenV2TurnInfo != null)
+            else if (ListenV2ListenV2TurnInfo is { } __value1 && listenV2ListenV2TurnInfo != null)
             {
-                return listenV2ListenV2TurnInfo(ListenV2ListenV2TurnInfo!);
+                return listenV2ListenV2TurnInfo(__value1);
             }
-            else if (IsListenV2ListenV2ConfigureSuccess && listenV2ListenV2ConfigureSuccess != null)
+            else if (ListenV2ListenV2ConfigureSuccess is { } __value2 && listenV2ListenV2ConfigureSuccess != null)
             {
-                return listenV2ListenV2ConfigureSuccess(ListenV2ListenV2ConfigureSuccess!);
+                return listenV2ListenV2ConfigureSuccess(__value2);
             }
-            else if (IsListenV2ListenV2ConfigureFailure && listenV2ListenV2ConfigureFailure != null)
+            else if (ListenV2ListenV2ConfigureFailure is { } __value3 && listenV2ListenV2ConfigureFailure != null)
             {
-                return listenV2ListenV2ConfigureFailure(ListenV2ListenV2ConfigureFailure!);
+                return listenV2ListenV2ConfigureFailure(__value3);
             }
-            else if (IsListenV2ListenV2FatalError && listenV2ListenV2FatalError != null)
+            else if (ListenV2ListenV2FatalError is { } __value4 && listenV2ListenV2FatalError != null)
             {
-                return listenV2ListenV2FatalError(ListenV2ListenV2FatalError!);
+                return listenV2ListenV2FatalError(__value4);
             }
 
             return default(TResult);
@@ -416,25 +416,25 @@ namespace Deepgram.Realtime
                 Validate();
             }
 
-            if (IsListenV2ListenV2Connected)
+            if (ListenV2ListenV2Connected is { } __value0)
             {
-                listenV2ListenV2Connected?.Invoke(ListenV2ListenV2Connected!);
+                listenV2ListenV2Connected?.Invoke(__value0);
             }
-            else if (IsListenV2ListenV2TurnInfo)
+            else if (ListenV2ListenV2TurnInfo is { } __value1)
             {
-                listenV2ListenV2TurnInfo?.Invoke(ListenV2ListenV2TurnInfo!);
+                listenV2ListenV2TurnInfo?.Invoke(__value1);
             }
-            else if (IsListenV2ListenV2ConfigureSuccess)
+            else if (ListenV2ListenV2ConfigureSuccess is { } __value2)
             {
-                listenV2ListenV2ConfigureSuccess?.Invoke(ListenV2ListenV2ConfigureSuccess!);
+                listenV2ListenV2ConfigureSuccess?.Invoke(__value2);
             }
-            else if (IsListenV2ListenV2ConfigureFailure)
+            else if (ListenV2ListenV2ConfigureFailure is { } __value3)
             {
-                listenV2ListenV2ConfigureFailure?.Invoke(ListenV2ListenV2ConfigureFailure!);
+                listenV2ListenV2ConfigureFailure?.Invoke(__value3);
             }
-            else if (IsListenV2ListenV2FatalError)
+            else if (ListenV2ListenV2FatalError is { } __value4)
             {
-                listenV2ListenV2FatalError?.Invoke(ListenV2ListenV2FatalError!);
+                listenV2ListenV2FatalError?.Invoke(__value4);
             }
         }
 
@@ -454,25 +454,25 @@ namespace Deepgram.Realtime
                 Validate();
             }
 
-            if (IsListenV2ListenV2Connected)
+            if (ListenV2ListenV2Connected is { } __value0)
             {
-                listenV2ListenV2Connected?.Invoke(ListenV2ListenV2Connected!);
+                listenV2ListenV2Connected?.Invoke(__value0);
             }
-            else if (IsListenV2ListenV2TurnInfo)
+            else if (ListenV2ListenV2TurnInfo is { } __value1)
             {
-                listenV2ListenV2TurnInfo?.Invoke(ListenV2ListenV2TurnInfo!);
+                listenV2ListenV2TurnInfo?.Invoke(__value1);
             }
-            else if (IsListenV2ListenV2ConfigureSuccess)
+            else if (ListenV2ListenV2ConfigureSuccess is { } __value2)
             {
-                listenV2ListenV2ConfigureSuccess?.Invoke(ListenV2ListenV2ConfigureSuccess!);
+                listenV2ListenV2ConfigureSuccess?.Invoke(__value2);
             }
-            else if (IsListenV2ListenV2ConfigureFailure)
+            else if (ListenV2ListenV2ConfigureFailure is { } __value3)
             {
-                listenV2ListenV2ConfigureFailure?.Invoke(ListenV2ListenV2ConfigureFailure!);
+                listenV2ListenV2ConfigureFailure?.Invoke(__value3);
             }
-            else if (IsListenV2ListenV2FatalError)
+            else if (ListenV2ListenV2FatalError is { } __value4)
             {
-                listenV2ListenV2FatalError?.Invoke(ListenV2ListenV2FatalError!);
+                listenV2ListenV2FatalError?.Invoke(__value4);
             }
         }
 

@@ -51,8 +51,8 @@ namespace Deepgram.Realtime
         /// <summary>
         ///
         /// </summary>
-        public string PickListenV2KeytermVariant1() => IsListenV2KeytermVariant1
-            ? ListenV2KeytermVariant1!
+        public string PickListenV2KeytermVariant1() => ListenV2KeytermVariant1 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'ListenV2KeytermVariant1' but the value was {ToString()}.");
 
         /// <summary>
@@ -88,8 +88,8 @@ namespace Deepgram.Realtime
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<string> PickListenV2KeytermVariant2() => IsListenV2KeytermVariant2
-            ? ListenV2KeytermVariant2!
+        public global::System.Collections.Generic.IList<string> PickListenV2KeytermVariant2() => ListenV2KeytermVariant2 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'ListenV2KeytermVariant2' but the value was {ToString()}.");
         /// <summary>
         ///
@@ -163,13 +163,13 @@ namespace Deepgram.Realtime
                 Validate();
             }
 
-            if (IsListenV2KeytermVariant1 && listenV2KeytermVariant1 != null)
+            if (ListenV2KeytermVariant1 is { } __value0 && listenV2KeytermVariant1 != null)
             {
-                return listenV2KeytermVariant1(ListenV2KeytermVariant1!);
+                return listenV2KeytermVariant1(__value0);
             }
-            else if (IsListenV2KeytermVariant2 && listenV2KeytermVariant2 != null)
+            else if (ListenV2KeytermVariant2 is { } __value1 && listenV2KeytermVariant2 != null)
             {
-                return listenV2KeytermVariant2(ListenV2KeytermVariant2!);
+                return listenV2KeytermVariant2(__value1);
             }
 
             return default(TResult);
@@ -189,13 +189,13 @@ namespace Deepgram.Realtime
                 Validate();
             }
 
-            if (IsListenV2KeytermVariant1)
+            if (ListenV2KeytermVariant1 is { } __value0)
             {
-                listenV2KeytermVariant1?.Invoke(ListenV2KeytermVariant1!);
+                listenV2KeytermVariant1?.Invoke(__value0);
             }
-            else if (IsListenV2KeytermVariant2)
+            else if (ListenV2KeytermVariant2 is { } __value1)
             {
-                listenV2KeytermVariant2?.Invoke(ListenV2KeytermVariant2!);
+                listenV2KeytermVariant2?.Invoke(__value1);
             }
         }
 
@@ -212,13 +212,13 @@ namespace Deepgram.Realtime
                 Validate();
             }
 
-            if (IsListenV2KeytermVariant1)
+            if (ListenV2KeytermVariant1 is { } __value0)
             {
-                listenV2KeytermVariant1?.Invoke(ListenV2KeytermVariant1!);
+                listenV2KeytermVariant1?.Invoke(__value0);
             }
-            else if (IsListenV2KeytermVariant2)
+            else if (ListenV2KeytermVariant2 is { } __value1)
             {
-                listenV2KeytermVariant2?.Invoke(ListenV2KeytermVariant2!);
+                listenV2KeytermVariant2?.Invoke(__value1);
             }
         }
 

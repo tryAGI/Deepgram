@@ -42,8 +42,8 @@ namespace Deepgram.Realtime
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.AgentV1AgentV1ListenUpdated PickAgentV1AgentV1ListenUpdated() => IsAgentV1AgentV1ListenUpdated
-            ? AgentV1AgentV1ListenUpdated!
+        public global::Deepgram.Realtime.AgentV1AgentV1ListenUpdated PickAgentV1AgentV1ListenUpdated() => AgentV1AgentV1ListenUpdated is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'AgentV1AgentV1ListenUpdated' but the value was {ToString()}.");
 
         /// <summary>
@@ -79,8 +79,8 @@ namespace Deepgram.Realtime
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.AgentV1AgentV1ThinkUpdated PickAgentV1AgentV1ThinkUpdated() => IsAgentV1AgentV1ThinkUpdated
-            ? AgentV1AgentV1ThinkUpdated!
+        public global::Deepgram.Realtime.AgentV1AgentV1ThinkUpdated PickAgentV1AgentV1ThinkUpdated() => AgentV1AgentV1ThinkUpdated is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'AgentV1AgentV1ThinkUpdated' but the value was {ToString()}.");
 
         /// <summary>
@@ -122,8 +122,8 @@ namespace Deepgram.Realtime
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.AgentV1AgentV1ReceiveFunctionCallResponse PickAgentV1AgentV1ReceiveFunctionCallResponse() => IsAgentV1AgentV1ReceiveFunctionCallResponse
-            ? AgentV1AgentV1ReceiveFunctionCallResponse!
+        public global::Deepgram.Realtime.AgentV1AgentV1ReceiveFunctionCallResponse PickAgentV1AgentV1ReceiveFunctionCallResponse() => AgentV1AgentV1ReceiveFunctionCallResponse is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'AgentV1AgentV1ReceiveFunctionCallResponse' but the value was {ToString()}.");
 
         /// <summary>
@@ -159,8 +159,8 @@ namespace Deepgram.Realtime
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.AgentV1AgentV1PromptUpdated PickAgentV1AgentV1PromptUpdated() => IsAgentV1AgentV1PromptUpdated
-            ? AgentV1AgentV1PromptUpdated!
+        public global::Deepgram.Realtime.AgentV1AgentV1PromptUpdated PickAgentV1AgentV1PromptUpdated() => AgentV1AgentV1PromptUpdated is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'AgentV1AgentV1PromptUpdated' but the value was {ToString()}.");
 
         /// <summary>
@@ -196,8 +196,8 @@ namespace Deepgram.Realtime
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.AgentV1AgentV1SpeakUpdated PickAgentV1AgentV1SpeakUpdated() => IsAgentV1AgentV1SpeakUpdated
-            ? AgentV1AgentV1SpeakUpdated!
+        public global::Deepgram.Realtime.AgentV1AgentV1SpeakUpdated PickAgentV1AgentV1SpeakUpdated() => AgentV1AgentV1SpeakUpdated is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'AgentV1AgentV1SpeakUpdated' but the value was {ToString()}.");
 
         /// <summary>
@@ -233,8 +233,8 @@ namespace Deepgram.Realtime
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.AgentV1AgentV1InjectionRefused PickAgentV1AgentV1InjectionRefused() => IsAgentV1AgentV1InjectionRefused
-            ? AgentV1AgentV1InjectionRefused!
+        public global::Deepgram.Realtime.AgentV1AgentV1InjectionRefused PickAgentV1AgentV1InjectionRefused() => AgentV1AgentV1InjectionRefused is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'AgentV1AgentV1InjectionRefused' but the value was {ToString()}.");
 
         /// <summary>
@@ -270,8 +270,8 @@ namespace Deepgram.Realtime
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.AgentV1AgentV1Welcome PickAgentV1AgentV1Welcome() => IsAgentV1AgentV1Welcome
-            ? AgentV1AgentV1Welcome!
+        public global::Deepgram.Realtime.AgentV1AgentV1Welcome PickAgentV1AgentV1Welcome() => AgentV1AgentV1Welcome is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'AgentV1AgentV1Welcome' but the value was {ToString()}.");
 
         /// <summary>
@@ -307,8 +307,8 @@ namespace Deepgram.Realtime
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.AgentV1AgentV1SettingsApplied PickAgentV1AgentV1SettingsApplied() => IsAgentV1AgentV1SettingsApplied
-            ? AgentV1AgentV1SettingsApplied!
+        public global::Deepgram.Realtime.AgentV1AgentV1SettingsApplied PickAgentV1AgentV1SettingsApplied() => AgentV1AgentV1SettingsApplied is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'AgentV1AgentV1SettingsApplied' but the value was {ToString()}.");
 
         /// <summary>
@@ -344,8 +344,8 @@ namespace Deepgram.Realtime
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.AgentV1AgentV1ConversationText PickAgentV1AgentV1ConversationText() => IsAgentV1AgentV1ConversationText
-            ? AgentV1AgentV1ConversationText!
+        public global::Deepgram.Realtime.AgentV1AgentV1ConversationText PickAgentV1AgentV1ConversationText() => AgentV1AgentV1ConversationText is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'AgentV1AgentV1ConversationText' but the value was {ToString()}.");
 
         /// <summary>
@@ -381,8 +381,8 @@ namespace Deepgram.Realtime
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.AgentV1AgentV1UserStartedSpeaking PickAgentV1AgentV1UserStartedSpeaking() => IsAgentV1AgentV1UserStartedSpeaking
-            ? AgentV1AgentV1UserStartedSpeaking!
+        public global::Deepgram.Realtime.AgentV1AgentV1UserStartedSpeaking PickAgentV1AgentV1UserStartedSpeaking() => AgentV1AgentV1UserStartedSpeaking is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'AgentV1AgentV1UserStartedSpeaking' but the value was {ToString()}.");
 
         /// <summary>
@@ -418,8 +418,8 @@ namespace Deepgram.Realtime
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.AgentV1AgentV1AgentThinking PickAgentV1AgentV1AgentThinking() => IsAgentV1AgentV1AgentThinking
-            ? AgentV1AgentV1AgentThinking!
+        public global::Deepgram.Realtime.AgentV1AgentV1AgentThinking PickAgentV1AgentV1AgentThinking() => AgentV1AgentV1AgentThinking is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'AgentV1AgentV1AgentThinking' but the value was {ToString()}.");
 
         /// <summary>
@@ -455,8 +455,8 @@ namespace Deepgram.Realtime
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.AgentV1AgentV1LatencyReport PickAgentV1AgentV1LatencyReport() => IsAgentV1AgentV1LatencyReport
-            ? AgentV1AgentV1LatencyReport!
+        public global::Deepgram.Realtime.AgentV1AgentV1LatencyReport PickAgentV1AgentV1LatencyReport() => AgentV1AgentV1LatencyReport is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'AgentV1AgentV1LatencyReport' but the value was {ToString()}.");
 
         /// <summary>
@@ -492,8 +492,8 @@ namespace Deepgram.Realtime
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.AgentV1AgentV1FunctionCallRequest PickAgentV1AgentV1FunctionCallRequest() => IsAgentV1AgentV1FunctionCallRequest
-            ? AgentV1AgentV1FunctionCallRequest!
+        public global::Deepgram.Realtime.AgentV1AgentV1FunctionCallRequest PickAgentV1AgentV1FunctionCallRequest() => AgentV1AgentV1FunctionCallRequest is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'AgentV1AgentV1FunctionCallRequest' but the value was {ToString()}.");
 
         /// <summary>
@@ -529,8 +529,8 @@ namespace Deepgram.Realtime
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.AgentV1AgentV1FunctionCallCancelled PickAgentV1AgentV1FunctionCallCancelled() => IsAgentV1AgentV1FunctionCallCancelled
-            ? AgentV1AgentV1FunctionCallCancelled!
+        public global::Deepgram.Realtime.AgentV1AgentV1FunctionCallCancelled PickAgentV1AgentV1FunctionCallCancelled() => AgentV1AgentV1FunctionCallCancelled is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'AgentV1AgentV1FunctionCallCancelled' but the value was {ToString()}.");
 
         /// <summary>
@@ -566,8 +566,8 @@ namespace Deepgram.Realtime
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.AgentV1AgentV1AgentStartedSpeaking PickAgentV1AgentV1AgentStartedSpeaking() => IsAgentV1AgentV1AgentStartedSpeaking
-            ? AgentV1AgentV1AgentStartedSpeaking!
+        public global::Deepgram.Realtime.AgentV1AgentV1AgentStartedSpeaking PickAgentV1AgentV1AgentStartedSpeaking() => AgentV1AgentV1AgentStartedSpeaking is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'AgentV1AgentV1AgentStartedSpeaking' but the value was {ToString()}.");
 
         /// <summary>
@@ -603,8 +603,8 @@ namespace Deepgram.Realtime
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.AgentV1AgentV1AgentAudioDone PickAgentV1AgentV1AgentAudioDone() => IsAgentV1AgentV1AgentAudioDone
-            ? AgentV1AgentV1AgentAudioDone!
+        public global::Deepgram.Realtime.AgentV1AgentV1AgentAudioDone PickAgentV1AgentV1AgentAudioDone() => AgentV1AgentV1AgentAudioDone is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'AgentV1AgentV1AgentAudioDone' but the value was {ToString()}.");
 
         /// <summary>
@@ -640,8 +640,8 @@ namespace Deepgram.Realtime
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.AgentV1AgentV1Error PickAgentV1AgentV1Error() => IsAgentV1AgentV1Error
-            ? AgentV1AgentV1Error!
+        public global::Deepgram.Realtime.AgentV1AgentV1Error PickAgentV1AgentV1Error() => AgentV1AgentV1Error is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'AgentV1AgentV1Error' but the value was {ToString()}.");
 
         /// <summary>
@@ -677,8 +677,8 @@ namespace Deepgram.Realtime
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.AgentV1AgentV1Warning PickAgentV1AgentV1Warning() => IsAgentV1AgentV1Warning
-            ? AgentV1AgentV1Warning!
+        public global::Deepgram.Realtime.AgentV1AgentV1Warning PickAgentV1AgentV1Warning() => AgentV1AgentV1Warning is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'AgentV1AgentV1Warning' but the value was {ToString()}.");
 
         /// <summary>
@@ -714,8 +714,8 @@ namespace Deepgram.Realtime
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.AgentV1AgentV1History PickAgentV1AgentV1History() => IsAgentV1AgentV1History
-            ? AgentV1AgentV1History!.Value
+        public global::Deepgram.Realtime.AgentV1AgentV1History PickAgentV1AgentV1History() => AgentV1AgentV1History is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'AgentV1AgentV1History' but the value was {ToString()}.");
 
         /// <summary>
@@ -751,8 +751,8 @@ namespace Deepgram.Realtime
         /// <summary>
         ///
         /// </summary>
-        public byte[] PickAgentV1AgentV1Audio() => IsAgentV1AgentV1Audio
-            ? AgentV1AgentV1Audio!
+        public byte[] PickAgentV1AgentV1Audio() => AgentV1AgentV1Audio is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'AgentV1AgentV1Audio' but the value was {ToString()}.");
         /// <summary>
         ///
@@ -1353,85 +1353,85 @@ namespace Deepgram.Realtime
                 Validate();
             }
 
-            if (IsAgentV1AgentV1ListenUpdated && agentV1AgentV1ListenUpdated != null)
+            if (AgentV1AgentV1ListenUpdated is { } __value0 && agentV1AgentV1ListenUpdated != null)
             {
-                return agentV1AgentV1ListenUpdated(AgentV1AgentV1ListenUpdated!);
+                return agentV1AgentV1ListenUpdated(__value0);
             }
-            else if (IsAgentV1AgentV1ThinkUpdated && agentV1AgentV1ThinkUpdated != null)
+            else if (AgentV1AgentV1ThinkUpdated is { } __value1 && agentV1AgentV1ThinkUpdated != null)
             {
-                return agentV1AgentV1ThinkUpdated(AgentV1AgentV1ThinkUpdated!);
+                return agentV1AgentV1ThinkUpdated(__value1);
             }
-            else if (IsAgentV1AgentV1ReceiveFunctionCallResponse && agentV1AgentV1ReceiveFunctionCallResponse != null)
+            else if (AgentV1AgentV1ReceiveFunctionCallResponse is { } __value2 && agentV1AgentV1ReceiveFunctionCallResponse != null)
             {
-                return agentV1AgentV1ReceiveFunctionCallResponse(AgentV1AgentV1ReceiveFunctionCallResponse!);
+                return agentV1AgentV1ReceiveFunctionCallResponse(__value2);
             }
-            else if (IsAgentV1AgentV1PromptUpdated && agentV1AgentV1PromptUpdated != null)
+            else if (AgentV1AgentV1PromptUpdated is { } __value3 && agentV1AgentV1PromptUpdated != null)
             {
-                return agentV1AgentV1PromptUpdated(AgentV1AgentV1PromptUpdated!);
+                return agentV1AgentV1PromptUpdated(__value3);
             }
-            else if (IsAgentV1AgentV1SpeakUpdated && agentV1AgentV1SpeakUpdated != null)
+            else if (AgentV1AgentV1SpeakUpdated is { } __value4 && agentV1AgentV1SpeakUpdated != null)
             {
-                return agentV1AgentV1SpeakUpdated(AgentV1AgentV1SpeakUpdated!);
+                return agentV1AgentV1SpeakUpdated(__value4);
             }
-            else if (IsAgentV1AgentV1InjectionRefused && agentV1AgentV1InjectionRefused != null)
+            else if (AgentV1AgentV1InjectionRefused is { } __value5 && agentV1AgentV1InjectionRefused != null)
             {
-                return agentV1AgentV1InjectionRefused(AgentV1AgentV1InjectionRefused!);
+                return agentV1AgentV1InjectionRefused(__value5);
             }
-            else if (IsAgentV1AgentV1Welcome && agentV1AgentV1Welcome != null)
+            else if (AgentV1AgentV1Welcome is { } __value6 && agentV1AgentV1Welcome != null)
             {
-                return agentV1AgentV1Welcome(AgentV1AgentV1Welcome!);
+                return agentV1AgentV1Welcome(__value6);
             }
-            else if (IsAgentV1AgentV1SettingsApplied && agentV1AgentV1SettingsApplied != null)
+            else if (AgentV1AgentV1SettingsApplied is { } __value7 && agentV1AgentV1SettingsApplied != null)
             {
-                return agentV1AgentV1SettingsApplied(AgentV1AgentV1SettingsApplied!);
+                return agentV1AgentV1SettingsApplied(__value7);
             }
-            else if (IsAgentV1AgentV1ConversationText && agentV1AgentV1ConversationText != null)
+            else if (AgentV1AgentV1ConversationText is { } __value8 && agentV1AgentV1ConversationText != null)
             {
-                return agentV1AgentV1ConversationText(AgentV1AgentV1ConversationText!);
+                return agentV1AgentV1ConversationText(__value8);
             }
-            else if (IsAgentV1AgentV1UserStartedSpeaking && agentV1AgentV1UserStartedSpeaking != null)
+            else if (AgentV1AgentV1UserStartedSpeaking is { } __value9 && agentV1AgentV1UserStartedSpeaking != null)
             {
-                return agentV1AgentV1UserStartedSpeaking(AgentV1AgentV1UserStartedSpeaking!);
+                return agentV1AgentV1UserStartedSpeaking(__value9);
             }
-            else if (IsAgentV1AgentV1AgentThinking && agentV1AgentV1AgentThinking != null)
+            else if (AgentV1AgentV1AgentThinking is { } __value10 && agentV1AgentV1AgentThinking != null)
             {
-                return agentV1AgentV1AgentThinking(AgentV1AgentV1AgentThinking!);
+                return agentV1AgentV1AgentThinking(__value10);
             }
-            else if (IsAgentV1AgentV1LatencyReport && agentV1AgentV1LatencyReport != null)
+            else if (AgentV1AgentV1LatencyReport is { } __value11 && agentV1AgentV1LatencyReport != null)
             {
-                return agentV1AgentV1LatencyReport(AgentV1AgentV1LatencyReport!);
+                return agentV1AgentV1LatencyReport(__value11);
             }
-            else if (IsAgentV1AgentV1FunctionCallRequest && agentV1AgentV1FunctionCallRequest != null)
+            else if (AgentV1AgentV1FunctionCallRequest is { } __value12 && agentV1AgentV1FunctionCallRequest != null)
             {
-                return agentV1AgentV1FunctionCallRequest(AgentV1AgentV1FunctionCallRequest!);
+                return agentV1AgentV1FunctionCallRequest(__value12);
             }
-            else if (IsAgentV1AgentV1FunctionCallCancelled && agentV1AgentV1FunctionCallCancelled != null)
+            else if (AgentV1AgentV1FunctionCallCancelled is { } __value13 && agentV1AgentV1FunctionCallCancelled != null)
             {
-                return agentV1AgentV1FunctionCallCancelled(AgentV1AgentV1FunctionCallCancelled!);
+                return agentV1AgentV1FunctionCallCancelled(__value13);
             }
-            else if (IsAgentV1AgentV1AgentStartedSpeaking && agentV1AgentV1AgentStartedSpeaking != null)
+            else if (AgentV1AgentV1AgentStartedSpeaking is { } __value14 && agentV1AgentV1AgentStartedSpeaking != null)
             {
-                return agentV1AgentV1AgentStartedSpeaking(AgentV1AgentV1AgentStartedSpeaking!);
+                return agentV1AgentV1AgentStartedSpeaking(__value14);
             }
-            else if (IsAgentV1AgentV1AgentAudioDone && agentV1AgentV1AgentAudioDone != null)
+            else if (AgentV1AgentV1AgentAudioDone is { } __value15 && agentV1AgentV1AgentAudioDone != null)
             {
-                return agentV1AgentV1AgentAudioDone(AgentV1AgentV1AgentAudioDone!);
+                return agentV1AgentV1AgentAudioDone(__value15);
             }
-            else if (IsAgentV1AgentV1Error && agentV1AgentV1Error != null)
+            else if (AgentV1AgentV1Error is { } __value16 && agentV1AgentV1Error != null)
             {
-                return agentV1AgentV1Error(AgentV1AgentV1Error!);
+                return agentV1AgentV1Error(__value16);
             }
-            else if (IsAgentV1AgentV1Warning && agentV1AgentV1Warning != null)
+            else if (AgentV1AgentV1Warning is { } __value17 && agentV1AgentV1Warning != null)
             {
-                return agentV1AgentV1Warning(AgentV1AgentV1Warning!);
+                return agentV1AgentV1Warning(__value17);
             }
-            else if (IsAgentV1AgentV1History && agentV1AgentV1History != null)
+            else if (AgentV1AgentV1History is { } __value18 && agentV1AgentV1History != null)
             {
-                return agentV1AgentV1History(AgentV1AgentV1History!);
+                return agentV1AgentV1History(__value18);
             }
-            else if (IsAgentV1AgentV1Audio && agentV1AgentV1Audio != null)
+            else if (AgentV1AgentV1Audio is { } __value19 && agentV1AgentV1Audio != null)
             {
-                return agentV1AgentV1Audio(AgentV1AgentV1Audio!);
+                return agentV1AgentV1Audio(__value19);
             }
 
             return default(TResult);
@@ -1487,85 +1487,85 @@ namespace Deepgram.Realtime
                 Validate();
             }
 
-            if (IsAgentV1AgentV1ListenUpdated)
+            if (AgentV1AgentV1ListenUpdated is { } __value0)
             {
-                agentV1AgentV1ListenUpdated?.Invoke(AgentV1AgentV1ListenUpdated!);
+                agentV1AgentV1ListenUpdated?.Invoke(__value0);
             }
-            else if (IsAgentV1AgentV1ThinkUpdated)
+            else if (AgentV1AgentV1ThinkUpdated is { } __value1)
             {
-                agentV1AgentV1ThinkUpdated?.Invoke(AgentV1AgentV1ThinkUpdated!);
+                agentV1AgentV1ThinkUpdated?.Invoke(__value1);
             }
-            else if (IsAgentV1AgentV1ReceiveFunctionCallResponse)
+            else if (AgentV1AgentV1ReceiveFunctionCallResponse is { } __value2)
             {
-                agentV1AgentV1ReceiveFunctionCallResponse?.Invoke(AgentV1AgentV1ReceiveFunctionCallResponse!);
+                agentV1AgentV1ReceiveFunctionCallResponse?.Invoke(__value2);
             }
-            else if (IsAgentV1AgentV1PromptUpdated)
+            else if (AgentV1AgentV1PromptUpdated is { } __value3)
             {
-                agentV1AgentV1PromptUpdated?.Invoke(AgentV1AgentV1PromptUpdated!);
+                agentV1AgentV1PromptUpdated?.Invoke(__value3);
             }
-            else if (IsAgentV1AgentV1SpeakUpdated)
+            else if (AgentV1AgentV1SpeakUpdated is { } __value4)
             {
-                agentV1AgentV1SpeakUpdated?.Invoke(AgentV1AgentV1SpeakUpdated!);
+                agentV1AgentV1SpeakUpdated?.Invoke(__value4);
             }
-            else if (IsAgentV1AgentV1InjectionRefused)
+            else if (AgentV1AgentV1InjectionRefused is { } __value5)
             {
-                agentV1AgentV1InjectionRefused?.Invoke(AgentV1AgentV1InjectionRefused!);
+                agentV1AgentV1InjectionRefused?.Invoke(__value5);
             }
-            else if (IsAgentV1AgentV1Welcome)
+            else if (AgentV1AgentV1Welcome is { } __value6)
             {
-                agentV1AgentV1Welcome?.Invoke(AgentV1AgentV1Welcome!);
+                agentV1AgentV1Welcome?.Invoke(__value6);
             }
-            else if (IsAgentV1AgentV1SettingsApplied)
+            else if (AgentV1AgentV1SettingsApplied is { } __value7)
             {
-                agentV1AgentV1SettingsApplied?.Invoke(AgentV1AgentV1SettingsApplied!);
+                agentV1AgentV1SettingsApplied?.Invoke(__value7);
             }
-            else if (IsAgentV1AgentV1ConversationText)
+            else if (AgentV1AgentV1ConversationText is { } __value8)
             {
-                agentV1AgentV1ConversationText?.Invoke(AgentV1AgentV1ConversationText!);
+                agentV1AgentV1ConversationText?.Invoke(__value8);
             }
-            else if (IsAgentV1AgentV1UserStartedSpeaking)
+            else if (AgentV1AgentV1UserStartedSpeaking is { } __value9)
             {
-                agentV1AgentV1UserStartedSpeaking?.Invoke(AgentV1AgentV1UserStartedSpeaking!);
+                agentV1AgentV1UserStartedSpeaking?.Invoke(__value9);
             }
-            else if (IsAgentV1AgentV1AgentThinking)
+            else if (AgentV1AgentV1AgentThinking is { } __value10)
             {
-                agentV1AgentV1AgentThinking?.Invoke(AgentV1AgentV1AgentThinking!);
+                agentV1AgentV1AgentThinking?.Invoke(__value10);
             }
-            else if (IsAgentV1AgentV1LatencyReport)
+            else if (AgentV1AgentV1LatencyReport is { } __value11)
             {
-                agentV1AgentV1LatencyReport?.Invoke(AgentV1AgentV1LatencyReport!);
+                agentV1AgentV1LatencyReport?.Invoke(__value11);
             }
-            else if (IsAgentV1AgentV1FunctionCallRequest)
+            else if (AgentV1AgentV1FunctionCallRequest is { } __value12)
             {
-                agentV1AgentV1FunctionCallRequest?.Invoke(AgentV1AgentV1FunctionCallRequest!);
+                agentV1AgentV1FunctionCallRequest?.Invoke(__value12);
             }
-            else if (IsAgentV1AgentV1FunctionCallCancelled)
+            else if (AgentV1AgentV1FunctionCallCancelled is { } __value13)
             {
-                agentV1AgentV1FunctionCallCancelled?.Invoke(AgentV1AgentV1FunctionCallCancelled!);
+                agentV1AgentV1FunctionCallCancelled?.Invoke(__value13);
             }
-            else if (IsAgentV1AgentV1AgentStartedSpeaking)
+            else if (AgentV1AgentV1AgentStartedSpeaking is { } __value14)
             {
-                agentV1AgentV1AgentStartedSpeaking?.Invoke(AgentV1AgentV1AgentStartedSpeaking!);
+                agentV1AgentV1AgentStartedSpeaking?.Invoke(__value14);
             }
-            else if (IsAgentV1AgentV1AgentAudioDone)
+            else if (AgentV1AgentV1AgentAudioDone is { } __value15)
             {
-                agentV1AgentV1AgentAudioDone?.Invoke(AgentV1AgentV1AgentAudioDone!);
+                agentV1AgentV1AgentAudioDone?.Invoke(__value15);
             }
-            else if (IsAgentV1AgentV1Error)
+            else if (AgentV1AgentV1Error is { } __value16)
             {
-                agentV1AgentV1Error?.Invoke(AgentV1AgentV1Error!);
+                agentV1AgentV1Error?.Invoke(__value16);
             }
-            else if (IsAgentV1AgentV1Warning)
+            else if (AgentV1AgentV1Warning is { } __value17)
             {
-                agentV1AgentV1Warning?.Invoke(AgentV1AgentV1Warning!);
+                agentV1AgentV1Warning?.Invoke(__value17);
             }
-            else if (IsAgentV1AgentV1History)
+            else if (AgentV1AgentV1History is { } __value18)
             {
-                agentV1AgentV1History?.Invoke(AgentV1AgentV1History!);
+                agentV1AgentV1History?.Invoke(__value18);
             }
-            else if (IsAgentV1AgentV1Audio)
+            else if (AgentV1AgentV1Audio is { } __value19)
             {
-                agentV1AgentV1Audio?.Invoke(AgentV1AgentV1Audio!);
+                agentV1AgentV1Audio?.Invoke(__value19);
             }
         }
 
@@ -1600,85 +1600,85 @@ namespace Deepgram.Realtime
                 Validate();
             }
 
-            if (IsAgentV1AgentV1ListenUpdated)
+            if (AgentV1AgentV1ListenUpdated is { } __value0)
             {
-                agentV1AgentV1ListenUpdated?.Invoke(AgentV1AgentV1ListenUpdated!);
+                agentV1AgentV1ListenUpdated?.Invoke(__value0);
             }
-            else if (IsAgentV1AgentV1ThinkUpdated)
+            else if (AgentV1AgentV1ThinkUpdated is { } __value1)
             {
-                agentV1AgentV1ThinkUpdated?.Invoke(AgentV1AgentV1ThinkUpdated!);
+                agentV1AgentV1ThinkUpdated?.Invoke(__value1);
             }
-            else if (IsAgentV1AgentV1ReceiveFunctionCallResponse)
+            else if (AgentV1AgentV1ReceiveFunctionCallResponse is { } __value2)
             {
-                agentV1AgentV1ReceiveFunctionCallResponse?.Invoke(AgentV1AgentV1ReceiveFunctionCallResponse!);
+                agentV1AgentV1ReceiveFunctionCallResponse?.Invoke(__value2);
             }
-            else if (IsAgentV1AgentV1PromptUpdated)
+            else if (AgentV1AgentV1PromptUpdated is { } __value3)
             {
-                agentV1AgentV1PromptUpdated?.Invoke(AgentV1AgentV1PromptUpdated!);
+                agentV1AgentV1PromptUpdated?.Invoke(__value3);
             }
-            else if (IsAgentV1AgentV1SpeakUpdated)
+            else if (AgentV1AgentV1SpeakUpdated is { } __value4)
             {
-                agentV1AgentV1SpeakUpdated?.Invoke(AgentV1AgentV1SpeakUpdated!);
+                agentV1AgentV1SpeakUpdated?.Invoke(__value4);
             }
-            else if (IsAgentV1AgentV1InjectionRefused)
+            else if (AgentV1AgentV1InjectionRefused is { } __value5)
             {
-                agentV1AgentV1InjectionRefused?.Invoke(AgentV1AgentV1InjectionRefused!);
+                agentV1AgentV1InjectionRefused?.Invoke(__value5);
             }
-            else if (IsAgentV1AgentV1Welcome)
+            else if (AgentV1AgentV1Welcome is { } __value6)
             {
-                agentV1AgentV1Welcome?.Invoke(AgentV1AgentV1Welcome!);
+                agentV1AgentV1Welcome?.Invoke(__value6);
             }
-            else if (IsAgentV1AgentV1SettingsApplied)
+            else if (AgentV1AgentV1SettingsApplied is { } __value7)
             {
-                agentV1AgentV1SettingsApplied?.Invoke(AgentV1AgentV1SettingsApplied!);
+                agentV1AgentV1SettingsApplied?.Invoke(__value7);
             }
-            else if (IsAgentV1AgentV1ConversationText)
+            else if (AgentV1AgentV1ConversationText is { } __value8)
             {
-                agentV1AgentV1ConversationText?.Invoke(AgentV1AgentV1ConversationText!);
+                agentV1AgentV1ConversationText?.Invoke(__value8);
             }
-            else if (IsAgentV1AgentV1UserStartedSpeaking)
+            else if (AgentV1AgentV1UserStartedSpeaking is { } __value9)
             {
-                agentV1AgentV1UserStartedSpeaking?.Invoke(AgentV1AgentV1UserStartedSpeaking!);
+                agentV1AgentV1UserStartedSpeaking?.Invoke(__value9);
             }
-            else if (IsAgentV1AgentV1AgentThinking)
+            else if (AgentV1AgentV1AgentThinking is { } __value10)
             {
-                agentV1AgentV1AgentThinking?.Invoke(AgentV1AgentV1AgentThinking!);
+                agentV1AgentV1AgentThinking?.Invoke(__value10);
             }
-            else if (IsAgentV1AgentV1LatencyReport)
+            else if (AgentV1AgentV1LatencyReport is { } __value11)
             {
-                agentV1AgentV1LatencyReport?.Invoke(AgentV1AgentV1LatencyReport!);
+                agentV1AgentV1LatencyReport?.Invoke(__value11);
             }
-            else if (IsAgentV1AgentV1FunctionCallRequest)
+            else if (AgentV1AgentV1FunctionCallRequest is { } __value12)
             {
-                agentV1AgentV1FunctionCallRequest?.Invoke(AgentV1AgentV1FunctionCallRequest!);
+                agentV1AgentV1FunctionCallRequest?.Invoke(__value12);
             }
-            else if (IsAgentV1AgentV1FunctionCallCancelled)
+            else if (AgentV1AgentV1FunctionCallCancelled is { } __value13)
             {
-                agentV1AgentV1FunctionCallCancelled?.Invoke(AgentV1AgentV1FunctionCallCancelled!);
+                agentV1AgentV1FunctionCallCancelled?.Invoke(__value13);
             }
-            else if (IsAgentV1AgentV1AgentStartedSpeaking)
+            else if (AgentV1AgentV1AgentStartedSpeaking is { } __value14)
             {
-                agentV1AgentV1AgentStartedSpeaking?.Invoke(AgentV1AgentV1AgentStartedSpeaking!);
+                agentV1AgentV1AgentStartedSpeaking?.Invoke(__value14);
             }
-            else if (IsAgentV1AgentV1AgentAudioDone)
+            else if (AgentV1AgentV1AgentAudioDone is { } __value15)
             {
-                agentV1AgentV1AgentAudioDone?.Invoke(AgentV1AgentV1AgentAudioDone!);
+                agentV1AgentV1AgentAudioDone?.Invoke(__value15);
             }
-            else if (IsAgentV1AgentV1Error)
+            else if (AgentV1AgentV1Error is { } __value16)
             {
-                agentV1AgentV1Error?.Invoke(AgentV1AgentV1Error!);
+                agentV1AgentV1Error?.Invoke(__value16);
             }
-            else if (IsAgentV1AgentV1Warning)
+            else if (AgentV1AgentV1Warning is { } __value17)
             {
-                agentV1AgentV1Warning?.Invoke(AgentV1AgentV1Warning!);
+                agentV1AgentV1Warning?.Invoke(__value17);
             }
-            else if (IsAgentV1AgentV1History)
+            else if (AgentV1AgentV1History is { } __value18)
             {
-                agentV1AgentV1History?.Invoke(AgentV1AgentV1History!);
+                agentV1AgentV1History?.Invoke(__value18);
             }
-            else if (IsAgentV1AgentV1Audio)
+            else if (AgentV1AgentV1Audio is { } __value19)
             {
-                agentV1AgentV1Audio?.Invoke(AgentV1AgentV1Audio!);
+                agentV1AgentV1Audio?.Invoke(__value19);
             }
         }
 

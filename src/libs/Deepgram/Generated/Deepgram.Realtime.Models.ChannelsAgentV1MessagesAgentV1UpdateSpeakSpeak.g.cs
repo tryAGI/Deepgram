@@ -42,8 +42,8 @@ namespace Deepgram.Realtime
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.SpeakSettingsV1 PickSpeakSettingsV1() => IsSpeakSettingsV1
-            ? SpeakSettingsV1!
+        public global::Deepgram.Realtime.SpeakSettingsV1 PickSpeakSettingsV1() => SpeakSettingsV1 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'SpeakSettingsV1' but the value was {ToString()}.");
 
         /// <summary>
@@ -79,8 +79,8 @@ namespace Deepgram.Realtime
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Deepgram.Realtime.SpeakSettingsV1> PickChannelsAgentV1MessagesAgentV1UpdateSpeakSpeak1() => IsChannelsAgentV1MessagesAgentV1UpdateSpeakSpeak1
-            ? ChannelsAgentV1MessagesAgentV1UpdateSpeakSpeak1!
+        public global::System.Collections.Generic.IList<global::Deepgram.Realtime.SpeakSettingsV1> PickChannelsAgentV1MessagesAgentV1UpdateSpeakSpeak1() => ChannelsAgentV1MessagesAgentV1UpdateSpeakSpeak1 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'ChannelsAgentV1MessagesAgentV1UpdateSpeakSpeak1' but the value was {ToString()}.");
         /// <summary>
         ///
@@ -154,13 +154,13 @@ namespace Deepgram.Realtime
                 Validate();
             }
 
-            if (IsSpeakSettingsV1 && speakSettingsV1 != null)
+            if (SpeakSettingsV1 is { } __value0 && speakSettingsV1 != null)
             {
-                return speakSettingsV1(SpeakSettingsV1!);
+                return speakSettingsV1(__value0);
             }
-            else if (IsChannelsAgentV1MessagesAgentV1UpdateSpeakSpeak1 && channelsAgentV1MessagesAgentV1UpdateSpeakSpeak1 != null)
+            else if (ChannelsAgentV1MessagesAgentV1UpdateSpeakSpeak1 is { } __value1 && channelsAgentV1MessagesAgentV1UpdateSpeakSpeak1 != null)
             {
-                return channelsAgentV1MessagesAgentV1UpdateSpeakSpeak1(ChannelsAgentV1MessagesAgentV1UpdateSpeakSpeak1!);
+                return channelsAgentV1MessagesAgentV1UpdateSpeakSpeak1(__value1);
             }
 
             return default(TResult);
@@ -180,13 +180,13 @@ namespace Deepgram.Realtime
                 Validate();
             }
 
-            if (IsSpeakSettingsV1)
+            if (SpeakSettingsV1 is { } __value0)
             {
-                speakSettingsV1?.Invoke(SpeakSettingsV1!);
+                speakSettingsV1?.Invoke(__value0);
             }
-            else if (IsChannelsAgentV1MessagesAgentV1UpdateSpeakSpeak1)
+            else if (ChannelsAgentV1MessagesAgentV1UpdateSpeakSpeak1 is { } __value1)
             {
-                channelsAgentV1MessagesAgentV1UpdateSpeakSpeak1?.Invoke(ChannelsAgentV1MessagesAgentV1UpdateSpeakSpeak1!);
+                channelsAgentV1MessagesAgentV1UpdateSpeakSpeak1?.Invoke(__value1);
             }
         }
 
@@ -203,13 +203,13 @@ namespace Deepgram.Realtime
                 Validate();
             }
 
-            if (IsSpeakSettingsV1)
+            if (SpeakSettingsV1 is { } __value0)
             {
-                speakSettingsV1?.Invoke(SpeakSettingsV1!);
+                speakSettingsV1?.Invoke(__value0);
             }
-            else if (IsChannelsAgentV1MessagesAgentV1UpdateSpeakSpeak1)
+            else if (ChannelsAgentV1MessagesAgentV1UpdateSpeakSpeak1 is { } __value1)
             {
-                channelsAgentV1MessagesAgentV1UpdateSpeakSpeak1?.Invoke(ChannelsAgentV1MessagesAgentV1UpdateSpeakSpeak1!);
+                channelsAgentV1MessagesAgentV1UpdateSpeakSpeak1?.Invoke(__value1);
             }
         }
 

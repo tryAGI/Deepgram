@@ -296,31 +296,31 @@ namespace Deepgram.JsonConverters
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Deepgram.V2SpeakPostParametersContainer0), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Deepgram.V2SpeakPostParametersContainer0> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Deepgram.V2SpeakPostParametersContainer0).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.V2SpeakPostParametersContainer0!.Value, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickV2SpeakPostParametersContainer0(), typeInfo);
             }
             else if (value.IsV2SpeakPostParametersContainer1)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Deepgram.V2SpeakPostParametersContainer1), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Deepgram.V2SpeakPostParametersContainer1> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Deepgram.V2SpeakPostParametersContainer1).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.V2SpeakPostParametersContainer1!.Value, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickV2SpeakPostParametersContainer1(), typeInfo);
             }
             else if (value.IsV2SpeakPostParametersContainer2)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Deepgram.V2SpeakPostParametersContainer2), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Deepgram.V2SpeakPostParametersContainer2> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Deepgram.V2SpeakPostParametersContainer2).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.V2SpeakPostParametersContainer2!.Value, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickV2SpeakPostParametersContainer2(), typeInfo);
             }
             else if (value.IsV2SpeakPostParametersContainer3)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Deepgram.V2SpeakPostParametersContainer3), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Deepgram.V2SpeakPostParametersContainer3> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Deepgram.V2SpeakPostParametersContainer3).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.V2SpeakPostParametersContainer3!.Value, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickV2SpeakPostParametersContainer3(), typeInfo);
             }
             else if (value.IsV2SpeakPostParametersContainer4)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Deepgram.V2SpeakPostParametersContainer4), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Deepgram.V2SpeakPostParametersContainer4> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Deepgram.V2SpeakPostParametersContainer4).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.V2SpeakPostParametersContainer4!.Value, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickV2SpeakPostParametersContainer4(), typeInfo);
             }
         }
     }

@@ -42,8 +42,8 @@ namespace Deepgram.Realtime
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.ChannelsAgentV1MessagesAgentV1SettingsAgent0 PickChannelsAgentV1MessagesAgentV1SettingsAgent0() => IsChannelsAgentV1MessagesAgentV1SettingsAgent0
-            ? ChannelsAgentV1MessagesAgentV1SettingsAgent0!
+        public global::Deepgram.Realtime.ChannelsAgentV1MessagesAgentV1SettingsAgent0 PickChannelsAgentV1MessagesAgentV1SettingsAgent0() => ChannelsAgentV1MessagesAgentV1SettingsAgent0 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'ChannelsAgentV1MessagesAgentV1SettingsAgent0' but the value was {ToString()}.");
 
         /// <summary>
@@ -79,8 +79,8 @@ namespace Deepgram.Realtime
         /// <summary>
         ///
         /// </summary>
-        public global::System.Guid PickGuid() => IsGuid
-            ? Guid!.Value
+        public global::System.Guid PickGuid() => Guid is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'Guid' but the value was {ToString()}.");
         /// <summary>
         ///
@@ -177,13 +177,13 @@ namespace Deepgram.Realtime
                 Validate();
             }
 
-            if (IsChannelsAgentV1MessagesAgentV1SettingsAgent0 && channelsAgentV1MessagesAgentV1SettingsAgent0 != null)
+            if (ChannelsAgentV1MessagesAgentV1SettingsAgent0 is { } __value0 && channelsAgentV1MessagesAgentV1SettingsAgent0 != null)
             {
-                return channelsAgentV1MessagesAgentV1SettingsAgent0(ChannelsAgentV1MessagesAgentV1SettingsAgent0!);
+                return channelsAgentV1MessagesAgentV1SettingsAgent0(__value0);
             }
-            else if (IsGuid && guid != null)
+            else if (Guid is { } __value1 && guid != null)
             {
-                return guid(Guid!);
+                return guid(__value1);
             }
 
             return default(TResult);
@@ -203,13 +203,13 @@ namespace Deepgram.Realtime
                 Validate();
             }
 
-            if (IsChannelsAgentV1MessagesAgentV1SettingsAgent0)
+            if (ChannelsAgentV1MessagesAgentV1SettingsAgent0 is { } __value0)
             {
-                channelsAgentV1MessagesAgentV1SettingsAgent0?.Invoke(ChannelsAgentV1MessagesAgentV1SettingsAgent0!);
+                channelsAgentV1MessagesAgentV1SettingsAgent0?.Invoke(__value0);
             }
-            else if (IsGuid)
+            else if (Guid is { } __value1)
             {
-                guid?.Invoke(Guid!);
+                guid?.Invoke(__value1);
             }
         }
 
@@ -226,13 +226,13 @@ namespace Deepgram.Realtime
                 Validate();
             }
 
-            if (IsChannelsAgentV1MessagesAgentV1SettingsAgent0)
+            if (ChannelsAgentV1MessagesAgentV1SettingsAgent0 is { } __value0)
             {
-                channelsAgentV1MessagesAgentV1SettingsAgent0?.Invoke(ChannelsAgentV1MessagesAgentV1SettingsAgent0!);
+                channelsAgentV1MessagesAgentV1SettingsAgent0?.Invoke(__value0);
             }
-            else if (IsGuid)
+            else if (Guid is { } __value1)
             {
-                guid?.Invoke(Guid!);
+                guid?.Invoke(__value1);
             }
         }
 

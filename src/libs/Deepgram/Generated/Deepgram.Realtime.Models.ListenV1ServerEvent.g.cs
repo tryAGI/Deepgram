@@ -42,8 +42,8 @@ namespace Deepgram.Realtime
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.ListenV1ListenV1Results PickListenV1ListenV1Results() => IsListenV1ListenV1Results
-            ? ListenV1ListenV1Results!
+        public global::Deepgram.Realtime.ListenV1ListenV1Results PickListenV1ListenV1Results() => ListenV1ListenV1Results is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'ListenV1ListenV1Results' but the value was {ToString()}.");
 
         /// <summary>
@@ -79,8 +79,8 @@ namespace Deepgram.Realtime
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.ListenV1ListenV1Metadata PickListenV1ListenV1Metadata() => IsListenV1ListenV1Metadata
-            ? ListenV1ListenV1Metadata!
+        public global::Deepgram.Realtime.ListenV1ListenV1Metadata PickListenV1ListenV1Metadata() => ListenV1ListenV1Metadata is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'ListenV1ListenV1Metadata' but the value was {ToString()}.");
 
         /// <summary>
@@ -116,8 +116,8 @@ namespace Deepgram.Realtime
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.ListenV1ListenV1UtteranceEnd PickListenV1ListenV1UtteranceEnd() => IsListenV1ListenV1UtteranceEnd
-            ? ListenV1ListenV1UtteranceEnd!
+        public global::Deepgram.Realtime.ListenV1ListenV1UtteranceEnd PickListenV1ListenV1UtteranceEnd() => ListenV1ListenV1UtteranceEnd is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'ListenV1ListenV1UtteranceEnd' but the value was {ToString()}.");
 
         /// <summary>
@@ -153,8 +153,8 @@ namespace Deepgram.Realtime
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.ListenV1ListenV1SpeechStarted PickListenV1ListenV1SpeechStarted() => IsListenV1ListenV1SpeechStarted
-            ? ListenV1ListenV1SpeechStarted!
+        public global::Deepgram.Realtime.ListenV1ListenV1SpeechStarted PickListenV1ListenV1SpeechStarted() => ListenV1ListenV1SpeechStarted is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'ListenV1ListenV1SpeechStarted' but the value was {ToString()}.");
         /// <summary>
         ///
@@ -307,21 +307,21 @@ namespace Deepgram.Realtime
                 Validate();
             }
 
-            if (IsListenV1ListenV1Results && listenV1ListenV1Results != null)
+            if (ListenV1ListenV1Results is { } __value0 && listenV1ListenV1Results != null)
             {
-                return listenV1ListenV1Results(ListenV1ListenV1Results!);
+                return listenV1ListenV1Results(__value0);
             }
-            else if (IsListenV1ListenV1Metadata && listenV1ListenV1Metadata != null)
+            else if (ListenV1ListenV1Metadata is { } __value1 && listenV1ListenV1Metadata != null)
             {
-                return listenV1ListenV1Metadata(ListenV1ListenV1Metadata!);
+                return listenV1ListenV1Metadata(__value1);
             }
-            else if (IsListenV1ListenV1UtteranceEnd && listenV1ListenV1UtteranceEnd != null)
+            else if (ListenV1ListenV1UtteranceEnd is { } __value2 && listenV1ListenV1UtteranceEnd != null)
             {
-                return listenV1ListenV1UtteranceEnd(ListenV1ListenV1UtteranceEnd!);
+                return listenV1ListenV1UtteranceEnd(__value2);
             }
-            else if (IsListenV1ListenV1SpeechStarted && listenV1ListenV1SpeechStarted != null)
+            else if (ListenV1ListenV1SpeechStarted is { } __value3 && listenV1ListenV1SpeechStarted != null)
             {
-                return listenV1ListenV1SpeechStarted(ListenV1ListenV1SpeechStarted!);
+                return listenV1ListenV1SpeechStarted(__value3);
             }
 
             return default(TResult);
@@ -345,21 +345,21 @@ namespace Deepgram.Realtime
                 Validate();
             }
 
-            if (IsListenV1ListenV1Results)
+            if (ListenV1ListenV1Results is { } __value0)
             {
-                listenV1ListenV1Results?.Invoke(ListenV1ListenV1Results!);
+                listenV1ListenV1Results?.Invoke(__value0);
             }
-            else if (IsListenV1ListenV1Metadata)
+            else if (ListenV1ListenV1Metadata is { } __value1)
             {
-                listenV1ListenV1Metadata?.Invoke(ListenV1ListenV1Metadata!);
+                listenV1ListenV1Metadata?.Invoke(__value1);
             }
-            else if (IsListenV1ListenV1UtteranceEnd)
+            else if (ListenV1ListenV1UtteranceEnd is { } __value2)
             {
-                listenV1ListenV1UtteranceEnd?.Invoke(ListenV1ListenV1UtteranceEnd!);
+                listenV1ListenV1UtteranceEnd?.Invoke(__value2);
             }
-            else if (IsListenV1ListenV1SpeechStarted)
+            else if (ListenV1ListenV1SpeechStarted is { } __value3)
             {
-                listenV1ListenV1SpeechStarted?.Invoke(ListenV1ListenV1SpeechStarted!);
+                listenV1ListenV1SpeechStarted?.Invoke(__value3);
             }
         }
 
@@ -378,21 +378,21 @@ namespace Deepgram.Realtime
                 Validate();
             }
 
-            if (IsListenV1ListenV1Results)
+            if (ListenV1ListenV1Results is { } __value0)
             {
-                listenV1ListenV1Results?.Invoke(ListenV1ListenV1Results!);
+                listenV1ListenV1Results?.Invoke(__value0);
             }
-            else if (IsListenV1ListenV1Metadata)
+            else if (ListenV1ListenV1Metadata is { } __value1)
             {
-                listenV1ListenV1Metadata?.Invoke(ListenV1ListenV1Metadata!);
+                listenV1ListenV1Metadata?.Invoke(__value1);
             }
-            else if (IsListenV1ListenV1UtteranceEnd)
+            else if (ListenV1ListenV1UtteranceEnd is { } __value2)
             {
-                listenV1ListenV1UtteranceEnd?.Invoke(ListenV1ListenV1UtteranceEnd!);
+                listenV1ListenV1UtteranceEnd?.Invoke(__value2);
             }
-            else if (IsListenV1ListenV1SpeechStarted)
+            else if (ListenV1ListenV1SpeechStarted is { } __value3)
             {
-                listenV1ListenV1SpeechStarted?.Invoke(ListenV1ListenV1SpeechStarted!);
+                listenV1ListenV1SpeechStarted?.Invoke(__value3);
             }
         }
 

@@ -42,8 +42,8 @@ namespace Deepgram
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.V1ListenPostParametersSummarize0 PickV1ListenPostParametersSummarize0() => IsV1ListenPostParametersSummarize0
-            ? V1ListenPostParametersSummarize0!.Value
+        public global::Deepgram.V1ListenPostParametersSummarize0 PickV1ListenPostParametersSummarize0() => V1ListenPostParametersSummarize0 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'V1ListenPostParametersSummarize0' but the value was {ToString()}.");
 
         /// <summary>
@@ -79,8 +79,8 @@ namespace Deepgram
         /// <summary>
         ///
         /// </summary>
-        public bool PickV1ListenPostParametersSummarizeVariant2() => IsV1ListenPostParametersSummarizeVariant2
-            ? V1ListenPostParametersSummarizeVariant2!.Value
+        public bool PickV1ListenPostParametersSummarizeVariant2() => V1ListenPostParametersSummarizeVariant2 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'V1ListenPostParametersSummarizeVariant2' but the value was {ToString()}.");
         /// <summary>
         ///
@@ -177,13 +177,13 @@ namespace Deepgram
                 Validate();
             }
 
-            if (IsV1ListenPostParametersSummarize0 && v1ListenPostParametersSummarize0 != null)
+            if (V1ListenPostParametersSummarize0 is { } __value0 && v1ListenPostParametersSummarize0 != null)
             {
-                return v1ListenPostParametersSummarize0(V1ListenPostParametersSummarize0!);
+                return v1ListenPostParametersSummarize0(__value0);
             }
-            else if (IsV1ListenPostParametersSummarizeVariant2 && v1ListenPostParametersSummarizeVariant2 != null)
+            else if (V1ListenPostParametersSummarizeVariant2 is { } __value1 && v1ListenPostParametersSummarizeVariant2 != null)
             {
-                return v1ListenPostParametersSummarizeVariant2(V1ListenPostParametersSummarizeVariant2!);
+                return v1ListenPostParametersSummarizeVariant2(__value1);
             }
 
             return default(TResult);
@@ -203,13 +203,13 @@ namespace Deepgram
                 Validate();
             }
 
-            if (IsV1ListenPostParametersSummarize0)
+            if (V1ListenPostParametersSummarize0 is { } __value0)
             {
-                v1ListenPostParametersSummarize0?.Invoke(V1ListenPostParametersSummarize0!);
+                v1ListenPostParametersSummarize0?.Invoke(__value0);
             }
-            else if (IsV1ListenPostParametersSummarizeVariant2)
+            else if (V1ListenPostParametersSummarizeVariant2 is { } __value1)
             {
-                v1ListenPostParametersSummarizeVariant2?.Invoke(V1ListenPostParametersSummarizeVariant2!);
+                v1ListenPostParametersSummarizeVariant2?.Invoke(__value1);
             }
         }
 
@@ -226,13 +226,13 @@ namespace Deepgram
                 Validate();
             }
 
-            if (IsV1ListenPostParametersSummarize0)
+            if (V1ListenPostParametersSummarize0 is { } __value0)
             {
-                v1ListenPostParametersSummarize0?.Invoke(V1ListenPostParametersSummarize0!);
+                v1ListenPostParametersSummarize0?.Invoke(__value0);
             }
-            else if (IsV1ListenPostParametersSummarizeVariant2)
+            else if (V1ListenPostParametersSummarizeVariant2 is { } __value1)
             {
-                v1ListenPostParametersSummarizeVariant2?.Invoke(V1ListenPostParametersSummarizeVariant2!);
+                v1ListenPostParametersSummarizeVariant2?.Invoke(__value1);
             }
         }
 
