@@ -573,6 +573,14 @@
             "$ref": "#/components/schemas/ListenV2_ListenV2ConfigureFailure"
           }
         },
+        "ListenV2Warning": {
+          "name": "ListenV2Warning",
+          "title": "ListenV2Warning",
+          "description": "Receive a warning; the server keeps the connection open",
+          "payload": {
+            "$ref": "#/components/schemas/ListenV2_ListenV2Warning"
+          }
+        },
         "ListenV2FatalError": {
           "name": "ListenV2FatalError",
           "title": "ListenV2FatalError",
@@ -1273,7 +1281,15 @@
           "$ref": "#/components/schemas/ListenV2_ListenV2ConfigureFailure"
         }
       },
-      "subpackage_listen/v2.listen.v2-server-4-ListenV2FatalError": {
+      "subpackage_listen/v2.listen.v2-server-4-ListenV2Warning": {
+        "name": "ListenV2Warning",
+        "title": "ListenV2Warning",
+        "description": "Receive a warning; the server keeps the connection open",
+        "payload": {
+          "$ref": "#/components/schemas/ListenV2_ListenV2Warning"
+        }
+      },
+      "subpackage_listen/v2.listen.v2-server-5-ListenV2FatalError": {
         "name": "ListenV2FatalError",
         "title": "ListenV2FatalError",
         "description": "Receive a fatal error message",
@@ -4905,6 +4921,44 @@
         ],
         "title": "ListenV2_ListenV2ConfigureFailure"
       },
+      "ListenV2_ListenV2Warning": {
+        "type": "object",
+        "properties": {
+          "type": {
+            "type": "string",
+            "enum": [
+              "Warning"
+            ],
+            "description": "Message type identifier"
+          },
+          "request_id": {
+            "type": "string",
+            "format": "uuid",
+            "description": "The unique identifier of the request"
+          },
+          "sequence_id": {
+            "type": "integer",
+            "minimum": 0,
+            "description": "Starts at `0` and increments for each message the server sends\nto the client. This includes messages of other types, like\n`TurnInfo` messages.\n"
+          },
+          "code": {
+            "type": "string",
+            "description": "Warning code identifying the condition, in `SCREAMING_SNAKE_CASE`"
+          },
+          "description": {
+            "type": "string",
+            "description": "A human-readable description of the warning"
+          }
+        },
+        "required": [
+          "type",
+          "request_id",
+          "sequence_id",
+          "code",
+          "description"
+        ],
+        "title": "ListenV2_ListenV2Warning"
+      },
       "ChannelsListenV2MessagesListenV2FatalErrorType": {
         "type": "string",
         "enum": [
@@ -6549,6 +6603,18 @@
       "messages": [
         {
           "$ref": "#/channels/ListenV2/messages/ListenV2ConfigureFailure"
+        }
+      ]
+    },
+    "ListenV2Warning": {
+      "description": "Receive a warning; the server keeps the connection open",
+      "action": "receive",
+      "channel": {
+        "$ref": "#/channels/ListenV2"
+      },
+      "messages": [
+        {
+          "$ref": "#/channels/ListenV2/messages/ListenV2Warning"
         }
       ]
     },

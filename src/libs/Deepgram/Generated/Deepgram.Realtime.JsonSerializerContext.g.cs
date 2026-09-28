@@ -1,14 +1,12 @@
 
 #nullable enable
 
-#pragma warning disable CS0618 // Type or member is obsolete
-#pragma warning disable CS3016 // Arrays as attribute arguments is not CLS-compliant
-
 namespace Deepgram.Realtime
 {
     /// <summary>
     ///
     /// </summary>
+    #pragma warning disable CS3016 // Converter type array in this attribute is not CLS-compliant.
     [global::System.Text.Json.Serialization.JsonSourceGenerationOptions(
         DefaultIgnoreCondition = global::System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull,
         Converters = new global::System.Type[]
@@ -453,6 +451,10 @@ namespace Deepgram.Realtime
 
             typeof(global::Deepgram.Realtime.JsonConverters.ListenV2ListenV2ConfigureFailureTypeNullableJsonConverter),
 
+            typeof(global::Deepgram.Realtime.JsonConverters.ListenV2ListenV2WarningTypeJsonConverter),
+
+            typeof(global::Deepgram.Realtime.JsonConverters.ListenV2ListenV2WarningTypeNullableJsonConverter),
+
             typeof(global::Deepgram.Realtime.JsonConverters.ChannelsListenV2MessagesListenV2FatalErrorTypeJsonConverter),
 
             typeof(global::Deepgram.Realtime.JsonConverters.ChannelsListenV2MessagesListenV2FatalErrorTypeNullableJsonConverter),
@@ -651,6 +653,7 @@ namespace Deepgram.Realtime
 
             typeof(global::Deepgram.Realtime.JsonConverters.VsServerEventJsonConverter),
         })]
+    #pragma warning restore CS3016
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Deepgram.Realtime.JsonSerializerContextTypes))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<object>), TypeInfoPropertyName = "SystemCollectionsGeneric_ObjectList")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Deepgram.Realtime.AgentV1AgentV1ListenUpdated))]
@@ -829,8 +832,12 @@ namespace Deepgram.Realtime
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Deepgram.Realtime.ListenV1CallbackMethod), TypeInfoPropertyName = "ListenV1CallbackMethod2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Deepgram.Realtime.ListenV1Channels))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Deepgram.Realtime.ListenV1DetectEntities), TypeInfoPropertyName = "ListenV1DetectEntities2")]
+    #pragma warning disable CS0618 // This registration names a deprecated API model.
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Deepgram.Realtime.ListenV1Diarize), TypeInfoPropertyName = "ListenV1Diarize2")]
+    #pragma warning restore CS0618
+    #pragma warning disable CS0618 // This registration names a deprecated API model.
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Deepgram.Realtime.ListenV1DiarizeModel), TypeInfoPropertyName = "ListenV1DiarizeModel2")]
+    #pragma warning restore CS0618
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Deepgram.Realtime.ListenV1Dictation), TypeInfoPropertyName = "ListenV1Dictation2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Deepgram.Realtime.ListenV1Encoding), TypeInfoPropertyName = "ListenV1Encoding2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Deepgram.Realtime.ListenV1Endpointing))]
@@ -904,6 +911,8 @@ namespace Deepgram.Realtime
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Deepgram.Realtime.ListenV2ListenV2ConfigureSuccessType), TypeInfoPropertyName = "ListenV2ListenV2ConfigureSuccessType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Deepgram.Realtime.ListenV2ListenV2ConfigureFailure))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Deepgram.Realtime.ListenV2ListenV2ConfigureFailureType), TypeInfoPropertyName = "ListenV2ListenV2ConfigureFailureType2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Deepgram.Realtime.ListenV2ListenV2Warning))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Deepgram.Realtime.ListenV2ListenV2WarningType), TypeInfoPropertyName = "ListenV2ListenV2WarningType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Deepgram.Realtime.ChannelsListenV2MessagesListenV2FatalErrorType), TypeInfoPropertyName = "ChannelsListenV2MessagesListenV2FatalErrorType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Deepgram.Realtime.ListenV2ListenV2FatalError))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Deepgram.Realtime.ChannelsListenV2MessagesListenV2CloseStreamType), TypeInfoPropertyName = "ChannelsListenV2MessagesListenV2CloseStreamType2")]
