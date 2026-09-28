@@ -4,13 +4,16 @@ using System.CommandLine;
 
 namespace Deepgram.CLI.Commands;
 
-internal static class BreakdownApiGroupCommand
+internal static partial class BreakdownApiGroupCommand
 {
+    static partial void CustomizeCommand(ref Command command);
+
     public static Command Create()
     {
         var command = new Command(@"breakdown", @"breakdown endpoint commands.");
                          command.Subcommands.Add(BreakdownGetCommandApiCommand.Create());
                          command.Subcommands.Add(BreakdownListCommandApiCommand.Create());
+        CustomizeCommand(ref command);
         return command;
     }
 }

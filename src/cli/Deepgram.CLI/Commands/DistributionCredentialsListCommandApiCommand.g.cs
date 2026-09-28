@@ -33,6 +33,8 @@ internal static partial class DistributionCredentialsListCommandApiCommand
                     static partial void CustomizeResponseFormatHints(Dictionary<string, CliFormatHint> hints);
 
 
+    static partial void CustomizeCommand(ref Command command);
+
     public static Command Create()
     {
         var command = new Command(@"list", @"List Project Self-Hosted Distribution Credentials
@@ -67,6 +69,7 @@ Lists sets of distribution credentials for the specified project");
                                     cancellationToken).ConfigureAwait(false);
                                 }
             }, cancellationToken).ConfigureAwait(false));
+        CustomizeCommand(ref command);
         return command;
     }
 }

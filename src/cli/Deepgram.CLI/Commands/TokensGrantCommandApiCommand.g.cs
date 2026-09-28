@@ -49,6 +49,8 @@ internal static partial class TokensGrantCommandApiCommand
                     static partial void CustomizeResponseFormatHints(Dictionary<string, CliFormatHint> hints);
 
 
+    static partial void CustomizeCommand(ref Command command);
+
     public static Command Create()
     {
         var command = new Command(@"grant", @"Token-based Authentication
@@ -95,6 +97,7 @@ Generates a temporary JSON Web Token (JWT) with a 30-second (by default) TTL and
                                     FormatResponse,
                                     cancellationToken).ConfigureAwait(false);
             }, cancellationToken).ConfigureAwait(false));
+        CustomizeCommand(ref command);
         return command;
     }
 }

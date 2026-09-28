@@ -72,6 +72,8 @@ internal static partial class AudioGenerateCommandApiCommand
         Required = true,
     };
 
+    static partial void CustomizeCommand(ref Command command);
+
     public static Command Create()
     {
         var command = new Command(@"generate", @"Text to Speech transformation
@@ -122,6 +124,7 @@ Convert text into natural-sounding speech using Deepgram's TTS REST API");
 
                                 await CliRuntime.WriteBinaryAsync(parseResult, response, cancellationToken).ConfigureAwait(false);
             }, cancellationToken).ConfigureAwait(false));
+        CustomizeCommand(ref command);
         return command;
     }
 }

@@ -75,6 +75,8 @@ internal static partial class BreakdownListCommandApiCommand
                     static partial void CustomizeResponseFormatHints(Dictionary<string, CliFormatHint> hints);
 
 
+    static partial void CustomizeCommand(ref Command command);
+
     public static Command Create()
     {
         var command = new Command(@"list", @"Get Project Billing Breakdown
@@ -130,6 +132,7 @@ Retrieves the billing summary for a specific project, with various filter option
                                     cancellationToken).ConfigureAwait(false);
                                 }
             }, cancellationToken).ConfigureAwait(false));
+        CustomizeCommand(ref command);
         return command;
     }
 }

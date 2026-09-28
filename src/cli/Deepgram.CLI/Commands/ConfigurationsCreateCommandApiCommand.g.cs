@@ -68,6 +68,8 @@ internal static partial class ConfigurationsCreateCommandApiCommand
                     static partial void CustomizeResponseFormatHints(Dictionary<string, CliFormatHint> hints);
 
 
+    static partial void CustomizeCommand(ref Command command);
+
     public static Command Create()
     {
         var command = new Command(@"create", @"Create an Agent Configuration
@@ -123,6 +125,7 @@ Creates a new reusable agent configuration. The `config` field must be a valid J
                                     FormatResponse,
                                     cancellationToken).ConfigureAwait(false);
             }, cancellationToken).ConfigureAwait(false));
+        CustomizeCommand(ref command);
         return command;
     }
 }

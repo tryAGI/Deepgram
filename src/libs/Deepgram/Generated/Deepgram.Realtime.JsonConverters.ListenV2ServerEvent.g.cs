@@ -64,6 +64,8 @@ namespace Deepgram.Realtime.JsonConverters
             if (__jsonProps.Contains("thresholds.eot_timeout_ms")) __score2++;
             if (__jsonProps.Contains("type")) __score2++;
             var __score3 = 0;
+            if (__jsonProps.Contains("code")) __score3++;
+            if (__jsonProps.Contains("description")) __score3++;
             if (__jsonProps.Contains("request_id")) __score3++;
             if (__jsonProps.Contains("sequence_id")) __score3++;
             if (__jsonProps.Contains("type")) __score3++;

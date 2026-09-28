@@ -6,7 +6,7 @@ namespace Deepgram
     /// <summary>
     ///
     /// </summary>
-    public sealed partial class SharedIntentsResultsIntentsSegmentsItems
+    public sealed partial class SharedIntentsSegmentsItems
     {
         /// <summary>
         ///
@@ -30,7 +30,7 @@ namespace Deepgram
         ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("intents")]
-        public global::System.Collections.Generic.IList<global::Deepgram.SharedIntentsResultsIntentsSegmentsItemsIntentsItems>? Intents { get; set; }
+        public global::System.Collections.Generic.IList<global::Deepgram.SharedIntentsSegmentsItemsIntentsItems>? Intents { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -39,7 +39,7 @@ namespace Deepgram
         public global::System.Collections.Generic.IDictionary<string, object> AdditionalProperties { get; set; } = new global::System.Collections.Generic.Dictionary<string, object>();
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="SharedIntentsResultsIntentsSegmentsItems" /> class.
+        /// Initializes a new instance of the <see cref="SharedIntentsSegmentsItems" /> class.
         /// </summary>
         /// <param name="text"></param>
         /// <param name="startWord"></param>
@@ -48,11 +48,11 @@ namespace Deepgram
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
-        public SharedIntentsResultsIntentsSegmentsItems(
+        public SharedIntentsSegmentsItems(
             string? text,
             double? startWord,
             double? endWord,
-            global::System.Collections.Generic.IList<global::Deepgram.SharedIntentsResultsIntentsSegmentsItemsIntentsItems>? intents)
+            global::System.Collections.Generic.IList<global::Deepgram.SharedIntentsSegmentsItemsIntentsItems>? intents)
         {
             this.Text = text;
             this.StartWord = startWord;
@@ -61,9 +61,9 @@ namespace Deepgram
         }
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="SharedIntentsResultsIntentsSegmentsItems" /> class.
+        /// Initializes a new instance of the <see cref="SharedIntentsSegmentsItems" /> class.
         /// </summary>
-        public SharedIntentsResultsIntentsSegmentsItems()
+        public SharedIntentsSegmentsItems()
         {
         }
 

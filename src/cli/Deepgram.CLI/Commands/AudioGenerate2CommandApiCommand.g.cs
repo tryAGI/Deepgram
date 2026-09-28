@@ -105,6 +105,8 @@ internal static partial class AudioGenerate2CommandApiCommand
                     static partial void CustomizeResponseFormatHints(Dictionary<string, CliFormatHint> hints);
 
 
+    static partial void CustomizeCommand(ref Command command);
+
     public static Command Create()
     {
         var command = new Command(@"generate2", @"Flux Text to Speech (batch)
@@ -167,6 +169,7 @@ Synthesize a complete block of text into a single audio response using Deepgram'
                                     FormatResponse,
                                     cancellationToken).ConfigureAwait(false);
             }, cancellationToken).ConfigureAwait(false));
+        CustomizeCommand(ref command);
         return command;
     }
 }

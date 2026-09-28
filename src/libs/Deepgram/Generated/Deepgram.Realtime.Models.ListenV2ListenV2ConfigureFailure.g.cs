@@ -32,6 +32,18 @@ namespace Deepgram.Realtime
         public required int SequenceId { get; set; }
 
         /// <summary>
+        /// Failure code identifying the rejected configuration
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("code")]
+        public string? Code { get; set; }
+
+        /// <summary>
+        /// A human-readable description of the configuration failure
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("description")]
+        public string? Description { get; set; }
+
+        /// <summary>
         /// Additional properties that are not explicitly defined in the schema
         /// </summary>
         [global::System.Text.Json.Serialization.JsonExtensionData]
@@ -51,17 +63,27 @@ namespace Deepgram.Realtime
         /// <param name="type">
         /// Message type identifier
         /// </param>
+        /// <param name="code">
+        /// Failure code identifying the rejected configuration
+        /// </param>
+        /// <param name="description">
+        /// A human-readable description of the configuration failure
+        /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public ListenV2ListenV2ConfigureFailure(
             global::System.Guid requestId,
             int sequenceId,
-            global::Deepgram.Realtime.ListenV2ListenV2ConfigureFailureType type)
+            global::Deepgram.Realtime.ListenV2ListenV2ConfigureFailureType type,
+            string? code,
+            string? description)
         {
             this.Type = type;
             this.RequestId = requestId;
             this.SequenceId = sequenceId;
+            this.Code = code;
+            this.Description = description;
         }
 
         /// <summary>
