@@ -417,823 +417,807 @@ namespace Deepgram
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.SharedTopicsResultsTopicsSegmentsItemsTopicsItems? Type96 { get; set; }
+        public global::Deepgram.SharedTopicsSegmentsItemsTopicsItems? Type96 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.SharedTopicsResultsTopicsSegmentsItems? Type97 { get; set; }
+        public global::Deepgram.SharedTopicsSegmentsItems? Type97 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Deepgram.SharedTopicsResultsTopicsSegmentsItemsTopicsItems>? Type98 { get; set; }
+        public global::System.Collections.Generic.IList<global::Deepgram.SharedTopicsSegmentsItemsTopicsItems>? Type98 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.SharedTopicsResultsTopics? Type99 { get; set; }
+        public global::Deepgram.SharedTopics? Type99 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Deepgram.SharedTopicsResultsTopicsSegmentsItems>? Type100 { get; set; }
+        public global::System.Collections.Generic.IList<global::Deepgram.SharedTopicsSegmentsItems>? Type100 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.SharedTopicsResults? Type101 { get; set; }
+        public global::Deepgram.SharedIntentsSegmentsItemsIntentsItems? Type101 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.SharedTopics? Type102 { get; set; }
+        public global::Deepgram.SharedIntentsSegmentsItems? Type102 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.SharedIntentsResultsIntentsSegmentsItemsIntentsItems? Type103 { get; set; }
+        public global::System.Collections.Generic.IList<global::Deepgram.SharedIntentsSegmentsItemsIntentsItems>? Type103 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.SharedIntentsResultsIntentsSegmentsItems? Type104 { get; set; }
+        public global::Deepgram.SharedIntents? Type104 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Deepgram.SharedIntentsResultsIntentsSegmentsItemsIntentsItems>? Type105 { get; set; }
+        public global::System.Collections.Generic.IList<global::Deepgram.SharedIntentsSegmentsItems>? Type105 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.SharedIntentsResultsIntents? Type106 { get; set; }
+        public global::Deepgram.SharedSentimentsSegmentsItems? Type106 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Deepgram.SharedIntentsResultsIntentsSegmentsItems>? Type107 { get; set; }
+        public global::Deepgram.SharedSentimentsAverage? Type107 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.SharedIntentsResults? Type108 { get; set; }
+        public global::Deepgram.SharedSentiments? Type108 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.SharedIntents? Type109 { get; set; }
+        public global::System.Collections.Generic.IList<global::Deepgram.SharedSentimentsSegmentsItems>? Type109 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.SharedSentimentsSegmentsItems? Type110 { get; set; }
+        public global::Deepgram.ListenV1ResponseResults? Type110 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.SharedSentimentsAverage? Type111 { get; set; }
+        public global::Deepgram.ListenV1Response? Type111 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.SharedSentiments? Type112 { get; set; }
+        public global::Deepgram.ListenV1AcceptedResponse? Type112 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Deepgram.SharedSentimentsSegmentsItems>? Type113 { get; set; }
+        public global::Deepgram.ListenV1MediaTranscribeResponse200? Type113 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.ListenV1ResponseResults? Type114 { get; set; }
+        public global::Deepgram.V1SpeakPostParametersCallbackMethod? Type114 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.ListenV1Response? Type115 { get; set; }
+        public global::Deepgram.V1SpeakPostParametersTag? Type115 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.ListenV1AcceptedResponse? Type116 { get; set; }
+        public global::Deepgram.V1SpeakPostParametersBitRate0? Type116 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.ListenV1MediaTranscribeResponse200? Type117 { get; set; }
+        public global::Deepgram.V1SpeakPostParametersBitRate? Type117 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.V1SpeakPostParametersCallbackMethod? Type118 { get; set; }
+        public global::Deepgram.V1SpeakPostParametersContainer0? Type118 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.V1SpeakPostParametersTag? Type119 { get; set; }
+        public global::Deepgram.V1SpeakPostParametersContainer1? Type119 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.V1SpeakPostParametersBitRate0? Type120 { get; set; }
+        public global::Deepgram.V1SpeakPostParametersContainer2? Type120 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.V1SpeakPostParametersBitRate? Type121 { get; set; }
+        public global::Deepgram.V1SpeakPostParametersContainer3? Type121 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.V1SpeakPostParametersContainer0? Type122 { get; set; }
+        public global::Deepgram.V1SpeakPostParametersContainer4? Type122 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.V1SpeakPostParametersContainer1? Type123 { get; set; }
+        public global::Deepgram.V1SpeakPostParametersContainer? Type123 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.V1SpeakPostParametersContainer2? Type124 { get; set; }
+        public global::Deepgram.V1SpeakPostParametersEncoding0? Type124 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.V1SpeakPostParametersContainer3? Type125 { get; set; }
+        public global::Deepgram.V1SpeakPostParametersEncoding1? Type125 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.V1SpeakPostParametersContainer4? Type126 { get; set; }
+        public global::Deepgram.V1SpeakPostParametersEncoding2? Type126 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.V1SpeakPostParametersContainer? Type127 { get; set; }
+        public global::Deepgram.V1SpeakPostParametersEncoding3? Type127 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.V1SpeakPostParametersEncoding0? Type128 { get; set; }
+        public global::Deepgram.V1SpeakPostParametersEncoding4? Type128 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.V1SpeakPostParametersEncoding1? Type129 { get; set; }
+        public global::Deepgram.V1SpeakPostParametersEncoding5? Type129 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.V1SpeakPostParametersEncoding2? Type130 { get; set; }
+        public global::Deepgram.V1SpeakPostParametersEncoding6? Type130 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.V1SpeakPostParametersEncoding3? Type131 { get; set; }
+        public global::Deepgram.V1SpeakPostParametersEncoding? Type131 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.V1SpeakPostParametersEncoding4? Type132 { get; set; }
+        public global::Deepgram.V1SpeakPostParametersModel? Type132 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.V1SpeakPostParametersEncoding5? Type133 { get; set; }
+        public global::Deepgram.V1SpeakPostParametersSampleRate0? Type133 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.V1SpeakPostParametersEncoding6? Type134 { get; set; }
+        public global::Deepgram.V1SpeakPostParametersSampleRate1? Type134 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.V1SpeakPostParametersEncoding? Type135 { get; set; }
+        public global::Deepgram.V1SpeakPostParametersSampleRate2? Type135 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.V1SpeakPostParametersModel? Type136 { get; set; }
+        public global::Deepgram.V1SpeakPostParametersSampleRate3? Type136 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.V1SpeakPostParametersSampleRate0? Type137 { get; set; }
+        public global::Deepgram.V1SpeakPostParametersSampleRate4? Type137 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.V1SpeakPostParametersSampleRate1? Type138 { get; set; }
+        public global::Deepgram.V1SpeakPostParametersSampleRate? Type138 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.V1SpeakPostParametersSampleRate2? Type139 { get; set; }
+        public global::Deepgram.SpeakV1Request? Type139 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.V1SpeakPostParametersSampleRate3? Type140 { get; set; }
+        public global::Deepgram.SpeakV1AudioGenerateResponse200? Type140 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.V1SpeakPostParametersSampleRate4? Type141 { get; set; }
+        public global::Deepgram.V1ReadPostParametersCallbackMethod? Type141 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.V1SpeakPostParametersSampleRate? Type142 { get; set; }
+        public global::Deepgram.V1ReadPostParametersSummarize0? Type142 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.SpeakV1Request? Type143 { get; set; }
+        public global::Deepgram.V1ReadPostParametersSummarize? Type143 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.SpeakV1AudioGenerateResponse200? Type144 { get; set; }
+        public global::Deepgram.V1ReadPostParametersTag? Type144 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.V1ReadPostParametersCallbackMethod? Type145 { get; set; }
+        public global::Deepgram.V1ReadPostParametersCustomTopic? Type145 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.V1ReadPostParametersSummarize0? Type146 { get; set; }
+        public global::Deepgram.V1ReadPostParametersCustomTopicMode? Type146 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.V1ReadPostParametersSummarize? Type147 { get; set; }
+        public global::Deepgram.V1ReadPostParametersCustomIntent? Type147 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.V1ReadPostParametersTag? Type148 { get; set; }
+        public global::Deepgram.V1ReadPostParametersCustomIntentMode? Type148 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.V1ReadPostParametersCustomTopic? Type149 { get; set; }
+        public global::Deepgram.ReadV1RequestUrl? Type149 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.V1ReadPostParametersCustomTopicMode? Type150 { get; set; }
+        public global::Deepgram.ReadV1RequestText? Type150 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.V1ReadPostParametersCustomIntent? Type151 { get; set; }
+        public global::Deepgram.ReadV1Request? Type151 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.V1ReadPostParametersCustomIntentMode? Type152 { get; set; }
+        public global::Deepgram.ReadV1ResponseMetadataMetadataSummaryInfo? Type152 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.ReadV1RequestUrl? Type153 { get; set; }
+        public global::Deepgram.ReadV1ResponseMetadataMetadataSentimentInfo? Type153 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.ReadV1RequestText? Type154 { get; set; }
+        public global::Deepgram.ReadV1ResponseMetadataMetadataTopicsInfo? Type154 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.ReadV1Request? Type155 { get; set; }
+        public global::Deepgram.ReadV1ResponseMetadataMetadataIntentsInfo? Type155 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.ReadV1ResponseMetadataMetadataSummaryInfo? Type156 { get; set; }
+        public global::Deepgram.ReadV1ResponseMetadataMetadata? Type156 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.ReadV1ResponseMetadataMetadataSentimentInfo? Type157 { get; set; }
+        public global::Deepgram.ReadV1ResponseMetadata? Type157 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.ReadV1ResponseMetadataMetadataTopicsInfo? Type158 { get; set; }
+        public global::Deepgram.ReadV1ResponseResultsSummaryResultsSummary? Type158 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.ReadV1ResponseMetadataMetadataIntentsInfo? Type159 { get; set; }
+        public global::Deepgram.ReadV1ResponseResultsSummaryResults? Type159 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.ReadV1ResponseMetadataMetadata? Type160 { get; set; }
+        public global::Deepgram.ReadV1ResponseResultsSummary? Type160 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.ReadV1ResponseMetadata? Type161 { get; set; }
+        public global::Deepgram.ReadV1ResponseResults? Type161 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.ReadV1ResponseResultsSummaryResultsSummary? Type162 { get; set; }
+        public global::Deepgram.ReadV1Response? Type162 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.ReadV1ResponseResultsSummaryResults? Type163 { get; set; }
+        public global::Deepgram.ListProjectsV1ResponseProjectsItems? Type163 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.ReadV1ResponseResultsSummary? Type164 { get; set; }
+        public global::Deepgram.ListProjectsV1Response? Type164 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.ReadV1ResponseResults? Type165 { get; set; }
+        public global::System.Collections.Generic.IList<global::Deepgram.ListProjectsV1ResponseProjectsItems>? Type165 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.ReadV1Response? Type166 { get; set; }
+        public global::Deepgram.GetProjectV1Response? Type166 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.ListProjectsV1ResponseProjectsItems? Type167 { get; set; }
+        public global::Deepgram.UpdateProjectV1Request? Type167 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.ListProjectsV1Response? Type168 { get; set; }
+        public global::Deepgram.UpdateProjectV1Response? Type168 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Deepgram.ListProjectsV1ResponseProjectsItems>? Type169 { get; set; }
+        public global::Deepgram.DeleteProjectV1Response? Type169 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.GetProjectV1Response? Type170 { get; set; }
+        public global::Deepgram.LeaveProjectV1Response? Type170 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.UpdateProjectV1Request? Type171 { get; set; }
+        public global::Deepgram.ListModelsV1ResponseSttModels? Type171 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.UpdateProjectV1Response? Type172 { get; set; }
+        public global::Deepgram.ListModelsV1ResponseTtsModelsMetadata? Type172 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.DeleteProjectV1Response? Type173 { get; set; }
+        public global::Deepgram.ListModelsV1ResponseTtsModels? Type173 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.LeaveProjectV1Response? Type174 { get; set; }
+        public global::Deepgram.ListModelsV1Response? Type174 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.ListModelsV1ResponseSttModels? Type175 { get; set; }
+        public global::System.Collections.Generic.IList<global::Deepgram.ListModelsV1ResponseSttModels>? Type175 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.ListModelsV1ResponseTtsModelsMetadata? Type176 { get; set; }
+        public global::System.Collections.Generic.IList<global::Deepgram.ListModelsV1ResponseTtsModels>? Type176 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.ListModelsV1ResponseTtsModels? Type177 { get; set; }
+        public global::Deepgram.GetModelV1Response0? Type177 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.ListModelsV1Response? Type178 { get; set; }
+        public global::Deepgram.GetModelV1ResponseOneOf1Metadata? Type178 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Deepgram.ListModelsV1ResponseSttModels>? Type179 { get; set; }
+        public global::Deepgram.GetModelV1Response1? Type179 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Deepgram.ListModelsV1ResponseTtsModels>? Type180 { get; set; }
+        public global::Deepgram.GetModelV1Response? Type180 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.GetModelV1Response0? Type181 { get; set; }
+        public global::Deepgram.V1ProjectsProjectIdKeysGetParametersStatus? Type181 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.GetModelV1ResponseOneOf1Metadata? Type182 { get; set; }
+        public global::Deepgram.ListProjectKeysV1ResponseApiKeysItemsMember? Type182 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.GetModelV1Response1? Type183 { get; set; }
+        public global::Deepgram.ListProjectKeysV1ResponseApiKeysItemsApiKey? Type183 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.GetModelV1Response? Type184 { get; set; }
+        public global::Deepgram.ListProjectKeysV1ResponseApiKeysItems? Type184 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.V1ProjectsProjectIdKeysGetParametersStatus? Type185 { get; set; }
+        public global::Deepgram.ListProjectKeysV1Response? Type185 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.ListProjectKeysV1ResponseApiKeysItemsMember? Type186 { get; set; }
+        public global::System.Collections.Generic.IList<global::Deepgram.ListProjectKeysV1ResponseApiKeysItems>? Type186 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.ListProjectKeysV1ResponseApiKeysItemsApiKey? Type187 { get; set; }
+        public global::Deepgram.CreateKeyV1Request? Type187 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.ListProjectKeysV1ResponseApiKeysItems? Type188 { get; set; }
+        public global::Deepgram.CreateKeyV1Response? Type188 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.ListProjectKeysV1Response? Type189 { get; set; }
+        public global::Deepgram.GetProjectKeyV1ResponseItemMemberApiKey? Type189 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Deepgram.ListProjectKeysV1ResponseApiKeysItems>? Type190 { get; set; }
+        public global::Deepgram.GetProjectKeyV1ResponseItemMember? Type190 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.CreateKeyV1Request? Type191 { get; set; }
+        public global::Deepgram.GetProjectKeyV1ResponseItem? Type191 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.CreateKeyV1Response? Type192 { get; set; }
+        public global::Deepgram.GetProjectKeyV1Response? Type192 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.GetProjectKeyV1ResponseItemMemberApiKey? Type193 { get; set; }
+        public global::Deepgram.DeleteProjectKeyV1Response? Type193 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.GetProjectKeyV1ResponseItemMember? Type194 { get; set; }
+        public global::Deepgram.ListProjectMembersV1ResponseMembersItems? Type194 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.GetProjectKeyV1ResponseItem? Type195 { get; set; }
+        public global::Deepgram.ListProjectMembersV1Response? Type195 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.GetProjectKeyV1Response? Type196 { get; set; }
+        public global::System.Collections.Generic.IList<global::Deepgram.ListProjectMembersV1ResponseMembersItems>? Type196 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.DeleteProjectKeyV1Response? Type197 { get; set; }
+        public global::Deepgram.DeleteProjectMemberV1Response? Type197 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.ListProjectMembersV1ResponseMembersItems? Type198 { get; set; }
+        public global::Deepgram.ListProjectMemberScopesV1Response? Type198 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.ListProjectMembersV1Response? Type199 { get; set; }
+        public global::Deepgram.UpdateProjectMemberScopesV1Request? Type199 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Deepgram.ListProjectMembersV1ResponseMembersItems>? Type200 { get; set; }
+        public global::Deepgram.UpdateProjectMemberScopesV1Response? Type200 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.DeleteProjectMemberV1Response? Type201 { get; set; }
+        public global::Deepgram.ListProjectInvitesV1ResponseInvitesItems? Type201 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.ListProjectMemberScopesV1Response? Type202 { get; set; }
+        public global::Deepgram.ListProjectInvitesV1Response? Type202 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.UpdateProjectMemberScopesV1Request? Type203 { get; set; }
+        public global::System.Collections.Generic.IList<global::Deepgram.ListProjectInvitesV1ResponseInvitesItems>? Type203 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.UpdateProjectMemberScopesV1Response? Type204 { get; set; }
+        public global::Deepgram.CreateProjectInviteV1Request? Type204 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.ListProjectInvitesV1ResponseInvitesItems? Type205 { get; set; }
+        public global::Deepgram.CreateProjectInviteV1Response? Type205 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.ListProjectInvitesV1Response? Type206 { get; set; }
+        public global::Deepgram.DeleteProjectInviteV1Response? Type206 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Deepgram.ListProjectInvitesV1ResponseInvitesItems>? Type207 { get; set; }
+        public global::Deepgram.V1ProjectsProjectIdRequestsGetParametersDeployment? Type207 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.CreateProjectInviteV1Request? Type208 { get; set; }
+        public global::Deepgram.V1ProjectsProjectIdRequestsGetParametersEndpoint? Type208 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.CreateProjectInviteV1Response? Type209 { get; set; }
+        public global::Deepgram.V1ProjectsProjectIdRequestsGetParametersMethod? Type209 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.DeleteProjectInviteV1Response? Type210 { get; set; }
+        public global::Deepgram.V1ProjectsProjectIdRequestsGetParametersStatus? Type210 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.V1ProjectsProjectIdRequestsGetParametersDeployment? Type211 { get; set; }
+        public global::Deepgram.ProjectRequestResponseResponse? Type211 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.V1ProjectsProjectIdRequestsGetParametersEndpoint? Type212 { get; set; }
+        public global::Deepgram.ProjectRequestResponse? Type212 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.V1ProjectsProjectIdRequestsGetParametersMethod? Type213 { get; set; }
+        public global::Deepgram.ListProjectRequestsV1Response? Type213 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.V1ProjectsProjectIdRequestsGetParametersStatus? Type214 { get; set; }
+        public global::System.Collections.Generic.IList<global::Deepgram.ProjectRequestResponse>? Type214 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.ProjectRequestResponseResponse? Type215 { get; set; }
+        public global::Deepgram.GetProjectRequestV1Response? Type215 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.ProjectRequestResponse? Type216 { get; set; }
+        public global::Deepgram.V1ProjectsProjectIdUsageGetParametersDeployment? Type216 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.ListProjectRequestsV1Response? Type217 { get; set; }
+        public global::Deepgram.V1ProjectsProjectIdUsageGetParametersEndpoint? Type217 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Deepgram.ProjectRequestResponse>? Type218 { get; set; }
+        public global::Deepgram.V1ProjectsProjectIdUsageGetParametersMethod? Type218 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.GetProjectRequestV1Response? Type219 { get; set; }
+        public global::Deepgram.UsageV1ResponseResolution? Type219 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.V1ProjectsProjectIdUsageGetParametersDeployment? Type220 { get; set; }
+        public global::Deepgram.UsageV1Response? Type220 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.V1ProjectsProjectIdUsageGetParametersEndpoint? Type221 { get; set; }
+        public global::Deepgram.UsageFieldsV1ResponseModelsItems? Type221 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.V1ProjectsProjectIdUsageGetParametersMethod? Type222 { get; set; }
+        public global::Deepgram.UsageFieldsV1Response? Type222 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.UsageV1ResponseResolution? Type223 { get; set; }
+        public global::System.Collections.Generic.IList<global::Deepgram.UsageFieldsV1ResponseModelsItems>? Type223 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.UsageV1Response? Type224 { get; set; }
+        public global::Deepgram.V1ProjectsProjectIdUsageBreakdownGetParametersGrouping? Type224 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.UsageFieldsV1ResponseModelsItems? Type225 { get; set; }
+        public global::Deepgram.V1ProjectsProjectIdUsageBreakdownGetParametersDeployment? Type225 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.UsageFieldsV1Response? Type226 { get; set; }
+        public global::Deepgram.V1ProjectsProjectIdUsageBreakdownGetParametersEndpoint? Type226 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Deepgram.UsageFieldsV1ResponseModelsItems>? Type227 { get; set; }
+        public global::Deepgram.V1ProjectsProjectIdUsageBreakdownGetParametersMethod? Type227 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.V1ProjectsProjectIdUsageBreakdownGetParametersGrouping? Type228 { get; set; }
+        public global::Deepgram.UsageBreakdownV1ResponseResolution? Type228 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.V1ProjectsProjectIdUsageBreakdownGetParametersDeployment? Type229 { get; set; }
+        public global::Deepgram.UsageBreakdownV1ResponseResultsItemsGrouping? Type229 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.V1ProjectsProjectIdUsageBreakdownGetParametersEndpoint? Type230 { get; set; }
+        public global::Deepgram.UsageBreakdownV1ResponseResultsItems? Type230 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.V1ProjectsProjectIdUsageBreakdownGetParametersMethod? Type231 { get; set; }
+        public global::Deepgram.UsageBreakdownV1Response? Type231 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.UsageBreakdownV1ResponseResolution? Type232 { get; set; }
+        public global::System.Collections.Generic.IList<global::Deepgram.UsageBreakdownV1ResponseResultsItems>? Type232 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.UsageBreakdownV1ResponseResultsItemsGrouping? Type233 { get; set; }
+        public global::Deepgram.ListProjectBalancesV1ResponseBalancesItems? Type233 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.UsageBreakdownV1ResponseResultsItems? Type234 { get; set; }
+        public global::Deepgram.ListProjectBalancesV1Response? Type234 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.UsageBreakdownV1Response? Type235 { get; set; }
+        public global::System.Collections.Generic.IList<global::Deepgram.ListProjectBalancesV1ResponseBalancesItems>? Type235 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Deepgram.UsageBreakdownV1ResponseResultsItems>? Type236 { get; set; }
+        public global::Deepgram.GetProjectBalanceV1Response? Type236 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.ListProjectBalancesV1ResponseBalancesItems? Type237 { get; set; }
+        public global::Deepgram.V1ProjectsProjectIdBillingBreakdownGetParametersDeployment? Type237 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.ListProjectBalancesV1Response? Type238 { get; set; }
+        public global::Deepgram.V1ProjectsProjectIdBillingBreakdownGetParametersGroupingSchemaItems? Type238 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Deepgram.ListProjectBalancesV1ResponseBalancesItems>? Type239 { get; set; }
+        public global::Deepgram.BillingBreakdownV1ResponseResolution? Type239 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.GetProjectBalanceV1Response? Type240 { get; set; }
+        public global::Deepgram.BillingBreakdownV1ResponseResultsItemsGrouping? Type240 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.V1ProjectsProjectIdBillingBreakdownGetParametersDeployment? Type241 { get; set; }
+        public global::Deepgram.BillingBreakdownV1ResponseResultsItems? Type241 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.V1ProjectsProjectIdBillingBreakdownGetParametersGroupingSchemaItems? Type242 { get; set; }
+        public global::Deepgram.BillingBreakdownV1Response? Type242 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.BillingBreakdownV1ResponseResolution? Type243 { get; set; }
+        public global::System.Collections.Generic.IList<global::Deepgram.BillingBreakdownV1ResponseResultsItems>? Type243 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.BillingBreakdownV1ResponseResultsItemsGrouping? Type244 { get; set; }
+        public global::Deepgram.ListBillingFieldsV1ResponseDeploymentsItems? Type244 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.BillingBreakdownV1ResponseResultsItems? Type245 { get; set; }
+        public global::Deepgram.ListBillingFieldsV1Response? Type245 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.BillingBreakdownV1Response? Type246 { get; set; }
+        public global::System.Collections.Generic.IList<global::System.Guid>? Type246 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Deepgram.BillingBreakdownV1ResponseResultsItems>? Type247 { get; set; }
+        public global::System.Collections.Generic.IList<global::Deepgram.ListBillingFieldsV1ResponseDeploymentsItems>? Type247 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.ListBillingFieldsV1ResponseDeploymentsItems? Type248 { get; set; }
+        public global::Deepgram.ListProjectPurchasesV1ResponseOrdersItems? Type248 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.ListBillingFieldsV1Response? Type249 { get; set; }
+        public global::Deepgram.ListProjectPurchasesV1Response? Type249 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::System.Guid>? Type250 { get; set; }
+        public global::System.Collections.Generic.IList<global::Deepgram.ListProjectPurchasesV1ResponseOrdersItems>? Type250 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Deepgram.ListBillingFieldsV1ResponseDeploymentsItems>? Type251 { get; set; }
+        public global::Deepgram.ListProjectDistributionCredentialsV1ResponseDistributionCredentialsItemsMember? Type251 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.ListProjectPurchasesV1ResponseOrdersItems? Type252 { get; set; }
+        public global::Deepgram.ListProjectDistributionCredentialsV1ResponseDistributionCredentialsItemsDistributionCredentials? Type252 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.ListProjectPurchasesV1Response? Type253 { get; set; }
+        public global::Deepgram.ListProjectDistributionCredentialsV1ResponseDistributionCredentialsItems? Type253 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Deepgram.ListProjectPurchasesV1ResponseOrdersItems>? Type254 { get; set; }
+        public global::Deepgram.ListProjectDistributionCredentialsV1Response? Type254 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.ListProjectDistributionCredentialsV1ResponseDistributionCredentialsItemsMember? Type255 { get; set; }
+        public global::System.Collections.Generic.IList<global::Deepgram.ListProjectDistributionCredentialsV1ResponseDistributionCredentialsItems>? Type255 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.ListProjectDistributionCredentialsV1ResponseDistributionCredentialsItemsDistributionCredentials? Type256 { get; set; }
+        public global::Deepgram.V1ProjectsProjectIdSelfHostedDistributionCredentialsPostParametersScopesSchemaItems? Type256 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.ListProjectDistributionCredentialsV1ResponseDistributionCredentialsItems? Type257 { get; set; }
+        public global::Deepgram.V1ProjectsProjectIdSelfHostedDistributionCredentialsPostParametersProvider? Type257 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.ListProjectDistributionCredentialsV1Response? Type258 { get; set; }
+        public global::Deepgram.CreateProjectDistributionCredentialsV1Request? Type258 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Deepgram.ListProjectDistributionCredentialsV1ResponseDistributionCredentialsItems>? Type259 { get; set; }
+        public global::Deepgram.CreateProjectDistributionCredentialsV1ResponseMember? Type259 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.V1ProjectsProjectIdSelfHostedDistributionCredentialsPostParametersScopesSchemaItems? Type260 { get; set; }
+        public global::Deepgram.CreateProjectDistributionCredentialsV1ResponseDistributionCredentials? Type260 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.V1ProjectsProjectIdSelfHostedDistributionCredentialsPostParametersProvider? Type261 { get; set; }
+        public global::Deepgram.CreateProjectDistributionCredentialsV1Response? Type261 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.CreateProjectDistributionCredentialsV1Request? Type262 { get; set; }
+        public global::Deepgram.GetProjectDistributionCredentialsV1ResponseMember? Type262 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.CreateProjectDistributionCredentialsV1ResponseMember? Type263 { get; set; }
+        public global::Deepgram.GetProjectDistributionCredentialsV1ResponseDistributionCredentials? Type263 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.CreateProjectDistributionCredentialsV1ResponseDistributionCredentials? Type264 { get; set; }
+        public global::Deepgram.GetProjectDistributionCredentialsV1Response? Type264 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.CreateProjectDistributionCredentialsV1Response? Type265 { get; set; }
+        public global::Deepgram.GrantV1Request? Type265 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.GetProjectDistributionCredentialsV1ResponseMember? Type266 { get; set; }
+        public global::Deepgram.GrantV1Response? Type266 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.GetProjectDistributionCredentialsV1ResponseDistributionCredentials? Type267 { get; set; }
+        public global::Deepgram.V2SpeakPostParametersCallbackMethod? Type267 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.GetProjectDistributionCredentialsV1Response? Type268 { get; set; }
+        public global::Deepgram.V2SpeakPostParametersTag? Type268 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.GrantV1Request? Type269 { get; set; }
+        public global::Deepgram.V2SpeakPostParametersBitRate0? Type269 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.GrantV1Response? Type270 { get; set; }
+        public global::Deepgram.V2SpeakPostParametersBitRate? Type270 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.V2SpeakPostParametersCallbackMethod? Type271 { get; set; }
+        public global::Deepgram.V2SpeakPostParametersContainer0? Type271 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.V2SpeakPostParametersTag? Type272 { get; set; }
+        public global::Deepgram.V2SpeakPostParametersContainer1? Type272 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.V2SpeakPostParametersBitRate0? Type273 { get; set; }
+        public global::Deepgram.V2SpeakPostParametersContainer2? Type273 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.V2SpeakPostParametersBitRate? Type274 { get; set; }
+        public global::Deepgram.V2SpeakPostParametersContainer3? Type274 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.V2SpeakPostParametersContainer0? Type275 { get; set; }
+        public global::Deepgram.V2SpeakPostParametersContainer4? Type275 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.V2SpeakPostParametersContainer1? Type276 { get; set; }
+        public global::Deepgram.V2SpeakPostParametersContainer? Type276 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.V2SpeakPostParametersContainer2? Type277 { get; set; }
+        public global::Deepgram.V2SpeakPostParametersEncoding0? Type277 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.V2SpeakPostParametersContainer3? Type278 { get; set; }
+        public global::Deepgram.V2SpeakPostParametersEncoding1? Type278 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.V2SpeakPostParametersContainer4? Type279 { get; set; }
+        public global::Deepgram.V2SpeakPostParametersEncoding2? Type279 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.V2SpeakPostParametersContainer? Type280 { get; set; }
+        public global::Deepgram.V2SpeakPostParametersEncoding3? Type280 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.V2SpeakPostParametersEncoding0? Type281 { get; set; }
+        public global::Deepgram.V2SpeakPostParametersEncoding4? Type281 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.V2SpeakPostParametersEncoding1? Type282 { get; set; }
+        public global::Deepgram.V2SpeakPostParametersEncoding5? Type282 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.V2SpeakPostParametersEncoding2? Type283 { get; set; }
+        public global::Deepgram.V2SpeakPostParametersEncoding6? Type283 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.V2SpeakPostParametersEncoding3? Type284 { get; set; }
+        public global::Deepgram.V2SpeakPostParametersEncoding? Type284 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.V2SpeakPostParametersEncoding4? Type285 { get; set; }
+        public global::Deepgram.V2SpeakPostParametersExpressivity? Type285 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.V2SpeakPostParametersEncoding5? Type286 { get; set; }
+        public global::Deepgram.V2SpeakPostParametersSampleRate0? Type286 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.V2SpeakPostParametersEncoding6? Type287 { get; set; }
+        public global::Deepgram.V2SpeakPostParametersSampleRate1? Type287 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.V2SpeakPostParametersEncoding? Type288 { get; set; }
+        public global::Deepgram.V2SpeakPostParametersSampleRate2? Type288 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.V2SpeakPostParametersExpressivity? Type289 { get; set; }
+        public global::Deepgram.V2SpeakPostParametersSampleRate3? Type289 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.V2SpeakPostParametersSampleRate0? Type290 { get; set; }
+        public global::Deepgram.V2SpeakPostParametersSampleRate? Type290 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.V2SpeakPostParametersSampleRate1? Type291 { get; set; }
+        public global::Deepgram.V2SpeakPostParametersPriority? Type291 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.V2SpeakPostParametersSampleRate2? Type292 { get; set; }
+        public global::Deepgram.SpeakV2Request? Type292 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.V2SpeakPostParametersSampleRate3? Type293 { get; set; }
+        public global::Deepgram.SpeakV2AcceptedResponse? Type293 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.V2SpeakPostParametersSampleRate? Type294 { get; set; }
+        public byte[]? Type294 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.V2SpeakPostParametersPriority? Type295 { get; set; }
+        public global::System.Collections.Generic.IList<global::Deepgram.V1ProjectsProjectIdBillingBreakdownGetParametersGroupingSchemaItems>? Type295 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.SpeakV2Request? Type296 { get; set; }
-        /// <summary>
-        ///
-        /// </summary>
-        public global::Deepgram.SpeakV2AcceptedResponse? Type297 { get; set; }
-        /// <summary>
-        ///
-        /// </summary>
-        public byte[]? Type298 { get; set; }
-        /// <summary>
-        ///
-        /// </summary>
-        public global::System.Collections.Generic.IList<global::Deepgram.V1ProjectsProjectIdBillingBreakdownGetParametersGroupingSchemaItems>? Type299 { get; set; }
-        /// <summary>
-        ///
-        /// </summary>
-        public global::System.Collections.Generic.IList<global::Deepgram.V1ProjectsProjectIdSelfHostedDistributionCredentialsPostParametersScopesSchemaItems>? Type300 { get; set; }
+        public global::System.Collections.Generic.IList<global::Deepgram.V1ProjectsProjectIdSelfHostedDistributionCredentialsPostParametersScopesSchemaItems>? Type296 { get; set; }
 
         /// <summary>
         ///
@@ -1306,19 +1290,19 @@ namespace Deepgram
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::Deepgram.SharedTopicsResultsTopicsSegmentsItemsTopicsItems>? ListType17 { get; set; }
+        public global::System.Collections.Generic.List<global::Deepgram.SharedTopicsSegmentsItemsTopicsItems>? ListType17 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::Deepgram.SharedTopicsResultsTopicsSegmentsItems>? ListType18 { get; set; }
+        public global::System.Collections.Generic.List<global::Deepgram.SharedTopicsSegmentsItems>? ListType18 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::Deepgram.SharedIntentsResultsIntentsSegmentsItemsIntentsItems>? ListType19 { get; set; }
+        public global::System.Collections.Generic.List<global::Deepgram.SharedIntentsSegmentsItemsIntentsItems>? ListType19 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::Deepgram.SharedIntentsResultsIntentsSegmentsItems>? ListType20 { get; set; }
+        public global::System.Collections.Generic.List<global::Deepgram.SharedIntentsSegmentsItems>? ListType20 { get; set; }
         /// <summary>
         ///
         /// </summary>

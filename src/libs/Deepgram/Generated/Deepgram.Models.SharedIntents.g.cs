@@ -11,8 +11,8 @@ namespace Deepgram
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("results")]
-        public global::Deepgram.SharedIntentsResults? Results { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("segments")]
+        public global::System.Collections.Generic.IList<global::Deepgram.SharedIntentsSegmentsItems>? Segments { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -23,14 +23,14 @@ namespace Deepgram
         /// <summary>
         /// Initializes a new instance of the <see cref="SharedIntents" /> class.
         /// </summary>
-        /// <param name="results"></param>
+        /// <param name="segments"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public SharedIntents(
-            global::Deepgram.SharedIntentsResults? results)
+            global::System.Collections.Generic.IList<global::Deepgram.SharedIntentsSegmentsItems>? segments)
         {
-            this.Results = results;
+            this.Segments = segments;
         }
 
         /// <summary>

@@ -228,6 +228,8 @@ To boost multiple separate keyterms, repeat the `keyterm` parameter (for example
                     static partial void CustomizeResponseFormatHints(Dictionary<string, CliFormatHint> hints);
 
 
+    static partial void CustomizeCommand(ref Command command);
+
     public static Command Create()
     {
         var command = new Command(@"transcribe", @"Transcribe and analyze pre-recorded audio and video
@@ -365,6 +367,7 @@ Transcribe audio and video using Deepgram's speech-to-text REST API");
                                     FormatResponse,
                                     cancellationToken).ConfigureAwait(false);
             }, cancellationToken).ConfigureAwait(false));
+        CustomizeCommand(ref command);
         return command;
     }
 }

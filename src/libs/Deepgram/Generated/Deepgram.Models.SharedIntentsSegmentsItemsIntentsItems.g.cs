@@ -6,13 +6,13 @@ namespace Deepgram
     /// <summary>
     ///
     /// </summary>
-    public sealed partial class SharedTopicsResultsTopicsSegmentsItemsTopicsItems
+    public sealed partial class SharedIntentsSegmentsItemsIntentsItems
     {
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("topic")]
-        public string? Topic { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("intent")]
+        public string? Intent { get; set; }
 
         /// <summary>
         ///
@@ -27,25 +27,25 @@ namespace Deepgram
         public global::System.Collections.Generic.IDictionary<string, object> AdditionalProperties { get; set; } = new global::System.Collections.Generic.Dictionary<string, object>();
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="SharedTopicsResultsTopicsSegmentsItemsTopicsItems" /> class.
+        /// Initializes a new instance of the <see cref="SharedIntentsSegmentsItemsIntentsItems" /> class.
         /// </summary>
-        /// <param name="topic"></param>
+        /// <param name="intent"></param>
         /// <param name="confidenceScore"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
-        public SharedTopicsResultsTopicsSegmentsItemsTopicsItems(
-            string? topic,
+        public SharedIntentsSegmentsItemsIntentsItems(
+            string? intent,
             double? confidenceScore)
         {
-            this.Topic = topic;
+            this.Intent = intent;
             this.ConfidenceScore = confidenceScore;
         }
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="SharedTopicsResultsTopicsSegmentsItemsTopicsItems" /> class.
+        /// Initializes a new instance of the <see cref="SharedIntentsSegmentsItemsIntentsItems" /> class.
         /// </summary>
-        public SharedTopicsResultsTopicsSegmentsItemsTopicsItems()
+        public SharedIntentsSegmentsItemsIntentsItems()
         {
         }
 

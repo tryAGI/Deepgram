@@ -67,6 +67,8 @@ internal static partial class DistributionCredentialsCreateCommandApiCommand
                     static partial void CustomizeResponseFormatHints(Dictionary<string, CliFormatHint> hints);
 
 
+    static partial void CustomizeCommand(ref Command command);
+
     public static Command Create()
     {
         var command = new Command(@"create", @"Create a Project Self-Hosted Distribution Credential
@@ -122,6 +124,7 @@ Creates a set of distribution credentials for the specified project");
                                     FormatResponse,
                                     cancellationToken).ConfigureAwait(false);
             }, cancellationToken).ConfigureAwait(false));
+        CustomizeCommand(ref command);
         return command;
     }
 }

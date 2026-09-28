@@ -46,6 +46,8 @@ internal static partial class ConfigurationsUpdateCommandApiCommand
                     static partial void CustomizeResponseFormatHints(Dictionary<string, CliFormatHint> hints);
 
 
+    static partial void CustomizeCommand(ref Command command);
+
     public static Command Create()
     {
         var command = new Command(@"update", @"Update Agent Metadata
@@ -78,6 +80,7 @@ Updates the metadata associated with an agent configuration. The config itself i
                                     FormatResponse,
                                     cancellationToken).ConfigureAwait(false);
             }, cancellationToken).ConfigureAwait(false));
+        CustomizeCommand(ref command);
         return command;
     }
 }

@@ -4,8 +4,10 @@ using System.CommandLine;
 
 namespace Deepgram.CLI.Commands;
 
-internal static class ConfigurationsApiGroupCommand
+internal static partial class ConfigurationsApiGroupCommand
 {
+    static partial void CustomizeCommand(ref Command command);
+
     public static Command Create()
     {
         var command = new Command(@"configurations", @"configurations endpoint commands.");
@@ -14,6 +16,7 @@ internal static class ConfigurationsApiGroupCommand
                          command.Subcommands.Add(ConfigurationsGetCommandApiCommand.Create());
                          command.Subcommands.Add(ConfigurationsListCommandApiCommand.Create());
                          command.Subcommands.Add(ConfigurationsUpdateCommandApiCommand.Create());
+        CustomizeCommand(ref command);
         return command;
     }
 }
