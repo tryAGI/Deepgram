@@ -71,9 +71,9 @@ internal static partial class VariablesCreateCommandApiCommand
 
     static partial void CustomizeCommand(ref Command command);
 
-    public static Command Create()
+    public static Command Create(string? commandName = null)
     {
-        var command = new Command(@"create", @"Create an Agent Variable
+        var command = new Command(commandName ?? @"create", @"Create an Agent Variable
 Creates a new template variable. Variables follow the `DG_&lt;VARIABLE_NAME&gt;` naming format and can substitute any JSON value in an agent configuration.");
                         command.Arguments.Add(ProjectId);
                         command.Options.Add(Key);

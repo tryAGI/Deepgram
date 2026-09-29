@@ -49,9 +49,9 @@ internal static partial class InvitesCreateCommandApiCommand
 
     static partial void CustomizeCommand(ref Command command);
 
-    public static Command Create()
+    public static Command Create(string? commandName = null)
     {
-        var command = new Command(@"create", @"Create a Project Invite
+        var command = new Command(commandName ?? @"create", @"Create a Project Invite
 Generates an invite for a specific project");
                         command.Arguments.Add(ProjectId);
                         command.Options.Add(Email);

@@ -233,9 +233,9 @@ internal static partial class BreakdownGetCommandApiCommand
 
     static partial void CustomizeCommand(ref Command command);
 
-    public static Command Create()
+    public static Command Create(string? commandName = null)
     {
-        var command = new Command(@"get", @"Get Project Usage Breakdown
+        var command = new Command(commandName ?? @"get", @"Get Project Usage Breakdown
 Retrieves the usage breakdown for a specific project, with various filter options by API feature or by groupings. Setting a feature (e.g. diarize) to true includes requests that used that feature, while false excludes requests that used it. Multiple true filters are combined with OR logic, while false filters use AND logic.");
                         command.Arguments.Add(ProjectId);
                         command.Options.Add(Start);

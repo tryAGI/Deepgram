@@ -35,9 +35,9 @@ internal static partial class DistributionCredentialsListCommandApiCommand
 
     static partial void CustomizeCommand(ref Command command);
 
-    public static Command Create()
+    public static Command Create(string? commandName = null)
     {
-        var command = new Command(@"list", @"List Project Self-Hosted Distribution Credentials
+        var command = new Command(commandName ?? @"list", @"List Project Self-Hosted Distribution Credentials
 Lists sets of distribution credentials for the specified project");
                         command.Arguments.Add(ProjectId);
 

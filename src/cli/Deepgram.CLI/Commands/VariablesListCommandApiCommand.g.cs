@@ -35,9 +35,9 @@ internal static partial class VariablesListCommandApiCommand
 
     static partial void CustomizeCommand(ref Command command);
 
-    public static Command Create()
+    public static Command Create(string? commandName = null)
     {
-        var command = new Command(@"list", @"List Agent Variables
+        var command = new Command(commandName ?? @"list", @"List Agent Variables
 Returns all template variables for the specified project");
                         command.Arguments.Add(ProjectId);
 

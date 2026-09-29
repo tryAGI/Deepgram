@@ -35,9 +35,9 @@ internal static partial class ProjectsDeleteCommandApiCommand
 
     static partial void CustomizeCommand(ref Command command);
 
-    public static Command Create()
+    public static Command Create(string? commandName = null)
     {
-        var command = new Command(@"delete", @"Delete a Project
+        var command = new Command(commandName ?? @"delete", @"Delete a Project
 Deletes the specified project");
                         command.Arguments.Add(ProjectId);
 

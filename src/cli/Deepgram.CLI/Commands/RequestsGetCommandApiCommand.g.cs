@@ -41,9 +41,9 @@ internal static partial class RequestsGetCommandApiCommand
 
     static partial void CustomizeCommand(ref Command command);
 
-    public static Command Create()
+    public static Command Create(string? commandName = null)
     {
-        var command = new Command(@"get", @"Get a Project Request
+        var command = new Command(commandName ?? @"get", @"Get a Project Request
 Retrieves a specific request for a specific project");
                         command.Arguments.Add(ProjectId);
                         command.Arguments.Add(RequestId);

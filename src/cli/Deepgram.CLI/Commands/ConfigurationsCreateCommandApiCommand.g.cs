@@ -70,9 +70,9 @@ internal static partial class ConfigurationsCreateCommandApiCommand
 
     static partial void CustomizeCommand(ref Command command);
 
-    public static Command Create()
+    public static Command Create(string? commandName = null)
     {
-        var command = new Command(@"create", @"Create an Agent Configuration
+        var command = new Command(commandName ?? @"create", @"Create an Agent Configuration
 Creates a new reusable agent configuration. The `config` field must be a valid JSON string representing the `agent` block of a Settings message. The returned `agent_id` can be passed in place of the full `agent` object in future Settings messages.");
                         command.Arguments.Add(ProjectId);
                         command.Options.Add(Config);

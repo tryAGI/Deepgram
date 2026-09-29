@@ -41,9 +41,9 @@ internal static partial class ModelsGetCommandApiCommand
 
     static partial void CustomizeCommand(ref Command command);
 
-    public static Command Create()
+    public static Command Create(string? commandName = null)
     {
-        var command = new Command(@"get", @"Get a Project Model
+        var command = new Command(commandName ?? @"get", @"Get a Project Model
 Returns metadata for a specific model");
                         command.Arguments.Add(ProjectId);
                         command.Arguments.Add(ModelId);

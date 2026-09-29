@@ -77,9 +77,9 @@ internal static partial class BreakdownListCommandApiCommand
 
     static partial void CustomizeCommand(ref Command command);
 
-    public static Command Create()
+    public static Command Create(string? commandName = null)
     {
-        var command = new Command(@"list", @"Get Project Billing Breakdown
+        var command = new Command(commandName ?? @"list", @"Get Project Billing Breakdown
 Retrieves the billing summary for a specific project, with various filter options or by grouping options.");
                         command.Arguments.Add(ProjectId);
                         command.Options.Add(Start);

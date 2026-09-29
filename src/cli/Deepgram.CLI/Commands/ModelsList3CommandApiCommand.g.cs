@@ -33,9 +33,9 @@ internal static partial class ModelsList3CommandApiCommand
 
     static partial void CustomizeCommand(ref Command command);
 
-    public static Command Create()
+    public static Command Create(string? commandName = null)
     {
-        var command = new Command(@"list3", @"List Models
+        var command = new Command(commandName ?? @"list3", @"List Models
 Returns metadata on all the latest public models. To retrieve custom models, use Get Project Models.");
                         command.Options.Add(IncludeOutdated);
 

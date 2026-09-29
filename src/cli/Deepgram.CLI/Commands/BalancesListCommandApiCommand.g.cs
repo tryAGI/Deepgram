@@ -35,9 +35,9 @@ internal static partial class BalancesListCommandApiCommand
 
     static partial void CustomizeCommand(ref Command command);
 
-    public static Command Create()
+    public static Command Create(string? commandName = null)
     {
-        var command = new Command(@"list", @"Get Project Balances
+        var command = new Command(commandName ?? @"list", @"Get Project Balances
 Generates a list of outstanding balances for the specified project");
                         command.Arguments.Add(ProjectId);
 

@@ -47,9 +47,9 @@ internal static partial class FieldsList2CommandApiCommand
 
     static partial void CustomizeCommand(ref Command command);
 
-    public static Command Create()
+    public static Command Create(string? commandName = null)
     {
-        var command = new Command(@"list2", @"List Project Billing Fields
+        var command = new Command(commandName ?? @"list2", @"List Project Billing Fields
 Lists the accessors, deployment types, tags, and line items used for billing data in the specified time period. Use this endpoint if you want to filter your results from the Billing Breakdown endpoint and want to know what filters are available.");
                         command.Arguments.Add(ProjectId);
                         command.Options.Add(Start);

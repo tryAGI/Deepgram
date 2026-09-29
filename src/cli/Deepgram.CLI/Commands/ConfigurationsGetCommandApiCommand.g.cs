@@ -41,9 +41,9 @@ internal static partial class ConfigurationsGetCommandApiCommand
 
     static partial void CustomizeCommand(ref Command command);
 
-    public static Command Create()
+    public static Command Create(string? commandName = null)
     {
-        var command = new Command(@"get", @"Get an Agent Configuration
+        var command = new Command(commandName ?? @"get", @"Get an Agent Configuration
 Returns the specified agent configuration in its uninterpolated form");
                         command.Arguments.Add(ProjectId);
                         command.Arguments.Add(AgentId);

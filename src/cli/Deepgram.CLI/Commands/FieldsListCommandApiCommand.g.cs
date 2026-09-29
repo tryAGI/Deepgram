@@ -47,9 +47,9 @@ internal static partial class FieldsListCommandApiCommand
 
     static partial void CustomizeCommand(ref Command command);
 
-    public static Command Create()
+    public static Command Create(string? commandName = null)
     {
-        var command = new Command(@"list", @"List Project Usage Fields
+        var command = new Command(commandName ?? @"list", @"List Project Usage Fields
 Lists the features, models, tags, languages, and processing method used for requests in the specified project");
                         command.Arguments.Add(ProjectId);
                         command.Options.Add(Start);

@@ -240,9 +240,9 @@ To boost multiple separate keyterms, repeat the `keyterm` parameter (for example
 
     static partial void CustomizeCommand(ref Command command);
 
-    public static Command Create()
+    public static Command Create(string? commandName = null)
     {
-        var command = new Command(@"transcribe-with-bytes", @"Transcribe and analyze pre-recorded audio and video
+        var command = new Command(commandName ?? @"transcribe-with-bytes", @"Transcribe and analyze pre-recorded audio and video
 Transcribe audio and video using Deepgram's speech-to-text REST API");
                         command.Options.Add(Callback);
                         command.Options.Add(CallbackMethod);

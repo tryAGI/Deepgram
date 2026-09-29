@@ -41,9 +41,9 @@ internal static partial class DistributionCredentialsDeleteCommandApiCommand
 
     static partial void CustomizeCommand(ref Command command);
 
-    public static Command Create()
+    public static Command Create(string? commandName = null)
     {
-        var command = new Command(@"delete", @"Delete a Project Self-Hosted Distribution Credential
+        var command = new Command(commandName ?? @"delete", @"Delete a Project Self-Hosted Distribution Credential
 Deletes a set of distribution credentials for the specified project");
                         command.Arguments.Add(ProjectId);
                         command.Arguments.Add(DistributionCredentialsId);

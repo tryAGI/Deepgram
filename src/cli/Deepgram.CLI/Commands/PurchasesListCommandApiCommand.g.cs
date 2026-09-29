@@ -41,9 +41,9 @@ internal static partial class PurchasesListCommandApiCommand
 
     static partial void CustomizeCommand(ref Command command);
 
-    public static Command Create()
+    public static Command Create(string? commandName = null)
     {
-        var command = new Command(@"list", @"List Project Purchases
+        var command = new Command(commandName ?? @"list", @"List Project Purchases
 Returns the original purchased amount on an order transaction");
                         command.Arguments.Add(ProjectId);
                         command.Options.Add(Limit);

@@ -57,9 +57,9 @@ internal static partial class ProjectsUpdateCommandApiCommand
 
     static partial void CustomizeCommand(ref Command command);
 
-    public static Command Create()
+    public static Command Create(string? commandName = null)
     {
-        var command = new Command(@"update", @"Update a Project
+        var command = new Command(commandName ?? @"update", @"Update a Project
 Updates the name or other properties of an existing project");
                         command.Arguments.Add(ProjectId);
                         command.Options.Add(NameOption);
