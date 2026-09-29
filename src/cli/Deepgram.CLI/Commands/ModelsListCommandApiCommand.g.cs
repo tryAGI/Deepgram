@@ -31,9 +31,9 @@ internal static partial class ModelsListCommandApiCommand
 
     static partial void CustomizeCommand(ref Command command);
 
-    public static Command Create()
+    public static Command Create(string? commandName = null)
     {
-        var command = new Command(@"list", @"List Agent Think Models
+        var command = new Command(commandName ?? @"list", @"List Agent Think Models
 Retrieves the available think models that can be used for AI agent processing");
 
 

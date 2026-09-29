@@ -51,9 +51,9 @@ internal static partial class KeysCreateCommandApiCommand
 
     static partial void CustomizeCommand(ref Command command);
 
-    public static Command Create()
+    public static Command Create(string? commandName = null)
     {
-        var command = new Command(@"create", @"Create a Project Key
+        var command = new Command(commandName ?? @"create", @"Create a Project Key
 Creates a new API key with specified settings for the project");
                         command.Arguments.Add(ProjectId);
           command.Options.Add(Input);

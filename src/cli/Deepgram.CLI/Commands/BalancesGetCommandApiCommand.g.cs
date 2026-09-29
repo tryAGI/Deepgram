@@ -41,9 +41,9 @@ internal static partial class BalancesGetCommandApiCommand
 
     static partial void CustomizeCommand(ref Command command);
 
-    public static Command Create()
+    public static Command Create(string? commandName = null)
     {
-        var command = new Command(@"get", @"Get a Project Balance
+        var command = new Command(commandName ?? @"get", @"Get a Project Balance
 Retrieves details about the specified balance");
                         command.Arguments.Add(ProjectId);
                         command.Arguments.Add(BalanceId);

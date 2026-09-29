@@ -41,9 +41,9 @@ internal static partial class VariablesGetCommandApiCommand
 
     static partial void CustomizeCommand(ref Command command);
 
-    public static Command Create()
+    public static Command Create(string? commandName = null)
     {
-        var command = new Command(@"get", @"Get an Agent Variable
+        var command = new Command(commandName ?? @"get", @"Get an Agent Variable
 Returns the specified template variable");
                         command.Arguments.Add(ProjectId);
                         command.Arguments.Add(VariableId);

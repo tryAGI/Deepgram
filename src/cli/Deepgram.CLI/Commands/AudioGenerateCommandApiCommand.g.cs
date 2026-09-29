@@ -74,9 +74,9 @@ internal static partial class AudioGenerateCommandApiCommand
 
     static partial void CustomizeCommand(ref Command command);
 
-    public static Command Create()
+    public static Command Create(string? commandName = null)
     {
-        var command = new Command(@"generate", @"Text to Speech transformation
+        var command = new Command(commandName ?? @"generate", @"Text to Speech transformation
 Convert text into natural-sounding speech using Deepgram's TTS REST API");
                         command.Options.Add(Callback);
                         command.Options.Add(CallbackMethod);

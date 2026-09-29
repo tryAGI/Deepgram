@@ -51,9 +51,9 @@ internal static partial class TokensGrantCommandApiCommand
 
     static partial void CustomizeCommand(ref Command command);
 
-    public static Command Create()
+    public static Command Create(string? commandName = null)
     {
-        var command = new Command(@"grant", @"Token-based Authentication
+        var command = new Command(commandName ?? @"grant", @"Token-based Authentication
 Generates a temporary JSON Web Token (JWT) with a 30-second (by default) TTL and usage::write permission for core voice APIs, requiring an API key with Member or higher authorization. Tokens created with this endpoint will not work with the Manage APIs.");
                         command.Options.Add(TtlSeconds);
           command.Options.Add(Input);

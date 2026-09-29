@@ -41,9 +41,9 @@ internal static partial class MembersDeleteCommandApiCommand
 
     static partial void CustomizeCommand(ref Command command);
 
-    public static Command Create()
+    public static Command Create(string? commandName = null)
     {
-        var command = new Command(@"delete", @"Delete a Project Member
+        var command = new Command(commandName ?? @"delete", @"Delete a Project Member
 Removes a member from the project using their unique member ID");
                         command.Arguments.Add(ProjectId);
                         command.Arguments.Add(MemberId);

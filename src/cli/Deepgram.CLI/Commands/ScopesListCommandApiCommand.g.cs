@@ -41,9 +41,9 @@ internal static partial class ScopesListCommandApiCommand
 
     static partial void CustomizeCommand(ref Command command);
 
-    public static Command Create()
+    public static Command Create(string? commandName = null)
     {
-        var command = new Command(@"list", @"List Project Member Scopes
+        var command = new Command(commandName ?? @"list", @"List Project Member Scopes
 Retrieves a list of scopes for a specific member");
                         command.Arguments.Add(ProjectId);
                         command.Arguments.Add(MemberId);

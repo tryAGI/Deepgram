@@ -41,9 +41,9 @@ internal static partial class VariablesDeleteCommandApiCommand
 
     static partial void CustomizeCommand(ref Command command);
 
-    public static Command Create()
+    public static Command Create(string? commandName = null)
     {
-        var command = new Command(@"delete", @"Delete an Agent Variable
+        var command = new Command(commandName ?? @"delete", @"Delete an Agent Variable
 Deletes the specified template variable");
                         command.Arguments.Add(ProjectId);
                         command.Arguments.Add(VariableId);

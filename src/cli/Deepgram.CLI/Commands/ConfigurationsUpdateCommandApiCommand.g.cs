@@ -48,9 +48,9 @@ internal static partial class ConfigurationsUpdateCommandApiCommand
 
     static partial void CustomizeCommand(ref Command command);
 
-    public static Command Create()
+    public static Command Create(string? commandName = null)
     {
-        var command = new Command(@"update", @"Update Agent Metadata
+        var command = new Command(commandName ?? @"update", @"Update Agent Metadata
 Updates the metadata associated with an agent configuration. The config itself is immutable—to change the configuration, delete the existing agent and create a new one.");
                         command.Arguments.Add(ProjectId);
                         command.Arguments.Add(AgentId);

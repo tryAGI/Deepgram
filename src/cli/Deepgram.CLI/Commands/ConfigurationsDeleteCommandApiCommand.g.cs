@@ -41,9 +41,9 @@ internal static partial class ConfigurationsDeleteCommandApiCommand
 
     static partial void CustomizeCommand(ref Command command);
 
-    public static Command Create()
+    public static Command Create(string? commandName = null)
     {
-        var command = new Command(@"delete", @"Delete an Agent Configuration
+        var command = new Command(commandName ?? @"delete", @"Delete an Agent Configuration
 Deletes the specified agent configuration. Deleting an agent configuration can cause a production outage if your service references this agent UUID. Migrate all active sessions to a new configuration before deleting.");
                         command.Arguments.Add(ProjectId);
                         command.Arguments.Add(AgentId);

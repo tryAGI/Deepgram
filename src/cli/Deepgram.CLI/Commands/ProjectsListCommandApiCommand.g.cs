@@ -31,9 +31,9 @@ internal static partial class ProjectsListCommandApiCommand
 
     static partial void CustomizeCommand(ref Command command);
 
-    public static Command Create()
+    public static Command Create(string? commandName = null)
     {
-        var command = new Command(@"list", @"List Projects
+        var command = new Command(commandName ?? @"list", @"List Projects
 Retrieves basic information about the projects associated with the API key");
 
 

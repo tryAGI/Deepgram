@@ -41,9 +41,9 @@ internal static partial class KeysGetCommandApiCommand
 
     static partial void CustomizeCommand(ref Command command);
 
-    public static Command Create()
+    public static Command Create(string? commandName = null)
     {
-        var command = new Command(@"get", @"Get a Project Key
+        var command = new Command(commandName ?? @"get", @"Get a Project Key
 Retrieves information about a specified API key");
                         command.Arguments.Add(ProjectId);
                         command.Arguments.Add(KeyId);

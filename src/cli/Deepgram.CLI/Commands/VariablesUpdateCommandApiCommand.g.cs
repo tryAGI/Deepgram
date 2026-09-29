@@ -48,9 +48,9 @@ internal static partial class VariablesUpdateCommandApiCommand
 
     static partial void CustomizeCommand(ref Command command);
 
-    public static Command Create()
+    public static Command Create(string? commandName = null)
     {
-        var command = new Command(@"update", @"Update an Agent Variable
+        var command = new Command(commandName ?? @"update", @"Update an Agent Variable
 Updates the value of an existing template variable");
                         command.Arguments.Add(ProjectId);
                         command.Arguments.Add(VariableId);

@@ -35,9 +35,9 @@ internal static partial class ConfigurationsListCommandApiCommand
 
     static partial void CustomizeCommand(ref Command command);
 
-    public static Command Create()
+    public static Command Create(string? commandName = null)
     {
-        var command = new Command(@"list", @"List Agent Configurations
+        var command = new Command(commandName ?? @"list", @"List Agent Configurations
 Returns all agent configurations for the specified project. Configurations are returned in their uninterpolated form—template variable placeholders appear as-is rather than with their substituted values.");
                         command.Arguments.Add(ProjectId);
 

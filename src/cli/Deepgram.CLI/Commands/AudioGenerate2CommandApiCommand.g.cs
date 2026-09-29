@@ -107,9 +107,9 @@ internal static partial class AudioGenerate2CommandApiCommand
 
     static partial void CustomizeCommand(ref Command command);
 
-    public static Command Create()
+    public static Command Create(string? commandName = null)
     {
-        var command = new Command(@"generate2", @"Flux Text to Speech (batch)
+        var command = new Command(commandName ?? @"generate2", @"Flux Text to Speech (batch)
 Synthesize a complete block of text into a single audio response using Deepgram's Flux TTS batch (REST) API. Use this for pre-rendering fixed audio (IVR prompts, notifications, narration) where the whole text is known up front and you don't need incremental playback or interruption.");
                         command.Options.Add(Callback);
                         command.Options.Add(CallbackMethod);

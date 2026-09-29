@@ -48,9 +48,9 @@ internal static partial class ScopesUpdateCommandApiCommand
 
     static partial void CustomizeCommand(ref Command command);
 
-    public static Command Create()
+    public static Command Create(string? commandName = null)
     {
-        var command = new Command(@"update", @"Update Project Member Scopes
+        var command = new Command(commandName ?? @"update", @"Update Project Member Scopes
 Updates the scopes for a specific member");
                         command.Arguments.Add(ProjectId);
                         command.Arguments.Add(MemberId);

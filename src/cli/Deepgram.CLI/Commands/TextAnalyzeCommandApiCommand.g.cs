@@ -111,9 +111,9 @@ internal static partial class TextAnalyzeCommandApiCommand
 
     static partial void CustomizeCommand(ref Command command);
 
-    public static Command Create()
+    public static Command Create(string? commandName = null)
     {
-        var command = new Command(@"analyze", @"Analyze text content
+        var command = new Command(commandName ?? @"analyze", @"Analyze text content
 Analyze text content using Deepgrams text analysis API");
                         command.Options.Add(Callback);
                         command.Options.Add(CallbackMethod);

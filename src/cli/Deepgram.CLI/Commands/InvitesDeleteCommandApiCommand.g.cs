@@ -41,9 +41,9 @@ internal static partial class InvitesDeleteCommandApiCommand
 
     static partial void CustomizeCommand(ref Command command);
 
-    public static Command Create()
+    public static Command Create(string? commandName = null)
     {
-        var command = new Command(@"delete", @"Delete a Project Invite
+        var command = new Command(commandName ?? @"delete", @"Delete a Project Invite
 Deletes an invite for a specific project");
                         command.Arguments.Add(ProjectId);
                         command.Arguments.Add(Email);

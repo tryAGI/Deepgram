@@ -35,9 +35,9 @@ internal static partial class ProjectsLeaveCommandApiCommand
 
     static partial void CustomizeCommand(ref Command command);
 
-    public static Command Create()
+    public static Command Create(string? commandName = null)
     {
-        var command = new Command(@"leave", @"Leave a Project
+        var command = new Command(commandName ?? @"leave", @"Leave a Project
 Removes the authenticated account from the specific project");
                         command.Arguments.Add(ProjectId);
 
