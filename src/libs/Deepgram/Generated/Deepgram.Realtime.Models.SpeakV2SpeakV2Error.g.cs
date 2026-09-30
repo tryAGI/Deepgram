@@ -16,7 +16,7 @@ namespace Deepgram.Realtime
         public global::Deepgram.Realtime.SpeakV2SpeakV2ErrorType Type { get; set; }
 
         /// <summary>
-        /// A code identifying the error, e.g. `MESSAGE-0000` or `NET-0000`.
+        /// A code identifying the error, e.g. `MESSAGE-0000` or `NET-0000`. `DATA-0002` covers invalid inline controls and speed, including an inline pause marker (pause is batch-only) and a pronunciation control combined with a `speed` other than `1.0`; `description` names the specific rule.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("code")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Deepgram.Realtime.JsonConverters.ChannelsSpeakV2MessagesSpeakV2ErrorCodeJsonConverter))]
@@ -40,7 +40,7 @@ namespace Deepgram.Realtime
         /// Initializes a new instance of the <see cref="SpeakV2SpeakV2Error" /> class.
         /// </summary>
         /// <param name="code">
-        /// A code identifying the error, e.g. `MESSAGE-0000` or `NET-0000`.
+        /// A code identifying the error, e.g. `MESSAGE-0000` or `NET-0000`. `DATA-0002` covers invalid inline controls and speed, including an inline pause marker (pause is batch-only) and a pronunciation control combined with a `speed` other than `1.0`; `description` names the specific rule.
         /// </param>
         /// <param name="description">
         /// Prose description of the error

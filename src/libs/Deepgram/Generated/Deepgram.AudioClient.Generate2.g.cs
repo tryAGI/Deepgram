@@ -509,7 +509,7 @@ namespace Deepgram
                                 retryReason: global::System.String.Empty,
                                 cancellationToken: __effectiveCancellationToken)).ConfigureAwait(false);
                 }
-                            // Invalid Request. Inline pause and pronunciation controls are not applied and are stripped rather than rejected.
+                            // Invalid Request. Inline control violations return a structured error whose `err_code` names the rule: `CONTROL_COMBINATION_INVALID` (pronunciation combined with speed or pause, or all three together), `PAUSE_SPEED_CAP_EXCEEDED` (a pause marker with `speed` above `1.15`), `BREAK_OUT_OF_RANGE` (a pause outside 500-3000 ms), `BREAK_INCREMENT_INVALID` (a pause off the 100 ms grid), `BREAKS_LIMIT_EXCEEDED` (more than 8 pause markers, or two pauses with no text between them), `BREAK_SYNTAX_INVALID` (a malformed pause marker, such as a simple marker without backslashes or an escaped structured marker), plus the existing pronunciation and speed codes. A `speed` of `1.0` does not count as a speed control for the combination rules. See [Speed, Pause, Pronunciation](/docs/tts-voice-controls).
                             if ((int)__response.StatusCode == 400)
                             {
                                 string? __content_400 = null;
@@ -675,7 +675,7 @@ namespace Deepgram
         /// </param>
         /// <param name="priority"></param>
         /// <param name="text">
-        /// The text content to be converted to speech. The server normalizes and preprocesses the text before synthesis. Inline pause and pronunciation controls are not yet applied; they are stripped from the text before synthesis.
+        /// The text content to be converted to speech. The server normalizes and preprocesses the text before synthesis. May contain inline pause controls (`\{pause:500ms\}`, 500-3000 ms in 100 ms steps, at most 8 per request) and inline pronunciation controls (`\{"word": "...", "pronounce": "&lt;IPA&gt;"\}`, Early Access). Pronunciation cannot be combined with pause or with a `speed` other than `1.0`, and `speed` is capped at `1.15` when a pause is present. See [Speed, Pause, Pronunciation](/docs/tts-voice-controls).
         /// </param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>

@@ -16,7 +16,7 @@ namespace Deepgram.Realtime
         public global::Deepgram.Realtime.SpeakV2SpeakV2SpeakType Type { get; set; }
 
         /// <summary>
-        /// The input text to synthesize. Inline pause and pronunciation controls are not yet applied; they are stripped from the text before synthesis.
+        /// The input text to synthesize. May contain inline pronunciation controls (`\{"word": "...", "pronounce": "&lt;IPA&gt;"\}`), which are in Early Access. Inline pause controls are supported on the batch (REST) transport only; a pause marker sent over the WebSocket fails the connection with `DATA-0002`. Pronunciation cannot be combined with a `speed` other than `1.0`: text carrying a pronunciation control on a session opened with `speed`, or after a `Configure` that set it, also fails the connection with `DATA-0002`. See [Speed, Pause, Pronunciation](/docs/tts-voice-controls).
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("text")]
         [global::System.Text.Json.Serialization.JsonRequired]
@@ -32,7 +32,7 @@ namespace Deepgram.Realtime
         /// Initializes a new instance of the <see cref="SpeakV2SpeakV2Speak" /> class.
         /// </summary>
         /// <param name="text">
-        /// The input text to synthesize. Inline pause and pronunciation controls are not yet applied; they are stripped from the text before synthesis.
+        /// The input text to synthesize. May contain inline pronunciation controls (`\{"word": "...", "pronounce": "&lt;IPA&gt;"\}`), which are in Early Access. Inline pause controls are supported on the batch (REST) transport only; a pause marker sent over the WebSocket fails the connection with `DATA-0002`. Pronunciation cannot be combined with a `speed` other than `1.0`: text carrying a pronunciation control on a session opened with `speed`, or after a `Configure` that set it, also fails the connection with `DATA-0002`. See [Speed, Pause, Pronunciation](/docs/tts-voice-controls).
         /// </param>
         /// <param name="type">
         /// Message type identifier
