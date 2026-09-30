@@ -9,7 +9,7 @@ namespace Deepgram
     public sealed partial class SpeakV2Request
     {
         /// <summary>
-        /// The text content to be converted to speech. The server normalizes and preprocesses the text before synthesis. Inline pause and pronunciation controls are not yet applied; they are stripped from the text before synthesis.
+        /// The text content to be converted to speech. The server normalizes and preprocesses the text before synthesis. May contain inline pause controls (`\{pause:500ms\}`, 500-3000 ms in 100 ms steps, at most 8 per request) and inline pronunciation controls (`\{"word": "...", "pronounce": "&lt;IPA&gt;"\}`, Early Access). Pronunciation cannot be combined with pause or with a `speed` other than `1.0`, and `speed` is capped at `1.15` when a pause is present. See [Speed, Pause, Pronunciation](/docs/tts-voice-controls).
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("text")]
         [global::System.Text.Json.Serialization.JsonRequired]
@@ -25,7 +25,7 @@ namespace Deepgram
         /// Initializes a new instance of the <see cref="SpeakV2Request" /> class.
         /// </summary>
         /// <param name="text">
-        /// The text content to be converted to speech. The server normalizes and preprocesses the text before synthesis. Inline pause and pronunciation controls are not yet applied; they are stripped from the text before synthesis.
+        /// The text content to be converted to speech. The server normalizes and preprocesses the text before synthesis. May contain inline pause controls (`\{pause:500ms\}`, 500-3000 ms in 100 ms steps, at most 8 per request) and inline pronunciation controls (`\{"word": "...", "pronounce": "&lt;IPA&gt;"\}`, Early Access). Pronunciation cannot be combined with pause or with a `speed` other than `1.0`, and `speed` is capped at `1.15` when a pause is present. See [Speed, Pause, Pronunciation](/docs/tts-voice-controls).
         /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]

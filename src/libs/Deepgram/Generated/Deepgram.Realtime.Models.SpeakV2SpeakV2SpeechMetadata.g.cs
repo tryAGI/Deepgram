@@ -44,7 +44,7 @@ namespace Deepgram.Realtime
         public required int BillableCharacterCount { get; set; }
 
         /// <summary>
-        /// Counts of the inline controls the server acted on during the turn. Inline pause and pronunciation controls are not applied at launch — support is coming soon — so every count is currently `0`.
+        /// Counts of the inline controls the server acted on during the turn. A pronunciation override that triggers an IPA warning is still applied best-effort and counted in `pronunciations_applied`; the warning is reported separately through a `Warning` and `pronunciation_warnings`.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("controls_applied")]
         [global::System.Text.Json.Serialization.JsonRequired]
@@ -72,7 +72,7 @@ namespace Deepgram.Realtime
         /// Billable character count for this turn — the input character count with stripped control characters removed. Always less than or equal to `input_character_count`.
         /// </param>
         /// <param name="controlsApplied">
-        /// Counts of the inline controls the server acted on during the turn. Inline pause and pronunciation controls are not applied at launch — support is coming soon — so every count is currently `0`.
+        /// Counts of the inline controls the server acted on during the turn. A pronunciation override that triggers an IPA warning is still applied best-effort and counted in `pronunciations_applied`; the warning is reported separately through a `Warning` and `pronunciation_warnings`.
         /// </param>
         /// <param name="type">
         /// Message type identifier
