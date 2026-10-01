@@ -312,6 +312,15 @@ namespace Deepgram.Realtime
                         rawText,
                         json));
             }
+            if (@event.AgentV1AgentV1CustomFromThinkProvider is { } __AgentV1CustomFromThinkProviderReceived)
+            {
+                AgentV1CustomFromThinkProviderReceived?.Invoke(
+                    this,
+                    new AutoSDKWebSocketMessageEventArgs<global::Deepgram.Realtime.AgentV1AgentV1CustomFromThinkProvider>(
+                        __AgentV1CustomFromThinkProviderReceived,
+                        rawText,
+                        json));
+            }
             if (@event.AgentV1AgentV1Error is { } __AgentV1ErrorReceived)
             {
                 AgentV1ErrorReceived?.Invoke(

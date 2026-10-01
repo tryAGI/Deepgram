@@ -72,6 +72,10 @@ namespace Deepgram.Realtime
         ///
         /// </summary>
         Welcome,
+        /// <summary>
+        ///
+        /// </summary>
+        CustomFromThinkProvider,
     }
 
     /// <summary>
@@ -102,6 +106,7 @@ namespace Deepgram.Realtime
                 AgentV1ServerEventDiscriminatorMessageType.ThinkUpdated => "ThinkUpdated",
                 AgentV1ServerEventDiscriminatorMessageType.UserStartedSpeaking => "UserStartedSpeaking",
                 AgentV1ServerEventDiscriminatorMessageType.Welcome => "Welcome",
+                AgentV1ServerEventDiscriminatorMessageType.CustomFromThinkProvider => "__customFromThinkProvider",
                 _ => throw new global::System.ArgumentOutOfRangeException(nameof(value), value, null),
             };
         }
@@ -128,6 +133,7 @@ namespace Deepgram.Realtime
                 "ThinkUpdated" => AgentV1ServerEventDiscriminatorMessageType.ThinkUpdated,
                 "UserStartedSpeaking" => AgentV1ServerEventDiscriminatorMessageType.UserStartedSpeaking,
                 "Welcome" => AgentV1ServerEventDiscriminatorMessageType.Welcome,
+                "__customFromThinkProvider" => AgentV1ServerEventDiscriminatorMessageType.CustomFromThinkProvider,
                 _ => null,
             };
         }

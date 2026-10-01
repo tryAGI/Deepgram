@@ -79,6 +79,10 @@ namespace Deepgram.Realtime
 
             typeof(global::Deepgram.Realtime.JsonConverters.AgentV1AgentV1AgentAudioDoneTypeNullableJsonConverter),
 
+            typeof(global::Deepgram.Realtime.JsonConverters.AgentV1AgentV1CustomFromThinkProviderTypeJsonConverter),
+
+            typeof(global::Deepgram.Realtime.JsonConverters.AgentV1AgentV1CustomFromThinkProviderTypeNullableJsonConverter),
+
             typeof(global::Deepgram.Realtime.JsonConverters.ChannelsAgentV1MessagesAgentV1ErrorTypeJsonConverter),
 
             typeof(global::Deepgram.Realtime.JsonConverters.ChannelsAgentV1MessagesAgentV1ErrorTypeNullableJsonConverter),
@@ -322,6 +326,10 @@ namespace Deepgram.Realtime
             typeof(global::Deepgram.Realtime.JsonConverters.AgentV1AgentV1ForceEndTurnTypeJsonConverter),
 
             typeof(global::Deepgram.Realtime.JsonConverters.AgentV1AgentV1ForceEndTurnTypeNullableJsonConverter),
+
+            typeof(global::Deepgram.Realtime.JsonConverters.AgentV1AgentV1CustomToThinkProviderTypeJsonConverter),
+
+            typeof(global::Deepgram.Realtime.JsonConverters.AgentV1AgentV1CustomToThinkProviderTypeNullableJsonConverter),
 
             typeof(global::Deepgram.Realtime.JsonConverters.ListenV1CallbackMethodJsonConverter),
 
@@ -696,6 +704,9 @@ namespace Deepgram.Realtime
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Deepgram.Realtime.AgentV1AgentV1AgentStartedSpeakingType), TypeInfoPropertyName = "AgentV1AgentV1AgentStartedSpeakingType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Deepgram.Realtime.AgentV1AgentV1AgentAudioDone))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Deepgram.Realtime.AgentV1AgentV1AgentAudioDoneType), TypeInfoPropertyName = "AgentV1AgentV1AgentAudioDoneType2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Deepgram.Realtime.AgentV1AgentV1CustomFromThinkProvider))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Deepgram.Realtime.AgentV1AgentV1CustomFromThinkProviderType), TypeInfoPropertyName = "AgentV1AgentV1CustomFromThinkProviderType2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(object))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Deepgram.Realtime.ChannelsAgentV1MessagesAgentV1ErrorType), TypeInfoPropertyName = "ChannelsAgentV1MessagesAgentV1ErrorType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Deepgram.Realtime.AgentV1AgentV1Error))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Deepgram.Realtime.ChannelsAgentV1MessagesAgentV1WarningType), TypeInfoPropertyName = "ChannelsAgentV1MessagesAgentV1WarningType2")]
@@ -828,6 +839,8 @@ namespace Deepgram.Realtime
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Deepgram.Realtime.AgentV1AgentV1UpdatePromptType), TypeInfoPropertyName = "AgentV1AgentV1UpdatePromptType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Deepgram.Realtime.AgentV1AgentV1ForceEndTurn))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Deepgram.Realtime.AgentV1AgentV1ForceEndTurnType), TypeInfoPropertyName = "AgentV1AgentV1ForceEndTurnType2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Deepgram.Realtime.AgentV1AgentV1CustomToThinkProvider))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Deepgram.Realtime.AgentV1AgentV1CustomToThinkProviderType), TypeInfoPropertyName = "AgentV1AgentV1CustomToThinkProviderType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Deepgram.Realtime.ListenV1Callback))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Deepgram.Realtime.ListenV1CallbackMethod), TypeInfoPropertyName = "ListenV1CallbackMethod2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Deepgram.Realtime.ListenV1Channels))]

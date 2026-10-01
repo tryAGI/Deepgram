@@ -329,6 +329,10 @@ namespace Deepgram.Realtime
         /// </summary>
         public event global::System.EventHandler<AutoSDKWebSocketMessageEventArgs<global::Deepgram.Realtime.AgentV1AgentV1AgentAudioDone>>? AgentV1AgentAudioDoneReceived;
         /// <summary>
+        /// Raised after a AgentV1CustomFromThinkProvider message is deserialized.
+        /// </summary>
+        public event global::System.EventHandler<AutoSDKWebSocketMessageEventArgs<global::Deepgram.Realtime.AgentV1AgentV1CustomFromThinkProvider>>? AgentV1CustomFromThinkProviderReceived;
+        /// <summary>
         /// Raised after a AgentV1Error message is deserialized.
         /// </summary>
         public event global::System.EventHandler<AutoSDKWebSocketMessageEventArgs<global::Deepgram.Realtime.AgentV1AgentV1Error>>? AgentV1ErrorReceived;
