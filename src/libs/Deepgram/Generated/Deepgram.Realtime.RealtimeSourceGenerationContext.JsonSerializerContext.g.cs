@@ -407,6 +407,10 @@ namespace Deepgram.Realtime
 
             typeof(global::Deepgram.Realtime.JsonConverters.ChannelsListenV1MessagesListenV1SpeechStartedTypeNullableJsonConverter),
 
+            typeof(global::Deepgram.Realtime.JsonConverters.ChannelsListenV1MessagesListenV1ErrorTypeJsonConverter),
+
+            typeof(global::Deepgram.Realtime.JsonConverters.ChannelsListenV1MessagesListenV1ErrorTypeNullableJsonConverter),
+
             typeof(global::Deepgram.Realtime.JsonConverters.ChannelsListenV1MessagesListenV1FinalizeTypeJsonConverter),
 
             typeof(global::Deepgram.Realtime.JsonConverters.ChannelsListenV1MessagesListenV1FinalizeTypeNullableJsonConverter),
@@ -418,6 +422,10 @@ namespace Deepgram.Realtime
             typeof(global::Deepgram.Realtime.JsonConverters.ChannelsListenV1MessagesListenV1KeepAliveTypeJsonConverter),
 
             typeof(global::Deepgram.Realtime.JsonConverters.ChannelsListenV1MessagesListenV1KeepAliveTypeNullableJsonConverter),
+
+            typeof(global::Deepgram.Realtime.JsonConverters.ChannelsListenV1MessagesListenV1ConfigureTypeJsonConverter),
+
+            typeof(global::Deepgram.Realtime.JsonConverters.ChannelsListenV1MessagesListenV1ConfigureTypeNullableJsonConverter),
 
             typeof(global::Deepgram.Realtime.JsonConverters.ListenV2ModelJsonConverter),
 
@@ -893,12 +901,17 @@ namespace Deepgram.Realtime
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Deepgram.Realtime.ListenV1ListenV1UtteranceEnd))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Deepgram.Realtime.ChannelsListenV1MessagesListenV1SpeechStartedType), TypeInfoPropertyName = "ChannelsListenV1MessagesListenV1SpeechStartedType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Deepgram.Realtime.ListenV1ListenV1SpeechStarted))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Deepgram.Realtime.ChannelsListenV1MessagesListenV1ErrorType), TypeInfoPropertyName = "ChannelsListenV1MessagesListenV1ErrorType2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Deepgram.Realtime.ListenV1ListenV1Error))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Deepgram.Realtime.ChannelsListenV1MessagesListenV1FinalizeType), TypeInfoPropertyName = "ChannelsListenV1MessagesListenV1FinalizeType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Deepgram.Realtime.ListenV1ListenV1Finalize))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Deepgram.Realtime.ChannelsListenV1MessagesListenV1CloseStreamType), TypeInfoPropertyName = "ChannelsListenV1MessagesListenV1CloseStreamType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Deepgram.Realtime.ListenV1ListenV1CloseStream))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Deepgram.Realtime.ChannelsListenV1MessagesListenV1KeepAliveType), TypeInfoPropertyName = "ChannelsListenV1MessagesListenV1KeepAliveType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Deepgram.Realtime.ListenV1ListenV1KeepAlive))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Deepgram.Realtime.ChannelsListenV1MessagesListenV1ConfigureType), TypeInfoPropertyName = "ChannelsListenV1MessagesListenV1ConfigureType2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Deepgram.Realtime.ListenV1ListenV1Configure))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.Dictionary<string, bool>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Deepgram.Realtime.ListenV2Model), TypeInfoPropertyName = "ListenV2Model2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Deepgram.Realtime.ListenV2Encoding), TypeInfoPropertyName = "ListenV2Encoding2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Deepgram.Realtime.ListenV2SampleRate))]

@@ -280,6 +280,10 @@ namespace Deepgram.Realtime
         /// Raised after a ListenV1SpeechStarted message is deserialized.
         /// </summary>
         public event global::System.EventHandler<AutoSDKWebSocketMessageEventArgs<global::Deepgram.Realtime.ListenV1ListenV1SpeechStarted>>? ListenV1SpeechStartedReceived;
+        /// <summary>
+        /// Raised after a ListenV1Error message is deserialized.
+        /// </summary>
+        public event global::System.EventHandler<AutoSDKWebSocketMessageEventArgs<global::Deepgram.Realtime.ListenV1ListenV1Error>>? ListenV1ErrorReceived;
 
         /// <summary>
         ///
