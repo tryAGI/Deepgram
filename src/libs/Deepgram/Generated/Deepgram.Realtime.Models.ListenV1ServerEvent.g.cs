@@ -156,6 +156,43 @@ namespace Deepgram.Realtime
         public global::Deepgram.Realtime.ListenV1ListenV1SpeechStarted PickListenV1ListenV1SpeechStarted() => ListenV1ListenV1SpeechStarted is { } value
             ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'ListenV1ListenV1SpeechStarted' but the value was {ToString()}.");
+
+        /// <summary>
+        ///
+        /// </summary>
+#if NET6_0_OR_GREATER
+        public global::Deepgram.Realtime.ListenV1ListenV1Error? ListenV1ListenV1Error { get; init; }
+#else
+        public global::Deepgram.Realtime.ListenV1ListenV1Error? ListenV1ListenV1Error { get; }
+#endif
+
+        /// <summary>
+        ///
+        /// </summary>
+#if NET6_0_OR_GREATER
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(ListenV1ListenV1Error))]
+#endif
+        public bool IsListenV1ListenV1Error => ListenV1ListenV1Error != null;
+
+        /// <summary>
+        ///
+        /// </summary>
+        public bool TryPickListenV1ListenV1Error(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Deepgram.Realtime.ListenV1ListenV1Error? value)
+        {
+            value = ListenV1ListenV1Error;
+            return IsListenV1ListenV1Error;
+        }
+
+        /// <summary>
+        ///
+        /// </summary>
+        public global::Deepgram.Realtime.ListenV1ListenV1Error PickListenV1ListenV1Error() => ListenV1ListenV1Error is { } value
+            ? value
+            : throw new global::System.InvalidOperationException($"Expected union variant 'ListenV1ListenV1Error' but the value was {ToString()}.");
         /// <summary>
         ///
         /// </summary>
@@ -251,23 +288,49 @@ namespace Deepgram.Realtime
         /// <summary>
         ///
         /// </summary>
+        public static implicit operator ListenV1ServerEvent(global::Deepgram.Realtime.ListenV1ListenV1Error value) => new ListenV1ServerEvent((global::Deepgram.Realtime.ListenV1ListenV1Error?)value);
+
+        /// <summary>
+        ///
+        /// </summary>
+        public static implicit operator global::Deepgram.Realtime.ListenV1ListenV1Error?(ListenV1ServerEvent @this) => @this.ListenV1ListenV1Error;
+
+        /// <summary>
+        ///
+        /// </summary>
+        public ListenV1ServerEvent(global::Deepgram.Realtime.ListenV1ListenV1Error? value)
+        {
+            ListenV1ListenV1Error = value;
+        }
+
+        /// <summary>
+        ///
+        /// </summary>
+        public static ListenV1ServerEvent FromListenV1ListenV1Error(global::Deepgram.Realtime.ListenV1ListenV1Error? value) => new ListenV1ServerEvent(value);
+
+        /// <summary>
+        ///
+        /// </summary>
         public ListenV1ServerEvent(
             global::Deepgram.Realtime.ListenV1ListenV1Results? listenV1ListenV1Results,
             global::Deepgram.Realtime.ListenV1ListenV1Metadata? listenV1ListenV1Metadata,
             global::Deepgram.Realtime.ListenV1ListenV1UtteranceEnd? listenV1ListenV1UtteranceEnd,
-            global::Deepgram.Realtime.ListenV1ListenV1SpeechStarted? listenV1ListenV1SpeechStarted
+            global::Deepgram.Realtime.ListenV1ListenV1SpeechStarted? listenV1ListenV1SpeechStarted,
+            global::Deepgram.Realtime.ListenV1ListenV1Error? listenV1ListenV1Error
             )
         {
             ListenV1ListenV1Results = listenV1ListenV1Results;
             ListenV1ListenV1Metadata = listenV1ListenV1Metadata;
             ListenV1ListenV1UtteranceEnd = listenV1ListenV1UtteranceEnd;
             ListenV1ListenV1SpeechStarted = listenV1ListenV1SpeechStarted;
+            ListenV1ListenV1Error = listenV1ListenV1Error;
         }
 
         /// <summary>
         ///
         /// </summary>
         public object? Object =>
+            ListenV1ListenV1Error as object ??
             ListenV1ListenV1SpeechStarted as object ??
             ListenV1ListenV1UtteranceEnd as object ??
             ListenV1ListenV1Metadata as object ??
@@ -281,7 +344,8 @@ namespace Deepgram.Realtime
             ListenV1ListenV1Results?.ToString() ??
             ListenV1ListenV1Metadata?.ToString() ??
             ListenV1ListenV1UtteranceEnd?.ToString() ??
-            ListenV1ListenV1SpeechStarted?.ToString()
+            ListenV1ListenV1SpeechStarted?.ToString() ??
+            ListenV1ListenV1Error?.ToString()
             ;
 
         /// <summary>
@@ -289,7 +353,7 @@ namespace Deepgram.Realtime
         /// </summary>
         public bool Validate()
         {
-            return IsListenV1ListenV1Results && !IsListenV1ListenV1Metadata && !IsListenV1ListenV1UtteranceEnd && !IsListenV1ListenV1SpeechStarted || !IsListenV1ListenV1Results && IsListenV1ListenV1Metadata && !IsListenV1ListenV1UtteranceEnd && !IsListenV1ListenV1SpeechStarted || !IsListenV1ListenV1Results && !IsListenV1ListenV1Metadata && IsListenV1ListenV1UtteranceEnd && !IsListenV1ListenV1SpeechStarted || !IsListenV1ListenV1Results && !IsListenV1ListenV1Metadata && !IsListenV1ListenV1UtteranceEnd && IsListenV1ListenV1SpeechStarted;
+            return IsListenV1ListenV1Results && !IsListenV1ListenV1Metadata && !IsListenV1ListenV1UtteranceEnd && !IsListenV1ListenV1SpeechStarted && !IsListenV1ListenV1Error || !IsListenV1ListenV1Results && IsListenV1ListenV1Metadata && !IsListenV1ListenV1UtteranceEnd && !IsListenV1ListenV1SpeechStarted && !IsListenV1ListenV1Error || !IsListenV1ListenV1Results && !IsListenV1ListenV1Metadata && IsListenV1ListenV1UtteranceEnd && !IsListenV1ListenV1SpeechStarted && !IsListenV1ListenV1Error || !IsListenV1ListenV1Results && !IsListenV1ListenV1Metadata && !IsListenV1ListenV1UtteranceEnd && IsListenV1ListenV1SpeechStarted && !IsListenV1ListenV1Error || !IsListenV1ListenV1Results && !IsListenV1ListenV1Metadata && !IsListenV1ListenV1UtteranceEnd && !IsListenV1ListenV1SpeechStarted && IsListenV1ListenV1Error;
         }
 
         /// <summary>
@@ -300,6 +364,7 @@ namespace Deepgram.Realtime
             global::System.Func<global::Deepgram.Realtime.ListenV1ListenV1Metadata, TResult>? listenV1ListenV1Metadata = null,
             global::System.Func<global::Deepgram.Realtime.ListenV1ListenV1UtteranceEnd, TResult>? listenV1ListenV1UtteranceEnd = null,
             global::System.Func<global::Deepgram.Realtime.ListenV1ListenV1SpeechStarted, TResult>? listenV1ListenV1SpeechStarted = null,
+            global::System.Func<global::Deepgram.Realtime.ListenV1ListenV1Error, TResult>? listenV1ListenV1Error = null,
             bool validate = true)
         {
             if (validate)
@@ -323,6 +388,10 @@ namespace Deepgram.Realtime
             {
                 return listenV1ListenV1SpeechStarted(__value3);
             }
+            else if (ListenV1ListenV1Error is { } __value4 && listenV1ListenV1Error != null)
+            {
+                return listenV1ListenV1Error(__value4);
+            }
 
             return default(TResult);
         }
@@ -338,6 +407,8 @@ namespace Deepgram.Realtime
             global::System.Action<global::Deepgram.Realtime.ListenV1ListenV1UtteranceEnd>? listenV1ListenV1UtteranceEnd = null,
 
             global::System.Action<global::Deepgram.Realtime.ListenV1ListenV1SpeechStarted>? listenV1ListenV1SpeechStarted = null,
+
+            global::System.Action<global::Deepgram.Realtime.ListenV1ListenV1Error>? listenV1ListenV1Error = null,
             bool validate = true)
         {
             if (validate)
@@ -360,6 +431,10 @@ namespace Deepgram.Realtime
             else if (ListenV1ListenV1SpeechStarted is { } __value3)
             {
                 listenV1ListenV1SpeechStarted?.Invoke(__value3);
+            }
+            else if (ListenV1ListenV1Error is { } __value4)
+            {
+                listenV1ListenV1Error?.Invoke(__value4);
             }
         }
 
@@ -371,6 +446,7 @@ namespace Deepgram.Realtime
             global::System.Action<global::Deepgram.Realtime.ListenV1ListenV1Metadata>? listenV1ListenV1Metadata = null,
             global::System.Action<global::Deepgram.Realtime.ListenV1ListenV1UtteranceEnd>? listenV1ListenV1UtteranceEnd = null,
             global::System.Action<global::Deepgram.Realtime.ListenV1ListenV1SpeechStarted>? listenV1ListenV1SpeechStarted = null,
+            global::System.Action<global::Deepgram.Realtime.ListenV1ListenV1Error>? listenV1ListenV1Error = null,
             bool validate = true)
         {
             if (validate)
@@ -393,6 +469,10 @@ namespace Deepgram.Realtime
             else if (ListenV1ListenV1SpeechStarted is { } __value3)
             {
                 listenV1ListenV1SpeechStarted?.Invoke(__value3);
+            }
+            else if (ListenV1ListenV1Error is { } __value4)
+            {
+                listenV1ListenV1Error?.Invoke(__value4);
             }
         }
 
@@ -411,6 +491,8 @@ namespace Deepgram.Realtime
                 typeof(global::Deepgram.Realtime.ListenV1ListenV1UtteranceEnd),
                 ListenV1ListenV1SpeechStarted,
                 typeof(global::Deepgram.Realtime.ListenV1ListenV1SpeechStarted),
+                ListenV1ListenV1Error,
+                typeof(global::Deepgram.Realtime.ListenV1ListenV1Error),
             };
             const int offset = unchecked((int)2166136261);
             const int prime = 16777619;
@@ -430,7 +512,8 @@ namespace Deepgram.Realtime
                 global::System.Collections.Generic.EqualityComparer<global::Deepgram.Realtime.ListenV1ListenV1Results?>.Default.Equals(ListenV1ListenV1Results, other.ListenV1ListenV1Results) &&
                 global::System.Collections.Generic.EqualityComparer<global::Deepgram.Realtime.ListenV1ListenV1Metadata?>.Default.Equals(ListenV1ListenV1Metadata, other.ListenV1ListenV1Metadata) &&
                 global::System.Collections.Generic.EqualityComparer<global::Deepgram.Realtime.ListenV1ListenV1UtteranceEnd?>.Default.Equals(ListenV1ListenV1UtteranceEnd, other.ListenV1ListenV1UtteranceEnd) &&
-                global::System.Collections.Generic.EqualityComparer<global::Deepgram.Realtime.ListenV1ListenV1SpeechStarted?>.Default.Equals(ListenV1ListenV1SpeechStarted, other.ListenV1ListenV1SpeechStarted)
+                global::System.Collections.Generic.EqualityComparer<global::Deepgram.Realtime.ListenV1ListenV1SpeechStarted?>.Default.Equals(ListenV1ListenV1SpeechStarted, other.ListenV1ListenV1SpeechStarted) &&
+                global::System.Collections.Generic.EqualityComparer<global::Deepgram.Realtime.ListenV1ListenV1Error?>.Default.Equals(ListenV1ListenV1Error, other.ListenV1ListenV1Error)
                 ;
         }
 

@@ -204,6 +204,15 @@ namespace Deepgram.Realtime
                         rawText,
                         json));
             }
+            if (@event.ListenV1ListenV1Error is { } __ListenV1ErrorReceived)
+            {
+                ListenV1ErrorReceived?.Invoke(
+                    this,
+                    new AutoSDKWebSocketMessageEventArgs<global::Deepgram.Realtime.ListenV1ListenV1Error>(
+                        __ListenV1ErrorReceived,
+                        rawText,
+                        json));
+            }
         }
     }
 }
