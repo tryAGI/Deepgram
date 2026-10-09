@@ -21,8 +21,9 @@ namespace Deepgram.Realtime
         /// including keyterms set with the `keyterm` query parameter. Send an empty array to clear all keyterms. Omit<br/>
         /// the field, or set it to `null`, to keep the current keyterms.<br/>
         /// Each entry is a plain term or phrase with no weights or intensifiers. The 500-token keyterm limit that<br/>
-        /// applies to the `keyterm` query parameter also applies to each update. An over-limit update returns an<br/>
-        /// `Error`, and the stream keeps its previous keyterms.
+        /// applies to the `keyterm` query parameter also applies to each update. An over-limit update currently stops<br/>
+        /// transcription without an `Error`; after about 30 seconds, the server closes the stream with `1011`<br/>
+        /// (`NET-0000`). Keep each list under the limit and check its size before sending.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("keyterms")]
         public global::System.Collections.Generic.IList<string>? Keyterms { get; set; }
@@ -52,8 +53,9 @@ namespace Deepgram.Realtime
         /// including keyterms set with the `keyterm` query parameter. Send an empty array to clear all keyterms. Omit<br/>
         /// the field, or set it to `null`, to keep the current keyterms.<br/>
         /// Each entry is a plain term or phrase with no weights or intensifiers. The 500-token keyterm limit that<br/>
-        /// applies to the `keyterm` query parameter also applies to each update. An over-limit update returns an<br/>
-        /// `Error`, and the stream keeps its previous keyterms.
+        /// applies to the `keyterm` query parameter also applies to each update. An over-limit update currently stops<br/>
+        /// transcription without an `Error`; after about 30 seconds, the server closes the stream with `1011`<br/>
+        /// (`NET-0000`). Keep each list under the limit and check its size before sending.
         /// </param>
         /// <param name="features">
         /// Turns formatting features on or off. Each key is a feature name and each value is a boolean, for<br/>

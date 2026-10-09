@@ -4714,7 +4714,7 @@
             "items": {
               "type": "string"
             },
-            "description": "Replaces the stream's keyterms. Compatible with all Nova-3 models, monolingual and multilingual; on other\nmodels the server returns an `Error` with code `KeytermsNotSupported`. Each array replaces the entire list,\nincluding keyterms set with the `keyterm` query parameter. Send an empty array to clear all keyterms. Omit\nthe field, or set it to `null`, to keep the current keyterms.\n\nEach entry is a plain term or phrase with no weights or intensifiers. The 500-token keyterm limit that\napplies to the `keyterm` query parameter also applies to each update. An over-limit update returns an\n`Error`, and the stream keeps its previous keyterms.\n"
+            "description": "Replaces the stream's keyterms. Compatible with all Nova-3 models, monolingual and multilingual; on other\nmodels the server returns an `Error` with code `KeytermsNotSupported`. Each array replaces the entire list,\nincluding keyterms set with the `keyterm` query parameter. Send an empty array to clear all keyterms. Omit\nthe field, or set it to `null`, to keep the current keyterms.\n\nEach entry is a plain term or phrase with no weights or intensifiers. The 500-token keyterm limit that\napplies to the `keyterm` query parameter also applies to each update. An over-limit update currently stops\ntranscription without an `Error`; after about 30 seconds, the server closes the stream with `1011`\n(`NET-0000`). Keep each list under the limit and check its size before sending.\n"
           },
           "features": {
             "type": "object",
