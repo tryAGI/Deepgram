@@ -265,6 +265,14 @@ namespace Deepgram.Realtime
         /// </summary>
         public event global::System.EventHandler<AutoSDKWebSocketMessageEventArgs<global::Deepgram.Realtime.ListenV1ServerEvent>>? MessageReceived;
         /// <summary>
+        /// Raised after a ListenV1ConfigureSuccess message is deserialized.
+        /// </summary>
+        public event global::System.EventHandler<AutoSDKWebSocketMessageEventArgs<global::Deepgram.Realtime.ListenV1ListenV1ConfigureSuccess>>? ListenV1ConfigureSuccessReceived;
+        /// <summary>
+        /// Raised after a ListenV1ConfigureFailure message is deserialized.
+        /// </summary>
+        public event global::System.EventHandler<AutoSDKWebSocketMessageEventArgs<global::Deepgram.Realtime.ListenV1ListenV1ConfigureFailure>>? ListenV1ConfigureFailureReceived;
+        /// <summary>
         /// Raised after a ListenV1Results message is deserialized.
         /// </summary>
         public event global::System.EventHandler<AutoSDKWebSocketMessageEventArgs<global::Deepgram.Realtime.ListenV1ListenV1Results>>? ListenV1ResultsReceived;
