@@ -132,6 +132,10 @@ namespace Deepgram.Realtime.JsonConverters
                     catch (global::System.InvalidOperationException)
                     {
                     }
+                    catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                    {
+                        // Legacy enum converters signal an incompatible JSON token with this exception.
+                    }
                 }
                 else if (__bestIndex == 1)
                 {
@@ -146,6 +150,10 @@ namespace Deepgram.Realtime.JsonConverters
                     }
                     catch (global::System.InvalidOperationException)
                     {
+                    }
+                    catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                    {
+                        // Legacy enum converters signal an incompatible JSON token with this exception.
                     }
                 }
                 else if (__bestIndex == 2)
@@ -162,6 +170,10 @@ namespace Deepgram.Realtime.JsonConverters
                     catch (global::System.InvalidOperationException)
                     {
                     }
+                    catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                    {
+                        // Legacy enum converters signal an incompatible JSON token with this exception.
+                    }
                 }
                 else if (__bestIndex == 3)
                 {
@@ -176,6 +188,10 @@ namespace Deepgram.Realtime.JsonConverters
                     }
                     catch (global::System.InvalidOperationException)
                     {
+                    }
+                    catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                    {
+                        // Legacy enum converters signal an incompatible JSON token with this exception.
                     }
                 }
                 else if (__bestIndex == 4)
@@ -192,6 +208,10 @@ namespace Deepgram.Realtime.JsonConverters
                     catch (global::System.InvalidOperationException)
                     {
                     }
+                    catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                    {
+                        // Legacy enum converters signal an incompatible JSON token with this exception.
+                    }
                 }
                 else if (__bestIndex == 5)
                 {
@@ -206,6 +226,10 @@ namespace Deepgram.Realtime.JsonConverters
                     }
                     catch (global::System.InvalidOperationException)
                     {
+                    }
+                    catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                    {
+                        // Legacy enum converters signal an incompatible JSON token with this exception.
                     }
                 }
                 else if (__bestIndex == 6)
@@ -222,6 +246,10 @@ namespace Deepgram.Realtime.JsonConverters
                     catch (global::System.InvalidOperationException)
                     {
                     }
+                    catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                    {
+                        // Legacy enum converters signal an incompatible JSON token with this exception.
+                    }
                 }
                 else if (__bestIndex == 7)
                 {
@@ -236,6 +264,10 @@ namespace Deepgram.Realtime.JsonConverters
                     }
                     catch (global::System.InvalidOperationException)
                     {
+                    }
+                    catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                    {
+                        // Legacy enum converters signal an incompatible JSON token with this exception.
                     }
                 }
                 else if (__bestIndex == 8)
@@ -252,6 +284,10 @@ namespace Deepgram.Realtime.JsonConverters
                     catch (global::System.InvalidOperationException)
                     {
                     }
+                    catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                    {
+                        // Legacy enum converters signal an incompatible JSON token with this exception.
+                    }
                 }
                 else if (__bestIndex == 9)
                 {
@@ -267,6 +303,10 @@ namespace Deepgram.Realtime.JsonConverters
                     catch (global::System.InvalidOperationException)
                     {
                     }
+                    catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                    {
+                        // Legacy enum converters signal an incompatible JSON token with this exception.
+                    }
                 }
                 else if (__bestIndex == 10)
                 {
@@ -281,6 +321,10 @@ namespace Deepgram.Realtime.JsonConverters
                     }
                     catch (global::System.InvalidOperationException)
                     {
+                    }
+                    catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                    {
+                        // Legacy enum converters signal an incompatible JSON token with this exception.
                     }
                 }
             }
@@ -300,6 +344,10 @@ namespace Deepgram.Realtime.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+                catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                {
+                    // Legacy enum converters signal an incompatible JSON token with this exception.
+                }
             }
 
             if (speakV2SpeakV2Audio == null && speakV2SpeakV2Connected == null && speakV2SpeakV2SpeechStarted == null && speakV2SpeakV2SpeechMetadata == null && speakV2SpeakV2SpeechInterrupted == null && speakV2SpeakV2Flushed == null && speakV2SpeakV2SessionMetadata == null && speakV2SpeakV2ConfigureSuccess == null && speakV2SpeakV2ConfigureFailure == null && speakV2SpeakV2Warning == null && speakV2SpeakV2Error == null)
@@ -316,6 +364,10 @@ namespace Deepgram.Realtime.JsonConverters
                 }
                 catch (global::System.InvalidOperationException)
                 {
+                }
+                catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                {
+                    // Legacy enum converters signal an incompatible JSON token with this exception.
                 }
             }
 
@@ -334,6 +386,10 @@ namespace Deepgram.Realtime.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+                catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                {
+                    // Legacy enum converters signal an incompatible JSON token with this exception.
+                }
             }
 
             if (speakV2SpeakV2Audio == null && speakV2SpeakV2Connected == null && speakV2SpeakV2SpeechStarted == null && speakV2SpeakV2SpeechMetadata == null && speakV2SpeakV2SpeechInterrupted == null && speakV2SpeakV2Flushed == null && speakV2SpeakV2SessionMetadata == null && speakV2SpeakV2ConfigureSuccess == null && speakV2SpeakV2ConfigureFailure == null && speakV2SpeakV2Warning == null && speakV2SpeakV2Error == null)
@@ -350,6 +406,10 @@ namespace Deepgram.Realtime.JsonConverters
                 }
                 catch (global::System.InvalidOperationException)
                 {
+                }
+                catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                {
+                    // Legacy enum converters signal an incompatible JSON token with this exception.
                 }
             }
 
@@ -368,6 +428,10 @@ namespace Deepgram.Realtime.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+                catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                {
+                    // Legacy enum converters signal an incompatible JSON token with this exception.
+                }
             }
 
             if (speakV2SpeakV2Audio == null && speakV2SpeakV2Connected == null && speakV2SpeakV2SpeechStarted == null && speakV2SpeakV2SpeechMetadata == null && speakV2SpeakV2SpeechInterrupted == null && speakV2SpeakV2Flushed == null && speakV2SpeakV2SessionMetadata == null && speakV2SpeakV2ConfigureSuccess == null && speakV2SpeakV2ConfigureFailure == null && speakV2SpeakV2Warning == null && speakV2SpeakV2Error == null)
@@ -384,6 +448,10 @@ namespace Deepgram.Realtime.JsonConverters
                 }
                 catch (global::System.InvalidOperationException)
                 {
+                }
+                catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                {
+                    // Legacy enum converters signal an incompatible JSON token with this exception.
                 }
             }
 
@@ -402,6 +470,10 @@ namespace Deepgram.Realtime.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+                catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                {
+                    // Legacy enum converters signal an incompatible JSON token with this exception.
+                }
             }
 
             if (speakV2SpeakV2Audio == null && speakV2SpeakV2Connected == null && speakV2SpeakV2SpeechStarted == null && speakV2SpeakV2SpeechMetadata == null && speakV2SpeakV2SpeechInterrupted == null && speakV2SpeakV2Flushed == null && speakV2SpeakV2SessionMetadata == null && speakV2SpeakV2ConfigureSuccess == null && speakV2SpeakV2ConfigureFailure == null && speakV2SpeakV2Warning == null && speakV2SpeakV2Error == null)
@@ -418,6 +490,10 @@ namespace Deepgram.Realtime.JsonConverters
                 }
                 catch (global::System.InvalidOperationException)
                 {
+                }
+                catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                {
+                    // Legacy enum converters signal an incompatible JSON token with this exception.
                 }
             }
 
@@ -436,6 +512,10 @@ namespace Deepgram.Realtime.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+                catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                {
+                    // Legacy enum converters signal an incompatible JSON token with this exception.
+                }
             }
 
             if (speakV2SpeakV2Audio == null && speakV2SpeakV2Connected == null && speakV2SpeakV2SpeechStarted == null && speakV2SpeakV2SpeechMetadata == null && speakV2SpeakV2SpeechInterrupted == null && speakV2SpeakV2Flushed == null && speakV2SpeakV2SessionMetadata == null && speakV2SpeakV2ConfigureSuccess == null && speakV2SpeakV2ConfigureFailure == null && speakV2SpeakV2Warning == null && speakV2SpeakV2Error == null)
@@ -453,6 +533,10 @@ namespace Deepgram.Realtime.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+                catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                {
+                    // Legacy enum converters signal an incompatible JSON token with this exception.
+                }
             }
 
             if (speakV2SpeakV2Audio == null && speakV2SpeakV2Connected == null && speakV2SpeakV2SpeechStarted == null && speakV2SpeakV2SpeechMetadata == null && speakV2SpeakV2SpeechInterrupted == null && speakV2SpeakV2Flushed == null && speakV2SpeakV2SessionMetadata == null && speakV2SpeakV2ConfigureSuccess == null && speakV2SpeakV2ConfigureFailure == null && speakV2SpeakV2Warning == null && speakV2SpeakV2Error == null)
@@ -469,6 +553,10 @@ namespace Deepgram.Realtime.JsonConverters
                 }
                 catch (global::System.InvalidOperationException)
                 {
+                }
+                catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                {
+                    // Legacy enum converters signal an incompatible JSON token with this exception.
                 }
             }
 
