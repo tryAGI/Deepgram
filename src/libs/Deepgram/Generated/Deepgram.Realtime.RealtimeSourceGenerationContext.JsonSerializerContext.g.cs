@@ -391,6 +391,18 @@ namespace Deepgram.Realtime
 
             typeof(global::Deepgram.Realtime.JsonConverters.ListenV1VadEventsNullableJsonConverter),
 
+            typeof(global::Deepgram.Realtime.JsonConverters.ChannelsListenV1MessagesListenV1ConfigureSuccessTypeJsonConverter),
+
+            typeof(global::Deepgram.Realtime.JsonConverters.ChannelsListenV1MessagesListenV1ConfigureSuccessTypeNullableJsonConverter),
+
+            typeof(global::Deepgram.Realtime.JsonConverters.ChannelsListenV1MessagesListenV1ConfigureFailureTypeJsonConverter),
+
+            typeof(global::Deepgram.Realtime.JsonConverters.ChannelsListenV1MessagesListenV1ConfigureFailureTypeNullableJsonConverter),
+
+            typeof(global::Deepgram.Realtime.JsonConverters.ChannelsListenV1MessagesListenV1ConfigureFailureCodeJsonConverter),
+
+            typeof(global::Deepgram.Realtime.JsonConverters.ChannelsListenV1MessagesListenV1ConfigureFailureCodeNullableJsonConverter),
+
             typeof(global::Deepgram.Realtime.JsonConverters.ChannelsListenV1MessagesListenV1ResultsTypeJsonConverter),
 
             typeof(global::Deepgram.Realtime.JsonConverters.ChannelsListenV1MessagesListenV1ResultsTypeNullableJsonConverter),
@@ -882,6 +894,11 @@ namespace Deepgram.Realtime
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Deepgram.Realtime.ListenV1UtteranceEndMs))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Deepgram.Realtime.ListenV1VadEvents), TypeInfoPropertyName = "ListenV1VadEvents2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Deepgram.Realtime.ListenV1Version))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Deepgram.Realtime.ChannelsListenV1MessagesListenV1ConfigureSuccessType), TypeInfoPropertyName = "ChannelsListenV1MessagesListenV1ConfigureSuccessType2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Deepgram.Realtime.ListenV1ListenV1ConfigureSuccess))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Deepgram.Realtime.ChannelsListenV1MessagesListenV1ConfigureFailureType), TypeInfoPropertyName = "ChannelsListenV1MessagesListenV1ConfigureFailureType2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Deepgram.Realtime.ChannelsListenV1MessagesListenV1ConfigureFailureCode), TypeInfoPropertyName = "ChannelsListenV1MessagesListenV1ConfigureFailureCode2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Deepgram.Realtime.ListenV1ListenV1ConfigureFailure))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Deepgram.Realtime.ChannelsListenV1MessagesListenV1ResultsType), TypeInfoPropertyName = "ChannelsListenV1MessagesListenV1ResultsType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Deepgram.Realtime.ChannelsListenV1MessagesListenV1ResultsChannelAlternativesItemsWordsItems))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Deepgram.Realtime.ChannelsListenV1MessagesListenV1ResultsChannelAlternativesItems))]

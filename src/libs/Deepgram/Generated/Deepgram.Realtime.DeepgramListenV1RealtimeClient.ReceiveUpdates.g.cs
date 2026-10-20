@@ -168,6 +168,24 @@ namespace Deepgram.Realtime
                     rawText,
                     json));
 
+            if (@event.ListenV1ListenV1ConfigureSuccess is { } __ListenV1ConfigureSuccessReceived)
+            {
+                ListenV1ConfigureSuccessReceived?.Invoke(
+                    this,
+                    new AutoSDKWebSocketMessageEventArgs<global::Deepgram.Realtime.ListenV1ListenV1ConfigureSuccess>(
+                        __ListenV1ConfigureSuccessReceived,
+                        rawText,
+                        json));
+            }
+            if (@event.ListenV1ListenV1ConfigureFailure is { } __ListenV1ConfigureFailureReceived)
+            {
+                ListenV1ConfigureFailureReceived?.Invoke(
+                    this,
+                    new AutoSDKWebSocketMessageEventArgs<global::Deepgram.Realtime.ListenV1ListenV1ConfigureFailure>(
+                        __ListenV1ConfigureFailureReceived,
+                        rawText,
+                        json));
+            }
             if (@event.ListenV1ListenV1Results is { } __ListenV1ResultsReceived)
             {
                 ListenV1ResultsReceived?.Invoke(

@@ -35,43 +35,52 @@ namespace Deepgram.Realtime.JsonConverters
             }
 
             var __score0 = 0;
-            if (__jsonProps.Contains("channel")) __score0++;
-            if (__jsonProps.Contains("channel.alternatives")) __score0++;
-            if (__jsonProps.Contains("channel_index")) __score0++;
-            if (__jsonProps.Contains("duration")) __score0++;
-            if (__jsonProps.Contains("entities")) __score0++;
-            if (__jsonProps.Contains("from_finalize")) __score0++;
-            if (__jsonProps.Contains("is_final")) __score0++;
-            if (__jsonProps.Contains("metadata")) __score0++;
-            if (__jsonProps.Contains("metadata.diarize_info")) __score0++;
-            if (__jsonProps.Contains("metadata.model_info")) __score0++;
-            if (__jsonProps.Contains("metadata.model_uuid")) __score0++;
-            if (__jsonProps.Contains("metadata.request_id")) __score0++;
-            if (__jsonProps.Contains("speech_final")) __score0++;
-            if (__jsonProps.Contains("start")) __score0++;
+            if (__jsonProps.Contains("keyterms")) __score0++;
+            if (__jsonProps.Contains("request_id")) __score0++;
             if (__jsonProps.Contains("type")) __score0++;
             var __score1 = 0;
-            if (__jsonProps.Contains("channels")) __score1++;
-            if (__jsonProps.Contains("created")) __score1++;
-            if (__jsonProps.Contains("duration")) __score1++;
+            if (__jsonProps.Contains("code")) __score1++;
+            if (__jsonProps.Contains("description")) __score1++;
             if (__jsonProps.Contains("request_id")) __score1++;
-            if (__jsonProps.Contains("sha256")) __score1++;
-            if (__jsonProps.Contains("transaction_key")) __score1++;
             if (__jsonProps.Contains("type")) __score1++;
             var __score2 = 0;
             if (__jsonProps.Contains("channel")) __score2++;
-            if (__jsonProps.Contains("last_word_end")) __score2++;
+            if (__jsonProps.Contains("channel.alternatives")) __score2++;
+            if (__jsonProps.Contains("channel_index")) __score2++;
+            if (__jsonProps.Contains("duration")) __score2++;
+            if (__jsonProps.Contains("entities")) __score2++;
+            if (__jsonProps.Contains("from_finalize")) __score2++;
+            if (__jsonProps.Contains("is_final")) __score2++;
+            if (__jsonProps.Contains("metadata")) __score2++;
+            if (__jsonProps.Contains("metadata.diarize_info")) __score2++;
+            if (__jsonProps.Contains("metadata.model_info")) __score2++;
+            if (__jsonProps.Contains("metadata.model_uuid")) __score2++;
+            if (__jsonProps.Contains("metadata.request_id")) __score2++;
+            if (__jsonProps.Contains("speech_final")) __score2++;
+            if (__jsonProps.Contains("start")) __score2++;
             if (__jsonProps.Contains("type")) __score2++;
             var __score3 = 0;
-            if (__jsonProps.Contains("channel")) __score3++;
-            if (__jsonProps.Contains("timestamp")) __score3++;
+            if (__jsonProps.Contains("channels")) __score3++;
+            if (__jsonProps.Contains("created")) __score3++;
+            if (__jsonProps.Contains("duration")) __score3++;
+            if (__jsonProps.Contains("request_id")) __score3++;
+            if (__jsonProps.Contains("sha256")) __score3++;
+            if (__jsonProps.Contains("transaction_key")) __score3++;
             if (__jsonProps.Contains("type")) __score3++;
             var __score4 = 0;
-            if (__jsonProps.Contains("code")) __score4++;
-            if (__jsonProps.Contains("description")) __score4++;
-            if (__jsonProps.Contains("message")) __score4++;
+            if (__jsonProps.Contains("channel")) __score4++;
+            if (__jsonProps.Contains("last_word_end")) __score4++;
             if (__jsonProps.Contains("type")) __score4++;
-            if (__jsonProps.Contains("variant")) __score4++;
+            var __score5 = 0;
+            if (__jsonProps.Contains("channel")) __score5++;
+            if (__jsonProps.Contains("timestamp")) __score5++;
+            if (__jsonProps.Contains("type")) __score5++;
+            var __score6 = 0;
+            if (__jsonProps.Contains("code")) __score6++;
+            if (__jsonProps.Contains("description")) __score6++;
+            if (__jsonProps.Contains("message")) __score6++;
+            if (__jsonProps.Contains("type")) __score6++;
+            if (__jsonProps.Contains("variant")) __score6++;
             var __bestScore = 0;
             var __bestIndex = -1;
             if (__score0 > __bestScore) { __bestScore = __score0; __bestIndex = 0; }
@@ -79,7 +88,11 @@ namespace Deepgram.Realtime.JsonConverters
             if (__score2 > __bestScore) { __bestScore = __score2; __bestIndex = 2; }
             if (__score3 > __bestScore) { __bestScore = __score3; __bestIndex = 3; }
             if (__score4 > __bestScore) { __bestScore = __score4; __bestIndex = 4; }
+            if (__score5 > __bestScore) { __bestScore = __score5; __bestIndex = 5; }
+            if (__score6 > __bestScore) { __bestScore = __score6; __bestIndex = 6; }
 
+            global::Deepgram.Realtime.ListenV1ListenV1ConfigureSuccess? listenV1ListenV1ConfigureSuccess = default;
+            global::Deepgram.Realtime.ListenV1ListenV1ConfigureFailure? listenV1ListenV1ConfigureFailure = default;
             global::Deepgram.Realtime.ListenV1ListenV1Results? listenV1ListenV1Results = default;
             global::Deepgram.Realtime.ListenV1ListenV1Metadata? listenV1ListenV1Metadata = default;
             global::Deepgram.Realtime.ListenV1ListenV1UtteranceEnd? listenV1ListenV1UtteranceEnd = default;
@@ -88,6 +101,44 @@ namespace Deepgram.Realtime.JsonConverters
             if (__bestIndex >= 0)
             {
                 if (__bestIndex == 0)
+                {
+                    try
+                    {
+                        var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Deepgram.Realtime.ListenV1ListenV1ConfigureSuccess), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Deepgram.Realtime.ListenV1ListenV1ConfigureSuccess> ??
+                                       throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Deepgram.Realtime.ListenV1ListenV1ConfigureSuccess).Name}");
+                        listenV1ListenV1ConfigureSuccess = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
+                    }
+                    catch (global::System.Text.Json.JsonException)
+                    {
+                    }
+                    catch (global::System.InvalidOperationException)
+                    {
+                    }
+                    catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                    {
+                        // Legacy enum converters signal an incompatible JSON token with this exception.
+                    }
+                }
+                else if (__bestIndex == 1)
+                {
+                    try
+                    {
+                        var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Deepgram.Realtime.ListenV1ListenV1ConfigureFailure), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Deepgram.Realtime.ListenV1ListenV1ConfigureFailure> ??
+                                       throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Deepgram.Realtime.ListenV1ListenV1ConfigureFailure).Name}");
+                        listenV1ListenV1ConfigureFailure = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
+                    }
+                    catch (global::System.Text.Json.JsonException)
+                    {
+                    }
+                    catch (global::System.InvalidOperationException)
+                    {
+                    }
+                    catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                    {
+                        // Legacy enum converters signal an incompatible JSON token with this exception.
+                    }
+                }
+                else if (__bestIndex == 2)
                 {
                     try
                     {
@@ -106,7 +157,7 @@ namespace Deepgram.Realtime.JsonConverters
                         // Legacy enum converters signal an incompatible JSON token with this exception.
                     }
                 }
-                else if (__bestIndex == 1)
+                else if (__bestIndex == 3)
                 {
                     try
                     {
@@ -125,7 +176,7 @@ namespace Deepgram.Realtime.JsonConverters
                         // Legacy enum converters signal an incompatible JSON token with this exception.
                     }
                 }
-                else if (__bestIndex == 2)
+                else if (__bestIndex == 4)
                 {
                     try
                     {
@@ -144,7 +195,7 @@ namespace Deepgram.Realtime.JsonConverters
                         // Legacy enum converters signal an incompatible JSON token with this exception.
                     }
                 }
-                else if (__bestIndex == 3)
+                else if (__bestIndex == 5)
                 {
                     try
                     {
@@ -163,7 +214,7 @@ namespace Deepgram.Realtime.JsonConverters
                         // Legacy enum converters signal an incompatible JSON token with this exception.
                     }
                 }
-                else if (__bestIndex == 4)
+                else if (__bestIndex == 6)
                 {
                     try
                     {
@@ -184,7 +235,49 @@ namespace Deepgram.Realtime.JsonConverters
                 }
             }
 
-            if (listenV1ListenV1Results == null && listenV1ListenV1Metadata == null && listenV1ListenV1UtteranceEnd == null && listenV1ListenV1SpeechStarted == null && listenV1ListenV1Error == null)
+            if (listenV1ListenV1ConfigureSuccess == null && listenV1ListenV1ConfigureFailure == null && listenV1ListenV1Results == null && listenV1ListenV1Metadata == null && listenV1ListenV1UtteranceEnd == null && listenV1ListenV1SpeechStarted == null && listenV1ListenV1Error == null)
+            {
+                try
+                {
+
+                    var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Deepgram.Realtime.ListenV1ListenV1ConfigureSuccess), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Deepgram.Realtime.ListenV1ListenV1ConfigureSuccess> ??
+                                   throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Deepgram.Realtime.ListenV1ListenV1ConfigureSuccess).Name}");
+                    listenV1ListenV1ConfigureSuccess = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
+                }
+                catch (global::System.Text.Json.JsonException)
+                {
+                }
+                catch (global::System.InvalidOperationException)
+                {
+                }
+                catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                {
+                    // Legacy enum converters signal an incompatible JSON token with this exception.
+                }
+            }
+
+            if (listenV1ListenV1ConfigureSuccess == null && listenV1ListenV1ConfigureFailure == null && listenV1ListenV1Results == null && listenV1ListenV1Metadata == null && listenV1ListenV1UtteranceEnd == null && listenV1ListenV1SpeechStarted == null && listenV1ListenV1Error == null)
+            {
+                try
+                {
+
+                    var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Deepgram.Realtime.ListenV1ListenV1ConfigureFailure), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Deepgram.Realtime.ListenV1ListenV1ConfigureFailure> ??
+                                   throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Deepgram.Realtime.ListenV1ListenV1ConfigureFailure).Name}");
+                    listenV1ListenV1ConfigureFailure = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
+                }
+                catch (global::System.Text.Json.JsonException)
+                {
+                }
+                catch (global::System.InvalidOperationException)
+                {
+                }
+                catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                {
+                    // Legacy enum converters signal an incompatible JSON token with this exception.
+                }
+            }
+
+            if (listenV1ListenV1ConfigureSuccess == null && listenV1ListenV1ConfigureFailure == null && listenV1ListenV1Results == null && listenV1ListenV1Metadata == null && listenV1ListenV1UtteranceEnd == null && listenV1ListenV1SpeechStarted == null && listenV1ListenV1Error == null)
             {
                 try
                 {
@@ -205,7 +298,7 @@ namespace Deepgram.Realtime.JsonConverters
                 }
             }
 
-            if (listenV1ListenV1Results == null && listenV1ListenV1Metadata == null && listenV1ListenV1UtteranceEnd == null && listenV1ListenV1SpeechStarted == null && listenV1ListenV1Error == null)
+            if (listenV1ListenV1ConfigureSuccess == null && listenV1ListenV1ConfigureFailure == null && listenV1ListenV1Results == null && listenV1ListenV1Metadata == null && listenV1ListenV1UtteranceEnd == null && listenV1ListenV1SpeechStarted == null && listenV1ListenV1Error == null)
             {
                 try
                 {
@@ -226,7 +319,7 @@ namespace Deepgram.Realtime.JsonConverters
                 }
             }
 
-            if (listenV1ListenV1Results == null && listenV1ListenV1Metadata == null && listenV1ListenV1UtteranceEnd == null && listenV1ListenV1SpeechStarted == null && listenV1ListenV1Error == null)
+            if (listenV1ListenV1ConfigureSuccess == null && listenV1ListenV1ConfigureFailure == null && listenV1ListenV1Results == null && listenV1ListenV1Metadata == null && listenV1ListenV1UtteranceEnd == null && listenV1ListenV1SpeechStarted == null && listenV1ListenV1Error == null)
             {
                 try
                 {
@@ -247,7 +340,7 @@ namespace Deepgram.Realtime.JsonConverters
                 }
             }
 
-            if (listenV1ListenV1Results == null && listenV1ListenV1Metadata == null && listenV1ListenV1UtteranceEnd == null && listenV1ListenV1SpeechStarted == null && listenV1ListenV1Error == null)
+            if (listenV1ListenV1ConfigureSuccess == null && listenV1ListenV1ConfigureFailure == null && listenV1ListenV1Results == null && listenV1ListenV1Metadata == null && listenV1ListenV1UtteranceEnd == null && listenV1ListenV1SpeechStarted == null && listenV1ListenV1Error == null)
             {
                 try
                 {
@@ -268,7 +361,7 @@ namespace Deepgram.Realtime.JsonConverters
                 }
             }
 
-            if (listenV1ListenV1Results == null && listenV1ListenV1Metadata == null && listenV1ListenV1UtteranceEnd == null && listenV1ListenV1SpeechStarted == null && listenV1ListenV1Error == null)
+            if (listenV1ListenV1ConfigureSuccess == null && listenV1ListenV1ConfigureFailure == null && listenV1ListenV1Results == null && listenV1ListenV1Metadata == null && listenV1ListenV1UtteranceEnd == null && listenV1ListenV1SpeechStarted == null && listenV1ListenV1Error == null)
             {
                 try
                 {
@@ -290,6 +383,10 @@ namespace Deepgram.Realtime.JsonConverters
             }
 
             var __value = new global::Deepgram.Realtime.ListenV1ServerEvent(
+                listenV1ListenV1ConfigureSuccess,
+
+                listenV1ListenV1ConfigureFailure,
+
                 listenV1ListenV1Results,
 
                 listenV1ListenV1Metadata,
@@ -313,7 +410,19 @@ namespace Deepgram.Realtime.JsonConverters
             options = options ?? throw new global::System.ArgumentNullException(nameof(options));
             var typeInfoResolver = options.TypeInfoResolver ?? throw new global::System.InvalidOperationException("TypeInfoResolver is not set.");
 
-            if (value.IsListenV1ListenV1Results)
+            if (value.IsListenV1ListenV1ConfigureSuccess)
+            {
+                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Deepgram.Realtime.ListenV1ListenV1ConfigureSuccess), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Deepgram.Realtime.ListenV1ListenV1ConfigureSuccess?> ??
+                               throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Deepgram.Realtime.ListenV1ListenV1ConfigureSuccess).Name}");
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickListenV1ListenV1ConfigureSuccess(), typeInfo);
+            }
+            else if (value.IsListenV1ListenV1ConfigureFailure)
+            {
+                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Deepgram.Realtime.ListenV1ListenV1ConfigureFailure), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Deepgram.Realtime.ListenV1ListenV1ConfigureFailure?> ??
+                               throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Deepgram.Realtime.ListenV1ListenV1ConfigureFailure).Name}");
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickListenV1ListenV1ConfigureFailure(), typeInfo);
+            }
+            else if (value.IsListenV1ListenV1Results)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Deepgram.Realtime.ListenV1ListenV1Results), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Deepgram.Realtime.ListenV1ListenV1Results?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Deepgram.Realtime.ListenV1ListenV1Results).Name}");

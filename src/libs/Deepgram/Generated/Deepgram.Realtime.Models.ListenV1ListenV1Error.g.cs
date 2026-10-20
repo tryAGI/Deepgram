@@ -1,4 +1,6 @@
 
+#pragma warning disable CS0618 // Type or member is obsolete
+
 #nullable enable
 
 namespace Deepgram.Realtime
@@ -16,8 +18,7 @@ namespace Deepgram.Realtime
         public global::Deepgram.Realtime.ChannelsListenV1MessagesListenV1ErrorType Type { get; set; }
 
         /// <summary>
-        /// The error category. `SchemaError` means the server could not parse a client text message.<br/>
-        /// `InvalidConfigureMessage` means the server rejected a `Configure` message.
+        /// The error category. `SchemaError` means the server could not parse a client text message.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("variant")]
         [global::System.Text.Json.Serialization.JsonRequired]
@@ -31,10 +32,11 @@ namespace Deepgram.Realtime
         public required string Description { get; set; }
 
         /// <summary>
-        /// Identifies the reason for an `InvalidConfigureMessage` error, for example `KeytermsNotSupported`<br/>
-        /// when `keyterms` are sent on a model other than Nova-3.
+        /// Deprecated. Present only on legacy error frames; use `ConfigureFailure.code` for `Configure`<br/>
+        /// rejections.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("code")]
+        [global::System.Obsolete("This property marked as deprecated.")]
         public string? Code { get; set; }
 
         /// <summary>
@@ -53,18 +55,13 @@ namespace Deepgram.Realtime
         /// Initializes a new instance of the <see cref="ListenV1ListenV1Error" /> class.
         /// </summary>
         /// <param name="variant">
-        /// The error category. `SchemaError` means the server could not parse a client text message.<br/>
-        /// `InvalidConfigureMessage` means the server rejected a `Configure` message.
+        /// The error category. `SchemaError` means the server could not parse a client text message.
         /// </param>
         /// <param name="description">
         /// A human-readable description of what went wrong
         /// </param>
         /// <param name="type">
         /// Message type identifier for error responses
-        /// </param>
-        /// <param name="code">
-        /// Identifies the reason for an `InvalidConfigureMessage` error, for example `KeytermsNotSupported`<br/>
-        /// when `keyterms` are sent on a model other than Nova-3.
         /// </param>
         /// <param name="message">
         /// For `SchemaError`, the original client message that could not be parsed
@@ -76,13 +73,11 @@ namespace Deepgram.Realtime
             string variant,
             string description,
             global::Deepgram.Realtime.ChannelsListenV1MessagesListenV1ErrorType type,
-            string? code,
             string? message)
         {
             this.Type = type;
             this.Variant = variant ?? throw new global::System.ArgumentNullException(nameof(variant));
             this.Description = description ?? throw new global::System.ArgumentNullException(nameof(description));
-            this.Code = code;
             this.Message = message;
         }
 

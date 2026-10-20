@@ -13,6 +13,80 @@ namespace Deepgram.Realtime
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
+        public global::Deepgram.Realtime.ListenV1ListenV1ConfigureSuccess? ListenV1ListenV1ConfigureSuccess { get; init; }
+#else
+        public global::Deepgram.Realtime.ListenV1ListenV1ConfigureSuccess? ListenV1ListenV1ConfigureSuccess { get; }
+#endif
+
+        /// <summary>
+        ///
+        /// </summary>
+#if NET6_0_OR_GREATER
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(ListenV1ListenV1ConfigureSuccess))]
+#endif
+        public bool IsListenV1ListenV1ConfigureSuccess => ListenV1ListenV1ConfigureSuccess != null;
+
+        /// <summary>
+        ///
+        /// </summary>
+        public bool TryPickListenV1ListenV1ConfigureSuccess(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Deepgram.Realtime.ListenV1ListenV1ConfigureSuccess? value)
+        {
+            value = ListenV1ListenV1ConfigureSuccess;
+            return IsListenV1ListenV1ConfigureSuccess;
+        }
+
+        /// <summary>
+        ///
+        /// </summary>
+        public global::Deepgram.Realtime.ListenV1ListenV1ConfigureSuccess PickListenV1ListenV1ConfigureSuccess() => ListenV1ListenV1ConfigureSuccess is { } value
+            ? value
+            : throw new global::System.InvalidOperationException($"Expected union variant 'ListenV1ListenV1ConfigureSuccess' but the value was {ToString()}.");
+
+        /// <summary>
+        ///
+        /// </summary>
+#if NET6_0_OR_GREATER
+        public global::Deepgram.Realtime.ListenV1ListenV1ConfigureFailure? ListenV1ListenV1ConfigureFailure { get; init; }
+#else
+        public global::Deepgram.Realtime.ListenV1ListenV1ConfigureFailure? ListenV1ListenV1ConfigureFailure { get; }
+#endif
+
+        /// <summary>
+        ///
+        /// </summary>
+#if NET6_0_OR_GREATER
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(ListenV1ListenV1ConfigureFailure))]
+#endif
+        public bool IsListenV1ListenV1ConfigureFailure => ListenV1ListenV1ConfigureFailure != null;
+
+        /// <summary>
+        ///
+        /// </summary>
+        public bool TryPickListenV1ListenV1ConfigureFailure(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Deepgram.Realtime.ListenV1ListenV1ConfigureFailure? value)
+        {
+            value = ListenV1ListenV1ConfigureFailure;
+            return IsListenV1ListenV1ConfigureFailure;
+        }
+
+        /// <summary>
+        ///
+        /// </summary>
+        public global::Deepgram.Realtime.ListenV1ListenV1ConfigureFailure PickListenV1ListenV1ConfigureFailure() => ListenV1ListenV1ConfigureFailure is { } value
+            ? value
+            : throw new global::System.InvalidOperationException($"Expected union variant 'ListenV1ListenV1ConfigureFailure' but the value was {ToString()}.");
+
+        /// <summary>
+        ///
+        /// </summary>
+#if NET6_0_OR_GREATER
         public global::Deepgram.Realtime.ListenV1ListenV1Results? ListenV1ListenV1Results { get; init; }
 #else
         public global::Deepgram.Realtime.ListenV1ListenV1Results? ListenV1ListenV1Results { get; }
@@ -196,6 +270,52 @@ namespace Deepgram.Realtime
         /// <summary>
         ///
         /// </summary>
+        public static implicit operator ListenV1ServerEvent(global::Deepgram.Realtime.ListenV1ListenV1ConfigureSuccess value) => new ListenV1ServerEvent((global::Deepgram.Realtime.ListenV1ListenV1ConfigureSuccess?)value);
+
+        /// <summary>
+        ///
+        /// </summary>
+        public static implicit operator global::Deepgram.Realtime.ListenV1ListenV1ConfigureSuccess?(ListenV1ServerEvent @this) => @this.ListenV1ListenV1ConfigureSuccess;
+
+        /// <summary>
+        ///
+        /// </summary>
+        public ListenV1ServerEvent(global::Deepgram.Realtime.ListenV1ListenV1ConfigureSuccess? value)
+        {
+            ListenV1ListenV1ConfigureSuccess = value;
+        }
+
+        /// <summary>
+        ///
+        /// </summary>
+        public static ListenV1ServerEvent FromListenV1ListenV1ConfigureSuccess(global::Deepgram.Realtime.ListenV1ListenV1ConfigureSuccess? value) => new ListenV1ServerEvent(value);
+
+        /// <summary>
+        ///
+        /// </summary>
+        public static implicit operator ListenV1ServerEvent(global::Deepgram.Realtime.ListenV1ListenV1ConfigureFailure value) => new ListenV1ServerEvent((global::Deepgram.Realtime.ListenV1ListenV1ConfigureFailure?)value);
+
+        /// <summary>
+        ///
+        /// </summary>
+        public static implicit operator global::Deepgram.Realtime.ListenV1ListenV1ConfigureFailure?(ListenV1ServerEvent @this) => @this.ListenV1ListenV1ConfigureFailure;
+
+        /// <summary>
+        ///
+        /// </summary>
+        public ListenV1ServerEvent(global::Deepgram.Realtime.ListenV1ListenV1ConfigureFailure? value)
+        {
+            ListenV1ListenV1ConfigureFailure = value;
+        }
+
+        /// <summary>
+        ///
+        /// </summary>
+        public static ListenV1ServerEvent FromListenV1ListenV1ConfigureFailure(global::Deepgram.Realtime.ListenV1ListenV1ConfigureFailure? value) => new ListenV1ServerEvent(value);
+
+        /// <summary>
+        ///
+        /// </summary>
         public static implicit operator ListenV1ServerEvent(global::Deepgram.Realtime.ListenV1ListenV1Results value) => new ListenV1ServerEvent((global::Deepgram.Realtime.ListenV1ListenV1Results?)value);
 
         /// <summary>
@@ -312,6 +432,8 @@ namespace Deepgram.Realtime
         ///
         /// </summary>
         public ListenV1ServerEvent(
+            global::Deepgram.Realtime.ListenV1ListenV1ConfigureSuccess? listenV1ListenV1ConfigureSuccess,
+            global::Deepgram.Realtime.ListenV1ListenV1ConfigureFailure? listenV1ListenV1ConfigureFailure,
             global::Deepgram.Realtime.ListenV1ListenV1Results? listenV1ListenV1Results,
             global::Deepgram.Realtime.ListenV1ListenV1Metadata? listenV1ListenV1Metadata,
             global::Deepgram.Realtime.ListenV1ListenV1UtteranceEnd? listenV1ListenV1UtteranceEnd,
@@ -319,6 +441,8 @@ namespace Deepgram.Realtime
             global::Deepgram.Realtime.ListenV1ListenV1Error? listenV1ListenV1Error
             )
         {
+            ListenV1ListenV1ConfigureSuccess = listenV1ListenV1ConfigureSuccess;
+            ListenV1ListenV1ConfigureFailure = listenV1ListenV1ConfigureFailure;
             ListenV1ListenV1Results = listenV1ListenV1Results;
             ListenV1ListenV1Metadata = listenV1ListenV1Metadata;
             ListenV1ListenV1UtteranceEnd = listenV1ListenV1UtteranceEnd;
@@ -334,13 +458,17 @@ namespace Deepgram.Realtime
             ListenV1ListenV1SpeechStarted as object ??
             ListenV1ListenV1UtteranceEnd as object ??
             ListenV1ListenV1Metadata as object ??
-            ListenV1ListenV1Results as object
+            ListenV1ListenV1Results as object ??
+            ListenV1ListenV1ConfigureFailure as object ??
+            ListenV1ListenV1ConfigureSuccess as object
             ;
 
         /// <summary>
         ///
         /// </summary>
         public override string? ToString() =>
+            ListenV1ListenV1ConfigureSuccess?.ToString() ??
+            ListenV1ListenV1ConfigureFailure?.ToString() ??
             ListenV1ListenV1Results?.ToString() ??
             ListenV1ListenV1Metadata?.ToString() ??
             ListenV1ListenV1UtteranceEnd?.ToString() ??
@@ -353,13 +481,15 @@ namespace Deepgram.Realtime
         /// </summary>
         public bool Validate()
         {
-            return IsListenV1ListenV1Results && !IsListenV1ListenV1Metadata && !IsListenV1ListenV1UtteranceEnd && !IsListenV1ListenV1SpeechStarted && !IsListenV1ListenV1Error || !IsListenV1ListenV1Results && IsListenV1ListenV1Metadata && !IsListenV1ListenV1UtteranceEnd && !IsListenV1ListenV1SpeechStarted && !IsListenV1ListenV1Error || !IsListenV1ListenV1Results && !IsListenV1ListenV1Metadata && IsListenV1ListenV1UtteranceEnd && !IsListenV1ListenV1SpeechStarted && !IsListenV1ListenV1Error || !IsListenV1ListenV1Results && !IsListenV1ListenV1Metadata && !IsListenV1ListenV1UtteranceEnd && IsListenV1ListenV1SpeechStarted && !IsListenV1ListenV1Error || !IsListenV1ListenV1Results && !IsListenV1ListenV1Metadata && !IsListenV1ListenV1UtteranceEnd && !IsListenV1ListenV1SpeechStarted && IsListenV1ListenV1Error;
+            return IsListenV1ListenV1ConfigureSuccess && !IsListenV1ListenV1ConfigureFailure && !IsListenV1ListenV1Results && !IsListenV1ListenV1Metadata && !IsListenV1ListenV1UtteranceEnd && !IsListenV1ListenV1SpeechStarted && !IsListenV1ListenV1Error || !IsListenV1ListenV1ConfigureSuccess && IsListenV1ListenV1ConfigureFailure && !IsListenV1ListenV1Results && !IsListenV1ListenV1Metadata && !IsListenV1ListenV1UtteranceEnd && !IsListenV1ListenV1SpeechStarted && !IsListenV1ListenV1Error || !IsListenV1ListenV1ConfigureSuccess && !IsListenV1ListenV1ConfigureFailure && IsListenV1ListenV1Results && !IsListenV1ListenV1Metadata && !IsListenV1ListenV1UtteranceEnd && !IsListenV1ListenV1SpeechStarted && !IsListenV1ListenV1Error || !IsListenV1ListenV1ConfigureSuccess && !IsListenV1ListenV1ConfigureFailure && !IsListenV1ListenV1Results && IsListenV1ListenV1Metadata && !IsListenV1ListenV1UtteranceEnd && !IsListenV1ListenV1SpeechStarted && !IsListenV1ListenV1Error || !IsListenV1ListenV1ConfigureSuccess && !IsListenV1ListenV1ConfigureFailure && !IsListenV1ListenV1Results && !IsListenV1ListenV1Metadata && IsListenV1ListenV1UtteranceEnd && !IsListenV1ListenV1SpeechStarted && !IsListenV1ListenV1Error || !IsListenV1ListenV1ConfigureSuccess && !IsListenV1ListenV1ConfigureFailure && !IsListenV1ListenV1Results && !IsListenV1ListenV1Metadata && !IsListenV1ListenV1UtteranceEnd && IsListenV1ListenV1SpeechStarted && !IsListenV1ListenV1Error || !IsListenV1ListenV1ConfigureSuccess && !IsListenV1ListenV1ConfigureFailure && !IsListenV1ListenV1Results && !IsListenV1ListenV1Metadata && !IsListenV1ListenV1UtteranceEnd && !IsListenV1ListenV1SpeechStarted && IsListenV1ListenV1Error;
         }
 
         /// <summary>
         ///
         /// </summary>
         public TResult? Match<TResult>(
+            global::System.Func<global::Deepgram.Realtime.ListenV1ListenV1ConfigureSuccess, TResult>? listenV1ListenV1ConfigureSuccess = null,
+            global::System.Func<global::Deepgram.Realtime.ListenV1ListenV1ConfigureFailure, TResult>? listenV1ListenV1ConfigureFailure = null,
             global::System.Func<global::Deepgram.Realtime.ListenV1ListenV1Results, TResult>? listenV1ListenV1Results = null,
             global::System.Func<global::Deepgram.Realtime.ListenV1ListenV1Metadata, TResult>? listenV1ListenV1Metadata = null,
             global::System.Func<global::Deepgram.Realtime.ListenV1ListenV1UtteranceEnd, TResult>? listenV1ListenV1UtteranceEnd = null,
@@ -372,25 +502,33 @@ namespace Deepgram.Realtime
                 Validate();
             }
 
-            if (ListenV1ListenV1Results is { } __value0 && listenV1ListenV1Results != null)
+            if (ListenV1ListenV1ConfigureSuccess is { } __value0 && listenV1ListenV1ConfigureSuccess != null)
             {
-                return listenV1ListenV1Results(__value0);
+                return listenV1ListenV1ConfigureSuccess(__value0);
             }
-            else if (ListenV1ListenV1Metadata is { } __value1 && listenV1ListenV1Metadata != null)
+            else if (ListenV1ListenV1ConfigureFailure is { } __value1 && listenV1ListenV1ConfigureFailure != null)
             {
-                return listenV1ListenV1Metadata(__value1);
+                return listenV1ListenV1ConfigureFailure(__value1);
             }
-            else if (ListenV1ListenV1UtteranceEnd is { } __value2 && listenV1ListenV1UtteranceEnd != null)
+            else if (ListenV1ListenV1Results is { } __value2 && listenV1ListenV1Results != null)
             {
-                return listenV1ListenV1UtteranceEnd(__value2);
+                return listenV1ListenV1Results(__value2);
             }
-            else if (ListenV1ListenV1SpeechStarted is { } __value3 && listenV1ListenV1SpeechStarted != null)
+            else if (ListenV1ListenV1Metadata is { } __value3 && listenV1ListenV1Metadata != null)
             {
-                return listenV1ListenV1SpeechStarted(__value3);
+                return listenV1ListenV1Metadata(__value3);
             }
-            else if (ListenV1ListenV1Error is { } __value4 && listenV1ListenV1Error != null)
+            else if (ListenV1ListenV1UtteranceEnd is { } __value4 && listenV1ListenV1UtteranceEnd != null)
             {
-                return listenV1ListenV1Error(__value4);
+                return listenV1ListenV1UtteranceEnd(__value4);
+            }
+            else if (ListenV1ListenV1SpeechStarted is { } __value5 && listenV1ListenV1SpeechStarted != null)
+            {
+                return listenV1ListenV1SpeechStarted(__value5);
+            }
+            else if (ListenV1ListenV1Error is { } __value6 && listenV1ListenV1Error != null)
+            {
+                return listenV1ListenV1Error(__value6);
             }
 
             return default(TResult);
@@ -400,6 +538,10 @@ namespace Deepgram.Realtime
         ///
         /// </summary>
         public void Match(
+            global::System.Action<global::Deepgram.Realtime.ListenV1ListenV1ConfigureSuccess>? listenV1ListenV1ConfigureSuccess = null,
+
+            global::System.Action<global::Deepgram.Realtime.ListenV1ListenV1ConfigureFailure>? listenV1ListenV1ConfigureFailure = null,
+
             global::System.Action<global::Deepgram.Realtime.ListenV1ListenV1Results>? listenV1ListenV1Results = null,
 
             global::System.Action<global::Deepgram.Realtime.ListenV1ListenV1Metadata>? listenV1ListenV1Metadata = null,
@@ -416,25 +558,33 @@ namespace Deepgram.Realtime
                 Validate();
             }
 
-            if (ListenV1ListenV1Results is { } __value0)
+            if (ListenV1ListenV1ConfigureSuccess is { } __value0)
             {
-                listenV1ListenV1Results?.Invoke(__value0);
+                listenV1ListenV1ConfigureSuccess?.Invoke(__value0);
             }
-            else if (ListenV1ListenV1Metadata is { } __value1)
+            else if (ListenV1ListenV1ConfigureFailure is { } __value1)
             {
-                listenV1ListenV1Metadata?.Invoke(__value1);
+                listenV1ListenV1ConfigureFailure?.Invoke(__value1);
             }
-            else if (ListenV1ListenV1UtteranceEnd is { } __value2)
+            else if (ListenV1ListenV1Results is { } __value2)
             {
-                listenV1ListenV1UtteranceEnd?.Invoke(__value2);
+                listenV1ListenV1Results?.Invoke(__value2);
             }
-            else if (ListenV1ListenV1SpeechStarted is { } __value3)
+            else if (ListenV1ListenV1Metadata is { } __value3)
             {
-                listenV1ListenV1SpeechStarted?.Invoke(__value3);
+                listenV1ListenV1Metadata?.Invoke(__value3);
             }
-            else if (ListenV1ListenV1Error is { } __value4)
+            else if (ListenV1ListenV1UtteranceEnd is { } __value4)
             {
-                listenV1ListenV1Error?.Invoke(__value4);
+                listenV1ListenV1UtteranceEnd?.Invoke(__value4);
+            }
+            else if (ListenV1ListenV1SpeechStarted is { } __value5)
+            {
+                listenV1ListenV1SpeechStarted?.Invoke(__value5);
+            }
+            else if (ListenV1ListenV1Error is { } __value6)
+            {
+                listenV1ListenV1Error?.Invoke(__value6);
             }
         }
 
@@ -442,6 +592,8 @@ namespace Deepgram.Realtime
         ///
         /// </summary>
         public void Switch(
+            global::System.Action<global::Deepgram.Realtime.ListenV1ListenV1ConfigureSuccess>? listenV1ListenV1ConfigureSuccess = null,
+            global::System.Action<global::Deepgram.Realtime.ListenV1ListenV1ConfigureFailure>? listenV1ListenV1ConfigureFailure = null,
             global::System.Action<global::Deepgram.Realtime.ListenV1ListenV1Results>? listenV1ListenV1Results = null,
             global::System.Action<global::Deepgram.Realtime.ListenV1ListenV1Metadata>? listenV1ListenV1Metadata = null,
             global::System.Action<global::Deepgram.Realtime.ListenV1ListenV1UtteranceEnd>? listenV1ListenV1UtteranceEnd = null,
@@ -454,25 +606,33 @@ namespace Deepgram.Realtime
                 Validate();
             }
 
-            if (ListenV1ListenV1Results is { } __value0)
+            if (ListenV1ListenV1ConfigureSuccess is { } __value0)
             {
-                listenV1ListenV1Results?.Invoke(__value0);
+                listenV1ListenV1ConfigureSuccess?.Invoke(__value0);
             }
-            else if (ListenV1ListenV1Metadata is { } __value1)
+            else if (ListenV1ListenV1ConfigureFailure is { } __value1)
             {
-                listenV1ListenV1Metadata?.Invoke(__value1);
+                listenV1ListenV1ConfigureFailure?.Invoke(__value1);
             }
-            else if (ListenV1ListenV1UtteranceEnd is { } __value2)
+            else if (ListenV1ListenV1Results is { } __value2)
             {
-                listenV1ListenV1UtteranceEnd?.Invoke(__value2);
+                listenV1ListenV1Results?.Invoke(__value2);
             }
-            else if (ListenV1ListenV1SpeechStarted is { } __value3)
+            else if (ListenV1ListenV1Metadata is { } __value3)
             {
-                listenV1ListenV1SpeechStarted?.Invoke(__value3);
+                listenV1ListenV1Metadata?.Invoke(__value3);
             }
-            else if (ListenV1ListenV1Error is { } __value4)
+            else if (ListenV1ListenV1UtteranceEnd is { } __value4)
             {
-                listenV1ListenV1Error?.Invoke(__value4);
+                listenV1ListenV1UtteranceEnd?.Invoke(__value4);
+            }
+            else if (ListenV1ListenV1SpeechStarted is { } __value5)
+            {
+                listenV1ListenV1SpeechStarted?.Invoke(__value5);
+            }
+            else if (ListenV1ListenV1Error is { } __value6)
+            {
+                listenV1ListenV1Error?.Invoke(__value6);
             }
         }
 
@@ -483,6 +643,10 @@ namespace Deepgram.Realtime
         {
             var fields = new object?[]
             {
+                ListenV1ListenV1ConfigureSuccess,
+                typeof(global::Deepgram.Realtime.ListenV1ListenV1ConfigureSuccess),
+                ListenV1ListenV1ConfigureFailure,
+                typeof(global::Deepgram.Realtime.ListenV1ListenV1ConfigureFailure),
                 ListenV1ListenV1Results,
                 typeof(global::Deepgram.Realtime.ListenV1ListenV1Results),
                 ListenV1ListenV1Metadata,
@@ -509,6 +673,8 @@ namespace Deepgram.Realtime
         public bool Equals(ListenV1ServerEvent other)
         {
             return
+                global::System.Collections.Generic.EqualityComparer<global::Deepgram.Realtime.ListenV1ListenV1ConfigureSuccess?>.Default.Equals(ListenV1ListenV1ConfigureSuccess, other.ListenV1ListenV1ConfigureSuccess) &&
+                global::System.Collections.Generic.EqualityComparer<global::Deepgram.Realtime.ListenV1ListenV1ConfigureFailure?>.Default.Equals(ListenV1ListenV1ConfigureFailure, other.ListenV1ListenV1ConfigureFailure) &&
                 global::System.Collections.Generic.EqualityComparer<global::Deepgram.Realtime.ListenV1ListenV1Results?>.Default.Equals(ListenV1ListenV1Results, other.ListenV1ListenV1Results) &&
                 global::System.Collections.Generic.EqualityComparer<global::Deepgram.Realtime.ListenV1ListenV1Metadata?>.Default.Equals(ListenV1ListenV1Metadata, other.ListenV1ListenV1Metadata) &&
                 global::System.Collections.Generic.EqualityComparer<global::Deepgram.Realtime.ListenV1ListenV1UtteranceEnd?>.Default.Equals(ListenV1ListenV1UtteranceEnd, other.ListenV1ListenV1UtteranceEnd) &&

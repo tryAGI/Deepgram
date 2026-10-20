@@ -17,13 +17,12 @@ namespace Deepgram.Realtime
 
         /// <summary>
         /// Replaces the stream's keyterms. Compatible with all Nova-3 models, monolingual and multilingual; on other<br/>
-        /// models the server returns an `Error` with code `KeytermsNotSupported`. Each array replaces the entire list,<br/>
-        /// including keyterms set with the `keyterm` query parameter. Send an empty array to clear all keyterms. Omit<br/>
-        /// the field, or set it to `null`, to keep the current keyterms.<br/>
+        /// models the server returns a `ConfigureFailure` with code `CONFIGURE_KEYTERMS_NOT_SUPPORTED`. Each array<br/>
+        /// replaces the entire list, including keyterms set with the `keyterm` query parameter. Send an empty array to<br/>
+        /// clear all keyterms. Omit the field, or set it to `null`, to keep the current keyterms.<br/>
         /// Each entry is a plain term or phrase with no weights or intensifiers. The 500-token keyterm limit that<br/>
-        /// applies to the `keyterm` query parameter also applies to each update. An over-limit update currently stops<br/>
-        /// transcription without an `Error`; after about 30 seconds, the server closes the stream with `1011`<br/>
-        /// (`NET-0000`). Keep each list under the limit and check its size before sending.
+        /// applies to the `keyterm` query parameter also applies to each update. An over-limit update returns a<br/>
+        /// `ConfigureFailure` with code `CONFIGURE_KEYTERM_LIMIT_EXCEEDED`.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("keyterms")]
         public global::System.Collections.Generic.IList<string>? Keyterms { get; set; }
@@ -49,13 +48,12 @@ namespace Deepgram.Realtime
         /// </param>
         /// <param name="keyterms">
         /// Replaces the stream's keyterms. Compatible with all Nova-3 models, monolingual and multilingual; on other<br/>
-        /// models the server returns an `Error` with code `KeytermsNotSupported`. Each array replaces the entire list,<br/>
-        /// including keyterms set with the `keyterm` query parameter. Send an empty array to clear all keyterms. Omit<br/>
-        /// the field, or set it to `null`, to keep the current keyterms.<br/>
+        /// models the server returns a `ConfigureFailure` with code `CONFIGURE_KEYTERMS_NOT_SUPPORTED`. Each array<br/>
+        /// replaces the entire list, including keyterms set with the `keyterm` query parameter. Send an empty array to<br/>
+        /// clear all keyterms. Omit the field, or set it to `null`, to keep the current keyterms.<br/>
         /// Each entry is a plain term or phrase with no weights or intensifiers. The 500-token keyterm limit that<br/>
-        /// applies to the `keyterm` query parameter also applies to each update. An over-limit update currently stops<br/>
-        /// transcription without an `Error`; after about 30 seconds, the server closes the stream with `1011`<br/>
-        /// (`NET-0000`). Keep each list under the limit and check its size before sending.
+        /// applies to the `keyterm` query parameter also applies to each update. An over-limit update returns a<br/>
+        /// `ConfigureFailure` with code `CONFIGURE_KEYTERM_LIMIT_EXCEEDED`.
         /// </param>
         /// <param name="features">
         /// Turns formatting features on or off. Each key is a feature name and each value is a boolean, for<br/>
