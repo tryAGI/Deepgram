@@ -667,6 +667,8 @@ namespace Deepgram.Realtime
 
             typeof(global::Deepgram.Realtime.JsonConverters.ChannelsAgentV1MessagesAgentV1UpdateSpeakSpeakJsonConverter),
 
+            typeof(global::Deepgram.Realtime.JsonConverters.ListenV1LanguageHintJsonConverter),
+
             typeof(global::Deepgram.Realtime.JsonConverters.ListenV2KeytermJsonConverter),
 
             typeof(global::Deepgram.Realtime.JsonConverters.ListenV2LanguageHintJsonConverter),
@@ -879,6 +881,7 @@ namespace Deepgram.Realtime
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Deepgram.Realtime.ListenV1Keyterm))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Deepgram.Realtime.ListenV1Keywords))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Deepgram.Realtime.ListenV1Language))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Deepgram.Realtime.ListenV1LanguageHint), TypeInfoPropertyName = "ListenV1LanguageHint2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Deepgram.Realtime.ListenV1MipOptOut))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Deepgram.Realtime.ListenV1Model), TypeInfoPropertyName = "ListenV1Model2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Deepgram.Realtime.ListenV1Multichannel), TypeInfoPropertyName = "ListenV1Multichannel2")]

@@ -23,10 +23,16 @@ namespace Deepgram.Realtime
         public required double Confidence { get; set; }
 
         /// <summary>
-        ///
+        /// [BCP-47](https://tools.ietf.org/html/bcp47) language tags of the languages detected in the transcript, sorted by word count in descending order. Only present when `language=multi`. Can be absent on audio that switches languages.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("languages")]
         public global::System.Collections.Generic.IList<string>? Languages { get; set; }
+
+        /// <summary>
+        /// The `language_hint` values set at connection time, normalized: codes are returned in canonical form (`ES` → `es`, `zh-hk` → `zh-HK`), and a regional code the model has no tag for is returned as its base language (`en-GB` → `en`). Present on interim and final results of every Nova-3 multilingual stream (`model=nova-3&amp;language=multi`); an empty array when no `language_hint` was sent.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("languages_hinted")]
+        public global::System.Collections.Generic.IList<string>? LanguagesHinted { get; set; }
 
         /// <summary>
         ///
@@ -51,7 +57,12 @@ namespace Deepgram.Realtime
         /// The confidence of the transcription
         /// </param>
         /// <param name="words"></param>
-        /// <param name="languages"></param>
+        /// <param name="languages">
+        /// [BCP-47](https://tools.ietf.org/html/bcp47) language tags of the languages detected in the transcript, sorted by word count in descending order. Only present when `language=multi`. Can be absent on audio that switches languages.
+        /// </param>
+        /// <param name="languagesHinted">
+        /// The `language_hint` values set at connection time, normalized: codes are returned in canonical form (`ES` → `es`, `zh-hk` → `zh-HK`), and a regional code the model has no tag for is returned as its base language (`en-GB` → `en`). Present on interim and final results of every Nova-3 multilingual stream (`model=nova-3&amp;language=multi`); an empty array when no `language_hint` was sent.
+        /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -59,11 +70,13 @@ namespace Deepgram.Realtime
             string transcript,
             double confidence,
             global::System.Collections.Generic.IList<global::Deepgram.Realtime.ChannelsListenV1MessagesListenV1ResultsChannelAlternativesItemsWordsItems> words,
-            global::System.Collections.Generic.IList<string>? languages)
+            global::System.Collections.Generic.IList<string>? languages,
+            global::System.Collections.Generic.IList<string>? languagesHinted)
         {
             this.Transcript = transcript ?? throw new global::System.ArgumentNullException(nameof(transcript));
             this.Confidence = confidence;
             this.Languages = languages;
+            this.LanguagesHinted = languagesHinted;
             this.Words = words ?? throw new global::System.ArgumentNullException(nameof(words));
         }
 

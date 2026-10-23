@@ -130,6 +130,13 @@ To boost multiple separate keyterms, repeat the `keyterm` parameter (for example
         Description = @"The [BCP-47 language tag](https://tools.ietf.org/html/bcp47) that hints at the primary spoken language. Depending on the Model and API endpoint you choose only certain languages are available",
     };
 
+    private static Option<global::Deepgram.V1ListenPostParametersLanguageHint?> LanguageHint { get; } = new(
+        name: @"--language-hint")
+    {
+        Description = @"Biases language detection toward one or more languages on Nova-3 multilingual (`model=nova-3&language=multi`); ignored with any other `language`. Repeat the parameter to pass several codes, for example `language_hint=en&language_hint=es`. A code that is not in the [Nova-3 multilingual list](/docs/models-languages-overview#nova-3) fails the request with HTTP 400. See [Nova-3 Language Prompting](/docs/nova-3-language-prompting).
+",
+    };
+
     private static Option<bool?> Measurements { get; } = CliRuntime.CreateNullableBoolOption(
         name: @"--measurements",
         description: @"Spoken measurements will be converted to their corresponding abbreviations");
@@ -266,6 +273,7 @@ Transcribe audio and video using Deepgram's speech-to-text REST API");
                         command.Options.Add(Keyterm);
                         command.Options.Add(Keywords);
                         command.Options.Add(Language);
+                        command.Options.Add(LanguageHint);
                         command.Options.Add(Measurements);
                         command.Options.Add(Model);
                         command.Options.Add(Multichannel);
@@ -321,6 +329,7 @@ Transcribe audio and video using Deepgram's speech-to-text REST API");
                         var keyterm = parseResult.GetValue(Keyterm);
                         var keywords = parseResult.GetValue(Keywords);
                         var language = parseResult.GetValue(Language);
+                        var languageHint = parseResult.GetValue(LanguageHint);
                         var measurements = parseResult.GetValue(Measurements);
                         var model = parseResult.GetValue(Model);
                         var multichannel = parseResult.GetValue(Multichannel);
@@ -369,6 +378,7 @@ Transcribe audio and video using Deepgram's speech-to-text REST API");
                                     keyterm: keyterm,
                                     keywords: keywords,
                                     language: language,
+                                    languageHint: languageHint,
                                     measurements: measurements,
                                     model: model,
                                     multichannel: multichannel,

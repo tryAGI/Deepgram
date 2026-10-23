@@ -52,6 +52,7 @@ namespace Deepgram
         /// <param name="language">
         /// Default Value: en
         /// </param>
+        /// <param name="languageHint"></param>
         /// <param name="measurements">
         /// Default Value: false
         /// </param>
@@ -122,6 +123,7 @@ namespace Deepgram
             global::System.Collections.Generic.IList<string>? keyterm = default,
             global::Deepgram.V1ListenPostParametersKeywords? keywords = default,
             string? language = default,
+            global::Deepgram.V1ListenPostParametersLanguageHint? languageHint = default,
             bool? measurements = default,
             global::Deepgram.V1ListenPostParametersModel? model = default,
             bool? multichannel = default,
@@ -187,6 +189,7 @@ namespace Deepgram
         /// <param name="language">
         /// Default Value: en
         /// </param>
+        /// <param name="languageHint"></param>
         /// <param name="measurements">
         /// Default Value: false
         /// </param>
@@ -257,6 +260,7 @@ namespace Deepgram
             global::System.Collections.Generic.IList<string>? keyterm = default,
             global::Deepgram.V1ListenPostParametersKeywords? keywords = default,
             string? language = default,
+            global::Deepgram.V1ListenPostParametersLanguageHint? languageHint = default,
             bool? measurements = default,
             global::Deepgram.V1ListenPostParametersModel? model = default,
             bool? multichannel = default,
@@ -322,6 +326,7 @@ namespace Deepgram
         /// <param name="language">
         /// Default Value: en
         /// </param>
+        /// <param name="languageHint"></param>
         /// <param name="measurements">
         /// Default Value: false
         /// </param>
@@ -391,6 +396,7 @@ namespace Deepgram
             global::System.Collections.Generic.IList<string>? keyterm = default,
             global::Deepgram.V1ListenPostParametersKeywords? keywords = default,
             string? language = default,
+            global::Deepgram.V1ListenPostParametersLanguageHint? languageHint = default,
             bool? measurements = default,
             global::Deepgram.V1ListenPostParametersModel? model = default,
             bool? multichannel = default,

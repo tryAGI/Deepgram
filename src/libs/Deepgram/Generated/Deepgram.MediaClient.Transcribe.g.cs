@@ -62,6 +62,7 @@ namespace Deepgram
             global::System.Collections.Generic.IList<string>? keyterm,
             ref global::Deepgram.V1ListenPostParametersKeywords? keywords,
             ref string? language,
+            ref global::Deepgram.V1ListenPostParametersLanguageHint? languageHint,
             ref bool? measurements,
             ref global::Deepgram.V1ListenPostParametersModel? model,
             ref bool? multichannel,
@@ -103,6 +104,7 @@ namespace Deepgram
             global::System.Collections.Generic.IList<string>? keyterm,
             global::Deepgram.V1ListenPostParametersKeywords? keywords,
             string? language,
+            global::Deepgram.V1ListenPostParametersLanguageHint? languageHint,
             bool? measurements,
             global::Deepgram.V1ListenPostParametersModel? model,
             bool? multichannel,
@@ -176,6 +178,7 @@ namespace Deepgram
         /// <param name="language">
         /// Default Value: en
         /// </param>
+        /// <param name="languageHint"></param>
         /// <param name="measurements">
         /// Default Value: false
         /// </param>
@@ -246,6 +249,7 @@ namespace Deepgram
             global::System.Collections.Generic.IList<string>? keyterm = default,
             global::Deepgram.V1ListenPostParametersKeywords? keywords = default,
             string? language = default,
+            global::Deepgram.V1ListenPostParametersLanguageHint? languageHint = default,
             bool? measurements = default,
             global::Deepgram.V1ListenPostParametersModel? model = default,
             bool? multichannel = default,
@@ -289,6 +293,7 @@ namespace Deepgram
                 keyterm: keyterm,
                 keywords: keywords,
                 language: language,
+                languageHint: languageHint,
                 measurements: measurements,
                 model: model,
                 multichannel: multichannel,
@@ -358,6 +363,7 @@ namespace Deepgram
         /// <param name="language">
         /// Default Value: en
         /// </param>
+        /// <param name="languageHint"></param>
         /// <param name="measurements">
         /// Default Value: false
         /// </param>
@@ -428,6 +434,7 @@ namespace Deepgram
             global::System.Collections.Generic.IList<string>? keyterm = default,
             global::Deepgram.V1ListenPostParametersKeywords? keywords = default,
             string? language = default,
+            global::Deepgram.V1ListenPostParametersLanguageHint? languageHint = default,
             bool? measurements = default,
             global::Deepgram.V1ListenPostParametersModel? model = default,
             bool? multichannel = default,
@@ -474,6 +481,7 @@ namespace Deepgram
                 keyterm: keyterm,
                 keywords: ref keywords,
                 language: ref language,
+                languageHint: ref languageHint,
                 measurements: ref measurements,
                 model: ref model,
                 multichannel: ref multichannel,
@@ -560,6 +568,10 @@ namespace Deepgram
                 static x => (global::System.Collections.Generic.IEnumerable<string?>)global::System.Linq.Enumerable.Select(x, static item => item),
                 validate: false), delimiter: ",", explode: true)
                                 .AddOptionalParameter("language", language)
+                                .AddOptionalParameter("language_hint", languageHint?.Match(
+                static x => (global::System.Collections.Generic.IEnumerable<string?>)new string?[] { x },
+                static x => (global::System.Collections.Generic.IEnumerable<string?>)global::System.Linq.Enumerable.Select(x, static item => item),
+                validate: false), delimiter: ",", explode: true)
                                 .AddOptionalParameter("measurements", measurements?.ToString().ToLowerInvariant())
                                 .AddOptionalParameter("model", model?.ToString())
                                 .AddOptionalParameter("multichannel", multichannel?.ToString().ToLowerInvariant())
@@ -653,6 +665,7 @@ namespace Deepgram
                     keyterm: keyterm,
                     keywords: keywords,
                     language: language,
+                    languageHint: languageHint,
                     measurements: measurements,
                     model: model,
                     multichannel: multichannel,
@@ -1028,6 +1041,7 @@ namespace Deepgram
         /// <param name="language">
         /// Default Value: en
         /// </param>
+        /// <param name="languageHint"></param>
         /// <param name="measurements">
         /// Default Value: false
         /// </param>
@@ -1097,6 +1111,7 @@ namespace Deepgram
             global::System.Collections.Generic.IList<string>? keyterm = default,
             global::Deepgram.V1ListenPostParametersKeywords? keywords = default,
             string? language = default,
+            global::Deepgram.V1ListenPostParametersLanguageHint? languageHint = default,
             bool? measurements = default,
             global::Deepgram.V1ListenPostParametersModel? model = default,
             bool? multichannel = default,
@@ -1143,6 +1158,7 @@ namespace Deepgram
                 keyterm: keyterm,
                 keywords: keywords,
                 language: language,
+                languageHint: languageHint,
                 measurements: measurements,
                 model: model,
                 multichannel: multichannel,

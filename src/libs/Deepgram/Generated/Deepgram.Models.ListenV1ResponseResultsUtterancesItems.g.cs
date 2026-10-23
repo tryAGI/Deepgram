@@ -39,6 +39,12 @@ namespace Deepgram
         public string? Transcript { get; set; }
 
         /// <summary>
+        /// [BCP-47](https://tools.ietf.org/html/bcp47) language tags of the languages detected in the utterance, sorted by word count in descending order. Only present when `language=multi`.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("languages")]
+        public global::System.Collections.Generic.IList<string>? Languages { get; set; }
+
+        /// <summary>
         ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("words")]
@@ -70,6 +76,9 @@ namespace Deepgram
         /// <param name="confidence"></param>
         /// <param name="channel"></param>
         /// <param name="transcript"></param>
+        /// <param name="languages">
+        /// [BCP-47](https://tools.ietf.org/html/bcp47) language tags of the languages detected in the utterance, sorted by word count in descending order. Only present when `language=multi`.
+        /// </param>
         /// <param name="words"></param>
         /// <param name="speaker"></param>
         /// <param name="id"></param>
@@ -82,6 +91,7 @@ namespace Deepgram
             double? confidence,
             int? channel,
             string? transcript,
+            global::System.Collections.Generic.IList<string>? languages,
             global::System.Collections.Generic.IList<global::Deepgram.ListenV1ResponseResultsUtterancesItemsWordsItems>? words,
             int? speaker,
             global::System.Guid? id)
@@ -91,6 +101,7 @@ namespace Deepgram
             this.Confidence = confidence;
             this.Channel = channel;
             this.Transcript = transcript;
+            this.Languages = languages;
             this.Words = words;
             this.Speaker = speaker;
             this.Id = id;
