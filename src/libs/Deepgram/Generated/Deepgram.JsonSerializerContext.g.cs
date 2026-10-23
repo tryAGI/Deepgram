@@ -325,6 +325,8 @@ namespace Deepgram
 
             typeof(global::Deepgram.JsonConverters.V1ListenPostParametersKeywordsJsonConverter),
 
+            typeof(global::Deepgram.JsonConverters.V1ListenPostParametersLanguageHintJsonConverter),
+
             typeof(global::Deepgram.JsonConverters.V1ListenPostParametersModelJsonConverter),
 
             typeof(global::Deepgram.JsonConverters.V1ListenPostParametersRedactJsonConverter),
@@ -427,6 +429,7 @@ namespace Deepgram
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Deepgram.V1ListenPostParametersDiarizeModel), TypeInfoPropertyName = "V1ListenPostParametersDiarizeModel2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Deepgram.V1ListenPostParametersEncoding), TypeInfoPropertyName = "V1ListenPostParametersEncoding2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Deepgram.V1ListenPostParametersKeywords), TypeInfoPropertyName = "V1ListenPostParametersKeywords2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Deepgram.V1ListenPostParametersLanguageHint), TypeInfoPropertyName = "V1ListenPostParametersLanguageHint2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Deepgram.V1ListenPostParametersModel0), TypeInfoPropertyName = "V1ListenPostParametersModel02")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Deepgram.V1ListenPostParametersModel), TypeInfoPropertyName = "V1ListenPostParametersModel2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Deepgram.V1ListenPostParametersRedactSchemaOneOf1Items), TypeInfoPropertyName = "V1ListenPostParametersRedactSchemaOneOf1Items2")]

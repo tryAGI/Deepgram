@@ -143,7 +143,7 @@ namespace Deepgram
         /// </param>
         /// <param name="priority"></param>
         /// <param name="text">
-        /// The text content to be converted to speech. The server normalizes and preprocesses the text before synthesis. May contain inline pause controls (`\{pause:500ms\}`, 500-3000 ms in 100 ms steps, at most 8 per request) and inline pronunciation controls (`\{"word": "...", "pronounce": "&lt;IPA&gt;"\}`, Early Access). Pronunciation cannot be combined with pause or with a `speed` other than `1.0`, and `speed` is capped at `1.15` when a pause is present. See [Speed, Pause, Pronunciation](/docs/tts-voice-controls).
+        /// The text content to be converted to speech. For English, German, Dutch, French, Hindi, Italian, Japanese, Portuguese, Russian and Spanish, the server normalizes the text (numbers, dates, abbreviations) before synthesis; the other languages are in Early Access without text normalization, so write numbers and dates out in words. May contain inline pause controls (`\{pause:500ms\}`, 500-3000 ms in 100 ms steps, at most 8 per request) and inline pronunciation controls (`\{"word": "...", "pronounce": "&lt;IPA&gt;"\}`, Early Access). Pronunciation cannot be combined with pause or with a `speed` other than `1.0`, and `speed` is capped at `1.15` when a pause is present. See [Speed, Pause, Pronunciation](/docs/tts-voice-controls).
         /// </param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>

@@ -33,6 +33,12 @@ namespace Deepgram
         public double? Confidence { get; set; }
 
         /// <summary>
+        /// [BCP-47](https://tools.ietf.org/html/bcp47) language tag of the word's detected language. Only present when `language=multi`. Can be absent on audio that switches languages.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("language")]
+        public string? Language { get; set; }
+
+        /// <summary>
         /// The speaker of the word, present when diarization is enabled
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("speaker")]
@@ -57,6 +63,9 @@ namespace Deepgram
         /// <param name="start"></param>
         /// <param name="end"></param>
         /// <param name="confidence"></param>
+        /// <param name="language">
+        /// [BCP-47](https://tools.ietf.org/html/bcp47) language tag of the word's detected language. Only present when `language=multi`. Can be absent on audio that switches languages.
+        /// </param>
         /// <param name="speaker">
         /// The speaker of the word, present when diarization is enabled
         /// </param>
@@ -71,6 +80,7 @@ namespace Deepgram
             double? start,
             double? end,
             double? confidence,
+            string? language,
             int? speaker,
             double? speakerConfidence)
         {
@@ -78,6 +88,7 @@ namespace Deepgram
             this.Start = start;
             this.End = end;
             this.Confidence = confidence;
+            this.Language = language;
             this.Speaker = speaker;
             this.SpeakerConfidence = speakerConfidence;
         }

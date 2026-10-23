@@ -37,7 +37,7 @@ namespace Deepgram.Realtime
         public required double Confidence { get; set; }
 
         /// <summary>
-        /// The language of the word
+        /// [BCP-47](https://tools.ietf.org/html/bcp47) language tag of the word's detected language. Only present when `language=multi`. Can be absent on audio that switches languages.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("language")]
         public string? Language { get; set; }
@@ -76,7 +76,7 @@ namespace Deepgram.Realtime
         /// The confidence of the word
         /// </param>
         /// <param name="language">
-        /// The language of the word
+        /// [BCP-47](https://tools.ietf.org/html/bcp47) language tag of the word's detected language. Only present when `language=multi`. Can be absent on audio that switches languages.
         /// </param>
         /// <param name="punctuatedWord">
         /// The punctuated word of the word

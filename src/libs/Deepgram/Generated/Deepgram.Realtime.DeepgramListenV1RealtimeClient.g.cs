@@ -542,6 +542,7 @@ namespace Deepgram.Realtime
         /// <param name="keyterm">Any type</param>
         /// <param name="keywords">Any type</param>
         /// <param name="language">Any type</param>
+        /// <param name="languageHint">Biases language detection toward one or more languages on Nova-3 multilingual (`model=nova-3&amp;language=multi`); ignored with any other `language`. Repeat the parameter to pass several codes, for example `language_hint=en&amp;language_hint=es`. A code that is not in the [Nova-3 multilingual list](/docs/models-languages-overview#nova-3) rejects the WebSocket connection with HTTP 400. See [Nova-3 Language Prompting](/docs/nova-3-language-prompting).</param>
         /// <param name="mipOptOut">Any type</param>
         /// <param name="model">AI model to use for the transcription</param>
         /// <param name="multichannel">Transcribe each audio channel independently</param>
@@ -578,6 +579,7 @@ namespace Deepgram.Realtime
             global::Deepgram.Realtime.ListenV1Keyterm? keyterm = default,
             global::Deepgram.Realtime.ListenV1Keywords? keywords = default,
             global::Deepgram.Realtime.ListenV1Language? language = default,
+            global::Deepgram.Realtime.ListenV1LanguageHint? languageHint = default,
             global::Deepgram.Realtime.ListenV1MipOptOut? mipOptOut = default,
             global::Deepgram.Realtime.ListenV1Model? model = default,
             global::Deepgram.Realtime.ListenV1Multichannel? multichannel = default,
@@ -625,6 +627,10 @@ namespace Deepgram.Realtime
                 .AddOptionalParameter("keyterm", keyterm?.ToString())
                 .AddOptionalParameter("keywords", keywords?.ToString())
                 .AddOptionalParameter("language", language?.ToString())
+                .AddOptionalParameter("language_hint", languageHint?.Match(
+static x => (global::System.Collections.Generic.IEnumerable<string?>)new string?[] { x },
+static x => (global::System.Collections.Generic.IEnumerable<string?>)global::System.Linq.Enumerable.Select(x, static item => item),
+validate: false), delimiter: ",", explode: true)
                 .AddOptionalParameter("mip_opt_out", mipOptOut?.ToString())
                 .AddOptionalParameter("model", model?.ToValueString())
                 .AddOptionalParameter("multichannel", multichannel?.ToValueString())

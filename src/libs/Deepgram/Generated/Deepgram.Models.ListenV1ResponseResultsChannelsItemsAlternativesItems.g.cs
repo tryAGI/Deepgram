@@ -21,6 +21,18 @@ namespace Deepgram
         public double? Confidence { get; set; }
 
         /// <summary>
+        /// [BCP-47](https://tools.ietf.org/html/bcp47) language tags of the languages detected in the transcript, sorted by word count in descending order. Only present when `language=multi`. Can be absent on audio that switches languages.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("languages")]
+        public global::System.Collections.Generic.IList<string>? Languages { get; set; }
+
+        /// <summary>
+        /// The `language_hint` values for the request, normalized: codes are returned in canonical form (`ES` → `es`, `zh-hk` → `zh-HK`), and a regional code the model has no tag for is returned as its base language (`en-GB` → `en`). Returned on every Nova-3 multilingual response (`model=nova-3&amp;language=multi`); an empty array when no `language_hint` was sent.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("languages_hinted")]
+        public global::System.Collections.Generic.IList<string>? LanguagesHinted { get; set; }
+
+        /// <summary>
         ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("words")]
@@ -61,6 +73,12 @@ namespace Deepgram
         /// </summary>
         /// <param name="transcript"></param>
         /// <param name="confidence"></param>
+        /// <param name="languages">
+        /// [BCP-47](https://tools.ietf.org/html/bcp47) language tags of the languages detected in the transcript, sorted by word count in descending order. Only present when `language=multi`. Can be absent on audio that switches languages.
+        /// </param>
+        /// <param name="languagesHinted">
+        /// The `language_hint` values for the request, normalized: codes are returned in canonical form (`ES` → `es`, `zh-hk` → `zh-HK`), and a regional code the model has no tag for is returned as its base language (`en-GB` → `en`). Returned on every Nova-3 multilingual response (`model=nova-3&amp;language=multi`); an empty array when no `language_hint` was sent.
+        /// </param>
         /// <param name="words"></param>
         /// <param name="paragraphs"></param>
         /// <param name="entities"></param>
@@ -72,6 +90,8 @@ namespace Deepgram
         public ListenV1ResponseResultsChannelsItemsAlternativesItems(
             string? transcript,
             double? confidence,
+            global::System.Collections.Generic.IList<string>? languages,
+            global::System.Collections.Generic.IList<string>? languagesHinted,
             global::System.Collections.Generic.IList<global::Deepgram.ListenV1ResponseResultsChannelsItemsAlternativesItemsWordsItems>? words,
             global::Deepgram.ListenV1ResponseResultsChannelsItemsAlternativesItemsParagraphs? paragraphs,
             global::System.Collections.Generic.IList<global::Deepgram.ListenV1ResponseResultsChannelsItemsAlternativesItemsEntitiesItems>? entities,
@@ -80,6 +100,8 @@ namespace Deepgram
         {
             this.Transcript = transcript;
             this.Confidence = confidence;
+            this.Languages = languages;
+            this.LanguagesHinted = languagesHinted;
             this.Words = words;
             this.Paragraphs = paragraphs;
             this.Entities = entities;
