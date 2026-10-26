@@ -177,7 +177,7 @@ namespace Deepgram.Realtime
                         rawText,
                         json));
             }
-            if (@event.ListenV2ListenV2TurnInfo is { } __ListenV2TurnInfoReceived)
+            if (@event.TurnInfo is { } __ListenV2TurnInfoReceived)
             {
                 ListenV2TurnInfoReceived?.Invoke(
                     this,
@@ -186,7 +186,7 @@ namespace Deepgram.Realtime
                         rawText,
                         json));
             }
-            if (@event.ListenV2ListenV2ConfigureSuccess is { } __ListenV2ConfigureSuccessReceived)
+            if (@event.ConfigureSuccess is { } __ListenV2ConfigureSuccessReceived)
             {
                 ListenV2ConfigureSuccessReceived?.Invoke(
                     this,
@@ -195,7 +195,7 @@ namespace Deepgram.Realtime
                         rawText,
                         json));
             }
-            if (@event.ListenV2ListenV2ConfigureFailure is { } __ListenV2ConfigureFailureReceived)
+            if (@event.ConfigureFailure is { } __ListenV2ConfigureFailureReceived)
             {
                 ListenV2ConfigureFailureReceived?.Invoke(
                     this,
@@ -204,7 +204,7 @@ namespace Deepgram.Realtime
                         rawText,
                         json));
             }
-            if (@event.ListenV2ListenV2Warning is { } __ListenV2WarningReceived)
+            if (@event.Warning is { } __ListenV2WarningReceived)
             {
                 ListenV2WarningReceived?.Invoke(
                     this,

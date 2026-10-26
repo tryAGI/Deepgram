@@ -50,371 +50,371 @@ namespace Deepgram.Realtime
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        public global::Deepgram.Realtime.SpeakV2SpeakV2Connected? SpeakV2SpeakV2Connected { get; init; }
+        public global::Deepgram.Realtime.SpeakV2SpeakV2Connected? Connected { get; init; }
 #else
-        public global::Deepgram.Realtime.SpeakV2SpeakV2Connected? SpeakV2SpeakV2Connected { get; }
+        public global::Deepgram.Realtime.SpeakV2SpeakV2Connected? Connected { get; }
 #endif
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(SpeakV2SpeakV2Connected))]
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Connected))]
 #endif
-        public bool IsSpeakV2SpeakV2Connected => SpeakV2SpeakV2Connected != null;
+        public bool IsConnected => Connected != null;
 
         /// <summary>
         ///
         /// </summary>
-        public bool TryPickSpeakV2SpeakV2Connected(
+        public bool TryPickConnected(
 #if NET6_0_OR_GREATER
             [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
 #endif
             out global::Deepgram.Realtime.SpeakV2SpeakV2Connected? value)
         {
-            value = SpeakV2SpeakV2Connected;
-            return IsSpeakV2SpeakV2Connected;
+            value = Connected;
+            return IsConnected;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.SpeakV2SpeakV2Connected PickSpeakV2SpeakV2Connected() => SpeakV2SpeakV2Connected is { } value
+        public global::Deepgram.Realtime.SpeakV2SpeakV2Connected PickConnected() => Connected is { } value
             ? value
-            : throw new global::System.InvalidOperationException($"Expected union variant 'SpeakV2SpeakV2Connected' but the value was {ToString()}.");
+            : throw new global::System.InvalidOperationException($"Expected union variant 'Connected' but the value was {ToString()}.");
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        public global::Deepgram.Realtime.SpeakV2SpeakV2SpeechStarted? SpeakV2SpeakV2SpeechStarted { get; init; }
+        public global::Deepgram.Realtime.SpeakV2SpeakV2SpeechStarted? SpeechStarted { get; init; }
 #else
-        public global::Deepgram.Realtime.SpeakV2SpeakV2SpeechStarted? SpeakV2SpeakV2SpeechStarted { get; }
+        public global::Deepgram.Realtime.SpeakV2SpeakV2SpeechStarted? SpeechStarted { get; }
 #endif
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(SpeakV2SpeakV2SpeechStarted))]
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(SpeechStarted))]
 #endif
-        public bool IsSpeakV2SpeakV2SpeechStarted => SpeakV2SpeakV2SpeechStarted != null;
+        public bool IsSpeechStarted => SpeechStarted != null;
 
         /// <summary>
         ///
         /// </summary>
-        public bool TryPickSpeakV2SpeakV2SpeechStarted(
+        public bool TryPickSpeechStarted(
 #if NET6_0_OR_GREATER
             [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
 #endif
             out global::Deepgram.Realtime.SpeakV2SpeakV2SpeechStarted? value)
         {
-            value = SpeakV2SpeakV2SpeechStarted;
-            return IsSpeakV2SpeakV2SpeechStarted;
+            value = SpeechStarted;
+            return IsSpeechStarted;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.SpeakV2SpeakV2SpeechStarted PickSpeakV2SpeakV2SpeechStarted() => SpeakV2SpeakV2SpeechStarted is { } value
+        public global::Deepgram.Realtime.SpeakV2SpeakV2SpeechStarted PickSpeechStarted() => SpeechStarted is { } value
             ? value
-            : throw new global::System.InvalidOperationException($"Expected union variant 'SpeakV2SpeakV2SpeechStarted' but the value was {ToString()}.");
+            : throw new global::System.InvalidOperationException($"Expected union variant 'SpeechStarted' but the value was {ToString()}.");
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        public global::Deepgram.Realtime.SpeakV2SpeakV2SpeechMetadata? SpeakV2SpeakV2SpeechMetadata { get; init; }
+        public global::Deepgram.Realtime.SpeakV2SpeakV2SpeechMetadata? SpeechMetadata { get; init; }
 #else
-        public global::Deepgram.Realtime.SpeakV2SpeakV2SpeechMetadata? SpeakV2SpeakV2SpeechMetadata { get; }
+        public global::Deepgram.Realtime.SpeakV2SpeakV2SpeechMetadata? SpeechMetadata { get; }
 #endif
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(SpeakV2SpeakV2SpeechMetadata))]
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(SpeechMetadata))]
 #endif
-        public bool IsSpeakV2SpeakV2SpeechMetadata => SpeakV2SpeakV2SpeechMetadata != null;
+        public bool IsSpeechMetadata => SpeechMetadata != null;
 
         /// <summary>
         ///
         /// </summary>
-        public bool TryPickSpeakV2SpeakV2SpeechMetadata(
+        public bool TryPickSpeechMetadata(
 #if NET6_0_OR_GREATER
             [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
 #endif
             out global::Deepgram.Realtime.SpeakV2SpeakV2SpeechMetadata? value)
         {
-            value = SpeakV2SpeakV2SpeechMetadata;
-            return IsSpeakV2SpeakV2SpeechMetadata;
+            value = SpeechMetadata;
+            return IsSpeechMetadata;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.SpeakV2SpeakV2SpeechMetadata PickSpeakV2SpeakV2SpeechMetadata() => SpeakV2SpeakV2SpeechMetadata is { } value
+        public global::Deepgram.Realtime.SpeakV2SpeakV2SpeechMetadata PickSpeechMetadata() => SpeechMetadata is { } value
             ? value
-            : throw new global::System.InvalidOperationException($"Expected union variant 'SpeakV2SpeakV2SpeechMetadata' but the value was {ToString()}.");
+            : throw new global::System.InvalidOperationException($"Expected union variant 'SpeechMetadata' but the value was {ToString()}.");
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        public global::Deepgram.Realtime.SpeakV2SpeakV2SpeechInterrupted? SpeakV2SpeakV2SpeechInterrupted { get; init; }
+        public global::Deepgram.Realtime.SpeakV2SpeakV2SpeechInterrupted? SpeechInterrupted { get; init; }
 #else
-        public global::Deepgram.Realtime.SpeakV2SpeakV2SpeechInterrupted? SpeakV2SpeakV2SpeechInterrupted { get; }
+        public global::Deepgram.Realtime.SpeakV2SpeakV2SpeechInterrupted? SpeechInterrupted { get; }
 #endif
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(SpeakV2SpeakV2SpeechInterrupted))]
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(SpeechInterrupted))]
 #endif
-        public bool IsSpeakV2SpeakV2SpeechInterrupted => SpeakV2SpeakV2SpeechInterrupted != null;
+        public bool IsSpeechInterrupted => SpeechInterrupted != null;
 
         /// <summary>
         ///
         /// </summary>
-        public bool TryPickSpeakV2SpeakV2SpeechInterrupted(
+        public bool TryPickSpeechInterrupted(
 #if NET6_0_OR_GREATER
             [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
 #endif
             out global::Deepgram.Realtime.SpeakV2SpeakV2SpeechInterrupted? value)
         {
-            value = SpeakV2SpeakV2SpeechInterrupted;
-            return IsSpeakV2SpeakV2SpeechInterrupted;
+            value = SpeechInterrupted;
+            return IsSpeechInterrupted;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.SpeakV2SpeakV2SpeechInterrupted PickSpeakV2SpeakV2SpeechInterrupted() => SpeakV2SpeakV2SpeechInterrupted is { } value
+        public global::Deepgram.Realtime.SpeakV2SpeakV2SpeechInterrupted PickSpeechInterrupted() => SpeechInterrupted is { } value
             ? value
-            : throw new global::System.InvalidOperationException($"Expected union variant 'SpeakV2SpeakV2SpeechInterrupted' but the value was {ToString()}.");
+            : throw new global::System.InvalidOperationException($"Expected union variant 'SpeechInterrupted' but the value was {ToString()}.");
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        public global::Deepgram.Realtime.SpeakV2SpeakV2Flushed? SpeakV2SpeakV2Flushed { get; init; }
+        public global::Deepgram.Realtime.SpeakV2SpeakV2Flushed? Flushed { get; init; }
 #else
-        public global::Deepgram.Realtime.SpeakV2SpeakV2Flushed? SpeakV2SpeakV2Flushed { get; }
+        public global::Deepgram.Realtime.SpeakV2SpeakV2Flushed? Flushed { get; }
 #endif
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(SpeakV2SpeakV2Flushed))]
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Flushed))]
 #endif
-        public bool IsSpeakV2SpeakV2Flushed => SpeakV2SpeakV2Flushed != null;
+        public bool IsFlushed => Flushed != null;
 
         /// <summary>
         ///
         /// </summary>
-        public bool TryPickSpeakV2SpeakV2Flushed(
+        public bool TryPickFlushed(
 #if NET6_0_OR_GREATER
             [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
 #endif
             out global::Deepgram.Realtime.SpeakV2SpeakV2Flushed? value)
         {
-            value = SpeakV2SpeakV2Flushed;
-            return IsSpeakV2SpeakV2Flushed;
+            value = Flushed;
+            return IsFlushed;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.SpeakV2SpeakV2Flushed PickSpeakV2SpeakV2Flushed() => SpeakV2SpeakV2Flushed is { } value
+        public global::Deepgram.Realtime.SpeakV2SpeakV2Flushed PickFlushed() => Flushed is { } value
             ? value
-            : throw new global::System.InvalidOperationException($"Expected union variant 'SpeakV2SpeakV2Flushed' but the value was {ToString()}.");
+            : throw new global::System.InvalidOperationException($"Expected union variant 'Flushed' but the value was {ToString()}.");
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        public global::Deepgram.Realtime.SpeakV2SpeakV2SessionMetadata? SpeakV2SpeakV2SessionMetadata { get; init; }
+        public global::Deepgram.Realtime.SpeakV2SpeakV2SessionMetadata? SessionMetadata { get; init; }
 #else
-        public global::Deepgram.Realtime.SpeakV2SpeakV2SessionMetadata? SpeakV2SpeakV2SessionMetadata { get; }
+        public global::Deepgram.Realtime.SpeakV2SpeakV2SessionMetadata? SessionMetadata { get; }
 #endif
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(SpeakV2SpeakV2SessionMetadata))]
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(SessionMetadata))]
 #endif
-        public bool IsSpeakV2SpeakV2SessionMetadata => SpeakV2SpeakV2SessionMetadata != null;
+        public bool IsSessionMetadata => SessionMetadata != null;
 
         /// <summary>
         ///
         /// </summary>
-        public bool TryPickSpeakV2SpeakV2SessionMetadata(
+        public bool TryPickSessionMetadata(
 #if NET6_0_OR_GREATER
             [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
 #endif
             out global::Deepgram.Realtime.SpeakV2SpeakV2SessionMetadata? value)
         {
-            value = SpeakV2SpeakV2SessionMetadata;
-            return IsSpeakV2SpeakV2SessionMetadata;
+            value = SessionMetadata;
+            return IsSessionMetadata;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.SpeakV2SpeakV2SessionMetadata PickSpeakV2SpeakV2SessionMetadata() => SpeakV2SpeakV2SessionMetadata is { } value
+        public global::Deepgram.Realtime.SpeakV2SpeakV2SessionMetadata PickSessionMetadata() => SessionMetadata is { } value
             ? value
-            : throw new global::System.InvalidOperationException($"Expected union variant 'SpeakV2SpeakV2SessionMetadata' but the value was {ToString()}.");
+            : throw new global::System.InvalidOperationException($"Expected union variant 'SessionMetadata' but the value was {ToString()}.");
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        public global::Deepgram.Realtime.SpeakV2SpeakV2ConfigureSuccess? SpeakV2SpeakV2ConfigureSuccess { get; init; }
+        public global::Deepgram.Realtime.SpeakV2SpeakV2ConfigureSuccess? ConfigureSuccess { get; init; }
 #else
-        public global::Deepgram.Realtime.SpeakV2SpeakV2ConfigureSuccess? SpeakV2SpeakV2ConfigureSuccess { get; }
+        public global::Deepgram.Realtime.SpeakV2SpeakV2ConfigureSuccess? ConfigureSuccess { get; }
 #endif
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(SpeakV2SpeakV2ConfigureSuccess))]
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(ConfigureSuccess))]
 #endif
-        public bool IsSpeakV2SpeakV2ConfigureSuccess => SpeakV2SpeakV2ConfigureSuccess != null;
+        public bool IsConfigureSuccess => ConfigureSuccess != null;
 
         /// <summary>
         ///
         /// </summary>
-        public bool TryPickSpeakV2SpeakV2ConfigureSuccess(
+        public bool TryPickConfigureSuccess(
 #if NET6_0_OR_GREATER
             [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
 #endif
             out global::Deepgram.Realtime.SpeakV2SpeakV2ConfigureSuccess? value)
         {
-            value = SpeakV2SpeakV2ConfigureSuccess;
-            return IsSpeakV2SpeakV2ConfigureSuccess;
+            value = ConfigureSuccess;
+            return IsConfigureSuccess;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.SpeakV2SpeakV2ConfigureSuccess PickSpeakV2SpeakV2ConfigureSuccess() => SpeakV2SpeakV2ConfigureSuccess is { } value
+        public global::Deepgram.Realtime.SpeakV2SpeakV2ConfigureSuccess PickConfigureSuccess() => ConfigureSuccess is { } value
             ? value
-            : throw new global::System.InvalidOperationException($"Expected union variant 'SpeakV2SpeakV2ConfigureSuccess' but the value was {ToString()}.");
+            : throw new global::System.InvalidOperationException($"Expected union variant 'ConfigureSuccess' but the value was {ToString()}.");
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        public global::Deepgram.Realtime.SpeakV2SpeakV2ConfigureFailure? SpeakV2SpeakV2ConfigureFailure { get; init; }
+        public global::Deepgram.Realtime.SpeakV2SpeakV2ConfigureFailure? ConfigureFailure { get; init; }
 #else
-        public global::Deepgram.Realtime.SpeakV2SpeakV2ConfigureFailure? SpeakV2SpeakV2ConfigureFailure { get; }
+        public global::Deepgram.Realtime.SpeakV2SpeakV2ConfigureFailure? ConfigureFailure { get; }
 #endif
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(SpeakV2SpeakV2ConfigureFailure))]
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(ConfigureFailure))]
 #endif
-        public bool IsSpeakV2SpeakV2ConfigureFailure => SpeakV2SpeakV2ConfigureFailure != null;
+        public bool IsConfigureFailure => ConfigureFailure != null;
 
         /// <summary>
         ///
         /// </summary>
-        public bool TryPickSpeakV2SpeakV2ConfigureFailure(
+        public bool TryPickConfigureFailure(
 #if NET6_0_OR_GREATER
             [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
 #endif
             out global::Deepgram.Realtime.SpeakV2SpeakV2ConfigureFailure? value)
         {
-            value = SpeakV2SpeakV2ConfigureFailure;
-            return IsSpeakV2SpeakV2ConfigureFailure;
+            value = ConfigureFailure;
+            return IsConfigureFailure;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.SpeakV2SpeakV2ConfigureFailure PickSpeakV2SpeakV2ConfigureFailure() => SpeakV2SpeakV2ConfigureFailure is { } value
+        public global::Deepgram.Realtime.SpeakV2SpeakV2ConfigureFailure PickConfigureFailure() => ConfigureFailure is { } value
             ? value
-            : throw new global::System.InvalidOperationException($"Expected union variant 'SpeakV2SpeakV2ConfigureFailure' but the value was {ToString()}.");
+            : throw new global::System.InvalidOperationException($"Expected union variant 'ConfigureFailure' but the value was {ToString()}.");
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        public global::Deepgram.Realtime.SpeakV2SpeakV2Warning? SpeakV2SpeakV2Warning { get; init; }
+        public global::Deepgram.Realtime.SpeakV2SpeakV2Warning? Warning { get; init; }
 #else
-        public global::Deepgram.Realtime.SpeakV2SpeakV2Warning? SpeakV2SpeakV2Warning { get; }
+        public global::Deepgram.Realtime.SpeakV2SpeakV2Warning? Warning { get; }
 #endif
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(SpeakV2SpeakV2Warning))]
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Warning))]
 #endif
-        public bool IsSpeakV2SpeakV2Warning => SpeakV2SpeakV2Warning != null;
+        public bool IsWarning => Warning != null;
 
         /// <summary>
         ///
         /// </summary>
-        public bool TryPickSpeakV2SpeakV2Warning(
+        public bool TryPickWarning(
 #if NET6_0_OR_GREATER
             [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
 #endif
             out global::Deepgram.Realtime.SpeakV2SpeakV2Warning? value)
         {
-            value = SpeakV2SpeakV2Warning;
-            return IsSpeakV2SpeakV2Warning;
+            value = Warning;
+            return IsWarning;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.SpeakV2SpeakV2Warning PickSpeakV2SpeakV2Warning() => SpeakV2SpeakV2Warning is { } value
+        public global::Deepgram.Realtime.SpeakV2SpeakV2Warning PickWarning() => Warning is { } value
             ? value
-            : throw new global::System.InvalidOperationException($"Expected union variant 'SpeakV2SpeakV2Warning' but the value was {ToString()}.");
+            : throw new global::System.InvalidOperationException($"Expected union variant 'Warning' but the value was {ToString()}.");
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        public global::Deepgram.Realtime.SpeakV2SpeakV2Error? SpeakV2SpeakV2Error { get; init; }
+        public global::Deepgram.Realtime.SpeakV2SpeakV2Error? Error { get; init; }
 #else
-        public global::Deepgram.Realtime.SpeakV2SpeakV2Error? SpeakV2SpeakV2Error { get; }
+        public global::Deepgram.Realtime.SpeakV2SpeakV2Error? Error { get; }
 #endif
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(SpeakV2SpeakV2Error))]
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Error))]
 #endif
-        public bool IsSpeakV2SpeakV2Error => SpeakV2SpeakV2Error != null;
+        public bool IsError => Error != null;
 
         /// <summary>
         ///
         /// </summary>
-        public bool TryPickSpeakV2SpeakV2Error(
+        public bool TryPickError(
 #if NET6_0_OR_GREATER
             [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
 #endif
             out global::Deepgram.Realtime.SpeakV2SpeakV2Error? value)
         {
-            value = SpeakV2SpeakV2Error;
-            return IsSpeakV2SpeakV2Error;
+            value = Error;
+            return IsError;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.SpeakV2SpeakV2Error PickSpeakV2SpeakV2Error() => SpeakV2SpeakV2Error is { } value
+        public global::Deepgram.Realtime.SpeakV2SpeakV2Error PickError() => Error is { } value
             ? value
-            : throw new global::System.InvalidOperationException($"Expected union variant 'SpeakV2SpeakV2Error' but the value was {ToString()}.");
+            : throw new global::System.InvalidOperationException($"Expected union variant 'Error' but the value was {ToString()}.");
         /// <summary>
         ///
         /// </summary>
@@ -446,20 +446,20 @@ namespace Deepgram.Realtime
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator global::Deepgram.Realtime.SpeakV2SpeakV2Connected?(VsServerEvent @this) => @this.SpeakV2SpeakV2Connected;
+        public static implicit operator global::Deepgram.Realtime.SpeakV2SpeakV2Connected?(VsServerEvent @this) => @this.Connected;
 
         /// <summary>
         ///
         /// </summary>
         public VsServerEvent(global::Deepgram.Realtime.SpeakV2SpeakV2Connected? value)
         {
-            SpeakV2SpeakV2Connected = value;
+            Connected = value;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public static VsServerEvent FromSpeakV2SpeakV2Connected(global::Deepgram.Realtime.SpeakV2SpeakV2Connected? value) => new VsServerEvent(value);
+        public static VsServerEvent FromConnected(global::Deepgram.Realtime.SpeakV2SpeakV2Connected? value) => new VsServerEvent(value);
 
         /// <summary>
         ///
@@ -469,20 +469,20 @@ namespace Deepgram.Realtime
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator global::Deepgram.Realtime.SpeakV2SpeakV2SpeechStarted?(VsServerEvent @this) => @this.SpeakV2SpeakV2SpeechStarted;
+        public static implicit operator global::Deepgram.Realtime.SpeakV2SpeakV2SpeechStarted?(VsServerEvent @this) => @this.SpeechStarted;
 
         /// <summary>
         ///
         /// </summary>
         public VsServerEvent(global::Deepgram.Realtime.SpeakV2SpeakV2SpeechStarted? value)
         {
-            SpeakV2SpeakV2SpeechStarted = value;
+            SpeechStarted = value;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public static VsServerEvent FromSpeakV2SpeakV2SpeechStarted(global::Deepgram.Realtime.SpeakV2SpeakV2SpeechStarted? value) => new VsServerEvent(value);
+        public static VsServerEvent FromSpeechStarted(global::Deepgram.Realtime.SpeakV2SpeakV2SpeechStarted? value) => new VsServerEvent(value);
 
         /// <summary>
         ///
@@ -492,20 +492,20 @@ namespace Deepgram.Realtime
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator global::Deepgram.Realtime.SpeakV2SpeakV2SpeechMetadata?(VsServerEvent @this) => @this.SpeakV2SpeakV2SpeechMetadata;
+        public static implicit operator global::Deepgram.Realtime.SpeakV2SpeakV2SpeechMetadata?(VsServerEvent @this) => @this.SpeechMetadata;
 
         /// <summary>
         ///
         /// </summary>
         public VsServerEvent(global::Deepgram.Realtime.SpeakV2SpeakV2SpeechMetadata? value)
         {
-            SpeakV2SpeakV2SpeechMetadata = value;
+            SpeechMetadata = value;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public static VsServerEvent FromSpeakV2SpeakV2SpeechMetadata(global::Deepgram.Realtime.SpeakV2SpeakV2SpeechMetadata? value) => new VsServerEvent(value);
+        public static VsServerEvent FromSpeechMetadata(global::Deepgram.Realtime.SpeakV2SpeakV2SpeechMetadata? value) => new VsServerEvent(value);
 
         /// <summary>
         ///
@@ -515,20 +515,20 @@ namespace Deepgram.Realtime
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator global::Deepgram.Realtime.SpeakV2SpeakV2SpeechInterrupted?(VsServerEvent @this) => @this.SpeakV2SpeakV2SpeechInterrupted;
+        public static implicit operator global::Deepgram.Realtime.SpeakV2SpeakV2SpeechInterrupted?(VsServerEvent @this) => @this.SpeechInterrupted;
 
         /// <summary>
         ///
         /// </summary>
         public VsServerEvent(global::Deepgram.Realtime.SpeakV2SpeakV2SpeechInterrupted? value)
         {
-            SpeakV2SpeakV2SpeechInterrupted = value;
+            SpeechInterrupted = value;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public static VsServerEvent FromSpeakV2SpeakV2SpeechInterrupted(global::Deepgram.Realtime.SpeakV2SpeakV2SpeechInterrupted? value) => new VsServerEvent(value);
+        public static VsServerEvent FromSpeechInterrupted(global::Deepgram.Realtime.SpeakV2SpeakV2SpeechInterrupted? value) => new VsServerEvent(value);
 
         /// <summary>
         ///
@@ -538,20 +538,20 @@ namespace Deepgram.Realtime
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator global::Deepgram.Realtime.SpeakV2SpeakV2Flushed?(VsServerEvent @this) => @this.SpeakV2SpeakV2Flushed;
+        public static implicit operator global::Deepgram.Realtime.SpeakV2SpeakV2Flushed?(VsServerEvent @this) => @this.Flushed;
 
         /// <summary>
         ///
         /// </summary>
         public VsServerEvent(global::Deepgram.Realtime.SpeakV2SpeakV2Flushed? value)
         {
-            SpeakV2SpeakV2Flushed = value;
+            Flushed = value;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public static VsServerEvent FromSpeakV2SpeakV2Flushed(global::Deepgram.Realtime.SpeakV2SpeakV2Flushed? value) => new VsServerEvent(value);
+        public static VsServerEvent FromFlushed(global::Deepgram.Realtime.SpeakV2SpeakV2Flushed? value) => new VsServerEvent(value);
 
         /// <summary>
         ///
@@ -561,20 +561,20 @@ namespace Deepgram.Realtime
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator global::Deepgram.Realtime.SpeakV2SpeakV2SessionMetadata?(VsServerEvent @this) => @this.SpeakV2SpeakV2SessionMetadata;
+        public static implicit operator global::Deepgram.Realtime.SpeakV2SpeakV2SessionMetadata?(VsServerEvent @this) => @this.SessionMetadata;
 
         /// <summary>
         ///
         /// </summary>
         public VsServerEvent(global::Deepgram.Realtime.SpeakV2SpeakV2SessionMetadata? value)
         {
-            SpeakV2SpeakV2SessionMetadata = value;
+            SessionMetadata = value;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public static VsServerEvent FromSpeakV2SpeakV2SessionMetadata(global::Deepgram.Realtime.SpeakV2SpeakV2SessionMetadata? value) => new VsServerEvent(value);
+        public static VsServerEvent FromSessionMetadata(global::Deepgram.Realtime.SpeakV2SpeakV2SessionMetadata? value) => new VsServerEvent(value);
 
         /// <summary>
         ///
@@ -584,20 +584,20 @@ namespace Deepgram.Realtime
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator global::Deepgram.Realtime.SpeakV2SpeakV2ConfigureSuccess?(VsServerEvent @this) => @this.SpeakV2SpeakV2ConfigureSuccess;
+        public static implicit operator global::Deepgram.Realtime.SpeakV2SpeakV2ConfigureSuccess?(VsServerEvent @this) => @this.ConfigureSuccess;
 
         /// <summary>
         ///
         /// </summary>
         public VsServerEvent(global::Deepgram.Realtime.SpeakV2SpeakV2ConfigureSuccess? value)
         {
-            SpeakV2SpeakV2ConfigureSuccess = value;
+            ConfigureSuccess = value;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public static VsServerEvent FromSpeakV2SpeakV2ConfigureSuccess(global::Deepgram.Realtime.SpeakV2SpeakV2ConfigureSuccess? value) => new VsServerEvent(value);
+        public static VsServerEvent FromConfigureSuccess(global::Deepgram.Realtime.SpeakV2SpeakV2ConfigureSuccess? value) => new VsServerEvent(value);
 
         /// <summary>
         ///
@@ -607,20 +607,20 @@ namespace Deepgram.Realtime
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator global::Deepgram.Realtime.SpeakV2SpeakV2ConfigureFailure?(VsServerEvent @this) => @this.SpeakV2SpeakV2ConfigureFailure;
+        public static implicit operator global::Deepgram.Realtime.SpeakV2SpeakV2ConfigureFailure?(VsServerEvent @this) => @this.ConfigureFailure;
 
         /// <summary>
         ///
         /// </summary>
         public VsServerEvent(global::Deepgram.Realtime.SpeakV2SpeakV2ConfigureFailure? value)
         {
-            SpeakV2SpeakV2ConfigureFailure = value;
+            ConfigureFailure = value;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public static VsServerEvent FromSpeakV2SpeakV2ConfigureFailure(global::Deepgram.Realtime.SpeakV2SpeakV2ConfigureFailure? value) => new VsServerEvent(value);
+        public static VsServerEvent FromConfigureFailure(global::Deepgram.Realtime.SpeakV2SpeakV2ConfigureFailure? value) => new VsServerEvent(value);
 
         /// <summary>
         ///
@@ -630,20 +630,20 @@ namespace Deepgram.Realtime
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator global::Deepgram.Realtime.SpeakV2SpeakV2Warning?(VsServerEvent @this) => @this.SpeakV2SpeakV2Warning;
+        public static implicit operator global::Deepgram.Realtime.SpeakV2SpeakV2Warning?(VsServerEvent @this) => @this.Warning;
 
         /// <summary>
         ///
         /// </summary>
         public VsServerEvent(global::Deepgram.Realtime.SpeakV2SpeakV2Warning? value)
         {
-            SpeakV2SpeakV2Warning = value;
+            Warning = value;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public static VsServerEvent FromSpeakV2SpeakV2Warning(global::Deepgram.Realtime.SpeakV2SpeakV2Warning? value) => new VsServerEvent(value);
+        public static VsServerEvent FromWarning(global::Deepgram.Realtime.SpeakV2SpeakV2Warning? value) => new VsServerEvent(value);
 
         /// <summary>
         ///
@@ -653,65 +653,65 @@ namespace Deepgram.Realtime
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator global::Deepgram.Realtime.SpeakV2SpeakV2Error?(VsServerEvent @this) => @this.SpeakV2SpeakV2Error;
+        public static implicit operator global::Deepgram.Realtime.SpeakV2SpeakV2Error?(VsServerEvent @this) => @this.Error;
 
         /// <summary>
         ///
         /// </summary>
         public VsServerEvent(global::Deepgram.Realtime.SpeakV2SpeakV2Error? value)
         {
-            SpeakV2SpeakV2Error = value;
+            Error = value;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public static VsServerEvent FromSpeakV2SpeakV2Error(global::Deepgram.Realtime.SpeakV2SpeakV2Error? value) => new VsServerEvent(value);
+        public static VsServerEvent FromError(global::Deepgram.Realtime.SpeakV2SpeakV2Error? value) => new VsServerEvent(value);
 
         /// <summary>
         ///
         /// </summary>
         public VsServerEvent(
             byte[]? speakV2SpeakV2Audio,
-            global::Deepgram.Realtime.SpeakV2SpeakV2Connected? speakV2SpeakV2Connected,
-            global::Deepgram.Realtime.SpeakV2SpeakV2SpeechStarted? speakV2SpeakV2SpeechStarted,
-            global::Deepgram.Realtime.SpeakV2SpeakV2SpeechMetadata? speakV2SpeakV2SpeechMetadata,
-            global::Deepgram.Realtime.SpeakV2SpeakV2SpeechInterrupted? speakV2SpeakV2SpeechInterrupted,
-            global::Deepgram.Realtime.SpeakV2SpeakV2Flushed? speakV2SpeakV2Flushed,
-            global::Deepgram.Realtime.SpeakV2SpeakV2SessionMetadata? speakV2SpeakV2SessionMetadata,
-            global::Deepgram.Realtime.SpeakV2SpeakV2ConfigureSuccess? speakV2SpeakV2ConfigureSuccess,
-            global::Deepgram.Realtime.SpeakV2SpeakV2ConfigureFailure? speakV2SpeakV2ConfigureFailure,
-            global::Deepgram.Realtime.SpeakV2SpeakV2Warning? speakV2SpeakV2Warning,
-            global::Deepgram.Realtime.SpeakV2SpeakV2Error? speakV2SpeakV2Error
+            global::Deepgram.Realtime.SpeakV2SpeakV2Connected? connected,
+            global::Deepgram.Realtime.SpeakV2SpeakV2SpeechStarted? speechStarted,
+            global::Deepgram.Realtime.SpeakV2SpeakV2SpeechMetadata? speechMetadata,
+            global::Deepgram.Realtime.SpeakV2SpeakV2SpeechInterrupted? speechInterrupted,
+            global::Deepgram.Realtime.SpeakV2SpeakV2Flushed? flushed,
+            global::Deepgram.Realtime.SpeakV2SpeakV2SessionMetadata? sessionMetadata,
+            global::Deepgram.Realtime.SpeakV2SpeakV2ConfigureSuccess? configureSuccess,
+            global::Deepgram.Realtime.SpeakV2SpeakV2ConfigureFailure? configureFailure,
+            global::Deepgram.Realtime.SpeakV2SpeakV2Warning? warning,
+            global::Deepgram.Realtime.SpeakV2SpeakV2Error? error
             )
         {
             SpeakV2SpeakV2Audio = speakV2SpeakV2Audio;
-            SpeakV2SpeakV2Connected = speakV2SpeakV2Connected;
-            SpeakV2SpeakV2SpeechStarted = speakV2SpeakV2SpeechStarted;
-            SpeakV2SpeakV2SpeechMetadata = speakV2SpeakV2SpeechMetadata;
-            SpeakV2SpeakV2SpeechInterrupted = speakV2SpeakV2SpeechInterrupted;
-            SpeakV2SpeakV2Flushed = speakV2SpeakV2Flushed;
-            SpeakV2SpeakV2SessionMetadata = speakV2SpeakV2SessionMetadata;
-            SpeakV2SpeakV2ConfigureSuccess = speakV2SpeakV2ConfigureSuccess;
-            SpeakV2SpeakV2ConfigureFailure = speakV2SpeakV2ConfigureFailure;
-            SpeakV2SpeakV2Warning = speakV2SpeakV2Warning;
-            SpeakV2SpeakV2Error = speakV2SpeakV2Error;
+            Connected = connected;
+            SpeechStarted = speechStarted;
+            SpeechMetadata = speechMetadata;
+            SpeechInterrupted = speechInterrupted;
+            Flushed = flushed;
+            SessionMetadata = sessionMetadata;
+            ConfigureSuccess = configureSuccess;
+            ConfigureFailure = configureFailure;
+            Warning = warning;
+            Error = error;
         }
 
         /// <summary>
         ///
         /// </summary>
         public object? Object =>
-            SpeakV2SpeakV2Error as object ??
-            SpeakV2SpeakV2Warning as object ??
-            SpeakV2SpeakV2ConfigureFailure as object ??
-            SpeakV2SpeakV2ConfigureSuccess as object ??
-            SpeakV2SpeakV2SessionMetadata as object ??
-            SpeakV2SpeakV2Flushed as object ??
-            SpeakV2SpeakV2SpeechInterrupted as object ??
-            SpeakV2SpeakV2SpeechMetadata as object ??
-            SpeakV2SpeakV2SpeechStarted as object ??
-            SpeakV2SpeakV2Connected as object ??
+            Error as object ??
+            Warning as object ??
+            ConfigureFailure as object ??
+            ConfigureSuccess as object ??
+            SessionMetadata as object ??
+            Flushed as object ??
+            SpeechInterrupted as object ??
+            SpeechMetadata as object ??
+            SpeechStarted as object ??
+            Connected as object ??
             SpeakV2SpeakV2Audio as object
             ;
 
@@ -720,16 +720,16 @@ namespace Deepgram.Realtime
         /// </summary>
         public override string? ToString() =>
             SpeakV2SpeakV2Audio?.ToString() ??
-            SpeakV2SpeakV2Connected?.ToString() ??
-            SpeakV2SpeakV2SpeechStarted?.ToString() ??
-            SpeakV2SpeakV2SpeechMetadata?.ToString() ??
-            SpeakV2SpeakV2SpeechInterrupted?.ToString() ??
-            SpeakV2SpeakV2Flushed?.ToString() ??
-            SpeakV2SpeakV2SessionMetadata?.ToString() ??
-            SpeakV2SpeakV2ConfigureSuccess?.ToString() ??
-            SpeakV2SpeakV2ConfigureFailure?.ToString() ??
-            SpeakV2SpeakV2Warning?.ToString() ??
-            SpeakV2SpeakV2Error?.ToString()
+            Connected?.ToString() ??
+            SpeechStarted?.ToString() ??
+            SpeechMetadata?.ToString() ??
+            SpeechInterrupted?.ToString() ??
+            Flushed?.ToString() ??
+            SessionMetadata?.ToString() ??
+            ConfigureSuccess?.ToString() ??
+            ConfigureFailure?.ToString() ??
+            Warning?.ToString() ??
+            Error?.ToString()
             ;
 
         /// <summary>
@@ -737,7 +737,7 @@ namespace Deepgram.Realtime
         /// </summary>
         public bool Validate()
         {
-            return IsSpeakV2SpeakV2Audio && !IsSpeakV2SpeakV2Connected && !IsSpeakV2SpeakV2SpeechStarted && !IsSpeakV2SpeakV2SpeechMetadata && !IsSpeakV2SpeakV2SpeechInterrupted && !IsSpeakV2SpeakV2Flushed && !IsSpeakV2SpeakV2SessionMetadata && !IsSpeakV2SpeakV2ConfigureSuccess && !IsSpeakV2SpeakV2ConfigureFailure && !IsSpeakV2SpeakV2Warning && !IsSpeakV2SpeakV2Error || !IsSpeakV2SpeakV2Audio && IsSpeakV2SpeakV2Connected && !IsSpeakV2SpeakV2SpeechStarted && !IsSpeakV2SpeakV2SpeechMetadata && !IsSpeakV2SpeakV2SpeechInterrupted && !IsSpeakV2SpeakV2Flushed && !IsSpeakV2SpeakV2SessionMetadata && !IsSpeakV2SpeakV2ConfigureSuccess && !IsSpeakV2SpeakV2ConfigureFailure && !IsSpeakV2SpeakV2Warning && !IsSpeakV2SpeakV2Error || !IsSpeakV2SpeakV2Audio && !IsSpeakV2SpeakV2Connected && IsSpeakV2SpeakV2SpeechStarted && !IsSpeakV2SpeakV2SpeechMetadata && !IsSpeakV2SpeakV2SpeechInterrupted && !IsSpeakV2SpeakV2Flushed && !IsSpeakV2SpeakV2SessionMetadata && !IsSpeakV2SpeakV2ConfigureSuccess && !IsSpeakV2SpeakV2ConfigureFailure && !IsSpeakV2SpeakV2Warning && !IsSpeakV2SpeakV2Error || !IsSpeakV2SpeakV2Audio && !IsSpeakV2SpeakV2Connected && !IsSpeakV2SpeakV2SpeechStarted && IsSpeakV2SpeakV2SpeechMetadata && !IsSpeakV2SpeakV2SpeechInterrupted && !IsSpeakV2SpeakV2Flushed && !IsSpeakV2SpeakV2SessionMetadata && !IsSpeakV2SpeakV2ConfigureSuccess && !IsSpeakV2SpeakV2ConfigureFailure && !IsSpeakV2SpeakV2Warning && !IsSpeakV2SpeakV2Error || !IsSpeakV2SpeakV2Audio && !IsSpeakV2SpeakV2Connected && !IsSpeakV2SpeakV2SpeechStarted && !IsSpeakV2SpeakV2SpeechMetadata && IsSpeakV2SpeakV2SpeechInterrupted && !IsSpeakV2SpeakV2Flushed && !IsSpeakV2SpeakV2SessionMetadata && !IsSpeakV2SpeakV2ConfigureSuccess && !IsSpeakV2SpeakV2ConfigureFailure && !IsSpeakV2SpeakV2Warning && !IsSpeakV2SpeakV2Error || !IsSpeakV2SpeakV2Audio && !IsSpeakV2SpeakV2Connected && !IsSpeakV2SpeakV2SpeechStarted && !IsSpeakV2SpeakV2SpeechMetadata && !IsSpeakV2SpeakV2SpeechInterrupted && IsSpeakV2SpeakV2Flushed && !IsSpeakV2SpeakV2SessionMetadata && !IsSpeakV2SpeakV2ConfigureSuccess && !IsSpeakV2SpeakV2ConfigureFailure && !IsSpeakV2SpeakV2Warning && !IsSpeakV2SpeakV2Error || !IsSpeakV2SpeakV2Audio && !IsSpeakV2SpeakV2Connected && !IsSpeakV2SpeakV2SpeechStarted && !IsSpeakV2SpeakV2SpeechMetadata && !IsSpeakV2SpeakV2SpeechInterrupted && !IsSpeakV2SpeakV2Flushed && IsSpeakV2SpeakV2SessionMetadata && !IsSpeakV2SpeakV2ConfigureSuccess && !IsSpeakV2SpeakV2ConfigureFailure && !IsSpeakV2SpeakV2Warning && !IsSpeakV2SpeakV2Error || !IsSpeakV2SpeakV2Audio && !IsSpeakV2SpeakV2Connected && !IsSpeakV2SpeakV2SpeechStarted && !IsSpeakV2SpeakV2SpeechMetadata && !IsSpeakV2SpeakV2SpeechInterrupted && !IsSpeakV2SpeakV2Flushed && !IsSpeakV2SpeakV2SessionMetadata && IsSpeakV2SpeakV2ConfigureSuccess && !IsSpeakV2SpeakV2ConfigureFailure && !IsSpeakV2SpeakV2Warning && !IsSpeakV2SpeakV2Error || !IsSpeakV2SpeakV2Audio && !IsSpeakV2SpeakV2Connected && !IsSpeakV2SpeakV2SpeechStarted && !IsSpeakV2SpeakV2SpeechMetadata && !IsSpeakV2SpeakV2SpeechInterrupted && !IsSpeakV2SpeakV2Flushed && !IsSpeakV2SpeakV2SessionMetadata && !IsSpeakV2SpeakV2ConfigureSuccess && IsSpeakV2SpeakV2ConfigureFailure && !IsSpeakV2SpeakV2Warning && !IsSpeakV2SpeakV2Error || !IsSpeakV2SpeakV2Audio && !IsSpeakV2SpeakV2Connected && !IsSpeakV2SpeakV2SpeechStarted && !IsSpeakV2SpeakV2SpeechMetadata && !IsSpeakV2SpeakV2SpeechInterrupted && !IsSpeakV2SpeakV2Flushed && !IsSpeakV2SpeakV2SessionMetadata && !IsSpeakV2SpeakV2ConfigureSuccess && !IsSpeakV2SpeakV2ConfigureFailure && IsSpeakV2SpeakV2Warning && !IsSpeakV2SpeakV2Error || !IsSpeakV2SpeakV2Audio && !IsSpeakV2SpeakV2Connected && !IsSpeakV2SpeakV2SpeechStarted && !IsSpeakV2SpeakV2SpeechMetadata && !IsSpeakV2SpeakV2SpeechInterrupted && !IsSpeakV2SpeakV2Flushed && !IsSpeakV2SpeakV2SessionMetadata && !IsSpeakV2SpeakV2ConfigureSuccess && !IsSpeakV2SpeakV2ConfigureFailure && !IsSpeakV2SpeakV2Warning && IsSpeakV2SpeakV2Error;
+            return IsSpeakV2SpeakV2Audio && !IsConnected && !IsSpeechStarted && !IsSpeechMetadata && !IsSpeechInterrupted && !IsFlushed && !IsSessionMetadata && !IsConfigureSuccess && !IsConfigureFailure && !IsWarning && !IsError || !IsSpeakV2SpeakV2Audio && IsConnected && !IsSpeechStarted && !IsSpeechMetadata && !IsSpeechInterrupted && !IsFlushed && !IsSessionMetadata && !IsConfigureSuccess && !IsConfigureFailure && !IsWarning && !IsError || !IsSpeakV2SpeakV2Audio && !IsConnected && IsSpeechStarted && !IsSpeechMetadata && !IsSpeechInterrupted && !IsFlushed && !IsSessionMetadata && !IsConfigureSuccess && !IsConfigureFailure && !IsWarning && !IsError || !IsSpeakV2SpeakV2Audio && !IsConnected && !IsSpeechStarted && IsSpeechMetadata && !IsSpeechInterrupted && !IsFlushed && !IsSessionMetadata && !IsConfigureSuccess && !IsConfigureFailure && !IsWarning && !IsError || !IsSpeakV2SpeakV2Audio && !IsConnected && !IsSpeechStarted && !IsSpeechMetadata && IsSpeechInterrupted && !IsFlushed && !IsSessionMetadata && !IsConfigureSuccess && !IsConfigureFailure && !IsWarning && !IsError || !IsSpeakV2SpeakV2Audio && !IsConnected && !IsSpeechStarted && !IsSpeechMetadata && !IsSpeechInterrupted && IsFlushed && !IsSessionMetadata && !IsConfigureSuccess && !IsConfigureFailure && !IsWarning && !IsError || !IsSpeakV2SpeakV2Audio && !IsConnected && !IsSpeechStarted && !IsSpeechMetadata && !IsSpeechInterrupted && !IsFlushed && IsSessionMetadata && !IsConfigureSuccess && !IsConfigureFailure && !IsWarning && !IsError || !IsSpeakV2SpeakV2Audio && !IsConnected && !IsSpeechStarted && !IsSpeechMetadata && !IsSpeechInterrupted && !IsFlushed && !IsSessionMetadata && IsConfigureSuccess && !IsConfigureFailure && !IsWarning && !IsError || !IsSpeakV2SpeakV2Audio && !IsConnected && !IsSpeechStarted && !IsSpeechMetadata && !IsSpeechInterrupted && !IsFlushed && !IsSessionMetadata && !IsConfigureSuccess && IsConfigureFailure && !IsWarning && !IsError || !IsSpeakV2SpeakV2Audio && !IsConnected && !IsSpeechStarted && !IsSpeechMetadata && !IsSpeechInterrupted && !IsFlushed && !IsSessionMetadata && !IsConfigureSuccess && !IsConfigureFailure && IsWarning && !IsError || !IsSpeakV2SpeakV2Audio && !IsConnected && !IsSpeechStarted && !IsSpeechMetadata && !IsSpeechInterrupted && !IsFlushed && !IsSessionMetadata && !IsConfigureSuccess && !IsConfigureFailure && !IsWarning && IsError;
         }
 
         /// <summary>
@@ -745,16 +745,16 @@ namespace Deepgram.Realtime
         /// </summary>
         public TResult? Match<TResult>(
             global::System.Func<byte[], TResult>? speakV2SpeakV2Audio = null,
-            global::System.Func<global::Deepgram.Realtime.SpeakV2SpeakV2Connected, TResult>? speakV2SpeakV2Connected = null,
-            global::System.Func<global::Deepgram.Realtime.SpeakV2SpeakV2SpeechStarted, TResult>? speakV2SpeakV2SpeechStarted = null,
-            global::System.Func<global::Deepgram.Realtime.SpeakV2SpeakV2SpeechMetadata, TResult>? speakV2SpeakV2SpeechMetadata = null,
-            global::System.Func<global::Deepgram.Realtime.SpeakV2SpeakV2SpeechInterrupted, TResult>? speakV2SpeakV2SpeechInterrupted = null,
-            global::System.Func<global::Deepgram.Realtime.SpeakV2SpeakV2Flushed, TResult>? speakV2SpeakV2Flushed = null,
-            global::System.Func<global::Deepgram.Realtime.SpeakV2SpeakV2SessionMetadata, TResult>? speakV2SpeakV2SessionMetadata = null,
-            global::System.Func<global::Deepgram.Realtime.SpeakV2SpeakV2ConfigureSuccess, TResult>? speakV2SpeakV2ConfigureSuccess = null,
-            global::System.Func<global::Deepgram.Realtime.SpeakV2SpeakV2ConfigureFailure, TResult>? speakV2SpeakV2ConfigureFailure = null,
-            global::System.Func<global::Deepgram.Realtime.SpeakV2SpeakV2Warning, TResult>? speakV2SpeakV2Warning = null,
-            global::System.Func<global::Deepgram.Realtime.SpeakV2SpeakV2Error, TResult>? speakV2SpeakV2Error = null,
+            global::System.Func<global::Deepgram.Realtime.SpeakV2SpeakV2Connected, TResult>? connected = null,
+            global::System.Func<global::Deepgram.Realtime.SpeakV2SpeakV2SpeechStarted, TResult>? speechStarted = null,
+            global::System.Func<global::Deepgram.Realtime.SpeakV2SpeakV2SpeechMetadata, TResult>? speechMetadata = null,
+            global::System.Func<global::Deepgram.Realtime.SpeakV2SpeakV2SpeechInterrupted, TResult>? speechInterrupted = null,
+            global::System.Func<global::Deepgram.Realtime.SpeakV2SpeakV2Flushed, TResult>? flushed = null,
+            global::System.Func<global::Deepgram.Realtime.SpeakV2SpeakV2SessionMetadata, TResult>? sessionMetadata = null,
+            global::System.Func<global::Deepgram.Realtime.SpeakV2SpeakV2ConfigureSuccess, TResult>? configureSuccess = null,
+            global::System.Func<global::Deepgram.Realtime.SpeakV2SpeakV2ConfigureFailure, TResult>? configureFailure = null,
+            global::System.Func<global::Deepgram.Realtime.SpeakV2SpeakV2Warning, TResult>? warning = null,
+            global::System.Func<global::Deepgram.Realtime.SpeakV2SpeakV2Error, TResult>? error = null,
             bool validate = true)
         {
             if (validate)
@@ -766,45 +766,45 @@ namespace Deepgram.Realtime
             {
                 return speakV2SpeakV2Audio(__value0);
             }
-            else if (SpeakV2SpeakV2Connected is { } __value1 && speakV2SpeakV2Connected != null)
+            else if (Connected is { } __value1 && connected != null)
             {
-                return speakV2SpeakV2Connected(__value1);
+                return connected(__value1);
             }
-            else if (SpeakV2SpeakV2SpeechStarted is { } __value2 && speakV2SpeakV2SpeechStarted != null)
+            else if (SpeechStarted is { } __value2 && speechStarted != null)
             {
-                return speakV2SpeakV2SpeechStarted(__value2);
+                return speechStarted(__value2);
             }
-            else if (SpeakV2SpeakV2SpeechMetadata is { } __value3 && speakV2SpeakV2SpeechMetadata != null)
+            else if (SpeechMetadata is { } __value3 && speechMetadata != null)
             {
-                return speakV2SpeakV2SpeechMetadata(__value3);
+                return speechMetadata(__value3);
             }
-            else if (SpeakV2SpeakV2SpeechInterrupted is { } __value4 && speakV2SpeakV2SpeechInterrupted != null)
+            else if (SpeechInterrupted is { } __value4 && speechInterrupted != null)
             {
-                return speakV2SpeakV2SpeechInterrupted(__value4);
+                return speechInterrupted(__value4);
             }
-            else if (SpeakV2SpeakV2Flushed is { } __value5 && speakV2SpeakV2Flushed != null)
+            else if (Flushed is { } __value5 && flushed != null)
             {
-                return speakV2SpeakV2Flushed(__value5);
+                return flushed(__value5);
             }
-            else if (SpeakV2SpeakV2SessionMetadata is { } __value6 && speakV2SpeakV2SessionMetadata != null)
+            else if (SessionMetadata is { } __value6 && sessionMetadata != null)
             {
-                return speakV2SpeakV2SessionMetadata(__value6);
+                return sessionMetadata(__value6);
             }
-            else if (SpeakV2SpeakV2ConfigureSuccess is { } __value7 && speakV2SpeakV2ConfigureSuccess != null)
+            else if (ConfigureSuccess is { } __value7 && configureSuccess != null)
             {
-                return speakV2SpeakV2ConfigureSuccess(__value7);
+                return configureSuccess(__value7);
             }
-            else if (SpeakV2SpeakV2ConfigureFailure is { } __value8 && speakV2SpeakV2ConfigureFailure != null)
+            else if (ConfigureFailure is { } __value8 && configureFailure != null)
             {
-                return speakV2SpeakV2ConfigureFailure(__value8);
+                return configureFailure(__value8);
             }
-            else if (SpeakV2SpeakV2Warning is { } __value9 && speakV2SpeakV2Warning != null)
+            else if (Warning is { } __value9 && warning != null)
             {
-                return speakV2SpeakV2Warning(__value9);
+                return warning(__value9);
             }
-            else if (SpeakV2SpeakV2Error is { } __value10 && speakV2SpeakV2Error != null)
+            else if (Error is { } __value10 && error != null)
             {
-                return speakV2SpeakV2Error(__value10);
+                return error(__value10);
             }
 
             return default(TResult);
@@ -816,25 +816,25 @@ namespace Deepgram.Realtime
         public void Match(
             global::System.Action<byte[]>? speakV2SpeakV2Audio = null,
 
-            global::System.Action<global::Deepgram.Realtime.SpeakV2SpeakV2Connected>? speakV2SpeakV2Connected = null,
+            global::System.Action<global::Deepgram.Realtime.SpeakV2SpeakV2Connected>? connected = null,
 
-            global::System.Action<global::Deepgram.Realtime.SpeakV2SpeakV2SpeechStarted>? speakV2SpeakV2SpeechStarted = null,
+            global::System.Action<global::Deepgram.Realtime.SpeakV2SpeakV2SpeechStarted>? speechStarted = null,
 
-            global::System.Action<global::Deepgram.Realtime.SpeakV2SpeakV2SpeechMetadata>? speakV2SpeakV2SpeechMetadata = null,
+            global::System.Action<global::Deepgram.Realtime.SpeakV2SpeakV2SpeechMetadata>? speechMetadata = null,
 
-            global::System.Action<global::Deepgram.Realtime.SpeakV2SpeakV2SpeechInterrupted>? speakV2SpeakV2SpeechInterrupted = null,
+            global::System.Action<global::Deepgram.Realtime.SpeakV2SpeakV2SpeechInterrupted>? speechInterrupted = null,
 
-            global::System.Action<global::Deepgram.Realtime.SpeakV2SpeakV2Flushed>? speakV2SpeakV2Flushed = null,
+            global::System.Action<global::Deepgram.Realtime.SpeakV2SpeakV2Flushed>? flushed = null,
 
-            global::System.Action<global::Deepgram.Realtime.SpeakV2SpeakV2SessionMetadata>? speakV2SpeakV2SessionMetadata = null,
+            global::System.Action<global::Deepgram.Realtime.SpeakV2SpeakV2SessionMetadata>? sessionMetadata = null,
 
-            global::System.Action<global::Deepgram.Realtime.SpeakV2SpeakV2ConfigureSuccess>? speakV2SpeakV2ConfigureSuccess = null,
+            global::System.Action<global::Deepgram.Realtime.SpeakV2SpeakV2ConfigureSuccess>? configureSuccess = null,
 
-            global::System.Action<global::Deepgram.Realtime.SpeakV2SpeakV2ConfigureFailure>? speakV2SpeakV2ConfigureFailure = null,
+            global::System.Action<global::Deepgram.Realtime.SpeakV2SpeakV2ConfigureFailure>? configureFailure = null,
 
-            global::System.Action<global::Deepgram.Realtime.SpeakV2SpeakV2Warning>? speakV2SpeakV2Warning = null,
+            global::System.Action<global::Deepgram.Realtime.SpeakV2SpeakV2Warning>? warning = null,
 
-            global::System.Action<global::Deepgram.Realtime.SpeakV2SpeakV2Error>? speakV2SpeakV2Error = null,
+            global::System.Action<global::Deepgram.Realtime.SpeakV2SpeakV2Error>? error = null,
             bool validate = true)
         {
             if (validate)
@@ -846,45 +846,45 @@ namespace Deepgram.Realtime
             {
                 speakV2SpeakV2Audio?.Invoke(__value0);
             }
-            else if (SpeakV2SpeakV2Connected is { } __value1)
+            else if (Connected is { } __value1)
             {
-                speakV2SpeakV2Connected?.Invoke(__value1);
+                connected?.Invoke(__value1);
             }
-            else if (SpeakV2SpeakV2SpeechStarted is { } __value2)
+            else if (SpeechStarted is { } __value2)
             {
-                speakV2SpeakV2SpeechStarted?.Invoke(__value2);
+                speechStarted?.Invoke(__value2);
             }
-            else if (SpeakV2SpeakV2SpeechMetadata is { } __value3)
+            else if (SpeechMetadata is { } __value3)
             {
-                speakV2SpeakV2SpeechMetadata?.Invoke(__value3);
+                speechMetadata?.Invoke(__value3);
             }
-            else if (SpeakV2SpeakV2SpeechInterrupted is { } __value4)
+            else if (SpeechInterrupted is { } __value4)
             {
-                speakV2SpeakV2SpeechInterrupted?.Invoke(__value4);
+                speechInterrupted?.Invoke(__value4);
             }
-            else if (SpeakV2SpeakV2Flushed is { } __value5)
+            else if (Flushed is { } __value5)
             {
-                speakV2SpeakV2Flushed?.Invoke(__value5);
+                flushed?.Invoke(__value5);
             }
-            else if (SpeakV2SpeakV2SessionMetadata is { } __value6)
+            else if (SessionMetadata is { } __value6)
             {
-                speakV2SpeakV2SessionMetadata?.Invoke(__value6);
+                sessionMetadata?.Invoke(__value6);
             }
-            else if (SpeakV2SpeakV2ConfigureSuccess is { } __value7)
+            else if (ConfigureSuccess is { } __value7)
             {
-                speakV2SpeakV2ConfigureSuccess?.Invoke(__value7);
+                configureSuccess?.Invoke(__value7);
             }
-            else if (SpeakV2SpeakV2ConfigureFailure is { } __value8)
+            else if (ConfigureFailure is { } __value8)
             {
-                speakV2SpeakV2ConfigureFailure?.Invoke(__value8);
+                configureFailure?.Invoke(__value8);
             }
-            else if (SpeakV2SpeakV2Warning is { } __value9)
+            else if (Warning is { } __value9)
             {
-                speakV2SpeakV2Warning?.Invoke(__value9);
+                warning?.Invoke(__value9);
             }
-            else if (SpeakV2SpeakV2Error is { } __value10)
+            else if (Error is { } __value10)
             {
-                speakV2SpeakV2Error?.Invoke(__value10);
+                error?.Invoke(__value10);
             }
         }
 
@@ -893,16 +893,16 @@ namespace Deepgram.Realtime
         /// </summary>
         public void Switch(
             global::System.Action<byte[]>? speakV2SpeakV2Audio = null,
-            global::System.Action<global::Deepgram.Realtime.SpeakV2SpeakV2Connected>? speakV2SpeakV2Connected = null,
-            global::System.Action<global::Deepgram.Realtime.SpeakV2SpeakV2SpeechStarted>? speakV2SpeakV2SpeechStarted = null,
-            global::System.Action<global::Deepgram.Realtime.SpeakV2SpeakV2SpeechMetadata>? speakV2SpeakV2SpeechMetadata = null,
-            global::System.Action<global::Deepgram.Realtime.SpeakV2SpeakV2SpeechInterrupted>? speakV2SpeakV2SpeechInterrupted = null,
-            global::System.Action<global::Deepgram.Realtime.SpeakV2SpeakV2Flushed>? speakV2SpeakV2Flushed = null,
-            global::System.Action<global::Deepgram.Realtime.SpeakV2SpeakV2SessionMetadata>? speakV2SpeakV2SessionMetadata = null,
-            global::System.Action<global::Deepgram.Realtime.SpeakV2SpeakV2ConfigureSuccess>? speakV2SpeakV2ConfigureSuccess = null,
-            global::System.Action<global::Deepgram.Realtime.SpeakV2SpeakV2ConfigureFailure>? speakV2SpeakV2ConfigureFailure = null,
-            global::System.Action<global::Deepgram.Realtime.SpeakV2SpeakV2Warning>? speakV2SpeakV2Warning = null,
-            global::System.Action<global::Deepgram.Realtime.SpeakV2SpeakV2Error>? speakV2SpeakV2Error = null,
+            global::System.Action<global::Deepgram.Realtime.SpeakV2SpeakV2Connected>? connected = null,
+            global::System.Action<global::Deepgram.Realtime.SpeakV2SpeakV2SpeechStarted>? speechStarted = null,
+            global::System.Action<global::Deepgram.Realtime.SpeakV2SpeakV2SpeechMetadata>? speechMetadata = null,
+            global::System.Action<global::Deepgram.Realtime.SpeakV2SpeakV2SpeechInterrupted>? speechInterrupted = null,
+            global::System.Action<global::Deepgram.Realtime.SpeakV2SpeakV2Flushed>? flushed = null,
+            global::System.Action<global::Deepgram.Realtime.SpeakV2SpeakV2SessionMetadata>? sessionMetadata = null,
+            global::System.Action<global::Deepgram.Realtime.SpeakV2SpeakV2ConfigureSuccess>? configureSuccess = null,
+            global::System.Action<global::Deepgram.Realtime.SpeakV2SpeakV2ConfigureFailure>? configureFailure = null,
+            global::System.Action<global::Deepgram.Realtime.SpeakV2SpeakV2Warning>? warning = null,
+            global::System.Action<global::Deepgram.Realtime.SpeakV2SpeakV2Error>? error = null,
             bool validate = true)
         {
             if (validate)
@@ -914,45 +914,45 @@ namespace Deepgram.Realtime
             {
                 speakV2SpeakV2Audio?.Invoke(__value0);
             }
-            else if (SpeakV2SpeakV2Connected is { } __value1)
+            else if (Connected is { } __value1)
             {
-                speakV2SpeakV2Connected?.Invoke(__value1);
+                connected?.Invoke(__value1);
             }
-            else if (SpeakV2SpeakV2SpeechStarted is { } __value2)
+            else if (SpeechStarted is { } __value2)
             {
-                speakV2SpeakV2SpeechStarted?.Invoke(__value2);
+                speechStarted?.Invoke(__value2);
             }
-            else if (SpeakV2SpeakV2SpeechMetadata is { } __value3)
+            else if (SpeechMetadata is { } __value3)
             {
-                speakV2SpeakV2SpeechMetadata?.Invoke(__value3);
+                speechMetadata?.Invoke(__value3);
             }
-            else if (SpeakV2SpeakV2SpeechInterrupted is { } __value4)
+            else if (SpeechInterrupted is { } __value4)
             {
-                speakV2SpeakV2SpeechInterrupted?.Invoke(__value4);
+                speechInterrupted?.Invoke(__value4);
             }
-            else if (SpeakV2SpeakV2Flushed is { } __value5)
+            else if (Flushed is { } __value5)
             {
-                speakV2SpeakV2Flushed?.Invoke(__value5);
+                flushed?.Invoke(__value5);
             }
-            else if (SpeakV2SpeakV2SessionMetadata is { } __value6)
+            else if (SessionMetadata is { } __value6)
             {
-                speakV2SpeakV2SessionMetadata?.Invoke(__value6);
+                sessionMetadata?.Invoke(__value6);
             }
-            else if (SpeakV2SpeakV2ConfigureSuccess is { } __value7)
+            else if (ConfigureSuccess is { } __value7)
             {
-                speakV2SpeakV2ConfigureSuccess?.Invoke(__value7);
+                configureSuccess?.Invoke(__value7);
             }
-            else if (SpeakV2SpeakV2ConfigureFailure is { } __value8)
+            else if (ConfigureFailure is { } __value8)
             {
-                speakV2SpeakV2ConfigureFailure?.Invoke(__value8);
+                configureFailure?.Invoke(__value8);
             }
-            else if (SpeakV2SpeakV2Warning is { } __value9)
+            else if (Warning is { } __value9)
             {
-                speakV2SpeakV2Warning?.Invoke(__value9);
+                warning?.Invoke(__value9);
             }
-            else if (SpeakV2SpeakV2Error is { } __value10)
+            else if (Error is { } __value10)
             {
-                speakV2SpeakV2Error?.Invoke(__value10);
+                error?.Invoke(__value10);
             }
         }
 
@@ -965,25 +965,25 @@ namespace Deepgram.Realtime
             {
                 SpeakV2SpeakV2Audio,
                 typeof(byte[]),
-                SpeakV2SpeakV2Connected,
+                Connected,
                 typeof(global::Deepgram.Realtime.SpeakV2SpeakV2Connected),
-                SpeakV2SpeakV2SpeechStarted,
+                SpeechStarted,
                 typeof(global::Deepgram.Realtime.SpeakV2SpeakV2SpeechStarted),
-                SpeakV2SpeakV2SpeechMetadata,
+                SpeechMetadata,
                 typeof(global::Deepgram.Realtime.SpeakV2SpeakV2SpeechMetadata),
-                SpeakV2SpeakV2SpeechInterrupted,
+                SpeechInterrupted,
                 typeof(global::Deepgram.Realtime.SpeakV2SpeakV2SpeechInterrupted),
-                SpeakV2SpeakV2Flushed,
+                Flushed,
                 typeof(global::Deepgram.Realtime.SpeakV2SpeakV2Flushed),
-                SpeakV2SpeakV2SessionMetadata,
+                SessionMetadata,
                 typeof(global::Deepgram.Realtime.SpeakV2SpeakV2SessionMetadata),
-                SpeakV2SpeakV2ConfigureSuccess,
+                ConfigureSuccess,
                 typeof(global::Deepgram.Realtime.SpeakV2SpeakV2ConfigureSuccess),
-                SpeakV2SpeakV2ConfigureFailure,
+                ConfigureFailure,
                 typeof(global::Deepgram.Realtime.SpeakV2SpeakV2ConfigureFailure),
-                SpeakV2SpeakV2Warning,
+                Warning,
                 typeof(global::Deepgram.Realtime.SpeakV2SpeakV2Warning),
-                SpeakV2SpeakV2Error,
+                Error,
                 typeof(global::Deepgram.Realtime.SpeakV2SpeakV2Error),
             };
             const int offset = unchecked((int)2166136261);
@@ -1002,16 +1002,16 @@ namespace Deepgram.Realtime
         {
             return
                 global::System.Collections.Generic.EqualityComparer<byte[]?>.Default.Equals(SpeakV2SpeakV2Audio, other.SpeakV2SpeakV2Audio) &&
-                global::System.Collections.Generic.EqualityComparer<global::Deepgram.Realtime.SpeakV2SpeakV2Connected?>.Default.Equals(SpeakV2SpeakV2Connected, other.SpeakV2SpeakV2Connected) &&
-                global::System.Collections.Generic.EqualityComparer<global::Deepgram.Realtime.SpeakV2SpeakV2SpeechStarted?>.Default.Equals(SpeakV2SpeakV2SpeechStarted, other.SpeakV2SpeakV2SpeechStarted) &&
-                global::System.Collections.Generic.EqualityComparer<global::Deepgram.Realtime.SpeakV2SpeakV2SpeechMetadata?>.Default.Equals(SpeakV2SpeakV2SpeechMetadata, other.SpeakV2SpeakV2SpeechMetadata) &&
-                global::System.Collections.Generic.EqualityComparer<global::Deepgram.Realtime.SpeakV2SpeakV2SpeechInterrupted?>.Default.Equals(SpeakV2SpeakV2SpeechInterrupted, other.SpeakV2SpeakV2SpeechInterrupted) &&
-                global::System.Collections.Generic.EqualityComparer<global::Deepgram.Realtime.SpeakV2SpeakV2Flushed?>.Default.Equals(SpeakV2SpeakV2Flushed, other.SpeakV2SpeakV2Flushed) &&
-                global::System.Collections.Generic.EqualityComparer<global::Deepgram.Realtime.SpeakV2SpeakV2SessionMetadata?>.Default.Equals(SpeakV2SpeakV2SessionMetadata, other.SpeakV2SpeakV2SessionMetadata) &&
-                global::System.Collections.Generic.EqualityComparer<global::Deepgram.Realtime.SpeakV2SpeakV2ConfigureSuccess?>.Default.Equals(SpeakV2SpeakV2ConfigureSuccess, other.SpeakV2SpeakV2ConfigureSuccess) &&
-                global::System.Collections.Generic.EqualityComparer<global::Deepgram.Realtime.SpeakV2SpeakV2ConfigureFailure?>.Default.Equals(SpeakV2SpeakV2ConfigureFailure, other.SpeakV2SpeakV2ConfigureFailure) &&
-                global::System.Collections.Generic.EqualityComparer<global::Deepgram.Realtime.SpeakV2SpeakV2Warning?>.Default.Equals(SpeakV2SpeakV2Warning, other.SpeakV2SpeakV2Warning) &&
-                global::System.Collections.Generic.EqualityComparer<global::Deepgram.Realtime.SpeakV2SpeakV2Error?>.Default.Equals(SpeakV2SpeakV2Error, other.SpeakV2SpeakV2Error)
+                global::System.Collections.Generic.EqualityComparer<global::Deepgram.Realtime.SpeakV2SpeakV2Connected?>.Default.Equals(Connected, other.Connected) &&
+                global::System.Collections.Generic.EqualityComparer<global::Deepgram.Realtime.SpeakV2SpeakV2SpeechStarted?>.Default.Equals(SpeechStarted, other.SpeechStarted) &&
+                global::System.Collections.Generic.EqualityComparer<global::Deepgram.Realtime.SpeakV2SpeakV2SpeechMetadata?>.Default.Equals(SpeechMetadata, other.SpeechMetadata) &&
+                global::System.Collections.Generic.EqualityComparer<global::Deepgram.Realtime.SpeakV2SpeakV2SpeechInterrupted?>.Default.Equals(SpeechInterrupted, other.SpeechInterrupted) &&
+                global::System.Collections.Generic.EqualityComparer<global::Deepgram.Realtime.SpeakV2SpeakV2Flushed?>.Default.Equals(Flushed, other.Flushed) &&
+                global::System.Collections.Generic.EqualityComparer<global::Deepgram.Realtime.SpeakV2SpeakV2SessionMetadata?>.Default.Equals(SessionMetadata, other.SessionMetadata) &&
+                global::System.Collections.Generic.EqualityComparer<global::Deepgram.Realtime.SpeakV2SpeakV2ConfigureSuccess?>.Default.Equals(ConfigureSuccess, other.ConfigureSuccess) &&
+                global::System.Collections.Generic.EqualityComparer<global::Deepgram.Realtime.SpeakV2SpeakV2ConfigureFailure?>.Default.Equals(ConfigureFailure, other.ConfigureFailure) &&
+                global::System.Collections.Generic.EqualityComparer<global::Deepgram.Realtime.SpeakV2SpeakV2Warning?>.Default.Equals(Warning, other.Warning) &&
+                global::System.Collections.Generic.EqualityComparer<global::Deepgram.Realtime.SpeakV2SpeakV2Error?>.Default.Equals(Error, other.Error)
                 ;
         }
 

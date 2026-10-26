@@ -13,75 +13,75 @@ namespace Deepgram.Realtime
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        public global::Deepgram.Realtime.AgentV1AgentV1ListenUpdated? AgentV1AgentV1ListenUpdated { get; init; }
+        public global::Deepgram.Realtime.AgentV1AgentV1ListenUpdated? ListenUpdated { get; init; }
 #else
-        public global::Deepgram.Realtime.AgentV1AgentV1ListenUpdated? AgentV1AgentV1ListenUpdated { get; }
+        public global::Deepgram.Realtime.AgentV1AgentV1ListenUpdated? ListenUpdated { get; }
 #endif
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(AgentV1AgentV1ListenUpdated))]
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(ListenUpdated))]
 #endif
-        public bool IsAgentV1AgentV1ListenUpdated => AgentV1AgentV1ListenUpdated != null;
+        public bool IsListenUpdated => ListenUpdated != null;
 
         /// <summary>
         ///
         /// </summary>
-        public bool TryPickAgentV1AgentV1ListenUpdated(
+        public bool TryPickListenUpdated(
 #if NET6_0_OR_GREATER
             [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
 #endif
             out global::Deepgram.Realtime.AgentV1AgentV1ListenUpdated? value)
         {
-            value = AgentV1AgentV1ListenUpdated;
-            return IsAgentV1AgentV1ListenUpdated;
+            value = ListenUpdated;
+            return IsListenUpdated;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.AgentV1AgentV1ListenUpdated PickAgentV1AgentV1ListenUpdated() => AgentV1AgentV1ListenUpdated is { } value
+        public global::Deepgram.Realtime.AgentV1AgentV1ListenUpdated PickListenUpdated() => ListenUpdated is { } value
             ? value
-            : throw new global::System.InvalidOperationException($"Expected union variant 'AgentV1AgentV1ListenUpdated' but the value was {ToString()}.");
+            : throw new global::System.InvalidOperationException($"Expected union variant 'ListenUpdated' but the value was {ToString()}.");
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        public global::Deepgram.Realtime.AgentV1AgentV1ThinkUpdated? AgentV1AgentV1ThinkUpdated { get; init; }
+        public global::Deepgram.Realtime.AgentV1AgentV1ThinkUpdated? ThinkUpdated { get; init; }
 #else
-        public global::Deepgram.Realtime.AgentV1AgentV1ThinkUpdated? AgentV1AgentV1ThinkUpdated { get; }
+        public global::Deepgram.Realtime.AgentV1AgentV1ThinkUpdated? ThinkUpdated { get; }
 #endif
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(AgentV1AgentV1ThinkUpdated))]
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(ThinkUpdated))]
 #endif
-        public bool IsAgentV1AgentV1ThinkUpdated => AgentV1AgentV1ThinkUpdated != null;
+        public bool IsThinkUpdated => ThinkUpdated != null;
 
         /// <summary>
         ///
         /// </summary>
-        public bool TryPickAgentV1AgentV1ThinkUpdated(
+        public bool TryPickThinkUpdated(
 #if NET6_0_OR_GREATER
             [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
 #endif
             out global::Deepgram.Realtime.AgentV1AgentV1ThinkUpdated? value)
         {
-            value = AgentV1AgentV1ThinkUpdated;
-            return IsAgentV1AgentV1ThinkUpdated;
+            value = ThinkUpdated;
+            return IsThinkUpdated;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.AgentV1AgentV1ThinkUpdated PickAgentV1AgentV1ThinkUpdated() => AgentV1AgentV1ThinkUpdated is { } value
+        public global::Deepgram.Realtime.AgentV1AgentV1ThinkUpdated PickThinkUpdated() => ThinkUpdated is { } value
             ? value
-            : throw new global::System.InvalidOperationException($"Expected union variant 'AgentV1AgentV1ThinkUpdated' but the value was {ToString()}.");
+            : throw new global::System.InvalidOperationException($"Expected union variant 'ThinkUpdated' but the value was {ToString()}.");
 
         /// <summary>
         /// Function call response message used bidirectionally:<br/>
@@ -93,556 +93,556 @@ namespace Deepgram.Realtime
         /// interface for function call responses regardless of execution location.
         /// </summary>
 #if NET6_0_OR_GREATER
-        public global::Deepgram.Realtime.AgentV1AgentV1ReceiveFunctionCallResponse? AgentV1AgentV1ReceiveFunctionCallResponse { get; init; }
+        public global::Deepgram.Realtime.AgentV1AgentV1ReceiveFunctionCallResponse? FunctionCallResponse { get; init; }
 #else
-        public global::Deepgram.Realtime.AgentV1AgentV1ReceiveFunctionCallResponse? AgentV1AgentV1ReceiveFunctionCallResponse { get; }
+        public global::Deepgram.Realtime.AgentV1AgentV1ReceiveFunctionCallResponse? FunctionCallResponse { get; }
 #endif
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(AgentV1AgentV1ReceiveFunctionCallResponse))]
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(FunctionCallResponse))]
 #endif
-        public bool IsAgentV1AgentV1ReceiveFunctionCallResponse => AgentV1AgentV1ReceiveFunctionCallResponse != null;
+        public bool IsFunctionCallResponse => FunctionCallResponse != null;
 
         /// <summary>
         ///
         /// </summary>
-        public bool TryPickAgentV1AgentV1ReceiveFunctionCallResponse(
+        public bool TryPickFunctionCallResponse(
 #if NET6_0_OR_GREATER
             [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
 #endif
             out global::Deepgram.Realtime.AgentV1AgentV1ReceiveFunctionCallResponse? value)
         {
-            value = AgentV1AgentV1ReceiveFunctionCallResponse;
-            return IsAgentV1AgentV1ReceiveFunctionCallResponse;
+            value = FunctionCallResponse;
+            return IsFunctionCallResponse;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.AgentV1AgentV1ReceiveFunctionCallResponse PickAgentV1AgentV1ReceiveFunctionCallResponse() => AgentV1AgentV1ReceiveFunctionCallResponse is { } value
+        public global::Deepgram.Realtime.AgentV1AgentV1ReceiveFunctionCallResponse PickFunctionCallResponse() => FunctionCallResponse is { } value
             ? value
-            : throw new global::System.InvalidOperationException($"Expected union variant 'AgentV1AgentV1ReceiveFunctionCallResponse' but the value was {ToString()}.");
+            : throw new global::System.InvalidOperationException($"Expected union variant 'FunctionCallResponse' but the value was {ToString()}.");
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        public global::Deepgram.Realtime.AgentV1AgentV1PromptUpdated? AgentV1AgentV1PromptUpdated { get; init; }
+        public global::Deepgram.Realtime.AgentV1AgentV1PromptUpdated? PromptUpdated { get; init; }
 #else
-        public global::Deepgram.Realtime.AgentV1AgentV1PromptUpdated? AgentV1AgentV1PromptUpdated { get; }
+        public global::Deepgram.Realtime.AgentV1AgentV1PromptUpdated? PromptUpdated { get; }
 #endif
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(AgentV1AgentV1PromptUpdated))]
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(PromptUpdated))]
 #endif
-        public bool IsAgentV1AgentV1PromptUpdated => AgentV1AgentV1PromptUpdated != null;
+        public bool IsPromptUpdated => PromptUpdated != null;
 
         /// <summary>
         ///
         /// </summary>
-        public bool TryPickAgentV1AgentV1PromptUpdated(
+        public bool TryPickPromptUpdated(
 #if NET6_0_OR_GREATER
             [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
 #endif
             out global::Deepgram.Realtime.AgentV1AgentV1PromptUpdated? value)
         {
-            value = AgentV1AgentV1PromptUpdated;
-            return IsAgentV1AgentV1PromptUpdated;
+            value = PromptUpdated;
+            return IsPromptUpdated;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.AgentV1AgentV1PromptUpdated PickAgentV1AgentV1PromptUpdated() => AgentV1AgentV1PromptUpdated is { } value
+        public global::Deepgram.Realtime.AgentV1AgentV1PromptUpdated PickPromptUpdated() => PromptUpdated is { } value
             ? value
-            : throw new global::System.InvalidOperationException($"Expected union variant 'AgentV1AgentV1PromptUpdated' but the value was {ToString()}.");
+            : throw new global::System.InvalidOperationException($"Expected union variant 'PromptUpdated' but the value was {ToString()}.");
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        public global::Deepgram.Realtime.AgentV1AgentV1SpeakUpdated? AgentV1AgentV1SpeakUpdated { get; init; }
+        public global::Deepgram.Realtime.AgentV1AgentV1SpeakUpdated? SpeakUpdated { get; init; }
 #else
-        public global::Deepgram.Realtime.AgentV1AgentV1SpeakUpdated? AgentV1AgentV1SpeakUpdated { get; }
+        public global::Deepgram.Realtime.AgentV1AgentV1SpeakUpdated? SpeakUpdated { get; }
 #endif
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(AgentV1AgentV1SpeakUpdated))]
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(SpeakUpdated))]
 #endif
-        public bool IsAgentV1AgentV1SpeakUpdated => AgentV1AgentV1SpeakUpdated != null;
+        public bool IsSpeakUpdated => SpeakUpdated != null;
 
         /// <summary>
         ///
         /// </summary>
-        public bool TryPickAgentV1AgentV1SpeakUpdated(
+        public bool TryPickSpeakUpdated(
 #if NET6_0_OR_GREATER
             [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
 #endif
             out global::Deepgram.Realtime.AgentV1AgentV1SpeakUpdated? value)
         {
-            value = AgentV1AgentV1SpeakUpdated;
-            return IsAgentV1AgentV1SpeakUpdated;
+            value = SpeakUpdated;
+            return IsSpeakUpdated;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.AgentV1AgentV1SpeakUpdated PickAgentV1AgentV1SpeakUpdated() => AgentV1AgentV1SpeakUpdated is { } value
+        public global::Deepgram.Realtime.AgentV1AgentV1SpeakUpdated PickSpeakUpdated() => SpeakUpdated is { } value
             ? value
-            : throw new global::System.InvalidOperationException($"Expected union variant 'AgentV1AgentV1SpeakUpdated' but the value was {ToString()}.");
+            : throw new global::System.InvalidOperationException($"Expected union variant 'SpeakUpdated' but the value was {ToString()}.");
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        public global::Deepgram.Realtime.AgentV1AgentV1InjectionRefused? AgentV1AgentV1InjectionRefused { get; init; }
+        public global::Deepgram.Realtime.AgentV1AgentV1InjectionRefused? InjectionRefused { get; init; }
 #else
-        public global::Deepgram.Realtime.AgentV1AgentV1InjectionRefused? AgentV1AgentV1InjectionRefused { get; }
+        public global::Deepgram.Realtime.AgentV1AgentV1InjectionRefused? InjectionRefused { get; }
 #endif
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(AgentV1AgentV1InjectionRefused))]
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(InjectionRefused))]
 #endif
-        public bool IsAgentV1AgentV1InjectionRefused => AgentV1AgentV1InjectionRefused != null;
+        public bool IsInjectionRefused => InjectionRefused != null;
 
         /// <summary>
         ///
         /// </summary>
-        public bool TryPickAgentV1AgentV1InjectionRefused(
+        public bool TryPickInjectionRefused(
 #if NET6_0_OR_GREATER
             [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
 #endif
             out global::Deepgram.Realtime.AgentV1AgentV1InjectionRefused? value)
         {
-            value = AgentV1AgentV1InjectionRefused;
-            return IsAgentV1AgentV1InjectionRefused;
+            value = InjectionRefused;
+            return IsInjectionRefused;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.AgentV1AgentV1InjectionRefused PickAgentV1AgentV1InjectionRefused() => AgentV1AgentV1InjectionRefused is { } value
+        public global::Deepgram.Realtime.AgentV1AgentV1InjectionRefused PickInjectionRefused() => InjectionRefused is { } value
             ? value
-            : throw new global::System.InvalidOperationException($"Expected union variant 'AgentV1AgentV1InjectionRefused' but the value was {ToString()}.");
+            : throw new global::System.InvalidOperationException($"Expected union variant 'InjectionRefused' but the value was {ToString()}.");
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        public global::Deepgram.Realtime.AgentV1AgentV1Welcome? AgentV1AgentV1Welcome { get; init; }
+        public global::Deepgram.Realtime.AgentV1AgentV1Welcome? Welcome { get; init; }
 #else
-        public global::Deepgram.Realtime.AgentV1AgentV1Welcome? AgentV1AgentV1Welcome { get; }
+        public global::Deepgram.Realtime.AgentV1AgentV1Welcome? Welcome { get; }
 #endif
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(AgentV1AgentV1Welcome))]
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Welcome))]
 #endif
-        public bool IsAgentV1AgentV1Welcome => AgentV1AgentV1Welcome != null;
+        public bool IsWelcome => Welcome != null;
 
         /// <summary>
         ///
         /// </summary>
-        public bool TryPickAgentV1AgentV1Welcome(
+        public bool TryPickWelcome(
 #if NET6_0_OR_GREATER
             [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
 #endif
             out global::Deepgram.Realtime.AgentV1AgentV1Welcome? value)
         {
-            value = AgentV1AgentV1Welcome;
-            return IsAgentV1AgentV1Welcome;
+            value = Welcome;
+            return IsWelcome;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.AgentV1AgentV1Welcome PickAgentV1AgentV1Welcome() => AgentV1AgentV1Welcome is { } value
+        public global::Deepgram.Realtime.AgentV1AgentV1Welcome PickWelcome() => Welcome is { } value
             ? value
-            : throw new global::System.InvalidOperationException($"Expected union variant 'AgentV1AgentV1Welcome' but the value was {ToString()}.");
+            : throw new global::System.InvalidOperationException($"Expected union variant 'Welcome' but the value was {ToString()}.");
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        public global::Deepgram.Realtime.AgentV1AgentV1SettingsApplied? AgentV1AgentV1SettingsApplied { get; init; }
+        public global::Deepgram.Realtime.AgentV1AgentV1SettingsApplied? SettingsApplied { get; init; }
 #else
-        public global::Deepgram.Realtime.AgentV1AgentV1SettingsApplied? AgentV1AgentV1SettingsApplied { get; }
+        public global::Deepgram.Realtime.AgentV1AgentV1SettingsApplied? SettingsApplied { get; }
 #endif
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(AgentV1AgentV1SettingsApplied))]
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(SettingsApplied))]
 #endif
-        public bool IsAgentV1AgentV1SettingsApplied => AgentV1AgentV1SettingsApplied != null;
+        public bool IsSettingsApplied => SettingsApplied != null;
 
         /// <summary>
         ///
         /// </summary>
-        public bool TryPickAgentV1AgentV1SettingsApplied(
+        public bool TryPickSettingsApplied(
 #if NET6_0_OR_GREATER
             [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
 #endif
             out global::Deepgram.Realtime.AgentV1AgentV1SettingsApplied? value)
         {
-            value = AgentV1AgentV1SettingsApplied;
-            return IsAgentV1AgentV1SettingsApplied;
+            value = SettingsApplied;
+            return IsSettingsApplied;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.AgentV1AgentV1SettingsApplied PickAgentV1AgentV1SettingsApplied() => AgentV1AgentV1SettingsApplied is { } value
+        public global::Deepgram.Realtime.AgentV1AgentV1SettingsApplied PickSettingsApplied() => SettingsApplied is { } value
             ? value
-            : throw new global::System.InvalidOperationException($"Expected union variant 'AgentV1AgentV1SettingsApplied' but the value was {ToString()}.");
+            : throw new global::System.InvalidOperationException($"Expected union variant 'SettingsApplied' but the value was {ToString()}.");
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        public global::Deepgram.Realtime.AgentV1AgentV1ConversationText? AgentV1AgentV1ConversationText { get; init; }
+        public global::Deepgram.Realtime.AgentV1AgentV1ConversationText? ConversationText { get; init; }
 #else
-        public global::Deepgram.Realtime.AgentV1AgentV1ConversationText? AgentV1AgentV1ConversationText { get; }
+        public global::Deepgram.Realtime.AgentV1AgentV1ConversationText? ConversationText { get; }
 #endif
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(AgentV1AgentV1ConversationText))]
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(ConversationText))]
 #endif
-        public bool IsAgentV1AgentV1ConversationText => AgentV1AgentV1ConversationText != null;
+        public bool IsConversationText => ConversationText != null;
 
         /// <summary>
         ///
         /// </summary>
-        public bool TryPickAgentV1AgentV1ConversationText(
+        public bool TryPickConversationText(
 #if NET6_0_OR_GREATER
             [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
 #endif
             out global::Deepgram.Realtime.AgentV1AgentV1ConversationText? value)
         {
-            value = AgentV1AgentV1ConversationText;
-            return IsAgentV1AgentV1ConversationText;
+            value = ConversationText;
+            return IsConversationText;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.AgentV1AgentV1ConversationText PickAgentV1AgentV1ConversationText() => AgentV1AgentV1ConversationText is { } value
+        public global::Deepgram.Realtime.AgentV1AgentV1ConversationText PickConversationText() => ConversationText is { } value
             ? value
-            : throw new global::System.InvalidOperationException($"Expected union variant 'AgentV1AgentV1ConversationText' but the value was {ToString()}.");
+            : throw new global::System.InvalidOperationException($"Expected union variant 'ConversationText' but the value was {ToString()}.");
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        public global::Deepgram.Realtime.AgentV1AgentV1UserStartedSpeaking? AgentV1AgentV1UserStartedSpeaking { get; init; }
+        public global::Deepgram.Realtime.AgentV1AgentV1UserStartedSpeaking? UserStartedSpeaking { get; init; }
 #else
-        public global::Deepgram.Realtime.AgentV1AgentV1UserStartedSpeaking? AgentV1AgentV1UserStartedSpeaking { get; }
+        public global::Deepgram.Realtime.AgentV1AgentV1UserStartedSpeaking? UserStartedSpeaking { get; }
 #endif
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(AgentV1AgentV1UserStartedSpeaking))]
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(UserStartedSpeaking))]
 #endif
-        public bool IsAgentV1AgentV1UserStartedSpeaking => AgentV1AgentV1UserStartedSpeaking != null;
+        public bool IsUserStartedSpeaking => UserStartedSpeaking != null;
 
         /// <summary>
         ///
         /// </summary>
-        public bool TryPickAgentV1AgentV1UserStartedSpeaking(
+        public bool TryPickUserStartedSpeaking(
 #if NET6_0_OR_GREATER
             [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
 #endif
             out global::Deepgram.Realtime.AgentV1AgentV1UserStartedSpeaking? value)
         {
-            value = AgentV1AgentV1UserStartedSpeaking;
-            return IsAgentV1AgentV1UserStartedSpeaking;
+            value = UserStartedSpeaking;
+            return IsUserStartedSpeaking;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.AgentV1AgentV1UserStartedSpeaking PickAgentV1AgentV1UserStartedSpeaking() => AgentV1AgentV1UserStartedSpeaking is { } value
+        public global::Deepgram.Realtime.AgentV1AgentV1UserStartedSpeaking PickUserStartedSpeaking() => UserStartedSpeaking is { } value
             ? value
-            : throw new global::System.InvalidOperationException($"Expected union variant 'AgentV1AgentV1UserStartedSpeaking' but the value was {ToString()}.");
+            : throw new global::System.InvalidOperationException($"Expected union variant 'UserStartedSpeaking' but the value was {ToString()}.");
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        public global::Deepgram.Realtime.AgentV1AgentV1AgentThinking? AgentV1AgentV1AgentThinking { get; init; }
+        public global::Deepgram.Realtime.AgentV1AgentV1AgentThinking? AgentThinking { get; init; }
 #else
-        public global::Deepgram.Realtime.AgentV1AgentV1AgentThinking? AgentV1AgentV1AgentThinking { get; }
+        public global::Deepgram.Realtime.AgentV1AgentV1AgentThinking? AgentThinking { get; }
 #endif
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(AgentV1AgentV1AgentThinking))]
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(AgentThinking))]
 #endif
-        public bool IsAgentV1AgentV1AgentThinking => AgentV1AgentV1AgentThinking != null;
+        public bool IsAgentThinking => AgentThinking != null;
 
         /// <summary>
         ///
         /// </summary>
-        public bool TryPickAgentV1AgentV1AgentThinking(
+        public bool TryPickAgentThinking(
 #if NET6_0_OR_GREATER
             [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
 #endif
             out global::Deepgram.Realtime.AgentV1AgentV1AgentThinking? value)
         {
-            value = AgentV1AgentV1AgentThinking;
-            return IsAgentV1AgentV1AgentThinking;
+            value = AgentThinking;
+            return IsAgentThinking;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.AgentV1AgentV1AgentThinking PickAgentV1AgentV1AgentThinking() => AgentV1AgentV1AgentThinking is { } value
+        public global::Deepgram.Realtime.AgentV1AgentV1AgentThinking PickAgentThinking() => AgentThinking is { } value
             ? value
-            : throw new global::System.InvalidOperationException($"Expected union variant 'AgentV1AgentV1AgentThinking' but the value was {ToString()}.");
+            : throw new global::System.InvalidOperationException($"Expected union variant 'AgentThinking' but the value was {ToString()}.");
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        public global::Deepgram.Realtime.AgentV1AgentV1LatencyReport? AgentV1AgentV1LatencyReport { get; init; }
+        public global::Deepgram.Realtime.AgentV1AgentV1LatencyReport? LatencyReport { get; init; }
 #else
-        public global::Deepgram.Realtime.AgentV1AgentV1LatencyReport? AgentV1AgentV1LatencyReport { get; }
+        public global::Deepgram.Realtime.AgentV1AgentV1LatencyReport? LatencyReport { get; }
 #endif
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(AgentV1AgentV1LatencyReport))]
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(LatencyReport))]
 #endif
-        public bool IsAgentV1AgentV1LatencyReport => AgentV1AgentV1LatencyReport != null;
+        public bool IsLatencyReport => LatencyReport != null;
 
         /// <summary>
         ///
         /// </summary>
-        public bool TryPickAgentV1AgentV1LatencyReport(
+        public bool TryPickLatencyReport(
 #if NET6_0_OR_GREATER
             [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
 #endif
             out global::Deepgram.Realtime.AgentV1AgentV1LatencyReport? value)
         {
-            value = AgentV1AgentV1LatencyReport;
-            return IsAgentV1AgentV1LatencyReport;
+            value = LatencyReport;
+            return IsLatencyReport;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.AgentV1AgentV1LatencyReport PickAgentV1AgentV1LatencyReport() => AgentV1AgentV1LatencyReport is { } value
+        public global::Deepgram.Realtime.AgentV1AgentV1LatencyReport PickLatencyReport() => LatencyReport is { } value
             ? value
-            : throw new global::System.InvalidOperationException($"Expected union variant 'AgentV1AgentV1LatencyReport' but the value was {ToString()}.");
+            : throw new global::System.InvalidOperationException($"Expected union variant 'LatencyReport' but the value was {ToString()}.");
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        public global::Deepgram.Realtime.AgentV1AgentV1FunctionCallRequest? AgentV1AgentV1FunctionCallRequest { get; init; }
+        public global::Deepgram.Realtime.AgentV1AgentV1FunctionCallRequest? FunctionCallRequest { get; init; }
 #else
-        public global::Deepgram.Realtime.AgentV1AgentV1FunctionCallRequest? AgentV1AgentV1FunctionCallRequest { get; }
+        public global::Deepgram.Realtime.AgentV1AgentV1FunctionCallRequest? FunctionCallRequest { get; }
 #endif
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(AgentV1AgentV1FunctionCallRequest))]
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(FunctionCallRequest))]
 #endif
-        public bool IsAgentV1AgentV1FunctionCallRequest => AgentV1AgentV1FunctionCallRequest != null;
+        public bool IsFunctionCallRequest => FunctionCallRequest != null;
 
         /// <summary>
         ///
         /// </summary>
-        public bool TryPickAgentV1AgentV1FunctionCallRequest(
+        public bool TryPickFunctionCallRequest(
 #if NET6_0_OR_GREATER
             [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
 #endif
             out global::Deepgram.Realtime.AgentV1AgentV1FunctionCallRequest? value)
         {
-            value = AgentV1AgentV1FunctionCallRequest;
-            return IsAgentV1AgentV1FunctionCallRequest;
+            value = FunctionCallRequest;
+            return IsFunctionCallRequest;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.AgentV1AgentV1FunctionCallRequest PickAgentV1AgentV1FunctionCallRequest() => AgentV1AgentV1FunctionCallRequest is { } value
+        public global::Deepgram.Realtime.AgentV1AgentV1FunctionCallRequest PickFunctionCallRequest() => FunctionCallRequest is { } value
             ? value
-            : throw new global::System.InvalidOperationException($"Expected union variant 'AgentV1AgentV1FunctionCallRequest' but the value was {ToString()}.");
+            : throw new global::System.InvalidOperationException($"Expected union variant 'FunctionCallRequest' but the value was {ToString()}.");
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        public global::Deepgram.Realtime.AgentV1AgentV1FunctionCallCancelled? AgentV1AgentV1FunctionCallCancelled { get; init; }
+        public global::Deepgram.Realtime.AgentV1AgentV1FunctionCallCancelled? FunctionCallCancelled { get; init; }
 #else
-        public global::Deepgram.Realtime.AgentV1AgentV1FunctionCallCancelled? AgentV1AgentV1FunctionCallCancelled { get; }
+        public global::Deepgram.Realtime.AgentV1AgentV1FunctionCallCancelled? FunctionCallCancelled { get; }
 #endif
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(AgentV1AgentV1FunctionCallCancelled))]
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(FunctionCallCancelled))]
 #endif
-        public bool IsAgentV1AgentV1FunctionCallCancelled => AgentV1AgentV1FunctionCallCancelled != null;
+        public bool IsFunctionCallCancelled => FunctionCallCancelled != null;
 
         /// <summary>
         ///
         /// </summary>
-        public bool TryPickAgentV1AgentV1FunctionCallCancelled(
+        public bool TryPickFunctionCallCancelled(
 #if NET6_0_OR_GREATER
             [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
 #endif
             out global::Deepgram.Realtime.AgentV1AgentV1FunctionCallCancelled? value)
         {
-            value = AgentV1AgentV1FunctionCallCancelled;
-            return IsAgentV1AgentV1FunctionCallCancelled;
+            value = FunctionCallCancelled;
+            return IsFunctionCallCancelled;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.AgentV1AgentV1FunctionCallCancelled PickAgentV1AgentV1FunctionCallCancelled() => AgentV1AgentV1FunctionCallCancelled is { } value
+        public global::Deepgram.Realtime.AgentV1AgentV1FunctionCallCancelled PickFunctionCallCancelled() => FunctionCallCancelled is { } value
             ? value
-            : throw new global::System.InvalidOperationException($"Expected union variant 'AgentV1AgentV1FunctionCallCancelled' but the value was {ToString()}.");
+            : throw new global::System.InvalidOperationException($"Expected union variant 'FunctionCallCancelled' but the value was {ToString()}.");
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        public global::Deepgram.Realtime.AgentV1AgentV1AgentStartedSpeaking? AgentV1AgentV1AgentStartedSpeaking { get; init; }
+        public global::Deepgram.Realtime.AgentV1AgentV1AgentStartedSpeaking? AgentStartedSpeaking { get; init; }
 #else
-        public global::Deepgram.Realtime.AgentV1AgentV1AgentStartedSpeaking? AgentV1AgentV1AgentStartedSpeaking { get; }
+        public global::Deepgram.Realtime.AgentV1AgentV1AgentStartedSpeaking? AgentStartedSpeaking { get; }
 #endif
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(AgentV1AgentV1AgentStartedSpeaking))]
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(AgentStartedSpeaking))]
 #endif
-        public bool IsAgentV1AgentV1AgentStartedSpeaking => AgentV1AgentV1AgentStartedSpeaking != null;
+        public bool IsAgentStartedSpeaking => AgentStartedSpeaking != null;
 
         /// <summary>
         ///
         /// </summary>
-        public bool TryPickAgentV1AgentV1AgentStartedSpeaking(
+        public bool TryPickAgentStartedSpeaking(
 #if NET6_0_OR_GREATER
             [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
 #endif
             out global::Deepgram.Realtime.AgentV1AgentV1AgentStartedSpeaking? value)
         {
-            value = AgentV1AgentV1AgentStartedSpeaking;
-            return IsAgentV1AgentV1AgentStartedSpeaking;
+            value = AgentStartedSpeaking;
+            return IsAgentStartedSpeaking;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.AgentV1AgentV1AgentStartedSpeaking PickAgentV1AgentV1AgentStartedSpeaking() => AgentV1AgentV1AgentStartedSpeaking is { } value
+        public global::Deepgram.Realtime.AgentV1AgentV1AgentStartedSpeaking PickAgentStartedSpeaking() => AgentStartedSpeaking is { } value
             ? value
-            : throw new global::System.InvalidOperationException($"Expected union variant 'AgentV1AgentV1AgentStartedSpeaking' but the value was {ToString()}.");
+            : throw new global::System.InvalidOperationException($"Expected union variant 'AgentStartedSpeaking' but the value was {ToString()}.");
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        public global::Deepgram.Realtime.AgentV1AgentV1AgentAudioDone? AgentV1AgentV1AgentAudioDone { get; init; }
+        public global::Deepgram.Realtime.AgentV1AgentV1AgentAudioDone? AgentAudioDone { get; init; }
 #else
-        public global::Deepgram.Realtime.AgentV1AgentV1AgentAudioDone? AgentV1AgentV1AgentAudioDone { get; }
+        public global::Deepgram.Realtime.AgentV1AgentV1AgentAudioDone? AgentAudioDone { get; }
 #endif
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(AgentV1AgentV1AgentAudioDone))]
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(AgentAudioDone))]
 #endif
-        public bool IsAgentV1AgentV1AgentAudioDone => AgentV1AgentV1AgentAudioDone != null;
+        public bool IsAgentAudioDone => AgentAudioDone != null;
 
         /// <summary>
         ///
         /// </summary>
-        public bool TryPickAgentV1AgentV1AgentAudioDone(
+        public bool TryPickAgentAudioDone(
 #if NET6_0_OR_GREATER
             [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
 #endif
             out global::Deepgram.Realtime.AgentV1AgentV1AgentAudioDone? value)
         {
-            value = AgentV1AgentV1AgentAudioDone;
-            return IsAgentV1AgentV1AgentAudioDone;
+            value = AgentAudioDone;
+            return IsAgentAudioDone;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.AgentV1AgentV1AgentAudioDone PickAgentV1AgentV1AgentAudioDone() => AgentV1AgentV1AgentAudioDone is { } value
+        public global::Deepgram.Realtime.AgentV1AgentV1AgentAudioDone PickAgentAudioDone() => AgentAudioDone is { } value
             ? value
-            : throw new global::System.InvalidOperationException($"Expected union variant 'AgentV1AgentV1AgentAudioDone' but the value was {ToString()}.");
+            : throw new global::System.InvalidOperationException($"Expected union variant 'AgentAudioDone' but the value was {ToString()}.");
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        public global::Deepgram.Realtime.AgentV1AgentV1CustomFromThinkProvider? AgentV1AgentV1CustomFromThinkProvider { get; init; }
+        public global::Deepgram.Realtime.AgentV1AgentV1CustomFromThinkProvider? CustomFromThinkProvider { get; init; }
 #else
-        public global::Deepgram.Realtime.AgentV1AgentV1CustomFromThinkProvider? AgentV1AgentV1CustomFromThinkProvider { get; }
+        public global::Deepgram.Realtime.AgentV1AgentV1CustomFromThinkProvider? CustomFromThinkProvider { get; }
 #endif
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(AgentV1AgentV1CustomFromThinkProvider))]
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(CustomFromThinkProvider))]
 #endif
-        public bool IsAgentV1AgentV1CustomFromThinkProvider => AgentV1AgentV1CustomFromThinkProvider != null;
+        public bool IsCustomFromThinkProvider => CustomFromThinkProvider != null;
 
         /// <summary>
         ///
         /// </summary>
-        public bool TryPickAgentV1AgentV1CustomFromThinkProvider(
+        public bool TryPickCustomFromThinkProvider(
 #if NET6_0_OR_GREATER
             [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
 #endif
             out global::Deepgram.Realtime.AgentV1AgentV1CustomFromThinkProvider? value)
         {
-            value = AgentV1AgentV1CustomFromThinkProvider;
-            return IsAgentV1AgentV1CustomFromThinkProvider;
+            value = CustomFromThinkProvider;
+            return IsCustomFromThinkProvider;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.AgentV1AgentV1CustomFromThinkProvider PickAgentV1AgentV1CustomFromThinkProvider() => AgentV1AgentV1CustomFromThinkProvider is { } value
+        public global::Deepgram.Realtime.AgentV1AgentV1CustomFromThinkProvider PickCustomFromThinkProvider() => CustomFromThinkProvider is { } value
             ? value
-            : throw new global::System.InvalidOperationException($"Expected union variant 'AgentV1AgentV1CustomFromThinkProvider' but the value was {ToString()}.");
+            : throw new global::System.InvalidOperationException($"Expected union variant 'CustomFromThinkProvider' but the value was {ToString()}.");
 
         /// <summary>
         ///
@@ -799,20 +799,20 @@ namespace Deepgram.Realtime
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator global::Deepgram.Realtime.AgentV1AgentV1ListenUpdated?(AgentV1ServerEvent @this) => @this.AgentV1AgentV1ListenUpdated;
+        public static implicit operator global::Deepgram.Realtime.AgentV1AgentV1ListenUpdated?(AgentV1ServerEvent @this) => @this.ListenUpdated;
 
         /// <summary>
         ///
         /// </summary>
         public AgentV1ServerEvent(global::Deepgram.Realtime.AgentV1AgentV1ListenUpdated? value)
         {
-            AgentV1AgentV1ListenUpdated = value;
+            ListenUpdated = value;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public static AgentV1ServerEvent FromAgentV1AgentV1ListenUpdated(global::Deepgram.Realtime.AgentV1AgentV1ListenUpdated? value) => new AgentV1ServerEvent(value);
+        public static AgentV1ServerEvent FromListenUpdated(global::Deepgram.Realtime.AgentV1AgentV1ListenUpdated? value) => new AgentV1ServerEvent(value);
 
         /// <summary>
         ///
@@ -822,20 +822,20 @@ namespace Deepgram.Realtime
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator global::Deepgram.Realtime.AgentV1AgentV1ThinkUpdated?(AgentV1ServerEvent @this) => @this.AgentV1AgentV1ThinkUpdated;
+        public static implicit operator global::Deepgram.Realtime.AgentV1AgentV1ThinkUpdated?(AgentV1ServerEvent @this) => @this.ThinkUpdated;
 
         /// <summary>
         ///
         /// </summary>
         public AgentV1ServerEvent(global::Deepgram.Realtime.AgentV1AgentV1ThinkUpdated? value)
         {
-            AgentV1AgentV1ThinkUpdated = value;
+            ThinkUpdated = value;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public static AgentV1ServerEvent FromAgentV1AgentV1ThinkUpdated(global::Deepgram.Realtime.AgentV1AgentV1ThinkUpdated? value) => new AgentV1ServerEvent(value);
+        public static AgentV1ServerEvent FromThinkUpdated(global::Deepgram.Realtime.AgentV1AgentV1ThinkUpdated? value) => new AgentV1ServerEvent(value);
 
         /// <summary>
         ///
@@ -845,20 +845,20 @@ namespace Deepgram.Realtime
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator global::Deepgram.Realtime.AgentV1AgentV1ReceiveFunctionCallResponse?(AgentV1ServerEvent @this) => @this.AgentV1AgentV1ReceiveFunctionCallResponse;
+        public static implicit operator global::Deepgram.Realtime.AgentV1AgentV1ReceiveFunctionCallResponse?(AgentV1ServerEvent @this) => @this.FunctionCallResponse;
 
         /// <summary>
         ///
         /// </summary>
         public AgentV1ServerEvent(global::Deepgram.Realtime.AgentV1AgentV1ReceiveFunctionCallResponse? value)
         {
-            AgentV1AgentV1ReceiveFunctionCallResponse = value;
+            FunctionCallResponse = value;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public static AgentV1ServerEvent FromAgentV1AgentV1ReceiveFunctionCallResponse(global::Deepgram.Realtime.AgentV1AgentV1ReceiveFunctionCallResponse? value) => new AgentV1ServerEvent(value);
+        public static AgentV1ServerEvent FromFunctionCallResponse(global::Deepgram.Realtime.AgentV1AgentV1ReceiveFunctionCallResponse? value) => new AgentV1ServerEvent(value);
 
         /// <summary>
         ///
@@ -868,20 +868,20 @@ namespace Deepgram.Realtime
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator global::Deepgram.Realtime.AgentV1AgentV1PromptUpdated?(AgentV1ServerEvent @this) => @this.AgentV1AgentV1PromptUpdated;
+        public static implicit operator global::Deepgram.Realtime.AgentV1AgentV1PromptUpdated?(AgentV1ServerEvent @this) => @this.PromptUpdated;
 
         /// <summary>
         ///
         /// </summary>
         public AgentV1ServerEvent(global::Deepgram.Realtime.AgentV1AgentV1PromptUpdated? value)
         {
-            AgentV1AgentV1PromptUpdated = value;
+            PromptUpdated = value;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public static AgentV1ServerEvent FromAgentV1AgentV1PromptUpdated(global::Deepgram.Realtime.AgentV1AgentV1PromptUpdated? value) => new AgentV1ServerEvent(value);
+        public static AgentV1ServerEvent FromPromptUpdated(global::Deepgram.Realtime.AgentV1AgentV1PromptUpdated? value) => new AgentV1ServerEvent(value);
 
         /// <summary>
         ///
@@ -891,20 +891,20 @@ namespace Deepgram.Realtime
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator global::Deepgram.Realtime.AgentV1AgentV1SpeakUpdated?(AgentV1ServerEvent @this) => @this.AgentV1AgentV1SpeakUpdated;
+        public static implicit operator global::Deepgram.Realtime.AgentV1AgentV1SpeakUpdated?(AgentV1ServerEvent @this) => @this.SpeakUpdated;
 
         /// <summary>
         ///
         /// </summary>
         public AgentV1ServerEvent(global::Deepgram.Realtime.AgentV1AgentV1SpeakUpdated? value)
         {
-            AgentV1AgentV1SpeakUpdated = value;
+            SpeakUpdated = value;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public static AgentV1ServerEvent FromAgentV1AgentV1SpeakUpdated(global::Deepgram.Realtime.AgentV1AgentV1SpeakUpdated? value) => new AgentV1ServerEvent(value);
+        public static AgentV1ServerEvent FromSpeakUpdated(global::Deepgram.Realtime.AgentV1AgentV1SpeakUpdated? value) => new AgentV1ServerEvent(value);
 
         /// <summary>
         ///
@@ -914,20 +914,20 @@ namespace Deepgram.Realtime
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator global::Deepgram.Realtime.AgentV1AgentV1InjectionRefused?(AgentV1ServerEvent @this) => @this.AgentV1AgentV1InjectionRefused;
+        public static implicit operator global::Deepgram.Realtime.AgentV1AgentV1InjectionRefused?(AgentV1ServerEvent @this) => @this.InjectionRefused;
 
         /// <summary>
         ///
         /// </summary>
         public AgentV1ServerEvent(global::Deepgram.Realtime.AgentV1AgentV1InjectionRefused? value)
         {
-            AgentV1AgentV1InjectionRefused = value;
+            InjectionRefused = value;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public static AgentV1ServerEvent FromAgentV1AgentV1InjectionRefused(global::Deepgram.Realtime.AgentV1AgentV1InjectionRefused? value) => new AgentV1ServerEvent(value);
+        public static AgentV1ServerEvent FromInjectionRefused(global::Deepgram.Realtime.AgentV1AgentV1InjectionRefused? value) => new AgentV1ServerEvent(value);
 
         /// <summary>
         ///
@@ -937,20 +937,20 @@ namespace Deepgram.Realtime
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator global::Deepgram.Realtime.AgentV1AgentV1Welcome?(AgentV1ServerEvent @this) => @this.AgentV1AgentV1Welcome;
+        public static implicit operator global::Deepgram.Realtime.AgentV1AgentV1Welcome?(AgentV1ServerEvent @this) => @this.Welcome;
 
         /// <summary>
         ///
         /// </summary>
         public AgentV1ServerEvent(global::Deepgram.Realtime.AgentV1AgentV1Welcome? value)
         {
-            AgentV1AgentV1Welcome = value;
+            Welcome = value;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public static AgentV1ServerEvent FromAgentV1AgentV1Welcome(global::Deepgram.Realtime.AgentV1AgentV1Welcome? value) => new AgentV1ServerEvent(value);
+        public static AgentV1ServerEvent FromWelcome(global::Deepgram.Realtime.AgentV1AgentV1Welcome? value) => new AgentV1ServerEvent(value);
 
         /// <summary>
         ///
@@ -960,20 +960,20 @@ namespace Deepgram.Realtime
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator global::Deepgram.Realtime.AgentV1AgentV1SettingsApplied?(AgentV1ServerEvent @this) => @this.AgentV1AgentV1SettingsApplied;
+        public static implicit operator global::Deepgram.Realtime.AgentV1AgentV1SettingsApplied?(AgentV1ServerEvent @this) => @this.SettingsApplied;
 
         /// <summary>
         ///
         /// </summary>
         public AgentV1ServerEvent(global::Deepgram.Realtime.AgentV1AgentV1SettingsApplied? value)
         {
-            AgentV1AgentV1SettingsApplied = value;
+            SettingsApplied = value;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public static AgentV1ServerEvent FromAgentV1AgentV1SettingsApplied(global::Deepgram.Realtime.AgentV1AgentV1SettingsApplied? value) => new AgentV1ServerEvent(value);
+        public static AgentV1ServerEvent FromSettingsApplied(global::Deepgram.Realtime.AgentV1AgentV1SettingsApplied? value) => new AgentV1ServerEvent(value);
 
         /// <summary>
         ///
@@ -983,20 +983,20 @@ namespace Deepgram.Realtime
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator global::Deepgram.Realtime.AgentV1AgentV1ConversationText?(AgentV1ServerEvent @this) => @this.AgentV1AgentV1ConversationText;
+        public static implicit operator global::Deepgram.Realtime.AgentV1AgentV1ConversationText?(AgentV1ServerEvent @this) => @this.ConversationText;
 
         /// <summary>
         ///
         /// </summary>
         public AgentV1ServerEvent(global::Deepgram.Realtime.AgentV1AgentV1ConversationText? value)
         {
-            AgentV1AgentV1ConversationText = value;
+            ConversationText = value;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public static AgentV1ServerEvent FromAgentV1AgentV1ConversationText(global::Deepgram.Realtime.AgentV1AgentV1ConversationText? value) => new AgentV1ServerEvent(value);
+        public static AgentV1ServerEvent FromConversationText(global::Deepgram.Realtime.AgentV1AgentV1ConversationText? value) => new AgentV1ServerEvent(value);
 
         /// <summary>
         ///
@@ -1006,20 +1006,20 @@ namespace Deepgram.Realtime
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator global::Deepgram.Realtime.AgentV1AgentV1UserStartedSpeaking?(AgentV1ServerEvent @this) => @this.AgentV1AgentV1UserStartedSpeaking;
+        public static implicit operator global::Deepgram.Realtime.AgentV1AgentV1UserStartedSpeaking?(AgentV1ServerEvent @this) => @this.UserStartedSpeaking;
 
         /// <summary>
         ///
         /// </summary>
         public AgentV1ServerEvent(global::Deepgram.Realtime.AgentV1AgentV1UserStartedSpeaking? value)
         {
-            AgentV1AgentV1UserStartedSpeaking = value;
+            UserStartedSpeaking = value;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public static AgentV1ServerEvent FromAgentV1AgentV1UserStartedSpeaking(global::Deepgram.Realtime.AgentV1AgentV1UserStartedSpeaking? value) => new AgentV1ServerEvent(value);
+        public static AgentV1ServerEvent FromUserStartedSpeaking(global::Deepgram.Realtime.AgentV1AgentV1UserStartedSpeaking? value) => new AgentV1ServerEvent(value);
 
         /// <summary>
         ///
@@ -1029,20 +1029,20 @@ namespace Deepgram.Realtime
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator global::Deepgram.Realtime.AgentV1AgentV1AgentThinking?(AgentV1ServerEvent @this) => @this.AgentV1AgentV1AgentThinking;
+        public static implicit operator global::Deepgram.Realtime.AgentV1AgentV1AgentThinking?(AgentV1ServerEvent @this) => @this.AgentThinking;
 
         /// <summary>
         ///
         /// </summary>
         public AgentV1ServerEvent(global::Deepgram.Realtime.AgentV1AgentV1AgentThinking? value)
         {
-            AgentV1AgentV1AgentThinking = value;
+            AgentThinking = value;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public static AgentV1ServerEvent FromAgentV1AgentV1AgentThinking(global::Deepgram.Realtime.AgentV1AgentV1AgentThinking? value) => new AgentV1ServerEvent(value);
+        public static AgentV1ServerEvent FromAgentThinking(global::Deepgram.Realtime.AgentV1AgentV1AgentThinking? value) => new AgentV1ServerEvent(value);
 
         /// <summary>
         ///
@@ -1052,20 +1052,20 @@ namespace Deepgram.Realtime
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator global::Deepgram.Realtime.AgentV1AgentV1LatencyReport?(AgentV1ServerEvent @this) => @this.AgentV1AgentV1LatencyReport;
+        public static implicit operator global::Deepgram.Realtime.AgentV1AgentV1LatencyReport?(AgentV1ServerEvent @this) => @this.LatencyReport;
 
         /// <summary>
         ///
         /// </summary>
         public AgentV1ServerEvent(global::Deepgram.Realtime.AgentV1AgentV1LatencyReport? value)
         {
-            AgentV1AgentV1LatencyReport = value;
+            LatencyReport = value;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public static AgentV1ServerEvent FromAgentV1AgentV1LatencyReport(global::Deepgram.Realtime.AgentV1AgentV1LatencyReport? value) => new AgentV1ServerEvent(value);
+        public static AgentV1ServerEvent FromLatencyReport(global::Deepgram.Realtime.AgentV1AgentV1LatencyReport? value) => new AgentV1ServerEvent(value);
 
         /// <summary>
         ///
@@ -1075,20 +1075,20 @@ namespace Deepgram.Realtime
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator global::Deepgram.Realtime.AgentV1AgentV1FunctionCallRequest?(AgentV1ServerEvent @this) => @this.AgentV1AgentV1FunctionCallRequest;
+        public static implicit operator global::Deepgram.Realtime.AgentV1AgentV1FunctionCallRequest?(AgentV1ServerEvent @this) => @this.FunctionCallRequest;
 
         /// <summary>
         ///
         /// </summary>
         public AgentV1ServerEvent(global::Deepgram.Realtime.AgentV1AgentV1FunctionCallRequest? value)
         {
-            AgentV1AgentV1FunctionCallRequest = value;
+            FunctionCallRequest = value;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public static AgentV1ServerEvent FromAgentV1AgentV1FunctionCallRequest(global::Deepgram.Realtime.AgentV1AgentV1FunctionCallRequest? value) => new AgentV1ServerEvent(value);
+        public static AgentV1ServerEvent FromFunctionCallRequest(global::Deepgram.Realtime.AgentV1AgentV1FunctionCallRequest? value) => new AgentV1ServerEvent(value);
 
         /// <summary>
         ///
@@ -1098,20 +1098,20 @@ namespace Deepgram.Realtime
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator global::Deepgram.Realtime.AgentV1AgentV1FunctionCallCancelled?(AgentV1ServerEvent @this) => @this.AgentV1AgentV1FunctionCallCancelled;
+        public static implicit operator global::Deepgram.Realtime.AgentV1AgentV1FunctionCallCancelled?(AgentV1ServerEvent @this) => @this.FunctionCallCancelled;
 
         /// <summary>
         ///
         /// </summary>
         public AgentV1ServerEvent(global::Deepgram.Realtime.AgentV1AgentV1FunctionCallCancelled? value)
         {
-            AgentV1AgentV1FunctionCallCancelled = value;
+            FunctionCallCancelled = value;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public static AgentV1ServerEvent FromAgentV1AgentV1FunctionCallCancelled(global::Deepgram.Realtime.AgentV1AgentV1FunctionCallCancelled? value) => new AgentV1ServerEvent(value);
+        public static AgentV1ServerEvent FromFunctionCallCancelled(global::Deepgram.Realtime.AgentV1AgentV1FunctionCallCancelled? value) => new AgentV1ServerEvent(value);
 
         /// <summary>
         ///
@@ -1121,20 +1121,20 @@ namespace Deepgram.Realtime
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator global::Deepgram.Realtime.AgentV1AgentV1AgentStartedSpeaking?(AgentV1ServerEvent @this) => @this.AgentV1AgentV1AgentStartedSpeaking;
+        public static implicit operator global::Deepgram.Realtime.AgentV1AgentV1AgentStartedSpeaking?(AgentV1ServerEvent @this) => @this.AgentStartedSpeaking;
 
         /// <summary>
         ///
         /// </summary>
         public AgentV1ServerEvent(global::Deepgram.Realtime.AgentV1AgentV1AgentStartedSpeaking? value)
         {
-            AgentV1AgentV1AgentStartedSpeaking = value;
+            AgentStartedSpeaking = value;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public static AgentV1ServerEvent FromAgentV1AgentV1AgentStartedSpeaking(global::Deepgram.Realtime.AgentV1AgentV1AgentStartedSpeaking? value) => new AgentV1ServerEvent(value);
+        public static AgentV1ServerEvent FromAgentStartedSpeaking(global::Deepgram.Realtime.AgentV1AgentV1AgentStartedSpeaking? value) => new AgentV1ServerEvent(value);
 
         /// <summary>
         ///
@@ -1144,20 +1144,20 @@ namespace Deepgram.Realtime
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator global::Deepgram.Realtime.AgentV1AgentV1AgentAudioDone?(AgentV1ServerEvent @this) => @this.AgentV1AgentV1AgentAudioDone;
+        public static implicit operator global::Deepgram.Realtime.AgentV1AgentV1AgentAudioDone?(AgentV1ServerEvent @this) => @this.AgentAudioDone;
 
         /// <summary>
         ///
         /// </summary>
         public AgentV1ServerEvent(global::Deepgram.Realtime.AgentV1AgentV1AgentAudioDone? value)
         {
-            AgentV1AgentV1AgentAudioDone = value;
+            AgentAudioDone = value;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public static AgentV1ServerEvent FromAgentV1AgentV1AgentAudioDone(global::Deepgram.Realtime.AgentV1AgentV1AgentAudioDone? value) => new AgentV1ServerEvent(value);
+        public static AgentV1ServerEvent FromAgentAudioDone(global::Deepgram.Realtime.AgentV1AgentV1AgentAudioDone? value) => new AgentV1ServerEvent(value);
 
         /// <summary>
         ///
@@ -1167,20 +1167,20 @@ namespace Deepgram.Realtime
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator global::Deepgram.Realtime.AgentV1AgentV1CustomFromThinkProvider?(AgentV1ServerEvent @this) => @this.AgentV1AgentV1CustomFromThinkProvider;
+        public static implicit operator global::Deepgram.Realtime.AgentV1AgentV1CustomFromThinkProvider?(AgentV1ServerEvent @this) => @this.CustomFromThinkProvider;
 
         /// <summary>
         ///
         /// </summary>
         public AgentV1ServerEvent(global::Deepgram.Realtime.AgentV1AgentV1CustomFromThinkProvider? value)
         {
-            AgentV1AgentV1CustomFromThinkProvider = value;
+            CustomFromThinkProvider = value;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public static AgentV1ServerEvent FromAgentV1AgentV1CustomFromThinkProvider(global::Deepgram.Realtime.AgentV1AgentV1CustomFromThinkProvider? value) => new AgentV1ServerEvent(value);
+        public static AgentV1ServerEvent FromCustomFromThinkProvider(global::Deepgram.Realtime.AgentV1AgentV1CustomFromThinkProvider? value) => new AgentV1ServerEvent(value);
 
         /// <summary>
         ///
@@ -1278,46 +1278,46 @@ namespace Deepgram.Realtime
         ///
         /// </summary>
         public AgentV1ServerEvent(
-            global::Deepgram.Realtime.AgentV1AgentV1ListenUpdated? agentV1AgentV1ListenUpdated,
-            global::Deepgram.Realtime.AgentV1AgentV1ThinkUpdated? agentV1AgentV1ThinkUpdated,
-            global::Deepgram.Realtime.AgentV1AgentV1ReceiveFunctionCallResponse? agentV1AgentV1ReceiveFunctionCallResponse,
-            global::Deepgram.Realtime.AgentV1AgentV1PromptUpdated? agentV1AgentV1PromptUpdated,
-            global::Deepgram.Realtime.AgentV1AgentV1SpeakUpdated? agentV1AgentV1SpeakUpdated,
-            global::Deepgram.Realtime.AgentV1AgentV1InjectionRefused? agentV1AgentV1InjectionRefused,
-            global::Deepgram.Realtime.AgentV1AgentV1Welcome? agentV1AgentV1Welcome,
-            global::Deepgram.Realtime.AgentV1AgentV1SettingsApplied? agentV1AgentV1SettingsApplied,
-            global::Deepgram.Realtime.AgentV1AgentV1ConversationText? agentV1AgentV1ConversationText,
-            global::Deepgram.Realtime.AgentV1AgentV1UserStartedSpeaking? agentV1AgentV1UserStartedSpeaking,
-            global::Deepgram.Realtime.AgentV1AgentV1AgentThinking? agentV1AgentV1AgentThinking,
-            global::Deepgram.Realtime.AgentV1AgentV1LatencyReport? agentV1AgentV1LatencyReport,
-            global::Deepgram.Realtime.AgentV1AgentV1FunctionCallRequest? agentV1AgentV1FunctionCallRequest,
-            global::Deepgram.Realtime.AgentV1AgentV1FunctionCallCancelled? agentV1AgentV1FunctionCallCancelled,
-            global::Deepgram.Realtime.AgentV1AgentV1AgentStartedSpeaking? agentV1AgentV1AgentStartedSpeaking,
-            global::Deepgram.Realtime.AgentV1AgentV1AgentAudioDone? agentV1AgentV1AgentAudioDone,
-            global::Deepgram.Realtime.AgentV1AgentV1CustomFromThinkProvider? agentV1AgentV1CustomFromThinkProvider,
+            global::Deepgram.Realtime.AgentV1AgentV1ListenUpdated? listenUpdated,
+            global::Deepgram.Realtime.AgentV1AgentV1ThinkUpdated? thinkUpdated,
+            global::Deepgram.Realtime.AgentV1AgentV1ReceiveFunctionCallResponse? functionCallResponse,
+            global::Deepgram.Realtime.AgentV1AgentV1PromptUpdated? promptUpdated,
+            global::Deepgram.Realtime.AgentV1AgentV1SpeakUpdated? speakUpdated,
+            global::Deepgram.Realtime.AgentV1AgentV1InjectionRefused? injectionRefused,
+            global::Deepgram.Realtime.AgentV1AgentV1Welcome? welcome,
+            global::Deepgram.Realtime.AgentV1AgentV1SettingsApplied? settingsApplied,
+            global::Deepgram.Realtime.AgentV1AgentV1ConversationText? conversationText,
+            global::Deepgram.Realtime.AgentV1AgentV1UserStartedSpeaking? userStartedSpeaking,
+            global::Deepgram.Realtime.AgentV1AgentV1AgentThinking? agentThinking,
+            global::Deepgram.Realtime.AgentV1AgentV1LatencyReport? latencyReport,
+            global::Deepgram.Realtime.AgentV1AgentV1FunctionCallRequest? functionCallRequest,
+            global::Deepgram.Realtime.AgentV1AgentV1FunctionCallCancelled? functionCallCancelled,
+            global::Deepgram.Realtime.AgentV1AgentV1AgentStartedSpeaking? agentStartedSpeaking,
+            global::Deepgram.Realtime.AgentV1AgentV1AgentAudioDone? agentAudioDone,
+            global::Deepgram.Realtime.AgentV1AgentV1CustomFromThinkProvider? customFromThinkProvider,
             global::Deepgram.Realtime.AgentV1AgentV1Error? agentV1AgentV1Error,
             global::Deepgram.Realtime.AgentV1AgentV1Warning? agentV1AgentV1Warning,
             global::Deepgram.Realtime.AgentV1AgentV1History? agentV1AgentV1History,
             byte[]? agentV1AgentV1Audio
             )
         {
-            AgentV1AgentV1ListenUpdated = agentV1AgentV1ListenUpdated;
-            AgentV1AgentV1ThinkUpdated = agentV1AgentV1ThinkUpdated;
-            AgentV1AgentV1ReceiveFunctionCallResponse = agentV1AgentV1ReceiveFunctionCallResponse;
-            AgentV1AgentV1PromptUpdated = agentV1AgentV1PromptUpdated;
-            AgentV1AgentV1SpeakUpdated = agentV1AgentV1SpeakUpdated;
-            AgentV1AgentV1InjectionRefused = agentV1AgentV1InjectionRefused;
-            AgentV1AgentV1Welcome = agentV1AgentV1Welcome;
-            AgentV1AgentV1SettingsApplied = agentV1AgentV1SettingsApplied;
-            AgentV1AgentV1ConversationText = agentV1AgentV1ConversationText;
-            AgentV1AgentV1UserStartedSpeaking = agentV1AgentV1UserStartedSpeaking;
-            AgentV1AgentV1AgentThinking = agentV1AgentV1AgentThinking;
-            AgentV1AgentV1LatencyReport = agentV1AgentV1LatencyReport;
-            AgentV1AgentV1FunctionCallRequest = agentV1AgentV1FunctionCallRequest;
-            AgentV1AgentV1FunctionCallCancelled = agentV1AgentV1FunctionCallCancelled;
-            AgentV1AgentV1AgentStartedSpeaking = agentV1AgentV1AgentStartedSpeaking;
-            AgentV1AgentV1AgentAudioDone = agentV1AgentV1AgentAudioDone;
-            AgentV1AgentV1CustomFromThinkProvider = agentV1AgentV1CustomFromThinkProvider;
+            ListenUpdated = listenUpdated;
+            ThinkUpdated = thinkUpdated;
+            FunctionCallResponse = functionCallResponse;
+            PromptUpdated = promptUpdated;
+            SpeakUpdated = speakUpdated;
+            InjectionRefused = injectionRefused;
+            Welcome = welcome;
+            SettingsApplied = settingsApplied;
+            ConversationText = conversationText;
+            UserStartedSpeaking = userStartedSpeaking;
+            AgentThinking = agentThinking;
+            LatencyReport = latencyReport;
+            FunctionCallRequest = functionCallRequest;
+            FunctionCallCancelled = functionCallCancelled;
+            AgentStartedSpeaking = agentStartedSpeaking;
+            AgentAudioDone = agentAudioDone;
+            CustomFromThinkProvider = customFromThinkProvider;
             AgentV1AgentV1Error = agentV1AgentV1Error;
             AgentV1AgentV1Warning = agentV1AgentV1Warning;
             AgentV1AgentV1History = agentV1AgentV1History;
@@ -1332,46 +1332,46 @@ namespace Deepgram.Realtime
             AgentV1AgentV1History as object ??
             AgentV1AgentV1Warning as object ??
             AgentV1AgentV1Error as object ??
-            AgentV1AgentV1CustomFromThinkProvider as object ??
-            AgentV1AgentV1AgentAudioDone as object ??
-            AgentV1AgentV1AgentStartedSpeaking as object ??
-            AgentV1AgentV1FunctionCallCancelled as object ??
-            AgentV1AgentV1FunctionCallRequest as object ??
-            AgentV1AgentV1LatencyReport as object ??
-            AgentV1AgentV1AgentThinking as object ??
-            AgentV1AgentV1UserStartedSpeaking as object ??
-            AgentV1AgentV1ConversationText as object ??
-            AgentV1AgentV1SettingsApplied as object ??
-            AgentV1AgentV1Welcome as object ??
-            AgentV1AgentV1InjectionRefused as object ??
-            AgentV1AgentV1SpeakUpdated as object ??
-            AgentV1AgentV1PromptUpdated as object ??
-            AgentV1AgentV1ReceiveFunctionCallResponse as object ??
-            AgentV1AgentV1ThinkUpdated as object ??
-            AgentV1AgentV1ListenUpdated as object
+            CustomFromThinkProvider as object ??
+            AgentAudioDone as object ??
+            AgentStartedSpeaking as object ??
+            FunctionCallCancelled as object ??
+            FunctionCallRequest as object ??
+            LatencyReport as object ??
+            AgentThinking as object ??
+            UserStartedSpeaking as object ??
+            ConversationText as object ??
+            SettingsApplied as object ??
+            Welcome as object ??
+            InjectionRefused as object ??
+            SpeakUpdated as object ??
+            PromptUpdated as object ??
+            FunctionCallResponse as object ??
+            ThinkUpdated as object ??
+            ListenUpdated as object
             ;
 
         /// <summary>
         ///
         /// </summary>
         public override string? ToString() =>
-            AgentV1AgentV1ListenUpdated?.ToString() ??
-            AgentV1AgentV1ThinkUpdated?.ToString() ??
-            AgentV1AgentV1ReceiveFunctionCallResponse?.ToString() ??
-            AgentV1AgentV1PromptUpdated?.ToString() ??
-            AgentV1AgentV1SpeakUpdated?.ToString() ??
-            AgentV1AgentV1InjectionRefused?.ToString() ??
-            AgentV1AgentV1Welcome?.ToString() ??
-            AgentV1AgentV1SettingsApplied?.ToString() ??
-            AgentV1AgentV1ConversationText?.ToString() ??
-            AgentV1AgentV1UserStartedSpeaking?.ToString() ??
-            AgentV1AgentV1AgentThinking?.ToString() ??
-            AgentV1AgentV1LatencyReport?.ToString() ??
-            AgentV1AgentV1FunctionCallRequest?.ToString() ??
-            AgentV1AgentV1FunctionCallCancelled?.ToString() ??
-            AgentV1AgentV1AgentStartedSpeaking?.ToString() ??
-            AgentV1AgentV1AgentAudioDone?.ToString() ??
-            AgentV1AgentV1CustomFromThinkProvider?.ToString() ??
+            ListenUpdated?.ToString() ??
+            ThinkUpdated?.ToString() ??
+            FunctionCallResponse?.ToString() ??
+            PromptUpdated?.ToString() ??
+            SpeakUpdated?.ToString() ??
+            InjectionRefused?.ToString() ??
+            Welcome?.ToString() ??
+            SettingsApplied?.ToString() ??
+            ConversationText?.ToString() ??
+            UserStartedSpeaking?.ToString() ??
+            AgentThinking?.ToString() ??
+            LatencyReport?.ToString() ??
+            FunctionCallRequest?.ToString() ??
+            FunctionCallCancelled?.ToString() ??
+            AgentStartedSpeaking?.ToString() ??
+            AgentAudioDone?.ToString() ??
+            CustomFromThinkProvider?.ToString() ??
             AgentV1AgentV1Error?.ToString() ??
             AgentV1AgentV1Warning?.ToString() ??
             AgentV1AgentV1History?.ToString() ??
@@ -1383,30 +1383,30 @@ namespace Deepgram.Realtime
         /// </summary>
         public bool Validate()
         {
-            return IsAgentV1AgentV1ListenUpdated && !IsAgentV1AgentV1ThinkUpdated && !IsAgentV1AgentV1ReceiveFunctionCallResponse && !IsAgentV1AgentV1PromptUpdated && !IsAgentV1AgentV1SpeakUpdated && !IsAgentV1AgentV1InjectionRefused && !IsAgentV1AgentV1Welcome && !IsAgentV1AgentV1SettingsApplied && !IsAgentV1AgentV1ConversationText && !IsAgentV1AgentV1UserStartedSpeaking && !IsAgentV1AgentV1AgentThinking && !IsAgentV1AgentV1LatencyReport && !IsAgentV1AgentV1FunctionCallRequest && !IsAgentV1AgentV1FunctionCallCancelled && !IsAgentV1AgentV1AgentStartedSpeaking && !IsAgentV1AgentV1AgentAudioDone && !IsAgentV1AgentV1CustomFromThinkProvider && !IsAgentV1AgentV1Error && !IsAgentV1AgentV1Warning && !IsAgentV1AgentV1History && !IsAgentV1AgentV1Audio || !IsAgentV1AgentV1ListenUpdated && IsAgentV1AgentV1ThinkUpdated && !IsAgentV1AgentV1ReceiveFunctionCallResponse && !IsAgentV1AgentV1PromptUpdated && !IsAgentV1AgentV1SpeakUpdated && !IsAgentV1AgentV1InjectionRefused && !IsAgentV1AgentV1Welcome && !IsAgentV1AgentV1SettingsApplied && !IsAgentV1AgentV1ConversationText && !IsAgentV1AgentV1UserStartedSpeaking && !IsAgentV1AgentV1AgentThinking && !IsAgentV1AgentV1LatencyReport && !IsAgentV1AgentV1FunctionCallRequest && !IsAgentV1AgentV1FunctionCallCancelled && !IsAgentV1AgentV1AgentStartedSpeaking && !IsAgentV1AgentV1AgentAudioDone && !IsAgentV1AgentV1CustomFromThinkProvider && !IsAgentV1AgentV1Error && !IsAgentV1AgentV1Warning && !IsAgentV1AgentV1History && !IsAgentV1AgentV1Audio || !IsAgentV1AgentV1ListenUpdated && !IsAgentV1AgentV1ThinkUpdated && IsAgentV1AgentV1ReceiveFunctionCallResponse && !IsAgentV1AgentV1PromptUpdated && !IsAgentV1AgentV1SpeakUpdated && !IsAgentV1AgentV1InjectionRefused && !IsAgentV1AgentV1Welcome && !IsAgentV1AgentV1SettingsApplied && !IsAgentV1AgentV1ConversationText && !IsAgentV1AgentV1UserStartedSpeaking && !IsAgentV1AgentV1AgentThinking && !IsAgentV1AgentV1LatencyReport && !IsAgentV1AgentV1FunctionCallRequest && !IsAgentV1AgentV1FunctionCallCancelled && !IsAgentV1AgentV1AgentStartedSpeaking && !IsAgentV1AgentV1AgentAudioDone && !IsAgentV1AgentV1CustomFromThinkProvider && !IsAgentV1AgentV1Error && !IsAgentV1AgentV1Warning && !IsAgentV1AgentV1History && !IsAgentV1AgentV1Audio || !IsAgentV1AgentV1ListenUpdated && !IsAgentV1AgentV1ThinkUpdated && !IsAgentV1AgentV1ReceiveFunctionCallResponse && IsAgentV1AgentV1PromptUpdated && !IsAgentV1AgentV1SpeakUpdated && !IsAgentV1AgentV1InjectionRefused && !IsAgentV1AgentV1Welcome && !IsAgentV1AgentV1SettingsApplied && !IsAgentV1AgentV1ConversationText && !IsAgentV1AgentV1UserStartedSpeaking && !IsAgentV1AgentV1AgentThinking && !IsAgentV1AgentV1LatencyReport && !IsAgentV1AgentV1FunctionCallRequest && !IsAgentV1AgentV1FunctionCallCancelled && !IsAgentV1AgentV1AgentStartedSpeaking && !IsAgentV1AgentV1AgentAudioDone && !IsAgentV1AgentV1CustomFromThinkProvider && !IsAgentV1AgentV1Error && !IsAgentV1AgentV1Warning && !IsAgentV1AgentV1History && !IsAgentV1AgentV1Audio || !IsAgentV1AgentV1ListenUpdated && !IsAgentV1AgentV1ThinkUpdated && !IsAgentV1AgentV1ReceiveFunctionCallResponse && !IsAgentV1AgentV1PromptUpdated && IsAgentV1AgentV1SpeakUpdated && !IsAgentV1AgentV1InjectionRefused && !IsAgentV1AgentV1Welcome && !IsAgentV1AgentV1SettingsApplied && !IsAgentV1AgentV1ConversationText && !IsAgentV1AgentV1UserStartedSpeaking && !IsAgentV1AgentV1AgentThinking && !IsAgentV1AgentV1LatencyReport && !IsAgentV1AgentV1FunctionCallRequest && !IsAgentV1AgentV1FunctionCallCancelled && !IsAgentV1AgentV1AgentStartedSpeaking && !IsAgentV1AgentV1AgentAudioDone && !IsAgentV1AgentV1CustomFromThinkProvider && !IsAgentV1AgentV1Error && !IsAgentV1AgentV1Warning && !IsAgentV1AgentV1History && !IsAgentV1AgentV1Audio || !IsAgentV1AgentV1ListenUpdated && !IsAgentV1AgentV1ThinkUpdated && !IsAgentV1AgentV1ReceiveFunctionCallResponse && !IsAgentV1AgentV1PromptUpdated && !IsAgentV1AgentV1SpeakUpdated && IsAgentV1AgentV1InjectionRefused && !IsAgentV1AgentV1Welcome && !IsAgentV1AgentV1SettingsApplied && !IsAgentV1AgentV1ConversationText && !IsAgentV1AgentV1UserStartedSpeaking && !IsAgentV1AgentV1AgentThinking && !IsAgentV1AgentV1LatencyReport && !IsAgentV1AgentV1FunctionCallRequest && !IsAgentV1AgentV1FunctionCallCancelled && !IsAgentV1AgentV1AgentStartedSpeaking && !IsAgentV1AgentV1AgentAudioDone && !IsAgentV1AgentV1CustomFromThinkProvider && !IsAgentV1AgentV1Error && !IsAgentV1AgentV1Warning && !IsAgentV1AgentV1History && !IsAgentV1AgentV1Audio || !IsAgentV1AgentV1ListenUpdated && !IsAgentV1AgentV1ThinkUpdated && !IsAgentV1AgentV1ReceiveFunctionCallResponse && !IsAgentV1AgentV1PromptUpdated && !IsAgentV1AgentV1SpeakUpdated && !IsAgentV1AgentV1InjectionRefused && IsAgentV1AgentV1Welcome && !IsAgentV1AgentV1SettingsApplied && !IsAgentV1AgentV1ConversationText && !IsAgentV1AgentV1UserStartedSpeaking && !IsAgentV1AgentV1AgentThinking && !IsAgentV1AgentV1LatencyReport && !IsAgentV1AgentV1FunctionCallRequest && !IsAgentV1AgentV1FunctionCallCancelled && !IsAgentV1AgentV1AgentStartedSpeaking && !IsAgentV1AgentV1AgentAudioDone && !IsAgentV1AgentV1CustomFromThinkProvider && !IsAgentV1AgentV1Error && !IsAgentV1AgentV1Warning && !IsAgentV1AgentV1History && !IsAgentV1AgentV1Audio || !IsAgentV1AgentV1ListenUpdated && !IsAgentV1AgentV1ThinkUpdated && !IsAgentV1AgentV1ReceiveFunctionCallResponse && !IsAgentV1AgentV1PromptUpdated && !IsAgentV1AgentV1SpeakUpdated && !IsAgentV1AgentV1InjectionRefused && !IsAgentV1AgentV1Welcome && IsAgentV1AgentV1SettingsApplied && !IsAgentV1AgentV1ConversationText && !IsAgentV1AgentV1UserStartedSpeaking && !IsAgentV1AgentV1AgentThinking && !IsAgentV1AgentV1LatencyReport && !IsAgentV1AgentV1FunctionCallRequest && !IsAgentV1AgentV1FunctionCallCancelled && !IsAgentV1AgentV1AgentStartedSpeaking && !IsAgentV1AgentV1AgentAudioDone && !IsAgentV1AgentV1CustomFromThinkProvider && !IsAgentV1AgentV1Error && !IsAgentV1AgentV1Warning && !IsAgentV1AgentV1History && !IsAgentV1AgentV1Audio || !IsAgentV1AgentV1ListenUpdated && !IsAgentV1AgentV1ThinkUpdated && !IsAgentV1AgentV1ReceiveFunctionCallResponse && !IsAgentV1AgentV1PromptUpdated && !IsAgentV1AgentV1SpeakUpdated && !IsAgentV1AgentV1InjectionRefused && !IsAgentV1AgentV1Welcome && !IsAgentV1AgentV1SettingsApplied && IsAgentV1AgentV1ConversationText && !IsAgentV1AgentV1UserStartedSpeaking && !IsAgentV1AgentV1AgentThinking && !IsAgentV1AgentV1LatencyReport && !IsAgentV1AgentV1FunctionCallRequest && !IsAgentV1AgentV1FunctionCallCancelled && !IsAgentV1AgentV1AgentStartedSpeaking && !IsAgentV1AgentV1AgentAudioDone && !IsAgentV1AgentV1CustomFromThinkProvider && !IsAgentV1AgentV1Error && !IsAgentV1AgentV1Warning && !IsAgentV1AgentV1History && !IsAgentV1AgentV1Audio || !IsAgentV1AgentV1ListenUpdated && !IsAgentV1AgentV1ThinkUpdated && !IsAgentV1AgentV1ReceiveFunctionCallResponse && !IsAgentV1AgentV1PromptUpdated && !IsAgentV1AgentV1SpeakUpdated && !IsAgentV1AgentV1InjectionRefused && !IsAgentV1AgentV1Welcome && !IsAgentV1AgentV1SettingsApplied && !IsAgentV1AgentV1ConversationText && IsAgentV1AgentV1UserStartedSpeaking && !IsAgentV1AgentV1AgentThinking && !IsAgentV1AgentV1LatencyReport && !IsAgentV1AgentV1FunctionCallRequest && !IsAgentV1AgentV1FunctionCallCancelled && !IsAgentV1AgentV1AgentStartedSpeaking && !IsAgentV1AgentV1AgentAudioDone && !IsAgentV1AgentV1CustomFromThinkProvider && !IsAgentV1AgentV1Error && !IsAgentV1AgentV1Warning && !IsAgentV1AgentV1History && !IsAgentV1AgentV1Audio || !IsAgentV1AgentV1ListenUpdated && !IsAgentV1AgentV1ThinkUpdated && !IsAgentV1AgentV1ReceiveFunctionCallResponse && !IsAgentV1AgentV1PromptUpdated && !IsAgentV1AgentV1SpeakUpdated && !IsAgentV1AgentV1InjectionRefused && !IsAgentV1AgentV1Welcome && !IsAgentV1AgentV1SettingsApplied && !IsAgentV1AgentV1ConversationText && !IsAgentV1AgentV1UserStartedSpeaking && IsAgentV1AgentV1AgentThinking && !IsAgentV1AgentV1LatencyReport && !IsAgentV1AgentV1FunctionCallRequest && !IsAgentV1AgentV1FunctionCallCancelled && !IsAgentV1AgentV1AgentStartedSpeaking && !IsAgentV1AgentV1AgentAudioDone && !IsAgentV1AgentV1CustomFromThinkProvider && !IsAgentV1AgentV1Error && !IsAgentV1AgentV1Warning && !IsAgentV1AgentV1History && !IsAgentV1AgentV1Audio || !IsAgentV1AgentV1ListenUpdated && !IsAgentV1AgentV1ThinkUpdated && !IsAgentV1AgentV1ReceiveFunctionCallResponse && !IsAgentV1AgentV1PromptUpdated && !IsAgentV1AgentV1SpeakUpdated && !IsAgentV1AgentV1InjectionRefused && !IsAgentV1AgentV1Welcome && !IsAgentV1AgentV1SettingsApplied && !IsAgentV1AgentV1ConversationText && !IsAgentV1AgentV1UserStartedSpeaking && !IsAgentV1AgentV1AgentThinking && IsAgentV1AgentV1LatencyReport && !IsAgentV1AgentV1FunctionCallRequest && !IsAgentV1AgentV1FunctionCallCancelled && !IsAgentV1AgentV1AgentStartedSpeaking && !IsAgentV1AgentV1AgentAudioDone && !IsAgentV1AgentV1CustomFromThinkProvider && !IsAgentV1AgentV1Error && !IsAgentV1AgentV1Warning && !IsAgentV1AgentV1History && !IsAgentV1AgentV1Audio || !IsAgentV1AgentV1ListenUpdated && !IsAgentV1AgentV1ThinkUpdated && !IsAgentV1AgentV1ReceiveFunctionCallResponse && !IsAgentV1AgentV1PromptUpdated && !IsAgentV1AgentV1SpeakUpdated && !IsAgentV1AgentV1InjectionRefused && !IsAgentV1AgentV1Welcome && !IsAgentV1AgentV1SettingsApplied && !IsAgentV1AgentV1ConversationText && !IsAgentV1AgentV1UserStartedSpeaking && !IsAgentV1AgentV1AgentThinking && !IsAgentV1AgentV1LatencyReport && IsAgentV1AgentV1FunctionCallRequest && !IsAgentV1AgentV1FunctionCallCancelled && !IsAgentV1AgentV1AgentStartedSpeaking && !IsAgentV1AgentV1AgentAudioDone && !IsAgentV1AgentV1CustomFromThinkProvider && !IsAgentV1AgentV1Error && !IsAgentV1AgentV1Warning && !IsAgentV1AgentV1History && !IsAgentV1AgentV1Audio || !IsAgentV1AgentV1ListenUpdated && !IsAgentV1AgentV1ThinkUpdated && !IsAgentV1AgentV1ReceiveFunctionCallResponse && !IsAgentV1AgentV1PromptUpdated && !IsAgentV1AgentV1SpeakUpdated && !IsAgentV1AgentV1InjectionRefused && !IsAgentV1AgentV1Welcome && !IsAgentV1AgentV1SettingsApplied && !IsAgentV1AgentV1ConversationText && !IsAgentV1AgentV1UserStartedSpeaking && !IsAgentV1AgentV1AgentThinking && !IsAgentV1AgentV1LatencyReport && !IsAgentV1AgentV1FunctionCallRequest && IsAgentV1AgentV1FunctionCallCancelled && !IsAgentV1AgentV1AgentStartedSpeaking && !IsAgentV1AgentV1AgentAudioDone && !IsAgentV1AgentV1CustomFromThinkProvider && !IsAgentV1AgentV1Error && !IsAgentV1AgentV1Warning && !IsAgentV1AgentV1History && !IsAgentV1AgentV1Audio || !IsAgentV1AgentV1ListenUpdated && !IsAgentV1AgentV1ThinkUpdated && !IsAgentV1AgentV1ReceiveFunctionCallResponse && !IsAgentV1AgentV1PromptUpdated && !IsAgentV1AgentV1SpeakUpdated && !IsAgentV1AgentV1InjectionRefused && !IsAgentV1AgentV1Welcome && !IsAgentV1AgentV1SettingsApplied && !IsAgentV1AgentV1ConversationText && !IsAgentV1AgentV1UserStartedSpeaking && !IsAgentV1AgentV1AgentThinking && !IsAgentV1AgentV1LatencyReport && !IsAgentV1AgentV1FunctionCallRequest && !IsAgentV1AgentV1FunctionCallCancelled && IsAgentV1AgentV1AgentStartedSpeaking && !IsAgentV1AgentV1AgentAudioDone && !IsAgentV1AgentV1CustomFromThinkProvider && !IsAgentV1AgentV1Error && !IsAgentV1AgentV1Warning && !IsAgentV1AgentV1History && !IsAgentV1AgentV1Audio || !IsAgentV1AgentV1ListenUpdated && !IsAgentV1AgentV1ThinkUpdated && !IsAgentV1AgentV1ReceiveFunctionCallResponse && !IsAgentV1AgentV1PromptUpdated && !IsAgentV1AgentV1SpeakUpdated && !IsAgentV1AgentV1InjectionRefused && !IsAgentV1AgentV1Welcome && !IsAgentV1AgentV1SettingsApplied && !IsAgentV1AgentV1ConversationText && !IsAgentV1AgentV1UserStartedSpeaking && !IsAgentV1AgentV1AgentThinking && !IsAgentV1AgentV1LatencyReport && !IsAgentV1AgentV1FunctionCallRequest && !IsAgentV1AgentV1FunctionCallCancelled && !IsAgentV1AgentV1AgentStartedSpeaking && IsAgentV1AgentV1AgentAudioDone && !IsAgentV1AgentV1CustomFromThinkProvider && !IsAgentV1AgentV1Error && !IsAgentV1AgentV1Warning && !IsAgentV1AgentV1History && !IsAgentV1AgentV1Audio || !IsAgentV1AgentV1ListenUpdated && !IsAgentV1AgentV1ThinkUpdated && !IsAgentV1AgentV1ReceiveFunctionCallResponse && !IsAgentV1AgentV1PromptUpdated && !IsAgentV1AgentV1SpeakUpdated && !IsAgentV1AgentV1InjectionRefused && !IsAgentV1AgentV1Welcome && !IsAgentV1AgentV1SettingsApplied && !IsAgentV1AgentV1ConversationText && !IsAgentV1AgentV1UserStartedSpeaking && !IsAgentV1AgentV1AgentThinking && !IsAgentV1AgentV1LatencyReport && !IsAgentV1AgentV1FunctionCallRequest && !IsAgentV1AgentV1FunctionCallCancelled && !IsAgentV1AgentV1AgentStartedSpeaking && !IsAgentV1AgentV1AgentAudioDone && IsAgentV1AgentV1CustomFromThinkProvider && !IsAgentV1AgentV1Error && !IsAgentV1AgentV1Warning && !IsAgentV1AgentV1History && !IsAgentV1AgentV1Audio || !IsAgentV1AgentV1ListenUpdated && !IsAgentV1AgentV1ThinkUpdated && !IsAgentV1AgentV1ReceiveFunctionCallResponse && !IsAgentV1AgentV1PromptUpdated && !IsAgentV1AgentV1SpeakUpdated && !IsAgentV1AgentV1InjectionRefused && !IsAgentV1AgentV1Welcome && !IsAgentV1AgentV1SettingsApplied && !IsAgentV1AgentV1ConversationText && !IsAgentV1AgentV1UserStartedSpeaking && !IsAgentV1AgentV1AgentThinking && !IsAgentV1AgentV1LatencyReport && !IsAgentV1AgentV1FunctionCallRequest && !IsAgentV1AgentV1FunctionCallCancelled && !IsAgentV1AgentV1AgentStartedSpeaking && !IsAgentV1AgentV1AgentAudioDone && !IsAgentV1AgentV1CustomFromThinkProvider && IsAgentV1AgentV1Error && !IsAgentV1AgentV1Warning && !IsAgentV1AgentV1History && !IsAgentV1AgentV1Audio || !IsAgentV1AgentV1ListenUpdated && !IsAgentV1AgentV1ThinkUpdated && !IsAgentV1AgentV1ReceiveFunctionCallResponse && !IsAgentV1AgentV1PromptUpdated && !IsAgentV1AgentV1SpeakUpdated && !IsAgentV1AgentV1InjectionRefused && !IsAgentV1AgentV1Welcome && !IsAgentV1AgentV1SettingsApplied && !IsAgentV1AgentV1ConversationText && !IsAgentV1AgentV1UserStartedSpeaking && !IsAgentV1AgentV1AgentThinking && !IsAgentV1AgentV1LatencyReport && !IsAgentV1AgentV1FunctionCallRequest && !IsAgentV1AgentV1FunctionCallCancelled && !IsAgentV1AgentV1AgentStartedSpeaking && !IsAgentV1AgentV1AgentAudioDone && !IsAgentV1AgentV1CustomFromThinkProvider && !IsAgentV1AgentV1Error && IsAgentV1AgentV1Warning && !IsAgentV1AgentV1History && !IsAgentV1AgentV1Audio || !IsAgentV1AgentV1ListenUpdated && !IsAgentV1AgentV1ThinkUpdated && !IsAgentV1AgentV1ReceiveFunctionCallResponse && !IsAgentV1AgentV1PromptUpdated && !IsAgentV1AgentV1SpeakUpdated && !IsAgentV1AgentV1InjectionRefused && !IsAgentV1AgentV1Welcome && !IsAgentV1AgentV1SettingsApplied && !IsAgentV1AgentV1ConversationText && !IsAgentV1AgentV1UserStartedSpeaking && !IsAgentV1AgentV1AgentThinking && !IsAgentV1AgentV1LatencyReport && !IsAgentV1AgentV1FunctionCallRequest && !IsAgentV1AgentV1FunctionCallCancelled && !IsAgentV1AgentV1AgentStartedSpeaking && !IsAgentV1AgentV1AgentAudioDone && !IsAgentV1AgentV1CustomFromThinkProvider && !IsAgentV1AgentV1Error && !IsAgentV1AgentV1Warning && IsAgentV1AgentV1History && !IsAgentV1AgentV1Audio || !IsAgentV1AgentV1ListenUpdated && !IsAgentV1AgentV1ThinkUpdated && !IsAgentV1AgentV1ReceiveFunctionCallResponse && !IsAgentV1AgentV1PromptUpdated && !IsAgentV1AgentV1SpeakUpdated && !IsAgentV1AgentV1InjectionRefused && !IsAgentV1AgentV1Welcome && !IsAgentV1AgentV1SettingsApplied && !IsAgentV1AgentV1ConversationText && !IsAgentV1AgentV1UserStartedSpeaking && !IsAgentV1AgentV1AgentThinking && !IsAgentV1AgentV1LatencyReport && !IsAgentV1AgentV1FunctionCallRequest && !IsAgentV1AgentV1FunctionCallCancelled && !IsAgentV1AgentV1AgentStartedSpeaking && !IsAgentV1AgentV1AgentAudioDone && !IsAgentV1AgentV1CustomFromThinkProvider && !IsAgentV1AgentV1Error && !IsAgentV1AgentV1Warning && !IsAgentV1AgentV1History && IsAgentV1AgentV1Audio;
+            return IsListenUpdated && !IsThinkUpdated && !IsFunctionCallResponse && !IsPromptUpdated && !IsSpeakUpdated && !IsInjectionRefused && !IsWelcome && !IsSettingsApplied && !IsConversationText && !IsUserStartedSpeaking && !IsAgentThinking && !IsLatencyReport && !IsFunctionCallRequest && !IsFunctionCallCancelled && !IsAgentStartedSpeaking && !IsAgentAudioDone && !IsCustomFromThinkProvider && !IsAgentV1AgentV1Error && !IsAgentV1AgentV1Warning && !IsAgentV1AgentV1History && !IsAgentV1AgentV1Audio || !IsListenUpdated && IsThinkUpdated && !IsFunctionCallResponse && !IsPromptUpdated && !IsSpeakUpdated && !IsInjectionRefused && !IsWelcome && !IsSettingsApplied && !IsConversationText && !IsUserStartedSpeaking && !IsAgentThinking && !IsLatencyReport && !IsFunctionCallRequest && !IsFunctionCallCancelled && !IsAgentStartedSpeaking && !IsAgentAudioDone && !IsCustomFromThinkProvider && !IsAgentV1AgentV1Error && !IsAgentV1AgentV1Warning && !IsAgentV1AgentV1History && !IsAgentV1AgentV1Audio || !IsListenUpdated && !IsThinkUpdated && IsFunctionCallResponse && !IsPromptUpdated && !IsSpeakUpdated && !IsInjectionRefused && !IsWelcome && !IsSettingsApplied && !IsConversationText && !IsUserStartedSpeaking && !IsAgentThinking && !IsLatencyReport && !IsFunctionCallRequest && !IsFunctionCallCancelled && !IsAgentStartedSpeaking && !IsAgentAudioDone && !IsCustomFromThinkProvider && !IsAgentV1AgentV1Error && !IsAgentV1AgentV1Warning && !IsAgentV1AgentV1History && !IsAgentV1AgentV1Audio || !IsListenUpdated && !IsThinkUpdated && !IsFunctionCallResponse && IsPromptUpdated && !IsSpeakUpdated && !IsInjectionRefused && !IsWelcome && !IsSettingsApplied && !IsConversationText && !IsUserStartedSpeaking && !IsAgentThinking && !IsLatencyReport && !IsFunctionCallRequest && !IsFunctionCallCancelled && !IsAgentStartedSpeaking && !IsAgentAudioDone && !IsCustomFromThinkProvider && !IsAgentV1AgentV1Error && !IsAgentV1AgentV1Warning && !IsAgentV1AgentV1History && !IsAgentV1AgentV1Audio || !IsListenUpdated && !IsThinkUpdated && !IsFunctionCallResponse && !IsPromptUpdated && IsSpeakUpdated && !IsInjectionRefused && !IsWelcome && !IsSettingsApplied && !IsConversationText && !IsUserStartedSpeaking && !IsAgentThinking && !IsLatencyReport && !IsFunctionCallRequest && !IsFunctionCallCancelled && !IsAgentStartedSpeaking && !IsAgentAudioDone && !IsCustomFromThinkProvider && !IsAgentV1AgentV1Error && !IsAgentV1AgentV1Warning && !IsAgentV1AgentV1History && !IsAgentV1AgentV1Audio || !IsListenUpdated && !IsThinkUpdated && !IsFunctionCallResponse && !IsPromptUpdated && !IsSpeakUpdated && IsInjectionRefused && !IsWelcome && !IsSettingsApplied && !IsConversationText && !IsUserStartedSpeaking && !IsAgentThinking && !IsLatencyReport && !IsFunctionCallRequest && !IsFunctionCallCancelled && !IsAgentStartedSpeaking && !IsAgentAudioDone && !IsCustomFromThinkProvider && !IsAgentV1AgentV1Error && !IsAgentV1AgentV1Warning && !IsAgentV1AgentV1History && !IsAgentV1AgentV1Audio || !IsListenUpdated && !IsThinkUpdated && !IsFunctionCallResponse && !IsPromptUpdated && !IsSpeakUpdated && !IsInjectionRefused && IsWelcome && !IsSettingsApplied && !IsConversationText && !IsUserStartedSpeaking && !IsAgentThinking && !IsLatencyReport && !IsFunctionCallRequest && !IsFunctionCallCancelled && !IsAgentStartedSpeaking && !IsAgentAudioDone && !IsCustomFromThinkProvider && !IsAgentV1AgentV1Error && !IsAgentV1AgentV1Warning && !IsAgentV1AgentV1History && !IsAgentV1AgentV1Audio || !IsListenUpdated && !IsThinkUpdated && !IsFunctionCallResponse && !IsPromptUpdated && !IsSpeakUpdated && !IsInjectionRefused && !IsWelcome && IsSettingsApplied && !IsConversationText && !IsUserStartedSpeaking && !IsAgentThinking && !IsLatencyReport && !IsFunctionCallRequest && !IsFunctionCallCancelled && !IsAgentStartedSpeaking && !IsAgentAudioDone && !IsCustomFromThinkProvider && !IsAgentV1AgentV1Error && !IsAgentV1AgentV1Warning && !IsAgentV1AgentV1History && !IsAgentV1AgentV1Audio || !IsListenUpdated && !IsThinkUpdated && !IsFunctionCallResponse && !IsPromptUpdated && !IsSpeakUpdated && !IsInjectionRefused && !IsWelcome && !IsSettingsApplied && IsConversationText && !IsUserStartedSpeaking && !IsAgentThinking && !IsLatencyReport && !IsFunctionCallRequest && !IsFunctionCallCancelled && !IsAgentStartedSpeaking && !IsAgentAudioDone && !IsCustomFromThinkProvider && !IsAgentV1AgentV1Error && !IsAgentV1AgentV1Warning && !IsAgentV1AgentV1History && !IsAgentV1AgentV1Audio || !IsListenUpdated && !IsThinkUpdated && !IsFunctionCallResponse && !IsPromptUpdated && !IsSpeakUpdated && !IsInjectionRefused && !IsWelcome && !IsSettingsApplied && !IsConversationText && IsUserStartedSpeaking && !IsAgentThinking && !IsLatencyReport && !IsFunctionCallRequest && !IsFunctionCallCancelled && !IsAgentStartedSpeaking && !IsAgentAudioDone && !IsCustomFromThinkProvider && !IsAgentV1AgentV1Error && !IsAgentV1AgentV1Warning && !IsAgentV1AgentV1History && !IsAgentV1AgentV1Audio || !IsListenUpdated && !IsThinkUpdated && !IsFunctionCallResponse && !IsPromptUpdated && !IsSpeakUpdated && !IsInjectionRefused && !IsWelcome && !IsSettingsApplied && !IsConversationText && !IsUserStartedSpeaking && IsAgentThinking && !IsLatencyReport && !IsFunctionCallRequest && !IsFunctionCallCancelled && !IsAgentStartedSpeaking && !IsAgentAudioDone && !IsCustomFromThinkProvider && !IsAgentV1AgentV1Error && !IsAgentV1AgentV1Warning && !IsAgentV1AgentV1History && !IsAgentV1AgentV1Audio || !IsListenUpdated && !IsThinkUpdated && !IsFunctionCallResponse && !IsPromptUpdated && !IsSpeakUpdated && !IsInjectionRefused && !IsWelcome && !IsSettingsApplied && !IsConversationText && !IsUserStartedSpeaking && !IsAgentThinking && IsLatencyReport && !IsFunctionCallRequest && !IsFunctionCallCancelled && !IsAgentStartedSpeaking && !IsAgentAudioDone && !IsCustomFromThinkProvider && !IsAgentV1AgentV1Error && !IsAgentV1AgentV1Warning && !IsAgentV1AgentV1History && !IsAgentV1AgentV1Audio || !IsListenUpdated && !IsThinkUpdated && !IsFunctionCallResponse && !IsPromptUpdated && !IsSpeakUpdated && !IsInjectionRefused && !IsWelcome && !IsSettingsApplied && !IsConversationText && !IsUserStartedSpeaking && !IsAgentThinking && !IsLatencyReport && IsFunctionCallRequest && !IsFunctionCallCancelled && !IsAgentStartedSpeaking && !IsAgentAudioDone && !IsCustomFromThinkProvider && !IsAgentV1AgentV1Error && !IsAgentV1AgentV1Warning && !IsAgentV1AgentV1History && !IsAgentV1AgentV1Audio || !IsListenUpdated && !IsThinkUpdated && !IsFunctionCallResponse && !IsPromptUpdated && !IsSpeakUpdated && !IsInjectionRefused && !IsWelcome && !IsSettingsApplied && !IsConversationText && !IsUserStartedSpeaking && !IsAgentThinking && !IsLatencyReport && !IsFunctionCallRequest && IsFunctionCallCancelled && !IsAgentStartedSpeaking && !IsAgentAudioDone && !IsCustomFromThinkProvider && !IsAgentV1AgentV1Error && !IsAgentV1AgentV1Warning && !IsAgentV1AgentV1History && !IsAgentV1AgentV1Audio || !IsListenUpdated && !IsThinkUpdated && !IsFunctionCallResponse && !IsPromptUpdated && !IsSpeakUpdated && !IsInjectionRefused && !IsWelcome && !IsSettingsApplied && !IsConversationText && !IsUserStartedSpeaking && !IsAgentThinking && !IsLatencyReport && !IsFunctionCallRequest && !IsFunctionCallCancelled && IsAgentStartedSpeaking && !IsAgentAudioDone && !IsCustomFromThinkProvider && !IsAgentV1AgentV1Error && !IsAgentV1AgentV1Warning && !IsAgentV1AgentV1History && !IsAgentV1AgentV1Audio || !IsListenUpdated && !IsThinkUpdated && !IsFunctionCallResponse && !IsPromptUpdated && !IsSpeakUpdated && !IsInjectionRefused && !IsWelcome && !IsSettingsApplied && !IsConversationText && !IsUserStartedSpeaking && !IsAgentThinking && !IsLatencyReport && !IsFunctionCallRequest && !IsFunctionCallCancelled && !IsAgentStartedSpeaking && IsAgentAudioDone && !IsCustomFromThinkProvider && !IsAgentV1AgentV1Error && !IsAgentV1AgentV1Warning && !IsAgentV1AgentV1History && !IsAgentV1AgentV1Audio || !IsListenUpdated && !IsThinkUpdated && !IsFunctionCallResponse && !IsPromptUpdated && !IsSpeakUpdated && !IsInjectionRefused && !IsWelcome && !IsSettingsApplied && !IsConversationText && !IsUserStartedSpeaking && !IsAgentThinking && !IsLatencyReport && !IsFunctionCallRequest && !IsFunctionCallCancelled && !IsAgentStartedSpeaking && !IsAgentAudioDone && IsCustomFromThinkProvider && !IsAgentV1AgentV1Error && !IsAgentV1AgentV1Warning && !IsAgentV1AgentV1History && !IsAgentV1AgentV1Audio || !IsListenUpdated && !IsThinkUpdated && !IsFunctionCallResponse && !IsPromptUpdated && !IsSpeakUpdated && !IsInjectionRefused && !IsWelcome && !IsSettingsApplied && !IsConversationText && !IsUserStartedSpeaking && !IsAgentThinking && !IsLatencyReport && !IsFunctionCallRequest && !IsFunctionCallCancelled && !IsAgentStartedSpeaking && !IsAgentAudioDone && !IsCustomFromThinkProvider && IsAgentV1AgentV1Error && !IsAgentV1AgentV1Warning && !IsAgentV1AgentV1History && !IsAgentV1AgentV1Audio || !IsListenUpdated && !IsThinkUpdated && !IsFunctionCallResponse && !IsPromptUpdated && !IsSpeakUpdated && !IsInjectionRefused && !IsWelcome && !IsSettingsApplied && !IsConversationText && !IsUserStartedSpeaking && !IsAgentThinking && !IsLatencyReport && !IsFunctionCallRequest && !IsFunctionCallCancelled && !IsAgentStartedSpeaking && !IsAgentAudioDone && !IsCustomFromThinkProvider && !IsAgentV1AgentV1Error && IsAgentV1AgentV1Warning && !IsAgentV1AgentV1History && !IsAgentV1AgentV1Audio || !IsListenUpdated && !IsThinkUpdated && !IsFunctionCallResponse && !IsPromptUpdated && !IsSpeakUpdated && !IsInjectionRefused && !IsWelcome && !IsSettingsApplied && !IsConversationText && !IsUserStartedSpeaking && !IsAgentThinking && !IsLatencyReport && !IsFunctionCallRequest && !IsFunctionCallCancelled && !IsAgentStartedSpeaking && !IsAgentAudioDone && !IsCustomFromThinkProvider && !IsAgentV1AgentV1Error && !IsAgentV1AgentV1Warning && IsAgentV1AgentV1History && !IsAgentV1AgentV1Audio || !IsListenUpdated && !IsThinkUpdated && !IsFunctionCallResponse && !IsPromptUpdated && !IsSpeakUpdated && !IsInjectionRefused && !IsWelcome && !IsSettingsApplied && !IsConversationText && !IsUserStartedSpeaking && !IsAgentThinking && !IsLatencyReport && !IsFunctionCallRequest && !IsFunctionCallCancelled && !IsAgentStartedSpeaking && !IsAgentAudioDone && !IsCustomFromThinkProvider && !IsAgentV1AgentV1Error && !IsAgentV1AgentV1Warning && !IsAgentV1AgentV1History && IsAgentV1AgentV1Audio;
         }
 
         /// <summary>
         ///
         /// </summary>
         public TResult? Match<TResult>(
-            global::System.Func<global::Deepgram.Realtime.AgentV1AgentV1ListenUpdated, TResult>? agentV1AgentV1ListenUpdated = null,
-            global::System.Func<global::Deepgram.Realtime.AgentV1AgentV1ThinkUpdated, TResult>? agentV1AgentV1ThinkUpdated = null,
-            global::System.Func<global::Deepgram.Realtime.AgentV1AgentV1ReceiveFunctionCallResponse, TResult>? agentV1AgentV1ReceiveFunctionCallResponse = null,
-            global::System.Func<global::Deepgram.Realtime.AgentV1AgentV1PromptUpdated, TResult>? agentV1AgentV1PromptUpdated = null,
-            global::System.Func<global::Deepgram.Realtime.AgentV1AgentV1SpeakUpdated, TResult>? agentV1AgentV1SpeakUpdated = null,
-            global::System.Func<global::Deepgram.Realtime.AgentV1AgentV1InjectionRefused, TResult>? agentV1AgentV1InjectionRefused = null,
-            global::System.Func<global::Deepgram.Realtime.AgentV1AgentV1Welcome, TResult>? agentV1AgentV1Welcome = null,
-            global::System.Func<global::Deepgram.Realtime.AgentV1AgentV1SettingsApplied, TResult>? agentV1AgentV1SettingsApplied = null,
-            global::System.Func<global::Deepgram.Realtime.AgentV1AgentV1ConversationText, TResult>? agentV1AgentV1ConversationText = null,
-            global::System.Func<global::Deepgram.Realtime.AgentV1AgentV1UserStartedSpeaking, TResult>? agentV1AgentV1UserStartedSpeaking = null,
-            global::System.Func<global::Deepgram.Realtime.AgentV1AgentV1AgentThinking, TResult>? agentV1AgentV1AgentThinking = null,
-            global::System.Func<global::Deepgram.Realtime.AgentV1AgentV1LatencyReport, TResult>? agentV1AgentV1LatencyReport = null,
-            global::System.Func<global::Deepgram.Realtime.AgentV1AgentV1FunctionCallRequest, TResult>? agentV1AgentV1FunctionCallRequest = null,
-            global::System.Func<global::Deepgram.Realtime.AgentV1AgentV1FunctionCallCancelled, TResult>? agentV1AgentV1FunctionCallCancelled = null,
-            global::System.Func<global::Deepgram.Realtime.AgentV1AgentV1AgentStartedSpeaking, TResult>? agentV1AgentV1AgentStartedSpeaking = null,
-            global::System.Func<global::Deepgram.Realtime.AgentV1AgentV1AgentAudioDone, TResult>? agentV1AgentV1AgentAudioDone = null,
-            global::System.Func<global::Deepgram.Realtime.AgentV1AgentV1CustomFromThinkProvider, TResult>? agentV1AgentV1CustomFromThinkProvider = null,
+            global::System.Func<global::Deepgram.Realtime.AgentV1AgentV1ListenUpdated, TResult>? listenUpdated = null,
+            global::System.Func<global::Deepgram.Realtime.AgentV1AgentV1ThinkUpdated, TResult>? thinkUpdated = null,
+            global::System.Func<global::Deepgram.Realtime.AgentV1AgentV1ReceiveFunctionCallResponse, TResult>? functionCallResponse = null,
+            global::System.Func<global::Deepgram.Realtime.AgentV1AgentV1PromptUpdated, TResult>? promptUpdated = null,
+            global::System.Func<global::Deepgram.Realtime.AgentV1AgentV1SpeakUpdated, TResult>? speakUpdated = null,
+            global::System.Func<global::Deepgram.Realtime.AgentV1AgentV1InjectionRefused, TResult>? injectionRefused = null,
+            global::System.Func<global::Deepgram.Realtime.AgentV1AgentV1Welcome, TResult>? welcome = null,
+            global::System.Func<global::Deepgram.Realtime.AgentV1AgentV1SettingsApplied, TResult>? settingsApplied = null,
+            global::System.Func<global::Deepgram.Realtime.AgentV1AgentV1ConversationText, TResult>? conversationText = null,
+            global::System.Func<global::Deepgram.Realtime.AgentV1AgentV1UserStartedSpeaking, TResult>? userStartedSpeaking = null,
+            global::System.Func<global::Deepgram.Realtime.AgentV1AgentV1AgentThinking, TResult>? agentThinking = null,
+            global::System.Func<global::Deepgram.Realtime.AgentV1AgentV1LatencyReport, TResult>? latencyReport = null,
+            global::System.Func<global::Deepgram.Realtime.AgentV1AgentV1FunctionCallRequest, TResult>? functionCallRequest = null,
+            global::System.Func<global::Deepgram.Realtime.AgentV1AgentV1FunctionCallCancelled, TResult>? functionCallCancelled = null,
+            global::System.Func<global::Deepgram.Realtime.AgentV1AgentV1AgentStartedSpeaking, TResult>? agentStartedSpeaking = null,
+            global::System.Func<global::Deepgram.Realtime.AgentV1AgentV1AgentAudioDone, TResult>? agentAudioDone = null,
+            global::System.Func<global::Deepgram.Realtime.AgentV1AgentV1CustomFromThinkProvider, TResult>? customFromThinkProvider = null,
             global::System.Func<global::Deepgram.Realtime.AgentV1AgentV1Error, TResult>? agentV1AgentV1Error = null,
             global::System.Func<global::Deepgram.Realtime.AgentV1AgentV1Warning, TResult>? agentV1AgentV1Warning = null,
             global::System.Func<global::Deepgram.Realtime.AgentV1AgentV1History?, TResult>? agentV1AgentV1History = null,
@@ -1418,73 +1418,73 @@ namespace Deepgram.Realtime
                 Validate();
             }
 
-            if (AgentV1AgentV1ListenUpdated is { } __value0 && agentV1AgentV1ListenUpdated != null)
+            if (ListenUpdated is { } __value0 && listenUpdated != null)
             {
-                return agentV1AgentV1ListenUpdated(__value0);
+                return listenUpdated(__value0);
             }
-            else if (AgentV1AgentV1ThinkUpdated is { } __value1 && agentV1AgentV1ThinkUpdated != null)
+            else if (ThinkUpdated is { } __value1 && thinkUpdated != null)
             {
-                return agentV1AgentV1ThinkUpdated(__value1);
+                return thinkUpdated(__value1);
             }
-            else if (AgentV1AgentV1ReceiveFunctionCallResponse is { } __value2 && agentV1AgentV1ReceiveFunctionCallResponse != null)
+            else if (FunctionCallResponse is { } __value2 && functionCallResponse != null)
             {
-                return agentV1AgentV1ReceiveFunctionCallResponse(__value2);
+                return functionCallResponse(__value2);
             }
-            else if (AgentV1AgentV1PromptUpdated is { } __value3 && agentV1AgentV1PromptUpdated != null)
+            else if (PromptUpdated is { } __value3 && promptUpdated != null)
             {
-                return agentV1AgentV1PromptUpdated(__value3);
+                return promptUpdated(__value3);
             }
-            else if (AgentV1AgentV1SpeakUpdated is { } __value4 && agentV1AgentV1SpeakUpdated != null)
+            else if (SpeakUpdated is { } __value4 && speakUpdated != null)
             {
-                return agentV1AgentV1SpeakUpdated(__value4);
+                return speakUpdated(__value4);
             }
-            else if (AgentV1AgentV1InjectionRefused is { } __value5 && agentV1AgentV1InjectionRefused != null)
+            else if (InjectionRefused is { } __value5 && injectionRefused != null)
             {
-                return agentV1AgentV1InjectionRefused(__value5);
+                return injectionRefused(__value5);
             }
-            else if (AgentV1AgentV1Welcome is { } __value6 && agentV1AgentV1Welcome != null)
+            else if (Welcome is { } __value6 && welcome != null)
             {
-                return agentV1AgentV1Welcome(__value6);
+                return welcome(__value6);
             }
-            else if (AgentV1AgentV1SettingsApplied is { } __value7 && agentV1AgentV1SettingsApplied != null)
+            else if (SettingsApplied is { } __value7 && settingsApplied != null)
             {
-                return agentV1AgentV1SettingsApplied(__value7);
+                return settingsApplied(__value7);
             }
-            else if (AgentV1AgentV1ConversationText is { } __value8 && agentV1AgentV1ConversationText != null)
+            else if (ConversationText is { } __value8 && conversationText != null)
             {
-                return agentV1AgentV1ConversationText(__value8);
+                return conversationText(__value8);
             }
-            else if (AgentV1AgentV1UserStartedSpeaking is { } __value9 && agentV1AgentV1UserStartedSpeaking != null)
+            else if (UserStartedSpeaking is { } __value9 && userStartedSpeaking != null)
             {
-                return agentV1AgentV1UserStartedSpeaking(__value9);
+                return userStartedSpeaking(__value9);
             }
-            else if (AgentV1AgentV1AgentThinking is { } __value10 && agentV1AgentV1AgentThinking != null)
+            else if (AgentThinking is { } __value10 && agentThinking != null)
             {
-                return agentV1AgentV1AgentThinking(__value10);
+                return agentThinking(__value10);
             }
-            else if (AgentV1AgentV1LatencyReport is { } __value11 && agentV1AgentV1LatencyReport != null)
+            else if (LatencyReport is { } __value11 && latencyReport != null)
             {
-                return agentV1AgentV1LatencyReport(__value11);
+                return latencyReport(__value11);
             }
-            else if (AgentV1AgentV1FunctionCallRequest is { } __value12 && agentV1AgentV1FunctionCallRequest != null)
+            else if (FunctionCallRequest is { } __value12 && functionCallRequest != null)
             {
-                return agentV1AgentV1FunctionCallRequest(__value12);
+                return functionCallRequest(__value12);
             }
-            else if (AgentV1AgentV1FunctionCallCancelled is { } __value13 && agentV1AgentV1FunctionCallCancelled != null)
+            else if (FunctionCallCancelled is { } __value13 && functionCallCancelled != null)
             {
-                return agentV1AgentV1FunctionCallCancelled(__value13);
+                return functionCallCancelled(__value13);
             }
-            else if (AgentV1AgentV1AgentStartedSpeaking is { } __value14 && agentV1AgentV1AgentStartedSpeaking != null)
+            else if (AgentStartedSpeaking is { } __value14 && agentStartedSpeaking != null)
             {
-                return agentV1AgentV1AgentStartedSpeaking(__value14);
+                return agentStartedSpeaking(__value14);
             }
-            else if (AgentV1AgentV1AgentAudioDone is { } __value15 && agentV1AgentV1AgentAudioDone != null)
+            else if (AgentAudioDone is { } __value15 && agentAudioDone != null)
             {
-                return agentV1AgentV1AgentAudioDone(__value15);
+                return agentAudioDone(__value15);
             }
-            else if (AgentV1AgentV1CustomFromThinkProvider is { } __value16 && agentV1AgentV1CustomFromThinkProvider != null)
+            else if (CustomFromThinkProvider is { } __value16 && customFromThinkProvider != null)
             {
-                return agentV1AgentV1CustomFromThinkProvider(__value16);
+                return customFromThinkProvider(__value16);
             }
             else if (AgentV1AgentV1Error is { } __value17 && agentV1AgentV1Error != null)
             {
@@ -1510,39 +1510,39 @@ namespace Deepgram.Realtime
         ///
         /// </summary>
         public void Match(
-            global::System.Action<global::Deepgram.Realtime.AgentV1AgentV1ListenUpdated>? agentV1AgentV1ListenUpdated = null,
+            global::System.Action<global::Deepgram.Realtime.AgentV1AgentV1ListenUpdated>? listenUpdated = null,
 
-            global::System.Action<global::Deepgram.Realtime.AgentV1AgentV1ThinkUpdated>? agentV1AgentV1ThinkUpdated = null,
+            global::System.Action<global::Deepgram.Realtime.AgentV1AgentV1ThinkUpdated>? thinkUpdated = null,
 
-            global::System.Action<global::Deepgram.Realtime.AgentV1AgentV1ReceiveFunctionCallResponse>? agentV1AgentV1ReceiveFunctionCallResponse = null,
+            global::System.Action<global::Deepgram.Realtime.AgentV1AgentV1ReceiveFunctionCallResponse>? functionCallResponse = null,
 
-            global::System.Action<global::Deepgram.Realtime.AgentV1AgentV1PromptUpdated>? agentV1AgentV1PromptUpdated = null,
+            global::System.Action<global::Deepgram.Realtime.AgentV1AgentV1PromptUpdated>? promptUpdated = null,
 
-            global::System.Action<global::Deepgram.Realtime.AgentV1AgentV1SpeakUpdated>? agentV1AgentV1SpeakUpdated = null,
+            global::System.Action<global::Deepgram.Realtime.AgentV1AgentV1SpeakUpdated>? speakUpdated = null,
 
-            global::System.Action<global::Deepgram.Realtime.AgentV1AgentV1InjectionRefused>? agentV1AgentV1InjectionRefused = null,
+            global::System.Action<global::Deepgram.Realtime.AgentV1AgentV1InjectionRefused>? injectionRefused = null,
 
-            global::System.Action<global::Deepgram.Realtime.AgentV1AgentV1Welcome>? agentV1AgentV1Welcome = null,
+            global::System.Action<global::Deepgram.Realtime.AgentV1AgentV1Welcome>? welcome = null,
 
-            global::System.Action<global::Deepgram.Realtime.AgentV1AgentV1SettingsApplied>? agentV1AgentV1SettingsApplied = null,
+            global::System.Action<global::Deepgram.Realtime.AgentV1AgentV1SettingsApplied>? settingsApplied = null,
 
-            global::System.Action<global::Deepgram.Realtime.AgentV1AgentV1ConversationText>? agentV1AgentV1ConversationText = null,
+            global::System.Action<global::Deepgram.Realtime.AgentV1AgentV1ConversationText>? conversationText = null,
 
-            global::System.Action<global::Deepgram.Realtime.AgentV1AgentV1UserStartedSpeaking>? agentV1AgentV1UserStartedSpeaking = null,
+            global::System.Action<global::Deepgram.Realtime.AgentV1AgentV1UserStartedSpeaking>? userStartedSpeaking = null,
 
-            global::System.Action<global::Deepgram.Realtime.AgentV1AgentV1AgentThinking>? agentV1AgentV1AgentThinking = null,
+            global::System.Action<global::Deepgram.Realtime.AgentV1AgentV1AgentThinking>? agentThinking = null,
 
-            global::System.Action<global::Deepgram.Realtime.AgentV1AgentV1LatencyReport>? agentV1AgentV1LatencyReport = null,
+            global::System.Action<global::Deepgram.Realtime.AgentV1AgentV1LatencyReport>? latencyReport = null,
 
-            global::System.Action<global::Deepgram.Realtime.AgentV1AgentV1FunctionCallRequest>? agentV1AgentV1FunctionCallRequest = null,
+            global::System.Action<global::Deepgram.Realtime.AgentV1AgentV1FunctionCallRequest>? functionCallRequest = null,
 
-            global::System.Action<global::Deepgram.Realtime.AgentV1AgentV1FunctionCallCancelled>? agentV1AgentV1FunctionCallCancelled = null,
+            global::System.Action<global::Deepgram.Realtime.AgentV1AgentV1FunctionCallCancelled>? functionCallCancelled = null,
 
-            global::System.Action<global::Deepgram.Realtime.AgentV1AgentV1AgentStartedSpeaking>? agentV1AgentV1AgentStartedSpeaking = null,
+            global::System.Action<global::Deepgram.Realtime.AgentV1AgentV1AgentStartedSpeaking>? agentStartedSpeaking = null,
 
-            global::System.Action<global::Deepgram.Realtime.AgentV1AgentV1AgentAudioDone>? agentV1AgentV1AgentAudioDone = null,
+            global::System.Action<global::Deepgram.Realtime.AgentV1AgentV1AgentAudioDone>? agentAudioDone = null,
 
-            global::System.Action<global::Deepgram.Realtime.AgentV1AgentV1CustomFromThinkProvider>? agentV1AgentV1CustomFromThinkProvider = null,
+            global::System.Action<global::Deepgram.Realtime.AgentV1AgentV1CustomFromThinkProvider>? customFromThinkProvider = null,
 
             global::System.Action<global::Deepgram.Realtime.AgentV1AgentV1Error>? agentV1AgentV1Error = null,
 
@@ -1558,73 +1558,73 @@ namespace Deepgram.Realtime
                 Validate();
             }
 
-            if (AgentV1AgentV1ListenUpdated is { } __value0)
+            if (ListenUpdated is { } __value0)
             {
-                agentV1AgentV1ListenUpdated?.Invoke(__value0);
+                listenUpdated?.Invoke(__value0);
             }
-            else if (AgentV1AgentV1ThinkUpdated is { } __value1)
+            else if (ThinkUpdated is { } __value1)
             {
-                agentV1AgentV1ThinkUpdated?.Invoke(__value1);
+                thinkUpdated?.Invoke(__value1);
             }
-            else if (AgentV1AgentV1ReceiveFunctionCallResponse is { } __value2)
+            else if (FunctionCallResponse is { } __value2)
             {
-                agentV1AgentV1ReceiveFunctionCallResponse?.Invoke(__value2);
+                functionCallResponse?.Invoke(__value2);
             }
-            else if (AgentV1AgentV1PromptUpdated is { } __value3)
+            else if (PromptUpdated is { } __value3)
             {
-                agentV1AgentV1PromptUpdated?.Invoke(__value3);
+                promptUpdated?.Invoke(__value3);
             }
-            else if (AgentV1AgentV1SpeakUpdated is { } __value4)
+            else if (SpeakUpdated is { } __value4)
             {
-                agentV1AgentV1SpeakUpdated?.Invoke(__value4);
+                speakUpdated?.Invoke(__value4);
             }
-            else if (AgentV1AgentV1InjectionRefused is { } __value5)
+            else if (InjectionRefused is { } __value5)
             {
-                agentV1AgentV1InjectionRefused?.Invoke(__value5);
+                injectionRefused?.Invoke(__value5);
             }
-            else if (AgentV1AgentV1Welcome is { } __value6)
+            else if (Welcome is { } __value6)
             {
-                agentV1AgentV1Welcome?.Invoke(__value6);
+                welcome?.Invoke(__value6);
             }
-            else if (AgentV1AgentV1SettingsApplied is { } __value7)
+            else if (SettingsApplied is { } __value7)
             {
-                agentV1AgentV1SettingsApplied?.Invoke(__value7);
+                settingsApplied?.Invoke(__value7);
             }
-            else if (AgentV1AgentV1ConversationText is { } __value8)
+            else if (ConversationText is { } __value8)
             {
-                agentV1AgentV1ConversationText?.Invoke(__value8);
+                conversationText?.Invoke(__value8);
             }
-            else if (AgentV1AgentV1UserStartedSpeaking is { } __value9)
+            else if (UserStartedSpeaking is { } __value9)
             {
-                agentV1AgentV1UserStartedSpeaking?.Invoke(__value9);
+                userStartedSpeaking?.Invoke(__value9);
             }
-            else if (AgentV1AgentV1AgentThinking is { } __value10)
+            else if (AgentThinking is { } __value10)
             {
-                agentV1AgentV1AgentThinking?.Invoke(__value10);
+                agentThinking?.Invoke(__value10);
             }
-            else if (AgentV1AgentV1LatencyReport is { } __value11)
+            else if (LatencyReport is { } __value11)
             {
-                agentV1AgentV1LatencyReport?.Invoke(__value11);
+                latencyReport?.Invoke(__value11);
             }
-            else if (AgentV1AgentV1FunctionCallRequest is { } __value12)
+            else if (FunctionCallRequest is { } __value12)
             {
-                agentV1AgentV1FunctionCallRequest?.Invoke(__value12);
+                functionCallRequest?.Invoke(__value12);
             }
-            else if (AgentV1AgentV1FunctionCallCancelled is { } __value13)
+            else if (FunctionCallCancelled is { } __value13)
             {
-                agentV1AgentV1FunctionCallCancelled?.Invoke(__value13);
+                functionCallCancelled?.Invoke(__value13);
             }
-            else if (AgentV1AgentV1AgentStartedSpeaking is { } __value14)
+            else if (AgentStartedSpeaking is { } __value14)
             {
-                agentV1AgentV1AgentStartedSpeaking?.Invoke(__value14);
+                agentStartedSpeaking?.Invoke(__value14);
             }
-            else if (AgentV1AgentV1AgentAudioDone is { } __value15)
+            else if (AgentAudioDone is { } __value15)
             {
-                agentV1AgentV1AgentAudioDone?.Invoke(__value15);
+                agentAudioDone?.Invoke(__value15);
             }
-            else if (AgentV1AgentV1CustomFromThinkProvider is { } __value16)
+            else if (CustomFromThinkProvider is { } __value16)
             {
-                agentV1AgentV1CustomFromThinkProvider?.Invoke(__value16);
+                customFromThinkProvider?.Invoke(__value16);
             }
             else if (AgentV1AgentV1Error is { } __value17)
             {
@@ -1648,23 +1648,23 @@ namespace Deepgram.Realtime
         ///
         /// </summary>
         public void Switch(
-            global::System.Action<global::Deepgram.Realtime.AgentV1AgentV1ListenUpdated>? agentV1AgentV1ListenUpdated = null,
-            global::System.Action<global::Deepgram.Realtime.AgentV1AgentV1ThinkUpdated>? agentV1AgentV1ThinkUpdated = null,
-            global::System.Action<global::Deepgram.Realtime.AgentV1AgentV1ReceiveFunctionCallResponse>? agentV1AgentV1ReceiveFunctionCallResponse = null,
-            global::System.Action<global::Deepgram.Realtime.AgentV1AgentV1PromptUpdated>? agentV1AgentV1PromptUpdated = null,
-            global::System.Action<global::Deepgram.Realtime.AgentV1AgentV1SpeakUpdated>? agentV1AgentV1SpeakUpdated = null,
-            global::System.Action<global::Deepgram.Realtime.AgentV1AgentV1InjectionRefused>? agentV1AgentV1InjectionRefused = null,
-            global::System.Action<global::Deepgram.Realtime.AgentV1AgentV1Welcome>? agentV1AgentV1Welcome = null,
-            global::System.Action<global::Deepgram.Realtime.AgentV1AgentV1SettingsApplied>? agentV1AgentV1SettingsApplied = null,
-            global::System.Action<global::Deepgram.Realtime.AgentV1AgentV1ConversationText>? agentV1AgentV1ConversationText = null,
-            global::System.Action<global::Deepgram.Realtime.AgentV1AgentV1UserStartedSpeaking>? agentV1AgentV1UserStartedSpeaking = null,
-            global::System.Action<global::Deepgram.Realtime.AgentV1AgentV1AgentThinking>? agentV1AgentV1AgentThinking = null,
-            global::System.Action<global::Deepgram.Realtime.AgentV1AgentV1LatencyReport>? agentV1AgentV1LatencyReport = null,
-            global::System.Action<global::Deepgram.Realtime.AgentV1AgentV1FunctionCallRequest>? agentV1AgentV1FunctionCallRequest = null,
-            global::System.Action<global::Deepgram.Realtime.AgentV1AgentV1FunctionCallCancelled>? agentV1AgentV1FunctionCallCancelled = null,
-            global::System.Action<global::Deepgram.Realtime.AgentV1AgentV1AgentStartedSpeaking>? agentV1AgentV1AgentStartedSpeaking = null,
-            global::System.Action<global::Deepgram.Realtime.AgentV1AgentV1AgentAudioDone>? agentV1AgentV1AgentAudioDone = null,
-            global::System.Action<global::Deepgram.Realtime.AgentV1AgentV1CustomFromThinkProvider>? agentV1AgentV1CustomFromThinkProvider = null,
+            global::System.Action<global::Deepgram.Realtime.AgentV1AgentV1ListenUpdated>? listenUpdated = null,
+            global::System.Action<global::Deepgram.Realtime.AgentV1AgentV1ThinkUpdated>? thinkUpdated = null,
+            global::System.Action<global::Deepgram.Realtime.AgentV1AgentV1ReceiveFunctionCallResponse>? functionCallResponse = null,
+            global::System.Action<global::Deepgram.Realtime.AgentV1AgentV1PromptUpdated>? promptUpdated = null,
+            global::System.Action<global::Deepgram.Realtime.AgentV1AgentV1SpeakUpdated>? speakUpdated = null,
+            global::System.Action<global::Deepgram.Realtime.AgentV1AgentV1InjectionRefused>? injectionRefused = null,
+            global::System.Action<global::Deepgram.Realtime.AgentV1AgentV1Welcome>? welcome = null,
+            global::System.Action<global::Deepgram.Realtime.AgentV1AgentV1SettingsApplied>? settingsApplied = null,
+            global::System.Action<global::Deepgram.Realtime.AgentV1AgentV1ConversationText>? conversationText = null,
+            global::System.Action<global::Deepgram.Realtime.AgentV1AgentV1UserStartedSpeaking>? userStartedSpeaking = null,
+            global::System.Action<global::Deepgram.Realtime.AgentV1AgentV1AgentThinking>? agentThinking = null,
+            global::System.Action<global::Deepgram.Realtime.AgentV1AgentV1LatencyReport>? latencyReport = null,
+            global::System.Action<global::Deepgram.Realtime.AgentV1AgentV1FunctionCallRequest>? functionCallRequest = null,
+            global::System.Action<global::Deepgram.Realtime.AgentV1AgentV1FunctionCallCancelled>? functionCallCancelled = null,
+            global::System.Action<global::Deepgram.Realtime.AgentV1AgentV1AgentStartedSpeaking>? agentStartedSpeaking = null,
+            global::System.Action<global::Deepgram.Realtime.AgentV1AgentV1AgentAudioDone>? agentAudioDone = null,
+            global::System.Action<global::Deepgram.Realtime.AgentV1AgentV1CustomFromThinkProvider>? customFromThinkProvider = null,
             global::System.Action<global::Deepgram.Realtime.AgentV1AgentV1Error>? agentV1AgentV1Error = null,
             global::System.Action<global::Deepgram.Realtime.AgentV1AgentV1Warning>? agentV1AgentV1Warning = null,
             global::System.Action<global::Deepgram.Realtime.AgentV1AgentV1History?>? agentV1AgentV1History = null,
@@ -1676,73 +1676,73 @@ namespace Deepgram.Realtime
                 Validate();
             }
 
-            if (AgentV1AgentV1ListenUpdated is { } __value0)
+            if (ListenUpdated is { } __value0)
             {
-                agentV1AgentV1ListenUpdated?.Invoke(__value0);
+                listenUpdated?.Invoke(__value0);
             }
-            else if (AgentV1AgentV1ThinkUpdated is { } __value1)
+            else if (ThinkUpdated is { } __value1)
             {
-                agentV1AgentV1ThinkUpdated?.Invoke(__value1);
+                thinkUpdated?.Invoke(__value1);
             }
-            else if (AgentV1AgentV1ReceiveFunctionCallResponse is { } __value2)
+            else if (FunctionCallResponse is { } __value2)
             {
-                agentV1AgentV1ReceiveFunctionCallResponse?.Invoke(__value2);
+                functionCallResponse?.Invoke(__value2);
             }
-            else if (AgentV1AgentV1PromptUpdated is { } __value3)
+            else if (PromptUpdated is { } __value3)
             {
-                agentV1AgentV1PromptUpdated?.Invoke(__value3);
+                promptUpdated?.Invoke(__value3);
             }
-            else if (AgentV1AgentV1SpeakUpdated is { } __value4)
+            else if (SpeakUpdated is { } __value4)
             {
-                agentV1AgentV1SpeakUpdated?.Invoke(__value4);
+                speakUpdated?.Invoke(__value4);
             }
-            else if (AgentV1AgentV1InjectionRefused is { } __value5)
+            else if (InjectionRefused is { } __value5)
             {
-                agentV1AgentV1InjectionRefused?.Invoke(__value5);
+                injectionRefused?.Invoke(__value5);
             }
-            else if (AgentV1AgentV1Welcome is { } __value6)
+            else if (Welcome is { } __value6)
             {
-                agentV1AgentV1Welcome?.Invoke(__value6);
+                welcome?.Invoke(__value6);
             }
-            else if (AgentV1AgentV1SettingsApplied is { } __value7)
+            else if (SettingsApplied is { } __value7)
             {
-                agentV1AgentV1SettingsApplied?.Invoke(__value7);
+                settingsApplied?.Invoke(__value7);
             }
-            else if (AgentV1AgentV1ConversationText is { } __value8)
+            else if (ConversationText is { } __value8)
             {
-                agentV1AgentV1ConversationText?.Invoke(__value8);
+                conversationText?.Invoke(__value8);
             }
-            else if (AgentV1AgentV1UserStartedSpeaking is { } __value9)
+            else if (UserStartedSpeaking is { } __value9)
             {
-                agentV1AgentV1UserStartedSpeaking?.Invoke(__value9);
+                userStartedSpeaking?.Invoke(__value9);
             }
-            else if (AgentV1AgentV1AgentThinking is { } __value10)
+            else if (AgentThinking is { } __value10)
             {
-                agentV1AgentV1AgentThinking?.Invoke(__value10);
+                agentThinking?.Invoke(__value10);
             }
-            else if (AgentV1AgentV1LatencyReport is { } __value11)
+            else if (LatencyReport is { } __value11)
             {
-                agentV1AgentV1LatencyReport?.Invoke(__value11);
+                latencyReport?.Invoke(__value11);
             }
-            else if (AgentV1AgentV1FunctionCallRequest is { } __value12)
+            else if (FunctionCallRequest is { } __value12)
             {
-                agentV1AgentV1FunctionCallRequest?.Invoke(__value12);
+                functionCallRequest?.Invoke(__value12);
             }
-            else if (AgentV1AgentV1FunctionCallCancelled is { } __value13)
+            else if (FunctionCallCancelled is { } __value13)
             {
-                agentV1AgentV1FunctionCallCancelled?.Invoke(__value13);
+                functionCallCancelled?.Invoke(__value13);
             }
-            else if (AgentV1AgentV1AgentStartedSpeaking is { } __value14)
+            else if (AgentStartedSpeaking is { } __value14)
             {
-                agentV1AgentV1AgentStartedSpeaking?.Invoke(__value14);
+                agentStartedSpeaking?.Invoke(__value14);
             }
-            else if (AgentV1AgentV1AgentAudioDone is { } __value15)
+            else if (AgentAudioDone is { } __value15)
             {
-                agentV1AgentV1AgentAudioDone?.Invoke(__value15);
+                agentAudioDone?.Invoke(__value15);
             }
-            else if (AgentV1AgentV1CustomFromThinkProvider is { } __value16)
+            else if (CustomFromThinkProvider is { } __value16)
             {
-                agentV1AgentV1CustomFromThinkProvider?.Invoke(__value16);
+                customFromThinkProvider?.Invoke(__value16);
             }
             else if (AgentV1AgentV1Error is { } __value17)
             {
@@ -1769,39 +1769,39 @@ namespace Deepgram.Realtime
         {
             var fields = new object?[]
             {
-                AgentV1AgentV1ListenUpdated,
+                ListenUpdated,
                 typeof(global::Deepgram.Realtime.AgentV1AgentV1ListenUpdated),
-                AgentV1AgentV1ThinkUpdated,
+                ThinkUpdated,
                 typeof(global::Deepgram.Realtime.AgentV1AgentV1ThinkUpdated),
-                AgentV1AgentV1ReceiveFunctionCallResponse,
+                FunctionCallResponse,
                 typeof(global::Deepgram.Realtime.AgentV1AgentV1ReceiveFunctionCallResponse),
-                AgentV1AgentV1PromptUpdated,
+                PromptUpdated,
                 typeof(global::Deepgram.Realtime.AgentV1AgentV1PromptUpdated),
-                AgentV1AgentV1SpeakUpdated,
+                SpeakUpdated,
                 typeof(global::Deepgram.Realtime.AgentV1AgentV1SpeakUpdated),
-                AgentV1AgentV1InjectionRefused,
+                InjectionRefused,
                 typeof(global::Deepgram.Realtime.AgentV1AgentV1InjectionRefused),
-                AgentV1AgentV1Welcome,
+                Welcome,
                 typeof(global::Deepgram.Realtime.AgentV1AgentV1Welcome),
-                AgentV1AgentV1SettingsApplied,
+                SettingsApplied,
                 typeof(global::Deepgram.Realtime.AgentV1AgentV1SettingsApplied),
-                AgentV1AgentV1ConversationText,
+                ConversationText,
                 typeof(global::Deepgram.Realtime.AgentV1AgentV1ConversationText),
-                AgentV1AgentV1UserStartedSpeaking,
+                UserStartedSpeaking,
                 typeof(global::Deepgram.Realtime.AgentV1AgentV1UserStartedSpeaking),
-                AgentV1AgentV1AgentThinking,
+                AgentThinking,
                 typeof(global::Deepgram.Realtime.AgentV1AgentV1AgentThinking),
-                AgentV1AgentV1LatencyReport,
+                LatencyReport,
                 typeof(global::Deepgram.Realtime.AgentV1AgentV1LatencyReport),
-                AgentV1AgentV1FunctionCallRequest,
+                FunctionCallRequest,
                 typeof(global::Deepgram.Realtime.AgentV1AgentV1FunctionCallRequest),
-                AgentV1AgentV1FunctionCallCancelled,
+                FunctionCallCancelled,
                 typeof(global::Deepgram.Realtime.AgentV1AgentV1FunctionCallCancelled),
-                AgentV1AgentV1AgentStartedSpeaking,
+                AgentStartedSpeaking,
                 typeof(global::Deepgram.Realtime.AgentV1AgentV1AgentStartedSpeaking),
-                AgentV1AgentV1AgentAudioDone,
+                AgentAudioDone,
                 typeof(global::Deepgram.Realtime.AgentV1AgentV1AgentAudioDone),
-                AgentV1AgentV1CustomFromThinkProvider,
+                CustomFromThinkProvider,
                 typeof(global::Deepgram.Realtime.AgentV1AgentV1CustomFromThinkProvider),
                 AgentV1AgentV1Error,
                 typeof(global::Deepgram.Realtime.AgentV1AgentV1Error),
@@ -1827,23 +1827,23 @@ namespace Deepgram.Realtime
         public bool Equals(AgentV1ServerEvent other)
         {
             return
-                global::System.Collections.Generic.EqualityComparer<global::Deepgram.Realtime.AgentV1AgentV1ListenUpdated?>.Default.Equals(AgentV1AgentV1ListenUpdated, other.AgentV1AgentV1ListenUpdated) &&
-                global::System.Collections.Generic.EqualityComparer<global::Deepgram.Realtime.AgentV1AgentV1ThinkUpdated?>.Default.Equals(AgentV1AgentV1ThinkUpdated, other.AgentV1AgentV1ThinkUpdated) &&
-                global::System.Collections.Generic.EqualityComparer<global::Deepgram.Realtime.AgentV1AgentV1ReceiveFunctionCallResponse?>.Default.Equals(AgentV1AgentV1ReceiveFunctionCallResponse, other.AgentV1AgentV1ReceiveFunctionCallResponse) &&
-                global::System.Collections.Generic.EqualityComparer<global::Deepgram.Realtime.AgentV1AgentV1PromptUpdated?>.Default.Equals(AgentV1AgentV1PromptUpdated, other.AgentV1AgentV1PromptUpdated) &&
-                global::System.Collections.Generic.EqualityComparer<global::Deepgram.Realtime.AgentV1AgentV1SpeakUpdated?>.Default.Equals(AgentV1AgentV1SpeakUpdated, other.AgentV1AgentV1SpeakUpdated) &&
-                global::System.Collections.Generic.EqualityComparer<global::Deepgram.Realtime.AgentV1AgentV1InjectionRefused?>.Default.Equals(AgentV1AgentV1InjectionRefused, other.AgentV1AgentV1InjectionRefused) &&
-                global::System.Collections.Generic.EqualityComparer<global::Deepgram.Realtime.AgentV1AgentV1Welcome?>.Default.Equals(AgentV1AgentV1Welcome, other.AgentV1AgentV1Welcome) &&
-                global::System.Collections.Generic.EqualityComparer<global::Deepgram.Realtime.AgentV1AgentV1SettingsApplied?>.Default.Equals(AgentV1AgentV1SettingsApplied, other.AgentV1AgentV1SettingsApplied) &&
-                global::System.Collections.Generic.EqualityComparer<global::Deepgram.Realtime.AgentV1AgentV1ConversationText?>.Default.Equals(AgentV1AgentV1ConversationText, other.AgentV1AgentV1ConversationText) &&
-                global::System.Collections.Generic.EqualityComparer<global::Deepgram.Realtime.AgentV1AgentV1UserStartedSpeaking?>.Default.Equals(AgentV1AgentV1UserStartedSpeaking, other.AgentV1AgentV1UserStartedSpeaking) &&
-                global::System.Collections.Generic.EqualityComparer<global::Deepgram.Realtime.AgentV1AgentV1AgentThinking?>.Default.Equals(AgentV1AgentV1AgentThinking, other.AgentV1AgentV1AgentThinking) &&
-                global::System.Collections.Generic.EqualityComparer<global::Deepgram.Realtime.AgentV1AgentV1LatencyReport?>.Default.Equals(AgentV1AgentV1LatencyReport, other.AgentV1AgentV1LatencyReport) &&
-                global::System.Collections.Generic.EqualityComparer<global::Deepgram.Realtime.AgentV1AgentV1FunctionCallRequest?>.Default.Equals(AgentV1AgentV1FunctionCallRequest, other.AgentV1AgentV1FunctionCallRequest) &&
-                global::System.Collections.Generic.EqualityComparer<global::Deepgram.Realtime.AgentV1AgentV1FunctionCallCancelled?>.Default.Equals(AgentV1AgentV1FunctionCallCancelled, other.AgentV1AgentV1FunctionCallCancelled) &&
-                global::System.Collections.Generic.EqualityComparer<global::Deepgram.Realtime.AgentV1AgentV1AgentStartedSpeaking?>.Default.Equals(AgentV1AgentV1AgentStartedSpeaking, other.AgentV1AgentV1AgentStartedSpeaking) &&
-                global::System.Collections.Generic.EqualityComparer<global::Deepgram.Realtime.AgentV1AgentV1AgentAudioDone?>.Default.Equals(AgentV1AgentV1AgentAudioDone, other.AgentV1AgentV1AgentAudioDone) &&
-                global::System.Collections.Generic.EqualityComparer<global::Deepgram.Realtime.AgentV1AgentV1CustomFromThinkProvider?>.Default.Equals(AgentV1AgentV1CustomFromThinkProvider, other.AgentV1AgentV1CustomFromThinkProvider) &&
+                global::System.Collections.Generic.EqualityComparer<global::Deepgram.Realtime.AgentV1AgentV1ListenUpdated?>.Default.Equals(ListenUpdated, other.ListenUpdated) &&
+                global::System.Collections.Generic.EqualityComparer<global::Deepgram.Realtime.AgentV1AgentV1ThinkUpdated?>.Default.Equals(ThinkUpdated, other.ThinkUpdated) &&
+                global::System.Collections.Generic.EqualityComparer<global::Deepgram.Realtime.AgentV1AgentV1ReceiveFunctionCallResponse?>.Default.Equals(FunctionCallResponse, other.FunctionCallResponse) &&
+                global::System.Collections.Generic.EqualityComparer<global::Deepgram.Realtime.AgentV1AgentV1PromptUpdated?>.Default.Equals(PromptUpdated, other.PromptUpdated) &&
+                global::System.Collections.Generic.EqualityComparer<global::Deepgram.Realtime.AgentV1AgentV1SpeakUpdated?>.Default.Equals(SpeakUpdated, other.SpeakUpdated) &&
+                global::System.Collections.Generic.EqualityComparer<global::Deepgram.Realtime.AgentV1AgentV1InjectionRefused?>.Default.Equals(InjectionRefused, other.InjectionRefused) &&
+                global::System.Collections.Generic.EqualityComparer<global::Deepgram.Realtime.AgentV1AgentV1Welcome?>.Default.Equals(Welcome, other.Welcome) &&
+                global::System.Collections.Generic.EqualityComparer<global::Deepgram.Realtime.AgentV1AgentV1SettingsApplied?>.Default.Equals(SettingsApplied, other.SettingsApplied) &&
+                global::System.Collections.Generic.EqualityComparer<global::Deepgram.Realtime.AgentV1AgentV1ConversationText?>.Default.Equals(ConversationText, other.ConversationText) &&
+                global::System.Collections.Generic.EqualityComparer<global::Deepgram.Realtime.AgentV1AgentV1UserStartedSpeaking?>.Default.Equals(UserStartedSpeaking, other.UserStartedSpeaking) &&
+                global::System.Collections.Generic.EqualityComparer<global::Deepgram.Realtime.AgentV1AgentV1AgentThinking?>.Default.Equals(AgentThinking, other.AgentThinking) &&
+                global::System.Collections.Generic.EqualityComparer<global::Deepgram.Realtime.AgentV1AgentV1LatencyReport?>.Default.Equals(LatencyReport, other.LatencyReport) &&
+                global::System.Collections.Generic.EqualityComparer<global::Deepgram.Realtime.AgentV1AgentV1FunctionCallRequest?>.Default.Equals(FunctionCallRequest, other.FunctionCallRequest) &&
+                global::System.Collections.Generic.EqualityComparer<global::Deepgram.Realtime.AgentV1AgentV1FunctionCallCancelled?>.Default.Equals(FunctionCallCancelled, other.FunctionCallCancelled) &&
+                global::System.Collections.Generic.EqualityComparer<global::Deepgram.Realtime.AgentV1AgentV1AgentStartedSpeaking?>.Default.Equals(AgentStartedSpeaking, other.AgentStartedSpeaking) &&
+                global::System.Collections.Generic.EqualityComparer<global::Deepgram.Realtime.AgentV1AgentV1AgentAudioDone?>.Default.Equals(AgentAudioDone, other.AgentAudioDone) &&
+                global::System.Collections.Generic.EqualityComparer<global::Deepgram.Realtime.AgentV1AgentV1CustomFromThinkProvider?>.Default.Equals(CustomFromThinkProvider, other.CustomFromThinkProvider) &&
                 global::System.Collections.Generic.EqualityComparer<global::Deepgram.Realtime.AgentV1AgentV1Error?>.Default.Equals(AgentV1AgentV1Error, other.AgentV1AgentV1Error) &&
                 global::System.Collections.Generic.EqualityComparer<global::Deepgram.Realtime.AgentV1AgentV1Warning?>.Default.Equals(AgentV1AgentV1Warning, other.AgentV1AgentV1Warning) &&
                 global::System.Collections.Generic.EqualityComparer<global::Deepgram.Realtime.AgentV1AgentV1History?>.Default.Equals(AgentV1AgentV1History, other.AgentV1AgentV1History) &&
