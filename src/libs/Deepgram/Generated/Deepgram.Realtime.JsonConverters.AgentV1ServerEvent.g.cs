@@ -1027,6 +1027,11 @@ namespace Deepgram.Realtime.JsonConverters
                 agentV1AgentV1Audio
                 );
 
+            if (!__value.Validate())
+            {
+                throw new global::System.Text.Json.JsonException($"Invalid JSON format for OneOf<{typeof(global::Deepgram.Realtime.AgentV1AgentV1ListenUpdated).Name}, {typeof(global::Deepgram.Realtime.AgentV1AgentV1ThinkUpdated).Name}, {typeof(global::Deepgram.Realtime.AgentV1AgentV1ReceiveFunctionCallResponse).Name}, {typeof(global::Deepgram.Realtime.AgentV1AgentV1PromptUpdated).Name}, {typeof(global::Deepgram.Realtime.AgentV1AgentV1SpeakUpdated).Name}, {typeof(global::Deepgram.Realtime.AgentV1AgentV1InjectionRefused).Name}, {typeof(global::Deepgram.Realtime.AgentV1AgentV1Welcome).Name}, {typeof(global::Deepgram.Realtime.AgentV1AgentV1SettingsApplied).Name}, {typeof(global::Deepgram.Realtime.AgentV1AgentV1ConversationText).Name}, {typeof(global::Deepgram.Realtime.AgentV1AgentV1UserStartedSpeaking).Name}, {typeof(global::Deepgram.Realtime.AgentV1AgentV1AgentThinking).Name}, {typeof(global::Deepgram.Realtime.AgentV1AgentV1LatencyReport).Name}, {typeof(global::Deepgram.Realtime.AgentV1AgentV1FunctionCallRequest).Name}, {typeof(global::Deepgram.Realtime.AgentV1AgentV1FunctionCallCancelled).Name}, {typeof(global::Deepgram.Realtime.AgentV1AgentV1AgentStartedSpeaking).Name}, {typeof(global::Deepgram.Realtime.AgentV1AgentV1AgentAudioDone).Name}, {typeof(global::Deepgram.Realtime.AgentV1AgentV1CustomFromThinkProvider).Name}, {typeof(global::Deepgram.Realtime.AgentV1AgentV1Error).Name}, {typeof(global::Deepgram.Realtime.AgentV1AgentV1Warning).Name}, {typeof(global::Deepgram.Realtime.AgentV1AgentV1History).Name}, {typeof(byte[]).Name}>");
+            }
+
             return __value;
         }
 
@@ -1038,6 +1043,12 @@ namespace Deepgram.Realtime.JsonConverters
         {
             options = options ?? throw new global::System.ArgumentNullException(nameof(options));
             var typeInfoResolver = options.TypeInfoResolver ?? throw new global::System.InvalidOperationException("TypeInfoResolver is not set.");
+
+
+            if (!value.Validate())
+            {
+                throw new global::System.Text.Json.JsonException($"Invalid OneOf<{typeof(global::Deepgram.Realtime.AgentV1AgentV1ListenUpdated).Name}, {typeof(global::Deepgram.Realtime.AgentV1AgentV1ThinkUpdated).Name}, {typeof(global::Deepgram.Realtime.AgentV1AgentV1ReceiveFunctionCallResponse).Name}, {typeof(global::Deepgram.Realtime.AgentV1AgentV1PromptUpdated).Name}, {typeof(global::Deepgram.Realtime.AgentV1AgentV1SpeakUpdated).Name}, {typeof(global::Deepgram.Realtime.AgentV1AgentV1InjectionRefused).Name}, {typeof(global::Deepgram.Realtime.AgentV1AgentV1Welcome).Name}, {typeof(global::Deepgram.Realtime.AgentV1AgentV1SettingsApplied).Name}, {typeof(global::Deepgram.Realtime.AgentV1AgentV1ConversationText).Name}, {typeof(global::Deepgram.Realtime.AgentV1AgentV1UserStartedSpeaking).Name}, {typeof(global::Deepgram.Realtime.AgentV1AgentV1AgentThinking).Name}, {typeof(global::Deepgram.Realtime.AgentV1AgentV1LatencyReport).Name}, {typeof(global::Deepgram.Realtime.AgentV1AgentV1FunctionCallRequest).Name}, {typeof(global::Deepgram.Realtime.AgentV1AgentV1FunctionCallCancelled).Name}, {typeof(global::Deepgram.Realtime.AgentV1AgentV1AgentStartedSpeaking).Name}, {typeof(global::Deepgram.Realtime.AgentV1AgentV1AgentAudioDone).Name}, {typeof(global::Deepgram.Realtime.AgentV1AgentV1CustomFromThinkProvider).Name}, {typeof(global::Deepgram.Realtime.AgentV1AgentV1Error).Name}, {typeof(global::Deepgram.Realtime.AgentV1AgentV1Warning).Name}, {typeof(global::Deepgram.Realtime.AgentV1AgentV1History).Name}, {typeof(byte[]).Name}> object.");
+            }
 
             if (value.IsListenUpdated)
             {

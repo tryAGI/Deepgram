@@ -30,7 +30,11 @@ done
 if [[ "${TRYAGI_PINNED_SPEC:-0}" == "1" ]]; then
   use_pinned_spec=true
 fi
-install_autosdk_cli
+if [[ -n "${AUTOSDK_EXECUTABLE:-}" ]]; then
+  autosdk() { "$AUTOSDK_EXECUTABLE" "$@"; }
+else
+  install_autosdk_cli
+fi
 rm -rf Generated
 if [[ "$use_pinned_spec" == false ]]; then
   fetch_spec --fail --silent --show-error -L "https://raw.githubusercontent.com/deepgram/deepgram-api-specs/main/openapi.yml" -o openapi.yaml
@@ -215,6 +219,7 @@ jq 'del(.components.securitySchemes.JwtAuth)' asyncapi.json > asyncapi.tmp.json 
 
 # Auth: --security-scheme overrides AsyncAPI's httpApiKey with HTTP bearer.
 autosdk generate asyncapi.json \
+  --validate-any-ofs \
   --namespace Deepgram.Realtime \
   --websocket-class-name DeepgramRealtimeClient \
   --json-serializer-context RealtimeSourceGenerationContext \

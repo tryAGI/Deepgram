@@ -274,6 +274,11 @@ namespace Deepgram.Realtime.JsonConverters
                 speakV1SpeakV1Warning
                 );
 
+            if (!__value.Validate())
+            {
+                throw new global::System.Text.Json.JsonException($"Invalid JSON format for OneOf<{typeof(byte[]).Name}, {typeof(global::Deepgram.Realtime.SpeakV1SpeakV1Metadata).Name}, {typeof(global::Deepgram.Realtime.SpeakV1SpeakV1Flushed).Name}, {typeof(global::Deepgram.Realtime.SpeakV1SpeakV1Cleared).Name}, {typeof(global::Deepgram.Realtime.SpeakV1SpeakV1Warning).Name}>");
+            }
+
             return __value;
         }
 
@@ -285,6 +290,12 @@ namespace Deepgram.Realtime.JsonConverters
         {
             options = options ?? throw new global::System.ArgumentNullException(nameof(options));
             var typeInfoResolver = options.TypeInfoResolver ?? throw new global::System.InvalidOperationException("TypeInfoResolver is not set.");
+
+
+            if (!value.Validate())
+            {
+                throw new global::System.Text.Json.JsonException($"Invalid OneOf<{typeof(byte[]).Name}, {typeof(global::Deepgram.Realtime.SpeakV1SpeakV1Metadata).Name}, {typeof(global::Deepgram.Realtime.SpeakV1SpeakV1Flushed).Name}, {typeof(global::Deepgram.Realtime.SpeakV1SpeakV1Cleared).Name}, {typeof(global::Deepgram.Realtime.SpeakV1SpeakV1Warning).Name}> object.");
+            }
 
             if (value.IsSpeakV1SpeakV1Audio)
             {

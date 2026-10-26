@@ -149,6 +149,11 @@ namespace Deepgram.Realtime.JsonConverters
                 thinkSettingsV1ContextLengthVariant2
                 );
 
+            if (!__value.Validate())
+            {
+                throw new global::System.Text.Json.JsonException($"Invalid JSON format for OneOf<{typeof(global::Deepgram.Realtime.ThinkSettingsV1ContextLength0).Name}, {typeof(double).Name}>");
+            }
+
             return __value;
         }
 
@@ -160,6 +165,12 @@ namespace Deepgram.Realtime.JsonConverters
         {
             options = options ?? throw new global::System.ArgumentNullException(nameof(options));
             var typeInfoResolver = options.TypeInfoResolver ?? throw new global::System.InvalidOperationException("TypeInfoResolver is not set.");
+
+
+            if (!value.Validate())
+            {
+                throw new global::System.Text.Json.JsonException($"Invalid OneOf<{typeof(global::Deepgram.Realtime.ThinkSettingsV1ContextLength0).Name}, {typeof(double).Name}> object.");
+            }
 
             if (value.IsThinkSettingsV1ContextLength0)
             {

@@ -230,7 +230,7 @@ public static class DeepgramRealtimeTranscription
     /// <summary>Maps one Listen V2 server event to the protocol-neutral transcript shape.</summary>
     public static DeepgramRealtimeTranscriptUpdate? MapListenV2ServerEvent(ListenV2ServerEvent serverEvent)
     {
-        if (serverEvent.TryPickListenV2ListenV2TurnInfo(out var turnInfo) && turnInfo is not null)
+        if (serverEvent.TryPickTurnInfo(out var turnInfo) && turnInfo is not null)
         {
             return new(
                 turnInfo.Transcript?.Trim(),
@@ -244,7 +244,7 @@ public static class DeepgramRealtimeTranscription
             return new(null, false, $"fatal:{fatalError.SequenceId}",
                 $"{fatalError.Code}: {fatalError.Description}", "FatalError");
         }
-        if (serverEvent.TryPickListenV2ListenV2ConfigureFailure(out var failure) && failure is not null)
+        if (serverEvent.TryPickConfigureFailure(out var failure) && failure is not null)
         {
             return new(null, false, $"configure:{failure.RequestId}:{failure.SequenceId}",
                 "Deepgram realtime configuration failed.", "ConfigureFailure");
@@ -570,7 +570,7 @@ internal sealed class DeepgramListenV2TranscriptionSession(
     {
         try
         {
-            if (serverEvent.TryPickListenV2ListenV2TurnInfo(out var turnInfo) && turnInfo is not null)
+            if (serverEvent.TryPickTurnInfo(out var turnInfo) && turnInfo is not null)
             {
                 return turnInfo.ToJson(RealtimeSourceGenerationContext.Default);
             }
@@ -578,7 +578,7 @@ internal sealed class DeepgramListenV2TranscriptionSession(
             {
                 return fatalError.ToJson(RealtimeSourceGenerationContext.Default);
             }
-            if (serverEvent.TryPickListenV2ListenV2ConfigureFailure(out var failure) && failure is not null)
+            if (serverEvent.TryPickConfigureFailure(out var failure) && failure is not null)
             {
                 return failure.ToJson(RealtimeSourceGenerationContext.Default);
             }

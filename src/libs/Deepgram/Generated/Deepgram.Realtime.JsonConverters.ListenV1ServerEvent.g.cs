@@ -398,6 +398,11 @@ namespace Deepgram.Realtime.JsonConverters
                 listenV1ListenV1Error
                 );
 
+            if (!__value.Validate())
+            {
+                throw new global::System.Text.Json.JsonException($"Invalid JSON format for OneOf<{typeof(global::Deepgram.Realtime.ListenV1ListenV1ConfigureSuccess).Name}, {typeof(global::Deepgram.Realtime.ListenV1ListenV1ConfigureFailure).Name}, {typeof(global::Deepgram.Realtime.ListenV1ListenV1Results).Name}, {typeof(global::Deepgram.Realtime.ListenV1ListenV1Metadata).Name}, {typeof(global::Deepgram.Realtime.ListenV1ListenV1UtteranceEnd).Name}, {typeof(global::Deepgram.Realtime.ListenV1ListenV1SpeechStarted).Name}, {typeof(global::Deepgram.Realtime.ListenV1ListenV1Error).Name}>");
+            }
+
             return __value;
         }
 
@@ -409,6 +414,12 @@ namespace Deepgram.Realtime.JsonConverters
         {
             options = options ?? throw new global::System.ArgumentNullException(nameof(options));
             var typeInfoResolver = options.TypeInfoResolver ?? throw new global::System.InvalidOperationException("TypeInfoResolver is not set.");
+
+
+            if (!value.Validate())
+            {
+                throw new global::System.Text.Json.JsonException($"Invalid OneOf<{typeof(global::Deepgram.Realtime.ListenV1ListenV1ConfigureSuccess).Name}, {typeof(global::Deepgram.Realtime.ListenV1ListenV1ConfigureFailure).Name}, {typeof(global::Deepgram.Realtime.ListenV1ListenV1Results).Name}, {typeof(global::Deepgram.Realtime.ListenV1ListenV1Metadata).Name}, {typeof(global::Deepgram.Realtime.ListenV1ListenV1UtteranceEnd).Name}, {typeof(global::Deepgram.Realtime.ListenV1ListenV1SpeechStarted).Name}, {typeof(global::Deepgram.Realtime.ListenV1ListenV1Error).Name}> object.");
+            }
 
             if (value.IsListenV1ListenV1ConfigureSuccess)
             {

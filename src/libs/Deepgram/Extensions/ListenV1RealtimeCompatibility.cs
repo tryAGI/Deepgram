@@ -34,11 +34,11 @@ public readonly partial struct ListenV2ServerEvent
 {
     public ListenV2ListenV2Connected? ListenV2Connected => ListenV2ListenV2Connected;
 
-    public ListenV2ListenV2TurnInfo? ListenV2TurnInfo => ListenV2ListenV2TurnInfo;
+    public ListenV2ListenV2TurnInfo? ListenV2TurnInfo => TurnInfo;
 
-    public ListenV2ListenV2ConfigureSuccess? ListenV2ConfigureSuccess => ListenV2ListenV2ConfigureSuccess;
+    public ListenV2ListenV2ConfigureSuccess? ListenV2ConfigureSuccess => ConfigureSuccess;
 
-    public ListenV2ListenV2ConfigureFailure? ListenV2ConfigureFailure => ListenV2ListenV2ConfigureFailure;
+    public ListenV2ListenV2ConfigureFailure? ListenV2ConfigureFailure => ConfigureFailure;
 
     public ListenV2ListenV2FatalError? ListenV2FatalError => ListenV2ListenV2FatalError;
 }
@@ -62,31 +62,31 @@ public readonly partial struct SpeakV1ServerEvent
 
 public readonly partial struct AgentV1ServerEvent
 {
-    public AgentV1AgentV1ReceiveFunctionCallResponse? AgentV1ReceiveFunctionCallResponse => AgentV1AgentV1ReceiveFunctionCallResponse;
+    public AgentV1AgentV1ReceiveFunctionCallResponse? AgentV1ReceiveFunctionCallResponse => FunctionCallResponse;
 
-    public AgentV1AgentV1PromptUpdated? AgentV1PromptUpdated => AgentV1AgentV1PromptUpdated;
+    public AgentV1AgentV1PromptUpdated? AgentV1PromptUpdated => PromptUpdated;
 
-    public AgentV1AgentV1SpeakUpdated? AgentV1SpeakUpdated => AgentV1AgentV1SpeakUpdated;
+    public AgentV1AgentV1SpeakUpdated? AgentV1SpeakUpdated => SpeakUpdated;
 
-    public AgentV1AgentV1ThinkUpdated? AgentV1ThinkUpdated => AgentV1AgentV1ThinkUpdated;
+    public AgentV1AgentV1ThinkUpdated? AgentV1ThinkUpdated => ThinkUpdated;
 
-    public AgentV1AgentV1InjectionRefused? AgentV1InjectionRefused => AgentV1AgentV1InjectionRefused;
+    public AgentV1AgentV1InjectionRefused? AgentV1InjectionRefused => InjectionRefused;
 
-    public AgentV1AgentV1Welcome? AgentV1Welcome => AgentV1AgentV1Welcome;
+    public AgentV1AgentV1Welcome? AgentV1Welcome => Welcome;
 
-    public AgentV1AgentV1SettingsApplied? AgentV1SettingsApplied => AgentV1AgentV1SettingsApplied;
+    public AgentV1AgentV1SettingsApplied? AgentV1SettingsApplied => SettingsApplied;
 
-    public AgentV1AgentV1ConversationText? AgentV1ConversationText => AgentV1AgentV1ConversationText;
+    public AgentV1AgentV1ConversationText? AgentV1ConversationText => ConversationText;
 
-    public AgentV1AgentV1UserStartedSpeaking? AgentV1UserStartedSpeaking => AgentV1AgentV1UserStartedSpeaking;
+    public AgentV1AgentV1UserStartedSpeaking? AgentV1UserStartedSpeaking => UserStartedSpeaking;
 
-    public AgentV1AgentV1AgentThinking? AgentV1AgentThinking => AgentV1AgentV1AgentThinking;
+    public AgentV1AgentV1AgentThinking? AgentV1AgentThinking => AgentThinking;
 
-    public AgentV1AgentV1FunctionCallRequest? AgentV1FunctionCallRequest => AgentV1AgentV1FunctionCallRequest;
+    public AgentV1AgentV1FunctionCallRequest? AgentV1FunctionCallRequest => FunctionCallRequest;
 
-    public AgentV1AgentV1AgentStartedSpeaking? AgentV1AgentStartedSpeaking => AgentV1AgentV1AgentStartedSpeaking;
+    public AgentV1AgentV1AgentStartedSpeaking? AgentV1AgentStartedSpeaking => AgentStartedSpeaking;
 
-    public AgentV1AgentV1AgentAudioDone? AgentV1AgentAudioDone => AgentV1AgentV1AgentAudioDone;
+    public AgentV1AgentV1AgentAudioDone? AgentV1AgentAudioDone => AgentAudioDone;
 
     public AgentV1AgentV1Error? AgentV1Error => AgentV1AgentV1Error;
 

@@ -584,6 +584,11 @@ namespace Deepgram.Realtime.JsonConverters
                 error
                 );
 
+            if (!__value.Validate())
+            {
+                throw new global::System.Text.Json.JsonException($"Invalid JSON format for OneOf<{typeof(byte[]).Name}, {typeof(global::Deepgram.Realtime.SpeakV2SpeakV2Connected).Name}, {typeof(global::Deepgram.Realtime.SpeakV2SpeakV2SpeechStarted).Name}, {typeof(global::Deepgram.Realtime.SpeakV2SpeakV2SpeechMetadata).Name}, {typeof(global::Deepgram.Realtime.SpeakV2SpeakV2SpeechInterrupted).Name}, {typeof(global::Deepgram.Realtime.SpeakV2SpeakV2Flushed).Name}, {typeof(global::Deepgram.Realtime.SpeakV2SpeakV2SessionMetadata).Name}, {typeof(global::Deepgram.Realtime.SpeakV2SpeakV2ConfigureSuccess).Name}, {typeof(global::Deepgram.Realtime.SpeakV2SpeakV2ConfigureFailure).Name}, {typeof(global::Deepgram.Realtime.SpeakV2SpeakV2Warning).Name}, {typeof(global::Deepgram.Realtime.SpeakV2SpeakV2Error).Name}>");
+            }
+
             return __value;
         }
 
@@ -595,6 +600,12 @@ namespace Deepgram.Realtime.JsonConverters
         {
             options = options ?? throw new global::System.ArgumentNullException(nameof(options));
             var typeInfoResolver = options.TypeInfoResolver ?? throw new global::System.InvalidOperationException("TypeInfoResolver is not set.");
+
+
+            if (!value.Validate())
+            {
+                throw new global::System.Text.Json.JsonException($"Invalid OneOf<{typeof(byte[]).Name}, {typeof(global::Deepgram.Realtime.SpeakV2SpeakV2Connected).Name}, {typeof(global::Deepgram.Realtime.SpeakV2SpeakV2SpeechStarted).Name}, {typeof(global::Deepgram.Realtime.SpeakV2SpeakV2SpeechMetadata).Name}, {typeof(global::Deepgram.Realtime.SpeakV2SpeakV2SpeechInterrupted).Name}, {typeof(global::Deepgram.Realtime.SpeakV2SpeakV2Flushed).Name}, {typeof(global::Deepgram.Realtime.SpeakV2SpeakV2SessionMetadata).Name}, {typeof(global::Deepgram.Realtime.SpeakV2SpeakV2ConfigureSuccess).Name}, {typeof(global::Deepgram.Realtime.SpeakV2SpeakV2ConfigureFailure).Name}, {typeof(global::Deepgram.Realtime.SpeakV2SpeakV2Warning).Name}, {typeof(global::Deepgram.Realtime.SpeakV2SpeakV2Error).Name}> object.");
+            }
 
             if (value.IsSpeakV2SpeakV2Audio)
             {

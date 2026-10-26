@@ -295,6 +295,11 @@ namespace Deepgram.Realtime.JsonConverters
                 groqThinkProvider
                 );
 
+            if (!__value.Validate())
+            {
+                throw new global::System.Text.Json.JsonException($"Invalid JSON format for OneOf<{typeof(global::Deepgram.Realtime.OpenAiThinkProvider).Name}, {typeof(global::Deepgram.Realtime.AwsBedrockThinkProvider).Name}, {typeof(global::Deepgram.Realtime.AnthropicThinkProvider).Name}, {typeof(global::Deepgram.Realtime.GoogleThinkProvider).Name}, {typeof(global::Deepgram.Realtime.GroqThinkProvider).Name}>");
+            }
+
             return __value;
         }
 
@@ -306,6 +311,12 @@ namespace Deepgram.Realtime.JsonConverters
         {
             options = options ?? throw new global::System.ArgumentNullException(nameof(options));
             var typeInfoResolver = options.TypeInfoResolver ?? throw new global::System.InvalidOperationException("TypeInfoResolver is not set.");
+
+
+            if (!value.Validate())
+            {
+                throw new global::System.Text.Json.JsonException($"Invalid OneOf<{typeof(global::Deepgram.Realtime.OpenAiThinkProvider).Name}, {typeof(global::Deepgram.Realtime.AwsBedrockThinkProvider).Name}, {typeof(global::Deepgram.Realtime.AnthropicThinkProvider).Name}, {typeof(global::Deepgram.Realtime.GoogleThinkProvider).Name}, {typeof(global::Deepgram.Realtime.GroqThinkProvider).Name}> object.");
+            }
 
             if (value.IsOpenAiThinkProvider)
             {

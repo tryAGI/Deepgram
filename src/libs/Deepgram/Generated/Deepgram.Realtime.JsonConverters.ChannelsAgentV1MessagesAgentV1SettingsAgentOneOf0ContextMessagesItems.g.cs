@@ -131,6 +131,11 @@ namespace Deepgram.Realtime.JsonConverters
                 channelsAgentV1MessagesAgentV1SettingsAgentOneOf0ContextMessagesItems1
                 );
 
+            if (!__value.Validate())
+            {
+                throw new global::System.Text.Json.JsonException($"Invalid JSON format for OneOf<{typeof(global::Deepgram.Realtime.ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ContextMessagesItems0).Name}, {typeof(global::Deepgram.Realtime.ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ContextMessagesItems1).Name}>");
+            }
+
             return __value;
         }
 
@@ -142,6 +147,12 @@ namespace Deepgram.Realtime.JsonConverters
         {
             options = options ?? throw new global::System.ArgumentNullException(nameof(options));
             var typeInfoResolver = options.TypeInfoResolver ?? throw new global::System.InvalidOperationException("TypeInfoResolver is not set.");
+
+
+            if (!value.Validate())
+            {
+                throw new global::System.Text.Json.JsonException($"Invalid OneOf<{typeof(global::Deepgram.Realtime.ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ContextMessagesItems0).Name}, {typeof(global::Deepgram.Realtime.ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ContextMessagesItems1).Name}> object.");
+            }
 
             if (value.IsChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ContextMessagesItems0)
             {
