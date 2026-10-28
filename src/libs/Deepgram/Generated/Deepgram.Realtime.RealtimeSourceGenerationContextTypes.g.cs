@@ -54,1403 +54,1459 @@ namespace Deepgram.Realtime
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.AgentV1AgentV1ReceiveFunctionCallResponse? Type4 { get; set; }
+        public global::Deepgram.Realtime.AgentV1AgentV1ThinkLiveUpdated? Type4 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.AgentV1AgentV1ReceiveFunctionCallResponseType? Type5 { get; set; }
+        public global::Deepgram.Realtime.AgentV1AgentV1ThinkLiveUpdatedType? Type5 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public string? Type6 { get; set; }
+        public global::Deepgram.Realtime.AgentV1AgentV1FrustrationDetected? Type6 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.AgentV1AgentV1PromptUpdated? Type7 { get; set; }
+        public global::Deepgram.Realtime.AgentV1AgentV1FrustrationDetectedType? Type7 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.AgentV1AgentV1PromptUpdatedType? Type8 { get; set; }
+        public int? Type8 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.AgentV1AgentV1SpeakUpdated? Type9 { get; set; }
+        public bool? Type9 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.AgentV1AgentV1SpeakUpdatedType? Type10 { get; set; }
+        public global::Deepgram.Realtime.AgentV1AgentV1ReceiveFunctionCallResponse? Type10 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.AgentV1AgentV1InjectionRefused? Type11 { get; set; }
+        public global::Deepgram.Realtime.AgentV1AgentV1ReceiveFunctionCallResponseType? Type11 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.AgentV1AgentV1InjectionRefusedType? Type12 { get; set; }
+        public string? Type12 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.AgentV1AgentV1Welcome? Type13 { get; set; }
+        public global::Deepgram.Realtime.AgentV1AgentV1PromptUpdated? Type13 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.AgentV1AgentV1WelcomeType? Type14 { get; set; }
+        public global::Deepgram.Realtime.AgentV1AgentV1PromptUpdatedType? Type14 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.AgentV1AgentV1SettingsApplied? Type15 { get; set; }
+        public global::Deepgram.Realtime.AgentV1AgentV1SpeakUpdated? Type15 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.AgentV1AgentV1SettingsAppliedType? Type16 { get; set; }
+        public global::Deepgram.Realtime.AgentV1AgentV1SpeakUpdatedType? Type16 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.ChannelsAgentV1MessagesAgentV1ConversationTextRole? Type17 { get; set; }
+        public global::Deepgram.Realtime.AgentV1AgentV1InjectionRefused? Type17 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.AgentV1AgentV1ConversationText? Type18 { get; set; }
+        public global::Deepgram.Realtime.AgentV1AgentV1InjectionRefusedType? Type18 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.AgentV1AgentV1ConversationTextType? Type19 { get; set; }
+        public global::Deepgram.Realtime.AgentV1AgentV1Welcome? Type19 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<string>? Type20 { get; set; }
+        public global::Deepgram.Realtime.AgentV1AgentV1WelcomeType? Type20 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.AgentV1AgentV1UserStartedSpeaking? Type21 { get; set; }
+        public global::Deepgram.Realtime.AgentV1AgentV1SettingsApplied? Type21 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.AgentV1AgentV1UserStartedSpeakingType? Type22 { get; set; }
+        public global::Deepgram.Realtime.AgentV1AgentV1SettingsAppliedType? Type22 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.AgentV1AgentV1AgentThinking? Type23 { get; set; }
+        public global::Deepgram.Realtime.ChannelsAgentV1MessagesAgentV1ConversationTextRole? Type23 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.AgentV1AgentV1AgentThinkingType? Type24 { get; set; }
+        public global::Deepgram.Realtime.ChannelsAgentV1MessagesAgentV1ConversationTextConversationalBehavior? Type24 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.AgentV1AgentV1LatencyReport? Type25 { get; set; }
+        public global::Deepgram.Realtime.AgentV1AgentV1ConversationText? Type25 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.AgentV1AgentV1LatencyReportType? Type26 { get; set; }
+        public global::Deepgram.Realtime.AgentV1AgentV1ConversationTextType? Type26 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.ChannelsAgentV1MessagesAgentV1FunctionCallRequestFunctionsItems? Type27 { get; set; }
+        public global::System.Collections.Generic.IList<string>? Type27 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public bool? Type28 { get; set; }
+        public global::Deepgram.Realtime.AgentV1AgentV1UserStartedSpeaking? Type28 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.AgentV1AgentV1FunctionCallRequest? Type29 { get; set; }
+        public global::Deepgram.Realtime.AgentV1AgentV1UserStartedSpeakingType? Type29 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.AgentV1AgentV1FunctionCallRequestType? Type30 { get; set; }
+        public global::Deepgram.Realtime.AgentV1AgentV1AgentThinking? Type30 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Deepgram.Realtime.ChannelsAgentV1MessagesAgentV1FunctionCallRequestFunctionsItems>? Type31 { get; set; }
+        public global::Deepgram.Realtime.AgentV1AgentV1AgentThinkingType? Type31 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.ChannelsAgentV1MessagesAgentV1FunctionCallCancelledFunctionsItems? Type32 { get; set; }
+        public global::Deepgram.Realtime.AgentV1AgentV1LatencyReport? Type32 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.AgentV1AgentV1FunctionCallCancelled? Type33 { get; set; }
+        public global::Deepgram.Realtime.AgentV1AgentV1LatencyReportType? Type33 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.AgentV1AgentV1FunctionCallCancelledType? Type34 { get; set; }
+        public global::Deepgram.Realtime.ChannelsAgentV1MessagesAgentV1FunctionCallRequestFunctionsItems? Type34 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Deepgram.Realtime.ChannelsAgentV1MessagesAgentV1FunctionCallCancelledFunctionsItems>? Type35 { get; set; }
+        public global::Deepgram.Realtime.AgentV1AgentV1FunctionCallRequest? Type35 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.AgentV1AgentV1AgentStartedSpeaking? Type36 { get; set; }
+        public global::Deepgram.Realtime.AgentV1AgentV1FunctionCallRequestType? Type36 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.AgentV1AgentV1AgentStartedSpeakingType? Type37 { get; set; }
+        public global::System.Collections.Generic.IList<global::Deepgram.Realtime.ChannelsAgentV1MessagesAgentV1FunctionCallRequestFunctionsItems>? Type37 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.AgentV1AgentV1AgentAudioDone? Type38 { get; set; }
+        public global::Deepgram.Realtime.ChannelsAgentV1MessagesAgentV1FunctionCallCancelledFunctionsItems? Type38 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.AgentV1AgentV1AgentAudioDoneType? Type39 { get; set; }
+        public global::Deepgram.Realtime.AgentV1AgentV1FunctionCallCancelled? Type39 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.AgentV1AgentV1CustomFromThinkProvider? Type40 { get; set; }
+        public global::Deepgram.Realtime.AgentV1AgentV1FunctionCallCancelledType? Type40 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.AgentV1AgentV1CustomFromThinkProviderType? Type41 { get; set; }
+        public global::System.Collections.Generic.IList<global::Deepgram.Realtime.ChannelsAgentV1MessagesAgentV1FunctionCallCancelledFunctionsItems>? Type41 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public object? Type42 { get; set; }
+        public global::Deepgram.Realtime.AgentV1AgentV1AgentStartedSpeaking? Type42 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.ChannelsAgentV1MessagesAgentV1ErrorType? Type43 { get; set; }
+        public global::Deepgram.Realtime.AgentV1AgentV1AgentStartedSpeakingType? Type43 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.AgentV1AgentV1Error? Type44 { get; set; }
+        public global::Deepgram.Realtime.AgentV1AgentV1AgentAudioDone? Type44 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.ChannelsAgentV1MessagesAgentV1WarningType? Type45 { get; set; }
+        public global::Deepgram.Realtime.AgentV1AgentV1AgentAudioDoneType? Type45 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.AgentV1AgentV1Warning? Type46 { get; set; }
+        public global::Deepgram.Realtime.AgentV1AgentV1CustomFromThinkProvider? Type46 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.ChannelsAgentV1MessagesAgentV1HistoryOneOf0Role? Type47 { get; set; }
+        public global::Deepgram.Realtime.AgentV1AgentV1CustomFromThinkProviderType? Type47 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.AgentV1AgentV1History0? Type48 { get; set; }
+        public object? Type48 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.AgentV1AgentV1History0Type? Type49 { get; set; }
+        public global::Deepgram.Realtime.ChannelsAgentV1MessagesAgentV1ErrorType? Type49 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.ChannelsAgentV1MessagesAgentV1HistoryOneOf1FunctionCallsItems? Type50 { get; set; }
+        public global::Deepgram.Realtime.AgentV1AgentV1Error? Type50 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.AgentV1AgentV1History1? Type51 { get; set; }
+        public global::Deepgram.Realtime.ChannelsAgentV1MessagesAgentV1WarningType? Type51 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.AgentV1AgentV1History1Type? Type52 { get; set; }
+        public global::Deepgram.Realtime.AgentV1AgentV1Warning? Type52 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Deepgram.Realtime.ChannelsAgentV1MessagesAgentV1HistoryOneOf1FunctionCallsItems>? Type53 { get; set; }
+        public global::Deepgram.Realtime.ChannelsAgentV1MessagesAgentV1HistoryOneOf0Role? Type53 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.AgentV1AgentV1History? Type54 { get; set; }
+        public global::Deepgram.Realtime.AgentV1AgentV1History0? Type54 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public byte[]? Type55 { get; set; }
+        public global::Deepgram.Realtime.AgentV1AgentV1History0Type? Type55 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.ChannelsAgentV1MessagesAgentV1SettingsFlags? Type56 { get; set; }
+        public global::Deepgram.Realtime.ChannelsAgentV1MessagesAgentV1HistoryOneOf1FunctionCallsItems? Type56 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.ChannelsAgentV1MessagesAgentV1SettingsAudioInputEncoding? Type57 { get; set; }
+        public global::Deepgram.Realtime.AgentV1AgentV1History1? Type57 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.ChannelsAgentV1MessagesAgentV1SettingsAudioInput? Type58 { get; set; }
+        public global::Deepgram.Realtime.AgentV1AgentV1History1Type? Type58 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public int? Type59 { get; set; }
+        public global::System.Collections.Generic.IList<global::Deepgram.Realtime.ChannelsAgentV1MessagesAgentV1HistoryOneOf1FunctionCallsItems>? Type59 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.ChannelsAgentV1MessagesAgentV1SettingsAudioOutputEncoding? Type60 { get; set; }
+        public global::Deepgram.Realtime.AgentV1AgentV1History? Type60 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.ChannelsAgentV1MessagesAgentV1SettingsAudioOutputContainer? Type61 { get; set; }
+        public byte[]? Type61 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.ChannelsAgentV1MessagesAgentV1SettingsAudioOutput? Type62 { get; set; }
+        public global::Deepgram.Realtime.ChannelsAgentV1MessagesAgentV1SettingsFlags? Type62 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.ChannelsAgentV1MessagesAgentV1SettingsAudio? Type63 { get; set; }
+        public global::Deepgram.Realtime.ChannelsAgentV1MessagesAgentV1SettingsAudioInputEncoding? Type63 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ContextMessagesItemsOneOf0Role? Type64 { get; set; }
+        public global::Deepgram.Realtime.ChannelsAgentV1MessagesAgentV1SettingsAudioInput? Type64 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ContextMessagesItems0? Type65 { get; set; }
+        public global::Deepgram.Realtime.ChannelsAgentV1MessagesAgentV1SettingsAudioOutputEncoding? Type65 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ContextMessagesItems0Type? Type66 { get; set; }
+        public global::Deepgram.Realtime.ChannelsAgentV1MessagesAgentV1SettingsAudioOutputContainer? Type66 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ContextMessagesItemsOneOf1FunctionCallsItems? Type67 { get; set; }
+        public global::Deepgram.Realtime.ChannelsAgentV1MessagesAgentV1SettingsAudioOutput? Type67 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ContextMessagesItems1? Type68 { get; set; }
+        public global::Deepgram.Realtime.ChannelsAgentV1MessagesAgentV1SettingsAudio? Type68 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ContextMessagesItems1Type? Type69 { get; set; }
+        public global::Deepgram.Realtime.ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ContextMessagesItemsOneOf0Role? Type69 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Deepgram.Realtime.ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ContextMessagesItemsOneOf1FunctionCallsItems>? Type70 { get; set; }
+        public global::Deepgram.Realtime.ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ContextMessagesItems0? Type70 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ContextMessagesItems? Type71 { get; set; }
+        public global::Deepgram.Realtime.ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ContextMessagesItems0Type? Type71 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0Context? Type72 { get; set; }
+        public global::Deepgram.Realtime.ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ContextMessagesItemsOneOf1FunctionCallsItems? Type72 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Deepgram.Realtime.ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ContextMessagesItems>? Type73 { get; set; }
+        public global::Deepgram.Realtime.ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ContextMessagesItems1? Type73 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.DeepgramListenProviderV1? Type74 { get; set; }
+        public global::Deepgram.Realtime.ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ContextMessagesItems1Type? Type74 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.DeepgramListenProviderV1Type? Type75 { get; set; }
+        public global::System.Collections.Generic.IList<global::Deepgram.Realtime.ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ContextMessagesItemsOneOf1FunctionCallsItems>? Type75 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.DeepgramListenProviderV1Version? Type76 { get; set; }
+        public global::Deepgram.Realtime.ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ContextMessagesItems? Type76 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.DeepgramListenProviderV2? Type77 { get; set; }
+        public global::Deepgram.Realtime.ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0Context? Type77 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.DeepgramListenProviderV2Type? Type78 { get; set; }
+        public global::System.Collections.Generic.IList<global::Deepgram.Realtime.ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ContextMessagesItems>? Type78 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.DeepgramListenProviderV2Version? Type79 { get; set; }
+        public global::Deepgram.Realtime.DeepgramListenProviderV1? Type79 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public double? Type80 { get; set; }
+        public global::Deepgram.Realtime.DeepgramListenProviderV1Type? Type80 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ListenProvider? Type81 { get; set; }
+        public global::Deepgram.Realtime.DeepgramListenProviderV1Version? Type81 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0Listen? Type82 { get; set; }
+        public global::Deepgram.Realtime.DeepgramListenProviderV2? Type82 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.OpenAiThinkProviderVersion? Type83 { get; set; }
+        public global::Deepgram.Realtime.DeepgramListenProviderV2Type? Type83 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.OpenAiThinkProviderModel? Type84 { get; set; }
+        public global::Deepgram.Realtime.DeepgramListenProviderV2Version? Type84 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.OpenAiThinkProviderReasoningMode? Type85 { get; set; }
+        public double? Type85 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.OpenAiThinkProvider? Type86 { get; set; }
+        public global::Deepgram.Realtime.ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ListenProvider? Type86 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.OpenAiThinkProviderType? Type87 { get; set; }
+        public global::Deepgram.Realtime.ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0Listen? Type87 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.AwsBedrockThinkProviderModel? Type88 { get; set; }
+        public global::Deepgram.Realtime.OpenAiThinkProviderVersion? Type88 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.AwsBedrockThinkProviderCredentialsType? Type89 { get; set; }
+        public global::Deepgram.Realtime.OpenAiThinkProviderModel? Type89 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.AwsBedrockThinkProviderCredentials? Type90 { get; set; }
+        public global::Deepgram.Realtime.OpenAiThinkProviderReasoningMode? Type90 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.AwsBedrockThinkProvider? Type91 { get; set; }
+        public global::Deepgram.Realtime.OpenAiThinkProvider? Type91 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.AwsBedrockThinkProviderType? Type92 { get; set; }
+        public global::Deepgram.Realtime.OpenAiThinkProviderType? Type92 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.AnthropicThinkProviderVersion? Type93 { get; set; }
+        public global::Deepgram.Realtime.AwsBedrockThinkProviderModel? Type93 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.AnthropicThinkProviderModel? Type94 { get; set; }
+        public global::Deepgram.Realtime.AwsBedrockThinkProviderCredentialsType? Type94 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.AnthropicThinkProvider? Type95 { get; set; }
+        public global::Deepgram.Realtime.AwsBedrockThinkProviderCredentials? Type95 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.AnthropicThinkProviderType? Type96 { get; set; }
+        public global::Deepgram.Realtime.AwsBedrockThinkProvider? Type96 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.GoogleThinkProviderVersion? Type97 { get; set; }
+        public global::Deepgram.Realtime.AwsBedrockThinkProviderType? Type97 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.GoogleThinkProviderModel? Type98 { get; set; }
+        public global::Deepgram.Realtime.AnthropicThinkProviderVersion? Type98 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.GoogleThinkProvider? Type99 { get; set; }
+        public global::Deepgram.Realtime.AnthropicThinkProviderModel? Type99 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.GoogleThinkProviderType? Type100 { get; set; }
+        public global::Deepgram.Realtime.AnthropicThinkProvider? Type100 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.GroqThinkProviderVersion? Type101 { get; set; }
+        public global::Deepgram.Realtime.AnthropicThinkProviderType? Type101 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.GroqThinkProviderModel? Type102 { get; set; }
+        public global::Deepgram.Realtime.GoogleThinkProviderVersion? Type102 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.GroqThinkProviderReasoningMode? Type103 { get; set; }
+        public global::Deepgram.Realtime.GoogleThinkProviderModel? Type103 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.GroqThinkProvider? Type104 { get; set; }
+        public global::Deepgram.Realtime.GoogleThinkProvider? Type104 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.GroqThinkProviderType? Type105 { get; set; }
+        public global::Deepgram.Realtime.GoogleThinkProviderType? Type105 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.ThinkSettingsV1Provider? Type106 { get; set; }
+        public global::Deepgram.Realtime.GroqThinkProviderVersion? Type106 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.ThinkSettingsV1Endpoint? Type107 { get; set; }
+        public global::Deepgram.Realtime.GroqThinkProviderModel? Type107 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.Dictionary<string, string>? Type108 { get; set; }
+        public global::Deepgram.Realtime.GroqThinkProviderReasoningMode? Type108 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.ThinkSettingsV1FunctionsItemsParameters? Type109 { get; set; }
+        public global::Deepgram.Realtime.GroqThinkProvider? Type109 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.ThinkSettingsV1FunctionsItemsEndpoint? Type110 { get; set; }
+        public global::Deepgram.Realtime.GroqThinkProviderType? Type110 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.ThinkSettingsV1FunctionsItems? Type111 { get; set; }
+        public global::Deepgram.Realtime.ThinkSettingsV1Provider? Type111 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.ThinkSettingsV1ContextLength0? Type112 { get; set; }
+        public global::Deepgram.Realtime.ThinkSettingsV1Endpoint? Type112 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.ThinkSettingsV1ContextLength? Type113 { get; set; }
+        public global::System.Collections.Generic.Dictionary<string, string>? Type113 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.ThinkSettingsV1? Type114 { get; set; }
+        public global::Deepgram.Realtime.ThinkSettingsV1FunctionsItemsParameters? Type114 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Deepgram.Realtime.ThinkSettingsV1FunctionsItems>? Type115 { get; set; }
+        public global::Deepgram.Realtime.ThinkSettingsV1FunctionsItemsEndpoint? Type115 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Deepgram.Realtime.ThinkSettingsV1>? Type116 { get; set; }
+        public global::Deepgram.Realtime.ThinkSettingsV1FunctionsItems? Type116 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0Think? Type117 { get; set; }
+        public global::Deepgram.Realtime.ThinkSettingsV1ContextLength0? Type117 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.DeepgramSpeakProviderModel? Type118 { get; set; }
+        public global::Deepgram.Realtime.ThinkSettingsV1ContextLength? Type118 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.DeepgramSpeakProviderExpressivity? Type119 { get; set; }
+        public global::Deepgram.Realtime.ThinkSettingsV1? Type119 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.DeepgramSpeakProvider? Type120 { get; set; }
+        public global::System.Collections.Generic.IList<global::Deepgram.Realtime.ThinkSettingsV1FunctionsItems>? Type120 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.DeepgramSpeakProviderType? Type121 { get; set; }
+        public global::System.Collections.Generic.IList<global::Deepgram.Realtime.ThinkSettingsV1>? Type121 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.ElevenLabsSpeakProviderVersion? Type122 { get; set; }
+        public global::Deepgram.Realtime.ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0Think? Type122 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.ElevenLabsSpeakProviderModelId? Type123 { get; set; }
+        public global::Deepgram.Realtime.DeepgramThinkLiveProviderV1? Type123 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.ElevenLabsSpeakProvider? Type124 { get; set; }
+        public global::Deepgram.Realtime.DeepgramThinkLiveProviderV1Type? Type124 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.ElevenLabsSpeakProviderType? Type125 { get; set; }
+        public global::Deepgram.Realtime.DeepgramThinkLiveProviderV1Version? Type125 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.CartesiaSpeakProviderVersion? Type126 { get; set; }
+        public global::Deepgram.Realtime.ThinkLiveSettingsV1? Type126 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.CartesiaSpeakProviderModelId? Type127 { get; set; }
+        public global::Deepgram.Realtime.DeepgramSpeakProviderModel? Type127 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.CartesiaSpeakProviderVoice? Type128 { get; set; }
+        public global::Deepgram.Realtime.DeepgramSpeakProviderExpressivity? Type128 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.CartesiaSpeakProvider? Type129 { get; set; }
+        public global::Deepgram.Realtime.DeepgramSpeakProvider? Type129 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.CartesiaSpeakProviderType? Type130 { get; set; }
+        public global::Deepgram.Realtime.DeepgramSpeakProviderType? Type130 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.OpenAiSpeakProviderVersion? Type131 { get; set; }
+        public global::Deepgram.Realtime.ElevenLabsSpeakProviderVersion? Type131 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.OpenAiSpeakProviderModel? Type132 { get; set; }
+        public global::Deepgram.Realtime.ElevenLabsSpeakProviderModelId? Type132 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.OpenAiSpeakProviderVoice? Type133 { get; set; }
+        public global::Deepgram.Realtime.ElevenLabsSpeakProvider? Type133 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.OpenAiSpeakProvider? Type134 { get; set; }
+        public global::Deepgram.Realtime.ElevenLabsSpeakProviderType? Type134 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.OpenAiSpeakProviderType? Type135 { get; set; }
+        public global::Deepgram.Realtime.CartesiaSpeakProviderVersion? Type135 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.AwsPollySpeakProviderVoice? Type136 { get; set; }
+        public global::Deepgram.Realtime.CartesiaSpeakProviderModelId? Type136 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.AwsPollySpeakProviderEngine? Type137 { get; set; }
+        public global::Deepgram.Realtime.CartesiaSpeakProviderVoice? Type137 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.AwsPollySpeakProviderCredentialsType? Type138 { get; set; }
+        public global::Deepgram.Realtime.CartesiaSpeakProvider? Type138 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.AwsPollySpeakProviderCredentials? Type139 { get; set; }
+        public global::Deepgram.Realtime.CartesiaSpeakProviderType? Type139 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.AwsPollySpeakProvider? Type140 { get; set; }
+        public global::Deepgram.Realtime.OpenAiSpeakProviderVersion? Type140 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.AwsPollySpeakProviderType? Type141 { get; set; }
+        public global::Deepgram.Realtime.OpenAiSpeakProviderModel? Type141 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.SpeakSettingsV1Provider? Type142 { get; set; }
+        public global::Deepgram.Realtime.OpenAiSpeakProviderVoice? Type142 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.SpeakSettingsV1Endpoint? Type143 { get; set; }
+        public global::Deepgram.Realtime.OpenAiSpeakProvider? Type143 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.SpeakSettingsV1? Type144 { get; set; }
+        public global::Deepgram.Realtime.OpenAiSpeakProviderType? Type144 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Deepgram.Realtime.SpeakSettingsV1>? Type145 { get; set; }
+        public global::Deepgram.Realtime.AwsPollySpeakProviderVoice? Type145 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0Speak? Type146 { get; set; }
+        public global::Deepgram.Realtime.AwsPollySpeakProviderEngine? Type146 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.ChannelsAgentV1MessagesAgentV1SettingsAgent0? Type147 { get; set; }
+        public global::Deepgram.Realtime.AwsPollySpeakProviderCredentialsType? Type147 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.ChannelsAgentV1MessagesAgentV1SettingsAgent? Type148 { get; set; }
+        public global::Deepgram.Realtime.AwsPollySpeakProviderCredentials? Type148 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Guid? Type149 { get; set; }
+        public global::Deepgram.Realtime.AwsPollySpeakProvider? Type149 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.AgentV1AgentV1Settings? Type150 { get; set; }
+        public global::Deepgram.Realtime.AwsPollySpeakProviderType? Type150 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.AgentV1AgentV1SettingsType? Type151 { get; set; }
+        public global::Deepgram.Realtime.SpeakSettingsV1Provider? Type151 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.ChannelsAgentV1MessagesAgentV1UpdateListenListenProvider? Type152 { get; set; }
+        public global::Deepgram.Realtime.SpeakSettingsV1Endpoint? Type152 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.ChannelsAgentV1MessagesAgentV1UpdateListenListen? Type153 { get; set; }
+        public global::Deepgram.Realtime.SpeakSettingsV1? Type153 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.AgentV1AgentV1UpdateListen? Type154 { get; set; }
+        public global::System.Collections.Generic.IList<global::Deepgram.Realtime.SpeakSettingsV1>? Type154 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.AgentV1AgentV1UpdateListenType? Type155 { get; set; }
+        public global::Deepgram.Realtime.ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0Speak? Type155 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.ChannelsAgentV1MessagesAgentV1UpdateThinkThink? Type156 { get; set; }
+        public global::Deepgram.Realtime.ChannelsAgentV1MessagesAgentV1SettingsAgent0? Type156 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.AgentV1AgentV1UpdateThink? Type157 { get; set; }
+        public global::Deepgram.Realtime.ChannelsAgentV1MessagesAgentV1SettingsAgent? Type157 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.AgentV1AgentV1UpdateThinkType? Type158 { get; set; }
+        public global::System.Guid? Type158 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.ChannelsAgentV1MessagesAgentV1UpdateSpeakSpeak? Type159 { get; set; }
+        public global::Deepgram.Realtime.AgentV1AgentV1Settings? Type159 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.AgentV1AgentV1UpdateSpeak? Type160 { get; set; }
+        public global::Deepgram.Realtime.AgentV1AgentV1SettingsType? Type160 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.AgentV1AgentV1UpdateSpeakType? Type161 { get; set; }
+        public global::Deepgram.Realtime.ChannelsAgentV1MessagesAgentV1UpdateListenListenProvider? Type161 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.AgentV1AgentV1InjectUserMessage? Type162 { get; set; }
+        public global::Deepgram.Realtime.ChannelsAgentV1MessagesAgentV1UpdateListenListen? Type162 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.AgentV1AgentV1InjectUserMessageType? Type163 { get; set; }
+        public global::Deepgram.Realtime.AgentV1AgentV1UpdateListen? Type163 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.ChannelsAgentV1MessagesAgentV1InjectAgentMessageBehavior? Type164 { get; set; }
+        public global::Deepgram.Realtime.AgentV1AgentV1UpdateListenType? Type164 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.AgentV1AgentV1InjectAgentMessage? Type165 { get; set; }
+        public global::Deepgram.Realtime.ChannelsAgentV1MessagesAgentV1UpdateThinkThink? Type165 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.AgentV1AgentV1InjectAgentMessageType? Type166 { get; set; }
+        public global::Deepgram.Realtime.AgentV1AgentV1UpdateThink? Type166 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.AgentV1AgentV1SendFunctionCallResponse? Type167 { get; set; }
+        public global::Deepgram.Realtime.AgentV1AgentV1UpdateThinkType? Type167 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.AgentV1AgentV1SendFunctionCallResponseType? Type168 { get; set; }
+        public global::Deepgram.Realtime.AgentV1AgentV1UpdateThinkLive? Type168 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.ChannelsAgentV1MessagesAgentV1KeepAliveType? Type169 { get; set; }
+        public global::Deepgram.Realtime.AgentV1AgentV1UpdateThinkLiveType? Type169 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.AgentV1AgentV1KeepAlive? Type170 { get; set; }
+        public global::Deepgram.Realtime.ChannelsAgentV1MessagesAgentV1UpdateSpeakSpeak? Type170 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.AgentV1AgentV1UpdatePrompt? Type171 { get; set; }
+        public global::Deepgram.Realtime.AgentV1AgentV1UpdateSpeak? Type171 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.AgentV1AgentV1UpdatePromptType? Type172 { get; set; }
+        public global::Deepgram.Realtime.AgentV1AgentV1UpdateSpeakType? Type172 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.AgentV1AgentV1ForceEndTurn? Type173 { get; set; }
+        public global::Deepgram.Realtime.AgentV1AgentV1InjectUserMessage? Type173 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.AgentV1AgentV1ForceEndTurnType? Type174 { get; set; }
+        public global::Deepgram.Realtime.AgentV1AgentV1InjectUserMessageType? Type174 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.AgentV1AgentV1CustomToThinkProvider? Type175 { get; set; }
+        public global::Deepgram.Realtime.ChannelsAgentV1MessagesAgentV1InjectAgentMessageBehavior? Type175 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.AgentV1AgentV1CustomToThinkProviderType? Type176 { get; set; }
+        public global::Deepgram.Realtime.AgentV1AgentV1InjectAgentMessage? Type176 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.ListenV1Callback? Type177 { get; set; }
+        public global::Deepgram.Realtime.AgentV1AgentV1InjectAgentMessageType? Type177 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.ListenV1CallbackMethod? Type178 { get; set; }
+        public global::Deepgram.Realtime.ChannelsAgentV1MessagesAgentV1InjectDynamicAgentMessageBehavior? Type178 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.ListenV1Channels? Type179 { get; set; }
+        public global::Deepgram.Realtime.AgentV1AgentV1InjectDynamicAgentMessage? Type179 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.ListenV1DetectEntities? Type180 { get; set; }
+        public global::Deepgram.Realtime.AgentV1AgentV1InjectDynamicAgentMessageType? Type180 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.ListenV1Diarize? Type181 { get; set; }
+        public global::Deepgram.Realtime.AgentV1AgentV1SendFunctionCallResponse? Type181 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.ListenV1DiarizeModel? Type182 { get; set; }
+        public global::Deepgram.Realtime.AgentV1AgentV1SendFunctionCallResponseType? Type182 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.ListenV1Dictation? Type183 { get; set; }
+        public global::Deepgram.Realtime.ChannelsAgentV1MessagesAgentV1KeepAliveType? Type183 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.ListenV1Encoding? Type184 { get; set; }
+        public global::Deepgram.Realtime.AgentV1AgentV1KeepAlive? Type184 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.ListenV1Endpointing? Type185 { get; set; }
+        public global::Deepgram.Realtime.AgentV1AgentV1UpdatePrompt? Type185 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.ListenV1Extra? Type186 { get; set; }
+        public global::Deepgram.Realtime.AgentV1AgentV1UpdatePromptType? Type186 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.ListenV1InterimResults? Type187 { get; set; }
+        public global::Deepgram.Realtime.AgentV1AgentV1ForceEndTurn? Type187 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.ListenV1Keyterm? Type188 { get; set; }
+        public global::Deepgram.Realtime.AgentV1AgentV1ForceEndTurnType? Type188 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.ListenV1Keywords? Type189 { get; set; }
+        public global::Deepgram.Realtime.AgentV1AgentV1CustomToThinkProvider? Type189 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.ListenV1Language? Type190 { get; set; }
+        public global::Deepgram.Realtime.AgentV1AgentV1CustomToThinkProviderType? Type190 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.ListenV1LanguageHint? Type191 { get; set; }
+        public global::Deepgram.Realtime.ListenV1Callback? Type191 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.ListenV1MipOptOut? Type192 { get; set; }
+        public global::Deepgram.Realtime.ListenV1CallbackMethod? Type192 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.ListenV1Model? Type193 { get; set; }
+        public global::Deepgram.Realtime.ListenV1Channels? Type193 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.ListenV1Multichannel? Type194 { get; set; }
+        public global::Deepgram.Realtime.ListenV1DetectEntities? Type194 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.ListenV1Numerals? Type195 { get; set; }
+        public global::Deepgram.Realtime.ListenV1Diarize? Type195 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.ListenV1ProfanityFilter? Type196 { get; set; }
+        public global::Deepgram.Realtime.ListenV1DiarizeModel? Type196 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.ListenV1Punctuate? Type197 { get; set; }
+        public global::Deepgram.Realtime.ListenV1Dictation? Type197 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.ListenV1Redact? Type198 { get; set; }
+        public global::Deepgram.Realtime.ListenV1Encoding? Type198 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.ListenV1Replace? Type199 { get; set; }
+        public global::Deepgram.Realtime.ListenV1Endpointing? Type199 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.ListenV1SampleRate? Type200 { get; set; }
+        public global::Deepgram.Realtime.ListenV1Extra? Type200 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.ListenV1Search? Type201 { get; set; }
+        public global::Deepgram.Realtime.ListenV1InterimResults? Type201 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.ListenV1SmartFormat? Type202 { get; set; }
+        public global::Deepgram.Realtime.ListenV1Keyterm? Type202 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.ListenV1Tag? Type203 { get; set; }
+        public global::Deepgram.Realtime.ListenV1Keywords? Type203 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.ListenV1UtteranceEndMs? Type204 { get; set; }
+        public global::Deepgram.Realtime.ListenV1Language? Type204 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.ListenV1VadEvents? Type205 { get; set; }
+        public global::Deepgram.Realtime.ListenV1LanguageHint? Type205 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.ListenV1Version? Type206 { get; set; }
+        public global::Deepgram.Realtime.ListenV1MipOptOut? Type206 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.ChannelsListenV1MessagesListenV1ConfigureSuccessType? Type207 { get; set; }
+        public global::Deepgram.Realtime.ListenV1Model? Type207 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.ListenV1ListenV1ConfigureSuccess? Type208 { get; set; }
+        public global::Deepgram.Realtime.ListenV1Multichannel? Type208 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.ChannelsListenV1MessagesListenV1ConfigureFailureType? Type209 { get; set; }
+        public global::Deepgram.Realtime.ListenV1Numerals? Type209 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.ChannelsListenV1MessagesListenV1ConfigureFailureCode? Type210 { get; set; }
+        public global::Deepgram.Realtime.ListenV1ProfanityFilter? Type210 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.ListenV1ListenV1ConfigureFailure? Type211 { get; set; }
+        public global::Deepgram.Realtime.ListenV1Punctuate? Type211 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.ChannelsListenV1MessagesListenV1ResultsType? Type212 { get; set; }
+        public global::Deepgram.Realtime.ListenV1Redact? Type212 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.ChannelsListenV1MessagesListenV1ResultsChannelAlternativesItemsWordsItems? Type213 { get; set; }
+        public global::Deepgram.Realtime.ListenV1Replace? Type213 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.ChannelsListenV1MessagesListenV1ResultsChannelAlternativesItems? Type214 { get; set; }
+        public global::Deepgram.Realtime.ListenV1SampleRate? Type214 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Deepgram.Realtime.ChannelsListenV1MessagesListenV1ResultsChannelAlternativesItemsWordsItems>? Type215 { get; set; }
+        public global::Deepgram.Realtime.ListenV1Search? Type215 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.ChannelsListenV1MessagesListenV1ResultsChannel? Type216 { get; set; }
+        public global::Deepgram.Realtime.ListenV1SmartFormat? Type216 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Deepgram.Realtime.ChannelsListenV1MessagesListenV1ResultsChannelAlternativesItems>? Type217 { get; set; }
+        public global::Deepgram.Realtime.ListenV1Tag? Type217 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.ChannelsListenV1MessagesListenV1ResultsMetadataModelInfo? Type218 { get; set; }
+        public global::Deepgram.Realtime.ListenV1UtteranceEndMs? Type218 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.ChannelsListenV1MessagesListenV1ResultsMetadataDiarizeInfo? Type219 { get; set; }
+        public global::Deepgram.Realtime.ListenV1VadEvents? Type219 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.ChannelsListenV1MessagesListenV1ResultsMetadata? Type220 { get; set; }
+        public global::Deepgram.Realtime.ListenV1Version? Type220 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.ChannelsListenV1MessagesListenV1ResultsEntitiesItems? Type221 { get; set; }
+        public global::Deepgram.Realtime.ChannelsListenV1MessagesListenV1ConfigureSuccessType? Type221 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.ListenV1ListenV1Results? Type222 { get; set; }
+        public global::Deepgram.Realtime.ListenV1ListenV1ConfigureSuccess? Type222 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<int>? Type223 { get; set; }
+        public global::Deepgram.Realtime.ChannelsListenV1MessagesListenV1ConfigureFailureType? Type223 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Deepgram.Realtime.ChannelsListenV1MessagesListenV1ResultsEntitiesItems>? Type224 { get; set; }
+        public global::Deepgram.Realtime.ChannelsListenV1MessagesListenV1ConfigureFailureCode? Type224 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.ChannelsListenV1MessagesListenV1MetadataType? Type225 { get; set; }
+        public global::Deepgram.Realtime.ListenV1ListenV1ConfigureFailure? Type225 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.ListenV1ListenV1Metadata? Type226 { get; set; }
+        public global::Deepgram.Realtime.ChannelsListenV1MessagesListenV1ResultsType? Type226 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.ChannelsListenV1MessagesListenV1UtteranceEndType? Type227 { get; set; }
+        public global::Deepgram.Realtime.ChannelsListenV1MessagesListenV1ResultsChannelAlternativesItemsWordsItems? Type227 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.ListenV1ListenV1UtteranceEnd? Type228 { get; set; }
+        public global::Deepgram.Realtime.ChannelsListenV1MessagesListenV1ResultsChannelAlternativesItems? Type228 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.ChannelsListenV1MessagesListenV1SpeechStartedType? Type229 { get; set; }
+        public global::System.Collections.Generic.IList<global::Deepgram.Realtime.ChannelsListenV1MessagesListenV1ResultsChannelAlternativesItemsWordsItems>? Type229 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.ListenV1ListenV1SpeechStarted? Type230 { get; set; }
+        public global::Deepgram.Realtime.ChannelsListenV1MessagesListenV1ResultsChannel? Type230 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.ChannelsListenV1MessagesListenV1ErrorType? Type231 { get; set; }
+        public global::System.Collections.Generic.IList<global::Deepgram.Realtime.ChannelsListenV1MessagesListenV1ResultsChannelAlternativesItems>? Type231 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.ListenV1ListenV1Error? Type232 { get; set; }
+        public global::Deepgram.Realtime.ChannelsListenV1MessagesListenV1ResultsMetadataModelInfo? Type232 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.ChannelsListenV1MessagesListenV1FinalizeType? Type233 { get; set; }
+        public global::Deepgram.Realtime.ChannelsListenV1MessagesListenV1ResultsMetadataDiarizeInfo? Type233 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.ListenV1ListenV1Finalize? Type234 { get; set; }
+        public global::Deepgram.Realtime.ChannelsListenV1MessagesListenV1ResultsMetadata? Type234 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.ChannelsListenV1MessagesListenV1CloseStreamType? Type235 { get; set; }
+        public global::Deepgram.Realtime.ChannelsListenV1MessagesListenV1ResultsEntitiesItems? Type235 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.ListenV1ListenV1CloseStream? Type236 { get; set; }
+        public global::Deepgram.Realtime.ListenV1ListenV1Results? Type236 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.ChannelsListenV1MessagesListenV1KeepAliveType? Type237 { get; set; }
+        public global::System.Collections.Generic.IList<int>? Type237 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.ListenV1ListenV1KeepAlive? Type238 { get; set; }
+        public global::System.Collections.Generic.IList<global::Deepgram.Realtime.ChannelsListenV1MessagesListenV1ResultsEntitiesItems>? Type238 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.ChannelsListenV1MessagesListenV1ConfigureType? Type239 { get; set; }
+        public global::Deepgram.Realtime.ChannelsListenV1MessagesListenV1MetadataType? Type239 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.ListenV1ListenV1Configure? Type240 { get; set; }
+        public global::Deepgram.Realtime.ListenV1ListenV1Metadata? Type240 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.Dictionary<string, bool>? Type241 { get; set; }
+        public global::Deepgram.Realtime.ChannelsListenV1MessagesListenV1UtteranceEndType? Type241 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.ListenV2Model? Type242 { get; set; }
+        public global::Deepgram.Realtime.ListenV1ListenV1UtteranceEnd? Type242 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.ListenV2Encoding? Type243 { get; set; }
+        public global::Deepgram.Realtime.ChannelsListenV1MessagesListenV1SpeechStartedType? Type243 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.ListenV2SampleRate? Type244 { get; set; }
+        public global::Deepgram.Realtime.ListenV1ListenV1SpeechStarted? Type244 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.ListenV2EagerEotThreshold? Type245 { get; set; }
+        public global::Deepgram.Realtime.ChannelsListenV1MessagesListenV1ErrorType? Type245 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.ListenV2EotThreshold? Type246 { get; set; }
+        public global::Deepgram.Realtime.ListenV1ListenV1Error? Type246 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.ListenV2EotTimeoutMs? Type247 { get; set; }
+        public global::Deepgram.Realtime.ChannelsListenV1MessagesListenV1FinalizeType? Type247 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.ListenV2Keyterm? Type248 { get; set; }
+        public global::Deepgram.Realtime.ListenV1ListenV1Finalize? Type248 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.ListenV2LanguageHint? Type249 { get; set; }
+        public global::Deepgram.Realtime.ChannelsListenV1MessagesListenV1CloseStreamType? Type249 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.ListenV2ProfanityFilter? Type250 { get; set; }
+        public global::Deepgram.Realtime.ListenV1ListenV1CloseStream? Type250 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.ListenV2Numerals? Type251 { get; set; }
+        public global::Deepgram.Realtime.ChannelsListenV1MessagesListenV1KeepAliveType? Type251 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.ListenV2Redact? Type252 { get; set; }
+        public global::Deepgram.Realtime.ListenV1ListenV1KeepAlive? Type252 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.ListenV2MipOptOut? Type253 { get; set; }
+        public global::Deepgram.Realtime.ChannelsListenV1MessagesListenV1ConfigureType? Type253 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.ListenV2Tag? Type254 { get; set; }
+        public global::Deepgram.Realtime.ListenV1ListenV1Configure? Type254 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.ChannelsListenV2MessagesListenV2ConnectedType? Type255 { get; set; }
+        public global::System.Collections.Generic.Dictionary<string, bool>? Type255 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.ListenV2ListenV2Connected? Type256 { get; set; }
+        public global::Deepgram.Realtime.ListenV2Model? Type256 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.ChannelsListenV2MessagesListenV2TurnInfoEvent? Type257 { get; set; }
+        public global::Deepgram.Realtime.ListenV2Encoding? Type257 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.ChannelsListenV2MessagesListenV2TurnInfoWordsItems? Type258 { get; set; }
+        public global::Deepgram.Realtime.ListenV2SampleRate? Type258 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.ListenV2ListenV2TurnInfo? Type259 { get; set; }
+        public global::Deepgram.Realtime.ListenV2EagerEotThreshold? Type259 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.ListenV2ListenV2TurnInfoType? Type260 { get; set; }
+        public global::Deepgram.Realtime.ListenV2EotThreshold? Type260 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Deepgram.Realtime.ChannelsListenV2MessagesListenV2TurnInfoWordsItems>? Type261 { get; set; }
+        public global::Deepgram.Realtime.ListenV2EotTimeoutMs? Type261 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.ChannelsListenV2MessagesListenV2ConfigureSuccessThresholds? Type262 { get; set; }
+        public global::Deepgram.Realtime.ListenV2Keyterm? Type262 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.ListenV2ListenV2ConfigureSuccess? Type263 { get; set; }
+        public global::Deepgram.Realtime.ListenV2LanguageHint? Type263 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.ListenV2ListenV2ConfigureSuccessType? Type264 { get; set; }
+        public global::Deepgram.Realtime.ListenV2ProfanityFilter? Type264 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.ListenV2ListenV2ConfigureFailure? Type265 { get; set; }
+        public global::Deepgram.Realtime.ListenV2Numerals? Type265 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.ListenV2ListenV2ConfigureFailureType? Type266 { get; set; }
+        public global::Deepgram.Realtime.ListenV2Redact? Type266 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.ListenV2ListenV2Warning? Type267 { get; set; }
+        public global::Deepgram.Realtime.ListenV2MipOptOut? Type267 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.ListenV2ListenV2WarningType? Type268 { get; set; }
+        public global::Deepgram.Realtime.ListenV2Tag? Type268 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.ChannelsListenV2MessagesListenV2FatalErrorType? Type269 { get; set; }
+        public global::Deepgram.Realtime.ChannelsListenV2MessagesListenV2ConnectedType? Type269 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.ListenV2ListenV2FatalError? Type270 { get; set; }
+        public global::Deepgram.Realtime.ListenV2ListenV2Connected? Type270 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.ChannelsListenV2MessagesListenV2CloseStreamType? Type271 { get; set; }
+        public global::Deepgram.Realtime.ChannelsListenV2MessagesListenV2TurnInfoEvent? Type271 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.ListenV2ListenV2CloseStream? Type272 { get; set; }
+        public global::Deepgram.Realtime.ChannelsListenV2MessagesListenV2TurnInfoWordsItems? Type272 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.ListenV2ListenV2ForceEndTurn? Type273 { get; set; }
+        public global::Deepgram.Realtime.ListenV2ListenV2TurnInfo? Type273 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.ListenV2ListenV2ForceEndTurnType? Type274 { get; set; }
+        public global::Deepgram.Realtime.ListenV2ListenV2TurnInfoType? Type274 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.ChannelsListenV2MessagesListenV2ConfigureThresholds? Type275 { get; set; }
+        public global::System.Collections.Generic.IList<global::Deepgram.Realtime.ChannelsListenV2MessagesListenV2TurnInfoWordsItems>? Type275 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.ListenV2ListenV2Configure? Type276 { get; set; }
+        public global::Deepgram.Realtime.ChannelsListenV2MessagesListenV2ConfigureSuccessThresholds? Type276 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.ListenV2ListenV2ConfigureType? Type277 { get; set; }
+        public global::Deepgram.Realtime.ListenV2ListenV2ConfigureSuccess? Type277 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.SpeakV1Encoding? Type278 { get; set; }
+        public global::Deepgram.Realtime.ListenV2ListenV2ConfigureSuccessType? Type278 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.SpeakV1MipOptOut? Type279 { get; set; }
+        public global::Deepgram.Realtime.ListenV2ListenV2ConfigureFailure? Type279 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.SpeakV1Model? Type280 { get; set; }
+        public global::Deepgram.Realtime.ListenV2ListenV2ConfigureFailureType? Type280 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.SpeakV1SampleRate? Type281 { get; set; }
+        public global::Deepgram.Realtime.ListenV2ListenV2Warning? Type281 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.ChannelsSpeakV1MessagesSpeakV1MetadataType? Type282 { get; set; }
+        public global::Deepgram.Realtime.ListenV2ListenV2WarningType? Type282 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.SpeakV1SpeakV1Metadata? Type283 { get; set; }
+        public global::Deepgram.Realtime.ChannelsListenV2MessagesListenV2FatalErrorType? Type283 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::System.Guid>? Type284 { get; set; }
+        public global::Deepgram.Realtime.ListenV2ListenV2FatalError? Type284 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.ChannelsSpeakV1MessagesSpeakV1FlushedType? Type285 { get; set; }
+        public global::Deepgram.Realtime.ChannelsListenV2MessagesListenV2CloseStreamType? Type285 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.SpeakV1SpeakV1Flushed? Type286 { get; set; }
+        public global::Deepgram.Realtime.ListenV2ListenV2CloseStream? Type286 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.ChannelsSpeakV1MessagesSpeakV1ClearedType? Type287 { get; set; }
+        public global::Deepgram.Realtime.ListenV2ListenV2ForceEndTurn? Type287 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.SpeakV1SpeakV1Cleared? Type288 { get; set; }
+        public global::Deepgram.Realtime.ListenV2ListenV2ForceEndTurnType? Type288 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.ChannelsSpeakV1MessagesSpeakV1WarningType? Type289 { get; set; }
+        public global::Deepgram.Realtime.ChannelsListenV2MessagesListenV2ConfigureThresholds? Type289 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.SpeakV1SpeakV1Warning? Type290 { get; set; }
+        public global::Deepgram.Realtime.ListenV2ListenV2Configure? Type290 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.ChannelsSpeakV1MessagesSpeakV1TextType? Type291 { get; set; }
+        public global::Deepgram.Realtime.ListenV2ListenV2ConfigureType? Type291 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.SpeakV1SpeakV1Text? Type292 { get; set; }
+        public global::Deepgram.Realtime.SpeakV1Encoding? Type292 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.ChannelsSpeakV1MessagesSpeakV1FlushType? Type293 { get; set; }
+        public global::Deepgram.Realtime.SpeakV1MipOptOut? Type293 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.SpeakV1SpeakV1Flush? Type294 { get; set; }
+        public global::Deepgram.Realtime.SpeakV1Model? Type294 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.ChannelsSpeakV1MessagesSpeakV1ClearType? Type295 { get; set; }
+        public global::Deepgram.Realtime.SpeakV1SampleRate? Type295 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.SpeakV1SpeakV1Clear? Type296 { get; set; }
+        public global::Deepgram.Realtime.ChannelsSpeakV1MessagesSpeakV1MetadataType? Type296 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.ChannelsSpeakV1MessagesSpeakV1CloseType? Type297 { get; set; }
+        public global::Deepgram.Realtime.SpeakV1SpeakV1Metadata? Type297 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.SpeakV1SpeakV1Close? Type298 { get; set; }
+        public global::System.Collections.Generic.IList<global::System.Guid>? Type298 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.SpeakV2Encoding? Type299 { get; set; }
+        public global::Deepgram.Realtime.ChannelsSpeakV1MessagesSpeakV1FlushedType? Type299 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.SpeakV2SampleRate? Type300 { get; set; }
+        public global::Deepgram.Realtime.SpeakV1SpeakV1Flushed? Type300 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.SpeakV2Expressivity? Type301 { get; set; }
+        public global::Deepgram.Realtime.ChannelsSpeakV1MessagesSpeakV1ClearedType? Type301 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.SpeakV2MipOptOut? Type302 { get; set; }
+        public global::Deepgram.Realtime.SpeakV1SpeakV1Cleared? Type302 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.SpeakV2Tag? Type303 { get; set; }
+        public global::Deepgram.Realtime.ChannelsSpeakV1MessagesSpeakV1WarningType? Type303 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.SpeakV2SpeakV2Connected? Type304 { get; set; }
+        public global::Deepgram.Realtime.SpeakV1SpeakV1Warning? Type304 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.SpeakV2SpeakV2ConnectedType? Type305 { get; set; }
+        public global::Deepgram.Realtime.ChannelsSpeakV1MessagesSpeakV1TextType? Type305 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.SpeakV2SpeakV2SpeechStarted? Type306 { get; set; }
+        public global::Deepgram.Realtime.SpeakV1SpeakV1Text? Type306 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.SpeakV2SpeakV2SpeechStartedType? Type307 { get; set; }
+        public global::Deepgram.Realtime.ChannelsSpeakV1MessagesSpeakV1FlushType? Type307 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.ChannelsSpeakV2MessagesSpeakV2SpeechMetadataControlsApplied? Type308 { get; set; }
+        public global::Deepgram.Realtime.SpeakV1SpeakV1Flush? Type308 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.SpeakV2SpeakV2SpeechMetadata? Type309 { get; set; }
+        public global::Deepgram.Realtime.ChannelsSpeakV1MessagesSpeakV1ClearType? Type309 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.SpeakV2SpeakV2SpeechMetadataType? Type310 { get; set; }
+        public global::Deepgram.Realtime.SpeakV1SpeakV1Clear? Type310 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.ChannelsSpeakV2MessagesSpeakV2SpeechInterruptedMetadataControlsApplied? Type311 { get; set; }
+        public global::Deepgram.Realtime.ChannelsSpeakV1MessagesSpeakV1CloseType? Type311 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.ChannelsSpeakV2MessagesSpeakV2SpeechInterruptedMetadata? Type312 { get; set; }
+        public global::Deepgram.Realtime.SpeakV1SpeakV1Close? Type312 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.SpeakV2SpeakV2SpeechInterrupted? Type313 { get; set; }
+        public global::Deepgram.Realtime.SpeakV2Encoding? Type313 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.SpeakV2SpeakV2SpeechInterruptedType? Type314 { get; set; }
+        public global::Deepgram.Realtime.SpeakV2SampleRate? Type314 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.SpeakV2SpeakV2Flushed? Type315 { get; set; }
+        public global::Deepgram.Realtime.SpeakV2Expressivity? Type315 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.SpeakV2SpeakV2FlushedType? Type316 { get; set; }
+        public global::Deepgram.Realtime.SpeakV2MipOptOut? Type316 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.SpeakV2SpeakV2SessionMetadata? Type317 { get; set; }
+        public global::Deepgram.Realtime.SpeakV2Tag? Type317 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.SpeakV2SpeakV2SessionMetadataType? Type318 { get; set; }
+        public global::Deepgram.Realtime.SpeakV2SpeakV2Connected? Type318 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.ChannelsSpeakV2MessagesSpeakV2ConfigureSuccessApplied? Type319 { get; set; }
+        public global::Deepgram.Realtime.SpeakV2SpeakV2ConnectedType? Type319 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.SpeakV2SpeakV2ConfigureSuccess? Type320 { get; set; }
+        public global::Deepgram.Realtime.SpeakV2SpeakV2SpeechStarted? Type320 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.SpeakV2SpeakV2ConfigureSuccessType? Type321 { get; set; }
+        public global::Deepgram.Realtime.SpeakV2SpeakV2SpeechStartedType? Type321 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.ChannelsSpeakV2MessagesSpeakV2ConfigureFailureCode? Type322 { get; set; }
+        public global::Deepgram.Realtime.ChannelsSpeakV2MessagesSpeakV2SpeechMetadataControlsApplied? Type322 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.ChannelsSpeakV2MessagesSpeakV2ConfigureFailureField? Type323 { get; set; }
+        public global::Deepgram.Realtime.SpeakV2SpeakV2SpeechMetadata? Type323 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.SpeakV2SpeakV2ConfigureFailure? Type324 { get; set; }
+        public global::Deepgram.Realtime.SpeakV2SpeakV2SpeechMetadataType? Type324 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.SpeakV2SpeakV2ConfigureFailureType? Type325 { get; set; }
+        public global::Deepgram.Realtime.ChannelsSpeakV2MessagesSpeakV2SpeechInterruptedMetadataControlsApplied? Type325 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.SpeakV2SpeakV2Warning? Type326 { get; set; }
+        public global::Deepgram.Realtime.ChannelsSpeakV2MessagesSpeakV2SpeechInterruptedMetadata? Type326 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.SpeakV2SpeakV2WarningType? Type327 { get; set; }
+        public global::Deepgram.Realtime.SpeakV2SpeakV2SpeechInterrupted? Type327 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.ChannelsSpeakV2MessagesSpeakV2ErrorCode? Type328 { get; set; }
+        public global::Deepgram.Realtime.SpeakV2SpeakV2SpeechInterruptedType? Type328 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.SpeakV2SpeakV2Error? Type329 { get; set; }
+        public global::Deepgram.Realtime.SpeakV2SpeakV2Flushed? Type329 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.SpeakV2SpeakV2ErrorType? Type330 { get; set; }
+        public global::Deepgram.Realtime.SpeakV2SpeakV2FlushedType? Type330 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.SpeakV2SpeakV2Speak? Type331 { get; set; }
+        public global::Deepgram.Realtime.SpeakV2SpeakV2SessionMetadata? Type331 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.SpeakV2SpeakV2SpeakType? Type332 { get; set; }
+        public global::Deepgram.Realtime.SpeakV2SpeakV2SessionMetadataType? Type332 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.SpeakV2SpeakV2Flush? Type333 { get; set; }
+        public global::Deepgram.Realtime.ChannelsSpeakV2MessagesSpeakV2ConfigureSuccessApplied? Type333 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.SpeakV2SpeakV2FlushType? Type334 { get; set; }
+        public global::Deepgram.Realtime.SpeakV2SpeakV2ConfigureSuccess? Type334 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.ChannelsSpeakV2MessagesSpeakV2InterruptPlaybackOffset? Type335 { get; set; }
+        public global::Deepgram.Realtime.SpeakV2SpeakV2ConfigureSuccessType? Type335 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.ChannelsSpeakV2MessagesSpeakV2InterruptPlaybackOffsetType? Type336 { get; set; }
+        public global::Deepgram.Realtime.ChannelsSpeakV2MessagesSpeakV2ConfigureFailureCode? Type336 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.SpeakV2SpeakV2Interrupt? Type337 { get; set; }
+        public global::Deepgram.Realtime.ChannelsSpeakV2MessagesSpeakV2ConfigureFailureField? Type337 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.SpeakV2SpeakV2InterruptType? Type338 { get; set; }
+        public global::Deepgram.Realtime.SpeakV2SpeakV2ConfigureFailure? Type338 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.SpeakV2SpeakV2Configure? Type339 { get; set; }
+        public global::Deepgram.Realtime.SpeakV2SpeakV2ConfigureFailureType? Type339 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.SpeakV2SpeakV2ConfigureType? Type340 { get; set; }
+        public global::Deepgram.Realtime.SpeakV2SpeakV2Warning? Type340 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.SpeakV2SpeakV2Close? Type341 { get; set; }
+        public global::Deepgram.Realtime.SpeakV2SpeakV2WarningType? Type341 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.SpeakV2SpeakV2CloseType? Type342 { get; set; }
+        public global::Deepgram.Realtime.ChannelsSpeakV2MessagesSpeakV2ErrorCode? Type342 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.AgentV1ServerEvent? Type343 { get; set; }
+        public global::Deepgram.Realtime.SpeakV2SpeakV2Error? Type343 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.AgentV1ServerEventDiscriminator? Type344 { get; set; }
+        public global::Deepgram.Realtime.SpeakV2SpeakV2ErrorType? Type344 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.AgentV1ServerEventDiscriminatorMessageType? Type345 { get; set; }
+        public global::Deepgram.Realtime.SpeakV2SpeakV2Speak? Type345 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.ListenV1ServerEvent? Type346 { get; set; }
+        public global::Deepgram.Realtime.SpeakV2SpeakV2SpeakType? Type346 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.ListenV2ServerEvent? Type347 { get; set; }
+        public global::Deepgram.Realtime.SpeakV2SpeakV2Flush? Type347 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.ListenV2ServerEventDiscriminator? Type348 { get; set; }
+        public global::Deepgram.Realtime.SpeakV2SpeakV2FlushType? Type348 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.ListenV2ServerEventDiscriminatorMessageType? Type349 { get; set; }
+        public global::Deepgram.Realtime.ChannelsSpeakV2MessagesSpeakV2InterruptPlaybackOffset? Type349 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.SpeakV1ServerEvent? Type350 { get; set; }
+        public global::Deepgram.Realtime.ChannelsSpeakV2MessagesSpeakV2InterruptPlaybackOffsetType? Type350 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.VsServerEvent? Type351 { get; set; }
+        public global::Deepgram.Realtime.SpeakV2SpeakV2Interrupt? Type351 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.VsServerEventDiscriminator? Type352 { get; set; }
+        public global::Deepgram.Realtime.SpeakV2SpeakV2InterruptType? Type352 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Deepgram.Realtime.VsServerEventDiscriminatorMessageType? Type353 { get; set; }
+        public global::Deepgram.Realtime.SpeakV2SpeakV2Configure? Type353 { get; set; }
+        /// <summary>
+        ///
+        /// </summary>
+        public global::Deepgram.Realtime.SpeakV2SpeakV2ConfigureType? Type354 { get; set; }
+        /// <summary>
+        ///
+        /// </summary>
+        public global::Deepgram.Realtime.SpeakV2SpeakV2Close? Type355 { get; set; }
+        /// <summary>
+        ///
+        /// </summary>
+        public global::Deepgram.Realtime.SpeakV2SpeakV2CloseType? Type356 { get; set; }
+        /// <summary>
+        ///
+        /// </summary>
+        public global::Deepgram.Realtime.AgentV1ServerEvent? Type357 { get; set; }
+        /// <summary>
+        ///
+        /// </summary>
+        public global::Deepgram.Realtime.AgentV1ServerEventDiscriminator? Type358 { get; set; }
+        /// <summary>
+        ///
+        /// </summary>
+        public global::Deepgram.Realtime.AgentV1ServerEventDiscriminatorMessageType? Type359 { get; set; }
+        /// <summary>
+        ///
+        /// </summary>
+        public global::Deepgram.Realtime.ListenV1ServerEvent? Type360 { get; set; }
+        /// <summary>
+        ///
+        /// </summary>
+        public global::Deepgram.Realtime.ListenV2ServerEvent? Type361 { get; set; }
+        /// <summary>
+        ///
+        /// </summary>
+        public global::Deepgram.Realtime.ListenV2ServerEventDiscriminator? Type362 { get; set; }
+        /// <summary>
+        ///
+        /// </summary>
+        public global::Deepgram.Realtime.ListenV2ServerEventDiscriminatorMessageType? Type363 { get; set; }
+        /// <summary>
+        ///
+        /// </summary>
+        public global::Deepgram.Realtime.SpeakV1ServerEvent? Type364 { get; set; }
+        /// <summary>
+        ///
+        /// </summary>
+        public global::Deepgram.Realtime.VsServerEvent? Type365 { get; set; }
+        /// <summary>
+        ///
+        /// </summary>
+        public global::Deepgram.Realtime.VsServerEventDiscriminator? Type366 { get; set; }
+        /// <summary>
+        ///
+        /// </summary>
+        public global::Deepgram.Realtime.VsServerEventDiscriminatorMessageType? Type367 { get; set; }
 
         /// <summary>
         ///

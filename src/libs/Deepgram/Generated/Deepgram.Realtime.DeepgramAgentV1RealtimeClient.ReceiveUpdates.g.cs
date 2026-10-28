@@ -186,6 +186,24 @@ namespace Deepgram.Realtime
                         rawText,
                         json));
             }
+            if (@event.ThinkLiveUpdated is { } __AgentV1ThinkLiveUpdatedReceived)
+            {
+                AgentV1ThinkLiveUpdatedReceived?.Invoke(
+                    this,
+                    new AutoSDKWebSocketMessageEventArgs<global::Deepgram.Realtime.AgentV1AgentV1ThinkLiveUpdated>(
+                        __AgentV1ThinkLiveUpdatedReceived,
+                        rawText,
+                        json));
+            }
+            if (@event.FrustrationDetected is { } __AgentV1FrustrationDetectedReceived)
+            {
+                AgentV1FrustrationDetectedReceived?.Invoke(
+                    this,
+                    new AutoSDKWebSocketMessageEventArgs<global::Deepgram.Realtime.AgentV1AgentV1FrustrationDetected>(
+                        __AgentV1FrustrationDetectedReceived,
+                        rawText,
+                        json));
+            }
             if (@event.FunctionCallResponse is { } __AgentV1ReceiveFunctionCallResponseReceived)
             {
                 AgentV1ReceiveFunctionCallResponseReceived?.Invoke(

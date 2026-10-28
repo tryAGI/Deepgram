@@ -27,6 +27,10 @@ namespace Deepgram.Realtime
         /// <summary>
         ///
         /// </summary>
+        FrustrationDetected,
+        /// <summary>
+        ///
+        /// </summary>
         FunctionCallCancelled,
         /// <summary>
         ///
@@ -63,6 +67,10 @@ namespace Deepgram.Realtime
         /// <summary>
         ///
         /// </summary>
+        ThinkLiveUpdated,
+        /// <summary>
+        ///
+        /// </summary>
         ThinkUpdated,
         /// <summary>
         ///
@@ -94,6 +102,7 @@ namespace Deepgram.Realtime
                 AgentV1ServerEventDiscriminatorMessageType.AgentStartedSpeaking => "AgentStartedSpeaking",
                 AgentV1ServerEventDiscriminatorMessageType.AgentThinking => "AgentThinking",
                 AgentV1ServerEventDiscriminatorMessageType.ConversationText => "ConversationText",
+                AgentV1ServerEventDiscriminatorMessageType.FrustrationDetected => "FrustrationDetected",
                 AgentV1ServerEventDiscriminatorMessageType.FunctionCallCancelled => "FunctionCallCancelled",
                 AgentV1ServerEventDiscriminatorMessageType.FunctionCallRequest => "FunctionCallRequest",
                 AgentV1ServerEventDiscriminatorMessageType.FunctionCallResponse => "FunctionCallResponse",
@@ -103,6 +112,7 @@ namespace Deepgram.Realtime
                 AgentV1ServerEventDiscriminatorMessageType.PromptUpdated => "PromptUpdated",
                 AgentV1ServerEventDiscriminatorMessageType.SettingsApplied => "SettingsApplied",
                 AgentV1ServerEventDiscriminatorMessageType.SpeakUpdated => "SpeakUpdated",
+                AgentV1ServerEventDiscriminatorMessageType.ThinkLiveUpdated => "ThinkLiveUpdated",
                 AgentV1ServerEventDiscriminatorMessageType.ThinkUpdated => "ThinkUpdated",
                 AgentV1ServerEventDiscriminatorMessageType.UserStartedSpeaking => "UserStartedSpeaking",
                 AgentV1ServerEventDiscriminatorMessageType.Welcome => "Welcome",
@@ -121,6 +131,7 @@ namespace Deepgram.Realtime
                 "AgentStartedSpeaking" => AgentV1ServerEventDiscriminatorMessageType.AgentStartedSpeaking,
                 "AgentThinking" => AgentV1ServerEventDiscriminatorMessageType.AgentThinking,
                 "ConversationText" => AgentV1ServerEventDiscriminatorMessageType.ConversationText,
+                "FrustrationDetected" => AgentV1ServerEventDiscriminatorMessageType.FrustrationDetected,
                 "FunctionCallCancelled" => AgentV1ServerEventDiscriminatorMessageType.FunctionCallCancelled,
                 "FunctionCallRequest" => AgentV1ServerEventDiscriminatorMessageType.FunctionCallRequest,
                 "FunctionCallResponse" => AgentV1ServerEventDiscriminatorMessageType.FunctionCallResponse,
@@ -130,6 +141,7 @@ namespace Deepgram.Realtime
                 "PromptUpdated" => AgentV1ServerEventDiscriminatorMessageType.PromptUpdated,
                 "SettingsApplied" => AgentV1ServerEventDiscriminatorMessageType.SettingsApplied,
                 "SpeakUpdated" => AgentV1ServerEventDiscriminatorMessageType.SpeakUpdated,
+                "ThinkLiveUpdated" => AgentV1ServerEventDiscriminatorMessageType.ThinkLiveUpdated,
                 "ThinkUpdated" => AgentV1ServerEventDiscriminatorMessageType.ThinkUpdated,
                 "UserStartedSpeaking" => AgentV1ServerEventDiscriminatorMessageType.UserStartedSpeaking,
                 "Welcome" => AgentV1ServerEventDiscriminatorMessageType.Welcome,
