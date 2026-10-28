@@ -43,6 +43,8 @@ namespace Deepgram.Realtime.JsonConverters
             if (__jsonProps.Contains("listen.provider")) __score0++;
             if (__jsonProps.Contains("speak")) __score0++;
             if (__jsonProps.Contains("think")) __score0++;
+            if (__jsonProps.Contains("think_live")) __score0++;
+            if (__jsonProps.Contains("think_live.provider")) __score0++;
             var __score1 = 0;
             var __bestScore = 0;
             var __bestIndex = -1;

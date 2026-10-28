@@ -5,7 +5,7 @@
 namespace Deepgram.Realtime
 {
     /// <summary>
-    ///
+    /// Your reasoning LLM. With Think Live on, this is the reasoning half of the pair, running alongside the Think Live model configured in `think_live`
     /// </summary>
     public readonly partial struct ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0Think : global::System.IEquatable<ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0Think>
     {

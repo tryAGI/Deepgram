@@ -273,6 +273,14 @@ namespace Deepgram.Realtime
         /// </summary>
         public event global::System.EventHandler<AutoSDKWebSocketMessageEventArgs<global::Deepgram.Realtime.AgentV1AgentV1ThinkUpdated>>? AgentV1ThinkUpdatedReceived;
         /// <summary>
+        /// Raised after a AgentV1ThinkLiveUpdated message is deserialized.
+        /// </summary>
+        public event global::System.EventHandler<AutoSDKWebSocketMessageEventArgs<global::Deepgram.Realtime.AgentV1AgentV1ThinkLiveUpdated>>? AgentV1ThinkLiveUpdatedReceived;
+        /// <summary>
+        /// Raised after a AgentV1FrustrationDetected message is deserialized.
+        /// </summary>
+        public event global::System.EventHandler<AutoSDKWebSocketMessageEventArgs<global::Deepgram.Realtime.AgentV1AgentV1FrustrationDetected>>? AgentV1FrustrationDetectedReceived;
+        /// <summary>
         /// Raised after a AgentV1ReceiveFunctionCallResponse message is deserialized.
         /// </summary>
         public event global::System.EventHandler<AutoSDKWebSocketMessageEventArgs<global::Deepgram.Realtime.AgentV1AgentV1ReceiveFunctionCallResponse>>? AgentV1ReceiveFunctionCallResponseReceived;

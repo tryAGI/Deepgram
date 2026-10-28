@@ -32,68 +32,75 @@ namespace Deepgram.Realtime.JsonConverters
             var __score1 = 0;
             if (__jsonProps.Contains("type")) __score1++;
             var __score2 = 0;
-            if (__jsonProps.Contains("content")) __score2++;
-            if (__jsonProps.Contains("id")) __score2++;
-            if (__jsonProps.Contains("name")) __score2++;
             if (__jsonProps.Contains("type")) __score2++;
             var __score3 = 0;
+            if (__jsonProps.Contains("count")) __score3++;
+            if (__jsonProps.Contains("escalated")) __score3++;
             if (__jsonProps.Contains("type")) __score3++;
             var __score4 = 0;
+            if (__jsonProps.Contains("content")) __score4++;
+            if (__jsonProps.Contains("id")) __score4++;
+            if (__jsonProps.Contains("name")) __score4++;
             if (__jsonProps.Contains("type")) __score4++;
             var __score5 = 0;
-            if (__jsonProps.Contains("message")) __score5++;
             if (__jsonProps.Contains("type")) __score5++;
             var __score6 = 0;
-            if (__jsonProps.Contains("request_id")) __score6++;
             if (__jsonProps.Contains("type")) __score6++;
             var __score7 = 0;
+            if (__jsonProps.Contains("message")) __score7++;
             if (__jsonProps.Contains("type")) __score7++;
             var __score8 = 0;
-            if (__jsonProps.Contains("content")) __score8++;
-            if (__jsonProps.Contains("languages")) __score8++;
-            if (__jsonProps.Contains("languages_hinted")) __score8++;
-            if (__jsonProps.Contains("role")) __score8++;
+            if (__jsonProps.Contains("request_id")) __score8++;
             if (__jsonProps.Contains("type")) __score8++;
             var __score9 = 0;
             if (__jsonProps.Contains("type")) __score9++;
             var __score10 = 0;
             if (__jsonProps.Contains("content")) __score10++;
+            if (__jsonProps.Contains("conversational_behavior")) __score10++;
+            if (__jsonProps.Contains("languages")) __score10++;
+            if (__jsonProps.Contains("languages_hinted")) __score10++;
+            if (__jsonProps.Contains("role")) __score10++;
             if (__jsonProps.Contains("type")) __score10++;
             var __score11 = 0;
-            if (__jsonProps.Contains("stt_latency")) __score11++;
-            if (__jsonProps.Contains("total_latency")) __score11++;
-            if (__jsonProps.Contains("tts_latency")) __score11++;
-            if (__jsonProps.Contains("ttt_text_latency")) __score11++;
-            if (__jsonProps.Contains("ttt_thinking_latency")) __score11++;
-            if (__jsonProps.Contains("ttt_token_latency")) __score11++;
-            if (__jsonProps.Contains("ttt_tool_latency")) __score11++;
             if (__jsonProps.Contains("type")) __score11++;
             var __score12 = 0;
-            if (__jsonProps.Contains("functions")) __score12++;
+            if (__jsonProps.Contains("content")) __score12++;
             if (__jsonProps.Contains("type")) __score12++;
             var __score13 = 0;
-            if (__jsonProps.Contains("functions")) __score13++;
+            if (__jsonProps.Contains("stt_latency")) __score13++;
+            if (__jsonProps.Contains("total_latency")) __score13++;
+            if (__jsonProps.Contains("tts_latency")) __score13++;
+            if (__jsonProps.Contains("ttt_text_latency")) __score13++;
+            if (__jsonProps.Contains("ttt_thinking_latency")) __score13++;
+            if (__jsonProps.Contains("ttt_token_latency")) __score13++;
+            if (__jsonProps.Contains("ttt_tool_latency")) __score13++;
             if (__jsonProps.Contains("type")) __score13++;
             var __score14 = 0;
-            if (__jsonProps.Contains("total_latency")) __score14++;
-            if (__jsonProps.Contains("tts_latency")) __score14++;
-            if (__jsonProps.Contains("ttt_latency")) __score14++;
+            if (__jsonProps.Contains("functions")) __score14++;
             if (__jsonProps.Contains("type")) __score14++;
             var __score15 = 0;
+            if (__jsonProps.Contains("functions")) __score15++;
             if (__jsonProps.Contains("type")) __score15++;
             var __score16 = 0;
-            if (__jsonProps.Contains("content")) __score16++;
+            if (__jsonProps.Contains("total_latency")) __score16++;
+            if (__jsonProps.Contains("tts_latency")) __score16++;
+            if (__jsonProps.Contains("ttt_latency")) __score16++;
             if (__jsonProps.Contains("type")) __score16++;
             var __score17 = 0;
-            if (__jsonProps.Contains("code")) __score17++;
-            if (__jsonProps.Contains("description")) __score17++;
             if (__jsonProps.Contains("type")) __score17++;
             var __score18 = 0;
-            if (__jsonProps.Contains("code")) __score18++;
-            if (__jsonProps.Contains("description")) __score18++;
+            if (__jsonProps.Contains("content")) __score18++;
             if (__jsonProps.Contains("type")) __score18++;
             var __score19 = 0;
+            if (__jsonProps.Contains("code")) __score19++;
+            if (__jsonProps.Contains("description")) __score19++;
+            if (__jsonProps.Contains("type")) __score19++;
             var __score20 = 0;
+            if (__jsonProps.Contains("code")) __score20++;
+            if (__jsonProps.Contains("description")) __score20++;
+            if (__jsonProps.Contains("type")) __score20++;
+            var __score21 = 0;
+            var __score22 = 0;
             var __bestScore = 0;
             var __bestIndex = -1;
             if (__score0 > __bestScore) { __bestScore = __score0; __bestIndex = 0; }
@@ -117,9 +124,13 @@ namespace Deepgram.Realtime.JsonConverters
             if (__score18 > __bestScore) { __bestScore = __score18; __bestIndex = 18; }
             if (__score19 > __bestScore) { __bestScore = __score19; __bestIndex = 19; }
             if (__score20 > __bestScore) { __bestScore = __score20; __bestIndex = 20; }
+            if (__score21 > __bestScore) { __bestScore = __score21; __bestIndex = 21; }
+            if (__score22 > __bestScore) { __bestScore = __score22; __bestIndex = 22; }
 
             global::Deepgram.Realtime.AgentV1AgentV1ListenUpdated? listenUpdated = default;
             global::Deepgram.Realtime.AgentV1AgentV1ThinkUpdated? thinkUpdated = default;
+            global::Deepgram.Realtime.AgentV1AgentV1ThinkLiveUpdated? thinkLiveUpdated = default;
+            global::Deepgram.Realtime.AgentV1AgentV1FrustrationDetected? frustrationDetected = default;
             global::Deepgram.Realtime.AgentV1AgentV1ReceiveFunctionCallResponse? functionCallResponse = default;
             global::Deepgram.Realtime.AgentV1AgentV1PromptUpdated? promptUpdated = default;
             global::Deepgram.Realtime.AgentV1AgentV1SpeakUpdated? speakUpdated = default;
@@ -183,6 +194,44 @@ namespace Deepgram.Realtime.JsonConverters
                 {
                     try
                     {
+                        var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Deepgram.Realtime.AgentV1AgentV1ThinkLiveUpdated), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Deepgram.Realtime.AgentV1AgentV1ThinkLiveUpdated> ??
+                                       throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Deepgram.Realtime.AgentV1AgentV1ThinkLiveUpdated).Name}");
+                        thinkLiveUpdated = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
+                    }
+                    catch (global::System.Text.Json.JsonException)
+                    {
+                    }
+                    catch (global::System.InvalidOperationException)
+                    {
+                    }
+                    catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                    {
+                        // Legacy enum converters signal an incompatible JSON token with this exception.
+                    }
+                }
+                else if (__bestIndex == 3)
+                {
+                    try
+                    {
+                        var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Deepgram.Realtime.AgentV1AgentV1FrustrationDetected), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Deepgram.Realtime.AgentV1AgentV1FrustrationDetected> ??
+                                       throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Deepgram.Realtime.AgentV1AgentV1FrustrationDetected).Name}");
+                        frustrationDetected = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
+                    }
+                    catch (global::System.Text.Json.JsonException)
+                    {
+                    }
+                    catch (global::System.InvalidOperationException)
+                    {
+                    }
+                    catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                    {
+                        // Legacy enum converters signal an incompatible JSON token with this exception.
+                    }
+                }
+                else if (__bestIndex == 4)
+                {
+                    try
+                    {
                         var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Deepgram.Realtime.AgentV1AgentV1ReceiveFunctionCallResponse), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Deepgram.Realtime.AgentV1AgentV1ReceiveFunctionCallResponse> ??
                                        throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Deepgram.Realtime.AgentV1AgentV1ReceiveFunctionCallResponse).Name}");
                         functionCallResponse = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
@@ -198,7 +247,7 @@ namespace Deepgram.Realtime.JsonConverters
                         // Legacy enum converters signal an incompatible JSON token with this exception.
                     }
                 }
-                else if (__bestIndex == 3)
+                else if (__bestIndex == 5)
                 {
                     try
                     {
@@ -217,7 +266,7 @@ namespace Deepgram.Realtime.JsonConverters
                         // Legacy enum converters signal an incompatible JSON token with this exception.
                     }
                 }
-                else if (__bestIndex == 4)
+                else if (__bestIndex == 6)
                 {
                     try
                     {
@@ -236,7 +285,7 @@ namespace Deepgram.Realtime.JsonConverters
                         // Legacy enum converters signal an incompatible JSON token with this exception.
                     }
                 }
-                else if (__bestIndex == 5)
+                else if (__bestIndex == 7)
                 {
                     try
                     {
@@ -255,7 +304,7 @@ namespace Deepgram.Realtime.JsonConverters
                         // Legacy enum converters signal an incompatible JSON token with this exception.
                     }
                 }
-                else if (__bestIndex == 6)
+                else if (__bestIndex == 8)
                 {
                     try
                     {
@@ -274,7 +323,7 @@ namespace Deepgram.Realtime.JsonConverters
                         // Legacy enum converters signal an incompatible JSON token with this exception.
                     }
                 }
-                else if (__bestIndex == 7)
+                else if (__bestIndex == 9)
                 {
                     try
                     {
@@ -293,7 +342,7 @@ namespace Deepgram.Realtime.JsonConverters
                         // Legacy enum converters signal an incompatible JSON token with this exception.
                     }
                 }
-                else if (__bestIndex == 8)
+                else if (__bestIndex == 10)
                 {
                     try
                     {
@@ -312,7 +361,7 @@ namespace Deepgram.Realtime.JsonConverters
                         // Legacy enum converters signal an incompatible JSON token with this exception.
                     }
                 }
-                else if (__bestIndex == 9)
+                else if (__bestIndex == 11)
                 {
                     try
                     {
@@ -331,7 +380,7 @@ namespace Deepgram.Realtime.JsonConverters
                         // Legacy enum converters signal an incompatible JSON token with this exception.
                     }
                 }
-                else if (__bestIndex == 10)
+                else if (__bestIndex == 12)
                 {
                     try
                     {
@@ -350,7 +399,7 @@ namespace Deepgram.Realtime.JsonConverters
                         // Legacy enum converters signal an incompatible JSON token with this exception.
                     }
                 }
-                else if (__bestIndex == 11)
+                else if (__bestIndex == 13)
                 {
                     try
                     {
@@ -369,7 +418,7 @@ namespace Deepgram.Realtime.JsonConverters
                         // Legacy enum converters signal an incompatible JSON token with this exception.
                     }
                 }
-                else if (__bestIndex == 12)
+                else if (__bestIndex == 14)
                 {
                     try
                     {
@@ -388,7 +437,7 @@ namespace Deepgram.Realtime.JsonConverters
                         // Legacy enum converters signal an incompatible JSON token with this exception.
                     }
                 }
-                else if (__bestIndex == 13)
+                else if (__bestIndex == 15)
                 {
                     try
                     {
@@ -407,7 +456,7 @@ namespace Deepgram.Realtime.JsonConverters
                         // Legacy enum converters signal an incompatible JSON token with this exception.
                     }
                 }
-                else if (__bestIndex == 14)
+                else if (__bestIndex == 16)
                 {
                     try
                     {
@@ -426,7 +475,7 @@ namespace Deepgram.Realtime.JsonConverters
                         // Legacy enum converters signal an incompatible JSON token with this exception.
                     }
                 }
-                else if (__bestIndex == 15)
+                else if (__bestIndex == 17)
                 {
                     try
                     {
@@ -445,7 +494,7 @@ namespace Deepgram.Realtime.JsonConverters
                         // Legacy enum converters signal an incompatible JSON token with this exception.
                     }
                 }
-                else if (__bestIndex == 16)
+                else if (__bestIndex == 18)
                 {
                     try
                     {
@@ -464,7 +513,7 @@ namespace Deepgram.Realtime.JsonConverters
                         // Legacy enum converters signal an incompatible JSON token with this exception.
                     }
                 }
-                else if (__bestIndex == 17)
+                else if (__bestIndex == 19)
                 {
                     try
                     {
@@ -483,7 +532,7 @@ namespace Deepgram.Realtime.JsonConverters
                         // Legacy enum converters signal an incompatible JSON token with this exception.
                     }
                 }
-                else if (__bestIndex == 18)
+                else if (__bestIndex == 20)
                 {
                     try
                     {
@@ -502,7 +551,7 @@ namespace Deepgram.Realtime.JsonConverters
                         // Legacy enum converters signal an incompatible JSON token with this exception.
                     }
                 }
-                else if (__bestIndex == 19)
+                else if (__bestIndex == 21)
                 {
                     try
                     {
@@ -521,7 +570,7 @@ namespace Deepgram.Realtime.JsonConverters
                         // Legacy enum converters signal an incompatible JSON token with this exception.
                     }
                 }
-                else if (__bestIndex == 20)
+                else if (__bestIndex == 22)
                 {
                     try
                     {
@@ -542,7 +591,7 @@ namespace Deepgram.Realtime.JsonConverters
                 }
             }
 
-            if (listenUpdated == null && thinkUpdated == null && functionCallResponse == null && promptUpdated == null && speakUpdated == null && injectionRefused == null && welcome == null && settingsApplied == null && conversationText == null && userStartedSpeaking == null && agentThinking == null && latencyReport == null && functionCallRequest == null && functionCallCancelled == null && agentStartedSpeaking == null && agentAudioDone == null && customFromThinkProvider == null && agentV1AgentV1Error == null && agentV1AgentV1Warning == null && agentV1AgentV1History == null && agentV1AgentV1Audio == null)
+            if (listenUpdated == null && thinkUpdated == null && thinkLiveUpdated == null && frustrationDetected == null && functionCallResponse == null && promptUpdated == null && speakUpdated == null && injectionRefused == null && welcome == null && settingsApplied == null && conversationText == null && userStartedSpeaking == null && agentThinking == null && latencyReport == null && functionCallRequest == null && functionCallCancelled == null && agentStartedSpeaking == null && agentAudioDone == null && customFromThinkProvider == null && agentV1AgentV1Error == null && agentV1AgentV1Warning == null && agentV1AgentV1History == null && agentV1AgentV1Audio == null)
             {
                 try
                 {
@@ -563,7 +612,7 @@ namespace Deepgram.Realtime.JsonConverters
                 }
             }
 
-            if (listenUpdated == null && thinkUpdated == null && functionCallResponse == null && promptUpdated == null && speakUpdated == null && injectionRefused == null && welcome == null && settingsApplied == null && conversationText == null && userStartedSpeaking == null && agentThinking == null && latencyReport == null && functionCallRequest == null && functionCallCancelled == null && agentStartedSpeaking == null && agentAudioDone == null && customFromThinkProvider == null && agentV1AgentV1Error == null && agentV1AgentV1Warning == null && agentV1AgentV1History == null && agentV1AgentV1Audio == null)
+            if (listenUpdated == null && thinkUpdated == null && thinkLiveUpdated == null && frustrationDetected == null && functionCallResponse == null && promptUpdated == null && speakUpdated == null && injectionRefused == null && welcome == null && settingsApplied == null && conversationText == null && userStartedSpeaking == null && agentThinking == null && latencyReport == null && functionCallRequest == null && functionCallCancelled == null && agentStartedSpeaking == null && agentAudioDone == null && customFromThinkProvider == null && agentV1AgentV1Error == null && agentV1AgentV1Warning == null && agentV1AgentV1History == null && agentV1AgentV1Audio == null)
             {
                 try
                 {
@@ -584,7 +633,49 @@ namespace Deepgram.Realtime.JsonConverters
                 }
             }
 
-            if (listenUpdated == null && thinkUpdated == null && functionCallResponse == null && promptUpdated == null && speakUpdated == null && injectionRefused == null && welcome == null && settingsApplied == null && conversationText == null && userStartedSpeaking == null && agentThinking == null && latencyReport == null && functionCallRequest == null && functionCallCancelled == null && agentStartedSpeaking == null && agentAudioDone == null && customFromThinkProvider == null && agentV1AgentV1Error == null && agentV1AgentV1Warning == null && agentV1AgentV1History == null && agentV1AgentV1Audio == null)
+            if (listenUpdated == null && thinkUpdated == null && thinkLiveUpdated == null && frustrationDetected == null && functionCallResponse == null && promptUpdated == null && speakUpdated == null && injectionRefused == null && welcome == null && settingsApplied == null && conversationText == null && userStartedSpeaking == null && agentThinking == null && latencyReport == null && functionCallRequest == null && functionCallCancelled == null && agentStartedSpeaking == null && agentAudioDone == null && customFromThinkProvider == null && agentV1AgentV1Error == null && agentV1AgentV1Warning == null && agentV1AgentV1History == null && agentV1AgentV1Audio == null)
+            {
+                try
+                {
+
+                    var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Deepgram.Realtime.AgentV1AgentV1ThinkLiveUpdated), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Deepgram.Realtime.AgentV1AgentV1ThinkLiveUpdated> ??
+                                   throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Deepgram.Realtime.AgentV1AgentV1ThinkLiveUpdated).Name}");
+                    thinkLiveUpdated = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
+                }
+                catch (global::System.Text.Json.JsonException)
+                {
+                }
+                catch (global::System.InvalidOperationException)
+                {
+                }
+                catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                {
+                    // Legacy enum converters signal an incompatible JSON token with this exception.
+                }
+            }
+
+            if (listenUpdated == null && thinkUpdated == null && thinkLiveUpdated == null && frustrationDetected == null && functionCallResponse == null && promptUpdated == null && speakUpdated == null && injectionRefused == null && welcome == null && settingsApplied == null && conversationText == null && userStartedSpeaking == null && agentThinking == null && latencyReport == null && functionCallRequest == null && functionCallCancelled == null && agentStartedSpeaking == null && agentAudioDone == null && customFromThinkProvider == null && agentV1AgentV1Error == null && agentV1AgentV1Warning == null && agentV1AgentV1History == null && agentV1AgentV1Audio == null)
+            {
+                try
+                {
+
+                    var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Deepgram.Realtime.AgentV1AgentV1FrustrationDetected), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Deepgram.Realtime.AgentV1AgentV1FrustrationDetected> ??
+                                   throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Deepgram.Realtime.AgentV1AgentV1FrustrationDetected).Name}");
+                    frustrationDetected = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
+                }
+                catch (global::System.Text.Json.JsonException)
+                {
+                }
+                catch (global::System.InvalidOperationException)
+                {
+                }
+                catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                {
+                    // Legacy enum converters signal an incompatible JSON token with this exception.
+                }
+            }
+
+            if (listenUpdated == null && thinkUpdated == null && thinkLiveUpdated == null && frustrationDetected == null && functionCallResponse == null && promptUpdated == null && speakUpdated == null && injectionRefused == null && welcome == null && settingsApplied == null && conversationText == null && userStartedSpeaking == null && agentThinking == null && latencyReport == null && functionCallRequest == null && functionCallCancelled == null && agentStartedSpeaking == null && agentAudioDone == null && customFromThinkProvider == null && agentV1AgentV1Error == null && agentV1AgentV1Warning == null && agentV1AgentV1History == null && agentV1AgentV1Audio == null)
             {
                 try
                 {
@@ -605,7 +696,7 @@ namespace Deepgram.Realtime.JsonConverters
                 }
             }
 
-            if (listenUpdated == null && thinkUpdated == null && functionCallResponse == null && promptUpdated == null && speakUpdated == null && injectionRefused == null && welcome == null && settingsApplied == null && conversationText == null && userStartedSpeaking == null && agentThinking == null && latencyReport == null && functionCallRequest == null && functionCallCancelled == null && agentStartedSpeaking == null && agentAudioDone == null && customFromThinkProvider == null && agentV1AgentV1Error == null && agentV1AgentV1Warning == null && agentV1AgentV1History == null && agentV1AgentV1Audio == null)
+            if (listenUpdated == null && thinkUpdated == null && thinkLiveUpdated == null && frustrationDetected == null && functionCallResponse == null && promptUpdated == null && speakUpdated == null && injectionRefused == null && welcome == null && settingsApplied == null && conversationText == null && userStartedSpeaking == null && agentThinking == null && latencyReport == null && functionCallRequest == null && functionCallCancelled == null && agentStartedSpeaking == null && agentAudioDone == null && customFromThinkProvider == null && agentV1AgentV1Error == null && agentV1AgentV1Warning == null && agentV1AgentV1History == null && agentV1AgentV1Audio == null)
             {
                 try
                 {
@@ -626,7 +717,7 @@ namespace Deepgram.Realtime.JsonConverters
                 }
             }
 
-            if (listenUpdated == null && thinkUpdated == null && functionCallResponse == null && promptUpdated == null && speakUpdated == null && injectionRefused == null && welcome == null && settingsApplied == null && conversationText == null && userStartedSpeaking == null && agentThinking == null && latencyReport == null && functionCallRequest == null && functionCallCancelled == null && agentStartedSpeaking == null && agentAudioDone == null && customFromThinkProvider == null && agentV1AgentV1Error == null && agentV1AgentV1Warning == null && agentV1AgentV1History == null && agentV1AgentV1Audio == null)
+            if (listenUpdated == null && thinkUpdated == null && thinkLiveUpdated == null && frustrationDetected == null && functionCallResponse == null && promptUpdated == null && speakUpdated == null && injectionRefused == null && welcome == null && settingsApplied == null && conversationText == null && userStartedSpeaking == null && agentThinking == null && latencyReport == null && functionCallRequest == null && functionCallCancelled == null && agentStartedSpeaking == null && agentAudioDone == null && customFromThinkProvider == null && agentV1AgentV1Error == null && agentV1AgentV1Warning == null && agentV1AgentV1History == null && agentV1AgentV1Audio == null)
             {
                 try
                 {
@@ -647,7 +738,7 @@ namespace Deepgram.Realtime.JsonConverters
                 }
             }
 
-            if (listenUpdated == null && thinkUpdated == null && functionCallResponse == null && promptUpdated == null && speakUpdated == null && injectionRefused == null && welcome == null && settingsApplied == null && conversationText == null && userStartedSpeaking == null && agentThinking == null && latencyReport == null && functionCallRequest == null && functionCallCancelled == null && agentStartedSpeaking == null && agentAudioDone == null && customFromThinkProvider == null && agentV1AgentV1Error == null && agentV1AgentV1Warning == null && agentV1AgentV1History == null && agentV1AgentV1Audio == null)
+            if (listenUpdated == null && thinkUpdated == null && thinkLiveUpdated == null && frustrationDetected == null && functionCallResponse == null && promptUpdated == null && speakUpdated == null && injectionRefused == null && welcome == null && settingsApplied == null && conversationText == null && userStartedSpeaking == null && agentThinking == null && latencyReport == null && functionCallRequest == null && functionCallCancelled == null && agentStartedSpeaking == null && agentAudioDone == null && customFromThinkProvider == null && agentV1AgentV1Error == null && agentV1AgentV1Warning == null && agentV1AgentV1History == null && agentV1AgentV1Audio == null)
             {
                 try
                 {
@@ -668,7 +759,7 @@ namespace Deepgram.Realtime.JsonConverters
                 }
             }
 
-            if (listenUpdated == null && thinkUpdated == null && functionCallResponse == null && promptUpdated == null && speakUpdated == null && injectionRefused == null && welcome == null && settingsApplied == null && conversationText == null && userStartedSpeaking == null && agentThinking == null && latencyReport == null && functionCallRequest == null && functionCallCancelled == null && agentStartedSpeaking == null && agentAudioDone == null && customFromThinkProvider == null && agentV1AgentV1Error == null && agentV1AgentV1Warning == null && agentV1AgentV1History == null && agentV1AgentV1Audio == null)
+            if (listenUpdated == null && thinkUpdated == null && thinkLiveUpdated == null && frustrationDetected == null && functionCallResponse == null && promptUpdated == null && speakUpdated == null && injectionRefused == null && welcome == null && settingsApplied == null && conversationText == null && userStartedSpeaking == null && agentThinking == null && latencyReport == null && functionCallRequest == null && functionCallCancelled == null && agentStartedSpeaking == null && agentAudioDone == null && customFromThinkProvider == null && agentV1AgentV1Error == null && agentV1AgentV1Warning == null && agentV1AgentV1History == null && agentV1AgentV1Audio == null)
             {
                 try
                 {
@@ -689,7 +780,7 @@ namespace Deepgram.Realtime.JsonConverters
                 }
             }
 
-            if (listenUpdated == null && thinkUpdated == null && functionCallResponse == null && promptUpdated == null && speakUpdated == null && injectionRefused == null && welcome == null && settingsApplied == null && conversationText == null && userStartedSpeaking == null && agentThinking == null && latencyReport == null && functionCallRequest == null && functionCallCancelled == null && agentStartedSpeaking == null && agentAudioDone == null && customFromThinkProvider == null && agentV1AgentV1Error == null && agentV1AgentV1Warning == null && agentV1AgentV1History == null && agentV1AgentV1Audio == null)
+            if (listenUpdated == null && thinkUpdated == null && thinkLiveUpdated == null && frustrationDetected == null && functionCallResponse == null && promptUpdated == null && speakUpdated == null && injectionRefused == null && welcome == null && settingsApplied == null && conversationText == null && userStartedSpeaking == null && agentThinking == null && latencyReport == null && functionCallRequest == null && functionCallCancelled == null && agentStartedSpeaking == null && agentAudioDone == null && customFromThinkProvider == null && agentV1AgentV1Error == null && agentV1AgentV1Warning == null && agentV1AgentV1History == null && agentV1AgentV1Audio == null)
             {
                 try
                 {
@@ -710,7 +801,7 @@ namespace Deepgram.Realtime.JsonConverters
                 }
             }
 
-            if (listenUpdated == null && thinkUpdated == null && functionCallResponse == null && promptUpdated == null && speakUpdated == null && injectionRefused == null && welcome == null && settingsApplied == null && conversationText == null && userStartedSpeaking == null && agentThinking == null && latencyReport == null && functionCallRequest == null && functionCallCancelled == null && agentStartedSpeaking == null && agentAudioDone == null && customFromThinkProvider == null && agentV1AgentV1Error == null && agentV1AgentV1Warning == null && agentV1AgentV1History == null && agentV1AgentV1Audio == null)
+            if (listenUpdated == null && thinkUpdated == null && thinkLiveUpdated == null && frustrationDetected == null && functionCallResponse == null && promptUpdated == null && speakUpdated == null && injectionRefused == null && welcome == null && settingsApplied == null && conversationText == null && userStartedSpeaking == null && agentThinking == null && latencyReport == null && functionCallRequest == null && functionCallCancelled == null && agentStartedSpeaking == null && agentAudioDone == null && customFromThinkProvider == null && agentV1AgentV1Error == null && agentV1AgentV1Warning == null && agentV1AgentV1History == null && agentV1AgentV1Audio == null)
             {
                 try
                 {
@@ -731,7 +822,7 @@ namespace Deepgram.Realtime.JsonConverters
                 }
             }
 
-            if (listenUpdated == null && thinkUpdated == null && functionCallResponse == null && promptUpdated == null && speakUpdated == null && injectionRefused == null && welcome == null && settingsApplied == null && conversationText == null && userStartedSpeaking == null && agentThinking == null && latencyReport == null && functionCallRequest == null && functionCallCancelled == null && agentStartedSpeaking == null && agentAudioDone == null && customFromThinkProvider == null && agentV1AgentV1Error == null && agentV1AgentV1Warning == null && agentV1AgentV1History == null && agentV1AgentV1Audio == null)
+            if (listenUpdated == null && thinkUpdated == null && thinkLiveUpdated == null && frustrationDetected == null && functionCallResponse == null && promptUpdated == null && speakUpdated == null && injectionRefused == null && welcome == null && settingsApplied == null && conversationText == null && userStartedSpeaking == null && agentThinking == null && latencyReport == null && functionCallRequest == null && functionCallCancelled == null && agentStartedSpeaking == null && agentAudioDone == null && customFromThinkProvider == null && agentV1AgentV1Error == null && agentV1AgentV1Warning == null && agentV1AgentV1History == null && agentV1AgentV1Audio == null)
             {
                 try
                 {
@@ -752,7 +843,7 @@ namespace Deepgram.Realtime.JsonConverters
                 }
             }
 
-            if (listenUpdated == null && thinkUpdated == null && functionCallResponse == null && promptUpdated == null && speakUpdated == null && injectionRefused == null && welcome == null && settingsApplied == null && conversationText == null && userStartedSpeaking == null && agentThinking == null && latencyReport == null && functionCallRequest == null && functionCallCancelled == null && agentStartedSpeaking == null && agentAudioDone == null && customFromThinkProvider == null && agentV1AgentV1Error == null && agentV1AgentV1Warning == null && agentV1AgentV1History == null && agentV1AgentV1Audio == null)
+            if (listenUpdated == null && thinkUpdated == null && thinkLiveUpdated == null && frustrationDetected == null && functionCallResponse == null && promptUpdated == null && speakUpdated == null && injectionRefused == null && welcome == null && settingsApplied == null && conversationText == null && userStartedSpeaking == null && agentThinking == null && latencyReport == null && functionCallRequest == null && functionCallCancelled == null && agentStartedSpeaking == null && agentAudioDone == null && customFromThinkProvider == null && agentV1AgentV1Error == null && agentV1AgentV1Warning == null && agentV1AgentV1History == null && agentV1AgentV1Audio == null)
             {
                 try
                 {
@@ -773,7 +864,7 @@ namespace Deepgram.Realtime.JsonConverters
                 }
             }
 
-            if (listenUpdated == null && thinkUpdated == null && functionCallResponse == null && promptUpdated == null && speakUpdated == null && injectionRefused == null && welcome == null && settingsApplied == null && conversationText == null && userStartedSpeaking == null && agentThinking == null && latencyReport == null && functionCallRequest == null && functionCallCancelled == null && agentStartedSpeaking == null && agentAudioDone == null && customFromThinkProvider == null && agentV1AgentV1Error == null && agentV1AgentV1Warning == null && agentV1AgentV1History == null && agentV1AgentV1Audio == null)
+            if (listenUpdated == null && thinkUpdated == null && thinkLiveUpdated == null && frustrationDetected == null && functionCallResponse == null && promptUpdated == null && speakUpdated == null && injectionRefused == null && welcome == null && settingsApplied == null && conversationText == null && userStartedSpeaking == null && agentThinking == null && latencyReport == null && functionCallRequest == null && functionCallCancelled == null && agentStartedSpeaking == null && agentAudioDone == null && customFromThinkProvider == null && agentV1AgentV1Error == null && agentV1AgentV1Warning == null && agentV1AgentV1History == null && agentV1AgentV1Audio == null)
             {
                 try
                 {
@@ -794,7 +885,7 @@ namespace Deepgram.Realtime.JsonConverters
                 }
             }
 
-            if (listenUpdated == null && thinkUpdated == null && functionCallResponse == null && promptUpdated == null && speakUpdated == null && injectionRefused == null && welcome == null && settingsApplied == null && conversationText == null && userStartedSpeaking == null && agentThinking == null && latencyReport == null && functionCallRequest == null && functionCallCancelled == null && agentStartedSpeaking == null && agentAudioDone == null && customFromThinkProvider == null && agentV1AgentV1Error == null && agentV1AgentV1Warning == null && agentV1AgentV1History == null && agentV1AgentV1Audio == null)
+            if (listenUpdated == null && thinkUpdated == null && thinkLiveUpdated == null && frustrationDetected == null && functionCallResponse == null && promptUpdated == null && speakUpdated == null && injectionRefused == null && welcome == null && settingsApplied == null && conversationText == null && userStartedSpeaking == null && agentThinking == null && latencyReport == null && functionCallRequest == null && functionCallCancelled == null && agentStartedSpeaking == null && agentAudioDone == null && customFromThinkProvider == null && agentV1AgentV1Error == null && agentV1AgentV1Warning == null && agentV1AgentV1History == null && agentV1AgentV1Audio == null)
             {
                 try
                 {
@@ -815,7 +906,7 @@ namespace Deepgram.Realtime.JsonConverters
                 }
             }
 
-            if (listenUpdated == null && thinkUpdated == null && functionCallResponse == null && promptUpdated == null && speakUpdated == null && injectionRefused == null && welcome == null && settingsApplied == null && conversationText == null && userStartedSpeaking == null && agentThinking == null && latencyReport == null && functionCallRequest == null && functionCallCancelled == null && agentStartedSpeaking == null && agentAudioDone == null && customFromThinkProvider == null && agentV1AgentV1Error == null && agentV1AgentV1Warning == null && agentV1AgentV1History == null && agentV1AgentV1Audio == null)
+            if (listenUpdated == null && thinkUpdated == null && thinkLiveUpdated == null && frustrationDetected == null && functionCallResponse == null && promptUpdated == null && speakUpdated == null && injectionRefused == null && welcome == null && settingsApplied == null && conversationText == null && userStartedSpeaking == null && agentThinking == null && latencyReport == null && functionCallRequest == null && functionCallCancelled == null && agentStartedSpeaking == null && agentAudioDone == null && customFromThinkProvider == null && agentV1AgentV1Error == null && agentV1AgentV1Warning == null && agentV1AgentV1History == null && agentV1AgentV1Audio == null)
             {
                 try
                 {
@@ -836,7 +927,7 @@ namespace Deepgram.Realtime.JsonConverters
                 }
             }
 
-            if (listenUpdated == null && thinkUpdated == null && functionCallResponse == null && promptUpdated == null && speakUpdated == null && injectionRefused == null && welcome == null && settingsApplied == null && conversationText == null && userStartedSpeaking == null && agentThinking == null && latencyReport == null && functionCallRequest == null && functionCallCancelled == null && agentStartedSpeaking == null && agentAudioDone == null && customFromThinkProvider == null && agentV1AgentV1Error == null && agentV1AgentV1Warning == null && agentV1AgentV1History == null && agentV1AgentV1Audio == null)
+            if (listenUpdated == null && thinkUpdated == null && thinkLiveUpdated == null && frustrationDetected == null && functionCallResponse == null && promptUpdated == null && speakUpdated == null && injectionRefused == null && welcome == null && settingsApplied == null && conversationText == null && userStartedSpeaking == null && agentThinking == null && latencyReport == null && functionCallRequest == null && functionCallCancelled == null && agentStartedSpeaking == null && agentAudioDone == null && customFromThinkProvider == null && agentV1AgentV1Error == null && agentV1AgentV1Warning == null && agentV1AgentV1History == null && agentV1AgentV1Audio == null)
             {
                 try
                 {
@@ -857,7 +948,7 @@ namespace Deepgram.Realtime.JsonConverters
                 }
             }
 
-            if (listenUpdated == null && thinkUpdated == null && functionCallResponse == null && promptUpdated == null && speakUpdated == null && injectionRefused == null && welcome == null && settingsApplied == null && conversationText == null && userStartedSpeaking == null && agentThinking == null && latencyReport == null && functionCallRequest == null && functionCallCancelled == null && agentStartedSpeaking == null && agentAudioDone == null && customFromThinkProvider == null && agentV1AgentV1Error == null && agentV1AgentV1Warning == null && agentV1AgentV1History == null && agentV1AgentV1Audio == null)
+            if (listenUpdated == null && thinkUpdated == null && thinkLiveUpdated == null && frustrationDetected == null && functionCallResponse == null && promptUpdated == null && speakUpdated == null && injectionRefused == null && welcome == null && settingsApplied == null && conversationText == null && userStartedSpeaking == null && agentThinking == null && latencyReport == null && functionCallRequest == null && functionCallCancelled == null && agentStartedSpeaking == null && agentAudioDone == null && customFromThinkProvider == null && agentV1AgentV1Error == null && agentV1AgentV1Warning == null && agentV1AgentV1History == null && agentV1AgentV1Audio == null)
             {
                 try
                 {
@@ -878,7 +969,7 @@ namespace Deepgram.Realtime.JsonConverters
                 }
             }
 
-            if (listenUpdated == null && thinkUpdated == null && functionCallResponse == null && promptUpdated == null && speakUpdated == null && injectionRefused == null && welcome == null && settingsApplied == null && conversationText == null && userStartedSpeaking == null && agentThinking == null && latencyReport == null && functionCallRequest == null && functionCallCancelled == null && agentStartedSpeaking == null && agentAudioDone == null && customFromThinkProvider == null && agentV1AgentV1Error == null && agentV1AgentV1Warning == null && agentV1AgentV1History == null && agentV1AgentV1Audio == null)
+            if (listenUpdated == null && thinkUpdated == null && thinkLiveUpdated == null && frustrationDetected == null && functionCallResponse == null && promptUpdated == null && speakUpdated == null && injectionRefused == null && welcome == null && settingsApplied == null && conversationText == null && userStartedSpeaking == null && agentThinking == null && latencyReport == null && functionCallRequest == null && functionCallCancelled == null && agentStartedSpeaking == null && agentAudioDone == null && customFromThinkProvider == null && agentV1AgentV1Error == null && agentV1AgentV1Warning == null && agentV1AgentV1History == null && agentV1AgentV1Audio == null)
             {
                 try
                 {
@@ -899,7 +990,7 @@ namespace Deepgram.Realtime.JsonConverters
                 }
             }
 
-            if (listenUpdated == null && thinkUpdated == null && functionCallResponse == null && promptUpdated == null && speakUpdated == null && injectionRefused == null && welcome == null && settingsApplied == null && conversationText == null && userStartedSpeaking == null && agentThinking == null && latencyReport == null && functionCallRequest == null && functionCallCancelled == null && agentStartedSpeaking == null && agentAudioDone == null && customFromThinkProvider == null && agentV1AgentV1Error == null && agentV1AgentV1Warning == null && agentV1AgentV1History == null && agentV1AgentV1Audio == null)
+            if (listenUpdated == null && thinkUpdated == null && thinkLiveUpdated == null && frustrationDetected == null && functionCallResponse == null && promptUpdated == null && speakUpdated == null && injectionRefused == null && welcome == null && settingsApplied == null && conversationText == null && userStartedSpeaking == null && agentThinking == null && latencyReport == null && functionCallRequest == null && functionCallCancelled == null && agentStartedSpeaking == null && agentAudioDone == null && customFromThinkProvider == null && agentV1AgentV1Error == null && agentV1AgentV1Warning == null && agentV1AgentV1History == null && agentV1AgentV1Audio == null)
             {
                 try
                 {
@@ -920,7 +1011,7 @@ namespace Deepgram.Realtime.JsonConverters
                 }
             }
 
-            if (listenUpdated == null && thinkUpdated == null && functionCallResponse == null && promptUpdated == null && speakUpdated == null && injectionRefused == null && welcome == null && settingsApplied == null && conversationText == null && userStartedSpeaking == null && agentThinking == null && latencyReport == null && functionCallRequest == null && functionCallCancelled == null && agentStartedSpeaking == null && agentAudioDone == null && customFromThinkProvider == null && agentV1AgentV1Error == null && agentV1AgentV1Warning == null && agentV1AgentV1History == null && agentV1AgentV1Audio == null)
+            if (listenUpdated == null && thinkUpdated == null && thinkLiveUpdated == null && frustrationDetected == null && functionCallResponse == null && promptUpdated == null && speakUpdated == null && injectionRefused == null && welcome == null && settingsApplied == null && conversationText == null && userStartedSpeaking == null && agentThinking == null && latencyReport == null && functionCallRequest == null && functionCallCancelled == null && agentStartedSpeaking == null && agentAudioDone == null && customFromThinkProvider == null && agentV1AgentV1Error == null && agentV1AgentV1Warning == null && agentV1AgentV1History == null && agentV1AgentV1Audio == null)
             {
                 try
                 {
@@ -941,7 +1032,7 @@ namespace Deepgram.Realtime.JsonConverters
                 }
             }
 
-            if (listenUpdated == null && thinkUpdated == null && functionCallResponse == null && promptUpdated == null && speakUpdated == null && injectionRefused == null && welcome == null && settingsApplied == null && conversationText == null && userStartedSpeaking == null && agentThinking == null && latencyReport == null && functionCallRequest == null && functionCallCancelled == null && agentStartedSpeaking == null && agentAudioDone == null && customFromThinkProvider == null && agentV1AgentV1Error == null && agentV1AgentV1Warning == null && agentV1AgentV1History == null && agentV1AgentV1Audio == null)
+            if (listenUpdated == null && thinkUpdated == null && thinkLiveUpdated == null && frustrationDetected == null && functionCallResponse == null && promptUpdated == null && speakUpdated == null && injectionRefused == null && welcome == null && settingsApplied == null && conversationText == null && userStartedSpeaking == null && agentThinking == null && latencyReport == null && functionCallRequest == null && functionCallCancelled == null && agentStartedSpeaking == null && agentAudioDone == null && customFromThinkProvider == null && agentV1AgentV1Error == null && agentV1AgentV1Warning == null && agentV1AgentV1History == null && agentV1AgentV1Audio == null)
             {
                 try
                 {
@@ -962,7 +1053,7 @@ namespace Deepgram.Realtime.JsonConverters
                 }
             }
 
-            if (listenUpdated == null && thinkUpdated == null && functionCallResponse == null && promptUpdated == null && speakUpdated == null && injectionRefused == null && welcome == null && settingsApplied == null && conversationText == null && userStartedSpeaking == null && agentThinking == null && latencyReport == null && functionCallRequest == null && functionCallCancelled == null && agentStartedSpeaking == null && agentAudioDone == null && customFromThinkProvider == null && agentV1AgentV1Error == null && agentV1AgentV1Warning == null && agentV1AgentV1History == null && agentV1AgentV1Audio == null)
+            if (listenUpdated == null && thinkUpdated == null && thinkLiveUpdated == null && frustrationDetected == null && functionCallResponse == null && promptUpdated == null && speakUpdated == null && injectionRefused == null && welcome == null && settingsApplied == null && conversationText == null && userStartedSpeaking == null && agentThinking == null && latencyReport == null && functionCallRequest == null && functionCallCancelled == null && agentStartedSpeaking == null && agentAudioDone == null && customFromThinkProvider == null && agentV1AgentV1Error == null && agentV1AgentV1Warning == null && agentV1AgentV1History == null && agentV1AgentV1Audio == null)
             {
                 try
                 {
@@ -987,6 +1078,10 @@ namespace Deepgram.Realtime.JsonConverters
                 listenUpdated,
 
                 thinkUpdated,
+
+                thinkLiveUpdated,
+
+                frustrationDetected,
 
                 functionCallResponse,
 
@@ -1029,7 +1124,7 @@ namespace Deepgram.Realtime.JsonConverters
 
             if (!__value.Validate())
             {
-                throw new global::System.Text.Json.JsonException($"Invalid JSON format for OneOf<{typeof(global::Deepgram.Realtime.AgentV1AgentV1ListenUpdated).Name}, {typeof(global::Deepgram.Realtime.AgentV1AgentV1ThinkUpdated).Name}, {typeof(global::Deepgram.Realtime.AgentV1AgentV1ReceiveFunctionCallResponse).Name}, {typeof(global::Deepgram.Realtime.AgentV1AgentV1PromptUpdated).Name}, {typeof(global::Deepgram.Realtime.AgentV1AgentV1SpeakUpdated).Name}, {typeof(global::Deepgram.Realtime.AgentV1AgentV1InjectionRefused).Name}, {typeof(global::Deepgram.Realtime.AgentV1AgentV1Welcome).Name}, {typeof(global::Deepgram.Realtime.AgentV1AgentV1SettingsApplied).Name}, {typeof(global::Deepgram.Realtime.AgentV1AgentV1ConversationText).Name}, {typeof(global::Deepgram.Realtime.AgentV1AgentV1UserStartedSpeaking).Name}, {typeof(global::Deepgram.Realtime.AgentV1AgentV1AgentThinking).Name}, {typeof(global::Deepgram.Realtime.AgentV1AgentV1LatencyReport).Name}, {typeof(global::Deepgram.Realtime.AgentV1AgentV1FunctionCallRequest).Name}, {typeof(global::Deepgram.Realtime.AgentV1AgentV1FunctionCallCancelled).Name}, {typeof(global::Deepgram.Realtime.AgentV1AgentV1AgentStartedSpeaking).Name}, {typeof(global::Deepgram.Realtime.AgentV1AgentV1AgentAudioDone).Name}, {typeof(global::Deepgram.Realtime.AgentV1AgentV1CustomFromThinkProvider).Name}, {typeof(global::Deepgram.Realtime.AgentV1AgentV1Error).Name}, {typeof(global::Deepgram.Realtime.AgentV1AgentV1Warning).Name}, {typeof(global::Deepgram.Realtime.AgentV1AgentV1History).Name}, {typeof(byte[]).Name}>");
+                throw new global::System.Text.Json.JsonException($"Invalid JSON format for OneOf<{typeof(global::Deepgram.Realtime.AgentV1AgentV1ListenUpdated).Name}, {typeof(global::Deepgram.Realtime.AgentV1AgentV1ThinkUpdated).Name}, {typeof(global::Deepgram.Realtime.AgentV1AgentV1ThinkLiveUpdated).Name}, {typeof(global::Deepgram.Realtime.AgentV1AgentV1FrustrationDetected).Name}, {typeof(global::Deepgram.Realtime.AgentV1AgentV1ReceiveFunctionCallResponse).Name}, {typeof(global::Deepgram.Realtime.AgentV1AgentV1PromptUpdated).Name}, {typeof(global::Deepgram.Realtime.AgentV1AgentV1SpeakUpdated).Name}, {typeof(global::Deepgram.Realtime.AgentV1AgentV1InjectionRefused).Name}, {typeof(global::Deepgram.Realtime.AgentV1AgentV1Welcome).Name}, {typeof(global::Deepgram.Realtime.AgentV1AgentV1SettingsApplied).Name}, {typeof(global::Deepgram.Realtime.AgentV1AgentV1ConversationText).Name}, {typeof(global::Deepgram.Realtime.AgentV1AgentV1UserStartedSpeaking).Name}, {typeof(global::Deepgram.Realtime.AgentV1AgentV1AgentThinking).Name}, {typeof(global::Deepgram.Realtime.AgentV1AgentV1LatencyReport).Name}, {typeof(global::Deepgram.Realtime.AgentV1AgentV1FunctionCallRequest).Name}, {typeof(global::Deepgram.Realtime.AgentV1AgentV1FunctionCallCancelled).Name}, {typeof(global::Deepgram.Realtime.AgentV1AgentV1AgentStartedSpeaking).Name}, {typeof(global::Deepgram.Realtime.AgentV1AgentV1AgentAudioDone).Name}, {typeof(global::Deepgram.Realtime.AgentV1AgentV1CustomFromThinkProvider).Name}, {typeof(global::Deepgram.Realtime.AgentV1AgentV1Error).Name}, {typeof(global::Deepgram.Realtime.AgentV1AgentV1Warning).Name}, {typeof(global::Deepgram.Realtime.AgentV1AgentV1History).Name}, {typeof(byte[]).Name}>");
             }
 
             return __value;
@@ -1047,7 +1142,7 @@ namespace Deepgram.Realtime.JsonConverters
 
             if (!value.Validate())
             {
-                throw new global::System.Text.Json.JsonException($"Invalid OneOf<{typeof(global::Deepgram.Realtime.AgentV1AgentV1ListenUpdated).Name}, {typeof(global::Deepgram.Realtime.AgentV1AgentV1ThinkUpdated).Name}, {typeof(global::Deepgram.Realtime.AgentV1AgentV1ReceiveFunctionCallResponse).Name}, {typeof(global::Deepgram.Realtime.AgentV1AgentV1PromptUpdated).Name}, {typeof(global::Deepgram.Realtime.AgentV1AgentV1SpeakUpdated).Name}, {typeof(global::Deepgram.Realtime.AgentV1AgentV1InjectionRefused).Name}, {typeof(global::Deepgram.Realtime.AgentV1AgentV1Welcome).Name}, {typeof(global::Deepgram.Realtime.AgentV1AgentV1SettingsApplied).Name}, {typeof(global::Deepgram.Realtime.AgentV1AgentV1ConversationText).Name}, {typeof(global::Deepgram.Realtime.AgentV1AgentV1UserStartedSpeaking).Name}, {typeof(global::Deepgram.Realtime.AgentV1AgentV1AgentThinking).Name}, {typeof(global::Deepgram.Realtime.AgentV1AgentV1LatencyReport).Name}, {typeof(global::Deepgram.Realtime.AgentV1AgentV1FunctionCallRequest).Name}, {typeof(global::Deepgram.Realtime.AgentV1AgentV1FunctionCallCancelled).Name}, {typeof(global::Deepgram.Realtime.AgentV1AgentV1AgentStartedSpeaking).Name}, {typeof(global::Deepgram.Realtime.AgentV1AgentV1AgentAudioDone).Name}, {typeof(global::Deepgram.Realtime.AgentV1AgentV1CustomFromThinkProvider).Name}, {typeof(global::Deepgram.Realtime.AgentV1AgentV1Error).Name}, {typeof(global::Deepgram.Realtime.AgentV1AgentV1Warning).Name}, {typeof(global::Deepgram.Realtime.AgentV1AgentV1History).Name}, {typeof(byte[]).Name}> object.");
+                throw new global::System.Text.Json.JsonException($"Invalid OneOf<{typeof(global::Deepgram.Realtime.AgentV1AgentV1ListenUpdated).Name}, {typeof(global::Deepgram.Realtime.AgentV1AgentV1ThinkUpdated).Name}, {typeof(global::Deepgram.Realtime.AgentV1AgentV1ThinkLiveUpdated).Name}, {typeof(global::Deepgram.Realtime.AgentV1AgentV1FrustrationDetected).Name}, {typeof(global::Deepgram.Realtime.AgentV1AgentV1ReceiveFunctionCallResponse).Name}, {typeof(global::Deepgram.Realtime.AgentV1AgentV1PromptUpdated).Name}, {typeof(global::Deepgram.Realtime.AgentV1AgentV1SpeakUpdated).Name}, {typeof(global::Deepgram.Realtime.AgentV1AgentV1InjectionRefused).Name}, {typeof(global::Deepgram.Realtime.AgentV1AgentV1Welcome).Name}, {typeof(global::Deepgram.Realtime.AgentV1AgentV1SettingsApplied).Name}, {typeof(global::Deepgram.Realtime.AgentV1AgentV1ConversationText).Name}, {typeof(global::Deepgram.Realtime.AgentV1AgentV1UserStartedSpeaking).Name}, {typeof(global::Deepgram.Realtime.AgentV1AgentV1AgentThinking).Name}, {typeof(global::Deepgram.Realtime.AgentV1AgentV1LatencyReport).Name}, {typeof(global::Deepgram.Realtime.AgentV1AgentV1FunctionCallRequest).Name}, {typeof(global::Deepgram.Realtime.AgentV1AgentV1FunctionCallCancelled).Name}, {typeof(global::Deepgram.Realtime.AgentV1AgentV1AgentStartedSpeaking).Name}, {typeof(global::Deepgram.Realtime.AgentV1AgentV1AgentAudioDone).Name}, {typeof(global::Deepgram.Realtime.AgentV1AgentV1CustomFromThinkProvider).Name}, {typeof(global::Deepgram.Realtime.AgentV1AgentV1Error).Name}, {typeof(global::Deepgram.Realtime.AgentV1AgentV1Warning).Name}, {typeof(global::Deepgram.Realtime.AgentV1AgentV1History).Name}, {typeof(byte[]).Name}> object.");
             }
 
             if (value.IsListenUpdated)
@@ -1061,6 +1156,18 @@ namespace Deepgram.Realtime.JsonConverters
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Deepgram.Realtime.AgentV1AgentV1ThinkUpdated), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Deepgram.Realtime.AgentV1AgentV1ThinkUpdated?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Deepgram.Realtime.AgentV1AgentV1ThinkUpdated).Name}");
                 global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickThinkUpdated(), typeInfo);
+            }
+            else if (value.IsThinkLiveUpdated)
+            {
+                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Deepgram.Realtime.AgentV1AgentV1ThinkLiveUpdated), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Deepgram.Realtime.AgentV1AgentV1ThinkLiveUpdated?> ??
+                               throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Deepgram.Realtime.AgentV1AgentV1ThinkLiveUpdated).Name}");
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickThinkLiveUpdated(), typeInfo);
+            }
+            else if (value.IsFrustrationDetected)
+            {
+                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Deepgram.Realtime.AgentV1AgentV1FrustrationDetected), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Deepgram.Realtime.AgentV1AgentV1FrustrationDetected?> ??
+                               throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Deepgram.Realtime.AgentV1AgentV1FrustrationDetected).Name}");
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickFrustrationDetected(), typeInfo);
             }
             else if (value.IsFunctionCallResponse)
             {

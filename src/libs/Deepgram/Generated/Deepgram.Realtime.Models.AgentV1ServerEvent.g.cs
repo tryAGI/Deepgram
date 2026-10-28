@@ -84,6 +84,80 @@ namespace Deepgram.Realtime
             : throw new global::System.InvalidOperationException($"Expected union variant 'ThinkUpdated' but the value was {ToString()}.");
 
         /// <summary>
+        ///
+        /// </summary>
+#if NET6_0_OR_GREATER
+        public global::Deepgram.Realtime.AgentV1AgentV1ThinkLiveUpdated? ThinkLiveUpdated { get; init; }
+#else
+        public global::Deepgram.Realtime.AgentV1AgentV1ThinkLiveUpdated? ThinkLiveUpdated { get; }
+#endif
+
+        /// <summary>
+        ///
+        /// </summary>
+#if NET6_0_OR_GREATER
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(ThinkLiveUpdated))]
+#endif
+        public bool IsThinkLiveUpdated => ThinkLiveUpdated != null;
+
+        /// <summary>
+        ///
+        /// </summary>
+        public bool TryPickThinkLiveUpdated(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Deepgram.Realtime.AgentV1AgentV1ThinkLiveUpdated? value)
+        {
+            value = ThinkLiveUpdated;
+            return IsThinkLiveUpdated;
+        }
+
+        /// <summary>
+        ///
+        /// </summary>
+        public global::Deepgram.Realtime.AgentV1AgentV1ThinkLiveUpdated PickThinkLiveUpdated() => ThinkLiveUpdated is { } value
+            ? value
+            : throw new global::System.InvalidOperationException($"Expected union variant 'ThinkLiveUpdated' but the value was {ToString()}.");
+
+        /// <summary>
+        ///
+        /// </summary>
+#if NET6_0_OR_GREATER
+        public global::Deepgram.Realtime.AgentV1AgentV1FrustrationDetected? FrustrationDetected { get; init; }
+#else
+        public global::Deepgram.Realtime.AgentV1AgentV1FrustrationDetected? FrustrationDetected { get; }
+#endif
+
+        /// <summary>
+        ///
+        /// </summary>
+#if NET6_0_OR_GREATER
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(FrustrationDetected))]
+#endif
+        public bool IsFrustrationDetected => FrustrationDetected != null;
+
+        /// <summary>
+        ///
+        /// </summary>
+        public bool TryPickFrustrationDetected(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Deepgram.Realtime.AgentV1AgentV1FrustrationDetected? value)
+        {
+            value = FrustrationDetected;
+            return IsFrustrationDetected;
+        }
+
+        /// <summary>
+        ///
+        /// </summary>
+        public global::Deepgram.Realtime.AgentV1AgentV1FrustrationDetected PickFrustrationDetected() => FrustrationDetected is { } value
+            ? value
+            : throw new global::System.InvalidOperationException($"Expected union variant 'FrustrationDetected' but the value was {ToString()}.");
+
+        /// <summary>
         /// Function call response message used bidirectionally:<br/>
         /// • **Client → Server**: Response after client executes a function<br/>
         ///   marked as client_side: true<br/>
@@ -840,6 +914,52 @@ namespace Deepgram.Realtime
         /// <summary>
         ///
         /// </summary>
+        public static implicit operator AgentV1ServerEvent(global::Deepgram.Realtime.AgentV1AgentV1ThinkLiveUpdated value) => new AgentV1ServerEvent((global::Deepgram.Realtime.AgentV1AgentV1ThinkLiveUpdated?)value);
+
+        /// <summary>
+        ///
+        /// </summary>
+        public static implicit operator global::Deepgram.Realtime.AgentV1AgentV1ThinkLiveUpdated?(AgentV1ServerEvent @this) => @this.ThinkLiveUpdated;
+
+        /// <summary>
+        ///
+        /// </summary>
+        public AgentV1ServerEvent(global::Deepgram.Realtime.AgentV1AgentV1ThinkLiveUpdated? value)
+        {
+            ThinkLiveUpdated = value;
+        }
+
+        /// <summary>
+        ///
+        /// </summary>
+        public static AgentV1ServerEvent FromThinkLiveUpdated(global::Deepgram.Realtime.AgentV1AgentV1ThinkLiveUpdated? value) => new AgentV1ServerEvent(value);
+
+        /// <summary>
+        ///
+        /// </summary>
+        public static implicit operator AgentV1ServerEvent(global::Deepgram.Realtime.AgentV1AgentV1FrustrationDetected value) => new AgentV1ServerEvent((global::Deepgram.Realtime.AgentV1AgentV1FrustrationDetected?)value);
+
+        /// <summary>
+        ///
+        /// </summary>
+        public static implicit operator global::Deepgram.Realtime.AgentV1AgentV1FrustrationDetected?(AgentV1ServerEvent @this) => @this.FrustrationDetected;
+
+        /// <summary>
+        ///
+        /// </summary>
+        public AgentV1ServerEvent(global::Deepgram.Realtime.AgentV1AgentV1FrustrationDetected? value)
+        {
+            FrustrationDetected = value;
+        }
+
+        /// <summary>
+        ///
+        /// </summary>
+        public static AgentV1ServerEvent FromFrustrationDetected(global::Deepgram.Realtime.AgentV1AgentV1FrustrationDetected? value) => new AgentV1ServerEvent(value);
+
+        /// <summary>
+        ///
+        /// </summary>
         public static implicit operator AgentV1ServerEvent(global::Deepgram.Realtime.AgentV1AgentV1ReceiveFunctionCallResponse value) => new AgentV1ServerEvent((global::Deepgram.Realtime.AgentV1AgentV1ReceiveFunctionCallResponse?)value);
 
         /// <summary>
@@ -1280,6 +1400,8 @@ namespace Deepgram.Realtime
         public AgentV1ServerEvent(
             global::Deepgram.Realtime.AgentV1AgentV1ListenUpdated? listenUpdated,
             global::Deepgram.Realtime.AgentV1AgentV1ThinkUpdated? thinkUpdated,
+            global::Deepgram.Realtime.AgentV1AgentV1ThinkLiveUpdated? thinkLiveUpdated,
+            global::Deepgram.Realtime.AgentV1AgentV1FrustrationDetected? frustrationDetected,
             global::Deepgram.Realtime.AgentV1AgentV1ReceiveFunctionCallResponse? functionCallResponse,
             global::Deepgram.Realtime.AgentV1AgentV1PromptUpdated? promptUpdated,
             global::Deepgram.Realtime.AgentV1AgentV1SpeakUpdated? speakUpdated,
@@ -1303,6 +1425,8 @@ namespace Deepgram.Realtime
         {
             ListenUpdated = listenUpdated;
             ThinkUpdated = thinkUpdated;
+            ThinkLiveUpdated = thinkLiveUpdated;
+            FrustrationDetected = frustrationDetected;
             FunctionCallResponse = functionCallResponse;
             PromptUpdated = promptUpdated;
             SpeakUpdated = speakUpdated;
@@ -1347,6 +1471,8 @@ namespace Deepgram.Realtime
             SpeakUpdated as object ??
             PromptUpdated as object ??
             FunctionCallResponse as object ??
+            FrustrationDetected as object ??
+            ThinkLiveUpdated as object ??
             ThinkUpdated as object ??
             ListenUpdated as object
             ;
@@ -1357,6 +1483,8 @@ namespace Deepgram.Realtime
         public override string? ToString() =>
             ListenUpdated?.ToString() ??
             ThinkUpdated?.ToString() ??
+            ThinkLiveUpdated?.ToString() ??
+            FrustrationDetected?.ToString() ??
             FunctionCallResponse?.ToString() ??
             PromptUpdated?.ToString() ??
             SpeakUpdated?.ToString() ??
@@ -1383,7 +1511,7 @@ namespace Deepgram.Realtime
         /// </summary>
         public bool Validate()
         {
-            return IsListenUpdated && !IsThinkUpdated && !IsFunctionCallResponse && !IsPromptUpdated && !IsSpeakUpdated && !IsInjectionRefused && !IsWelcome && !IsSettingsApplied && !IsConversationText && !IsUserStartedSpeaking && !IsAgentThinking && !IsLatencyReport && !IsFunctionCallRequest && !IsFunctionCallCancelled && !IsAgentStartedSpeaking && !IsAgentAudioDone && !IsCustomFromThinkProvider && !IsAgentV1AgentV1Error && !IsAgentV1AgentV1Warning && !IsAgentV1AgentV1History && !IsAgentV1AgentV1Audio || !IsListenUpdated && IsThinkUpdated && !IsFunctionCallResponse && !IsPromptUpdated && !IsSpeakUpdated && !IsInjectionRefused && !IsWelcome && !IsSettingsApplied && !IsConversationText && !IsUserStartedSpeaking && !IsAgentThinking && !IsLatencyReport && !IsFunctionCallRequest && !IsFunctionCallCancelled && !IsAgentStartedSpeaking && !IsAgentAudioDone && !IsCustomFromThinkProvider && !IsAgentV1AgentV1Error && !IsAgentV1AgentV1Warning && !IsAgentV1AgentV1History && !IsAgentV1AgentV1Audio || !IsListenUpdated && !IsThinkUpdated && IsFunctionCallResponse && !IsPromptUpdated && !IsSpeakUpdated && !IsInjectionRefused && !IsWelcome && !IsSettingsApplied && !IsConversationText && !IsUserStartedSpeaking && !IsAgentThinking && !IsLatencyReport && !IsFunctionCallRequest && !IsFunctionCallCancelled && !IsAgentStartedSpeaking && !IsAgentAudioDone && !IsCustomFromThinkProvider && !IsAgentV1AgentV1Error && !IsAgentV1AgentV1Warning && !IsAgentV1AgentV1History && !IsAgentV1AgentV1Audio || !IsListenUpdated && !IsThinkUpdated && !IsFunctionCallResponse && IsPromptUpdated && !IsSpeakUpdated && !IsInjectionRefused && !IsWelcome && !IsSettingsApplied && !IsConversationText && !IsUserStartedSpeaking && !IsAgentThinking && !IsLatencyReport && !IsFunctionCallRequest && !IsFunctionCallCancelled && !IsAgentStartedSpeaking && !IsAgentAudioDone && !IsCustomFromThinkProvider && !IsAgentV1AgentV1Error && !IsAgentV1AgentV1Warning && !IsAgentV1AgentV1History && !IsAgentV1AgentV1Audio || !IsListenUpdated && !IsThinkUpdated && !IsFunctionCallResponse && !IsPromptUpdated && IsSpeakUpdated && !IsInjectionRefused && !IsWelcome && !IsSettingsApplied && !IsConversationText && !IsUserStartedSpeaking && !IsAgentThinking && !IsLatencyReport && !IsFunctionCallRequest && !IsFunctionCallCancelled && !IsAgentStartedSpeaking && !IsAgentAudioDone && !IsCustomFromThinkProvider && !IsAgentV1AgentV1Error && !IsAgentV1AgentV1Warning && !IsAgentV1AgentV1History && !IsAgentV1AgentV1Audio || !IsListenUpdated && !IsThinkUpdated && !IsFunctionCallResponse && !IsPromptUpdated && !IsSpeakUpdated && IsInjectionRefused && !IsWelcome && !IsSettingsApplied && !IsConversationText && !IsUserStartedSpeaking && !IsAgentThinking && !IsLatencyReport && !IsFunctionCallRequest && !IsFunctionCallCancelled && !IsAgentStartedSpeaking && !IsAgentAudioDone && !IsCustomFromThinkProvider && !IsAgentV1AgentV1Error && !IsAgentV1AgentV1Warning && !IsAgentV1AgentV1History && !IsAgentV1AgentV1Audio || !IsListenUpdated && !IsThinkUpdated && !IsFunctionCallResponse && !IsPromptUpdated && !IsSpeakUpdated && !IsInjectionRefused && IsWelcome && !IsSettingsApplied && !IsConversationText && !IsUserStartedSpeaking && !IsAgentThinking && !IsLatencyReport && !IsFunctionCallRequest && !IsFunctionCallCancelled && !IsAgentStartedSpeaking && !IsAgentAudioDone && !IsCustomFromThinkProvider && !IsAgentV1AgentV1Error && !IsAgentV1AgentV1Warning && !IsAgentV1AgentV1History && !IsAgentV1AgentV1Audio || !IsListenUpdated && !IsThinkUpdated && !IsFunctionCallResponse && !IsPromptUpdated && !IsSpeakUpdated && !IsInjectionRefused && !IsWelcome && IsSettingsApplied && !IsConversationText && !IsUserStartedSpeaking && !IsAgentThinking && !IsLatencyReport && !IsFunctionCallRequest && !IsFunctionCallCancelled && !IsAgentStartedSpeaking && !IsAgentAudioDone && !IsCustomFromThinkProvider && !IsAgentV1AgentV1Error && !IsAgentV1AgentV1Warning && !IsAgentV1AgentV1History && !IsAgentV1AgentV1Audio || !IsListenUpdated && !IsThinkUpdated && !IsFunctionCallResponse && !IsPromptUpdated && !IsSpeakUpdated && !IsInjectionRefused && !IsWelcome && !IsSettingsApplied && IsConversationText && !IsUserStartedSpeaking && !IsAgentThinking && !IsLatencyReport && !IsFunctionCallRequest && !IsFunctionCallCancelled && !IsAgentStartedSpeaking && !IsAgentAudioDone && !IsCustomFromThinkProvider && !IsAgentV1AgentV1Error && !IsAgentV1AgentV1Warning && !IsAgentV1AgentV1History && !IsAgentV1AgentV1Audio || !IsListenUpdated && !IsThinkUpdated && !IsFunctionCallResponse && !IsPromptUpdated && !IsSpeakUpdated && !IsInjectionRefused && !IsWelcome && !IsSettingsApplied && !IsConversationText && IsUserStartedSpeaking && !IsAgentThinking && !IsLatencyReport && !IsFunctionCallRequest && !IsFunctionCallCancelled && !IsAgentStartedSpeaking && !IsAgentAudioDone && !IsCustomFromThinkProvider && !IsAgentV1AgentV1Error && !IsAgentV1AgentV1Warning && !IsAgentV1AgentV1History && !IsAgentV1AgentV1Audio || !IsListenUpdated && !IsThinkUpdated && !IsFunctionCallResponse && !IsPromptUpdated && !IsSpeakUpdated && !IsInjectionRefused && !IsWelcome && !IsSettingsApplied && !IsConversationText && !IsUserStartedSpeaking && IsAgentThinking && !IsLatencyReport && !IsFunctionCallRequest && !IsFunctionCallCancelled && !IsAgentStartedSpeaking && !IsAgentAudioDone && !IsCustomFromThinkProvider && !IsAgentV1AgentV1Error && !IsAgentV1AgentV1Warning && !IsAgentV1AgentV1History && !IsAgentV1AgentV1Audio || !IsListenUpdated && !IsThinkUpdated && !IsFunctionCallResponse && !IsPromptUpdated && !IsSpeakUpdated && !IsInjectionRefused && !IsWelcome && !IsSettingsApplied && !IsConversationText && !IsUserStartedSpeaking && !IsAgentThinking && IsLatencyReport && !IsFunctionCallRequest && !IsFunctionCallCancelled && !IsAgentStartedSpeaking && !IsAgentAudioDone && !IsCustomFromThinkProvider && !IsAgentV1AgentV1Error && !IsAgentV1AgentV1Warning && !IsAgentV1AgentV1History && !IsAgentV1AgentV1Audio || !IsListenUpdated && !IsThinkUpdated && !IsFunctionCallResponse && !IsPromptUpdated && !IsSpeakUpdated && !IsInjectionRefused && !IsWelcome && !IsSettingsApplied && !IsConversationText && !IsUserStartedSpeaking && !IsAgentThinking && !IsLatencyReport && IsFunctionCallRequest && !IsFunctionCallCancelled && !IsAgentStartedSpeaking && !IsAgentAudioDone && !IsCustomFromThinkProvider && !IsAgentV1AgentV1Error && !IsAgentV1AgentV1Warning && !IsAgentV1AgentV1History && !IsAgentV1AgentV1Audio || !IsListenUpdated && !IsThinkUpdated && !IsFunctionCallResponse && !IsPromptUpdated && !IsSpeakUpdated && !IsInjectionRefused && !IsWelcome && !IsSettingsApplied && !IsConversationText && !IsUserStartedSpeaking && !IsAgentThinking && !IsLatencyReport && !IsFunctionCallRequest && IsFunctionCallCancelled && !IsAgentStartedSpeaking && !IsAgentAudioDone && !IsCustomFromThinkProvider && !IsAgentV1AgentV1Error && !IsAgentV1AgentV1Warning && !IsAgentV1AgentV1History && !IsAgentV1AgentV1Audio || !IsListenUpdated && !IsThinkUpdated && !IsFunctionCallResponse && !IsPromptUpdated && !IsSpeakUpdated && !IsInjectionRefused && !IsWelcome && !IsSettingsApplied && !IsConversationText && !IsUserStartedSpeaking && !IsAgentThinking && !IsLatencyReport && !IsFunctionCallRequest && !IsFunctionCallCancelled && IsAgentStartedSpeaking && !IsAgentAudioDone && !IsCustomFromThinkProvider && !IsAgentV1AgentV1Error && !IsAgentV1AgentV1Warning && !IsAgentV1AgentV1History && !IsAgentV1AgentV1Audio || !IsListenUpdated && !IsThinkUpdated && !IsFunctionCallResponse && !IsPromptUpdated && !IsSpeakUpdated && !IsInjectionRefused && !IsWelcome && !IsSettingsApplied && !IsConversationText && !IsUserStartedSpeaking && !IsAgentThinking && !IsLatencyReport && !IsFunctionCallRequest && !IsFunctionCallCancelled && !IsAgentStartedSpeaking && IsAgentAudioDone && !IsCustomFromThinkProvider && !IsAgentV1AgentV1Error && !IsAgentV1AgentV1Warning && !IsAgentV1AgentV1History && !IsAgentV1AgentV1Audio || !IsListenUpdated && !IsThinkUpdated && !IsFunctionCallResponse && !IsPromptUpdated && !IsSpeakUpdated && !IsInjectionRefused && !IsWelcome && !IsSettingsApplied && !IsConversationText && !IsUserStartedSpeaking && !IsAgentThinking && !IsLatencyReport && !IsFunctionCallRequest && !IsFunctionCallCancelled && !IsAgentStartedSpeaking && !IsAgentAudioDone && IsCustomFromThinkProvider && !IsAgentV1AgentV1Error && !IsAgentV1AgentV1Warning && !IsAgentV1AgentV1History && !IsAgentV1AgentV1Audio || !IsListenUpdated && !IsThinkUpdated && !IsFunctionCallResponse && !IsPromptUpdated && !IsSpeakUpdated && !IsInjectionRefused && !IsWelcome && !IsSettingsApplied && !IsConversationText && !IsUserStartedSpeaking && !IsAgentThinking && !IsLatencyReport && !IsFunctionCallRequest && !IsFunctionCallCancelled && !IsAgentStartedSpeaking && !IsAgentAudioDone && !IsCustomFromThinkProvider && IsAgentV1AgentV1Error && !IsAgentV1AgentV1Warning && !IsAgentV1AgentV1History && !IsAgentV1AgentV1Audio || !IsListenUpdated && !IsThinkUpdated && !IsFunctionCallResponse && !IsPromptUpdated && !IsSpeakUpdated && !IsInjectionRefused && !IsWelcome && !IsSettingsApplied && !IsConversationText && !IsUserStartedSpeaking && !IsAgentThinking && !IsLatencyReport && !IsFunctionCallRequest && !IsFunctionCallCancelled && !IsAgentStartedSpeaking && !IsAgentAudioDone && !IsCustomFromThinkProvider && !IsAgentV1AgentV1Error && IsAgentV1AgentV1Warning && !IsAgentV1AgentV1History && !IsAgentV1AgentV1Audio || !IsListenUpdated && !IsThinkUpdated && !IsFunctionCallResponse && !IsPromptUpdated && !IsSpeakUpdated && !IsInjectionRefused && !IsWelcome && !IsSettingsApplied && !IsConversationText && !IsUserStartedSpeaking && !IsAgentThinking && !IsLatencyReport && !IsFunctionCallRequest && !IsFunctionCallCancelled && !IsAgentStartedSpeaking && !IsAgentAudioDone && !IsCustomFromThinkProvider && !IsAgentV1AgentV1Error && !IsAgentV1AgentV1Warning && IsAgentV1AgentV1History && !IsAgentV1AgentV1Audio || !IsListenUpdated && !IsThinkUpdated && !IsFunctionCallResponse && !IsPromptUpdated && !IsSpeakUpdated && !IsInjectionRefused && !IsWelcome && !IsSettingsApplied && !IsConversationText && !IsUserStartedSpeaking && !IsAgentThinking && !IsLatencyReport && !IsFunctionCallRequest && !IsFunctionCallCancelled && !IsAgentStartedSpeaking && !IsAgentAudioDone && !IsCustomFromThinkProvider && !IsAgentV1AgentV1Error && !IsAgentV1AgentV1Warning && !IsAgentV1AgentV1History && IsAgentV1AgentV1Audio;
+            return IsListenUpdated && !IsThinkUpdated && !IsThinkLiveUpdated && !IsFrustrationDetected && !IsFunctionCallResponse && !IsPromptUpdated && !IsSpeakUpdated && !IsInjectionRefused && !IsWelcome && !IsSettingsApplied && !IsConversationText && !IsUserStartedSpeaking && !IsAgentThinking && !IsLatencyReport && !IsFunctionCallRequest && !IsFunctionCallCancelled && !IsAgentStartedSpeaking && !IsAgentAudioDone && !IsCustomFromThinkProvider && !IsAgentV1AgentV1Error && !IsAgentV1AgentV1Warning && !IsAgentV1AgentV1History && !IsAgentV1AgentV1Audio || !IsListenUpdated && IsThinkUpdated && !IsThinkLiveUpdated && !IsFrustrationDetected && !IsFunctionCallResponse && !IsPromptUpdated && !IsSpeakUpdated && !IsInjectionRefused && !IsWelcome && !IsSettingsApplied && !IsConversationText && !IsUserStartedSpeaking && !IsAgentThinking && !IsLatencyReport && !IsFunctionCallRequest && !IsFunctionCallCancelled && !IsAgentStartedSpeaking && !IsAgentAudioDone && !IsCustomFromThinkProvider && !IsAgentV1AgentV1Error && !IsAgentV1AgentV1Warning && !IsAgentV1AgentV1History && !IsAgentV1AgentV1Audio || !IsListenUpdated && !IsThinkUpdated && IsThinkLiveUpdated && !IsFrustrationDetected && !IsFunctionCallResponse && !IsPromptUpdated && !IsSpeakUpdated && !IsInjectionRefused && !IsWelcome && !IsSettingsApplied && !IsConversationText && !IsUserStartedSpeaking && !IsAgentThinking && !IsLatencyReport && !IsFunctionCallRequest && !IsFunctionCallCancelled && !IsAgentStartedSpeaking && !IsAgentAudioDone && !IsCustomFromThinkProvider && !IsAgentV1AgentV1Error && !IsAgentV1AgentV1Warning && !IsAgentV1AgentV1History && !IsAgentV1AgentV1Audio || !IsListenUpdated && !IsThinkUpdated && !IsThinkLiveUpdated && IsFrustrationDetected && !IsFunctionCallResponse && !IsPromptUpdated && !IsSpeakUpdated && !IsInjectionRefused && !IsWelcome && !IsSettingsApplied && !IsConversationText && !IsUserStartedSpeaking && !IsAgentThinking && !IsLatencyReport && !IsFunctionCallRequest && !IsFunctionCallCancelled && !IsAgentStartedSpeaking && !IsAgentAudioDone && !IsCustomFromThinkProvider && !IsAgentV1AgentV1Error && !IsAgentV1AgentV1Warning && !IsAgentV1AgentV1History && !IsAgentV1AgentV1Audio || !IsListenUpdated && !IsThinkUpdated && !IsThinkLiveUpdated && !IsFrustrationDetected && IsFunctionCallResponse && !IsPromptUpdated && !IsSpeakUpdated && !IsInjectionRefused && !IsWelcome && !IsSettingsApplied && !IsConversationText && !IsUserStartedSpeaking && !IsAgentThinking && !IsLatencyReport && !IsFunctionCallRequest && !IsFunctionCallCancelled && !IsAgentStartedSpeaking && !IsAgentAudioDone && !IsCustomFromThinkProvider && !IsAgentV1AgentV1Error && !IsAgentV1AgentV1Warning && !IsAgentV1AgentV1History && !IsAgentV1AgentV1Audio || !IsListenUpdated && !IsThinkUpdated && !IsThinkLiveUpdated && !IsFrustrationDetected && !IsFunctionCallResponse && IsPromptUpdated && !IsSpeakUpdated && !IsInjectionRefused && !IsWelcome && !IsSettingsApplied && !IsConversationText && !IsUserStartedSpeaking && !IsAgentThinking && !IsLatencyReport && !IsFunctionCallRequest && !IsFunctionCallCancelled && !IsAgentStartedSpeaking && !IsAgentAudioDone && !IsCustomFromThinkProvider && !IsAgentV1AgentV1Error && !IsAgentV1AgentV1Warning && !IsAgentV1AgentV1History && !IsAgentV1AgentV1Audio || !IsListenUpdated && !IsThinkUpdated && !IsThinkLiveUpdated && !IsFrustrationDetected && !IsFunctionCallResponse && !IsPromptUpdated && IsSpeakUpdated && !IsInjectionRefused && !IsWelcome && !IsSettingsApplied && !IsConversationText && !IsUserStartedSpeaking && !IsAgentThinking && !IsLatencyReport && !IsFunctionCallRequest && !IsFunctionCallCancelled && !IsAgentStartedSpeaking && !IsAgentAudioDone && !IsCustomFromThinkProvider && !IsAgentV1AgentV1Error && !IsAgentV1AgentV1Warning && !IsAgentV1AgentV1History && !IsAgentV1AgentV1Audio || !IsListenUpdated && !IsThinkUpdated && !IsThinkLiveUpdated && !IsFrustrationDetected && !IsFunctionCallResponse && !IsPromptUpdated && !IsSpeakUpdated && IsInjectionRefused && !IsWelcome && !IsSettingsApplied && !IsConversationText && !IsUserStartedSpeaking && !IsAgentThinking && !IsLatencyReport && !IsFunctionCallRequest && !IsFunctionCallCancelled && !IsAgentStartedSpeaking && !IsAgentAudioDone && !IsCustomFromThinkProvider && !IsAgentV1AgentV1Error && !IsAgentV1AgentV1Warning && !IsAgentV1AgentV1History && !IsAgentV1AgentV1Audio || !IsListenUpdated && !IsThinkUpdated && !IsThinkLiveUpdated && !IsFrustrationDetected && !IsFunctionCallResponse && !IsPromptUpdated && !IsSpeakUpdated && !IsInjectionRefused && IsWelcome && !IsSettingsApplied && !IsConversationText && !IsUserStartedSpeaking && !IsAgentThinking && !IsLatencyReport && !IsFunctionCallRequest && !IsFunctionCallCancelled && !IsAgentStartedSpeaking && !IsAgentAudioDone && !IsCustomFromThinkProvider && !IsAgentV1AgentV1Error && !IsAgentV1AgentV1Warning && !IsAgentV1AgentV1History && !IsAgentV1AgentV1Audio || !IsListenUpdated && !IsThinkUpdated && !IsThinkLiveUpdated && !IsFrustrationDetected && !IsFunctionCallResponse && !IsPromptUpdated && !IsSpeakUpdated && !IsInjectionRefused && !IsWelcome && IsSettingsApplied && !IsConversationText && !IsUserStartedSpeaking && !IsAgentThinking && !IsLatencyReport && !IsFunctionCallRequest && !IsFunctionCallCancelled && !IsAgentStartedSpeaking && !IsAgentAudioDone && !IsCustomFromThinkProvider && !IsAgentV1AgentV1Error && !IsAgentV1AgentV1Warning && !IsAgentV1AgentV1History && !IsAgentV1AgentV1Audio || !IsListenUpdated && !IsThinkUpdated && !IsThinkLiveUpdated && !IsFrustrationDetected && !IsFunctionCallResponse && !IsPromptUpdated && !IsSpeakUpdated && !IsInjectionRefused && !IsWelcome && !IsSettingsApplied && IsConversationText && !IsUserStartedSpeaking && !IsAgentThinking && !IsLatencyReport && !IsFunctionCallRequest && !IsFunctionCallCancelled && !IsAgentStartedSpeaking && !IsAgentAudioDone && !IsCustomFromThinkProvider && !IsAgentV1AgentV1Error && !IsAgentV1AgentV1Warning && !IsAgentV1AgentV1History && !IsAgentV1AgentV1Audio || !IsListenUpdated && !IsThinkUpdated && !IsThinkLiveUpdated && !IsFrustrationDetected && !IsFunctionCallResponse && !IsPromptUpdated && !IsSpeakUpdated && !IsInjectionRefused && !IsWelcome && !IsSettingsApplied && !IsConversationText && IsUserStartedSpeaking && !IsAgentThinking && !IsLatencyReport && !IsFunctionCallRequest && !IsFunctionCallCancelled && !IsAgentStartedSpeaking && !IsAgentAudioDone && !IsCustomFromThinkProvider && !IsAgentV1AgentV1Error && !IsAgentV1AgentV1Warning && !IsAgentV1AgentV1History && !IsAgentV1AgentV1Audio || !IsListenUpdated && !IsThinkUpdated && !IsThinkLiveUpdated && !IsFrustrationDetected && !IsFunctionCallResponse && !IsPromptUpdated && !IsSpeakUpdated && !IsInjectionRefused && !IsWelcome && !IsSettingsApplied && !IsConversationText && !IsUserStartedSpeaking && IsAgentThinking && !IsLatencyReport && !IsFunctionCallRequest && !IsFunctionCallCancelled && !IsAgentStartedSpeaking && !IsAgentAudioDone && !IsCustomFromThinkProvider && !IsAgentV1AgentV1Error && !IsAgentV1AgentV1Warning && !IsAgentV1AgentV1History && !IsAgentV1AgentV1Audio || !IsListenUpdated && !IsThinkUpdated && !IsThinkLiveUpdated && !IsFrustrationDetected && !IsFunctionCallResponse && !IsPromptUpdated && !IsSpeakUpdated && !IsInjectionRefused && !IsWelcome && !IsSettingsApplied && !IsConversationText && !IsUserStartedSpeaking && !IsAgentThinking && IsLatencyReport && !IsFunctionCallRequest && !IsFunctionCallCancelled && !IsAgentStartedSpeaking && !IsAgentAudioDone && !IsCustomFromThinkProvider && !IsAgentV1AgentV1Error && !IsAgentV1AgentV1Warning && !IsAgentV1AgentV1History && !IsAgentV1AgentV1Audio || !IsListenUpdated && !IsThinkUpdated && !IsThinkLiveUpdated && !IsFrustrationDetected && !IsFunctionCallResponse && !IsPromptUpdated && !IsSpeakUpdated && !IsInjectionRefused && !IsWelcome && !IsSettingsApplied && !IsConversationText && !IsUserStartedSpeaking && !IsAgentThinking && !IsLatencyReport && IsFunctionCallRequest && !IsFunctionCallCancelled && !IsAgentStartedSpeaking && !IsAgentAudioDone && !IsCustomFromThinkProvider && !IsAgentV1AgentV1Error && !IsAgentV1AgentV1Warning && !IsAgentV1AgentV1History && !IsAgentV1AgentV1Audio || !IsListenUpdated && !IsThinkUpdated && !IsThinkLiveUpdated && !IsFrustrationDetected && !IsFunctionCallResponse && !IsPromptUpdated && !IsSpeakUpdated && !IsInjectionRefused && !IsWelcome && !IsSettingsApplied && !IsConversationText && !IsUserStartedSpeaking && !IsAgentThinking && !IsLatencyReport && !IsFunctionCallRequest && IsFunctionCallCancelled && !IsAgentStartedSpeaking && !IsAgentAudioDone && !IsCustomFromThinkProvider && !IsAgentV1AgentV1Error && !IsAgentV1AgentV1Warning && !IsAgentV1AgentV1History && !IsAgentV1AgentV1Audio || !IsListenUpdated && !IsThinkUpdated && !IsThinkLiveUpdated && !IsFrustrationDetected && !IsFunctionCallResponse && !IsPromptUpdated && !IsSpeakUpdated && !IsInjectionRefused && !IsWelcome && !IsSettingsApplied && !IsConversationText && !IsUserStartedSpeaking && !IsAgentThinking && !IsLatencyReport && !IsFunctionCallRequest && !IsFunctionCallCancelled && IsAgentStartedSpeaking && !IsAgentAudioDone && !IsCustomFromThinkProvider && !IsAgentV1AgentV1Error && !IsAgentV1AgentV1Warning && !IsAgentV1AgentV1History && !IsAgentV1AgentV1Audio || !IsListenUpdated && !IsThinkUpdated && !IsThinkLiveUpdated && !IsFrustrationDetected && !IsFunctionCallResponse && !IsPromptUpdated && !IsSpeakUpdated && !IsInjectionRefused && !IsWelcome && !IsSettingsApplied && !IsConversationText && !IsUserStartedSpeaking && !IsAgentThinking && !IsLatencyReport && !IsFunctionCallRequest && !IsFunctionCallCancelled && !IsAgentStartedSpeaking && IsAgentAudioDone && !IsCustomFromThinkProvider && !IsAgentV1AgentV1Error && !IsAgentV1AgentV1Warning && !IsAgentV1AgentV1History && !IsAgentV1AgentV1Audio || !IsListenUpdated && !IsThinkUpdated && !IsThinkLiveUpdated && !IsFrustrationDetected && !IsFunctionCallResponse && !IsPromptUpdated && !IsSpeakUpdated && !IsInjectionRefused && !IsWelcome && !IsSettingsApplied && !IsConversationText && !IsUserStartedSpeaking && !IsAgentThinking && !IsLatencyReport && !IsFunctionCallRequest && !IsFunctionCallCancelled && !IsAgentStartedSpeaking && !IsAgentAudioDone && IsCustomFromThinkProvider && !IsAgentV1AgentV1Error && !IsAgentV1AgentV1Warning && !IsAgentV1AgentV1History && !IsAgentV1AgentV1Audio || !IsListenUpdated && !IsThinkUpdated && !IsThinkLiveUpdated && !IsFrustrationDetected && !IsFunctionCallResponse && !IsPromptUpdated && !IsSpeakUpdated && !IsInjectionRefused && !IsWelcome && !IsSettingsApplied && !IsConversationText && !IsUserStartedSpeaking && !IsAgentThinking && !IsLatencyReport && !IsFunctionCallRequest && !IsFunctionCallCancelled && !IsAgentStartedSpeaking && !IsAgentAudioDone && !IsCustomFromThinkProvider && IsAgentV1AgentV1Error && !IsAgentV1AgentV1Warning && !IsAgentV1AgentV1History && !IsAgentV1AgentV1Audio || !IsListenUpdated && !IsThinkUpdated && !IsThinkLiveUpdated && !IsFrustrationDetected && !IsFunctionCallResponse && !IsPromptUpdated && !IsSpeakUpdated && !IsInjectionRefused && !IsWelcome && !IsSettingsApplied && !IsConversationText && !IsUserStartedSpeaking && !IsAgentThinking && !IsLatencyReport && !IsFunctionCallRequest && !IsFunctionCallCancelled && !IsAgentStartedSpeaking && !IsAgentAudioDone && !IsCustomFromThinkProvider && !IsAgentV1AgentV1Error && IsAgentV1AgentV1Warning && !IsAgentV1AgentV1History && !IsAgentV1AgentV1Audio || !IsListenUpdated && !IsThinkUpdated && !IsThinkLiveUpdated && !IsFrustrationDetected && !IsFunctionCallResponse && !IsPromptUpdated && !IsSpeakUpdated && !IsInjectionRefused && !IsWelcome && !IsSettingsApplied && !IsConversationText && !IsUserStartedSpeaking && !IsAgentThinking && !IsLatencyReport && !IsFunctionCallRequest && !IsFunctionCallCancelled && !IsAgentStartedSpeaking && !IsAgentAudioDone && !IsCustomFromThinkProvider && !IsAgentV1AgentV1Error && !IsAgentV1AgentV1Warning && IsAgentV1AgentV1History && !IsAgentV1AgentV1Audio || !IsListenUpdated && !IsThinkUpdated && !IsThinkLiveUpdated && !IsFrustrationDetected && !IsFunctionCallResponse && !IsPromptUpdated && !IsSpeakUpdated && !IsInjectionRefused && !IsWelcome && !IsSettingsApplied && !IsConversationText && !IsUserStartedSpeaking && !IsAgentThinking && !IsLatencyReport && !IsFunctionCallRequest && !IsFunctionCallCancelled && !IsAgentStartedSpeaking && !IsAgentAudioDone && !IsCustomFromThinkProvider && !IsAgentV1AgentV1Error && !IsAgentV1AgentV1Warning && !IsAgentV1AgentV1History && IsAgentV1AgentV1Audio;
         }
 
         /// <summary>
@@ -1392,6 +1520,8 @@ namespace Deepgram.Realtime
         public TResult? Match<TResult>(
             global::System.Func<global::Deepgram.Realtime.AgentV1AgentV1ListenUpdated, TResult>? listenUpdated = null,
             global::System.Func<global::Deepgram.Realtime.AgentV1AgentV1ThinkUpdated, TResult>? thinkUpdated = null,
+            global::System.Func<global::Deepgram.Realtime.AgentV1AgentV1ThinkLiveUpdated, TResult>? thinkLiveUpdated = null,
+            global::System.Func<global::Deepgram.Realtime.AgentV1AgentV1FrustrationDetected, TResult>? frustrationDetected = null,
             global::System.Func<global::Deepgram.Realtime.AgentV1AgentV1ReceiveFunctionCallResponse, TResult>? functionCallResponse = null,
             global::System.Func<global::Deepgram.Realtime.AgentV1AgentV1PromptUpdated, TResult>? promptUpdated = null,
             global::System.Func<global::Deepgram.Realtime.AgentV1AgentV1SpeakUpdated, TResult>? speakUpdated = null,
@@ -1426,81 +1556,89 @@ namespace Deepgram.Realtime
             {
                 return thinkUpdated(__value1);
             }
-            else if (FunctionCallResponse is { } __value2 && functionCallResponse != null)
+            else if (ThinkLiveUpdated is { } __value2 && thinkLiveUpdated != null)
             {
-                return functionCallResponse(__value2);
+                return thinkLiveUpdated(__value2);
             }
-            else if (PromptUpdated is { } __value3 && promptUpdated != null)
+            else if (FrustrationDetected is { } __value3 && frustrationDetected != null)
             {
-                return promptUpdated(__value3);
+                return frustrationDetected(__value3);
             }
-            else if (SpeakUpdated is { } __value4 && speakUpdated != null)
+            else if (FunctionCallResponse is { } __value4 && functionCallResponse != null)
             {
-                return speakUpdated(__value4);
+                return functionCallResponse(__value4);
             }
-            else if (InjectionRefused is { } __value5 && injectionRefused != null)
+            else if (PromptUpdated is { } __value5 && promptUpdated != null)
             {
-                return injectionRefused(__value5);
+                return promptUpdated(__value5);
             }
-            else if (Welcome is { } __value6 && welcome != null)
+            else if (SpeakUpdated is { } __value6 && speakUpdated != null)
             {
-                return welcome(__value6);
+                return speakUpdated(__value6);
             }
-            else if (SettingsApplied is { } __value7 && settingsApplied != null)
+            else if (InjectionRefused is { } __value7 && injectionRefused != null)
             {
-                return settingsApplied(__value7);
+                return injectionRefused(__value7);
             }
-            else if (ConversationText is { } __value8 && conversationText != null)
+            else if (Welcome is { } __value8 && welcome != null)
             {
-                return conversationText(__value8);
+                return welcome(__value8);
             }
-            else if (UserStartedSpeaking is { } __value9 && userStartedSpeaking != null)
+            else if (SettingsApplied is { } __value9 && settingsApplied != null)
             {
-                return userStartedSpeaking(__value9);
+                return settingsApplied(__value9);
             }
-            else if (AgentThinking is { } __value10 && agentThinking != null)
+            else if (ConversationText is { } __value10 && conversationText != null)
             {
-                return agentThinking(__value10);
+                return conversationText(__value10);
             }
-            else if (LatencyReport is { } __value11 && latencyReport != null)
+            else if (UserStartedSpeaking is { } __value11 && userStartedSpeaking != null)
             {
-                return latencyReport(__value11);
+                return userStartedSpeaking(__value11);
             }
-            else if (FunctionCallRequest is { } __value12 && functionCallRequest != null)
+            else if (AgentThinking is { } __value12 && agentThinking != null)
             {
-                return functionCallRequest(__value12);
+                return agentThinking(__value12);
             }
-            else if (FunctionCallCancelled is { } __value13 && functionCallCancelled != null)
+            else if (LatencyReport is { } __value13 && latencyReport != null)
             {
-                return functionCallCancelled(__value13);
+                return latencyReport(__value13);
             }
-            else if (AgentStartedSpeaking is { } __value14 && agentStartedSpeaking != null)
+            else if (FunctionCallRequest is { } __value14 && functionCallRequest != null)
             {
-                return agentStartedSpeaking(__value14);
+                return functionCallRequest(__value14);
             }
-            else if (AgentAudioDone is { } __value15 && agentAudioDone != null)
+            else if (FunctionCallCancelled is { } __value15 && functionCallCancelled != null)
             {
-                return agentAudioDone(__value15);
+                return functionCallCancelled(__value15);
             }
-            else if (CustomFromThinkProvider is { } __value16 && customFromThinkProvider != null)
+            else if (AgentStartedSpeaking is { } __value16 && agentStartedSpeaking != null)
             {
-                return customFromThinkProvider(__value16);
+                return agentStartedSpeaking(__value16);
             }
-            else if (AgentV1AgentV1Error is { } __value17 && agentV1AgentV1Error != null)
+            else if (AgentAudioDone is { } __value17 && agentAudioDone != null)
             {
-                return agentV1AgentV1Error(__value17);
+                return agentAudioDone(__value17);
             }
-            else if (AgentV1AgentV1Warning is { } __value18 && agentV1AgentV1Warning != null)
+            else if (CustomFromThinkProvider is { } __value18 && customFromThinkProvider != null)
             {
-                return agentV1AgentV1Warning(__value18);
+                return customFromThinkProvider(__value18);
             }
-            else if (AgentV1AgentV1History is { } __value19 && agentV1AgentV1History != null)
+            else if (AgentV1AgentV1Error is { } __value19 && agentV1AgentV1Error != null)
             {
-                return agentV1AgentV1History(__value19);
+                return agentV1AgentV1Error(__value19);
             }
-            else if (AgentV1AgentV1Audio is { } __value20 && agentV1AgentV1Audio != null)
+            else if (AgentV1AgentV1Warning is { } __value20 && agentV1AgentV1Warning != null)
             {
-                return agentV1AgentV1Audio(__value20);
+                return agentV1AgentV1Warning(__value20);
+            }
+            else if (AgentV1AgentV1History is { } __value21 && agentV1AgentV1History != null)
+            {
+                return agentV1AgentV1History(__value21);
+            }
+            else if (AgentV1AgentV1Audio is { } __value22 && agentV1AgentV1Audio != null)
+            {
+                return agentV1AgentV1Audio(__value22);
             }
 
             return default(TResult);
@@ -1514,6 +1652,10 @@ namespace Deepgram.Realtime
 
             global::System.Action<global::Deepgram.Realtime.AgentV1AgentV1ThinkUpdated>? thinkUpdated = null,
 
+            global::System.Action<global::Deepgram.Realtime.AgentV1AgentV1ThinkLiveUpdated>? thinkLiveUpdated = null,
+
+            global::System.Action<global::Deepgram.Realtime.AgentV1AgentV1FrustrationDetected>? frustrationDetected = null,
+
             global::System.Action<global::Deepgram.Realtime.AgentV1AgentV1ReceiveFunctionCallResponse>? functionCallResponse = null,
 
             global::System.Action<global::Deepgram.Realtime.AgentV1AgentV1PromptUpdated>? promptUpdated = null,
@@ -1566,81 +1708,89 @@ namespace Deepgram.Realtime
             {
                 thinkUpdated?.Invoke(__value1);
             }
-            else if (FunctionCallResponse is { } __value2)
+            else if (ThinkLiveUpdated is { } __value2)
             {
-                functionCallResponse?.Invoke(__value2);
+                thinkLiveUpdated?.Invoke(__value2);
             }
-            else if (PromptUpdated is { } __value3)
+            else if (FrustrationDetected is { } __value3)
             {
-                promptUpdated?.Invoke(__value3);
+                frustrationDetected?.Invoke(__value3);
             }
-            else if (SpeakUpdated is { } __value4)
+            else if (FunctionCallResponse is { } __value4)
             {
-                speakUpdated?.Invoke(__value4);
+                functionCallResponse?.Invoke(__value4);
             }
-            else if (InjectionRefused is { } __value5)
+            else if (PromptUpdated is { } __value5)
             {
-                injectionRefused?.Invoke(__value5);
+                promptUpdated?.Invoke(__value5);
             }
-            else if (Welcome is { } __value6)
+            else if (SpeakUpdated is { } __value6)
             {
-                welcome?.Invoke(__value6);
+                speakUpdated?.Invoke(__value6);
             }
-            else if (SettingsApplied is { } __value7)
+            else if (InjectionRefused is { } __value7)
             {
-                settingsApplied?.Invoke(__value7);
+                injectionRefused?.Invoke(__value7);
             }
-            else if (ConversationText is { } __value8)
+            else if (Welcome is { } __value8)
             {
-                conversationText?.Invoke(__value8);
+                welcome?.Invoke(__value8);
             }
-            else if (UserStartedSpeaking is { } __value9)
+            else if (SettingsApplied is { } __value9)
             {
-                userStartedSpeaking?.Invoke(__value9);
+                settingsApplied?.Invoke(__value9);
             }
-            else if (AgentThinking is { } __value10)
+            else if (ConversationText is { } __value10)
             {
-                agentThinking?.Invoke(__value10);
+                conversationText?.Invoke(__value10);
             }
-            else if (LatencyReport is { } __value11)
+            else if (UserStartedSpeaking is { } __value11)
             {
-                latencyReport?.Invoke(__value11);
+                userStartedSpeaking?.Invoke(__value11);
             }
-            else if (FunctionCallRequest is { } __value12)
+            else if (AgentThinking is { } __value12)
             {
-                functionCallRequest?.Invoke(__value12);
+                agentThinking?.Invoke(__value12);
             }
-            else if (FunctionCallCancelled is { } __value13)
+            else if (LatencyReport is { } __value13)
             {
-                functionCallCancelled?.Invoke(__value13);
+                latencyReport?.Invoke(__value13);
             }
-            else if (AgentStartedSpeaking is { } __value14)
+            else if (FunctionCallRequest is { } __value14)
             {
-                agentStartedSpeaking?.Invoke(__value14);
+                functionCallRequest?.Invoke(__value14);
             }
-            else if (AgentAudioDone is { } __value15)
+            else if (FunctionCallCancelled is { } __value15)
             {
-                agentAudioDone?.Invoke(__value15);
+                functionCallCancelled?.Invoke(__value15);
             }
-            else if (CustomFromThinkProvider is { } __value16)
+            else if (AgentStartedSpeaking is { } __value16)
             {
-                customFromThinkProvider?.Invoke(__value16);
+                agentStartedSpeaking?.Invoke(__value16);
             }
-            else if (AgentV1AgentV1Error is { } __value17)
+            else if (AgentAudioDone is { } __value17)
             {
-                agentV1AgentV1Error?.Invoke(__value17);
+                agentAudioDone?.Invoke(__value17);
             }
-            else if (AgentV1AgentV1Warning is { } __value18)
+            else if (CustomFromThinkProvider is { } __value18)
             {
-                agentV1AgentV1Warning?.Invoke(__value18);
+                customFromThinkProvider?.Invoke(__value18);
             }
-            else if (AgentV1AgentV1History is { } __value19)
+            else if (AgentV1AgentV1Error is { } __value19)
             {
-                agentV1AgentV1History?.Invoke(__value19);
+                agentV1AgentV1Error?.Invoke(__value19);
             }
-            else if (AgentV1AgentV1Audio is { } __value20)
+            else if (AgentV1AgentV1Warning is { } __value20)
             {
-                agentV1AgentV1Audio?.Invoke(__value20);
+                agentV1AgentV1Warning?.Invoke(__value20);
+            }
+            else if (AgentV1AgentV1History is { } __value21)
+            {
+                agentV1AgentV1History?.Invoke(__value21);
+            }
+            else if (AgentV1AgentV1Audio is { } __value22)
+            {
+                agentV1AgentV1Audio?.Invoke(__value22);
             }
         }
 
@@ -1650,6 +1800,8 @@ namespace Deepgram.Realtime
         public void Switch(
             global::System.Action<global::Deepgram.Realtime.AgentV1AgentV1ListenUpdated>? listenUpdated = null,
             global::System.Action<global::Deepgram.Realtime.AgentV1AgentV1ThinkUpdated>? thinkUpdated = null,
+            global::System.Action<global::Deepgram.Realtime.AgentV1AgentV1ThinkLiveUpdated>? thinkLiveUpdated = null,
+            global::System.Action<global::Deepgram.Realtime.AgentV1AgentV1FrustrationDetected>? frustrationDetected = null,
             global::System.Action<global::Deepgram.Realtime.AgentV1AgentV1ReceiveFunctionCallResponse>? functionCallResponse = null,
             global::System.Action<global::Deepgram.Realtime.AgentV1AgentV1PromptUpdated>? promptUpdated = null,
             global::System.Action<global::Deepgram.Realtime.AgentV1AgentV1SpeakUpdated>? speakUpdated = null,
@@ -1684,81 +1836,89 @@ namespace Deepgram.Realtime
             {
                 thinkUpdated?.Invoke(__value1);
             }
-            else if (FunctionCallResponse is { } __value2)
+            else if (ThinkLiveUpdated is { } __value2)
             {
-                functionCallResponse?.Invoke(__value2);
+                thinkLiveUpdated?.Invoke(__value2);
             }
-            else if (PromptUpdated is { } __value3)
+            else if (FrustrationDetected is { } __value3)
             {
-                promptUpdated?.Invoke(__value3);
+                frustrationDetected?.Invoke(__value3);
             }
-            else if (SpeakUpdated is { } __value4)
+            else if (FunctionCallResponse is { } __value4)
             {
-                speakUpdated?.Invoke(__value4);
+                functionCallResponse?.Invoke(__value4);
             }
-            else if (InjectionRefused is { } __value5)
+            else if (PromptUpdated is { } __value5)
             {
-                injectionRefused?.Invoke(__value5);
+                promptUpdated?.Invoke(__value5);
             }
-            else if (Welcome is { } __value6)
+            else if (SpeakUpdated is { } __value6)
             {
-                welcome?.Invoke(__value6);
+                speakUpdated?.Invoke(__value6);
             }
-            else if (SettingsApplied is { } __value7)
+            else if (InjectionRefused is { } __value7)
             {
-                settingsApplied?.Invoke(__value7);
+                injectionRefused?.Invoke(__value7);
             }
-            else if (ConversationText is { } __value8)
+            else if (Welcome is { } __value8)
             {
-                conversationText?.Invoke(__value8);
+                welcome?.Invoke(__value8);
             }
-            else if (UserStartedSpeaking is { } __value9)
+            else if (SettingsApplied is { } __value9)
             {
-                userStartedSpeaking?.Invoke(__value9);
+                settingsApplied?.Invoke(__value9);
             }
-            else if (AgentThinking is { } __value10)
+            else if (ConversationText is { } __value10)
             {
-                agentThinking?.Invoke(__value10);
+                conversationText?.Invoke(__value10);
             }
-            else if (LatencyReport is { } __value11)
+            else if (UserStartedSpeaking is { } __value11)
             {
-                latencyReport?.Invoke(__value11);
+                userStartedSpeaking?.Invoke(__value11);
             }
-            else if (FunctionCallRequest is { } __value12)
+            else if (AgentThinking is { } __value12)
             {
-                functionCallRequest?.Invoke(__value12);
+                agentThinking?.Invoke(__value12);
             }
-            else if (FunctionCallCancelled is { } __value13)
+            else if (LatencyReport is { } __value13)
             {
-                functionCallCancelled?.Invoke(__value13);
+                latencyReport?.Invoke(__value13);
             }
-            else if (AgentStartedSpeaking is { } __value14)
+            else if (FunctionCallRequest is { } __value14)
             {
-                agentStartedSpeaking?.Invoke(__value14);
+                functionCallRequest?.Invoke(__value14);
             }
-            else if (AgentAudioDone is { } __value15)
+            else if (FunctionCallCancelled is { } __value15)
             {
-                agentAudioDone?.Invoke(__value15);
+                functionCallCancelled?.Invoke(__value15);
             }
-            else if (CustomFromThinkProvider is { } __value16)
+            else if (AgentStartedSpeaking is { } __value16)
             {
-                customFromThinkProvider?.Invoke(__value16);
+                agentStartedSpeaking?.Invoke(__value16);
             }
-            else if (AgentV1AgentV1Error is { } __value17)
+            else if (AgentAudioDone is { } __value17)
             {
-                agentV1AgentV1Error?.Invoke(__value17);
+                agentAudioDone?.Invoke(__value17);
             }
-            else if (AgentV1AgentV1Warning is { } __value18)
+            else if (CustomFromThinkProvider is { } __value18)
             {
-                agentV1AgentV1Warning?.Invoke(__value18);
+                customFromThinkProvider?.Invoke(__value18);
             }
-            else if (AgentV1AgentV1History is { } __value19)
+            else if (AgentV1AgentV1Error is { } __value19)
             {
-                agentV1AgentV1History?.Invoke(__value19);
+                agentV1AgentV1Error?.Invoke(__value19);
             }
-            else if (AgentV1AgentV1Audio is { } __value20)
+            else if (AgentV1AgentV1Warning is { } __value20)
             {
-                agentV1AgentV1Audio?.Invoke(__value20);
+                agentV1AgentV1Warning?.Invoke(__value20);
+            }
+            else if (AgentV1AgentV1History is { } __value21)
+            {
+                agentV1AgentV1History?.Invoke(__value21);
+            }
+            else if (AgentV1AgentV1Audio is { } __value22)
+            {
+                agentV1AgentV1Audio?.Invoke(__value22);
             }
         }
 
@@ -1773,6 +1933,10 @@ namespace Deepgram.Realtime
                 typeof(global::Deepgram.Realtime.AgentV1AgentV1ListenUpdated),
                 ThinkUpdated,
                 typeof(global::Deepgram.Realtime.AgentV1AgentV1ThinkUpdated),
+                ThinkLiveUpdated,
+                typeof(global::Deepgram.Realtime.AgentV1AgentV1ThinkLiveUpdated),
+                FrustrationDetected,
+                typeof(global::Deepgram.Realtime.AgentV1AgentV1FrustrationDetected),
                 FunctionCallResponse,
                 typeof(global::Deepgram.Realtime.AgentV1AgentV1ReceiveFunctionCallResponse),
                 PromptUpdated,
@@ -1829,6 +1993,8 @@ namespace Deepgram.Realtime
             return
                 global::System.Collections.Generic.EqualityComparer<global::Deepgram.Realtime.AgentV1AgentV1ListenUpdated?>.Default.Equals(ListenUpdated, other.ListenUpdated) &&
                 global::System.Collections.Generic.EqualityComparer<global::Deepgram.Realtime.AgentV1AgentV1ThinkUpdated?>.Default.Equals(ThinkUpdated, other.ThinkUpdated) &&
+                global::System.Collections.Generic.EqualityComparer<global::Deepgram.Realtime.AgentV1AgentV1ThinkLiveUpdated?>.Default.Equals(ThinkLiveUpdated, other.ThinkLiveUpdated) &&
+                global::System.Collections.Generic.EqualityComparer<global::Deepgram.Realtime.AgentV1AgentV1FrustrationDetected?>.Default.Equals(FrustrationDetected, other.FrustrationDetected) &&
                 global::System.Collections.Generic.EqualityComparer<global::Deepgram.Realtime.AgentV1AgentV1ReceiveFunctionCallResponse?>.Default.Equals(FunctionCallResponse, other.FunctionCallResponse) &&
                 global::System.Collections.Generic.EqualityComparer<global::Deepgram.Realtime.AgentV1AgentV1PromptUpdated?>.Default.Equals(PromptUpdated, other.PromptUpdated) &&
                 global::System.Collections.Generic.EqualityComparer<global::Deepgram.Realtime.AgentV1AgentV1SpeakUpdated?>.Default.Equals(SpeakUpdated, other.SpeakUpdated) &&

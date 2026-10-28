@@ -31,11 +31,17 @@ namespace Deepgram.Realtime
         public global::Deepgram.Realtime.ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0Listen? Listen { get; set; }
 
         /// <summary>
-        ///
+        /// Your reasoning LLM. With Think Live on, this is the reasoning half of the pair, running alongside the Think Live model configured in `think_live`
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("think")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Deepgram.Realtime.JsonConverters.ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0ThinkJsonConverter))]
         public global::Deepgram.Realtime.ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0Think? Think { get; set; }
+
+        /// <summary>
+        /// Configures Deepgram's Think Live model. Think Live is off until this object is provided
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("think_live")]
+        public global::Deepgram.Realtime.ThinkLiveSettingsV1? ThinkLive { get; set; }
 
         /// <summary>
         ///
@@ -63,7 +69,12 @@ namespace Deepgram.Realtime
         /// Conversation context including the history of messages and function calls
         /// </param>
         /// <param name="listen"></param>
-        /// <param name="think"></param>
+        /// <param name="think">
+        /// Your reasoning LLM. With Think Live on, this is the reasoning half of the pair, running alongside the Think Live model configured in `think_live`
+        /// </param>
+        /// <param name="thinkLive">
+        /// Configures Deepgram's Think Live model. Think Live is off until this object is provided
+        /// </param>
         /// <param name="speak"></param>
         /// <param name="greeting">
         /// Optional message that agent will speak at the start
@@ -75,12 +86,14 @@ namespace Deepgram.Realtime
             global::Deepgram.Realtime.ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0Context? context,
             global::Deepgram.Realtime.ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0Listen? listen,
             global::Deepgram.Realtime.ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0Think? think,
+            global::Deepgram.Realtime.ThinkLiveSettingsV1? thinkLive,
             global::Deepgram.Realtime.ChannelsAgentV1MessagesAgentV1SettingsAgentOneOf0Speak? speak,
             string? greeting)
         {
             this.Context = context;
             this.Listen = listen;
             this.Think = think;
+            this.ThinkLive = thinkLive;
             this.Speak = speak;
             this.Greeting = greeting;
         }
