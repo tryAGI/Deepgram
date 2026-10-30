@@ -66,6 +66,13 @@ namespace Deepgram.Realtime.JsonConverters
             if (__jsonProps.Contains("temperature")) __score4++;
             if (__jsonProps.Contains("type")) __score4++;
             if (__jsonProps.Contains("version")) __score4++;
+            var __score5 = 0;
+            if (__jsonProps.Contains("model")) __score5++;
+            if (__jsonProps.Contains("reasoning_mode")) __score5++;
+            if (__jsonProps.Contains("temperature")) __score5++;
+            if (__jsonProps.Contains("type")) __score5++;
+            if (__jsonProps.Contains("version")) __score5++;
+            if (__jsonProps.Contains("voice_prompt_opt_out")) __score5++;
             var __bestScore = 0;
             var __bestIndex = -1;
             if (__score0 > __bestScore) { __bestScore = __score0; __bestIndex = 0; }
@@ -73,12 +80,14 @@ namespace Deepgram.Realtime.JsonConverters
             if (__score2 > __bestScore) { __bestScore = __score2; __bestIndex = 2; }
             if (__score3 > __bestScore) { __bestScore = __score3; __bestIndex = 3; }
             if (__score4 > __bestScore) { __bestScore = __score4; __bestIndex = 4; }
+            if (__score5 > __bestScore) { __bestScore = __score5; __bestIndex = 5; }
 
             global::Deepgram.Realtime.OpenAiThinkProvider? openAiThinkProvider = default;
             global::Deepgram.Realtime.AwsBedrockThinkProvider? awsBedrockThinkProvider = default;
             global::Deepgram.Realtime.AnthropicThinkProvider? anthropicThinkProvider = default;
             global::Deepgram.Realtime.GoogleThinkProvider? googleThinkProvider = default;
             global::Deepgram.Realtime.GroqThinkProvider? groqThinkProvider = default;
+            global::Deepgram.Realtime.DeepgramThinkProvider? deepgramThinkProvider = default;
             if (__bestIndex >= 0)
             {
                 if (__bestIndex == 0)
@@ -176,9 +185,28 @@ namespace Deepgram.Realtime.JsonConverters
                         // Legacy enum converters signal an incompatible JSON token with this exception.
                     }
                 }
+                else if (__bestIndex == 5)
+                {
+                    try
+                    {
+                        var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Deepgram.Realtime.DeepgramThinkProvider), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Deepgram.Realtime.DeepgramThinkProvider> ??
+                                       throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Deepgram.Realtime.DeepgramThinkProvider).Name}");
+                        deepgramThinkProvider = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
+                    }
+                    catch (global::System.Text.Json.JsonException)
+                    {
+                    }
+                    catch (global::System.InvalidOperationException)
+                    {
+                    }
+                    catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                    {
+                        // Legacy enum converters signal an incompatible JSON token with this exception.
+                    }
+                }
             }
 
-            if (openAiThinkProvider == null && awsBedrockThinkProvider == null && anthropicThinkProvider == null && googleThinkProvider == null && groqThinkProvider == null)
+            if (openAiThinkProvider == null && awsBedrockThinkProvider == null && anthropicThinkProvider == null && googleThinkProvider == null && groqThinkProvider == null && deepgramThinkProvider == null)
             {
                 try
                 {
@@ -199,7 +227,7 @@ namespace Deepgram.Realtime.JsonConverters
                 }
             }
 
-            if (openAiThinkProvider == null && awsBedrockThinkProvider == null && anthropicThinkProvider == null && googleThinkProvider == null && groqThinkProvider == null)
+            if (openAiThinkProvider == null && awsBedrockThinkProvider == null && anthropicThinkProvider == null && googleThinkProvider == null && groqThinkProvider == null && deepgramThinkProvider == null)
             {
                 try
                 {
@@ -220,7 +248,7 @@ namespace Deepgram.Realtime.JsonConverters
                 }
             }
 
-            if (openAiThinkProvider == null && awsBedrockThinkProvider == null && anthropicThinkProvider == null && googleThinkProvider == null && groqThinkProvider == null)
+            if (openAiThinkProvider == null && awsBedrockThinkProvider == null && anthropicThinkProvider == null && googleThinkProvider == null && groqThinkProvider == null && deepgramThinkProvider == null)
             {
                 try
                 {
@@ -241,7 +269,7 @@ namespace Deepgram.Realtime.JsonConverters
                 }
             }
 
-            if (openAiThinkProvider == null && awsBedrockThinkProvider == null && anthropicThinkProvider == null && googleThinkProvider == null && groqThinkProvider == null)
+            if (openAiThinkProvider == null && awsBedrockThinkProvider == null && anthropicThinkProvider == null && googleThinkProvider == null && groqThinkProvider == null && deepgramThinkProvider == null)
             {
                 try
                 {
@@ -262,7 +290,7 @@ namespace Deepgram.Realtime.JsonConverters
                 }
             }
 
-            if (openAiThinkProvider == null && awsBedrockThinkProvider == null && anthropicThinkProvider == null && googleThinkProvider == null && groqThinkProvider == null)
+            if (openAiThinkProvider == null && awsBedrockThinkProvider == null && anthropicThinkProvider == null && googleThinkProvider == null && groqThinkProvider == null && deepgramThinkProvider == null)
             {
                 try
                 {
@@ -270,6 +298,27 @@ namespace Deepgram.Realtime.JsonConverters
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Deepgram.Realtime.GroqThinkProvider), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Deepgram.Realtime.GroqThinkProvider> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Deepgram.Realtime.GroqThinkProvider).Name}");
                     groqThinkProvider = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
+                }
+                catch (global::System.Text.Json.JsonException)
+                {
+                }
+                catch (global::System.InvalidOperationException)
+                {
+                }
+                catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                {
+                    // Legacy enum converters signal an incompatible JSON token with this exception.
+                }
+            }
+
+            if (openAiThinkProvider == null && awsBedrockThinkProvider == null && anthropicThinkProvider == null && googleThinkProvider == null && groqThinkProvider == null && deepgramThinkProvider == null)
+            {
+                try
+                {
+
+                    var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Deepgram.Realtime.DeepgramThinkProvider), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Deepgram.Realtime.DeepgramThinkProvider> ??
+                                   throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Deepgram.Realtime.DeepgramThinkProvider).Name}");
+                    deepgramThinkProvider = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
                 }
                 catch (global::System.Text.Json.JsonException)
                 {
@@ -292,12 +341,14 @@ namespace Deepgram.Realtime.JsonConverters
 
                 googleThinkProvider,
 
-                groqThinkProvider
+                groqThinkProvider,
+
+                deepgramThinkProvider
                 );
 
             if (!__value.Validate())
             {
-                throw new global::System.Text.Json.JsonException($"Invalid JSON format for OneOf<{typeof(global::Deepgram.Realtime.OpenAiThinkProvider).Name}, {typeof(global::Deepgram.Realtime.AwsBedrockThinkProvider).Name}, {typeof(global::Deepgram.Realtime.AnthropicThinkProvider).Name}, {typeof(global::Deepgram.Realtime.GoogleThinkProvider).Name}, {typeof(global::Deepgram.Realtime.GroqThinkProvider).Name}>");
+                throw new global::System.Text.Json.JsonException($"Invalid JSON format for OneOf<{typeof(global::Deepgram.Realtime.OpenAiThinkProvider).Name}, {typeof(global::Deepgram.Realtime.AwsBedrockThinkProvider).Name}, {typeof(global::Deepgram.Realtime.AnthropicThinkProvider).Name}, {typeof(global::Deepgram.Realtime.GoogleThinkProvider).Name}, {typeof(global::Deepgram.Realtime.GroqThinkProvider).Name}, {typeof(global::Deepgram.Realtime.DeepgramThinkProvider).Name}>");
             }
 
             return __value;
@@ -315,7 +366,7 @@ namespace Deepgram.Realtime.JsonConverters
 
             if (!value.Validate())
             {
-                throw new global::System.Text.Json.JsonException($"Invalid OneOf<{typeof(global::Deepgram.Realtime.OpenAiThinkProvider).Name}, {typeof(global::Deepgram.Realtime.AwsBedrockThinkProvider).Name}, {typeof(global::Deepgram.Realtime.AnthropicThinkProvider).Name}, {typeof(global::Deepgram.Realtime.GoogleThinkProvider).Name}, {typeof(global::Deepgram.Realtime.GroqThinkProvider).Name}> object.");
+                throw new global::System.Text.Json.JsonException($"Invalid OneOf<{typeof(global::Deepgram.Realtime.OpenAiThinkProvider).Name}, {typeof(global::Deepgram.Realtime.AwsBedrockThinkProvider).Name}, {typeof(global::Deepgram.Realtime.AnthropicThinkProvider).Name}, {typeof(global::Deepgram.Realtime.GoogleThinkProvider).Name}, {typeof(global::Deepgram.Realtime.GroqThinkProvider).Name}, {typeof(global::Deepgram.Realtime.DeepgramThinkProvider).Name}> object.");
             }
 
             if (value.IsOpenAiThinkProvider)
@@ -347,6 +398,12 @@ namespace Deepgram.Realtime.JsonConverters
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Deepgram.Realtime.GroqThinkProvider), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Deepgram.Realtime.GroqThinkProvider?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Deepgram.Realtime.GroqThinkProvider).Name}");
                 global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickGroqThinkProvider(), typeInfo);
+            }
+            else if (value.IsDeepgramThinkProvider)
+            {
+                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Deepgram.Realtime.DeepgramThinkProvider), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Deepgram.Realtime.DeepgramThinkProvider?> ??
+                               throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Deepgram.Realtime.DeepgramThinkProvider).Name}");
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickDeepgramThinkProvider(), typeInfo);
             }
         }
     }
