@@ -223,6 +223,22 @@ namespace Deepgram.Realtime
 
             typeof(global::Deepgram.Realtime.JsonConverters.GroqThinkProviderTypeNullableJsonConverter),
 
+            typeof(global::Deepgram.Realtime.JsonConverters.DeepgramThinkProviderModelJsonConverter),
+
+            typeof(global::Deepgram.Realtime.JsonConverters.DeepgramThinkProviderModelNullableJsonConverter),
+
+            typeof(global::Deepgram.Realtime.JsonConverters.DeepgramThinkProviderVersionJsonConverter),
+
+            typeof(global::Deepgram.Realtime.JsonConverters.DeepgramThinkProviderVersionNullableJsonConverter),
+
+            typeof(global::Deepgram.Realtime.JsonConverters.DeepgramThinkProviderReasoningModeJsonConverter),
+
+            typeof(global::Deepgram.Realtime.JsonConverters.DeepgramThinkProviderReasoningModeNullableJsonConverter),
+
+            typeof(global::Deepgram.Realtime.JsonConverters.DeepgramThinkProviderTypeJsonConverter),
+
+            typeof(global::Deepgram.Realtime.JsonConverters.DeepgramThinkProviderTypeNullableJsonConverter),
+
             typeof(global::Deepgram.Realtime.JsonConverters.ThinkSettingsV1ContextLength0JsonConverter),
 
             typeof(global::Deepgram.Realtime.JsonConverters.ThinkSettingsV1ContextLength0NullableJsonConverter),
@@ -830,6 +846,11 @@ namespace Deepgram.Realtime
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Deepgram.Realtime.GroqThinkProviderReasoningMode), TypeInfoPropertyName = "GroqThinkProviderReasoningMode2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Deepgram.Realtime.GroqThinkProvider))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Deepgram.Realtime.GroqThinkProviderType), TypeInfoPropertyName = "GroqThinkProviderType2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Deepgram.Realtime.DeepgramThinkProviderModel), TypeInfoPropertyName = "DeepgramThinkProviderModel2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Deepgram.Realtime.DeepgramThinkProviderVersion), TypeInfoPropertyName = "DeepgramThinkProviderVersion2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Deepgram.Realtime.DeepgramThinkProviderReasoningMode), TypeInfoPropertyName = "DeepgramThinkProviderReasoningMode2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Deepgram.Realtime.DeepgramThinkProvider))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Deepgram.Realtime.DeepgramThinkProviderType), TypeInfoPropertyName = "DeepgramThinkProviderType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Deepgram.Realtime.ThinkSettingsV1Provider), TypeInfoPropertyName = "ThinkSettingsV1Provider2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Deepgram.Realtime.ThinkSettingsV1Endpoint))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.Dictionary<string, string>))]

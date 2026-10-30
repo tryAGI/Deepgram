@@ -1,0 +1,53 @@
+#nullable enable
+
+namespace Deepgram.Realtime.JsonConverters
+{
+    /// <inheritdoc />
+    public sealed class DeepgramThinkProviderTypeJsonConverter : global::System.Text.Json.Serialization.JsonConverter<global::Deepgram.Realtime.DeepgramThinkProviderType>
+    {
+        /// <inheritdoc />
+        public override global::Deepgram.Realtime.DeepgramThinkProviderType Read(
+            ref global::System.Text.Json.Utf8JsonReader reader,
+            global::System.Type typeToConvert,
+            global::System.Text.Json.JsonSerializerOptions options)
+        {
+            switch (reader.TokenType)
+            {
+                case global::System.Text.Json.JsonTokenType.String:
+                {
+                    var stringValue = reader.GetString();
+                    if (stringValue != null)
+                    {
+                        return global::Deepgram.Realtime.DeepgramThinkProviderTypeExtensions.ToEnum(stringValue) ?? throw new global::System.Text.Json.JsonException($"Unknown discriminator value '{stringValue}' for global::Deepgram.Realtime.DeepgramThinkProviderType.");
+                    }
+
+                    break;
+                }
+                case global::System.Text.Json.JsonTokenType.Number:
+                {
+                    var numValue = reader.GetInt32();
+                    return (global::Deepgram.Realtime.DeepgramThinkProviderType)numValue;
+                }
+                case global::System.Text.Json.JsonTokenType.Null:
+                {
+                    return default(global::Deepgram.Realtime.DeepgramThinkProviderType);
+                }
+                default:
+                    throw new global::System.ArgumentOutOfRangeException(nameof(reader));
+            }
+
+            return default;
+        }
+
+        /// <inheritdoc />
+        public override void Write(
+            global::System.Text.Json.Utf8JsonWriter writer,
+            global::Deepgram.Realtime.DeepgramThinkProviderType value,
+            global::System.Text.Json.JsonSerializerOptions options)
+        {
+            writer = writer ?? throw new global::System.ArgumentNullException(nameof(writer));
+
+            writer.WriteStringValue(global::Deepgram.Realtime.DeepgramThinkProviderTypeExtensions.ToValueString(value));
+        }
+    }
+}
