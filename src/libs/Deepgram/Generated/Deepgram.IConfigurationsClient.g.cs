@@ -19,27 +19,6 @@ namespace Deepgram
         /// </summary>
         public System.Uri? BaseUri { get; }
 
-
-        /// <summary>
-        /// The server options available for this client.
-        /// </summary>
-        public global::System.Collections.Generic.IReadOnlyList<global::Deepgram.AutoSDKServer> AvailableServers { get; }
-
-        /// <summary>
-        /// The currently selected server for this client, if any.
-        /// </summary>
-        public global::Deepgram.AutoSDKServer? SelectedServer { get; set; }
-
-        /// <summary>
-        /// Selects one of the generated server options by id.
-        /// </summary>
-        public bool TrySelectServer(string serverId);
-
-        /// <summary>
-        /// Clears the currently selected server.
-        /// </summary>
-        public void ClearSelectedServer();
-
         /// <summary>
         /// The authorizations to use for the requests.
         /// </summary>

@@ -6,19 +6,6 @@ namespace Deepgram
     public partial class MediaClient
     {
 
-        private static readonly global::Deepgram.AutoSDKServer[] s_TranscribeWithBytesServers = new global::Deepgram.AutoSDKServer[]
-        {            new global::Deepgram.AutoSDKServer(
-                id: "https-api-deepgram-com",
-                name: "api.deepgram.com",
-                url: "https://api.deepgram.com/",
-                description: ""),
-            new global::Deepgram.AutoSDKServer(
-                id: "https-agent-deepgram-com",
-                name: "Production",
-                url: "https://agent.deepgram.com/",
-                description: "Production"),
-        };
-
 
         private static readonly global::Deepgram.EndPointSecurityRequirement s_TranscribeWithBytesSecurityRequirement0 =
             new global::Deepgram.EndPointSecurityRequirement
@@ -524,9 +511,7 @@ namespace Deepgram
 
                             var __pathBuilder = new global::Deepgram.PathBuilder(
                                 path: "/v1/listen",
-                                baseUri: ResolveBaseUri(
-                                servers: s_TranscribeWithBytesServers,
-                                defaultBaseUrl: "https://api.deepgram.com/"));
+                                baseUri: HttpClient.BaseAddress ?? new global::System.Uri("https://api.deepgram.com/", global::System.UriKind.RelativeOrAbsolute));
                             __pathBuilder
                                 .AddOptionalParameter("callback", callback)
                                 .AddOptionalParameter("callback_method", callbackMethod?.ToValueString())
