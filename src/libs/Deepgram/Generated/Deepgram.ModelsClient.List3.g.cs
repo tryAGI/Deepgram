@@ -12,11 +12,6 @@ namespace Deepgram
                 name: "api.deepgram.com",
                 url: "https://api.deepgram.com/",
                 description: ""),
-            new global::Deepgram.AutoSDKServer(
-                id: "https-agent-deepgram-com",
-                name: "Production",
-                url: "https://agent.deepgram.com/",
-                description: "Production"),
         };
 
 

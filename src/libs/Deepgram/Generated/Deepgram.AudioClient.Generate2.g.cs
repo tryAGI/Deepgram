@@ -6,19 +6,6 @@ namespace Deepgram
     public partial class AudioClient
     {
 
-        private static readonly global::Deepgram.AutoSDKServer[] s_Generate2Servers = new global::Deepgram.AutoSDKServer[]
-        {            new global::Deepgram.AutoSDKServer(
-                id: "https-api-deepgram-com",
-                name: "api.deepgram.com",
-                url: "https://api.deepgram.com/",
-                description: ""),
-            new global::Deepgram.AutoSDKServer(
-                id: "https-agent-deepgram-com",
-                name: "Production",
-                url: "https://agent.deepgram.com/",
-                description: "Production"),
-        };
-
 
         private static readonly global::Deepgram.EndPointSecurityRequirement s_Generate2SecurityRequirement0 =
             new global::Deepgram.EndPointSecurityRequirement
@@ -252,9 +239,7 @@ namespace Deepgram
 
                             var __pathBuilder = new global::Deepgram.PathBuilder(
                                 path: "/v2/speak",
-                                baseUri: ResolveBaseUri(
-                                servers: s_Generate2Servers,
-                                defaultBaseUrl: "https://api.deepgram.com/"));
+                                baseUri: HttpClient.BaseAddress ?? new global::System.Uri("https://api.deepgram.com/", global::System.UriKind.RelativeOrAbsolute));
                             __pathBuilder
                                 .AddOptionalParameter("callback", callback)
                                 .AddOptionalParameter("callback_method", callbackMethod?.ToValueString())

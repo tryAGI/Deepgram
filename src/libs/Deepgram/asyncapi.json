@@ -19,12 +19,12 @@
           }
         }
       },
-      "address": "/v1/agent/converse",
       "servers": [
         {
           "$ref": "#/servers/agent"
         }
       ],
+      "address": "/v1/agent/converse",
       "messages": {
         "AgentV1ListenUpdated": {
           "name": "AgentV1ListenUpdated",
@@ -450,12 +450,12 @@
           }
         }
       },
-      "address": "/v1/listen",
       "servers": [
         {
           "$ref": "#/servers/production"
         }
       ],
+      "address": "/v1/listen",
       "messages": {
         "ListenV1ConfigureSuccess": {
           "name": "ListenV1ConfigureSuccess",
@@ -617,12 +617,12 @@
           }
         }
       },
-      "address": "/v2/listen",
       "servers": [
         {
           "$ref": "#/servers/production"
         }
       ],
+      "address": "/v2/listen",
       "messages": {
         "ListenV2Connected": {
           "name": "ListenV2Connected",
@@ -745,12 +745,12 @@
           }
         }
       },
-      "address": "/v1/speak",
       "servers": [
         {
           "$ref": "#/servers/production"
         }
       ],
+      "address": "/v1/speak",
       "messages": {
         "SpeakV1Audio": {
           "name": "SpeakV1Audio",
@@ -870,12 +870,12 @@
           }
         }
       },
-      "address": "/v2/speak",
       "servers": [
         {
           "$ref": "#/servers/production"
         }
       ],
+      "address": "/v2/speak",
       "messages": {
         "SpeakV2Audio": {
           "name": "SpeakV2Audio",

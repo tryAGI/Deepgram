@@ -8,11 +8,6 @@ namespace Deepgram
 
         private static readonly global::Deepgram.AutoSDKServer[] s_ListServers = new global::Deepgram.AutoSDKServer[]
         {            new global::Deepgram.AutoSDKServer(
-                id: "https-api-deepgram-com",
-                name: "api.deepgram.com",
-                url: "https://api.deepgram.com/",
-                description: ""),
-            new global::Deepgram.AutoSDKServer(
                 id: "https-agent-deepgram-com",
                 name: "Production",
                 url: "https://agent.deepgram.com/",
@@ -113,7 +108,7 @@ namespace Deepgram
                                 path: "/v1/agent/settings/think/models",
                                 baseUri: ResolveBaseUri(
                                 servers: s_ListServers,
-                                defaultBaseUrl: "https://api.deepgram.com/"));
+                                defaultBaseUrl: "https://agent.deepgram.com/"));
                             var __path = __pathBuilder.ToString();
                 __path = global::Deepgram.AutoSDKRequestOptionsSupport.AppendQueryParameters(
                     path: __path,
