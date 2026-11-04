@@ -173,6 +173,11 @@ To boost multiple separate keyterms, repeat the `keyterm` parameter (for example
         Description = @"Redaction removes sensitive information from your transcripts",
     };
 
+    private static Option<bool?> RedactUsage { get; } = CliRuntime.CreateNullableBoolOption(
+        name: @"--redact-usage",
+        description: @"Replaces the values of user-supplied text parameters (`keyterm`, `keywords`, `replace`, `search`, `extra`, `custom_topic`, and `custom_intent`) with `[REDACTED]` in this request's usage records. Does not affect transcription, the response, `tag`, or `callback`. Independent of `mip_opt_out`. https://developers.deepgram.com/docs/redact-usage
+");
+
     private static Option<global::Deepgram.V1ListenPostParametersReplace?> Replace { get; } = new(
         name: @"--replace")
     {
@@ -282,6 +287,7 @@ Transcribe audio and video using Deepgram's speech-to-text REST API");
                         command.Options.Add(ProfanityFilter);
                         command.Options.Add(Punctuate);
                         command.Options.Add(Redact);
+                        command.Options.Add(RedactUsage);
                         command.Options.Add(Replace);
                         command.Options.Add(Search);
                         command.Options.Add(SmartFormat);
@@ -338,6 +344,7 @@ Transcribe audio and video using Deepgram's speech-to-text REST API");
                         var profanityFilter = parseResult.GetValue(ProfanityFilter);
                         var punctuate = parseResult.GetValue(Punctuate);
                         var redact = parseResult.GetValue(Redact);
+                        var redactUsage = parseResult.GetValue(RedactUsage);
                         var replace = parseResult.GetValue(Replace);
                         var search = parseResult.GetValue(Search);
                         var smartFormat = parseResult.GetValue(SmartFormat);
@@ -387,6 +394,7 @@ Transcribe audio and video using Deepgram's speech-to-text REST API");
                                     profanityFilter: profanityFilter,
                                     punctuate: punctuate,
                                     redact: redact,
+                                    redactUsage: redactUsage,
                                     replace: replace,
                                     search: search,
                                     smartFormat: smartFormat,

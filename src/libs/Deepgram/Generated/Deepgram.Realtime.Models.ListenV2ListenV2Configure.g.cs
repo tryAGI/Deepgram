@@ -54,6 +54,12 @@ namespace Deepgram.Realtime
         public bool? Numerals { get; set; }
 
         /// <summary>
+        /// Set to `true` to redact keyterms sent in this and later Configure messages from this connection's usage records. Does not redact keyterms in the connection URL; set the `redact_usage` query parameter for that. Once on, it stays on for the rest of the connection; `false` has no effect.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("redact_usage")]
+        public bool? RedactUsage { get; set; }
+
+        /// <summary>
         /// Additional properties that are not explicitly defined in the schema
         /// </summary>
         [global::System.Text.Json.Serialization.JsonExtensionData]
@@ -90,6 +96,9 @@ namespace Deepgram.Realtime
         /// Numerals converts numbers from written format to numerical format. Applies to transcripts Flux STT sends after it processes the update.<br/>
         /// Default Value: false
         /// </param>
+        /// <param name="redactUsage">
+        /// Set to `true` to redact keyterms sent in this and later Configure messages from this connection's usage records. Does not redact keyterms in the connection URL; set the `redact_usage` query parameter for that. Once on, it stays on for the rest of the connection; `false` has no effect.
+        /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -98,13 +107,15 @@ namespace Deepgram.Realtime
             global::Deepgram.Realtime.ChannelsListenV2MessagesListenV2ConfigureThresholds? thresholds,
             global::Deepgram.Realtime.ListenV2Keyterm? keyterms,
             global::System.Collections.Generic.IList<string>? languageHints,
-            bool? numerals)
+            bool? numerals,
+            bool? redactUsage)
         {
             this.Type = type;
             this.Thresholds = thresholds;
             this.Keyterms = keyterms;
             this.LanguageHints = languageHints;
             this.Numerals = numerals;
+            this.RedactUsage = redactUsage;
         }
 
         /// <summary>

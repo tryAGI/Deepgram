@@ -61,6 +61,12 @@ namespace Deepgram.Realtime
         public bool? Numerals { get; set; }
 
         /// <summary>
+        /// Whether usage redaction is on for this connection.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("redact_usage")]
+        public bool? RedactUsage { get; set; }
+
+        /// <summary>
         /// Starts at `0` and increments for each message the server sends<br/>
         /// to the client.  This includes messages of other types, like<br/>
         /// `TurnInfo` messages.
@@ -112,6 +118,9 @@ namespace Deepgram.Realtime
         /// Whether numeral formatting is enabled for transcripts Flux STT sends after it processes the update.<br/>
         /// Default Value: false
         /// </param>
+        /// <param name="redactUsage">
+        /// Whether usage redaction is on for this connection.
+        /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -122,7 +131,8 @@ namespace Deepgram.Realtime
             int sequenceId,
             global::Deepgram.Realtime.ListenV2ListenV2ConfigureSuccessType type,
             global::System.Collections.Generic.IList<string>? languageHints,
-            bool? numerals)
+            bool? numerals,
+            bool? redactUsage)
         {
             this.Type = type;
             this.RequestId = requestId;
@@ -130,6 +140,7 @@ namespace Deepgram.Realtime
             this.Keyterms = keyterms;
             this.LanguageHints = languageHints;
             this.Numerals = numerals;
+            this.RedactUsage = redactUsage;
             this.SequenceId = sequenceId;
         }
 
