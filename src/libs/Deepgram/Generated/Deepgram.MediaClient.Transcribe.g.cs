@@ -58,6 +58,7 @@ namespace Deepgram
             ref bool? profanityFilter,
             ref bool? punctuate,
             ref global::Deepgram.V1ListenPostParametersRedact? redact,
+            ref bool? redactUsage,
             ref global::Deepgram.V1ListenPostParametersReplace? replace,
             ref global::Deepgram.V1ListenPostParametersSearch? search,
             ref bool? smartFormat,
@@ -100,6 +101,7 @@ namespace Deepgram
             bool? profanityFilter,
             bool? punctuate,
             global::Deepgram.V1ListenPostParametersRedact? redact,
+            bool? redactUsage,
             global::Deepgram.V1ListenPostParametersReplace? replace,
             global::Deepgram.V1ListenPostParametersSearch? search,
             bool? smartFormat,
@@ -190,6 +192,9 @@ namespace Deepgram
         /// <param name="redact">
         /// Default Value: false
         /// </param>
+        /// <param name="redactUsage">
+        /// Default Value: false
+        /// </param>
         /// <param name="replace"></param>
         /// <param name="search"></param>
         /// <param name="smartFormat">
@@ -245,6 +250,7 @@ namespace Deepgram
             bool? profanityFilter = default,
             bool? punctuate = default,
             global::Deepgram.V1ListenPostParametersRedact? redact = default,
+            bool? redactUsage = default,
             global::Deepgram.V1ListenPostParametersReplace? replace = default,
             global::Deepgram.V1ListenPostParametersSearch? search = default,
             bool? smartFormat = default,
@@ -289,6 +295,7 @@ namespace Deepgram
                 profanityFilter: profanityFilter,
                 punctuate: punctuate,
                 redact: redact,
+                redactUsage: redactUsage,
                 replace: replace,
                 search: search,
                 smartFormat: smartFormat,
@@ -375,6 +382,9 @@ namespace Deepgram
         /// <param name="redact">
         /// Default Value: false
         /// </param>
+        /// <param name="redactUsage">
+        /// Default Value: false
+        /// </param>
         /// <param name="replace"></param>
         /// <param name="search"></param>
         /// <param name="smartFormat">
@@ -430,6 +440,7 @@ namespace Deepgram
             bool? profanityFilter = default,
             bool? punctuate = default,
             global::Deepgram.V1ListenPostParametersRedact? redact = default,
+            bool? redactUsage = default,
             global::Deepgram.V1ListenPostParametersReplace? replace = default,
             global::Deepgram.V1ListenPostParametersSearch? search = default,
             bool? smartFormat = default,
@@ -477,6 +488,7 @@ namespace Deepgram
                 profanityFilter: ref profanityFilter,
                 punctuate: ref punctuate,
                 redact: ref redact,
+                redactUsage: ref redactUsage,
                 replace: ref replace,
                 search: ref search,
                 smartFormat: ref smartFormat,
@@ -568,6 +580,7 @@ namespace Deepgram
                 static x => (global::System.Collections.Generic.IEnumerable<string?>)new string?[] { x },
                 static x => (global::System.Collections.Generic.IEnumerable<string?>)global::System.Linq.Enumerable.Select(x, static item => item.ToValueString()),
                 validate: false), delimiter: ",", explode: true)
+                                .AddOptionalParameter("redact_usage", redactUsage?.ToString().ToLowerInvariant())
                                 .AddOptionalParameter("replace", replace?.Match(
                 static x => (global::System.Collections.Generic.IEnumerable<string?>)new string?[] { x },
                 static x => (global::System.Collections.Generic.IEnumerable<string?>)global::System.Linq.Enumerable.Select(x, static item => item),
@@ -659,6 +672,7 @@ namespace Deepgram
                     profanityFilter: profanityFilter,
                     punctuate: punctuate,
                     redact: redact,
+                    redactUsage: redactUsage,
                     replace: replace,
                     search: search,
                     smartFormat: smartFormat,
@@ -1051,6 +1065,9 @@ namespace Deepgram
         /// <param name="redact">
         /// Default Value: false
         /// </param>
+        /// <param name="redactUsage">
+        /// Default Value: false
+        /// </param>
         /// <param name="replace"></param>
         /// <param name="search"></param>
         /// <param name="smartFormat">
@@ -1105,6 +1122,7 @@ namespace Deepgram
             bool? profanityFilter = default,
             bool? punctuate = default,
             global::Deepgram.V1ListenPostParametersRedact? redact = default,
+            bool? redactUsage = default,
             global::Deepgram.V1ListenPostParametersReplace? replace = default,
             global::Deepgram.V1ListenPostParametersSearch? search = default,
             bool? smartFormat = default,
@@ -1152,6 +1170,7 @@ namespace Deepgram
                 profanityFilter: profanityFilter,
                 punctuate: punctuate,
                 redact: redact,
+                redactUsage: redactUsage,
                 replace: replace,
                 search: search,
                 smartFormat: smartFormat,

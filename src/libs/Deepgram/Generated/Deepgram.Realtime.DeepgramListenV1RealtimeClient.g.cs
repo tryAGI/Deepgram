@@ -550,6 +550,7 @@ namespace Deepgram.Realtime
         /// <param name="profanityFilter">Profanity Filter looks for recognized profanity and converts it to the nearest recognized non-profane word or removes it from the transcript completely</param>
         /// <param name="punctuate">Add punctuation and capitalization to the transcript</param>
         /// <param name="redact">Redaction removes sensitive information from your transcripts</param>
+        /// <param name="redactUsage">Replaces the values of user-supplied text parameters (`keyterm`, `keywords`, `replace`, `search`, and `extra`) with `[REDACTED]` in this request's usage records. Does not affect transcription, the response, or `tag`. Independent of `mip_opt_out`. https://developers.deepgram.com/docs/redact-usage</param>
         /// <param name="replace">Any type</param>
         /// <param name="sampleRate">Any type</param>
         /// <param name="search">Any type</param>
@@ -587,6 +588,7 @@ namespace Deepgram.Realtime
             global::Deepgram.Realtime.ListenV1ProfanityFilter? profanityFilter = default,
             global::Deepgram.Realtime.ListenV1Punctuate? punctuate = default,
             global::Deepgram.Realtime.ListenV1Redact? redact = default,
+            global::Deepgram.Realtime.ListenV1RedactUsage? redactUsage = default,
             global::Deepgram.Realtime.ListenV1Replace? replace = default,
             global::Deepgram.Realtime.ListenV1SampleRate? sampleRate = default,
             global::Deepgram.Realtime.ListenV1Search? search = default,
@@ -638,6 +640,7 @@ validate: false), delimiter: ",", explode: true)
                 .AddOptionalParameter("profanity_filter", profanityFilter?.ToValueString())
                 .AddOptionalParameter("punctuate", punctuate?.ToValueString())
                 .AddOptionalParameter("redact", redact?.ToValueString())
+                .AddOptionalParameter("redact_usage", redactUsage?.ToValueString())
                 .AddOptionalParameter("replace", replace?.ToString())
                 .AddOptionalParameter("sample_rate", sampleRate?.ToString())
                 .AddOptionalParameter("search", search?.ToString())

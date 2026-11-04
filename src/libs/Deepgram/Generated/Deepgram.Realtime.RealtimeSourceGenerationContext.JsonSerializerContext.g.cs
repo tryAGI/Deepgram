@@ -431,6 +431,10 @@ namespace Deepgram.Realtime
 
             typeof(global::Deepgram.Realtime.JsonConverters.ListenV1RedactNullableJsonConverter),
 
+            typeof(global::Deepgram.Realtime.JsonConverters.ListenV1RedactUsageJsonConverter),
+
+            typeof(global::Deepgram.Realtime.JsonConverters.ListenV1RedactUsageNullableJsonConverter),
+
             typeof(global::Deepgram.Realtime.JsonConverters.ListenV1SmartFormatJsonConverter),
 
             typeof(global::Deepgram.Realtime.JsonConverters.ListenV1SmartFormatNullableJsonConverter),
@@ -506,6 +510,10 @@ namespace Deepgram.Realtime
             typeof(global::Deepgram.Realtime.JsonConverters.ListenV2RedactJsonConverter),
 
             typeof(global::Deepgram.Realtime.JsonConverters.ListenV2RedactNullableJsonConverter),
+
+            typeof(global::Deepgram.Realtime.JsonConverters.ListenV2RedactUsageJsonConverter),
+
+            typeof(global::Deepgram.Realtime.JsonConverters.ListenV2RedactUsageNullableJsonConverter),
 
             typeof(global::Deepgram.Realtime.JsonConverters.ChannelsListenV2MessagesListenV2ConnectedTypeJsonConverter),
 
@@ -957,6 +965,7 @@ namespace Deepgram.Realtime
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Deepgram.Realtime.ListenV1ProfanityFilter), TypeInfoPropertyName = "ListenV1ProfanityFilter2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Deepgram.Realtime.ListenV1Punctuate), TypeInfoPropertyName = "ListenV1Punctuate2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Deepgram.Realtime.ListenV1Redact), TypeInfoPropertyName = "ListenV1Redact2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Deepgram.Realtime.ListenV1RedactUsage), TypeInfoPropertyName = "ListenV1RedactUsage2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Deepgram.Realtime.ListenV1Replace))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Deepgram.Realtime.ListenV1SampleRate))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Deepgram.Realtime.ListenV1Search))]
@@ -1011,6 +1020,7 @@ namespace Deepgram.Realtime
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Deepgram.Realtime.ListenV2ProfanityFilter), TypeInfoPropertyName = "ListenV2ProfanityFilter2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Deepgram.Realtime.ListenV2Numerals), TypeInfoPropertyName = "ListenV2Numerals2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Deepgram.Realtime.ListenV2Redact), TypeInfoPropertyName = "ListenV2Redact2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Deepgram.Realtime.ListenV2RedactUsage), TypeInfoPropertyName = "ListenV2RedactUsage2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Deepgram.Realtime.ListenV2MipOptOut))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Deepgram.Realtime.ListenV2Tag))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Deepgram.Realtime.ChannelsListenV2MessagesListenV2ConnectedType), TypeInfoPropertyName = "ChannelsListenV2MessagesListenV2ConnectedType2")]
