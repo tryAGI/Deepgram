@@ -550,6 +550,7 @@ namespace Deepgram.Realtime
         /// <param name="expressivity">Expressive range of the generated speech, on a calm-to-animated axis. Accepted values: `-2`, `-1`, `0`, `1`, `2`. `0` (the default) is the voice's tuned delivery and the production-validated setting, with `-2` the calm end of the range and `2` the animated end. Supported on all Flux voices. Fixed for the connection — not settable via `Configure`. Beta: behavior may change in future model versions, and non-default values increase the risk of hallucinations and pronunciation errors; audition before shipping. An invalid value fails the connection with a `400` — `EXPRESSIVITY_OUT_OF_RANGE` for a value outside the range, `EXPRESSIVITY_INCREMENT_INVALID` for a fractional value. See [Expressivity](/docs/tts-expressivity).</param>
         /// <param name="mipOptOut">Any type</param>
         /// <param name="model">The Flux TTS model used to synthesize speech. Required on every connection. Model strings follow the format `flux-{voice}-{language}` (e.g. `flux-alexis-en`). An Aura model string is rejected on `/v2/speak`; use `/v1/speak` for Aura voices.</param>
+        /// <param name="normalizeVolume">Normalizes the loudness of the generated speech to a consistent level across voices and turns. On by default; set to `false` to opt out. Peak  limiting is applied either way.</param>
         /// <param name="sampleRate">Output sample rate in Hz. With `linear16`, valid values are `8000`, `16000`, `24000`, `32000`, `44100`, and `48000`. With `mulaw` or `alaw`, valid values are `8000` and `16000`. Defaults to the model's native sample rate.</param>
         /// <param name="speed">Speech-rate multiplier. `1.0` is the model's nominal rate; lower is slower. Accepted values run `0.5` to `1.5` in `0.05` increments. A value outside that range is rejected with `SPEED_OUT_OF_RANGE`; a value inside it but off the `0.05` increment with `SPEED_INCREMENT_INVALID`. Models and languages without runtime speed control reject any value with `SPEED_NOT_SUPPORTED`. A speed other than `1.0` cannot be combined with inline pronunciation controls; see [Speed, Pause, Pronunciation](/docs/tts-voice-controls).</param>
         /// <param name="tag">Any type</param>
@@ -564,6 +565,7 @@ namespace Deepgram.Realtime
             global::Deepgram.Realtime.SpeakV2Expressivity? expressivity = default,
             global::Deepgram.Realtime.SpeakV2MipOptOut? mipOptOut = default,
             string? model = default,
+            global::Deepgram.Realtime.SpeakV2NormalizeVolume? normalizeVolume = default,
             global::Deepgram.Realtime.SpeakV2SampleRate? sampleRate = default,
             double? speed = default,
             global::Deepgram.Realtime.SpeakV2Tag? tag = default,
@@ -589,6 +591,7 @@ namespace Deepgram.Realtime
                 .AddOptionalParameter("expressivity", expressivity?.ToValueString())
                 .AddOptionalParameter("mip_opt_out", mipOptOut?.ToString())
                 .AddOptionalParameter("model", model)
+                .AddOptionalParameter("normalize_volume", normalizeVolume?.ToValueString())
                 .AddOptionalParameter("sample_rate", sampleRate?.ToValueString())
                 .AddOptionalParameter("speed", speed?.ToString())
                 .AddOptionalParameter("tag", tag?.ToString())

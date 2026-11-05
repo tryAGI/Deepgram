@@ -60,6 +60,10 @@ internal static partial class AudioGenerate2CommandApiCommand
         Required = true,
     };
 
+    private static Option<bool?> NormalizeVolume { get; } = CliRuntime.CreateNullableBoolOption(
+        name: @"--normalize-volume",
+        description: @"Normalizes the loudness of the generated speech to a consistent level across voices and requests. On by default; set to `false` to opt out. Peak limiting is applied either way.");
+
     private static Option<global::Deepgram.V2SpeakPostParametersSampleRate?> SampleRate { get; } = new(
         name: @"--sample-rate")
     {
@@ -120,6 +124,7 @@ Synthesize a complete block of text into a single audio response using Deepgram'
                         command.Options.Add(Encoding);
                         command.Options.Add(Expressivity);
                         command.Options.Add(Model);
+                        command.Options.Add(NormalizeVolume);
                         command.Options.Add(SampleRate);
                         command.Options.Add(Speed);
                         command.Options.Add(Priority);
@@ -138,6 +143,7 @@ Synthesize a complete block of text into a single audio response using Deepgram'
                         var encoding = parseResult.GetValue(Encoding);
                         var expressivity = parseResult.GetValue(Expressivity);
                         var model = parseResult.GetRequiredValue(Model);
+                        var normalizeVolume = parseResult.GetValue(NormalizeVolume);
                         var sampleRate = parseResult.GetValue(SampleRate);
                         var speed = parseResult.GetValue(Speed);
                         var priority = parseResult.GetValue(Priority);
@@ -155,6 +161,7 @@ Synthesize a complete block of text into a single audio response using Deepgram'
                                     encoding: encoding,
                                     expressivity: expressivity,
                                     model: model,
+                                    normalizeVolume: normalizeVolume,
                                     sampleRate: sampleRate,
                                     speed: speed,
                                     priority: priority,
