@@ -36,6 +36,7 @@ namespace Deepgram
             ref global::Deepgram.V2SpeakPostParametersEncoding? encoding,
             ref global::Deepgram.V2SpeakPostParametersExpressivity? expressivity,
             ref string model,
+            ref bool? normalizeVolume,
             ref global::Deepgram.V2SpeakPostParametersSampleRate? sampleRate,
             ref double? speed,
             ref global::Deepgram.V2SpeakPostParametersPriority? priority,
@@ -52,6 +53,7 @@ namespace Deepgram
             global::Deepgram.V2SpeakPostParametersEncoding? encoding,
             global::Deepgram.V2SpeakPostParametersExpressivity? expressivity,
             string model,
+            bool? normalizeVolume,
             global::Deepgram.V2SpeakPostParametersSampleRate? sampleRate,
             double? speed,
             global::Deepgram.V2SpeakPostParametersPriority? priority,
@@ -90,6 +92,9 @@ namespace Deepgram
         /// Default Value: 0
         /// </param>
         /// <param name="model"></param>
+        /// <param name="normalizeVolume">
+        /// Default Value: true
+        /// </param>
         /// <param name="sampleRate">
         /// Default Value: 24000
         /// </param>
@@ -113,6 +118,7 @@ namespace Deepgram
             global::Deepgram.V2SpeakPostParametersContainer? container = default,
             global::Deepgram.V2SpeakPostParametersEncoding? encoding = default,
             global::Deepgram.V2SpeakPostParametersExpressivity? expressivity = default,
+            bool? normalizeVolume = default,
             global::Deepgram.V2SpeakPostParametersSampleRate? sampleRate = default,
             double? speed = default,
             global::Deepgram.V2SpeakPostParametersPriority? priority = default,
@@ -131,6 +137,7 @@ namespace Deepgram
                 container: container,
                 encoding: encoding,
                 expressivity: expressivity,
+                normalizeVolume: normalizeVolume,
                 sampleRate: sampleRate,
                 speed: speed,
                 priority: priority,
@@ -165,6 +172,9 @@ namespace Deepgram
         /// Default Value: 0
         /// </param>
         /// <param name="model"></param>
+        /// <param name="normalizeVolume">
+        /// Default Value: true
+        /// </param>
         /// <param name="sampleRate">
         /// Default Value: 24000
         /// </param>
@@ -188,6 +198,7 @@ namespace Deepgram
             global::Deepgram.V2SpeakPostParametersContainer? container = default,
             global::Deepgram.V2SpeakPostParametersEncoding? encoding = default,
             global::Deepgram.V2SpeakPostParametersExpressivity? expressivity = default,
+            bool? normalizeVolume = default,
             global::Deepgram.V2SpeakPostParametersSampleRate? sampleRate = default,
             double? speed = default,
             global::Deepgram.V2SpeakPostParametersPriority? priority = default,
@@ -209,6 +220,7 @@ namespace Deepgram
                 encoding: ref encoding,
                 expressivity: ref expressivity,
                 model: ref model,
+                normalizeVolume: ref normalizeVolume,
                 sampleRate: ref sampleRate,
                 speed: ref speed,
                 priority: ref priority,
@@ -253,6 +265,7 @@ namespace Deepgram
                                 .AddOptionalParameter("encoding", encoding?.ToString())
                                 .AddOptionalParameter("expressivity", expressivity?.ToValueString())
                                 .AddRequiredParameter("model", model)
+                                .AddOptionalParameter("normalize_volume", normalizeVolume?.ToString().ToLowerInvariant())
                                 .AddOptionalParameter("sample_rate", sampleRate?.ToString())
                                 .AddOptionalParameter("speed", speed?.ToString())
                                 .AddOptionalParameter("priority", priority?.ToValueString())
@@ -312,6 +325,7 @@ namespace Deepgram
                     encoding: encoding,
                     expressivity: expressivity,
                     model: model,
+                    normalizeVolume: normalizeVolume,
                     sampleRate: sampleRate,
                     speed: speed,
                     priority: priority,
@@ -652,6 +666,9 @@ namespace Deepgram
         /// Default Value: 0
         /// </param>
         /// <param name="model"></param>
+        /// <param name="normalizeVolume">
+        /// Default Value: true
+        /// </param>
         /// <param name="sampleRate">
         /// Default Value: 24000
         /// </param>
@@ -676,6 +693,7 @@ namespace Deepgram
             global::Deepgram.V2SpeakPostParametersContainer? container = default,
             global::Deepgram.V2SpeakPostParametersEncoding? encoding = default,
             global::Deepgram.V2SpeakPostParametersExpressivity? expressivity = default,
+            bool? normalizeVolume = default,
             global::Deepgram.V2SpeakPostParametersSampleRate? sampleRate = default,
             double? speed = default,
             global::Deepgram.V2SpeakPostParametersPriority? priority = default,
@@ -697,6 +715,7 @@ namespace Deepgram
                 encoding: encoding,
                 expressivity: expressivity,
                 model: model,
+                normalizeVolume: normalizeVolume,
                 sampleRate: sampleRate,
                 speed: speed,
                 priority: priority,
