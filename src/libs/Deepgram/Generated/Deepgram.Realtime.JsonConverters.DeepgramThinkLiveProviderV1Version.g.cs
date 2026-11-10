@@ -18,7 +18,7 @@ namespace Deepgram.Realtime.JsonConverters
                     var stringValue = reader.GetString();
                     if (stringValue != null)
                     {
-                        return global::Deepgram.Realtime.DeepgramThinkLiveProviderV1VersionExtensions.ToEnum(stringValue) ?? throw new global::System.Text.Json.JsonException($"Unknown discriminator value '{stringValue}' for global::Deepgram.Realtime.DeepgramThinkLiveProviderV1Version.");
+                        return global::Deepgram.Realtime.DeepgramThinkLiveProviderV1VersionExtensions.ToEnum(stringValue) ?? throw new global::System.Text.Json.JsonException($"Unknown value '{stringValue}' for global::Deepgram.Realtime.DeepgramThinkLiveProviderV1Version.");
                     }
 
                     break;

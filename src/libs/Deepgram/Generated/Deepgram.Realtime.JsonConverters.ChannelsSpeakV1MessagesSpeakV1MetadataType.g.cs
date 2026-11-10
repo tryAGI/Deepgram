@@ -18,7 +18,7 @@ namespace Deepgram.Realtime.JsonConverters
                     var stringValue = reader.GetString();
                     if (stringValue != null)
                     {
-                        return global::Deepgram.Realtime.ChannelsSpeakV1MessagesSpeakV1MetadataTypeExtensions.ToEnum(stringValue) ?? throw new global::System.Text.Json.JsonException($"Unknown discriminator value '{stringValue}' for global::Deepgram.Realtime.ChannelsSpeakV1MessagesSpeakV1MetadataType.");
+                        return global::Deepgram.Realtime.ChannelsSpeakV1MessagesSpeakV1MetadataTypeExtensions.ToEnum(stringValue) ?? throw new global::System.Text.Json.JsonException($"Unknown value '{stringValue}' for global::Deepgram.Realtime.ChannelsSpeakV1MessagesSpeakV1MetadataType.");
                     }
 
                     break;

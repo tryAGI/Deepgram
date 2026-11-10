@@ -18,7 +18,7 @@ namespace Deepgram.Realtime.JsonConverters
                     var stringValue = reader.GetString();
                     if (stringValue != null)
                     {
-                        return global::Deepgram.Realtime.CartesiaSpeakProviderVersionExtensions.ToEnum(stringValue) ?? throw new global::System.Text.Json.JsonException($"Unknown discriminator value '{stringValue}' for global::Deepgram.Realtime.CartesiaSpeakProviderVersion.");
+                        return global::Deepgram.Realtime.CartesiaSpeakProviderVersionExtensions.ToEnum(stringValue) ?? throw new global::System.Text.Json.JsonException($"Unknown value '{stringValue}' for global::Deepgram.Realtime.CartesiaSpeakProviderVersion.");
                     }
 
                     break;
