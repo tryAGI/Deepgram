@@ -85,6 +85,8 @@ namespace Deepgram
             global::Deepgram.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
+            request = request ?? throw new global::System.ArgumentNullException(nameof(request));
+
             PrepareArguments(
                 client: HttpClient);
             PrepareCreateArguments(
@@ -482,16 +484,31 @@ namespace Deepgram
         /// Creates a new API key with specified settings for the project
         /// </summary>
         /// <param name="projectId"></param>
+        /// <param name="comment"></param>
+        /// <param name="scopes"></param>
+        /// <param name="tags"></param>
+        /// <param name="expirationDate"></param>
+        /// <param name="timeToLiveInSeconds"></param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::System.InvalidOperationException"></exception>
         public async global::System.Threading.Tasks.Task<global::Deepgram.CreateKeyV1Response> CreateAsync(
             string projectId,
+            string comment,
+            global::System.Collections.Generic.IList<string> scopes,
+            global::System.Collections.Generic.IList<string>? tags = default,
+            global::System.DateTime? expirationDate = default,
+            double? timeToLiveInSeconds = default,
             global::Deepgram.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
             var __request = new global::Deepgram.CreateKeyV1Request
             {
+                Comment = comment,
+                Scopes = scopes,
+                Tags = tags,
+                ExpirationDate = expirationDate,
+                TimeToLiveInSeconds = timeToLiveInSeconds,
             };
 
             return await CreateAsync(

@@ -2,7 +2,7 @@
 
 namespace Deepgram
 {
-    public readonly partial struct CreateKeyV1Request
+    public sealed partial class CreateKeyV1Request
     {
         /// <summary>
         /// Serializes the current instance to a JSON string using the provided JsonSerializerContext.
@@ -54,7 +54,7 @@ namespace Deepgram
             return global::System.Text.Json.JsonSerializer.Deserialize(
                 json,
                 typeof(global::Deepgram.CreateKeyV1Request),
-                jsonSerializerContext) as global::Deepgram.CreateKeyV1Request?;
+                jsonSerializerContext) as global::Deepgram.CreateKeyV1Request;
         }
 
         /// <summary>
@@ -101,7 +101,7 @@ namespace Deepgram
             return (await global::System.Text.Json.JsonSerializer.DeserializeAsync(
                 jsonStream,
                 typeof(global::Deepgram.CreateKeyV1Request),
-                jsonSerializerContext).ConfigureAwait(false)) as global::Deepgram.CreateKeyV1Request?;
+                jsonSerializerContext).ConfigureAwait(false)) as global::Deepgram.CreateKeyV1Request;
         }
 
         /// <summary>
