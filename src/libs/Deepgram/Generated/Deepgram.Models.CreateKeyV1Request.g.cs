@@ -1,4 +1,3 @@
-#pragma warning disable CS0618 // Type or member is obsolete
 
 #nullable enable
 
@@ -7,244 +6,77 @@ namespace Deepgram
     /// <summary>
     ///
     /// </summary>
-    public readonly partial struct CreateKeyV1Request : global::System.IEquatable<CreateKeyV1Request>
+    public sealed partial class CreateKeyV1Request
     {
         /// <summary>
-        /// Any type
+        ///
         /// </summary>
-#if NET6_0_OR_GREATER
-        public object? CreateKeyV1RequestVariant1 { get; init; }
-#else
-        public object? CreateKeyV1RequestVariant1 { get; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("comment")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string Comment { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("scopes")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required global::System.Collections.Generic.IList<string> Scopes { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("tags")]
+        public global::System.Collections.Generic.IList<string>? Tags { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("expiration_date")]
+        public global::System.DateTime? ExpirationDate { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("time_to_live_in_seconds")]
+        public double? TimeToLiveInSeconds { get; set; }
+
+        /// <summary>
+        /// Additional properties that are not explicitly defined in the schema
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonExtensionData]
+        public global::System.Collections.Generic.IDictionary<string, object> AdditionalProperties { get; set; } = new global::System.Collections.Generic.Dictionary<string, object>();
+
+        /// <summary>
+        /// Initializes a new instance of the <see cref="CreateKeyV1Request" /> class.
+        /// </summary>
+        /// <param name="comment"></param>
+        /// <param name="scopes"></param>
+        /// <param name="tags"></param>
+        /// <param name="expirationDate"></param>
+        /// <param name="timeToLiveInSeconds"></param>
+#if NET7_0_OR_GREATER
+        [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
-
-        /// <summary>
-        ///
-        /// </summary>
-#if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(CreateKeyV1RequestVariant1))]
-#endif
-        public bool IsCreateKeyV1RequestVariant1 => CreateKeyV1RequestVariant1 != null;
-
-        /// <summary>
-        ///
-        /// </summary>
-        public bool TryPickCreateKeyV1RequestVariant1(
-#if NET6_0_OR_GREATER
-            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
-#endif
-            out object? value)
-        {
-            value = CreateKeyV1RequestVariant1;
-            return IsCreateKeyV1RequestVariant1;
-        }
-
-        /// <summary>
-        ///
-        /// </summary>
-        public object PickCreateKeyV1RequestVariant1() => CreateKeyV1RequestVariant1 is { } value
-            ? value
-            : throw new global::System.InvalidOperationException($"Expected union variant 'CreateKeyV1RequestVariant1' but the value was {ToString()}.");
-
-        /// <summary>
-        /// Any type
-        /// </summary>
-#if NET6_0_OR_GREATER
-        public object? CreateKeyV1RequestVariant2 { get; init; }
-#else
-        public object? CreateKeyV1RequestVariant2 { get; }
-#endif
-
-        /// <summary>
-        ///
-        /// </summary>
-#if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(CreateKeyV1RequestVariant2))]
-#endif
-        public bool IsCreateKeyV1RequestVariant2 => CreateKeyV1RequestVariant2 != null;
-
-        /// <summary>
-        ///
-        /// </summary>
-        public bool TryPickCreateKeyV1RequestVariant2(
-#if NET6_0_OR_GREATER
-            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
-#endif
-            out object? value)
-        {
-            value = CreateKeyV1RequestVariant2;
-            return IsCreateKeyV1RequestVariant2;
-        }
-
-        /// <summary>
-        ///
-        /// </summary>
-        public object PickCreateKeyV1RequestVariant2() => CreateKeyV1RequestVariant2 is { } value
-            ? value
-            : throw new global::System.InvalidOperationException($"Expected union variant 'CreateKeyV1RequestVariant2' but the value was {ToString()}.");
-
-        /// <summary>
-        ///
-        /// </summary>
         public CreateKeyV1Request(
-            object? createKeyV1RequestVariant1,
-            object? createKeyV1RequestVariant2
-            )
+            string comment,
+            global::System.Collections.Generic.IList<string> scopes,
+            global::System.Collections.Generic.IList<string>? tags,
+            global::System.DateTime? expirationDate,
+            double? timeToLiveInSeconds)
         {
-            CreateKeyV1RequestVariant1 = createKeyV1RequestVariant1;
-            CreateKeyV1RequestVariant2 = createKeyV1RequestVariant2;
+            this.Comment = comment ?? throw new global::System.ArgumentNullException(nameof(comment));
+            this.Scopes = scopes ?? throw new global::System.ArgumentNullException(nameof(scopes));
+            this.Tags = tags;
+            this.ExpirationDate = expirationDate;
+            this.TimeToLiveInSeconds = timeToLiveInSeconds;
         }
 
         /// <summary>
-        ///
+        /// Initializes a new instance of the <see cref="CreateKeyV1Request" /> class.
         /// </summary>
-        public object? Object =>
-            CreateKeyV1RequestVariant2 as object ??
-            CreateKeyV1RequestVariant1 as object
-            ;
-
-        /// <summary>
-        ///
-        /// </summary>
-        public override string? ToString() =>
-            CreateKeyV1RequestVariant1?.ToString() ??
-            CreateKeyV1RequestVariant2?.ToString()
-            ;
-
-        /// <summary>
-        ///
-        /// </summary>
-        public bool Validate()
+        public CreateKeyV1Request()
         {
-            return IsCreateKeyV1RequestVariant1 && !IsCreateKeyV1RequestVariant2 || !IsCreateKeyV1RequestVariant1 && IsCreateKeyV1RequestVariant2;
         }
 
-        /// <summary>
-        ///
-        /// </summary>
-        public TResult? Match<TResult>(
-            global::System.Func<object, TResult>? createKeyV1RequestVariant1 = null,
-            global::System.Func<object, TResult>? createKeyV1RequestVariant2 = null,
-            bool validate = true)
-        {
-            if (validate)
-            {
-                Validate();
-            }
-
-            if (CreateKeyV1RequestVariant1 is { } __value0 && createKeyV1RequestVariant1 != null)
-            {
-                return createKeyV1RequestVariant1(__value0);
-            }
-            else if (CreateKeyV1RequestVariant2 is { } __value1 && createKeyV1RequestVariant2 != null)
-            {
-                return createKeyV1RequestVariant2(__value1);
-            }
-
-            return default(TResult);
-        }
-
-        /// <summary>
-        ///
-        /// </summary>
-        public void Match(
-            global::System.Action<object>? createKeyV1RequestVariant1 = null,
-
-            global::System.Action<object>? createKeyV1RequestVariant2 = null,
-            bool validate = true)
-        {
-            if (validate)
-            {
-                Validate();
-            }
-
-            if (CreateKeyV1RequestVariant1 is { } __value0)
-            {
-                createKeyV1RequestVariant1?.Invoke(__value0);
-            }
-            else if (CreateKeyV1RequestVariant2 is { } __value1)
-            {
-                createKeyV1RequestVariant2?.Invoke(__value1);
-            }
-        }
-
-        /// <summary>
-        ///
-        /// </summary>
-        public void Switch(
-            global::System.Action<object>? createKeyV1RequestVariant1 = null,
-            global::System.Action<object>? createKeyV1RequestVariant2 = null,
-            bool validate = true)
-        {
-            if (validate)
-            {
-                Validate();
-            }
-
-            if (CreateKeyV1RequestVariant1 is { } __value0)
-            {
-                createKeyV1RequestVariant1?.Invoke(__value0);
-            }
-            else if (CreateKeyV1RequestVariant2 is { } __value1)
-            {
-                createKeyV1RequestVariant2?.Invoke(__value1);
-            }
-        }
-
-        /// <summary>
-        ///
-        /// </summary>
-        public override int GetHashCode()
-        {
-            var fields = new object?[]
-            {
-                CreateKeyV1RequestVariant1,
-                typeof(object),
-                CreateKeyV1RequestVariant2,
-                typeof(object),
-            };
-            const int offset = unchecked((int)2166136261);
-            const int prime = 16777619;
-            static int HashCodeAggregator(int hashCode, object? value) => value == null
-                ? (hashCode ^ 0) * prime
-                : (hashCode ^ value.GetHashCode()) * prime;
-
-            return global::System.Linq.Enumerable.Aggregate(fields, offset, HashCodeAggregator);
-        }
-
-        /// <summary>
-        ///
-        /// </summary>
-        public bool Equals(CreateKeyV1Request other)
-        {
-            return
-                global::System.Collections.Generic.EqualityComparer<object?>.Default.Equals(CreateKeyV1RequestVariant1, other.CreateKeyV1RequestVariant1) &&
-                global::System.Collections.Generic.EqualityComparer<object?>.Default.Equals(CreateKeyV1RequestVariant2, other.CreateKeyV1RequestVariant2)
-                ;
-        }
-
-        /// <summary>
-        ///
-        /// </summary>
-        public static bool operator ==(CreateKeyV1Request obj1, CreateKeyV1Request obj2)
-        {
-            return global::System.Collections.Generic.EqualityComparer<CreateKeyV1Request>.Default.Equals(obj1, obj2);
-        }
-
-        /// <summary>
-        ///
-        /// </summary>
-        public static bool operator !=(CreateKeyV1Request obj1, CreateKeyV1Request obj2)
-        {
-            return !(obj1 == obj2);
-        }
-
-        /// <summary>
-        ///
-        /// </summary>
-        public override bool Equals(object? obj)
-        {
-            return obj is CreateKeyV1Request o && Equals(o);
-        }
     }
 }

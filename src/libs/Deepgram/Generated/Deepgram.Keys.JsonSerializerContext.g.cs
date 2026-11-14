@@ -15,20 +15,20 @@ namespace Deepgram
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(string[]))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Text.Json.JsonElement?))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(string))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(object))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Deepgram.ErrorResponseTextError))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Deepgram.ErrorResponseLegacyError))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Deepgram.ErrorResponseModernError))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Deepgram.ErrorResponse), TypeInfoPropertyName = "ErrorResponse2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.DateTime))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<string>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(double))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Deepgram.V1ProjectsProjectIdKeysGetParametersStatus), TypeInfoPropertyName = "V1ProjectsProjectIdKeysGetParametersStatus2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Deepgram.ListProjectKeysV1ResponseApiKeysItemsMember))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Deepgram.ListProjectKeysV1ResponseApiKeysItemsApiKey))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Deepgram.ListProjectKeysV1ResponseApiKeysItems))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Deepgram.ListProjectKeysV1Response))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Deepgram.ListProjectKeysV1ResponseApiKeysItems>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Deepgram.CreateKeyV1Request), TypeInfoPropertyName = "CreateKeyV1Request2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Deepgram.CreateKeyV1Request))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Deepgram.CreateKeyV1Response))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Deepgram.GetProjectKeyV1ResponseItemMemberApiKey))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Deepgram.GetProjectKeyV1ResponseItemMember))]
@@ -37,8 +37,8 @@ namespace Deepgram
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Deepgram.DeleteProjectKeyV1Response))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Deepgram.ErrorResponse?), TypeInfoPropertyName = "NullableErrorResponse2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.DateTime?))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(double?))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Deepgram.V1ProjectsProjectIdKeysGetParametersStatus?), TypeInfoPropertyName = "NullableV1ProjectsProjectIdKeysGetParametersStatus2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Deepgram.CreateKeyV1Request?), TypeInfoPropertyName = "NullableCreateKeyV1Request2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<string>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Deepgram.ListProjectKeysV1ResponseApiKeysItems>))]
     internal sealed partial class KeysSourceGenerationContextChunk0 : global::System.Text.Json.Serialization.JsonSerializerContext
@@ -89,7 +89,6 @@ namespace Deepgram
         public static void AddConverters(global::System.Text.Json.JsonSerializerOptions options)
         {
             options.Converters.Add(new global::Deepgram.JsonConverters.ErrorResponseJsonConverter());
-            options.Converters.Add(new global::Deepgram.JsonConverters.CreateKeyV1RequestJsonConverter());
             options.Converters.Add(new global::Deepgram.JsonConverters.UnixTimestampJsonConverter());
             options.Converters.Add(new LazyEnumJsonConverterFactory());
         }

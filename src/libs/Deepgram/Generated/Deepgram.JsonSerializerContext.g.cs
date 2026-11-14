@@ -361,8 +361,6 @@ namespace Deepgram
 
             typeof(global::Deepgram.JsonConverters.GetModelV1ResponseJsonConverter),
 
-            typeof(global::Deepgram.JsonConverters.CreateKeyV1RequestJsonConverter),
-
             typeof(global::Deepgram.JsonConverters.V2SpeakPostParametersTagJsonConverter),
 
             typeof(global::Deepgram.JsonConverters.V2SpeakPostParametersBitRateJsonConverter),
@@ -567,7 +565,7 @@ namespace Deepgram
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Deepgram.ListProjectKeysV1ResponseApiKeysItems))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Deepgram.ListProjectKeysV1Response))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Deepgram.ListProjectKeysV1ResponseApiKeysItems>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Deepgram.CreateKeyV1Request), TypeInfoPropertyName = "CreateKeyV1Request2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Deepgram.CreateKeyV1Request))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Deepgram.CreateKeyV1Response))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Deepgram.GetProjectKeyV1ResponseItemMemberApiKey))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Deepgram.GetProjectKeyV1ResponseItemMember))]
